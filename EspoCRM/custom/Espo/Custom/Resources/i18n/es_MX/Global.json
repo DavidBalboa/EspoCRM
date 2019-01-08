@@ -1,0 +1,30 @@
+{
+    "links": {
+        "teams": "Empresas",
+        "team": "Empresa"
+    },
+    "scopeNamesPlural": {
+        "Team": "Empresas",
+        "Contact": "Beneficiarios",
+        "Account": "Beneficios"
+    },
+    "scopeNames": {
+        "Team": "Empresa"
+    },
+    "fields": {
+        "teams": "Empresas"
+    },
+    "options": {
+        "searchRanges": {
+            "is": "Es",
+            "isEmpty": "Está vacío",
+            "isNotEmpty": "No Está Vacío",
+            "isOneOf": "Cualquiera",
+            "isFromTeams": "Es de la Empresa",
+            "isNot": "No Es",
+            "isNotOneOf": "Ninguno De",
+            "anyOf": "Cualquiera",
+            "noneOf": "Ninguno De"
+        }
+    }
+}

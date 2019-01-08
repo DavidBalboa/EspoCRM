@@ -1,0 +1,26 @@
+[
+    {
+        "name": "beneficioSolicitado"
+    },
+    {
+        "name": "listaGym"
+    },
+    {
+        "name": "fechaSolicitud"
+    },
+    {
+        "name": "fechaDesde"
+    },
+    {
+        "name": "fechaHasta"
+    },
+    {
+        "name": "createdBy"
+    },
+    {
+        "name": "observacion"
+    },
+    {
+        "name": "assignedUser"
+    }
+]

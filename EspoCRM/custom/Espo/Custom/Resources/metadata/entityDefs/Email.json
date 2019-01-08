@@ -1,0 +1,26 @@
+{
+    "fields": {
+        "parent": {
+            "entityList": [
+                "Account",
+                "Lead",
+                "Contact",
+                "Opportunity",
+                "Case",
+                "Formularios"
+            ]
+        },
+        "formularios": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "formularios": {
+            "type": "belongsTo",
+            "foreign": "emails",
+            "entity": "Formularios",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

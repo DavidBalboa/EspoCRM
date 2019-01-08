@@ -1,0 +1,31 @@
+{
+    "options": {
+        "salutationName": {
+            "": "",
+            "Mr.": "Sr.",
+            "Ms.": "Srta.",
+            "Mrs.": "Sra."
+        },
+        "phoneNumber": {
+            "Mobile": "Teléfono móvil",
+            "Office": "Oficina"
+        }
+    },
+    "fields": {
+        "formularios": "Formularios",
+        "formularios1": "Formularios1",
+        "rutBeneficiario": "Rut Beneficiario",
+        "createdAt": "Fecha Creación"
+    },
+    "links": {
+        "formularios": "Formularios",
+        "formularios1": "Formularios1"
+    },
+    "tooltips": {
+        "rutBeneficiario": "Ingrese Rut: 17281236-6",
+        "phoneNumber": "Ingrese telefono eje: celular: 954408013 - Oficina: 225785895 "
+    },
+    "labels": {
+        "Create Contact": "Crear Beneficiario"
+    }
+}

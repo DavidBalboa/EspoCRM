@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "salutationName": {
+            "options": [
+                "",
+                "Mr.",
+                "Ms.",
+                "Mrs."
+            ],
+            "required": false,
+            "isSorted": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false
+        }
+    }
+}

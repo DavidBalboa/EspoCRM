@@ -1,0 +1,23 @@
+{
+    "fields": {
+        "teams": "Empresas",
+        "defaultTeam": "Empresa Default"
+    },
+    "links": {
+        "teams": "Empresas"
+    },
+    "tooltips": {
+        "teams": "Empresas a los que este usuario pertenece. Nivel de control de acceso se hereda de los roles de empresas."
+    },
+    "labels": {
+        "Teams and Access Control": "Empresas y Control de Acceso"
+    },
+    "options": {
+        "salutationName": {
+            "": "",
+            "Mr.": "Sr.",
+            "Ms.": "Srta.",
+            "Mrs.": "Sra."
+        }
+    }
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "rutBeneficiario"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "emailAddress"
+                }
+            ],
+            [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "createdBy"
+                },
+                {
+                    "name": "createdAt"
+                }
+            ]
+        ],
+        "style": "primary",
+        "dynamicLogicVisible": null,
+        "customLabel": "Beneficiario"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "teams"
+                },
+                false
+            ]
+        ],
+        "style": "primary",
+        "dynamicLogicVisible": null,
+        "customLabel": "Empresa"
+    }
+]

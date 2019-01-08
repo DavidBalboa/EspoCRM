@@ -1,0 +1,25 @@
+[
+    {
+        "name": "rutBeneficiario",
+        "link": true,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "width": 35,
+        "link": true
+    },
+    {
+        "name": "emailAddress",
+        "notSortable": true
+    },
+    {
+        "name": "address"
+    },
+    {
+        "name": "phoneNumber"
+    },
+    {
+        "name": "createdBy"
+    }
+]

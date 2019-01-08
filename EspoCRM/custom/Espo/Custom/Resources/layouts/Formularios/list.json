@@ -1,0 +1,39 @@
+[
+    {
+        "name": "contact"
+    },
+    {
+        "name": "numeroFormulario"
+    },
+    {
+        "name": "beneficioSolicitado"
+    },
+    {
+        "name": "fechaSolicitud"
+    },
+    {
+        "name": "fechaDesde"
+    },
+    {
+        "name": "fechaHasta"
+    },
+    {
+        "name": "listaGym"
+    },
+    {
+        "name": "estadoFormulario"
+    },
+    {
+        "name": "observacion"
+    },
+    {
+        "name": "teams",
+        "notSortable": true
+    },
+    {
+        "name": "assignedUser"
+    },
+    {
+        "name": "createdAt"
+    }
+]

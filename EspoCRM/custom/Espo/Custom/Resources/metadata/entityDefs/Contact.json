@@ -1,0 +1,65 @@
+{
+    "fields": {
+        "salutationName": {
+            "options": [
+                "",
+                "Mr.",
+                "Ms.",
+                "Mrs."
+            ],
+            "isPersonalData": false,
+            "required": false,
+            "isSorted": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false
+        },
+        "rutBeneficiario": {
+            "type": "varchar",
+            "required": true,
+            "trim": true,
+            "maxLength": 20,
+            "tooltipText": "Ingrese Rut: 17281236-6",
+            "isPersonalData": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": true,
+            "isCustom": true
+        },
+        "phoneNumber": {
+            "notStorable": true,
+            "typeList": [
+                "Mobile",
+                "Office"
+            ],
+            "required": false,
+            "tooltipText": "Ingrese telefono eje: celular: 954408013 - Oficina: 225785895 ",
+            "tooltip": true
+        },
+        "createdAt": {
+            "notNull": false,
+            "isPersonalData": false,
+            "required": false,
+            "useNumericFormat": false,
+            "audited": false,
+            "tooltip": false
+        },
+        "formularios": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "formularios": {
+            "type": "hasMany",
+            "foreign": "contact",
+            "entity": "Formularios",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

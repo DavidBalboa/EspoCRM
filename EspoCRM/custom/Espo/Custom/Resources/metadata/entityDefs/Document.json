@@ -1,0 +1,22 @@
+{
+    "fields": {
+        "formularios": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": false,
+            "layoutMassUpdateDisabled": false,
+            "importDisabled": false,
+            "noLoad": false,
+            "isCustom": true
+        }
+    },
+    "links": {
+        "formularios": {
+            "type": "hasMany",
+            "relationName": "formulariosDocument",
+            "foreign": "documents",
+            "entity": "Formularios",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

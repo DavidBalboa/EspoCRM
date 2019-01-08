@@ -1,0 +1,54 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "contact"
+                },
+                false
+            ]
+        ],
+        "style": "primary",
+        "dynamicLogicVisible": null,
+        "customLabel": "DATOS BENEFICIARIO"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "beneficioSolicitado"
+                },
+                {
+                    "name": "fechaSolicitud"
+                }
+            ],
+            [
+                {
+                    "name": "fechaDesde"
+                },
+                {
+                    "name": "fechaHasta"
+                }
+            ],
+            [
+                {
+                    "name": "listaGym"
+                },
+                {
+                    "name": "estadoFormulario"
+                }
+            ],
+            [
+                {
+                    "name": "observacion"
+                },
+                {
+                    "name": "documents"
+                }
+            ]
+        ],
+        "style": "primary",
+        "dynamicLogicVisible": null,
+        "customLabel": " DETALLE DEL BENEFICIO"
+    }
+]

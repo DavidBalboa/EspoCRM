@@ -1,0 +1,71 @@
+{
+    "fields": {
+        "address": "Address",
+        "meetings1": "Meetings1",
+        "rut": "Rut Beneficiario",
+        "beneficioSolicitado": "Beneficio Solicitado",
+        "fechaSolicitud": "Fecha Solicitud",
+        "fechaDesde": "Fecha Desde",
+        "fechaHasta": "Fecha Hasta",
+        "listaGym": "Lista Gym",
+        "estadoFormulario": "Estado Formulario",
+        "observacion": "Observacion",
+        "contacts": "Beneficiario",
+        "accounts": "Accounts",
+        "contacts1": "Contactoss",
+        "contact": "Contact",
+        "documents": "Documents",
+        "numeroFormulario": "Numero Formulario"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "emails": "Emails",
+        "meetings1": "Meetings1",
+        "contacts": "Beneficiario",
+        "accounts": "Accounts",
+        "contacts1": "Contacts1",
+        "contact": "Contact",
+        "documents": "Documents"
+    },
+    "labels": {
+        "Create Formularios": "Create Formulario"
+    },
+    "tooltips": {
+        "rut": "Ingrese Rut  (Eje: 12.345.678-9)",
+        "beneficioSolicitado": "Ingrese Beneficio",
+        "fechaSolicitud": "Ingrese Fecha Solicitud",
+        "fechaHasta": "Ingrese Fecha Hasta",
+        "estadoFormulario": "Ingrese estado",
+        "observacion": "Inrgese Observación con un máximo de: 200 caracteres",
+        "listaGym": "Ingrese GYM",
+        "numeroFormulario": "Num"
+    },
+    "options": {
+        "beneficioSolicitado": {
+            "Ninguno": "Ninguno",
+            "Educación": "Educación",
+            "Gimnasio": "Gimnasio"
+        },
+        "listaGym": {
+            "- Seleccionar Gym -": "- Seleccionar Gym -",
+            "Sportlife": "Sportlife",
+            "Pasco Club": "Pasco Club",
+            "Pacific Fitness": "Pacific Fitness",
+            "Centro Xtremo": "Centro Xtremo",
+            "Brisas del Maipo": "Brisas del Maipo"
+        },
+        "estadoFormulario": {
+            "- Estado Formulario -": "- Estado Formulario -",
+            "Creada": "Creada",
+            "Ingreseda": "Ingreseda",
+            "Eliminada": "Eliminada",
+            "Modificada": "Modificada",
+            "Creado": "Creado",
+            "Inrgesado": "Inrgesado",
+            "Modificado": "Modificado",
+            "Eliminado": "Eliminado"
+        }
+    }
+}

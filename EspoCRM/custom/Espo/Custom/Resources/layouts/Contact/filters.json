@@ -1,0 +1,11 @@
+[
+    "createdAt",
+    "createdBy",
+    "modifiedAt",
+    "account",
+    "address",
+    "emailAddress",
+    "phoneNumber",
+    "title",
+    "targetLists"
+]

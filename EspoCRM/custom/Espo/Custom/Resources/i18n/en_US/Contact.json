@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "formularios": "Formularios",
+        "formularios1": "Formularios1",
+        "rutBeneficiario": "Rut Beneficiario"
+    },
+    "links": {
+        "formularios": "Formularios",
+        "formularios1": "Formularios1"
+    },
+    "tooltips": {
+        "rutBeneficiario": "Ingrese Rut: 17281236-6"
+    }
+}
