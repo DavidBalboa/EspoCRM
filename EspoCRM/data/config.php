@@ -3,12 +3,12 @@ return [
     'cacheTimestamp' => 1546615166,
     'database' => [
         'driver' => 'pdo_mysql',
-        'host' => 'localhost',
+        'host' => '10.128.0.218',
         'port' => '3306',
         'charset' => 'utf8mb4',
-        'dbname' => 'espocrm',
-        'user' => 'root',
-        'password' => ''
+        'dbname' => 'ESPOCRMDB',
+        'user' => 'soporte',
+        'password' => 'soporte'
     ],
     'useCache' => true,
     'recordsPerPage' => 20,
