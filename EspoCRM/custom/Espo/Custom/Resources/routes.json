@@ -1,0 +1,30 @@
+[
+    {
+        "route": "/Reclamo/rut/:id",
+        "method": "get",
+        "params": {
+            "controller": "Reclamo",
+            "action": "rut",
+            "id": ":id"
+        }
+    },
+    {
+        "route": "/Reclamo/name/:id",
+        "method": "get",
+        "params": {
+            "controller": "Reclamo",
+            "action": "name",
+            "id": ":id"
+        }
+    },
+    {
+        "route": "/Beneficio/codigo/:id",
+        "method": "get",
+        "params": {
+            "controller": "Beneficio",
+            "action": "codigo",
+            "id": ":id"
+        }
+    }
+]
+
