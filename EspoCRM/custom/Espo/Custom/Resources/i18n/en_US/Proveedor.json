@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "rut": "Rut",
+        "direccion": "Direccion",
+        "beneficios": "Beneficios"
+    },
+    "links": {
+        "beneficios": "Beneficios"
+    },
+    "labels": {
+        "Create Proveedor": "Create Proveedor"
+    }
+}

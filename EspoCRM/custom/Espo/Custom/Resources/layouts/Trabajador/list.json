@@ -1,0 +1,24 @@
+[
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "rut"
+    },
+    {
+        "name": "nombrecompleto"
+    },
+    {
+        "name": "telefono"
+    },
+    {
+        "name": "email"
+    },
+    {
+        "name": "rol"
+    },
+    {
+        "name": "empresa",
+        "notSortable": true
+    }
+]

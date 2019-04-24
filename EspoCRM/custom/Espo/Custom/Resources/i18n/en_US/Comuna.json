@@ -1,0 +1,18 @@
+{
+    "fields": {
+        "ciudad": "Ciudad",
+        "trabajador": "Trabajador",
+        "beneficios": "Beneficios"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "ciudad": "Ciudad",
+        "trabajador": "Trabajador",
+        "beneficios": "Beneficios"
+    },
+    "labels": {
+        "Create Comuna": "Create Comuna"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "links": {
+        "meetings": "Reuniones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "beneficioss": "Beneficios",
+        "trabajador": "Trabajador"
+    },
+    "labels": {
+        "Create Rol": "Crear Rol"
+    },
+    "fields": {
+        "beneficioss": "Beneficios",
+        "trabajador": "Trabajador"
+    }
+}

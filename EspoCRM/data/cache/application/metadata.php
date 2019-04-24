@@ -4778,6 +4778,189 @@ return array (
       'iconClass' => 'fas fa-tasks',
       'kanbanViewMode' => true,
     ),
+    'Beneficios' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+    ),
+    'Categoria' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+    ),
+    'Ciudad' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+    ),
+    'Comuna' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+    ),
+    'DoctosBeneficio' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+    ),
+    'Empresa' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+    ),
     'Formularios' => 
     array (
       'controller' => 'controllers/record',
@@ -4815,6 +4998,133 @@ return array (
       'color' => '#bd4646',
       'iconClass' => 'fas fa-bed',
       'kanbanViewMode' => false,
+    ),
+    'Proveedor' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+    ),
+    'Rol' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+    ),
+    'Solicitudes' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+      'kanbanViewMode' => false,
+      'color' => NULL,
+      'iconClass' => NULL,
+    ),
+    'Subcategoria' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+      'kanbanViewMode' => false,
+      'color' => NULL,
+      'iconClass' => NULL,
+    ),
+    'Trabajador' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
     ),
   ),
   'dashlets' => 
@@ -7281,6 +7591,14 @@ return array (
             3 => 'Opportunity',
             4 => 'Case',
             5 => 'Formularios',
+            6 => 'Solicitudes',
+            7 => 'Categoria',
+            8 => 'Subcategoria',
+            9 => 'Beneficios',
+            10 => 'DoctosBeneficio',
+            11 => 'Ciudad',
+            12 => 'Comuna',
+            13 => 'Rol',
           ),
         ),
         'dateSent' => 
@@ -12902,6 +13220,14 @@ return array (
             3 => 'Opportunity',
             4 => 'Case',
             5 => 'Formularios',
+            6 => 'Solicitudes',
+            7 => 'Categoria',
+            8 => 'Subcategoria',
+            9 => 'Beneficios',
+            10 => 'DoctosBeneficio',
+            11 => 'Ciudad',
+            12 => 'Comuna',
+            13 => 'Rol',
           ),
         ),
         'account' => 
@@ -16099,6 +16425,14 @@ return array (
             3 => 'Opportunity',
             4 => 'Case',
             5 => 'Formularios',
+            6 => 'Solicitudes',
+            7 => 'Categoria',
+            8 => 'Subcategoria',
+            9 => 'Beneficios',
+            10 => 'DoctosBeneficio',
+            11 => 'Ciudad',
+            12 => 'Comuna',
+            13 => 'Rol',
           ),
         ),
         'account' => 
@@ -17360,6 +17694,14 @@ return array (
             3 => 'Opportunity',
             4 => 'Case',
             5 => 'Formularios',
+            6 => 'Solicitudes',
+            7 => 'Categoria',
+            8 => 'Subcategoria',
+            9 => 'Beneficios',
+            10 => 'DoctosBeneficio',
+            11 => 'Ciudad',
+            12 => 'Comuna',
+            13 => 'Rol',
           ),
         ),
         'account' => 
@@ -17512,6 +17854,1029 @@ return array (
         ),
       ),
     ),
+    'Beneficios' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'titulo' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'descripcion' => 
+        array (
+          'type' => 'wysiwyg',
+          'required' => false,
+          'readOnly' => false,
+          'useIframe' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'direccion' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'validohasta' => 
+        array (
+          'notNull' => false,
+          'type' => 'date',
+          'required' => false,
+          'useNumericFormat' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'titulolegal' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'descripcionlegal' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'pasoapaso' => 
+        array (
+          'type' => 'wysiwyg',
+          'required' => false,
+          'readOnly' => false,
+          'useIframe' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'empresa' => 
+        array (
+          'type' => 'link',
+        ),
+        'proveedor' => 
+        array (
+          'type' => 'link',
+        ),
+        'rol' => 
+        array (
+          'type' => 'link',
+        ),
+        'comuna' => 
+        array (
+          'type' => 'link',
+        ),
+        'categoria' => 
+        array (
+          'type' => 'link',
+        ),
+        'doctosBeneficios' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'empresa' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'beneficios',
+          'entity' => 'Empresa',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'proveedor' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'beneficios',
+          'entity' => 'Proveedor',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'rol' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'beneficioss',
+          'entity' => 'Rol',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'comuna' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'beneficios',
+          'entity' => 'Comuna',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'categoria' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'beneficios',
+          'entity' => 'Categoria',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'doctosBeneficios' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'beneficios',
+          'entity' => 'DoctosBeneficio',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Categoria' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'nombreCategoria' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+        'subcategorias' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'categoria',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'subcategorias' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'categoria',
+          'entity' => 'Subcategoria',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Ciudad' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'comunas' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'comunas' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'ciudad',
+          'entity' => 'Comuna',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Comuna' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'ciudad' => 
+        array (
+          'type' => 'link',
+        ),
+        'trabajador' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'ciudad' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'comunas',
+          'entity' => 'Ciudad',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'trabajador' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'comunarelacion',
+          'entity' => 'Trabajador',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'comuna',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'DoctosBeneficio' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'descripcion' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'documentosbeneficio' => 
+        array (
+          'type' => 'file',
+          'required' => false,
+          'sourceList' => 
+          array (
+          ),
+          'audited' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'link',
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'documentosbeneficio' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'doctosBeneficios',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Empresa' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+        'trabajador' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'importDisabled' => true,
+          'noLoad' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'empresa',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'trabajador' => 
+        array (
+          'type' => 'hasMany',
+          'relationName' => 'trabajadorEmpresa',
+          'foreign' => 'empresa',
+          'entity' => 'Trabajador',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
     'Formularios' => 
     array (
       'fields' => 
@@ -17651,7 +19016,7 @@ return array (
           'required' => true,
           'trim' => true,
           'maxLength' => 20,
-          'tooltipText' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+          'tooltipText' => 'Ingrese Rut  (Ej: 12.345.678-9)',
           'isPersonalData' => false,
           'audited' => false,
           'readOnly' => false,
@@ -17912,6 +19277,1089 @@ return array (
           array (
             0 => 'firstName',
             1 => 'lastName',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Proveedor' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'rut' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'direccion' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'proveedor',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Rol' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'beneficioss' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+        'trabajador' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'importDisabled' => true,
+          'noLoad' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'beneficioss' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'rol',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'trabajador' => 
+        array (
+          'type' => 'hasMany',
+          'relationName' => 'trabajadorRol',
+          'foreign' => 'rol',
+          'entity' => 'Trabajador',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Solicitudes' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'personName',
+          'isPersonalData' => true,
+        ),
+        'salutationName' => 
+        array (
+          'type' => 'enum',
+          'options' => 
+          array (
+            0 => '',
+            1 => 'Mr.',
+            2 => 'Ms.',
+            3 => 'Mrs.',
+            4 => 'Dr.',
+          ),
+        ),
+        'firstName' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+          'maxLength' => 100,
+          'default' => '',
+        ),
+        'lastName' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+          'maxLength' => 100,
+          'required' => true,
+          'default' => '',
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'emailAddress' => 
+        array (
+          'type' => 'email',
+          'isPersonalData' => true,
+        ),
+        'phoneNumber' => 
+        array (
+          'type' => 'phone',
+          'typeList' => 
+          array (
+            0 => 'Mobile',
+            1 => 'Office',
+            2 => 'Home',
+            3 => 'Fax',
+            4 => 'Other',
+          ),
+          'defaultType' => 'Mobile',
+          'isPersonalData' => true,
+        ),
+        'address' => 
+        array (
+          'type' => 'address',
+          'isPersonalData' => true,
+        ),
+        'addressStreet' => 
+        array (
+          'type' => 'text',
+          'maxLength' => 255,
+          'dbType' => 'varchar',
+        ),
+        'addressCity' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'addressState' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'addressCountry' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'addressPostalCode' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => false,
+          'notNull' => false,
+          'isPersonalData' => false,
+          'required' => true,
+          'useNumericFormat' => false,
+          'audited' => false,
+          'tooltip' => false,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => false,
+          'notNull' => false,
+          'isPersonalData' => false,
+          'required' => false,
+          'useNumericFormat' => false,
+          'audited' => false,
+          'tooltip' => false,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => false,
+          'view' => 'views/fields/user',
+          'required' => false,
+          'audited' => false,
+          'tooltip' => false,
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => false,
+          'view' => 'views/fields/user',
+          'required' => false,
+          'audited' => false,
+          'tooltip' => false,
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => false,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'rut' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => false,
+          'audited' => false,
+          'isPersonalData' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'estadoSolicitud' => 
+        array (
+          'type' => 'enum',
+          'required' => true,
+          'options' => 
+          array (
+            0 => 'Aprobado',
+            1 => 'En proceso',
+            2 => 'Rechazado',
+            3 => 'Cancelado',
+          ),
+          'audited' => true,
+          'isPersonalData' => false,
+          'default' => 'Aprobado',
+          'isSorted' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'beneficio' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => false,
+          'isPersonalData' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'carga' => 
+        array (
+          'type' => 'multiEnum',
+          'storeArrayValues' => true,
+          'required' => false,
+          'isPersonalData' => false,
+          'options' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'ciudad' => 
+        array (
+          'type' => 'enum',
+          'required' => false,
+          'isPersonalData' => false,
+          'options' => false,
+          'isSorted' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'categoria' => 
+        array (
+          'type' => 'enum',
+          'required' => false,
+          'isPersonalData' => false,
+          'options' => false,
+          'isSorted' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'subcategoria' => 
+        array (
+          'type' => 'enum',
+          'required' => false,
+          'isPersonalData' => false,
+          'options' => false,
+          'isSorted' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'documento' => 
+        array (
+          'type' => 'file',
+          'required' => false,
+          'isPersonalData' => false,
+          'sourceList' => 
+          array (
+          ),
+          'audited' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'numeroSolicitud' => 
+        array (
+          'type' => 'number',
+          'len' => 36,
+          'notNull' => false,
+          'unique' => false,
+          'nextNumber' => 5,
+          'padLength' => 5,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'fechahasta' => 
+        array (
+          'notNull' => false,
+          'type' => 'date',
+          'required' => false,
+          'isPersonalData' => false,
+          'useNumericFormat' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'relacionsubcategoria' => 
+        array (
+          'type' => 'link',
+        ),
+        'emailAddressIsOptedOut' => 
+        array (
+          'type' => 'bool',
+          'notStorable' => true,
+          'layoutDetailDisabled' => true,
+          'mergeDisabled' => true,
+          'customizationDefaultDisabled' => true,
+          'customizationReadOnlyDisabled' => true,
+        ),
+        'addressMap' => 
+        array (
+          'type' => 'map',
+          'notStorable' => true,
+          'readOnly' => true,
+          'layoutListDisabled' => true,
+          'provider' => 'Google',
+          'height' => 300,
+          'exportDisabled' => true,
+          'importDisabled' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'documento' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'Attachment',
+          'skipOrmDefs' => true,
+        ),
+        'relacionsubcategoria' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'relacionsolicitudes',
+          'entity' => 'Subcategoria',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+        'textFilterFields' => 
+        array (
+          0 => 'name',
+          1 => 'rut',
+        ),
+        'fullTextSearch' => false,
+      ),
+      'indexes' => 
+      array (
+        'firstName' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'firstName',
+            1 => 'deleted',
+          ),
+        ),
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'firstName',
+            1 => 'lastName',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Subcategoria' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'idcategoria' => 
+        array (
+          'type' => 'int',
+          'required' => false,
+          'disableFormatting' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'nombreSubcategoria' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'relacionsolicitudes' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+        'categoria' => 
+        array (
+          'type' => 'link',
+          'required' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'relacionsolicitudes' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'relacionsubcategoria',
+          'entity' => 'Solicitudes',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'categoria' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'subcategorias',
+          'entity' => 'Categoria',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+        'textFilterFields' => 
+        array (
+          0 => 'name',
+          1 => 'nombreSubcategoria',
+        ),
+        'fullTextSearch' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'Trabajador' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'nombre' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'rut' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'apellidopaterno' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'apellidomaterno' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'nombrecompleto' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'direccion' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'email' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'telefono' => 
+        array (
+          'type' => 'number',
+          'len' => 36,
+          'notNull' => false,
+          'unique' => false,
+          'nextNumber' => 1,
+          'padLength' => 9,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'comunarelacion' => 
+        array (
+          'type' => 'link',
+        ),
+        'rol' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'importDisabled' => true,
+          'noLoad' => true,
+          'isCustom' => true,
+        ),
+        'empresa' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'importDisabled' => true,
+          'noLoad' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'comunarelacion' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'trabajador',
+          'entity' => 'Comuna',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'rol' => 
+        array (
+          'type' => 'hasMany',
+          'relationName' => 'trabajadorRol',
+          'foreign' => 'trabajador',
+          'entity' => 'Rol',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'empresa' => 
+        array (
+          'type' => 'hasMany',
+          'relationName' => 'trabajadorEmpresa',
+          'foreign' => 'trabajador',
+          'entity' => 'Empresa',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
           ),
         ),
         'assignedUser' => 
@@ -20257,6 +22705,156 @@ return array (
         1 => 'Deferred',
       ),
     ),
+    'Beneficios' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
+    'Categoria' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
+    'Ciudad' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
+    'Comuna' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
+    'DoctosBeneficio' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
+    'Empresa' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
     'Formularios' => 
     array (
       'entity' => true,
@@ -20283,6 +22881,134 @@ return array (
       'object' => true,
       'isCustom' => true,
       'statusField' => NULL,
+    ),
+    'Proveedor' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
+    'Rol' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
+    'Solicitudes' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'hasPersonalData' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'Person',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+      'statusField' => NULL,
+    ),
+    'Subcategoria' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+      'statusField' => NULL,
+    ),
+    'Trabajador' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'Base',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
     ),
   ),
   'themes' => 

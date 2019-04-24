@@ -1107,6 +1107,17 @@ Event - available in Calendar and Activities panel.',
       'KnowledgeBaseCategory' => 'Kategoria bazy wiedzy',
       'CampaignLogRecord' => 'Campaign Log Record',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
     ),
     'scopeNamesPlural' => 
     array (
@@ -1167,6 +1178,17 @@ Event - available in Calendar and Activities panel.',
       'KnowledgeBaseCategory' => 'Kategorie bazy wiedzy',
       'CampaignLogRecord' => 'Campaign Log Records',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
     ),
     'labels' => 
     array (
@@ -4143,6 +4165,155 @@ Hasło: {password}
       'overdue' => 'Przegrzane',
     ),
   ),
+  'Beneficios' => 
+  array (
+    'fields' => 
+    array (
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Połączenia',
+      'tasks' => 'Zadania',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' => 
+    array (
+      'Create Beneficios' => 'Utwórz Beneficios',
+    ),
+  ),
+  'Categoria' => 
+  array (
+    'fields' => 
+    array (
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Połączenia',
+      'tasks' => 'Zadania',
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' => 
+    array (
+      'Create Categoria' => 'Utwórz Categoria',
+    ),
+  ),
+  'Ciudad' => 
+  array (
+    'fields' => 
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Połączenia',
+      'tasks' => 'Zadania',
+      'comunas' => 'Comunas',
+    ),
+    'labels' => 
+    array (
+      'Create Ciudad' => 'Utwórz Ciudad',
+    ),
+  ),
+  'Comuna' => 
+  array (
+    'fields' => 
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Połączenia',
+      'tasks' => 'Zadania',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' => 
+    array (
+      'Create Comuna' => 'Utwórz Comuna',
+    ),
+  ),
+  'DoctosBeneficio' => 
+  array (
+    'fields' => 
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Połączenia',
+      'tasks' => 'Zadania',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' => 
+    array (
+      'Create DoctosBeneficio' => 'Utwórz Doctos_beneficio',
+    ),
+  ),
+  'Empresa' => 
+  array (
+    'fields' => 
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' => 
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' => 
+    array (
+      'Create Empresa' => 'Utwórz Empresa',
+    ),
+  ),
   'Formularios' => 
   array (
     'fields' => 
@@ -4183,7 +4354,7 @@ Hasło: {password}
     ),
     'tooltips' => 
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4221,6 +4392,161 @@ Hasło: {password}
         'Modificado' => 'Modificado',
         'Eliminado' => 'Eliminado',
       ),
+    ),
+  ),
+  'Proveedor' => 
+  array (
+    'fields' => 
+    array (
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' => 
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' => 
+    array (
+      'Create Proveedor' => 'Utwórz Proveedor',
+    ),
+  ),
+  'Rol' => 
+  array (
+    'fields' => 
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Połączenia',
+      'tasks' => 'Zadania',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' => 
+    array (
+      'Create Rol' => 'Utwórz Rol',
+    ),
+  ),
+  'Solicitudes' => 
+  array (
+    'fields' => 
+    array (
+      'address' => 'Adres',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Rozmowy',
+      'tasks' => 'Zadania',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' => 
+    array (
+      'Create Solicitudes' => 'Utwórz Solicitudes',
+    ),
+    'options' => 
+    array (
+      'estadoSolicitud' => 
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' => 
+      array (
+      ),
+      'ciudad' => 
+      array (
+      ),
+      'categoria' => 
+      array (
+      ),
+      'subcategoria' => 
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' => 
+  array (
+    'fields' => 
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Spotkania',
+      'calls' => 'Połączenia',
+      'tasks' => 'Zadania',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'labels' => 
+    array (
+      'Create Subcategoria' => 'Utwórz Subcategoria',
+    ),
+  ),
+  'Trabajador' => 
+  array (
+    'fields' => 
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'links' => 
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'labels' => 
+    array (
+      'Create Trabajador' => 'Utwórz Trabajador',
     ),
   ),
 );

@@ -1,13 +1,16 @@
 {
-  "fields": {
-    "address": "Dirección"
-  },
-  "links": {
-    "meetings": "Reuniones",
-    "calls": "Llamadas",
-    "tasks": "Tareas"
-  },
-  "labels": {
-    "Create Formularios": "Crear Formulario"
-  }
+    "fields": {
+        "address": "Dirección"
+    },
+    "links": {
+        "meetings": "Reuniones",
+        "calls": "Llamadas",
+        "tasks": "Tareas"
+    },
+    "labels": {
+        "Create Formularios": "Crear Formulario"
+    },
+    "tooltips": {
+        "rut": "Ingrese Rut  (Ej: 12.345.678-9)"
+    }
 }

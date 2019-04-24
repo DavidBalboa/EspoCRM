@@ -1,0 +1,14 @@
+{
+    "links": {
+        "meetings": "Reuniones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "comunas": "Comunas"
+    },
+    "labels": {
+        "Create Ciudad": "Crear Ciudad"
+    },
+    "fields": {
+        "comunas": "Comunas"
+    }
+}

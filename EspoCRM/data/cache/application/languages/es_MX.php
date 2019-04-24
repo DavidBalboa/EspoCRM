@@ -1107,6 +1107,17 @@ Evento - disponible en los páneles de Calendario y Actividades',
       'KnowledgeBaseCategory' => 'Categoría de la Base de Conocimientos',
       'CampaignLogRecord' => 'Historial de Campañas',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
     ),
     'scopeNamesPlural' => 
     array (
@@ -1168,6 +1179,17 @@ Evento - disponible en los páneles de Calendario y Actividades',
       'KnowledgeBaseCategory' => 'Categorías de la Base de Conocimientos',
       'CampaignLogRecord' => 'Historial de Campañas',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
     ),
     'labels' => 
     array (
@@ -4164,6 +4186,155 @@ Contraseña: {password}
       'overdue' => 'Atrazadas',
     ),
   ),
+  'Beneficios' => 
+  array (
+    'fields' => 
+    array (
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' => 
+    array (
+      'Create Beneficios' => 'Crear Beneficios',
+    ),
+  ),
+  'Categoria' => 
+  array (
+    'fields' => 
+    array (
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' => 
+    array (
+      'Create Categoria' => 'Crear Categoria',
+    ),
+  ),
+  'Ciudad' => 
+  array (
+    'fields' => 
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'comunas' => 'Comunas',
+    ),
+    'labels' => 
+    array (
+      'Create Ciudad' => 'Crear Ciudad',
+    ),
+  ),
+  'Comuna' => 
+  array (
+    'fields' => 
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' => 
+    array (
+      'Create Comuna' => 'Crear Comuna',
+    ),
+  ),
+  'DoctosBeneficio' => 
+  array (
+    'fields' => 
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' => 
+    array (
+      'Create DoctosBeneficio' => 'Crear Doctos_beneficio',
+    ),
+  ),
+  'Empresa' => 
+  array (
+    'fields' => 
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' => 
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' => 
+    array (
+      'Create Empresa' => 'Crear Empresa',
+    ),
+  ),
   'Formularios' => 
   array (
     'fields' => 
@@ -4254,6 +4425,161 @@ Contraseña: {password}
         'Mobile' => 'Teléfono móvil',
         'Office' => 'Oficina',
       ),
+    ),
+  ),
+  'Proveedor' => 
+  array (
+    'fields' => 
+    array (
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' => 
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' => 
+    array (
+      'Create Proveedor' => 'Crear Proveedor',
+    ),
+  ),
+  'Rol' => 
+  array (
+    'fields' => 
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' => 
+    array (
+      'Create Rol' => 'Crear Rol',
+    ),
+  ),
+  'Solicitudes' => 
+  array (
+    'fields' => 
+    array (
+      'address' => 'Dirección',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' => 
+    array (
+      'Create Solicitudes' => 'Crear Solicitudes',
+    ),
+    'options' => 
+    array (
+      'estadoSolicitud' => 
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' => 
+      array (
+      ),
+      'ciudad' => 
+      array (
+      ),
+      'categoria' => 
+      array (
+      ),
+      'subcategoria' => 
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' => 
+  array (
+    'fields' => 
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Presentaciones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'labels' => 
+    array (
+      'Create Subcategoria' => 'Crear Subcategoria',
+    ),
+  ),
+  'Trabajador' => 
+  array (
+    'fields' => 
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'links' => 
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'labels' => 
+    array (
+      'Create Trabajador' => 'Crear Trabajador',
     ),
   ),
 );

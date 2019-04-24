@@ -2,6 +2,39 @@
 return array (
   0 => 
   array (
+    'route' => '/Reclamo/rut/:id',
+    'method' => 'get',
+    'params' => 
+    array (
+      'controller' => 'Reclamo',
+      'action' => 'rut',
+      'id' => ':id',
+    ),
+  ),
+  1 => 
+  array (
+    'route' => '/Reclamo/name/:id',
+    'method' => 'get',
+    'params' => 
+    array (
+      'controller' => 'Reclamo',
+      'action' => 'name',
+      'id' => ':id',
+    ),
+  ),
+  2 => 
+  array (
+    'route' => '/Beneficio/codigo/:id',
+    'method' => 'get',
+    'params' => 
+    array (
+      'controller' => 'Beneficio',
+      'action' => 'codigo',
+      'id' => ':id',
+    ),
+  ),
+  3 => 
+  array (
     'route' => '/Activities/:scope/:id/:name',
     'method' => 'get',
     'params' => 
@@ -13,7 +46,7 @@ return array (
       'name' => ':name',
     ),
   ),
-  1 => 
+  4 => 
   array (
     'route' => '/Activities',
     'method' => 'get',
@@ -23,13 +56,13 @@ return array (
       'action' => 'listCalendarEvents',
     ),
   ),
-  2 => 
+  5 => 
   array (
     'route' => '/',
     'method' => 'get',
     'params' => '<h1>EspoCRM REST API</h1>',
   ),
-  3 => 
+  6 => 
   array (
     'route' => '/App/user',
     'method' => 'get',
@@ -39,7 +72,7 @@ return array (
       'action' => 'user',
     ),
   ),
-  4 => 
+  7 => 
   array (
     'route' => '/Metadata',
     'method' => 'get',
@@ -48,7 +81,7 @@ return array (
       'controller' => 'Metadata',
     ),
   ),
-  5 => 
+  8 => 
   array (
     'route' => '/I18n',
     'method' => 'get',
@@ -61,7 +94,7 @@ return array (
       'auth' => false,
     ),
   ),
-  6 => 
+  9 => 
   array (
     'route' => '/Settings',
     'method' => 'get',
@@ -74,7 +107,7 @@ return array (
       'auth' => false,
     ),
   ),
-  7 => 
+  10 => 
   array (
     'route' => '/Settings',
     'method' => 'patch',
@@ -83,7 +116,7 @@ return array (
       'controller' => 'Settings',
     ),
   ),
-  8 => 
+  11 => 
   array (
     'route' => '/Settings',
     'method' => 'put',
@@ -92,7 +125,7 @@ return array (
       'controller' => 'Settings',
     ),
   ),
-  9 => 
+  12 => 
   array (
     'route' => '/User/passwordChangeRequest',
     'method' => 'post',
@@ -106,7 +139,7 @@ return array (
       'auth' => false,
     ),
   ),
-  10 => 
+  13 => 
   array (
     'route' => '/User/changePasswordByRequest',
     'method' => 'post',
@@ -120,7 +153,7 @@ return array (
       'auth' => false,
     ),
   ),
-  11 => 
+  14 => 
   array (
     'route' => '/Stream',
     'method' => 'get',
@@ -131,7 +164,7 @@ return array (
       'scope' => 'User',
     ),
   ),
-  12 => 
+  15 => 
   array (
     'route' => '/GlobalSearch',
     'method' => 'get',
@@ -141,7 +174,7 @@ return array (
       'action' => 'search',
     ),
   ),
-  13 => 
+  16 => 
   array (
     'route' => '/LeadCapture/:apiKey',
     'method' => 'post',
@@ -156,7 +189,7 @@ return array (
       'auth' => false,
     ),
   ),
-  14 => 
+  17 => 
   array (
     'route' => '/LeadCapture/:apiKey',
     'method' => 'options',
@@ -171,7 +204,7 @@ return array (
       'auth' => false,
     ),
   ),
-  15 => 
+  18 => 
   array (
     'route' => '/:controller/action/:action',
     'method' => 'post',
@@ -181,47 +214,47 @@ return array (
       'action' => ':action',
     ),
   ),
-  16 => 
-  array (
-    'route' => '/:controller/action/:action',
-    'method' => 'put',
-    'params' => 
-    array (
-      'controller' => ':controller',
-      'action' => ':action',
-    ),
-  ),
-  17 => 
-  array (
-    'route' => '/:controller/action/:action',
-    'method' => 'get',
-    'params' => 
-    array (
-      'controller' => ':controller',
-      'action' => ':action',
-    ),
-  ),
-  18 => 
-  array (
-    'route' => '/:controller/layout/:name',
-    'method' => 'get',
-    'params' => 
-    array (
-      'controller' => 'Layout',
-      'scope' => ':controller',
-    ),
-  ),
   19 => 
   array (
-    'route' => '/:controller/layout/:name',
+    'route' => '/:controller/action/:action',
     'method' => 'put',
     'params' => 
     array (
-      'controller' => 'Layout',
-      'scope' => ':controller',
+      'controller' => ':controller',
+      'action' => ':action',
     ),
   ),
   20 => 
+  array (
+    'route' => '/:controller/action/:action',
+    'method' => 'get',
+    'params' => 
+    array (
+      'controller' => ':controller',
+      'action' => ':action',
+    ),
+  ),
+  21 => 
+  array (
+    'route' => '/:controller/layout/:name',
+    'method' => 'get',
+    'params' => 
+    array (
+      'controller' => 'Layout',
+      'scope' => ':controller',
+    ),
+  ),
+  22 => 
+  array (
+    'route' => '/:controller/layout/:name',
+    'method' => 'put',
+    'params' => 
+    array (
+      'controller' => 'Layout',
+      'scope' => ':controller',
+    ),
+  ),
+  23 => 
   array (
     'route' => '/:controller/layout/:name',
     'method' => 'patch',
@@ -231,7 +264,7 @@ return array (
       'scope' => ':controller',
     ),
   ),
-  21 => 
+  24 => 
   array (
     'route' => '/Admin/rebuild',
     'method' => 'post',
@@ -241,7 +274,7 @@ return array (
       'action' => 'rebuild',
     ),
   ),
-  22 => 
+  25 => 
   array (
     'route' => '/Admin/clearCache',
     'method' => 'post',
@@ -251,7 +284,7 @@ return array (
       'action' => 'clearCache',
     ),
   ),
-  23 => 
+  26 => 
   array (
     'route' => '/Admin/jobs',
     'method' => 'get',
@@ -261,7 +294,7 @@ return array (
       'action' => 'jobs',
     ),
   ),
-  24 => 
+  27 => 
   array (
     'route' => '/Admin/fieldManager/:scope/:name',
     'method' => 'get',
@@ -273,7 +306,7 @@ return array (
       'name' => ':name',
     ),
   ),
-  25 => 
+  28 => 
   array (
     'route' => '/Admin/fieldManager/:scope',
     'method' => 'post',
@@ -284,7 +317,7 @@ return array (
       'scope' => ':scope',
     ),
   ),
-  26 => 
+  29 => 
   array (
     'route' => '/Admin/fieldManager/:scope/:name',
     'method' => 'put',
@@ -296,7 +329,7 @@ return array (
       'name' => ':name',
     ),
   ),
-  27 => 
+  30 => 
   array (
     'route' => '/Admin/fieldManager/:scope/:name',
     'method' => 'patch',
@@ -308,7 +341,7 @@ return array (
       'name' => ':name',
     ),
   ),
-  28 => 
+  31 => 
   array (
     'route' => '/Admin/fieldManager/:scope/:name',
     'method' => 'delete',
@@ -320,7 +353,7 @@ return array (
       'name' => ':name',
     ),
   ),
-  29 => 
+  32 => 
   array (
     'route' => '/:controller/:id',
     'method' => 'get',
@@ -331,7 +364,7 @@ return array (
       'id' => ':id',
     ),
   ),
-  30 => 
+  33 => 
   array (
     'route' => '/:controller',
     'method' => 'get',
@@ -341,7 +374,7 @@ return array (
       'action' => 'index',
     ),
   ),
-  31 => 
+  34 => 
   array (
     'route' => '/:controller',
     'method' => 'post',
@@ -351,7 +384,7 @@ return array (
       'action' => 'create',
     ),
   ),
-  32 => 
+  35 => 
   array (
     'route' => '/:controller/:id',
     'method' => 'put',
@@ -362,7 +395,7 @@ return array (
       'id' => ':id',
     ),
   ),
-  33 => 
+  36 => 
   array (
     'route' => '/:controller/:id',
     'method' => 'patch',
@@ -373,7 +406,7 @@ return array (
       'id' => ':id',
     ),
   ),
-  34 => 
+  37 => 
   array (
     'route' => '/:controller/:id',
     'method' => 'delete',
@@ -384,7 +417,7 @@ return array (
       'id' => ':id',
     ),
   ),
-  35 => 
+  38 => 
   array (
     'route' => '/:controller/:id/stream',
     'method' => 'get',
@@ -396,7 +429,7 @@ return array (
       'scope' => ':controller',
     ),
   ),
-  36 => 
+  39 => 
   array (
     'route' => '/:controller/:id/subscription',
     'method' => 'put',
@@ -407,7 +440,7 @@ return array (
       'action' => 'follow',
     ),
   ),
-  37 => 
+  40 => 
   array (
     'route' => '/:controller/:id/subscription',
     'method' => 'delete',
@@ -418,7 +451,7 @@ return array (
       'action' => 'unfollow',
     ),
   ),
-  38 => 
+  41 => 
   array (
     'route' => '/:controller/:id/:link',
     'method' => 'get',
@@ -430,7 +463,7 @@ return array (
       'link' => ':link',
     ),
   ),
-  39 => 
+  42 => 
   array (
     'route' => '/:controller/:id/:link',
     'method' => 'post',
@@ -442,7 +475,7 @@ return array (
       'link' => ':link',
     ),
   ),
-  40 => 
+  43 => 
   array (
     'route' => '/:controller/:id/:link',
     'method' => 'delete',

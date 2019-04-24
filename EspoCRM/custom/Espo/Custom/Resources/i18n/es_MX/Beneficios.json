@@ -1,0 +1,10 @@
+{
+  "links": {
+    "meetings": "Presentaciones",
+    "calls": "Llamadas",
+    "tasks": "Tareas"
+  },
+  "labels": {
+    "Create Beneficios": "Crear Beneficios"
+  }
+}

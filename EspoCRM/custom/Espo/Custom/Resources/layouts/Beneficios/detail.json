@@ -1,0 +1,70 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "categoria",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "titulo"
+                },
+                {
+                    "name": "name"
+                }
+            ],
+            [
+                {
+                    "name": "descripcion",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "direccion"
+                },
+                {
+                    "name": "comuna"
+                }
+            ],
+            [
+                {
+                    "name": "validohasta"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "pasoapaso",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "titulolegal"
+                },
+                {
+                    "name": "descripcionlegal"
+                }
+            ],
+            [
+                {
+                    "name": "proveedor"
+                },
+                {
+                    "name": "empresa"
+                }
+            ],
+            [
+                {
+                    "name": "rol"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "General"
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "name": "userName"
+    },
+    {
+        "name": "firstName"
+    },
+    {
+        "name": "name",
+        "width": 30,
+        "link": true
+    },
+    {
+        "name": "lastName"
+    },
+    {
+        "name": "emailAddress"
+    }
+]

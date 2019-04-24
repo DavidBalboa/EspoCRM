@@ -1,8 +1,30 @@
 {
     "scopeNames": {
-        "Formularios": "Formulario"
+        "Formularios": "Formulario",
+        "Solicitudes": "Solicitudes",
+        "Categoria": "Categoria",
+        "Subcategoria": "Subcategoria",
+        "Empresa": "Empresa",
+        "Trabajador": "Trabajador",
+        "Beneficios": "Beneficios",
+        "DoctosBeneficio": "Doctos_beneficio",
+        "Ciudad": "Ciudad",
+        "Comuna": "Comuna",
+        "Proveedor": "Proveedor",
+        "Rol": "Rol"
     },
     "scopeNamesPlural": {
-        "Formularios": "Formularios"
+        "Formularios": "Formularios",
+        "Solicitudes": "Solicitudes",
+        "Categoria": "Categorias",
+        "Subcategoria": "Subcategorias",
+        "Empresa": "Empresas",
+        "Trabajador": "Trabajadores",
+        "Beneficios": "Beneficios",
+        "DoctosBeneficio": "Doctos_beneficios",
+        "Ciudad": "Ciudads",
+        "Comuna": "Comunas",
+        "Proveedor": "Proveedors",
+        "Rol": "Rols"
     }
 }

@@ -7,7 +7,15 @@
                 "Lead",
                 "Opportunity",
                 "Case",
-                "Formularios"
+                "Formularios",
+                "Solicitudes",
+                "Categoria",
+                "Subcategoria",
+                "Beneficios",
+                "DoctosBeneficio",
+                "Ciudad",
+                "Comuna",
+                "Rol"
             ]
         }
     }

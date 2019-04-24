@@ -1,0 +1,18 @@
+{
+    "links": {
+        "meetings": "Reuniones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "ciudad": "Ciudad",
+        "trabajador": "Trabajador",
+        "beneficios": "Beneficios"
+    },
+    "labels": {
+        "Create Comuna": "Crear Comuna"
+    },
+    "fields": {
+        "ciudad": "Ciudad",
+        "trabajador": "Trabajador",
+        "beneficios": "Beneficios"
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "nombreCategoria"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "General"
+    }
+]

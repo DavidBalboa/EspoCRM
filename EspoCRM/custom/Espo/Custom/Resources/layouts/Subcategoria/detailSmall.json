@@ -1,0 +1,16 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "relacioncategoria"
+                },
+                {
+                    "name": "nombreSubcategoria"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

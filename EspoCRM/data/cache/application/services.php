@@ -54,6 +54,17 @@ return array (
   'Target' => '\\Espo\\Modules\\Crm\\Services\\Target',
   'TargetList' => '\\Espo\\Modules\\Crm\\Services\\TargetList',
   'Task' => '\\Espo\\Modules\\Crm\\Services\\Task',
+  'Beneficios' => '\\Espo\\Custom\\Services\\Beneficios',
+  'Categoria' => '\\Espo\\Custom\\Services\\Categoria',
+  'Ciudad' => '\\Espo\\Custom\\Services\\Ciudad',
+  'Comuna' => '\\Espo\\Custom\\Services\\Comuna',
+  'DoctosBeneficio' => '\\Espo\\Custom\\Services\\DoctosBeneficio',
+  'Empresa' => '\\Espo\\Custom\\Services\\Empresa',
   'Formularios' => '\\Espo\\Custom\\Services\\Formularios',
+  'Proveedor' => '\\Espo\\Custom\\Services\\Proveedor',
+  'Rol' => '\\Espo\\Custom\\Services\\Rol',
+  'Solicitudes' => '\\Espo\\Custom\\Services\\Solicitudes',
+  'Subcategoria' => '\\Espo\\Custom\\Services\\Subcategoria',
+  'Trabajador' => '\\Espo\\Custom\\Services\\Trabajador',
 );
 ?>
