@@ -1,26 +1,26 @@
 <?php
 return array (
-  'ActionHistoryRecord' =>
+  'ActionHistoryRecord' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'number' =>
+      'number' => 
       array (
         'type' => 'int',
         'autoincrement' => true,
@@ -28,26 +28,26 @@ return array (
         'index' => true,
         'len' => 11,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'action' =>
+      'action' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'ipAddress' =>
+      'ipAddress' => 
       array (
         'type' => 'varchar',
         'len' => '39',
       ),
-      'targetId' =>
+      'targetId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -55,7 +55,7 @@ return array (
         'index' => 'target',
         'notNull' => false,
       ),
-      'targetType' =>
+      'targetType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -63,14 +63,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'targetName' =>
+      'targetName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'target',
         'isParentName' => true,
       ),
-      'userId' =>
+      'userId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -78,19 +78,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'userName' =>
+      'userName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'user',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'authTokenId' =>
+      'authTokenId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -98,14 +98,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'authTokenName' =>
+      'authTokenName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'authToken',
         'foreign' => 'id',
       ),
-      'authLogRecordId' =>
+      'authLogRecordId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -113,7 +113,7 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'authLogRecordName' =>
+      'authLogRecordName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
@@ -121,9 +121,9 @@ return array (
         'foreign' => 'id',
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'authLogRecord' =>
+      'authLogRecord' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'AuthLogRecord',
@@ -131,7 +131,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'actionHistoryRecords',
       ),
-      'authToken' =>
+      'authToken' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'AuthToken',
@@ -139,12 +139,12 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'actionHistoryRecords',
       ),
-      'target' =>
+      'target' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'targetId',
       ),
-      'user' =>
+      'user' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -153,43 +153,43 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'number',
       'order' => 'DESC',
     ),
   ),
-  'ArrayValue' =>
+  'ArrayValue' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'value' =>
+      'value' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'attribute' =>
+      'attribute' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'entityId' =>
+      'entityId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -197,7 +197,7 @@ return array (
         'index' => 'entity',
         'notNull' => false,
       ),
-      'entityType' =>
+      'entityType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -205,7 +205,7 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'entityName' =>
+      'entityName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
@@ -213,22 +213,22 @@ return array (
         'isParentName' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'entityTypeValue' =>
+      'entityTypeValue' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'entityType',
           1 => 'value',
         ),
       ),
-      'entityValue' =>
+      'entityValue' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'entityType',
           1 => 'entityId',
@@ -237,79 +237,79 @@ return array (
       ),
     ),
   ),
-  'Attachment' =>
+  'Attachment' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'size' =>
+      'size' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'sourceId' =>
+      'sourceId' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'index' => true,
       ),
-      'field' =>
+      'field' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'contents' =>
+      'contents' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'role' =>
+      'role' => 
       array (
         'type' => 'varchar',
         'len' => 36,
       ),
-      'storage' =>
+      'storage' => 
       array (
         'type' => 'varchar',
         'len' => 24,
       ),
-      'storageFilePath' =>
+      'storageFilePath' => 
       array (
         'type' => 'varchar',
         'len' => 260,
       ),
-      'global' =>
+      'global' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -317,7 +317,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -325,14 +325,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'relatedId' =>
+      'relatedId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -340,7 +340,7 @@ return array (
         'index' => 'related',
         'notNull' => false,
       ),
-      'relatedType' =>
+      'relatedType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -348,14 +348,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'relatedName' =>
+      'relatedName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'related',
         'isParentName' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -363,12 +363,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -376,19 +376,19 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'related' =>
+      'related' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'relatedId',
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -397,91 +397,91 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'parent' =>
+      'parent' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'parentType',
           1 => 'parentId',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'AuthLogRecord' =>
+  'AuthLogRecord' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'username' =>
+      'username' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'ipAddress' =>
+      'ipAddress' => 
       array (
         'type' => 'varchar',
         'len' => '45',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'isDenied' =>
+      'isDenied' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'denialReason' =>
+      'denialReason' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'requestTime' =>
+      'requestTime' => 
       array (
         'type' => 'float',
         'notNull' => false,
       ),
-      'requestUrl' =>
+      'requestUrl' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'requestMethod' =>
+      'requestMethod' => 
       array (
         'type' => 'varchar',
         'len' => '15',
       ),
-      'authTokenIsActive' =>
+      'authTokenIsActive' => 
       array (
         'type' => 'foreign',
         'relation' => 'authToken',
         'foreign' => 'isActive',
       ),
-      'portalId' =>
+      'portalId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -489,14 +489,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'portalName' =>
+      'portalName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'portal',
         'foreign' => 'name',
       ),
-      'userId' =>
+      'userId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -504,19 +504,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'userName' =>
+      'userName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'user',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'authTokenId' =>
+      'authTokenId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -524,34 +524,34 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'authTokenName' =>
+      'authTokenName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'authToken',
         'foreign' => 'id',
       ),
-      'actionHistoryRecordsIds' =>
+      'actionHistoryRecordsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'actionHistoryRecordsNames' =>
+      'actionHistoryRecordsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'actionHistoryRecords' =>
+      'actionHistoryRecords' => 
       array (
         'type' => 'hasMany',
         'entity' => 'ActionHistoryRecord',
         'foreignKey' => 'authLogRecordId',
         'foreign' => 'authLogRecord',
       ),
-      'authToken' =>
+      'authToken' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'AuthToken',
@@ -559,7 +559,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'portal' =>
+      'portal' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Portal',
@@ -567,7 +567,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'user' =>
+      'user' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -577,70 +577,70 @@ return array (
         'noJoin' => true,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'ipAddress' =>
+      'ipAddress' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'ipAddress',
         ),
       ),
-      'ipAddressRequestTime' =>
+      'ipAddressRequestTime' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'ipAddress',
           1 => 'requestTime',
         ),
       ),
-      'requestTime' =>
+      'requestTime' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'requestTime',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'requestTime',
       'order' => 'DESC',
     ),
   ),
-  'AuthToken' =>
+  'AuthToken' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'token' =>
+      'token' => 
       array (
         'type' => 'varchar',
         'len' => '36',
         'index' => true,
       ),
-      'hash' =>
+      'hash' => 
       array (
         'type' => 'varchar',
         'len' => 150,
         'index' => true,
       ),
-      'userId' =>
+      'userId' => 
       array (
         'dbType' => 'varchar',
         'len' => '36',
@@ -648,45 +648,45 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'ipAddress' =>
+      'ipAddress' => 
       array (
         'type' => 'varchar',
         'len' => '45',
       ),
-      'isActive' =>
+      'isActive' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'lastAccess' =>
+      'lastAccess' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'userName' =>
+      'userName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'user',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'portalId' =>
+      'portalId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -694,34 +694,34 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'portalName' =>
+      'portalName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'portal',
         'foreign' => 'name',
       ),
-      'actionHistoryRecordsIds' =>
+      'actionHistoryRecordsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'actionHistoryRecordsNames' =>
+      'actionHistoryRecordsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'actionHistoryRecords' =>
+      'actionHistoryRecords' => 
       array (
         'type' => 'hasMany',
         'entity' => 'ActionHistoryRecord',
         'foreignKey' => 'authTokenId',
         'foreign' => 'authToken',
       ),
-      'portal' =>
+      'portal' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Portal',
@@ -729,7 +729,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'user' =>
+      'user' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -738,176 +738,176 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'token' =>
+      'token' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'token',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'lastAccess',
       'order' => 'DESC',
     ),
   ),
-  'Currency' =>
+  'Currency' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'rate' =>
+      'rate' => 
       array (
         'type' => 'float',
         'notNull' => false,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
   ),
-  'Email' =>
+  'Email' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'subject' =>
+      'subject' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'fromName' =>
+      'fromName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'fromString' =>
+      'fromString' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'replyToString' =>
+      'replyToString' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressNameMap' =>
+      'addressNameMap' => 
       array (
         'type' => 'jsonObject',
       ),
-      'from' =>
+      'from' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'to' =>
+      'to' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'cc' =>
+      'cc' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'bcc' =>
+      'bcc' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'replyTo' =>
+      'replyTo' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'personStringData' =>
+      'personStringData' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'isRead' =>
+      'isRead' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => true,
       ),
-      'isNotRead' =>
+      'isNotRead' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'isReplied' =>
+      'isReplied' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'isNotReplied' =>
-      array (
-        'type' => 'bool',
-        'notNull' => true,
-        'notStorable' => true,
-        'default' => false,
-      ),
-      'isImportant' =>
+      'isNotReplied' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'inTrash' =>
+      'isImportant' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'folderId' =>
+      'inTrash' => 
+      array (
+        'type' => 'bool',
+        'notNull' => true,
+        'notStorable' => true,
+        'default' => false,
+      ),
+      'folderId' => 
       array (
         'dbType' => 'varchar',
         'len' => 255,
@@ -917,116 +917,116 @@ return array (
         'index' => 'folder',
         'notNull' => false,
       ),
-      'isUsers' =>
+      'isUsers' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'nameHash' =>
+      'nameHash' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'typeHash' =>
+      'typeHash' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'idHash' =>
+      'idHash' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'messageId' =>
+      'messageId' => 
       array (
         'type' => 'varchar',
         'len' => 255,
         'index' => true,
       ),
-      'messageIdInternal' =>
+      'messageIdInternal' => 
       array (
         'type' => 'varchar',
         'len' => 300,
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'base',
         'notStorable' => true,
       ),
-      'bodyPlain' =>
+      'bodyPlain' => 
       array (
         'type' => 'text',
       ),
-      'body' =>
+      'body' => 
       array (
         'type' => 'text',
       ),
-      'isHtml' =>
+      'isHtml' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Archived',
         'len' => 255,
       ),
-      'hasAttachment' =>
+      'hasAttachment' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'dateSent' =>
+      'dateSent' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'deliveryDate' =>
+      'deliveryDate' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'isSystem' =>
+      'isSystem' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'isJustSent' =>
-      array (
-        'type' => 'bool',
-        'notNull' => true,
-        'notStorable' => true,
-        'default' => false,
-      ),
-      'isBeingImported' =>
+      'isJustSent' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'folderName' =>
+      'isBeingImported' => 
+      array (
+        'type' => 'bool',
+        'notNull' => true,
+        'notStorable' => true,
+        'default' => false,
+      ),
+      'folderName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'fromEmailAddressId' =>
+      'fromEmailAddressId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1034,14 +1034,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'fromEmailAddressName' =>
+      'fromEmailAddressName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'fromEmailAddress',
         'foreign' => 'name',
       ),
-      'toEmailAddressesIds' =>
+      'toEmailAddressesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1049,13 +1049,13 @@ return array (
         'relation' => 'toEmailAddresses',
         'isUnordered' => true,
       ),
-      'toEmailAddressesNames' =>
+      'toEmailAddressesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'ccEmailAddressesIds' =>
+      'ccEmailAddressesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1063,13 +1063,13 @@ return array (
         'relation' => 'ccEmailAddresses',
         'isUnordered' => true,
       ),
-      'ccEmailAddressesNames' =>
+      'ccEmailAddressesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'replyToEmailAddressesIds' =>
+      'replyToEmailAddressesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1077,24 +1077,24 @@ return array (
         'relation' => 'replyToEmailAddresses',
         'isUnordered' => true,
       ),
-      'replyToEmailAddressesNames' =>
+      'replyToEmailAddressesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'attachmentsIds' =>
+      'attachmentsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'orderBy' =>
+        'orderBy' => 
         array (
-          0 =>
+          0 => 
           array (
             0 => 'createdAt',
             1 => 'ASC',
           ),
-          1 =>
+          1 => 
           array (
             0 => 'name',
             1 => 'ASC',
@@ -1103,13 +1103,13 @@ return array (
         'isLinkMultipleIdList' => true,
         'relation' => 'attachments',
       ),
-      'attachmentsNames' =>
+      'attachmentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1117,7 +1117,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -1125,14 +1125,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1140,19 +1140,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'sentById' =>
+      'sentById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1160,19 +1160,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'sentByName' =>
+      'sentByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'sentBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1180,19 +1180,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1200,19 +1200,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'repliedId' =>
+      'repliedId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1220,14 +1220,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'repliedName' =>
+      'repliedName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'replied',
         'foreign' => 'name',
       ),
-      'repliesIds' =>
+      'repliesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1236,13 +1236,13 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'dateSent',
       ),
-      'repliesNames' =>
+      'repliesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1250,13 +1250,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1264,18 +1264,18 @@ return array (
         'relation' => 'users',
         'isUnordered' => true,
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'usersColumns' =>
+      'usersColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'assignedUsersIds' =>
+      'assignedUsersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1283,13 +1283,13 @@ return array (
         'relation' => 'assignedUsers',
         'isUnordered' => true,
       ),
-      'assignedUsersNames' =>
+      'assignedUsersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'inboundEmailsIds' =>
+      'inboundEmailsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1297,13 +1297,13 @@ return array (
         'relation' => 'inboundEmails',
         'isUnordered' => true,
       ),
-      'inboundEmailsNames' =>
+      'inboundEmailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'emailAccountsIds' =>
+      'emailAccountsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -1311,13 +1311,13 @@ return array (
         'relation' => 'emailAccounts',
         'isUnordered' => true,
       ),
-      'emailAccountsNames' =>
+      'emailAccountsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1325,14 +1325,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'account',
         'foreign' => 'name',
       ),
-      'formulariosId' =>
+      'formulariosId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1340,37 +1340,37 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'formulariosName' =>
+      'formulariosName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'formularios',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'bccEmailAddressesIds' =>
+      'bccEmailAddressesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'bccEmailAddressesNames' =>
+      'bccEmailAddressesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'attachmentsTypes' =>
+      'attachmentsTypes' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'formularios' =>
+      'formularios' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Formularios',
@@ -1378,7 +1378,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'account' =>
+      'account' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -1386,135 +1386,135 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'emailAccounts' =>
+      'emailAccounts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAccount',
         'relationName' => 'emailEmailAccount',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailId',
           1 => 'emailAccountId',
         ),
         'foreign' => 'emails',
       ),
-      'inboundEmails' =>
+      'inboundEmails' => 
       array (
         'type' => 'manyMany',
         'entity' => 'InboundEmail',
         'relationName' => 'emailInboundEmail',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailId',
           1 => 'inboundEmailId',
         ),
         'foreign' => 'emails',
       ),
-      'replyToEmailAddresses' =>
+      'replyToEmailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'foreignKey' => 'id',
         'foreign' => NULL,
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailId',
           1 => 'emailAddressId',
         ),
         'relationName' => 'emailEmailAddress',
-        'conditions' =>
+        'conditions' => 
         array (
           'addressType' => 'rto',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'addressType' =>
+          'addressType' => 
           array (
             'type' => 'varchar',
             'len' => '4',
           ),
         ),
       ),
-      'bccEmailAddresses' =>
+      'bccEmailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'foreignKey' => 'id',
         'foreign' => NULL,
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailId',
           1 => 'emailAddressId',
         ),
         'relationName' => 'emailEmailAddress',
-        'conditions' =>
+        'conditions' => 
         array (
           'addressType' => 'bcc',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'addressType' =>
+          'addressType' => 
           array (
             'type' => 'varchar',
             'len' => '4',
           ),
         ),
       ),
-      'ccEmailAddresses' =>
+      'ccEmailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'foreignKey' => 'id',
         'foreign' => NULL,
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailId',
           1 => 'emailAddressId',
         ),
         'relationName' => 'emailEmailAddress',
-        'conditions' =>
+        'conditions' => 
         array (
           'addressType' => 'cc',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'addressType' =>
+          'addressType' => 
           array (
             'type' => 'varchar',
             'len' => '4',
           ),
         ),
       ),
-      'toEmailAddresses' =>
+      'toEmailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'foreignKey' => 'id',
         'foreign' => NULL,
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailId',
           1 => 'emailAddressId',
         ),
         'relationName' => 'emailEmailAddress',
-        'conditions' =>
+        'conditions' => 
         array (
           'addressType' => 'to',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'addressType' =>
+          'addressType' => 
           array (
             'type' => 'varchar',
             'len' => '4',
           ),
         ),
       ),
-      'fromEmailAddress' =>
+      'fromEmailAddress' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailAddress',
@@ -1522,14 +1522,14 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'replies' =>
+      'replies' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Email',
         'foreignKey' => 'repliedId',
         'foreign' => 'replied',
       ),
-      'replied' =>
+      'replied' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Email',
@@ -1537,12 +1537,12 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'replies',
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'sentBy' =>
+      'sentBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -1550,37 +1550,37 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'emailUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailId',
           1 => 'userId',
         ),
         'foreign' => 'emails',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'isRead' =>
+          'isRead' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
-          'isImportant' =>
+          'isImportant' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
-          'inTrash' =>
+          'inTrash' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
-          'folderId' =>
+          'folderId' => 
           array (
             'type' => 'varchar',
             'default' => NULL,
@@ -1588,53 +1588,53 @@ return array (
           ),
         ),
       ),
-      'assignedUsers' =>
+      'assignedUsers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'entityUser',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'userId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Email',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Email',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -1642,7 +1642,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -1650,7 +1650,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -1658,7 +1658,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'attachments' =>
+      'attachments' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Attachment',
@@ -1668,193 +1668,193 @@ return array (
         'relationName' => 'attachments',
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'dateSent' =>
+      'dateSent' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateSent',
           1 => 'deleted',
         ),
       ),
-      'dateSentStatus' =>
+      'dateSentStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateSent',
           1 => 'status',
           2 => 'deleted',
         ),
       ),
-      'system_fullTextSearch' =>
+      'system_fullTextSearch' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'bodyPlain',
           2 => 'body',
         ),
-        'flags' =>
+        'flags' => 
         array (
           0 => 'fulltext',
         ),
       ),
     ),
-    'fullTextSearchColumnList' =>
+    'fullTextSearchColumnList' => 
     array (
       0 => 'name',
       1 => 'bodyPlain',
       2 => 'body',
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'dateSent',
       'order' => 'DESC',
     ),
   ),
-  'EmailAccount' =>
+  'EmailAccount' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Active',
         'len' => 255,
       ),
-      'host' =>
+      'host' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'port' =>
+      'port' => 
       array (
         'type' => 'varchar',
         'default' => '143',
         'len' => 255,
       ),
-      'ssl' =>
+      'ssl' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'username' =>
+      'username' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'password' =>
+      'password' => 
       array (
         'type' => 'password',
       ),
-      'monitoredFolders' =>
+      'monitoredFolders' => 
       array (
         'type' => 'varchar',
         'default' => 'INBOX',
         'len' => 255,
       ),
-      'sentFolder' =>
+      'sentFolder' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'storeSentEmails' =>
+      'storeSentEmails' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'keepFetchedEmailsUnread' =>
+      'keepFetchedEmailsUnread' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'fetchSince' =>
+      'fetchSince' => 
       array (
         'type' => 'date',
       ),
-      'fetchData' =>
+      'fetchData' => 
       array (
         'type' => 'jsonObject',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'useImap' =>
+      'useImap' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'useSmtp' =>
+      'useSmtp' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'smtpHost' =>
+      'smtpHost' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPort' =>
+      'smtpPort' => 
       array (
         'type' => 'int',
         'default' => '25',
         'len' => 11,
       ),
-      'smtpAuth' =>
+      'smtpAuth' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'smtpSecurity' =>
+      'smtpSecurity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpUsername' =>
+      'smtpUsername' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPassword' =>
+      'smtpPassword' => 
       array (
         'type' => 'password',
       ),
-      'emailFolderId' =>
+      'emailFolderId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1862,14 +1862,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'emailFolderName' =>
+      'emailFolderName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'emailFolder',
         'foreign' => 'name',
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1877,19 +1877,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1897,19 +1897,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -1917,42 +1917,42 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'filtersIds' =>
+      'filtersIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'filtersNames' =>
+      'filtersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailFolder' =>
+      'emailFolder' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailFolder',
@@ -1960,21 +1960,21 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Email',
         'relationName' => 'emailEmailAccount',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'emailAccountId',
           1 => 'emailId',
         ),
         'foreign' => 'emailAccounts',
       ),
-      'filters' =>
+      'filters' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'EmailFilter',
@@ -1982,7 +1982,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -1990,7 +1990,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -1998,7 +1998,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2007,123 +2007,123 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'EmailAddress' =>
+  'EmailAddress' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'lower' =>
+      'lower' => 
       array (
         'type' => 'varchar',
         'index' => true,
         'len' => 255,
       ),
-      'invalid' =>
+      'invalid' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'optOut' =>
+      'optOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'EmailFilter' =>
+  'EmailFilter' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'from' =>
+      'from' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'to' =>
+      'to' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'subject' =>
+      'subject' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'bodyContains' =>
+      'bodyContains' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'isGlobal' =>
+      'isGlobal' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'action' =>
+      'action' => 
       array (
         'type' => 'varchar',
         'default' => 'Skip',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2131,7 +2131,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -2139,14 +2139,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'emailFolderId' =>
+      'emailFolderId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2154,14 +2154,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'emailFolderName' =>
+      'emailFolderName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'emailFolder',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2169,19 +2169,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2189,12 +2189,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -2202,9 +2202,9 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailFolder' =>
+      'emailFolder' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailFolder',
@@ -2212,12 +2212,12 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2225,7 +2225,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2234,54 +2234,54 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'EmailFolder' =>
+  'EmailFolder' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 64,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'order' =>
+      'order' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'skipNotifications' =>
+      'skipNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2289,19 +2289,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2309,19 +2309,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2329,12 +2329,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -2342,9 +2342,9 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2352,7 +2352,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2360,7 +2360,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2369,75 +2369,75 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'order',
       'order' => 'ASC',
     ),
   ),
-  'EmailTemplate' =>
+  'EmailTemplate' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'subject' =>
+      'subject' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'body' =>
+      'body' => 
       array (
         'type' => 'text',
       ),
-      'isHtml' =>
+      'isHtml' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'oneOff' =>
+      'oneOff' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'attachmentsIds' =>
+      'attachmentsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'orderBy' =>
+        'orderBy' => 
         array (
-          0 =>
+          0 => 
           array (
             0 => 'createdAt',
             1 => 'ASC',
           ),
-          1 =>
+          1 => 
           array (
             0 => 'name',
             1 => 'ASC',
@@ -2446,13 +2446,13 @@ return array (
         'isLinkMultipleIdList' => true,
         'relation' => 'attachments',
       ),
-      'attachmentsNames' =>
+      'attachmentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'categoryId' =>
+      'categoryId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2460,14 +2460,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'categoryName' =>
+      'categoryName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'category',
         'foreign' => 'name',
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2475,19 +2475,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -2495,13 +2495,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2509,19 +2509,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2529,27 +2529,27 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'attachmentsTypes' =>
+      'attachmentsTypes' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2557,7 +2557,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2565,7 +2565,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2573,30 +2573,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'EmailTemplate',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'category' =>
+      'category' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailTemplateCategory',
@@ -2604,7 +2604,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'emailTemplates',
       ),
-      'attachments' =>
+      'attachments' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Attachment',
@@ -2613,57 +2613,57 @@ return array (
         'foreign' => 'parent',
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'EmailTemplateCategory' =>
+  'EmailTemplateCategory' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'order' =>
+      'order' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'childList' =>
+      'childList' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2671,19 +2671,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2691,19 +2691,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -2711,13 +2711,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2725,51 +2725,51 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'parent',
         'foreign' => 'name',
       ),
-      'emailTemplatesIds' =>
+      'emailTemplatesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'emailTemplatesNames' =>
+      'emailTemplatesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'childrenIds' =>
+      'childrenIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'childrenNames' =>
+      'childrenNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailTemplates' =>
+      'emailTemplates' => 
       array (
         'type' => 'hasMany',
         'entity' => 'EmailTemplate',
         'foreignKey' => 'categoryId',
         'foreign' => 'category',
       ),
-      'children' =>
+      'children' => 
       array (
         'type' => 'hasMany',
         'entity' => 'EmailTemplateCategory',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailTemplateCategory',
@@ -2777,30 +2777,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'children',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'EmailTemplateCategory',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2808,7 +2808,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2817,13 +2817,13 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'additionalTables' =>
+    'additionalTables' => 
     array (
-      'EmailTemplateCategoryPath' =>
+      'EmailTemplateCategoryPath' => 
       array (
-        'fields' =>
+        'fields' => 
         array (
-          'id' =>
+          'id' => 
           array (
             'type' => 'id',
             'dbType' => 'int',
@@ -2831,13 +2831,13 @@ return array (
             'autoincrement' => true,
             'unique' => true,
           ),
-          'ascendorId' =>
+          'ascendorId' => 
           array (
             'type' => 'varchar',
             'len' => '100',
             'index' => true,
           ),
-          'descendorId' =>
+          'descendorId' => 
           array (
             'type' => 'varchar',
             'len' => '24',
@@ -2846,61 +2846,61 @@ return array (
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'order' => 'ASC',
     ),
   ),
-  'Extension' =>
+  'Extension' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'version' =>
+      'version' => 
       array (
         'type' => 'varchar',
         'len' => 50,
       ),
-      'fileList' =>
+      'fileList' => 
       array (
         'type' => 'jsonArray',
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'isInstalled' =>
+      'isInstalled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'checkVersionUrl' =>
+      'checkVersionUrl' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -2908,12 +2908,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -2921,9 +2921,9 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -2932,101 +2932,101 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'ExternalAccount' =>
+  'ExternalAccount' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 64,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'enabled' =>
+      'enabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
   ),
-  'Import' =>
+  'Import' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'entityType' =>
+      'entityType' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'importedCount' =>
+      'importedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'duplicateCount' =>
+      'duplicateCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'updatedCount' =>
+      'updatedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'fileId' =>
+      'fileId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3034,13 +3034,13 @@ return array (
         'index' => false,
         'notNull' => false,
       ),
-      'fileName' =>
+      'fileName' => 
       array (
         'type' => 'foreign',
         'relation' => 'file',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3048,12 +3048,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -3061,9 +3061,9 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'file' =>
+      'file' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Attachment',
@@ -3071,7 +3071,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -3080,209 +3080,209 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'InboundEmail' =>
+  'InboundEmail' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Active',
         'len' => 255,
       ),
-      'host' =>
+      'host' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'port' =>
+      'port' => 
       array (
         'type' => 'varchar',
         'default' => '143',
         'len' => 255,
       ),
-      'ssl' =>
+      'ssl' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'username' =>
+      'username' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'password' =>
+      'password' => 
       array (
         'type' => 'password',
       ),
-      'monitoredFolders' =>
+      'monitoredFolders' => 
       array (
         'type' => 'varchar',
         'default' => 'INBOX',
         'len' => 255,
       ),
-      'fetchSince' =>
+      'fetchSince' => 
       array (
         'type' => 'date',
       ),
-      'fetchData' =>
+      'fetchData' => 
       array (
         'type' => 'jsonObject',
       ),
-      'addAllTeamUsers' =>
+      'addAllTeamUsers' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'sentFolder' =>
+      'sentFolder' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'storeSentEmails' =>
+      'storeSentEmails' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'useImap' =>
+      'useImap' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'useSmtp' =>
+      'useSmtp' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'smtpIsShared' =>
+      'smtpIsShared' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'smtpIsForMassEmail' =>
+      'smtpIsForMassEmail' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'smtpHost' =>
+      'smtpHost' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPort' =>
+      'smtpPort' => 
       array (
         'type' => 'int',
         'default' => '25',
         'len' => 11,
       ),
-      'smtpAuth' =>
+      'smtpAuth' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'smtpSecurity' =>
+      'smtpSecurity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpUsername' =>
+      'smtpUsername' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPassword' =>
+      'smtpPassword' => 
       array (
         'type' => 'password',
       ),
-      'createCase' =>
+      'createCase' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'caseDistribution' =>
+      'caseDistribution' => 
       array (
         'type' => 'varchar',
         'default' => 'Direct-Assignment',
         'len' => 255,
       ),
-      'targetUserPosition' =>
+      'targetUserPosition' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'reply' =>
+      'reply' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'replyFromAddress' =>
+      'replyFromAddress' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'replyToAddress' =>
+      'replyToAddress' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'replyFromName' =>
+      'replyFromName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'fromName' =>
+      'fromName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'assignToUserId' =>
+      'assignToUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3290,19 +3290,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignToUserName' =>
+      'assignToUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignToUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamId' =>
+      'teamId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3310,14 +3310,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'teamName' =>
+      'teamName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'team',
         'foreign' => 'name',
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -3325,13 +3325,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'replyEmailTemplateId' =>
+      'replyEmailTemplateId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3339,14 +3339,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'replyEmailTemplateName' =>
+      'replyEmailTemplateName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'replyEmailTemplate',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3354,19 +3354,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3374,56 +3374,56 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'filtersIds' =>
+      'filtersIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'filtersNames' =>
+      'filtersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Email',
         'relationName' => 'emailInboundEmail',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'inboundEmailId',
           1 => 'emailId',
         ),
         'foreign' => 'inboundEmails',
       ),
-      'filters' =>
+      'filters' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'EmailFilter',
@@ -3431,7 +3431,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'replyEmailTemplate' =>
+      'replyEmailTemplate' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailTemplate',
@@ -3439,7 +3439,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'team' =>
+      'team' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Team',
@@ -3447,7 +3447,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'assignToUser' =>
+      'assignToUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -3455,21 +3455,21 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'inboundEmailTeam',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'inboundEmailId',
           1 => 'teamId',
         ),
         'foreign' => 'inboundEmails',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -3477,7 +3477,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -3486,138 +3486,138 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'Integration' =>
+  'Integration' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'enabled' =>
+      'enabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
   ),
-  'Job' =>
+  'Job' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Pending',
         'len' => 255,
       ),
-      'executeTime' =>
+      'executeTime' => 
       array (
         'type' => 'datetime',
       ),
-      'serviceName' =>
+      'serviceName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'method' =>
+      'method' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'methodName' =>
+      'methodName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'scheduledJobJob' =>
+      'scheduledJobJob' => 
       array (
         'type' => 'foreign',
         'relation' => 'scheduledJob',
         'foreign' => 'job',
       ),
-      'pid' =>
+      'pid' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'attempts' =>
+      'attempts' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'targetId' =>
+      'targetId' => 
       array (
         'type' => 'varchar',
         'len' => 48,
       ),
-      'targetType' =>
+      'targetType' => 
       array (
         'type' => 'varchar',
         'len' => 64,
       ),
-      'failedAttempts' =>
+      'failedAttempts' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'scheduledJobId' =>
+      'scheduledJobId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3625,7 +3625,7 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'scheduledJobName' =>
+      'scheduledJobName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
@@ -3633,9 +3633,9 @@ return array (
         'foreign' => 'name',
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'scheduledJob' =>
+      'scheduledJob' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'ScheduledJob',
@@ -3644,130 +3644,130 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'executeTime' =>
+      'executeTime' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'status',
           1 => 'executeTime',
         ),
       ),
-      'status' =>
+      'status' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'status',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'LeadCapture' =>
+  'LeadCapture' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'isActive' =>
+      'isActive' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'subscribeToTargetList' =>
+      'subscribeToTargetList' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'subscribeContactToTargetList' =>
+      'subscribeContactToTargetList' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'fieldList' =>
+      'fieldList' => 
       array (
         'type' => 'jsonArray',
         'default' => '["firstName","lastName","emailAddress"]',
         'storeArrayValues' => true,
       ),
-      'optInConfirmation' =>
+      'optInConfirmation' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'optInConfirmationLifetime' =>
+      'optInConfirmationLifetime' => 
       array (
         'type' => 'int',
         'default' => '48',
         'len' => 11,
       ),
-      'optInConfirmationSuccessMessage' =>
+      'optInConfirmationSuccessMessage' => 
       array (
         'type' => 'text',
       ),
-      'leadSource' =>
+      'leadSource' => 
       array (
         'type' => 'varchar',
         'default' => 'Web Site',
         'len' => 255,
       ),
-      'apiKey' =>
+      'apiKey' => 
       array (
         'type' => 'varchar',
         'len' => 36,
       ),
-      'exampleRequestUrl' =>
+      'exampleRequestUrl' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'exampleRequestMethod' =>
+      'exampleRequestMethod' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'exampleRequestPayload' =>
+      'exampleRequestPayload' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3775,14 +3775,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'targetListId' =>
+      'targetListId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3790,14 +3790,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'targetListName' =>
+      'targetListName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'targetList',
         'foreign' => 'name',
       ),
-      'optInConfirmationEmailTemplateId' =>
+      'optInConfirmationEmailTemplateId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3805,14 +3805,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'optInConfirmationEmailTemplateName' =>
+      'optInConfirmationEmailTemplateName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'optInConfirmationEmailTemplate',
         'foreign' => 'name',
       ),
-      'targetTeamId' =>
+      'targetTeamId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3820,14 +3820,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'targetTeamName' =>
+      'targetTeamName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'targetTeam',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3835,19 +3835,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3855,39 +3855,39 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'logRecordsIds' =>
+      'logRecordsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'logRecordsNames' =>
+      'logRecordsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'logRecords' =>
+      'logRecords' => 
       array (
         'type' => 'hasMany',
         'entity' => 'LeadCaptureLogRecord',
         'foreignKey' => 'leadCaptureId',
         'foreign' => 'leadCapture',
       ),
-      'optInConfirmationEmailTemplate' =>
+      'optInConfirmationEmailTemplate' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailTemplate',
@@ -3895,7 +3895,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'targetTeam' =>
+      'targetTeam' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Team',
@@ -3903,7 +3903,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -3911,7 +3911,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'targetList' =>
+      'targetList' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'TargetList',
@@ -3919,7 +3919,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -3927,7 +3927,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -3936,33 +3936,33 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'LeadCaptureLogRecord' =>
+  'LeadCaptureLogRecord' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'number' =>
+      'number' => 
       array (
         'type' => 'int',
         'autoincrement' => true,
@@ -3970,26 +3970,26 @@ return array (
         'index' => true,
         'len' => 11,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'isCreated' =>
+      'isCreated' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'leadCaptureId' =>
+      'leadCaptureId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -3997,14 +3997,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'leadCaptureName' =>
+      'leadCaptureName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'leadCapture',
         'foreign' => 'name',
       ),
-      'targetId' =>
+      'targetId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4012,7 +4012,7 @@ return array (
         'index' => 'target',
         'notNull' => false,
       ),
-      'targetType' =>
+      'targetType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -4020,7 +4020,7 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'targetName' =>
+      'targetName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
@@ -4028,14 +4028,14 @@ return array (
         'isParentName' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'target' =>
+      'target' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'targetId',
       ),
-      'leadCapture' =>
+      'leadCapture' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'LeadCapture',
@@ -4044,93 +4044,93 @@ return array (
         'foreign' => 'logRecords',
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'number',
       'order' => 'DESC',
     ),
   ),
-  'NextNumber' =>
+  'NextNumber' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'entityType' =>
+      'entityType' => 
       array (
         'type' => 'varchar',
         'index' => true,
         'len' => 255,
       ),
-      'fieldName' =>
+      'fieldName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'value' =>
+      'value' => 
       array (
         'type' => 'int',
         'default' => '1',
         'len' => 11,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
   ),
-  'Note' =>
+  'Note' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'post' =>
+      'post' => 
       array (
         'type' => 'text',
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'targetType' =>
+      'targetType' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'number' =>
+      'number' => 
       array (
         'type' => 'int',
         'autoincrement' => true,
@@ -4138,40 +4138,40 @@ return array (
         'index' => true,
         'len' => 11,
       ),
-      'isGlobal' =>
+      'isGlobal' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'createdByGender' =>
+      'createdByGender' => 
       array (
         'type' => 'foreign',
         'relation' => 'createdBy',
         'foreign' => 'gender',
       ),
-      'notifiedUserIdList' =>
+      'notifiedUserIdList' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'isInternal' =>
+      'isInternal' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4179,7 +4179,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -4187,14 +4187,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'relatedId' =>
+      'relatedId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4202,7 +4202,7 @@ return array (
         'index' => 'related',
         'notNull' => false,
       ),
-      'relatedType' =>
+      'relatedType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -4210,25 +4210,25 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'relatedName' =>
+      'relatedName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'related',
         'isParentName' => true,
       ),
-      'attachmentsIds' =>
+      'attachmentsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'orderBy' =>
+        'orderBy' => 
         array (
-          0 =>
+          0 => 
           array (
             0 => 'createdAt',
             1 => 'ASC',
           ),
-          1 =>
+          1 => 
           array (
             0 => 'name',
             1 => 'ASC',
@@ -4237,13 +4237,13 @@ return array (
         'isLinkMultipleIdList' => true,
         'relation' => 'attachments',
       ),
-      'attachmentsNames' =>
+      'attachmentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -4251,13 +4251,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'portalsIds' =>
+      'portalsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -4265,13 +4265,13 @@ return array (
         'relation' => 'portals',
         'isUnordered' => true,
       ),
-      'portalsNames' =>
+      'portalsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -4279,13 +4279,13 @@ return array (
         'relation' => 'users',
         'isUnordered' => true,
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4293,19 +4293,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4313,19 +4313,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'superParentId' =>
+      'superParentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4333,7 +4333,7 @@ return array (
         'index' => 'superParent',
         'notNull' => false,
       ),
-      'superParentType' =>
+      'superParentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -4341,77 +4341,77 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'superParentName' =>
+      'superParentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'attachmentsTypes' =>
+      'attachmentsTypes' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'noteUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'noteId',
           1 => 'userId',
         ),
         'foreign' => 'notes',
       ),
-      'portals' =>
+      'portals' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Portal',
         'relationName' => 'notePortal',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'noteId',
           1 => 'portalId',
         ),
         'foreign' => 'notes',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'noteTeam',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'noteId',
           1 => 'teamId',
         ),
         'foreign' => 'notes',
       ),
-      'related' =>
+      'related' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'relatedId',
       ),
-      'superParent' =>
+      'superParent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'superParentId',
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -4419,7 +4419,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -4427,7 +4427,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'attachments' =>
+      'attachments' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Attachment',
@@ -4437,29 +4437,29 @@ return array (
         'relationName' => 'attachments',
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'index',
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
         ),
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'index',
-        'columns' =>
+        'columns' => 
         array (
           0 => 'parentId',
           1 => 'parentType',
         ),
       ),
-      'parentAndSuperParent' =>
+      'parentAndSuperParent' => 
       array (
         'type' => 'index',
-        'columns' =>
+        'columns' => 
         array (
           0 => 'parentId',
           1 => 'parentType',
@@ -4468,33 +4468,33 @@ return array (
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'number',
       'order' => 'DESC',
     ),
   ),
-  'Notification' =>
+  'Notification' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'number' =>
+      'number' => 
       array (
         'type' => 'int',
         'autoincrement' => true,
@@ -4502,42 +4502,42 @@ return array (
         'index' => true,
         'len' => 11,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'noteData' =>
+      'noteData' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'read' =>
+      'read' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'emailIsProcessed' =>
+      'emailIsProcessed' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'message' =>
+      'message' => 
       array (
         'type' => 'text',
       ),
-      'userId' =>
+      'userId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4545,19 +4545,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'userName' =>
+      'userName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'user',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'relatedId' =>
+      'relatedId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4565,7 +4565,7 @@ return array (
         'index' => 'related',
         'notNull' => false,
       ),
-      'relatedType' =>
+      'relatedType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -4573,14 +4573,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'relatedName' =>
+      'relatedName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'related',
         'isParentName' => true,
       ),
-      'relatedParentId' =>
+      'relatedParentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4588,7 +4588,7 @@ return array (
         'index' => 'relatedParent',
         'notNull' => false,
       ),
-      'relatedParentType' =>
+      'relatedParentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -4596,7 +4596,7 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'relatedParentName' =>
+      'relatedParentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
@@ -4604,19 +4604,19 @@ return array (
         'isParentName' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'relatedParent' =>
+      'relatedParent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'relatedParentId',
       ),
-      'related' =>
+      'related' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'relatedId',
       ),
-      'user' =>
+      'user' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -4625,69 +4625,69 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'index',
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
         ),
       ),
-      'user' =>
+      'user' => 
       array (
         'type' => 'index',
-        'columns' =>
+        'columns' => 
         array (
           0 => 'userId',
           1 => 'createdAt',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'number',
       'order' => 'DESC',
     ),
   ),
-  'PasswordChangeRequest' =>
+  'PasswordChangeRequest' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'requestId' =>
+      'requestId' => 
       array (
         'type' => 'varchar',
         'len' => 24,
         'index' => true,
       ),
-      'url' =>
+      'url' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'userId' =>
+      'userId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4695,12 +4695,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'userName' =>
+      'userName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'user',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -4708,9 +4708,9 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'user' =>
+      'user' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -4720,168 +4720,168 @@ return array (
       ),
     ),
   ),
-  'PhoneNumber' =>
+  'PhoneNumber' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'index' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'numeric' =>
+      'numeric' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'index' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'Portal' =>
+  'Portal' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'url' =>
+      'url' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'customId' =>
+      'customId' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'index' => true,
       ),
-      'isActive' =>
+      'isActive' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'isDefault' =>
+      'isDefault' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'tabList' =>
+      'tabList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'quickCreateList' =>
+      'quickCreateList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'theme' =>
+      'theme' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'language' =>
+      'language' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'timeZone' =>
+      'timeZone' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'dateFormat' =>
-      array (
-        'type' => 'varchar',
-        'default' => '',
-        'len' => 255,
-      ),
-      'timeFormat' =>
+      'dateFormat' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'weekStart' =>
+      'timeFormat' => 
+      array (
+        'type' => 'varchar',
+        'default' => '',
+        'len' => 255,
+      ),
+      'weekStart' => 
       array (
         'type' => 'int',
         'default' => '-1',
         'len' => 11,
       ),
-      'defaultCurrency' =>
+      'defaultCurrency' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'dashboardLayout' =>
+      'dashboardLayout' => 
       array (
         'type' => 'jsonArray',
       ),
-      'dashletsOptions' =>
+      'dashletsOptions' => 
       array (
         'type' => 'jsonObject',
       ),
-      'customUrl' =>
+      'customUrl' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'logoId' =>
+      'logoId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4889,13 +4889,13 @@ return array (
         'index' => false,
         'notNull' => false,
       ),
-      'logoName' =>
+      'logoName' => 
       array (
         'type' => 'foreign',
         'relation' => 'logo',
         'foreign' => 'name',
       ),
-      'portalRolesIds' =>
+      'portalRolesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -4903,13 +4903,13 @@ return array (
         'relation' => 'portalRoles',
         'isUnordered' => true,
       ),
-      'portalRolesNames' =>
+      'portalRolesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'companyLogoId' =>
+      'companyLogoId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4917,13 +4917,13 @@ return array (
         'index' => false,
         'notNull' => false,
       ),
-      'companyLogoName' =>
+      'companyLogoName' => 
       array (
         'type' => 'foreign',
         'relation' => 'companyLogo',
         'foreign' => 'name',
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4931,19 +4931,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -4951,52 +4951,52 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'articlesIds' =>
+      'articlesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'articlesNames' =>
+      'articlesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'notesIds' =>
+      'notesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'notesNames' =>
+      'notesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'logo' =>
+      'logo' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Attachment',
@@ -5004,7 +5004,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'companyLogo' =>
+      'companyLogo' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Attachment',
@@ -5012,63 +5012,63 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'articles' =>
+      'articles' => 
       array (
         'type' => 'manyMany',
         'entity' => 'KnowledgeBaseArticle',
         'relationName' => 'knowledgeBaseArticlePortal',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'portalId',
           1 => 'knowledgeBaseArticleId',
         ),
         'foreign' => 'portals',
       ),
-      'notes' =>
+      'notes' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Note',
         'relationName' => 'notePortal',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'portalId',
           1 => 'noteId',
         ),
         'foreign' => 'portals',
       ),
-      'portalRoles' =>
+      'portalRoles' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PortalRole',
         'relationName' => 'portalPortalRole',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'portalId',
           1 => 'portalRoleId',
         ),
         'foreign' => 'portals',
       ),
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'portalUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'portalId',
           1 => 'userId',
         ),
         'foreign' => 'portals',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -5076,7 +5076,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -5085,91 +5085,91 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'PortalRole' =>
+  'PortalRole' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 150,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'fieldData' =>
+      'fieldData' => 
       array (
         'type' => 'jsonObject',
       ),
-      'exportPermission' =>
+      'exportPermission' => 
       array (
         'type' => 'varchar',
         'default' => 'not-set',
         'len' => 255,
       ),
-      'portalsIds' =>
+      'portalsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'portalsNames' =>
+      'portalsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'portals' =>
+      'portals' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Portal',
         'relationName' => 'portalPortalRole',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'portalRoleId',
           1 => 'portalId',
         ),
         'foreign' => 'portalRoles',
       ),
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'portalRoleUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'portalRoleId',
           1 => 'userId',
@@ -5177,364 +5177,364 @@ return array (
         'foreign' => 'portalRoles',
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'Preferences' =>
+  'Preferences' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'timeZone' =>
+      'timeZone' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'dateFormat' =>
-      array (
-        'type' => 'varchar',
-        'default' => '',
-        'len' => 255,
-      ),
-      'timeFormat' =>
+      'dateFormat' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'weekStart' =>
+      'timeFormat' => 
+      array (
+        'type' => 'varchar',
+        'default' => '',
+        'len' => 255,
+      ),
+      'weekStart' => 
       array (
         'type' => 'int',
         'default' => '-1',
         'len' => 11,
       ),
-      'defaultCurrency' =>
+      'defaultCurrency' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'thousandSeparator' =>
+      'thousandSeparator' => 
       array (
         'type' => 'varchar',
         'len' => 1,
         'default' => ',',
       ),
-      'decimalMark' =>
+      'decimalMark' => 
       array (
         'type' => 'varchar',
         'len' => 1,
         'default' => '.',
       ),
-      'dashboardLayout' =>
+      'dashboardLayout' => 
       array (
         'type' => 'jsonArray',
       ),
-      'dashletsOptions' =>
+      'dashletsOptions' => 
       array (
         'type' => 'jsonObject',
       ),
-      'sharedCalendarUserList' =>
+      'sharedCalendarUserList' => 
       array (
         'type' => 'jsonArray',
       ),
-      'calendarViewDataList' =>
+      'calendarViewDataList' => 
       array (
         'type' => 'jsonArray',
       ),
-      'presetFilters' =>
+      'presetFilters' => 
       array (
         'type' => 'jsonObject',
       ),
-      'smtpEmailAddress' =>
+      'smtpEmailAddress' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'smtpServer' =>
+      'smtpServer' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPort' =>
+      'smtpPort' => 
       array (
         'type' => 'int',
         'default' => '25',
         'len' => 11,
       ),
-      'smtpAuth' =>
+      'smtpAuth' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'smtpSecurity' =>
+      'smtpSecurity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpUsername' =>
+      'smtpUsername' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPassword' =>
+      'smtpPassword' => 
       array (
         'type' => 'password',
       ),
-      'language' =>
+      'language' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'exportDelimiter' =>
+      'exportDelimiter' => 
       array (
         'type' => 'varchar',
         'len' => 1,
         'default' => ',',
       ),
-      'receiveAssignmentEmailNotifications' =>
+      'receiveAssignmentEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'receiveMentionEmailNotifications' =>
+      'receiveMentionEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'receiveStreamEmailNotifications' =>
+      'receiveStreamEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'autoFollowEntityTypeList' =>
+      'autoFollowEntityTypeList' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
         'storeArrayValues' => true,
       ),
-      'signature' =>
+      'signature' => 
       array (
         'type' => 'text',
       ),
-      'defaultReminders' =>
+      'defaultReminders' => 
       array (
         'type' => 'jsonArray',
       ),
-      'theme' =>
+      'theme' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'useCustomTabList' =>
+      'useCustomTabList' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'tabList' =>
+      'tabList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'emailReplyToAllByDefault' =>
+      'emailReplyToAllByDefault' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'emailReplyForceHtml' =>
+      'emailReplyForceHtml' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'isPortalUser' =>
+      'isPortalUser' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'doNotFillAssignedUserIfNotRequired' =>
+      'doNotFillAssignedUserIfNotRequired' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'followEntityOnStreamPost' =>
+      'followEntityOnStreamPost' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'followCreatedEntities' =>
+      'followCreatedEntities' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'followCreatedEntityTypeList' =>
+      'followCreatedEntityTypeList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'emailUseExternalClient' =>
+      'emailUseExternalClient' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'scopeColorsDisabled' =>
+      'scopeColorsDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'tabColorsDisabled' =>
+      'tabColorsDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
   ),
-  'Role' =>
+  'Role' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 150,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'assignmentPermission' =>
+      'assignmentPermission' => 
       array (
         'type' => 'varchar',
         'default' => 'not-set',
         'len' => 255,
       ),
-      'userPermission' =>
+      'userPermission' => 
       array (
         'type' => 'varchar',
         'default' => 'not-set',
         'len' => 255,
       ),
-      'portalPermission' =>
+      'portalPermission' => 
       array (
         'type' => 'varchar',
         'default' => 'not-set',
         'len' => 255,
       ),
-      'groupEmailAccountPermission' =>
+      'groupEmailAccountPermission' => 
       array (
         'type' => 'varchar',
         'default' => 'not-set',
         'len' => 255,
       ),
-      'exportPermission' =>
+      'exportPermission' => 
       array (
         'type' => 'varchar',
         'default' => 'not-set',
         'len' => 255,
       ),
-      'dataPrivacyPermission' =>
+      'dataPrivacyPermission' => 
       array (
         'type' => 'varchar',
         'default' => 'not-set',
         'len' => 255,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'fieldData' =>
+      'fieldData' => 
       array (
         'type' => 'jsonObject',
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'roleTeam',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'roleId',
           1 => 'teamId',
         ),
         'foreign' => 'roles',
       ),
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'roleUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'roleId',
           1 => 'userId',
@@ -5542,69 +5542,69 @@ return array (
         'foreign' => 'roles',
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'ScheduledJob' =>
+  'ScheduledJob' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'job' =>
+      'job' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'scheduling' =>
+      'scheduling' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'lastRun' =>
+      'lastRun' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'isInternal' =>
+      'isInternal' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -5612,19 +5612,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -5632,39 +5632,39 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'logIds' =>
+      'logIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'logNames' =>
+      'logNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'log' =>
+      'log' => 
       array (
         'type' => 'hasMany',
         'entity' => 'ScheduledJobLogRecord',
         'foreignKey' => 'scheduledJobId',
         'foreign' => 'scheduledJob',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -5672,7 +5672,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -5681,48 +5681,48 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'ScheduledJobLogRecord' =>
+  'ScheduledJobLogRecord' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'executionTime' =>
+      'executionTime' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'scheduledJobId' =>
+      'scheduledJobId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -5730,14 +5730,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'scheduledJobName' =>
+      'scheduledJobName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'scheduledJob',
         'foreign' => 'name',
       ),
-      'targetId' =>
+      'targetId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -5745,7 +5745,7 @@ return array (
         'index' => 'target',
         'notNull' => false,
       ),
-      'targetType' =>
+      'targetType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -5753,7 +5753,7 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'targetName' =>
+      'targetName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
@@ -5761,9 +5761,9 @@ return array (
         'isParentName' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'scheduledJob' =>
+      'scheduledJob' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'ScheduledJob',
@@ -5772,648 +5772,648 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'executionTime',
       'order' => 'DESC',
     ),
   ),
-  'Settings' =>
+  'Settings' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'useCache' =>
+      'useCache' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'recordsPerPage' =>
+      'recordsPerPage' => 
       array (
         'type' => 'int',
         'default' => '20',
         'len' => 11,
       ),
-      'recordsPerPageSmall' =>
+      'recordsPerPageSmall' => 
       array (
         'type' => 'int',
         'default' => '10',
         'len' => 11,
       ),
-      'timeZone' =>
+      'timeZone' => 
       array (
         'type' => 'varchar',
         'default' => 'UTC',
         'len' => 255,
       ),
-      'dateFormat' =>
+      'dateFormat' => 
       array (
         'type' => 'varchar',
         'default' => 'MM/DD/YYYY',
         'len' => 255,
       ),
-      'timeFormat' =>
+      'timeFormat' => 
       array (
         'type' => 'varchar',
         'default' => 'HH:mm',
         'len' => 255,
       ),
-      'weekStart' =>
+      'weekStart' => 
       array (
         'type' => 'int',
         'default' => '0',
         'len' => 11,
       ),
-      'thousandSeparator' =>
+      'thousandSeparator' => 
       array (
         'type' => 'varchar',
         'len' => 1,
         'default' => ',',
       ),
-      'decimalMark' =>
+      'decimalMark' => 
       array (
         'type' => 'varchar',
         'len' => 1,
         'default' => '.',
       ),
-      'currencyList' =>
+      'currencyList' => 
       array (
         'type' => 'jsonArray',
         'default' => '["USD","EUR"]',
         'storeArrayValues' => true,
       ),
-      'defaultCurrency' =>
+      'defaultCurrency' => 
       array (
         'type' => 'varchar',
         'default' => 'USD',
         'len' => 255,
       ),
-      'baseCurrency' =>
+      'baseCurrency' => 
       array (
         'type' => 'varchar',
         'default' => 'USD',
         'len' => 255,
       ),
-      'currencyRates' =>
+      'currencyRates' => 
       array (
         'type' => 'base',
         'notStorable' => true,
       ),
-      'outboundEmailIsShared' =>
+      'outboundEmailIsShared' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'outboundEmailFromName' =>
+      'outboundEmailFromName' => 
       array (
         'type' => 'varchar',
         'default' => 'EspoCRM',
         'len' => 255,
       ),
-      'outboundEmailFromAddress' =>
+      'outboundEmailFromAddress' => 
       array (
         'type' => 'varchar',
         'default' => 'crm@example.com',
         'len' => 255,
       ),
-      'smtpServer' =>
+      'smtpServer' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPort' =>
+      'smtpPort' => 
       array (
         'type' => 'int',
         'default' => '25',
         'len' => 11,
       ),
-      'smtpAuth' =>
+      'smtpAuth' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'smtpSecurity' =>
+      'smtpSecurity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpUsername' =>
+      'smtpUsername' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'smtpPassword' =>
+      'smtpPassword' => 
       array (
         'type' => 'password',
       ),
-      'tabList' =>
+      'tabList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'quickCreateList' =>
+      'quickCreateList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'language' =>
+      'language' => 
       array (
         'type' => 'varchar',
         'default' => 'en_US',
         'len' => 255,
       ),
-      'globalSearchEntityList' =>
+      'globalSearchEntityList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'exportDelimiter' =>
+      'exportDelimiter' => 
       array (
         'type' => 'varchar',
         'len' => 1,
         'default' => ',',
       ),
-      'authenticationMethod' =>
+      'authenticationMethod' => 
       array (
         'type' => 'varchar',
         'default' => 'Espo',
         'len' => 255,
       ),
-      'ldapHost' =>
+      'ldapHost' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapPort' =>
+      'ldapPort' => 
       array (
         'type' => 'varchar',
         'default' => '389',
         'len' => 255,
       ),
-      'ldapSecurity' =>
+      'ldapSecurity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapAuth' =>
+      'ldapAuth' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'ldapUsername' =>
+      'ldapUsername' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapPassword' =>
+      'ldapPassword' => 
       array (
         'type' => 'password',
       ),
-      'ldapBindRequiresDn' =>
+      'ldapBindRequiresDn' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'ldapUserLoginFilter' =>
+      'ldapUserLoginFilter' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapBaseDn' =>
+      'ldapBaseDn' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapAccountCanonicalForm' =>
+      'ldapAccountCanonicalForm' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapAccountDomainName' =>
+      'ldapAccountDomainName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapAccountDomainNameShort' =>
+      'ldapAccountDomainNameShort' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapAccountFilterFormat' =>
+      'ldapAccountFilterFormat' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapTryUsernameSplit' =>
+      'ldapTryUsernameSplit' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'ldapOptReferrals' =>
+      'ldapOptReferrals' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'ldapPortalUserLdapAuth' =>
+      'ldapPortalUserLdapAuth' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'ldapCreateEspoUser' =>
+      'ldapCreateEspoUser' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'ldapUserNameAttribute' =>
+      'ldapUserNameAttribute' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapUserObjectClass' =>
+      'ldapUserObjectClass' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapUserFirstNameAttribute' =>
+      'ldapUserFirstNameAttribute' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapUserLastNameAttribute' =>
+      'ldapUserLastNameAttribute' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapUserTitleAttribute' =>
+      'ldapUserTitleAttribute' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapUserEmailAddressAttribute' =>
+      'ldapUserEmailAddressAttribute' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'ldapUserPhoneNumberAttribute' =>
+      'ldapUserPhoneNumberAttribute' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'exportDisabled' =>
+      'exportDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'assignmentEmailNotifications' =>
+      'assignmentEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'assignmentEmailNotificationsEntityList' =>
+      'assignmentEmailNotificationsEntityList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'assignmentNotificationsEntityList' =>
+      'assignmentNotificationsEntityList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'postEmailNotifications' =>
+      'postEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'updateEmailNotifications' =>
+      'updateEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'mentionEmailNotifications' =>
+      'mentionEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'streamEmailNotifications' =>
+      'streamEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'portalStreamEmailNotifications' =>
+      'portalStreamEmailNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'streamEmailNotificationsEntityList' =>
+      'streamEmailNotificationsEntityList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'streamEmailNotificationsTypeList' =>
+      'streamEmailNotificationsTypeList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'b2cMode' =>
+      'b2cMode' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'avatarsDisabled' =>
+      'avatarsDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'followCreatedEntities' =>
+      'followCreatedEntities' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'adminPanelIframeUrl' =>
+      'adminPanelIframeUrl' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'displayListViewRecordCount' =>
+      'displayListViewRecordCount' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'userThemesDisabled' =>
+      'userThemesDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'theme' =>
+      'theme' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'emailMessageMaxSize' =>
+      'emailMessageMaxSize' => 
       array (
         'type' => 'float',
         'notNull' => false,
       ),
-      'inboundEmailMaxPortionSize' =>
+      'inboundEmailMaxPortionSize' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'personalEmailMaxPortionSize' =>
+      'personalEmailMaxPortionSize' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'maxEmailAccountCount' =>
+      'maxEmailAccountCount' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'massEmailMaxPerHourCount' =>
+      'massEmailMaxPerHourCount' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'authTokenLifetime' =>
+      'authTokenLifetime' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'default' => '0',
       ),
-      'authTokenMaxIdleTime' =>
+      'authTokenMaxIdleTime' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'default' => '0',
       ),
-      'authTokenPreventConcurrent' =>
+      'authTokenPreventConcurrent' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'dashboardLayout' =>
+      'dashboardLayout' => 
       array (
         'type' => 'jsonArray',
       ),
-      'dashletsOptions' =>
+      'dashletsOptions' => 
       array (
         'type' => 'jsonObject',
       ),
-      'siteUrl' =>
+      'siteUrl' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'applicationName' =>
+      'applicationName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'readableDateFormatDisabled' =>
+      'readableDateFormatDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'addressFormat' =>
+      'addressFormat' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'currencyFormat' =>
+      'currencyFormat' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'currencyDecimalPlaces' =>
+      'currencyDecimalPlaces' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'notificationSoundsDisabled' =>
+      'notificationSoundsDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'calendarEntityList' =>
+      'calendarEntityList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'activitiesEntityList' =>
+      'activitiesEntityList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'historyEntityList' =>
+      'historyEntityList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'googleMapsApiKey' =>
+      'googleMapsApiKey' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'massEmailDisableMandatoryOptOutLink' =>
+      'massEmailDisableMandatoryOptOutLink' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'aclStrictMode' =>
+      'aclStrictMode' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'aclAllowDeleteCreated' =>
+      'aclAllowDeleteCreated' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'lastViewedCount' =>
+      'lastViewedCount' => 
       array (
         'type' => 'int',
         'default' => '20',
         'len' => 11,
       ),
-      'adminNotifications' =>
+      'adminNotifications' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'adminNotificationsNewVersion' =>
+      'adminNotificationsNewVersion' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'adminNotificationsNewExtensionVersion' =>
+      'adminNotificationsNewExtensionVersion' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'textFilterUseContainsForVarchar' =>
+      'textFilterUseContainsForVarchar' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'scopeColorsDisabled' =>
+      'scopeColorsDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'tabColorsDisabled' =>
+      'tabColorsDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'tabIconsDisabled' =>
+      'tabIconsDisabled' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'emailAddressIsOptedOutByDefault' =>
+      'emailAddressIsOptedOutByDefault' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'outboundEmailBccAddress' =>
+      'outboundEmailBccAddress' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'cleanupDeletedRecords' =>
+      'cleanupDeletedRecords' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'addressPreviewStreet' =>
+      'addressPreviewStreet' => 
       array (
         'type' => 'text',
         'dbType' => 'varchar',
         'len' => 255,
         'notStorable' => true,
       ),
-      'addressPreviewCity' =>
+      'addressPreviewCity' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'addressPreviewState' =>
+      'addressPreviewState' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'addressPreviewCountry' =>
+      'addressPreviewCountry' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'addressPreviewPostalCode' =>
+      'addressPreviewPostalCode' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'addressPreviewMap' =>
+      'addressPreviewMap' => 
       array (
         'type' => 'map',
         'notExportable' => true,
         'notStorable' => true,
       ),
-      'companyLogoId' =>
+      'companyLogoId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -6421,13 +6421,13 @@ return array (
         'index' => false,
         'notNull' => false,
       ),
-      'companyLogoName' =>
+      'companyLogoName' => 
       array (
         'type' => 'foreign',
         'relation' => 'companyLogo',
         'foreign' => 'name',
       ),
-      'ldapUserDefaultTeamId' =>
+      'ldapUserDefaultTeamId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -6435,12 +6435,12 @@ return array (
         'index' => 'ldapUserDefaultTeam',
         'notNull' => false,
       ),
-      'ldapUserDefaultTeamName' =>
+      'ldapUserDefaultTeamName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'ldapUserTeamsIds' =>
+      'ldapUserTeamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -6448,13 +6448,13 @@ return array (
         'relation' => 'ldapUserTeams',
         'isUnordered' => true,
       ),
-      'ldapUserTeamsNames' =>
+      'ldapUserTeamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'ldapPortalUserPortalsIds' =>
+      'ldapPortalUserPortalsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -6462,13 +6462,13 @@ return array (
         'relation' => 'ldapPortalUserPortals',
         'isUnordered' => true,
       ),
-      'ldapPortalUserPortalsNames' =>
+      'ldapPortalUserPortalsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'ldapPortalUserRolesIds' =>
+      'ldapPortalUserRolesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -6476,16 +6476,16 @@ return array (
         'relation' => 'ldapPortalUserRoles',
         'isUnordered' => true,
       ),
-      'ldapPortalUserRolesNames' =>
+      'ldapPortalUserRolesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'companyLogo' =>
+      'companyLogo' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Attachment',
@@ -6495,43 +6495,43 @@ return array (
       ),
     ),
   ),
-  'Team' =>
+  'Team' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'positionList' =>
+      'positionList' => 
       array (
         'type' => 'jsonArray',
         'storeArrayValues' => true,
       ),
-      'userRole' =>
+      'userRole' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'rolesIds' =>
+      'rolesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -6539,103 +6539,103 @@ return array (
         'relation' => 'roles',
         'isUnordered' => true,
       ),
-      'rolesNames' =>
+      'rolesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'inboundEmailsIds' =>
+      'inboundEmailsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'inboundEmailsNames' =>
+      'inboundEmailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'notesIds' =>
+      'notesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'notesNames' =>
+      'notesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'inboundEmails' =>
+      'inboundEmails' => 
       array (
         'type' => 'manyMany',
         'entity' => 'InboundEmail',
         'relationName' => 'inboundEmailTeam',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'teamId',
           1 => 'inboundEmailId',
         ),
         'foreign' => 'teams',
       ),
-      'notes' =>
+      'notes' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Note',
         'relationName' => 'noteTeam',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'teamId',
           1 => 'noteId',
         ),
         'foreign' => 'teams',
       ),
-      'roles' =>
+      'roles' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Role',
         'relationName' => 'roleTeam',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'teamId',
           1 => 'roleId',
         ),
         'foreign' => 'teams',
       ),
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'teamUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'teamId',
           1 => 'userId',
         ),
         'foreign' => 'teams',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'role' =>
+          'role' => 
           array (
             'type' => 'varchar',
             'len' => 100,
@@ -6643,119 +6643,119 @@ return array (
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'Template' =>
+  'Template' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'body' =>
+      'body' => 
       array (
         'type' => 'text',
       ),
-      'header' =>
+      'header' => 
       array (
         'type' => 'text',
       ),
-      'footer' =>
+      'footer' => 
       array (
         'type' => 'text',
       ),
-      'entityType' =>
+      'entityType' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'leftMargin' =>
+      'leftMargin' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'default' => '10',
       ),
-      'rightMargin' =>
+      'rightMargin' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'default' => '10',
       ),
-      'topMargin' =>
+      'topMargin' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'default' => '10',
       ),
-      'bottomMargin' =>
+      'bottomMargin' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'default' => '25',
       ),
-      'printFooter' =>
+      'printFooter' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'footerPosition' =>
+      'footerPosition' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'default' => '15',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'variables' =>
+      'variables' => 
       array (
         'type' => 'base',
         'notStorable' => true,
       ),
-      'pageOrientation' =>
+      'pageOrientation' => 
       array (
         'type' => 'varchar',
         'default' => 'Portrait',
         'len' => 255,
       ),
-      'pageFormat' =>
+      'pageFormat' => 
       array (
         'type' => 'varchar',
         'default' => 'A4',
         'len' => 255,
       ),
-      'fontFace' =>
+      'fontFace' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -6763,13 +6763,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -6777,19 +6777,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -6797,12 +6797,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -6810,9 +6810,9 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -6820,7 +6820,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -6828,23 +6828,23 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Template',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
@@ -6852,48 +6852,48 @@ return array (
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'UniqueId' =>
+  'UniqueId' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'index' => true,
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'terminateAt' =>
+      'terminateAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -6901,19 +6901,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'targetId' =>
+      'targetId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -6921,7 +6921,7 @@ return array (
         'index' => 'target',
         'notNull' => false,
       ),
-      'targetType' =>
+      'targetType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -6929,7 +6929,7 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'targetName' =>
+      'targetName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
@@ -6937,14 +6937,14 @@ return array (
         'isParentName' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'target' =>
+      'target' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'targetId',
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -6953,113 +6953,113 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'User' =>
+  'User' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'select' => 'TRIM(CONCAT(IFNULL(user.first_name, \'\'), \' \', IFNULL(user.last_name, \'\')))',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => '(user.first_name LIKE {value} OR user.last_name LIKE {value} OR CONCAT(user.first_name, \' \', user.last_name) LIKE {value} OR CONCAT(user.last_name, \' \', user.first_name) LIKE {value})',
           '=' => '(user.first_name = {value} OR user.last_name = {value} OR CONCAT(user.first_name, \' \', user.last_name) = {value} OR CONCAT(user.last_name, \' \', user.first_name) = {value})',
         ),
         'orderBy' => 'user.first_name {direction}',
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'isAdmin' =>
+      'isAdmin' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'userName' =>
+      'userName' => 
       array (
         'type' => 'varchar',
         'len' => 50,
       ),
-      'password' =>
+      'password' => 
       array (
         'type' => 'password',
         'len' => 150,
       ),
-      'passwordConfirm' =>
+      'passwordConfirm' => 
       array (
         'type' => 'password',
         'len' => 150,
         'notStorable' => true,
       ),
-      'salutationName' =>
+      'salutationName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'firstName' =>
+      'firstName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'lastName' =>
+      'lastName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'isActive' =>
+      'isActive' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'isPortalUser' =>
+      'isPortalUser' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'isSuperAdmin' =>
+      'isSuperAdmin' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'title' =>
+      'title' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'position' =>
+      'position' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
-          'LIKE' =>
+          'LIKE' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'teams',
                 1 => 'teamsPosition',
@@ -7068,11 +7068,11 @@ return array (
             'sql' => 'teamsPositionMiddle.role LIKE {value}',
             'distinct' => true,
           ),
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'teams',
                 1 => 'teamsPosition',
@@ -7081,11 +7081,11 @@ return array (
             'sql' => 'teamsPositionMiddle.role = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'teams',
                 1 => 'teamsPosition',
@@ -7094,11 +7094,11 @@ return array (
             'sql' => 'teamsPositionMiddle.role <> {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'teams',
                 1 => 'teamsPosition',
@@ -7107,11 +7107,11 @@ return array (
             'sql' => 'teamsPositionMiddle.role IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'teams',
                 1 => 'teamsPosition',
@@ -7122,12 +7122,12 @@ return array (
           ),
         ),
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'email',
         'notStorable' => true,
         'select' => 'emailAddresses.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'user.id IN (
                                 SELECT entity_id
@@ -7137,11 +7137,11 @@ return array (
                                     entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'User\' AND
                                     email_address.deleted = 0 AND email_address.lower LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -7150,11 +7150,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -7163,11 +7163,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -7176,11 +7176,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -7189,11 +7189,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -7202,11 +7202,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -7218,12 +7218,12 @@ return array (
         ),
         'orderBy' => 'emailAddresses.lower {direction}',
       ),
-      'phoneNumber' =>
+      'phoneNumber' => 
       array (
         'type' => 'phone',
         'notStorable' => true,
         'select' => 'phoneNumbers.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'user.id IN (
                                 SELECT entity_id
@@ -7233,11 +7233,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'User\' AND
                                     phone_number.deleted = 0 AND phone_number.name LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -7246,11 +7246,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -7259,11 +7259,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -7272,11 +7272,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -7285,11 +7285,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -7298,11 +7298,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -7314,38 +7314,38 @@ return array (
         ),
         'orderBy' => 'phoneNumbers.name {direction}',
       ),
-      'token' =>
+      'token' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'authTokenId' =>
+      'authTokenId' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'authLogRecordId' =>
+      'authLogRecordId' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'ipAddress' =>
+      'ipAddress' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'acceptanceStatus' =>
+      'acceptanceStatus' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
         'notStorable' => true,
         'len' => 255,
       ),
-      'acceptanceStatusMeetings' =>
+      'acceptanceStatusMeetings' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
@@ -7353,7 +7353,7 @@ return array (
         'relation' => 'meetings',
         'len' => 255,
       ),
-      'acceptanceStatusCalls' =>
+      'acceptanceStatusCalls' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
@@ -7361,49 +7361,49 @@ return array (
         'relation' => 'calls',
         'len' => 255,
       ),
-      'teamRole' =>
+      'teamRole' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'sendAccessInfo' =>
+      'sendAccessInfo' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'gender' =>
+      'gender' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'lastAccess' =>
+      'lastAccess' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
         'notStorable' => true,
       ),
-      'emailAddressIsOptedOut' =>
+      'emailAddressIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'select' => 'emailAddresses.opt_out',
-        'where' =>
+        'where' => 
         array (
-          '= TRUE' =>
+          '= TRUE' => 
           array (
             'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
           ),
-          '= FALSE' =>
+          '= FALSE' => 
           array (
             'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
           ),
@@ -7411,21 +7411,21 @@ return array (
         'orderBy' => 'emailAddresses.opt_out {direction}',
         'default' => false,
       ),
-      'emailAddressData' =>
+      'emailAddressData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberData' =>
+      'phoneNumberData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberNumeric' =>
+      'phoneNumberNumeric' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'user.id IN (
                                 SELECT entity_id
@@ -7435,11 +7435,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'User\' AND
                                     phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -7448,11 +7448,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -7461,11 +7461,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -7474,11 +7474,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -7487,11 +7487,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -7500,11 +7500,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -7515,7 +7515,7 @@ return array (
           ),
         ),
       ),
-      'defaultTeamId' =>
+      'defaultTeamId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -7523,14 +7523,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'defaultTeamName' =>
+      'defaultTeamName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'defaultTeam',
         'foreign' => 'name',
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -7538,18 +7538,18 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'teamsColumns' =>
+      'teamsColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'rolesIds' =>
+      'rolesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -7557,13 +7557,13 @@ return array (
         'relation' => 'roles',
         'isUnordered' => true,
       ),
-      'rolesNames' =>
+      'rolesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'portalsIds' =>
+      'portalsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -7571,13 +7571,13 @@ return array (
         'relation' => 'portals',
         'isUnordered' => true,
       ),
-      'portalsNames' =>
+      'portalsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'portalRolesIds' =>
+      'portalRolesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -7585,13 +7585,13 @@ return array (
         'relation' => 'portalRoles',
         'isUnordered' => true,
       ),
-      'portalRolesNames' =>
+      'portalRolesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'contactId' =>
+      'contactId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -7599,19 +7599,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'contactName' =>
+      'contactName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'contact',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'accountsIds' =>
+      'accountsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -7619,13 +7619,13 @@ return array (
         'relation' => 'accounts',
         'isUnordered' => true,
       ),
-      'accountsNames' =>
+      'accountsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -7634,12 +7634,12 @@ return array (
         'notStorable' => true,
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'portalId' =>
+      'portalId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -7648,12 +7648,12 @@ return array (
         'notStorable' => true,
         'notNull' => false,
       ),
-      'portalName' =>
+      'portalName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'avatarId' =>
+      'avatarId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -7661,13 +7661,13 @@ return array (
         'index' => false,
         'notNull' => false,
       ),
-      'avatarName' =>
+      'avatarName' => 
       array (
         'type' => 'foreign',
         'relation' => 'avatar',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -7675,148 +7675,148 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'targetListsIds' =>
+      'targetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'targetListsNames' =>
+      'targetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'notesIds' =>
+      'notesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'notesNames' =>
+      'notesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'preferencesId' =>
+      'preferencesId' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'preferencesName' =>
+      'preferencesName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailAddresses' =>
+      'emailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'relationName' => 'entityEmailAddress',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'emailAddressId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'User',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'phoneNumbers' =>
+      'phoneNumbers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PhoneNumber',
         'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'phoneNumberId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'User',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'avatar' =>
+      'avatar' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Attachment',
@@ -7824,49 +7824,49 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'targetLists' =>
+      'targetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'targetListUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'targetListId',
         ),
         'foreign' => 'users',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Task',
         'foreignKey' => 'assignedUserId',
         'foreign' => 'assignedUser',
       ),
-      'accounts' =>
+      'accounts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Account',
         'relationName' => 'AccountPortalUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'accountId',
         ),
         'foreign' => 'portalUsers',
       ),
-      'contact' =>
+      'contact' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Contact',
@@ -7874,51 +7874,51 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'portalUser',
       ),
-      'notes' =>
+      'notes' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Note',
         'relationName' => 'noteUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'noteId',
         ),
         'foreign' => 'users',
       ),
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Email',
         'relationName' => 'emailUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'emailId',
         ),
         'foreign' => 'users',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'isRead' =>
+          'isRead' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
-          'isImportant' =>
+          'isImportant' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
-          'inTrash' =>
+          'inTrash' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
-          'folderId' =>
+          'folderId' => 
           array (
             'type' => 'varchar',
             'default' => NULL,
@@ -7926,22 +7926,22 @@ return array (
           ),
         ),
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Call',
         'relationName' => 'callUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'callId',
         ),
         'foreign' => 'users',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -7949,22 +7949,22 @@ return array (
           ),
         ),
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Meeting',
         'relationName' => 'meetingUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'meetingId',
         ),
         'foreign' => 'users',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -7972,56 +7972,56 @@ return array (
           ),
         ),
       ),
-      'preferences' =>
+      'preferences' => 
       array (
         'type' => 'hasOne',
         'entity' => 'Preferences',
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'portalRoles' =>
+      'portalRoles' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PortalRole',
         'relationName' => 'portalRoleUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'portalRoleId',
         ),
         'foreign' => 'users',
       ),
-      'portals' =>
+      'portals' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Portal',
         'relationName' => 'portalUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'portalId',
         ),
         'foreign' => 'users',
       ),
-      'roles' =>
+      'roles' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Role',
         'relationName' => 'roleUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'roleId',
         ),
         'foreign' => 'users',
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -8029,29 +8029,29 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'teamUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'userId',
           1 => 'teamId',
         ),
         'foreign' => 'users',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'role' =>
+          'role' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'defaultTeam' =>
+      'defaultTeam' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Team',
@@ -8060,43 +8060,43 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'userName',
       'order' => 'ASC',
     ),
   ),
-  'Account' =>
+  'Account' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 249,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'website' =>
+      'website' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'email',
         'notStorable' => true,
         'select' => 'emailAddresses.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'account.id IN (
                                 SELECT entity_id
@@ -8106,11 +8106,11 @@ return array (
                                     entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Account\' AND
                                     email_address.deleted = 0 AND email_address.lower LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -8119,11 +8119,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -8132,11 +8132,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -8145,11 +8145,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -8158,11 +8158,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -8171,11 +8171,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -8187,12 +8187,12 @@ return array (
         ),
         'orderBy' => 'emailAddresses.lower {direction}',
       ),
-      'phoneNumber' =>
+      'phoneNumber' => 
       array (
         'type' => 'phone',
         'notStorable' => true,
         'select' => 'phoneNumbers.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'account.id IN (
                                 SELECT entity_id
@@ -8202,11 +8202,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Account\' AND
                                     phone_number.deleted = 0 AND phone_number.name LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -8215,11 +8215,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -8228,11 +8228,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -8241,11 +8241,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -8254,11 +8254,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -8267,11 +8267,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -8283,122 +8283,122 @@ return array (
         ),
         'orderBy' => 'phoneNumbers.name {direction}',
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'industry' =>
+      'industry' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'sicCode' =>
+      'sicCode' => 
       array (
         'type' => 'varchar',
         'len' => 40,
       ),
-      'contactRole' =>
+      'contactRole' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'notStorable' => true,
       ),
-      'contactIsInactive' =>
+      'contactIsInactive' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'billingAddressStreet' =>
+      'billingAddressStreet' => 
       array (
         'type' => 'text',
         'dbType' => 'varchar',
         'len' => 255,
       ),
-      'billingAddressCity' =>
+      'billingAddressCity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'billingAddressState' =>
+      'billingAddressState' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'billingAddressCountry' =>
+      'billingAddressCountry' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'billingAddressPostalCode' =>
+      'billingAddressPostalCode' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'shippingAddressStreet' =>
+      'shippingAddressStreet' => 
       array (
         'type' => 'text',
         'dbType' => 'varchar',
         'len' => 255,
       ),
-      'shippingAddressCity' =>
+      'shippingAddressCity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'shippingAddressState' =>
+      'shippingAddressState' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'shippingAddressCountry' =>
+      'shippingAddressCountry' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'shippingAddressPostalCode' =>
+      'shippingAddressPostalCode' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'targetListIsOptedOut' =>
+      'targetListIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'emailAddressIsOptedOut' =>
+      'emailAddressIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'select' => 'emailAddresses.opt_out',
-        'where' =>
+        'where' => 
         array (
-          '= TRUE' =>
+          '= TRUE' => 
           array (
             'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
           ),
-          '= FALSE' =>
+          '= FALSE' => 
           array (
             'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
           ),
@@ -8406,33 +8406,33 @@ return array (
         'orderBy' => 'emailAddresses.opt_out {direction}',
         'default' => false,
       ),
-      'billingAddressMap' =>
+      'billingAddressMap' => 
       array (
         'type' => 'map',
         'notExportable' => true,
         'notStorable' => true,
       ),
-      'shippingAddressMap' =>
+      'shippingAddressMap' => 
       array (
         'type' => 'map',
         'notExportable' => true,
         'notStorable' => true,
       ),
-      'emailAddressData' =>
+      'emailAddressData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberData' =>
+      'phoneNumberData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberNumeric' =>
+      'phoneNumberNumeric' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'account.id IN (
                                 SELECT entity_id
@@ -8442,11 +8442,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Account\' AND
                                     phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -8455,11 +8455,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -8468,11 +8468,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -8481,11 +8481,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -8494,11 +8494,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -8507,11 +8507,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -8522,7 +8522,7 @@ return array (
           ),
         ),
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -8530,14 +8530,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -8545,19 +8545,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -8565,19 +8565,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -8585,19 +8585,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -8605,13 +8605,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'targetListsIds' =>
+      'targetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -8619,13 +8619,13 @@ return array (
         'relation' => 'targetLists',
         'isUnordered' => true,
       ),
-      'targetListsNames' =>
+      'targetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'targetListId' =>
+      'targetListId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -8634,237 +8634,237 @@ return array (
         'notStorable' => true,
         'notNull' => false,
       ),
-      'targetListName' =>
+      'targetListName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'originalLeadId' =>
+      'originalLeadId' => 
       array (
         'type' => 'varchar',
         'index' => 'originalLead',
         'notStorable' => true,
       ),
-      'originalLeadName' =>
+      'originalLeadName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'isFollowed' =>
+      'isFollowed' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'followersIds' =>
+      'followersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'followersNames' =>
+      'followersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'portalUsersIds' =>
+      'portalUsersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'portalUsersNames' =>
+      'portalUsersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignLogRecordsIds' =>
+      'campaignLogRecordsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'campaignLogRecordsNames' =>
+      'campaignLogRecordsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksPrimaryIds' =>
+      'tasksPrimaryIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'tasksPrimaryNames' =>
+      'tasksPrimaryNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsPrimaryIds' =>
+      'callsPrimaryIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsPrimaryNames' =>
+      'callsPrimaryNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'emailsPrimaryIds' =>
+      'emailsPrimaryIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'emailsPrimaryNames' =>
+      'emailsPrimaryNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsPrimaryIds' =>
+      'meetingsPrimaryIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsPrimaryNames' =>
+      'meetingsPrimaryNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'documentsIds' =>
+      'documentsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'documentsNames' =>
+      'documentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'casesIds' =>
+      'casesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'casesNames' =>
+      'casesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'opportunitiesIds' =>
+      'opportunitiesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'opportunitiesNames' =>
+      'opportunitiesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailAddresses' =>
+      'emailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'relationName' => 'entityEmailAddress',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'emailAddressId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Account',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'phoneNumbers' =>
+      'phoneNumbers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PhoneNumber',
         'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'phoneNumberId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Account',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'originalLead' =>
+      'originalLead' => 
       array (
         'type' => 'hasOne',
         'entity' => 'Lead',
@@ -8872,42 +8872,42 @@ return array (
         'foreign' => 'createdAccount',
         'noJoin' => true,
       ),
-      'portalUsers' =>
+      'portalUsers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'AccountPortalUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'accountId',
           1 => 'userId',
         ),
         'foreign' => 'accounts',
       ),
-      'targetLists' =>
+      'targetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'accountTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'accountId',
           1 => 'targetListId',
         ),
         'foreign' => 'accounts',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'campaignLogRecords' =>
+      'campaignLogRecords' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'CampaignLogRecord',
@@ -8915,7 +8915,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -8924,7 +8924,7 @@ return array (
         'foreign' => 'accounts',
         'noJoin' => true,
       ),
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Email',
@@ -8932,7 +8932,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -8940,7 +8940,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Call',
@@ -8948,7 +8948,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Meeting',
@@ -8956,113 +8956,113 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'tasksPrimary' =>
+      'tasksPrimary' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Task',
         'foreignKey' => 'accountId',
         'foreign' => 'account',
       ),
-      'callsPrimary' =>
+      'callsPrimary' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'accountId',
         'foreign' => 'account',
       ),
-      'emailsPrimary' =>
+      'emailsPrimary' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Email',
         'foreignKey' => 'accountId',
         'foreign' => 'account',
       ),
-      'meetingsPrimary' =>
+      'meetingsPrimary' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'accountId',
         'foreign' => 'account',
       ),
-      'documents' =>
+      'documents' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Document',
         'relationName' => 'accountDocument',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'accountId',
           1 => 'documentId',
         ),
         'foreign' => 'accounts',
       ),
-      'cases' =>
+      'cases' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Case',
         'foreignKey' => 'accountId',
         'foreign' => 'account',
       ),
-      'opportunities' =>
+      'opportunities' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Opportunity',
         'foreignKey' => 'accountId',
         'foreign' => 'account',
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Contact',
         'relationName' => 'accountContact',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'accountId',
           1 => 'contactId',
         ),
         'foreign' => 'accounts',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'role' =>
+          'role' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'isInactive' =>
+          'isInactive' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Account',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -9070,7 +9070,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -9078,7 +9078,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -9087,74 +9087,74 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'createdAt' =>
+      'createdAt' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'deleted',
         ),
       ),
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Call' =>
+  'Call' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Planned',
         'len' => 255,
       ),
-      'dateStart' =>
+      'dateStart' => 
       array (
         'type' => 'datetime',
       ),
-      'dateEnd' =>
+      'dateEnd' => 
       array (
         'type' => 'datetime',
       ),
-      'duration' =>
+      'duration' => 
       array (
         'type' => 'int',
         'notStorable' => true,
@@ -9163,30 +9163,30 @@ return array (
         'orderBy' => 'duration {direction}',
         'len' => 11,
       ),
-      'reminders' =>
+      'reminders' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'direction' =>
+      'direction' => 
       array (
         'type' => 'varchar',
         'default' => 'Outbound',
         'len' => 255,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'acceptanceStatus' =>
+      'acceptanceStatus' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'users',
               1 => 'contacts',
@@ -9196,9 +9196,9 @@ return array (
             'distinct' => true,
           ),
           '<>' => 'call.id NOT IN (SELECT call_id FROM call_contact WHERE deleted = 0 AND status = {value}) AND call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status = {value}) AND call.id NOT IN (SELECT call_id FROM call_lead WHERE deleted = 0 AND status = {value})',
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'users',
               1 => 'leads',
@@ -9208,9 +9208,9 @@ return array (
             'distinct' => true,
           ),
           'NOT IN' => 'call.id NOT IN (SELECT call_id FROM call_contact WHERE deleted = 0 AND status IN {value}) AND call.id NOT IN (SELECT call_id FROM call_user WHERE deleted = 0 AND status IN {value}) AND call.id NOT IN (SELECT call_id FROM call_lead WHERE deleted = 0 AND status IN {value})',
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'users',
               1 => 'contacts',
@@ -9223,17 +9223,17 @@ return array (
         ),
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9241,7 +9241,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -9249,14 +9249,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9264,14 +9264,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'account',
         'foreign' => 'name',
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -9280,18 +9280,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'usersColumns' =>
+      'usersColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -9300,18 +9300,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'contactsColumns' =>
+      'contactsColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'leadsIds' =>
+      'leadsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -9320,18 +9320,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'leadsNames' =>
+      'leadsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'leadsColumns' =>
+      'leadsColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9339,19 +9339,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9359,19 +9359,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9379,19 +9379,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -9399,36 +9399,36 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'leads' =>
+      'leads' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Lead',
         'relationName' => 'callLead',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'callId',
           1 => 'leadId',
         ),
         'foreign' => 'calls',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -9436,22 +9436,22 @@ return array (
           ),
         ),
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Contact',
         'relationName' => 'callContact',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'callId',
           1 => 'contactId',
         ),
         'foreign' => 'calls',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -9459,22 +9459,22 @@ return array (
           ),
         ),
       ),
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'callUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'callId',
           1 => 'userId',
         ),
         'foreign' => 'calls',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -9482,30 +9482,30 @@ return array (
           ),
         ),
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Call',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -9513,7 +9513,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -9521,7 +9521,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -9529,7 +9529,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'account' =>
+      'account' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -9538,218 +9538,218 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'dateStartStatus' =>
+      'dateStartStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateStart',
           1 => 'status',
         ),
       ),
-      'dateStart' =>
+      'dateStart' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateStart',
           1 => 'deleted',
         ),
       ),
-      'status' =>
+      'status' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'status',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
-      'assignedUserStatus' =>
+      'assignedUserStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'status',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'dateStart',
       'order' => 'DESC',
     ),
   ),
-  'Campaign' =>
+  'Campaign' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Planning',
         'len' => 255,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'default' => 'Email',
         'len' => 255,
       ),
-      'startDate' =>
+      'startDate' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'endDate' =>
+      'endDate' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'sentCount' =>
+      'sentCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'openedCount' =>
+      'openedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'clickedCount' =>
+      'clickedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'optedInCount' =>
+      'optedInCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'optedOutCount' =>
+      'optedOutCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'bouncedCount' =>
+      'bouncedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'hardBouncedCount' =>
+      'hardBouncedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'softBouncedCount' =>
+      'softBouncedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'leadCreatedCount' =>
+      'leadCreatedCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'openedPercentage' =>
+      'openedPercentage' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'clickedPercentage' =>
+      'clickedPercentage' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'optedOutPercentage' =>
+      'optedOutPercentage' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'bouncedPercentage' =>
+      'bouncedPercentage' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'revenue' =>
+      'revenue' => 
       array (
         'type' => 'float',
         'notStorable' => true,
         'orderBy' => 'revenueConverted {direction}',
       ),
-      'budget' =>
+      'budget' => 
       array (
         'type' => 'float',
         'orderBy' => 'budgetConverted {direction}',
       ),
-      'mailMergeOnlyWithAddress' =>
+      'mailMergeOnlyWithAddress' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => true,
       ),
-      'revenueCurrency' =>
+      'revenueCurrency' => 
       array (
         'type' => 'varchar',
         'len' => 6,
         'notStorable' => true,
       ),
-      'budgetCurrency' =>
+      'budgetCurrency' => 
       array (
         'type' => 'varchar',
         'len' => 6,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9757,19 +9757,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9777,19 +9777,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9797,19 +9797,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -9817,13 +9817,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'targetListsIds' =>
+      'targetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -9831,13 +9831,13 @@ return array (
         'relation' => 'targetLists',
         'isUnordered' => true,
       ),
-      'targetListsNames' =>
+      'targetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'excludingTargetListsIds' =>
+      'excludingTargetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -9845,17 +9845,17 @@ return array (
         'relation' => 'excludingTargetLists',
         'isUnordered' => true,
       ),
-      'excludingTargetListsNames' =>
+      'excludingTargetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'budgetConverted' =>
+      'budgetConverted' => 
       array (
         'type' => 'float',
         'select' => 'campaign.budget * budgetCurrencyRate.rate',
-        'where' =>
+        'where' => 
         array (
           '=' => 'campaign.budget * budgetCurrencyRate.rate = {value}',
           '>' => 'campaign.budget * budgetCurrencyRate.rate > {value}',
@@ -9869,7 +9869,7 @@ return array (
         'notStorable' => true,
         'orderBy' => 'budgetConverted {direction}',
       ),
-      'contactsTemplateId' =>
+      'contactsTemplateId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9877,14 +9877,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'contactsTemplateName' =>
+      'contactsTemplateName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'contactsTemplate',
         'foreign' => 'name',
       ),
-      'leadsTemplateId' =>
+      'leadsTemplateId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9892,14 +9892,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'leadsTemplateName' =>
+      'leadsTemplateName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'leadsTemplate',
         'foreign' => 'name',
       ),
-      'accountsTemplateId' =>
+      'accountsTemplateId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9907,14 +9907,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'accountsTemplateName' =>
+      'accountsTemplateName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'accountsTemplate',
         'foreign' => 'name',
       ),
-      'usersTemplateId' =>
+      'usersTemplateId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -9922,87 +9922,87 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'usersTemplateName' =>
+      'usersTemplateName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'usersTemplate',
         'foreign' => 'name',
       ),
-      'massEmailsIds' =>
+      'massEmailsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'massEmailsNames' =>
+      'massEmailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'trackingUrlsIds' =>
+      'trackingUrlsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'trackingUrlsNames' =>
+      'trackingUrlsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignLogRecordsIds' =>
+      'campaignLogRecordsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'campaignLogRecordsNames' =>
+      'campaignLogRecordsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'opportunitiesIds' =>
+      'opportunitiesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'opportunitiesNames' =>
+      'opportunitiesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'leadsIds' =>
+      'leadsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'leadsNames' =>
+      'leadsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'accountsIds' =>
+      'accountsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'accountsNames' =>
+      'accountsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'usersTemplate' =>
+      'usersTemplate' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Template',
@@ -10011,7 +10011,7 @@ return array (
         'foreign' => NULL,
         'noJoin' => true,
       ),
-      'accountsTemplate' =>
+      'accountsTemplate' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Template',
@@ -10020,7 +10020,7 @@ return array (
         'foreign' => NULL,
         'noJoin' => true,
       ),
-      'leadsTemplate' =>
+      'leadsTemplate' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Template',
@@ -10029,7 +10029,7 @@ return array (
         'foreign' => NULL,
         'noJoin' => true,
       ),
-      'contactsTemplate' =>
+      'contactsTemplate' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Template',
@@ -10038,28 +10038,28 @@ return array (
         'foreign' => NULL,
         'noJoin' => true,
       ),
-      'massEmails' =>
+      'massEmails' => 
       array (
         'type' => 'hasMany',
         'entity' => 'MassEmail',
         'foreignKey' => 'campaignId',
         'foreign' => 'campaign',
       ),
-      'trackingUrls' =>
+      'trackingUrls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'CampaignTrackingUrl',
         'foreignKey' => 'campaignId',
         'foreign' => 'campaign',
       ),
-      'campaignLogRecords' =>
+      'campaignLogRecords' => 
       array (
         'type' => 'hasMany',
         'entity' => 'CampaignLogRecord',
         'foreignKey' => 'campaignId',
         'foreign' => 'campaign',
       ),
-      'opportunities' =>
+      'opportunities' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Opportunity',
@@ -10067,7 +10067,7 @@ return array (
         'foreign' => 'campaign',
         'noJoin' => true,
       ),
-      'leads' =>
+      'leads' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Lead',
@@ -10075,7 +10075,7 @@ return array (
         'foreign' => 'campaign',
         'noJoin' => true,
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Contact',
@@ -10083,7 +10083,7 @@ return array (
         'foreign' => 'campaign',
         'noJoin' => true,
       ),
-      'accounts' =>
+      'accounts' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Account',
@@ -10091,58 +10091,58 @@ return array (
         'foreign' => 'campaign',
         'noJoin' => true,
       ),
-      'excludingTargetLists' =>
+      'excludingTargetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'campaignTargetListExcluding',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'campaignId',
           1 => 'targetListId',
         ),
         'foreign' => 'campaignsExcluding',
       ),
-      'targetLists' =>
+      'targetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'campaignTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'campaignId',
           1 => 'targetListId',
         ),
         'foreign' => 'campaigns',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Campaign',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10150,7 +10150,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10158,7 +10158,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10167,84 +10167,84 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'createdAt' =>
+      'createdAt' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'CampaignLogRecord' =>
+  'CampaignLogRecord' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'action' =>
+      'action' => 
       array (
         'type' => 'varchar',
         'len' => 50,
       ),
-      'actionDate' =>
+      'actionDate' => 
       array (
         'type' => 'datetime',
       ),
-      'data' =>
+      'data' => 
       array (
         'type' => 'jsonObject',
       ),
-      'stringData' =>
+      'stringData' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'stringAdditionalData' =>
+      'stringAdditionalData' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'application' =>
+      'application' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'default' => 'Espo',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'isTest' =>
+      'isTest' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10252,19 +10252,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10272,14 +10272,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10287,7 +10287,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -10295,14 +10295,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'objectId' =>
+      'objectId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10310,7 +10310,7 @@ return array (
         'index' => 'object',
         'notNull' => false,
       ),
-      'objectType' =>
+      'objectType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -10318,14 +10318,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'objectName' =>
+      'objectName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'object',
         'isParentName' => true,
       ),
-      'queueItemId' =>
+      'queueItemId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10333,7 +10333,7 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'queueItemName' =>
+      'queueItemName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
@@ -10341,19 +10341,19 @@ return array (
         'foreign' => 'name',
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'object' =>
+      'object' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'objectId',
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'queueItem' =>
+      'queueItem' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailQueueItem',
@@ -10362,7 +10362,7 @@ return array (
         'foreign' => NULL,
         'noJoin' => true,
       ),
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -10370,7 +10370,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'campaignLogRecords',
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10379,73 +10379,73 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'actionDate' =>
+      'actionDate' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'actionDate',
           1 => 'deleted',
         ),
       ),
-      'action' =>
+      'action' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'action',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'actionDate',
       'order' => 'DESC',
     ),
   ),
-  'CampaignTrackingUrl' =>
+  'CampaignTrackingUrl' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'url' =>
+      'url' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'urlToUse' =>
+      'urlToUse' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'len' => 255,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10453,14 +10453,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10468,19 +10468,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10488,12 +10488,12 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
@@ -10501,9 +10501,9 @@ return array (
         ),
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -10511,7 +10511,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'trackingUrls',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10519,7 +10519,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10528,33 +10528,33 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'name',
       'order' => 'ASC',
     ),
   ),
-  'Case' =>
+  'Case' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'number' =>
+      'number' => 
       array (
         'type' => 'int',
         'autoincrement' => true,
@@ -10562,39 +10562,39 @@ return array (
         'index' => true,
         'len' => 11,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'New',
         'len' => 255,
       ),
-      'priority' =>
+      'priority' => 
       array (
         'type' => 'varchar',
         'default' => 'Normal',
         'len' => 255,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10602,14 +10602,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'account',
         'foreign' => 'name',
       ),
-      'leadId' =>
+      'leadId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10617,19 +10617,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'leadName' =>
+      'leadName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'lead',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'contactId' =>
+      'contactId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10637,19 +10637,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'contactName' =>
+      'contactName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'contact',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -10658,13 +10658,13 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'inboundEmailId' =>
+      'inboundEmailId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10672,14 +10672,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'inboundEmailName' =>
+      'inboundEmailName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'inboundEmail',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10687,19 +10687,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10707,19 +10707,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -10727,19 +10727,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -10747,24 +10747,24 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'attachmentsIds' =>
+      'attachmentsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'orderBy' =>
+        'orderBy' => 
         array (
-          0 =>
+          0 => 
           array (
             0 => 'createdAt',
             1 => 'ASC',
           ),
-          1 =>
+          1 => 
           array (
             0 => 'name',
             1 => 'ASC',
@@ -10773,100 +10773,100 @@ return array (
         'isLinkMultipleIdList' => true,
         'relation' => 'attachments',
       ),
-      'attachmentsNames' =>
+      'attachmentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'isFollowed' =>
+      'isFollowed' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'followersIds' =>
+      'followersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'followersNames' =>
+      'followersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'articlesIds' =>
+      'articlesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'articlesNames' =>
+      'articlesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'attachmentsTypes' =>
+      'attachmentsTypes' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'articles' =>
+      'articles' => 
       array (
         'type' => 'manyMany',
         'entity' => 'KnowledgeBaseArticle',
         'relationName' => 'caseKnowledgeBaseArticle',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'caseId',
           1 => 'knowledgeBaseArticleId',
         ),
         'foreign' => 'cases',
       ),
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Email',
@@ -10874,7 +10874,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -10882,7 +10882,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Call',
@@ -10890,7 +10890,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Meeting',
@@ -10898,21 +10898,21 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Contact',
         'relationName' => 'caseContact',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'caseId',
           1 => 'contactId',
         ),
         'foreign' => 'cases',
       ),
-      'contact' =>
+      'contact' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Contact',
@@ -10920,7 +10920,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'casesPrimary',
       ),
-      'lead' =>
+      'lead' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Lead',
@@ -10928,7 +10928,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'cases',
       ),
-      'account' =>
+      'account' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -10936,7 +10936,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'cases',
       ),
-      'inboundEmail' =>
+      'inboundEmail' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'InboundEmail',
@@ -10944,30 +10944,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Case',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10975,7 +10975,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10983,7 +10983,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -10991,7 +10991,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'attachments' =>
+      'attachments' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Attachment',
@@ -11000,89 +11000,89 @@ return array (
         'foreign' => 'parent',
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'status' =>
+      'status' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'status',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
-      'assignedUserStatus' =>
+      'assignedUserStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'status',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'number',
       'order' => 'DESC',
     ),
   ),
-  'Contact' =>
+  'Contact' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'select' => 'TRIM(CONCAT(IFNULL(contact.first_name, \'\'), \' \', IFNULL(contact.last_name, \'\')))',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => '(contact.first_name LIKE {value} OR contact.last_name LIKE {value} OR CONCAT(contact.first_name, \' \', contact.last_name) LIKE {value} OR CONCAT(contact.last_name, \' \', contact.first_name) LIKE {value})',
           '=' => '(contact.first_name = {value} OR contact.last_name = {value} OR CONCAT(contact.first_name, \' \', contact.last_name) = {value} OR CONCAT(contact.last_name, \' \', contact.first_name) = {value})',
         ),
         'orderBy' => 'contact.first_name {direction}',
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'salutationName' =>
+      'salutationName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'firstName' =>
+      'firstName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'lastName' =>
+      'lastName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 255,
         'type' => 'foreignId',
-        'where' =>
+        'where' => 
         array (
           '=' => 'contact.id IN (SELECT contact_id FROM account_contact WHERE deleted = 0 AND account_id = {value})',
           '<>' => 'contact.id NOT IN (SELECT contact_id FROM account_contact WHERE deleted = 0 AND account_id = {value})',
@@ -11094,54 +11094,54 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'title' =>
+      'title' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'notStorable' => true,
         'select' => 'accountContact.role',
         'orderBy' => 'accountContact.role {direction}',
-        'where' =>
+        'where' => 
         array (
-          'LIKE' =>
+          'LIKE' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'accounts',
             ),
             'sql' => 'accountsMiddle.role LIKE {value}',
             'distinct' => true,
           ),
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'accounts',
             ),
             'sql' => 'accountsMiddle.role = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'accounts',
             ),
             'sql' => 'accountsMiddle.role <> {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'accounts',
             ),
             'sql' => 'accountsMiddle.role IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'accounts',
             ),
@@ -11150,16 +11150,16 @@ return array (
           ),
         ),
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'email',
         'notStorable' => true,
         'select' => 'emailAddresses.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'contact.id IN (
                                 SELECT entity_id
@@ -11169,11 +11169,11 @@ return array (
                                     entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Contact\' AND
                                     email_address.deleted = 0 AND email_address.lower LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -11182,11 +11182,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -11195,11 +11195,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -11208,11 +11208,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -11221,11 +11221,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -11234,11 +11234,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -11250,12 +11250,12 @@ return array (
         ),
         'orderBy' => 'emailAddresses.lower {direction}',
       ),
-      'phoneNumber' =>
+      'phoneNumber' => 
       array (
         'type' => 'phone',
         'notStorable' => true,
         'select' => 'phoneNumbers.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'contact.id IN (
                                 SELECT entity_id
@@ -11265,11 +11265,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Contact\' AND
                                     phone_number.deleted = 0 AND phone_number.name LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -11278,11 +11278,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -11291,11 +11291,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -11304,11 +11304,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -11317,11 +11317,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -11330,11 +11330,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -11346,66 +11346,66 @@ return array (
         ),
         'orderBy' => 'phoneNumbers.name {direction}',
       ),
-      'doNotCall' =>
+      'doNotCall' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'addressStreet' =>
+      'addressStreet' => 
       array (
         'type' => 'text',
         'dbType' => 'varchar',
         'len' => 255,
       ),
-      'addressCity' =>
+      'addressCity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressState' =>
+      'addressState' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressCountry' =>
+      'addressCountry' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressPostalCode' =>
+      'addressPostalCode' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'accountRole' =>
+      'accountRole' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
         'notStorable' => true,
         'len' => 255,
       ),
-      'accountIsInactive' =>
+      'accountIsInactive' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'select' => 'accountContact.is_inactive',
         'orderBy' => 'accountContact.is_inactive {direction}',
-        'where' =>
+        'where' => 
         array (
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'accounts',
             ),
             'sql' => 'accountsMiddle.is_inactive = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'accounts',
             ),
@@ -11415,21 +11415,21 @@ return array (
         ),
         'default' => false,
       ),
-      'accountType' =>
+      'accountType' => 
       array (
         'type' => 'foreign',
         'relation' => 'account',
         'foreign' => 'type',
       ),
-      'opportunityRole' =>
+      'opportunityRole' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'opportunities',
             ),
@@ -11437,9 +11437,9 @@ return array (
             'distinct' => true,
           ),
           '<>' => 'contact.id NOT IN (SELECT contact_id FROM contact_opportunity WHERE deleted = 0 AND role = {value})',
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'opportunities',
             ),
@@ -11447,18 +11447,18 @@ return array (
             'distinct' => true,
           ),
           'NOT IN' => 'contact.id NOT IN (SELECT contact_id FROM contact_opportunity WHERE deleted = 0 AND role IN {value})',
-          'LIKE' =>
+          'LIKE' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'opportunities',
             ),
             'sql' => 'opportunitiesMiddle.role LIKE {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'opportunities',
             ),
@@ -11469,14 +11469,14 @@ return array (
         ),
         'len' => 255,
       ),
-      'acceptanceStatus' =>
+      'acceptanceStatus' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
         'notStorable' => true,
         'len' => 255,
       ),
-      'acceptanceStatusMeetings' =>
+      'acceptanceStatusMeetings' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
@@ -11484,7 +11484,7 @@ return array (
         'relation' => 'meetings',
         'len' => 255,
       ),
-      'acceptanceStatusCalls' =>
+      'acceptanceStatusCalls' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
@@ -11492,41 +11492,41 @@ return array (
         'relation' => 'calls',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'targetListIsOptedOut' =>
+      'targetListIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'rutBeneficiario' =>
+      'rutBeneficiario' => 
       array (
         'type' => 'varchar',
         'len' => 20,
       ),
-      'emailAddressIsOptedOut' =>
+      'emailAddressIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'select' => 'emailAddresses.opt_out',
-        'where' =>
+        'where' => 
         array (
-          '= TRUE' =>
+          '= TRUE' => 
           array (
             'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
           ),
-          '= FALSE' =>
+          '= FALSE' => 
           array (
             'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
           ),
@@ -11534,27 +11534,27 @@ return array (
         'orderBy' => 'emailAddresses.opt_out {direction}',
         'default' => false,
       ),
-      'addressMap' =>
+      'addressMap' => 
       array (
         'type' => 'map',
         'notExportable' => true,
         'notStorable' => true,
       ),
-      'emailAddressData' =>
+      'emailAddressData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberData' =>
+      'phoneNumberData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberNumeric' =>
+      'phoneNumberNumeric' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'contact.id IN (
                                 SELECT entity_id
@@ -11564,11 +11564,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Contact\' AND
                                     phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -11577,11 +11577,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -11590,11 +11590,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -11603,11 +11603,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -11616,11 +11616,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -11629,11 +11629,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -11644,14 +11644,14 @@ return array (
           ),
         ),
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'account',
         'foreign' => 'name',
       ),
-      'accountsIds' =>
+      'accountsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -11660,18 +11660,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'accountsNames' =>
+      'accountsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'accountsColumns' =>
+      'accountsColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -11679,14 +11679,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -11694,19 +11694,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -11714,19 +11714,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -11734,19 +11734,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -11754,13 +11754,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'targetListsIds' =>
+      'targetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -11768,13 +11768,13 @@ return array (
         'relation' => 'targetLists',
         'isUnordered' => true,
       ),
-      'targetListsNames' =>
+      'targetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'targetListId' =>
+      'targetListId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -11783,34 +11783,34 @@ return array (
         'notStorable' => true,
         'notNull' => false,
       ),
-      'targetListName' =>
+      'targetListName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'portalUserId' =>
+      'portalUserId' => 
       array (
         'type' => 'varchar',
         'index' => 'portalUser',
         'notStorable' => true,
       ),
-      'portalUserName' =>
+      'portalUserName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'originalLeadId' =>
+      'originalLeadId' => 
       array (
         'type' => 'varchar',
         'index' => 'originalLead',
         'notStorable' => true,
       ),
-      'originalLeadName' =>
+      'originalLeadName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'formulariosIds' =>
+      'formulariosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -11818,215 +11818,215 @@ return array (
         'relation' => 'formularios',
         'isUnordered' => true,
       ),
-      'formulariosNames' =>
+      'formulariosNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'isFollowed' =>
+      'isFollowed' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'followersIds' =>
+      'followersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'followersNames' =>
+      'followersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksPrimaryIds' =>
+      'tasksPrimaryIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'tasksPrimaryNames' =>
+      'tasksPrimaryNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'documentsIds' =>
+      'documentsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'documentsNames' =>
+      'documentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignLogRecordsIds' =>
+      'campaignLogRecordsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'campaignLogRecordsNames' =>
+      'campaignLogRecordsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'casesIds' =>
+      'casesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'casesNames' =>
+      'casesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'casesPrimaryIds' =>
+      'casesPrimaryIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'casesPrimaryNames' =>
+      'casesPrimaryNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'opportunitiesIds' =>
+      'opportunitiesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'opportunitiesNames' =>
+      'opportunitiesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailAddresses' =>
+      'emailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'relationName' => 'entityEmailAddress',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'emailAddressId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Contact',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'phoneNumbers' =>
+      'phoneNumbers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PhoneNumber',
         'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'phoneNumberId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Contact',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'formularios' =>
+      'formularios' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Formularios',
         'foreignKey' => 'contactId',
         'foreign' => 'contact',
       ),
-      'tasksPrimary' =>
+      'tasksPrimary' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Task',
         'foreignKey' => 'contactId',
         'foreign' => 'contact',
       ),
-      'documents' =>
+      'documents' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Document',
         'relationName' => 'contactDocument',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'contactId',
           1 => 'documentId',
         ),
         'foreign' => 'contacts',
       ),
-      'originalLead' =>
+      'originalLead' => 
       array (
         'type' => 'hasOne',
         'entity' => 'Lead',
@@ -12034,35 +12034,35 @@ return array (
         'foreign' => 'createdContact',
         'noJoin' => true,
       ),
-      'portalUser' =>
+      'portalUser' => 
       array (
         'type' => 'hasOne',
         'entity' => 'User',
         'foreignKey' => 'contactId',
         'foreign' => 'contact',
       ),
-      'targetLists' =>
+      'targetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'contactTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'contactId',
           1 => 'targetListId',
         ),
         'foreign' => 'contacts',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'campaignLogRecords' =>
+      'campaignLogRecords' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'CampaignLogRecord',
@@ -12070,7 +12070,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -12079,7 +12079,7 @@ return array (
         'foreign' => 'contacts',
         'noJoin' => true,
       ),
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Email',
@@ -12087,7 +12087,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -12095,22 +12095,22 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Call',
         'relationName' => 'callContact',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'contactId',
           1 => 'callId',
         ),
         'foreign' => 'contacts',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -12118,22 +12118,22 @@ return array (
           ),
         ),
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Meeting',
         'relationName' => 'contactMeeting',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'contactId',
           1 => 'meetingId',
         ),
         'foreign' => 'contacts',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -12141,77 +12141,77 @@ return array (
           ),
         ),
       ),
-      'cases' =>
+      'cases' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Case',
         'relationName' => 'caseContact',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'contactId',
           1 => 'caseId',
         ),
         'foreign' => 'contacts',
       ),
-      'casesPrimary' =>
+      'casesPrimary' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Case',
         'foreignKey' => 'contactId',
         'foreign' => 'contact',
       ),
-      'opportunities' =>
+      'opportunities' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Opportunity',
         'relationName' => 'contactOpportunity',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'contactId',
           1 => 'opportunityId',
         ),
         'foreign' => 'contacts',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'role' =>
+          'role' => 
           array (
             'type' => 'varchar',
             'len' => 50,
           ),
         ),
       ),
-      'accounts' =>
+      'accounts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Account',
         'relationName' => 'accountContact',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'contactId',
           1 => 'accountId',
         ),
         'foreign' => 'contacts',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'role' =>
+          'role' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'isInactive' =>
+          'isInactive' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'account' =>
+      'account' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -12219,30 +12219,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Contact',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12250,7 +12250,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12258,7 +12258,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12267,101 +12267,101 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'createdAt' =>
+      'createdAt' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'deleted',
         ),
       ),
-      'firstName' =>
+      'firstName' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'deleted',
         ),
       ),
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'lastName',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Document' =>
+  'Document' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'publishDate' =>
+      'publishDate' => 
       array (
         'type' => 'date',
       ),
-      'expirationDate' =>
+      'expirationDate' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'fileId' =>
+      'fileId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12369,13 +12369,13 @@ return array (
         'index' => false,
         'notNull' => false,
       ),
-      'fileName' =>
+      'fileName' => 
       array (
         'type' => 'foreign',
         'relation' => 'file',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12383,19 +12383,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12403,19 +12403,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12423,19 +12423,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -12443,13 +12443,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'accountsIds' =>
+      'accountsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -12457,13 +12457,13 @@ return array (
         'relation' => 'accounts',
         'isUnordered' => true,
       ),
-      'accountsNames' =>
+      'accountsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'folderId' =>
+      'folderId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12471,14 +12471,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'folderName' =>
+      'folderName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'folder',
         'foreign' => 'name',
       ),
-      'formulariosIds' =>
+      'formulariosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -12486,46 +12486,46 @@ return array (
         'relation' => 'formularios',
         'isUnordered' => true,
       ),
-      'formulariosNames' =>
+      'formulariosNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'leadsIds' =>
+      'leadsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'leadsNames' =>
+      'leadsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'opportunitiesIds' =>
+      'opportunitiesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'opportunitiesNames' =>
+      'opportunitiesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'file' =>
+      'file' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Attachment',
@@ -12533,21 +12533,21 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'formularios' =>
+      'formularios' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Formularios',
         'relationName' => 'formulariosDocument',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'documentId',
           1 => 'formulariosId',
         ),
         'foreign' => 'documents',
       ),
-      'folder' =>
+      'folder' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'DocumentFolder',
@@ -12555,30 +12555,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'documents',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Document',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12586,7 +12586,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12594,7 +12594,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12602,56 +12602,56 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Contact',
         'relationName' => 'contactDocument',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'documentId',
           1 => 'contactId',
         ),
         'foreign' => 'documents',
       ),
-      'leads' =>
+      'leads' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Lead',
         'relationName' => 'documentLead',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'documentId',
           1 => 'leadId',
         ),
         'foreign' => 'documents',
       ),
-      'opportunities' =>
+      'opportunities' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Opportunity',
         'relationName' => 'documentOpportunity',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'documentId',
           1 => 'opportunityId',
         ),
         'foreign' => 'documents',
       ),
-      'accounts' =>
+      'accounts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Account',
         'relationName' => 'accountDocument',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'documentId',
           1 => 'accountId',
@@ -12659,52 +12659,52 @@ return array (
         'foreign' => 'documents',
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'DocumentFolder' =>
+  'DocumentFolder' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'childList' =>
+      'childList' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12712,19 +12712,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12732,19 +12732,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -12752,13 +12752,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12766,51 +12766,51 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'parent',
         'foreign' => 'name',
       ),
-      'documentsIds' =>
+      'documentsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'documentsNames' =>
+      'documentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'childrenIds' =>
+      'childrenIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'childrenNames' =>
+      'childrenNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'documents' =>
+      'documents' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Document',
         'foreignKey' => 'folderId',
         'foreign' => 'folder',
       ),
-      'children' =>
+      'children' => 
       array (
         'type' => 'hasMany',
         'entity' => 'DocumentFolder',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'DocumentFolder',
@@ -12818,30 +12818,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'children',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'DocumentFolder',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12849,7 +12849,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -12858,13 +12858,13 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'additionalTables' =>
+    'additionalTables' => 
     array (
-      'DocumentFolderPath' =>
+      'DocumentFolderPath' => 
       array (
-        'fields' =>
+        'fields' => 
         array (
-          'id' =>
+          'id' => 
           array (
             'type' => 'id',
             'dbType' => 'int',
@@ -12872,13 +12872,13 @@ return array (
             'autoincrement' => true,
             'unique' => true,
           ),
-          'ascendorId' =>
+          'ascendorId' => 
           array (
             'type' => 'varchar',
             'len' => '100',
             'index' => true,
           ),
-          'descendorId' =>
+          'descendorId' => 
           array (
             'type' => 'varchar',
             'len' => '24',
@@ -12887,64 +12887,64 @@ return array (
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'order' => 'ASC',
     ),
   ),
-  'EmailQueueItem' =>
+  'EmailQueueItem' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'attemptCount' =>
+      'attemptCount' => 
       array (
         'type' => 'int',
         'default' => '0',
         'len' => 11,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'sentAt' =>
+      'sentAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'isTest' =>
+      'isTest' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'massEmailId' =>
+      'massEmailId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12952,14 +12952,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'massEmailName' =>
+      'massEmailName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'massEmail',
         'foreign' => 'name',
       ),
-      'targetId' =>
+      'targetId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -12967,7 +12967,7 @@ return array (
         'index' => 'target',
         'notNull' => false,
       ),
-      'targetType' =>
+      'targetType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -12975,7 +12975,7 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'targetName' =>
+      'targetName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
@@ -12983,14 +12983,14 @@ return array (
         'isParentName' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'target' =>
+      'target' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'targetId',
       ),
-      'massEmail' =>
+      'massEmail' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'MassEmail',
@@ -12999,83 +12999,83 @@ return array (
         'foreign' => 'queueItems',
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'KnowledgeBaseArticle' =>
+  'KnowledgeBaseArticle' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Draft',
         'len' => 255,
       ),
-      'language' =>
+      'language' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'publishDate' =>
+      'publishDate' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'expirationDate' =>
+      'expirationDate' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'order' =>
+      'order' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'body' =>
+      'body' => 
       array (
         'type' => 'text',
       ),
-      'portalsIds' =>
+      'portalsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -13083,13 +13083,13 @@ return array (
         'relation' => 'portals',
         'isUnordered' => true,
       ),
-      'portalsNames' =>
+      'portalsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -13097,19 +13097,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -13117,19 +13117,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -13137,19 +13137,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -13157,13 +13157,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'categoriesIds' =>
+      'categoriesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -13171,24 +13171,24 @@ return array (
         'relation' => 'categories',
         'isUnordered' => true,
       ),
-      'categoriesNames' =>
+      'categoriesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'attachmentsIds' =>
+      'attachmentsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'orderBy' =>
+        'orderBy' => 
         array (
-          0 =>
+          0 => 
           array (
             0 => 'createdAt',
             1 => 'ASC',
           ),
-          1 =>
+          1 => 
           array (
             0 => 'name',
             1 => 'ASC',
@@ -13197,68 +13197,68 @@ return array (
         'isLinkMultipleIdList' => true,
         'relation' => 'attachments',
       ),
-      'attachmentsNames' =>
+      'attachmentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'casesIds' =>
+      'casesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'casesNames' =>
+      'casesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'attachmentsTypes' =>
+      'attachmentsTypes' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'categories' =>
+      'categories' => 
       array (
         'type' => 'manyMany',
         'entity' => 'KnowledgeBaseCategory',
         'relationName' => 'knowledgeBaseArticleKnowledgeBaseCategory',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'knowledgeBaseArticleId',
           1 => 'knowledgeBaseCategoryId',
         ),
         'foreign' => 'articles',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'KnowledgeBaseArticle',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -13266,7 +13266,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -13274,7 +13274,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -13282,35 +13282,35 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'portals' =>
+      'portals' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Portal',
         'relationName' => 'knowledgeBaseArticlePortal',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'knowledgeBaseArticleId',
           1 => 'portalId',
         ),
         'foreign' => 'articles',
       ),
-      'cases' =>
+      'cases' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Case',
         'relationName' => 'caseKnowledgeBaseArticle',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'knowledgeBaseArticleId',
           1 => 'caseId',
         ),
         'foreign' => 'articles',
       ),
-      'attachments' =>
+      'attachments' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Attachment',
@@ -13319,57 +13319,57 @@ return array (
         'foreign' => 'parent',
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'order',
       'order' => 'ASC',
     ),
   ),
-  'KnowledgeBaseCategory' =>
+  'KnowledgeBaseCategory' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'order' =>
+      'order' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'childList' =>
+      'childList' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -13377,19 +13377,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -13397,19 +13397,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -13417,13 +13417,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -13431,58 +13431,58 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'parent',
         'foreign' => 'name',
       ),
-      'articlesIds' =>
+      'articlesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'articlesNames' =>
+      'articlesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'childrenIds' =>
+      'childrenIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'childrenNames' =>
+      'childrenNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'articles' =>
+      'articles' => 
       array (
         'type' => 'manyMany',
         'entity' => 'KnowledgeBaseArticle',
         'relationName' => 'knowledgeBaseArticleKnowledgeBaseCategory',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'knowledgeBaseCategoryId',
           1 => 'knowledgeBaseArticleId',
         ),
         'foreign' => 'categories',
       ),
-      'children' =>
+      'children' => 
       array (
         'type' => 'hasMany',
         'entity' => 'KnowledgeBaseCategory',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'KnowledgeBaseCategory',
@@ -13490,30 +13490,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'children',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'KnowledgeBaseCategory',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -13521,7 +13521,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -13530,13 +13530,13 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'additionalTables' =>
+    'additionalTables' => 
     array (
-      'KnowledgeBaseCategoryPath' =>
+      'KnowledgeBaseCategoryPath' => 
       array (
-        'fields' =>
+        'fields' => 
         array (
-          'id' =>
+          'id' => 
           array (
             'type' => 'id',
             'dbType' => 'int',
@@ -13544,13 +13544,13 @@ return array (
             'autoincrement' => true,
             'unique' => true,
           ),
-          'ascendorId' =>
+          'ascendorId' => 
           array (
             'type' => 'varchar',
             'len' => '100',
             'index' => true,
           ),
-          'descendorId' =>
+          'descendorId' => 
           array (
             'type' => 'varchar',
             'len' => '24',
@@ -13559,121 +13559,121 @@ return array (
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'parentId',
       'order' => 'ASC',
     ),
   ),
-  'Lead' =>
+  'Lead' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'select' => 'TRIM(CONCAT(IFNULL(lead.first_name, \'\'), \' \', IFNULL(lead.last_name, \'\')))',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => '(lead.first_name LIKE {value} OR lead.last_name LIKE {value} OR CONCAT(lead.first_name, \' \', lead.last_name) LIKE {value} OR CONCAT(lead.last_name, \' \', lead.first_name) LIKE {value})',
           '=' => '(lead.first_name = {value} OR lead.last_name = {value} OR CONCAT(lead.first_name, \' \', lead.last_name) = {value} OR CONCAT(lead.last_name, \' \', lead.first_name) = {value})',
         ),
         'orderBy' => 'lead.first_name {direction}',
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'salutationName' =>
+      'salutationName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'firstName' =>
+      'firstName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'lastName' =>
+      'lastName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'title' =>
+      'title' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'New',
         'len' => 255,
       ),
-      'source' =>
+      'source' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'industry' =>
+      'industry' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'opportunityAmount' =>
+      'opportunityAmount' => 
       array (
         'type' => 'float',
         'orderBy' => 'opportunityAmountConverted {direction}',
       ),
-      'website' =>
+      'website' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressStreet' =>
+      'addressStreet' => 
       array (
         'type' => 'text',
         'dbType' => 'varchar',
         'len' => 255,
       ),
-      'addressCity' =>
+      'addressCity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressState' =>
+      'addressState' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressCountry' =>
+      'addressCountry' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressPostalCode' =>
+      'addressPostalCode' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'email',
         'notStorable' => true,
         'select' => 'emailAddresses.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'lead.id IN (
                                 SELECT entity_id
@@ -13683,11 +13683,11 @@ return array (
                                     entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Lead\' AND
                                     email_address.deleted = 0 AND email_address.lower LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -13696,11 +13696,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -13709,11 +13709,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -13722,11 +13722,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -13735,11 +13735,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -13748,11 +13748,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -13764,12 +13764,12 @@ return array (
         ),
         'orderBy' => 'emailAddresses.lower {direction}',
       ),
-      'phoneNumber' =>
+      'phoneNumber' => 
       array (
         'type' => 'phone',
         'notStorable' => true,
         'select' => 'phoneNumbers.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'lead.id IN (
                                 SELECT entity_id
@@ -13779,11 +13779,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Lead\' AND
                                     phone_number.deleted = 0 AND phone_number.name LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -13792,11 +13792,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -13805,11 +13805,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -13818,11 +13818,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -13831,11 +13831,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -13844,11 +13844,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -13860,39 +13860,39 @@ return array (
         ),
         'orderBy' => 'phoneNumbers.name {direction}',
       ),
-      'doNotCall' =>
+      'doNotCall' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'acceptanceStatus' =>
+      'acceptanceStatus' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
         'notStorable' => true,
         'len' => 255,
       ),
-      'acceptanceStatusMeetings' =>
+      'acceptanceStatusMeetings' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
@@ -13900,7 +13900,7 @@ return array (
         'relation' => 'meetings',
         'len' => 255,
       ),
-      'acceptanceStatusCalls' =>
+      'acceptanceStatusCalls' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
@@ -13908,37 +13908,37 @@ return array (
         'relation' => 'calls',
         'len' => 255,
       ),
-      'targetListIsOptedOut' =>
+      'targetListIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'opportunityAmountCurrency' =>
+      'opportunityAmountCurrency' => 
       array (
         'type' => 'varchar',
         'len' => 6,
       ),
-      'addressMap' =>
+      'addressMap' => 
       array (
         'type' => 'map',
         'notExportable' => true,
         'notStorable' => true,
       ),
-      'emailAddressIsOptedOut' =>
+      'emailAddressIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'select' => 'emailAddresses.opt_out',
-        'where' =>
+        'where' => 
         array (
-          '= TRUE' =>
+          '= TRUE' => 
           array (
             'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
           ),
-          '= FALSE' =>
+          '= FALSE' => 
           array (
             'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
           ),
@@ -13946,11 +13946,11 @@ return array (
         'orderBy' => 'emailAddresses.opt_out {direction}',
         'default' => false,
       ),
-      'opportunityAmountConverted' =>
+      'opportunityAmountConverted' => 
       array (
         'type' => 'float',
         'select' => 'lead.opportunity_amount * opportunityAmountCurrencyRate.rate',
-        'where' =>
+        'where' => 
         array (
           '=' => 'lead.opportunity_amount * opportunityAmountCurrencyRate.rate = {value}',
           '>' => 'lead.opportunity_amount * opportunityAmountCurrencyRate.rate > {value}',
@@ -13964,21 +13964,21 @@ return array (
         'notStorable' => true,
         'orderBy' => 'opportunityAmountConverted {direction}',
       ),
-      'emailAddressData' =>
+      'emailAddressData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberData' =>
+      'phoneNumberData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberNumeric' =>
+      'phoneNumberNumeric' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'lead.id IN (
                                 SELECT entity_id
@@ -13988,11 +13988,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Lead\' AND
                                     phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -14001,11 +14001,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -14014,11 +14014,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -14027,11 +14027,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -14040,11 +14040,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -14053,11 +14053,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -14068,7 +14068,7 @@ return array (
           ),
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14076,19 +14076,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14096,19 +14096,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14116,19 +14116,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -14136,13 +14136,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14150,14 +14150,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'createdAccountId' =>
+      'createdAccountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14165,14 +14165,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdAccountName' =>
+      'createdAccountName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'createdAccount',
         'foreign' => 'name',
       ),
-      'createdContactId' =>
+      'createdContactId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14180,19 +14180,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdContactName' =>
+      'createdContactName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'createdContact',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'createdOpportunityId' =>
+      'createdOpportunityId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14200,14 +14200,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdOpportunityName' =>
+      'createdOpportunityName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'createdOpportunity',
         'foreign' => 'name',
       ),
-      'targetListsIds' =>
+      'targetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -14215,13 +14215,13 @@ return array (
         'relation' => 'targetLists',
         'isUnordered' => true,
       ),
-      'targetListsNames' =>
+      'targetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'targetListId' =>
+      'targetListId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14230,191 +14230,191 @@ return array (
         'notStorable' => true,
         'notNull' => false,
       ),
-      'targetListName' =>
+      'targetListName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'isFollowed' =>
+      'isFollowed' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'followersIds' =>
+      'followersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'followersNames' =>
+      'followersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'documentsIds' =>
+      'documentsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'documentsNames' =>
+      'documentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignLogRecordsIds' =>
+      'campaignLogRecordsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'campaignLogRecordsNames' =>
+      'campaignLogRecordsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'casesIds' =>
+      'casesIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'casesNames' =>
+      'casesNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailAddresses' =>
+      'emailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'relationName' => 'entityEmailAddress',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'emailAddressId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Lead',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'phoneNumbers' =>
+      'phoneNumbers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PhoneNumber',
         'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'phoneNumberId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Lead',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'documents' =>
+      'documents' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Document',
         'relationName' => 'documentLead',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'leadId',
           1 => 'documentId',
         ),
         'foreign' => 'leads',
       ),
-      'targetLists' =>
+      'targetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'leadTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'leadId',
           1 => 'targetListId',
         ),
         'foreign' => 'leads',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'campaignLogRecords' =>
+      'campaignLogRecords' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'CampaignLogRecord',
@@ -14422,7 +14422,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -14431,7 +14431,7 @@ return array (
         'foreign' => 'leads',
         'noJoin' => true,
       ),
-      'createdOpportunity' =>
+      'createdOpportunity' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Opportunity',
@@ -14440,7 +14440,7 @@ return array (
         'foreign' => 'originalLead',
         'noJoin' => true,
       ),
-      'createdContact' =>
+      'createdContact' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Contact',
@@ -14449,7 +14449,7 @@ return array (
         'foreign' => 'originalLead',
         'noJoin' => true,
       ),
-      'createdAccount' =>
+      'createdAccount' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -14458,7 +14458,7 @@ return array (
         'foreign' => 'originalLead',
         'noJoin' => true,
       ),
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Email',
@@ -14466,14 +14466,14 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'cases' =>
+      'cases' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Case',
         'foreignKey' => 'leadId',
         'foreign' => 'lead',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -14481,22 +14481,22 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Call',
         'relationName' => 'callLead',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'leadId',
           1 => 'callId',
         ),
         'foreign' => 'leads',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -14504,22 +14504,22 @@ return array (
           ),
         ),
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Meeting',
         'relationName' => 'leadMeeting',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'leadId',
           1 => 'meetingId',
         ),
         'foreign' => 'leads',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -14527,30 +14527,30 @@ return array (
           ),
         ),
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Lead',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -14558,7 +14558,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -14566,7 +14566,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -14575,149 +14575,149 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'firstName' =>
+      'firstName' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'deleted',
         ),
       ),
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'lastName',
         ),
       ),
-      'status' =>
+      'status' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'status',
           1 => 'deleted',
         ),
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'deleted',
         ),
       ),
-      'createdAtStatus' =>
+      'createdAtStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'status',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
-      'assignedUserStatus' =>
+      'assignedUserStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'status',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'MassEmail' =>
+  'MassEmail' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Pending',
         'len' => 255,
       ),
-      'storeSentEmails' =>
+      'storeSentEmails' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'optOutEntirely' =>
+      'optOutEntirely' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'fromAddress' =>
+      'fromAddress' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'fromName' =>
+      'fromName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'replyToAddress' =>
+      'replyToAddress' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'replyToName' =>
+      'replyToName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'startAt' =>
+      'startAt' => 
       array (
         'type' => 'datetime',
       ),
-      'smtpAccount' =>
+      'smtpAccount' => 
       array (
         'type' => 'base',
         'notStorable' => true,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'emailTemplateId' =>
+      'emailTemplateId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14725,14 +14725,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'emailTemplateName' =>
+      'emailTemplateName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'emailTemplate',
         'foreign' => 'name',
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14740,14 +14740,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'targetListsIds' =>
+      'targetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -14755,13 +14755,13 @@ return array (
         'relation' => 'targetLists',
         'isUnordered' => true,
       ),
-      'targetListsNames' =>
+      'targetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'excludingTargetListsIds' =>
+      'excludingTargetListsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -14769,13 +14769,13 @@ return array (
         'relation' => 'excludingTargetLists',
         'isUnordered' => true,
       ),
-      'excludingTargetListsNames' =>
+      'excludingTargetListsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'inboundEmailId' =>
+      'inboundEmailId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14783,14 +14783,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'inboundEmailName' =>
+      'inboundEmailName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'inboundEmail',
         'foreign' => 'name',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14798,19 +14798,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -14818,39 +14818,39 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'queueItemsIds' =>
+      'queueItemsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'queueItemsNames' =>
+      'queueItemsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'queueItems' =>
+      'queueItems' => 
       array (
         'type' => 'hasMany',
         'entity' => 'EmailQueueItem',
         'foreignKey' => 'massEmailId',
         'foreign' => 'massEmail',
       ),
-      'inboundEmail' =>
+      'inboundEmail' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'InboundEmail',
@@ -14858,35 +14858,35 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'excludingTargetLists' =>
+      'excludingTargetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'massEmailTargetListExcluding',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'massEmailId',
           1 => 'targetListId',
         ),
         'foreign' => 'massEmailsExcluding',
       ),
-      'targetLists' =>
+      'targetLists' => 
       array (
         'type' => 'manyMany',
         'entity' => 'TargetList',
         'relationName' => 'massEmailTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'massEmailId',
           1 => 'targetListId',
         ),
         'foreign' => 'massEmails',
       ),
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -14894,7 +14894,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'massEmails',
       ),
-      'emailTemplate' =>
+      'emailTemplate' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'EmailTemplate',
@@ -14902,7 +14902,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -14910,7 +14910,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -14919,47 +14919,47 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Meeting' =>
+  'Meeting' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Planned',
         'len' => 255,
       ),
-      'dateStart' =>
+      'dateStart' => 
       array (
         'type' => 'datetime',
       ),
-      'dateEnd' =>
+      'dateEnd' => 
       array (
         'type' => 'datetime',
       ),
-      'duration' =>
+      'duration' => 
       array (
         'type' => 'int',
         'notStorable' => true,
@@ -14968,24 +14968,24 @@ return array (
         'orderBy' => 'duration {direction}',
         'len' => 11,
       ),
-      'reminders' =>
+      'reminders' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'acceptanceStatus' =>
+      'acceptanceStatus' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'users',
               1 => 'contacts',
@@ -14995,9 +14995,9 @@ return array (
             'distinct' => true,
           ),
           '<>' => 'meeting.id NOT IN (SELECT meeting_id FROM contact_meeting WHERE deleted = 0 AND status = {value}) AND meeting.id NOT IN (SELECT meeting_id FROM meeting_user WHERE deleted = 0 AND status = {value}) AND meeting.id NOT IN (SELECT meeting_id FROM lead_meeting WHERE deleted = 0 AND status = {value})',
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'users',
               1 => 'leads',
@@ -15007,9 +15007,9 @@ return array (
             'distinct' => true,
           ),
           'NOT IN' => 'meeting.id NOT IN (SELECT meeting_id FROM contact_meeting WHERE deleted = 0 AND status IN {value}) AND meeting.id NOT IN (SELECT meeting_id FROM meeting_user WHERE deleted = 0 AND status IN {value}) AND meeting.id NOT IN (SELECT meeting_id FROM lead_meeting WHERE deleted = 0 AND status IN {value})',
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'users',
               1 => 'contacts',
@@ -15022,17 +15022,17 @@ return array (
         ),
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15040,7 +15040,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -15048,14 +15048,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15063,14 +15063,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'account',
         'foreign' => 'name',
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -15079,18 +15079,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'usersColumns' =>
+      'usersColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -15099,18 +15099,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'contactsColumns' =>
+      'contactsColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'leadsIds' =>
+      'leadsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -15119,18 +15119,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'leadsNames' =>
+      'leadsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'leadsColumns' =>
+      'leadsColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15138,19 +15138,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15158,19 +15158,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15178,19 +15178,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -15198,36 +15198,36 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'leads' =>
+      'leads' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Lead',
         'relationName' => 'leadMeeting',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'meetingId',
           1 => 'leadId',
         ),
         'foreign' => 'meetings',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -15235,22 +15235,22 @@ return array (
           ),
         ),
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Contact',
         'relationName' => 'contactMeeting',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'meetingId',
           1 => 'contactId',
         ),
         'foreign' => 'meetings',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -15258,22 +15258,22 @@ return array (
           ),
         ),
       ),
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'meetingUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'meetingId',
           1 => 'userId',
         ),
         'foreign' => 'meetings',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'status' =>
+          'status' => 
           array (
             'type' => 'varchar',
             'len' => '36',
@@ -15281,30 +15281,30 @@ return array (
           ),
         ),
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Meeting',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -15312,7 +15312,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -15320,7 +15320,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -15328,7 +15328,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'account' =>
+      'account' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -15337,88 +15337,88 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'dateStartStatus' =>
+      'dateStartStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateStart',
           1 => 'status',
         ),
       ),
-      'dateStart' =>
+      'dateStart' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateStart',
           1 => 'deleted',
         ),
       ),
-      'status' =>
+      'status' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'status',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
-      'assignedUserStatus' =>
+      'assignedUserStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'status',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'dateStart',
       'order' => 'DESC',
     ),
   ),
-  'Opportunity' =>
+  'Opportunity' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'amount' =>
+      'amount' => 
       array (
         'type' => 'float',
         'orderBy' => 'amountConverted {direction}',
       ),
-      'amountWeightedConverted' =>
+      'amountWeightedConverted' => 
       array (
         'type' => 'float',
         'notNull' => false,
         'notStorable' => true,
         'select' => 'opportunity.amount * amountCurrencyRate.rate * opportunity.probability / 100',
         'orderBy' => 'amountWeightedConverted {direction}',
-        'where' =>
+        'where' => 
         array (
           '=' => '(opportunity.amount * amountCurrencyRate.rate * opportunity.probability / 100) = {value}',
           '<' => '(opportunity.amount * amountCurrencyRate.rate * opportunity.probability / 100) < {value}',
@@ -15430,45 +15430,45 @@ return array (
           'IS NOT NULL' => 'opportunity.amount IS NOT NULL',
         ),
       ),
-      'stage' =>
+      'stage' => 
       array (
         'type' => 'varchar',
         'default' => 'Prospecting',
         'len' => 255,
       ),
-      'lastStage' =>
+      'lastStage' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'probability' =>
+      'probability' => 
       array (
         'type' => 'int',
         'len' => 11,
       ),
-      'leadSource' =>
+      'leadSource' => 
       array (
         'type' => 'varchar',
         'default' => '',
         'len' => 255,
       ),
-      'closeDate' =>
+      'closeDate' => 
       array (
         'type' => 'date',
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'contactRole' =>
+      'contactRole' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'contacts',
             ),
@@ -15476,9 +15476,9 @@ return array (
             'distinct' => true,
           ),
           '<>' => 'opportunity.id NOT IN (SELECT opportunity_id FROM contact_opportunity WHERE deleted = 0 AND role = {value})',
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'contacts',
             ),
@@ -15486,18 +15486,18 @@ return array (
             'distinct' => true,
           ),
           'NOT IN' => 'opportunity.id NOT IN (SELECT opportunity_id FROM contact_opportunity WHERE deleted = 0 AND role IN {value})',
-          'LIKE' =>
+          'LIKE' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'contacts',
             ),
             'sql' => 'contactsMiddle.role LIKE {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
               0 => 'contacts',
             ),
@@ -15508,26 +15508,26 @@ return array (
         ),
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'amountCurrency' =>
+      'amountCurrency' => 
       array (
         'type' => 'varchar',
         'len' => 6,
       ),
-      'amountConverted' =>
+      'amountConverted' => 
       array (
         'type' => 'float',
         'select' => 'opportunity.amount * amountCurrencyRate.rate',
-        'where' =>
+        'where' => 
         array (
           '=' => 'opportunity.amount * amountCurrencyRate.rate = {value}',
           '>' => 'opportunity.amount * amountCurrencyRate.rate > {value}',
@@ -15541,7 +15541,7 @@ return array (
         'notStorable' => true,
         'orderBy' => 'amountConverted {direction}',
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15549,14 +15549,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'account',
         'foreign' => 'name',
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -15565,18 +15565,18 @@ return array (
         'isUnordered' => true,
         'orderBy' => 'name',
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'contactsColumns' =>
+      'contactsColumns' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignId' =>
+      'campaignId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15584,25 +15584,25 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'campaignName' =>
+      'campaignName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'campaign',
         'foreign' => 'name',
       ),
-      'originalLeadId' =>
+      'originalLeadId' => 
       array (
         'type' => 'varchar',
         'index' => 'originalLead',
         'notStorable' => true,
       ),
-      'originalLeadName' =>
+      'originalLeadName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15610,19 +15610,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15630,19 +15630,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -15650,19 +15650,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -15670,81 +15670,81 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'isFollowed' =>
+      'isFollowed' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'followersIds' =>
+      'followersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'followersNames' =>
+      'followersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'documentsIds' =>
+      'documentsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'documentsNames' =>
+      'documentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'emailsIds' =>
+      'emailsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'emailsNames' =>
+      'emailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'originalLead' =>
+      'originalLead' => 
       array (
         'type' => 'hasOne',
         'entity' => 'Lead',
@@ -15752,7 +15752,7 @@ return array (
         'foreign' => 'createdOpportunity',
         'noJoin' => true,
       ),
-      'campaign' =>
+      'campaign' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Campaign',
@@ -15761,21 +15761,21 @@ return array (
         'foreign' => 'opportunities',
         'noJoin' => true,
       ),
-      'documents' =>
+      'documents' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Document',
         'relationName' => 'documentOpportunity',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'opportunityId',
           1 => 'documentId',
         ),
         'foreign' => 'opportunities',
       ),
-      'emails' =>
+      'emails' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Email',
@@ -15783,7 +15783,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -15791,7 +15791,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Call',
@@ -15799,7 +15799,7 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Meeting',
@@ -15807,29 +15807,29 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Contact',
         'relationName' => 'contactOpportunity',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'opportunityId',
           1 => 'contactId',
         ),
         'foreign' => 'opportunities',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'role' =>
+          'role' => 
           array (
             'type' => 'varchar',
             'len' => 50,
           ),
         ),
       ),
-      'account' =>
+      'account' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -15837,30 +15837,30 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'opportunities',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Opportunity',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -15868,7 +15868,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -15876,7 +15876,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -15885,223 +15885,223 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'stage' =>
+      'stage' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'stage',
           1 => 'deleted',
         ),
       ),
-      'lastStage' =>
+      'lastStage' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'lastStage',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'deleted',
         ),
       ),
-      'createdAtStage' =>
+      'createdAtStage' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'stage',
         ),
       ),
-      'assignedUserStage' =>
+      'assignedUserStage' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'stage',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Reminder' =>
+  'Reminder' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'remindAt' =>
+      'remindAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
         'index' => true,
       ),
-      'startAt' =>
+      'startAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
         'index' => true,
       ),
-      'type' =>
+      'type' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'index' => true,
         'default' => 'Popup',
       ),
-      'seconds' =>
+      'seconds' => 
       array (
         'type' => 'int',
         'default' => '0',
         'len' => 11,
       ),
-      'entityType' =>
+      'entityType' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'entityId' =>
+      'entityId' => 
       array (
         'type' => 'varchar',
         'len' => 50,
       ),
-      'userId' =>
+      'userId' => 
       array (
         'type' => 'varchar',
         'len' => 50,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'remindAt',
       'order' => 'DESC',
     ),
   ),
-  'Target' =>
+  'Target' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'select' => 'TRIM(CONCAT(IFNULL(target.first_name, \'\'), \' \', IFNULL(target.last_name, \'\')))',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => '(target.first_name LIKE {value} OR target.last_name LIKE {value} OR CONCAT(target.first_name, \' \', target.last_name) LIKE {value} OR CONCAT(target.last_name, \' \', target.first_name) LIKE {value})',
           '=' => '(target.first_name = {value} OR target.last_name = {value} OR CONCAT(target.first_name, \' \', target.last_name) = {value} OR CONCAT(target.last_name, \' \', target.first_name) = {value})',
         ),
         'orderBy' => 'target.first_name {direction}',
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'salutationName' =>
+      'salutationName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'firstName' =>
+      'firstName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'lastName' =>
+      'lastName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'title' =>
+      'title' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'website' =>
+      'website' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressStreet' =>
+      'addressStreet' => 
       array (
         'type' => 'text',
         'dbType' => 'varchar',
         'len' => 255,
       ),
-      'addressCity' =>
+      'addressCity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressState' =>
+      'addressState' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressCountry' =>
+      'addressCountry' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressPostalCode' =>
+      'addressPostalCode' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'email',
         'notStorable' => true,
         'select' => 'emailAddresses.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'target.id IN (
                                 SELECT entity_id
@@ -16111,11 +16111,11 @@ return array (
                                     entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Target\' AND
                                     email_address.deleted = 0 AND email_address.lower LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -16124,11 +16124,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -16137,11 +16137,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -16150,11 +16150,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -16163,11 +16163,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -16176,11 +16176,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -16192,12 +16192,12 @@ return array (
         ),
         'orderBy' => 'emailAddresses.lower {direction}',
       ),
-      'phoneNumber' =>
+      'phoneNumber' => 
       array (
         'type' => 'phone',
         'notStorable' => true,
         'select' => 'phoneNumbers.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'target.id IN (
                                 SELECT entity_id
@@ -16207,11 +16207,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Target\' AND
                                     phone_number.deleted = 0 AND phone_number.name LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -16220,11 +16220,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -16233,11 +16233,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -16246,11 +16246,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -16259,11 +16259,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -16272,11 +16272,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -16288,45 +16288,45 @@ return array (
         ),
         'orderBy' => 'phoneNumbers.name {direction}',
       ),
-      'doNotCall' =>
+      'doNotCall' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'addressMap' =>
+      'addressMap' => 
       array (
         'type' => 'map',
         'notExportable' => true,
         'notStorable' => true,
       ),
-      'emailAddressIsOptedOut' =>
+      'emailAddressIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'select' => 'emailAddresses.opt_out',
-        'where' =>
+        'where' => 
         array (
-          '= TRUE' =>
+          '= TRUE' => 
           array (
             'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
           ),
-          '= FALSE' =>
+          '= FALSE' => 
           array (
             'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
           ),
@@ -16334,21 +16334,21 @@ return array (
         'orderBy' => 'emailAddresses.opt_out {direction}',
         'default' => false,
       ),
-      'emailAddressData' =>
+      'emailAddressData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberData' =>
+      'phoneNumberData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberNumeric' =>
+      'phoneNumberNumeric' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'target.id IN (
                                 SELECT entity_id
@@ -16358,11 +16358,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Target\' AND
                                     phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -16371,11 +16371,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -16384,11 +16384,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -16397,11 +16397,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -16410,11 +16410,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -16423,11 +16423,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -16438,7 +16438,7 @@ return array (
           ),
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -16446,19 +16446,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -16466,19 +16466,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -16486,19 +16486,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -16506,95 +16506,95 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailAddresses' =>
+      'emailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'relationName' => 'entityEmailAddress',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'emailAddressId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Target',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'phoneNumbers' =>
+      'phoneNumbers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PhoneNumber',
         'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'phoneNumberId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Target',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Target',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -16602,7 +16602,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -16610,7 +16610,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -16619,105 +16619,105 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'firstName' =>
+      'firstName' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'deleted',
         ),
       ),
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'lastName',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'TargetList' =>
+  'TargetList' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'entryCount' =>
+      'entryCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'optedOutCount' =>
+      'optedOutCount' => 
       array (
         'type' => 'int',
         'notStorable' => true,
         'len' => 11,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'includingActionList' =>
+      'includingActionList' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
         'storeArrayValues' => true,
       ),
-      'excludingActionList' =>
+      'excludingActionList' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
         'storeArrayValues' => true,
       ),
-      'targetStatus' =>
+      'targetStatus' => 
       array (
         'type' => 'varchar',
         'notExportable' => true,
         'notStorable' => true,
         'len' => 255,
       ),
-      'isOptedOut' =>
+      'isOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
@@ -16725,7 +16725,7 @@ return array (
         'notStorable' => true,
         'default' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -16733,19 +16733,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -16753,19 +16753,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -16773,19 +16773,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -16793,13 +16793,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'campaignsId' =>
+      'campaignsId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -16807,258 +16807,258 @@ return array (
         'index' => 'campaigns',
         'notNull' => false,
       ),
-      'campaignsName' =>
+      'campaignsName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'usersIds' =>
+      'usersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'usersNames' =>
+      'usersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'leadsIds' =>
+      'leadsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'leadsNames' =>
+      'leadsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'contactsIds' =>
+      'contactsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'contactsNames' =>
+      'contactsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'accountsIds' =>
+      'accountsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'accountsNames' =>
+      'accountsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'massEmailsExcludingIds' =>
+      'massEmailsExcludingIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'massEmailsExcludingNames' =>
+      'massEmailsExcludingNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignsExcludingIds' =>
+      'campaignsExcludingIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'campaignsExcludingNames' =>
+      'campaignsExcludingNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'massEmailsIds' =>
+      'massEmailsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'massEmailsNames' =>
+      'massEmailsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'campaignsIds' =>
+      'campaignsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'campaignsNames' =>
+      'campaignsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'users' =>
+      'users' => 
       array (
         'type' => 'manyMany',
         'entity' => 'User',
         'relationName' => 'targetListUser',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'userId',
         ),
         'foreign' => 'targetLists',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'leads' =>
+      'leads' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Lead',
         'relationName' => 'leadTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'leadId',
         ),
         'foreign' => 'targetLists',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'contacts' =>
+      'contacts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Contact',
         'relationName' => 'contactTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'contactId',
         ),
         'foreign' => 'targetLists',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'accounts' =>
+      'accounts' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Account',
         'relationName' => 'accountTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'accountId',
         ),
         'foreign' => 'targetLists',
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'optedOut' =>
+          'optedOut' => 
           array (
             'type' => 'bool',
           ),
         ),
       ),
-      'massEmailsExcluding' =>
+      'massEmailsExcluding' => 
       array (
         'type' => 'manyMany',
         'entity' => 'MassEmail',
         'relationName' => 'massEmailTargetListExcluding',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'massEmailId',
         ),
         'foreign' => 'excludingTargetLists',
       ),
-      'campaignsExcluding' =>
+      'campaignsExcluding' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Campaign',
         'relationName' => 'campaignTargetListExcluding',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'campaignId',
         ),
         'foreign' => 'excludingTargetLists',
       ),
-      'massEmails' =>
+      'massEmails' => 
       array (
         'type' => 'manyMany',
         'entity' => 'MassEmail',
         'relationName' => 'massEmailTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'massEmailId',
         ),
         'foreign' => 'targetLists',
       ),
-      'campaigns' =>
+      'campaigns' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Campaign',
         'relationName' => 'campaignTargetList',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'targetListId',
           1 => 'campaignId',
         ),
         'foreign' => 'targetLists',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'TargetList',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17066,7 +17066,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17074,7 +17074,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17083,107 +17083,107 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'createdAt' =>
+      'createdAt' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'createdAt',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Task' =>
+  'Task' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'status' =>
+      'status' => 
       array (
         'type' => 'varchar',
         'default' => 'Not Started',
         'len' => 255,
       ),
-      'priority' =>
+      'priority' => 
       array (
         'type' => 'varchar',
         'default' => 'Normal',
         'len' => 255,
       ),
-      'dateStart' =>
+      'dateStart' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'dateEnd' =>
+      'dateEnd' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'dateStartDate' =>
+      'dateStartDate' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'dateEndDate' =>
+      'dateEndDate' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'dateCompleted' =>
+      'dateCompleted' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'isOverdue' =>
+      'isOverdue' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'default' => false,
       ),
-      'reminders' =>
+      'reminders' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'parentId' =>
+      'parentId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17191,7 +17191,7 @@ return array (
         'index' => 'parent',
         'notNull' => false,
       ),
-      'parentType' =>
+      'parentType' => 
       array (
         'type' => 'foreignType',
         'notNull' => false,
@@ -17199,14 +17199,14 @@ return array (
         'len' => 100,
         'dbType' => 'varchar',
       ),
-      'parentName' =>
+      'parentName' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'relation' => 'parent',
         'isParentName' => true,
       ),
-      'accountId' =>
+      'accountId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17214,14 +17214,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'accountName' =>
+      'accountName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'account',
         'foreign' => 'name',
       ),
-      'contactId' =>
+      'contactId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17229,19 +17229,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'contactName' =>
+      'contactName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'contact',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17249,19 +17249,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17269,19 +17269,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17289,19 +17289,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -17309,24 +17309,24 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'attachmentsIds' =>
+      'attachmentsIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'orderBy' =>
+        'orderBy' => 
         array (
-          0 =>
+          0 => 
           array (
             0 => 'createdAt',
             1 => 'ASC',
           ),
-          1 =>
+          1 => 
           array (
             0 => 'name',
             1 => 'ASC',
@@ -17335,36 +17335,36 @@ return array (
         'isLinkMultipleIdList' => true,
         'relation' => 'attachments',
       ),
-      'attachmentsNames' =>
+      'attachmentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'isFollowed' =>
+      'isFollowed' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'followersIds' =>
+      'followersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'followersNames' =>
+      'followersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'attachmentsTypes' =>
+      'attachmentsTypes' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'contact' =>
+      'contact' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Contact',
@@ -17372,7 +17372,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'account' =>
+      'account' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Account',
@@ -17380,35 +17380,35 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'parent' =>
+      'parent' => 
       array (
         'type' => 'belongsToParent',
         'key' => 'parentId',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'entityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Task',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17416,7 +17416,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'tasks',
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17424,7 +17424,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17432,7 +17432,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'attachments' =>
+      'attachments' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Attachment',
@@ -17441,131 +17441,131 @@ return array (
         'foreign' => 'parent',
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'dateStartStatus' =>
+      'dateStartStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateStart',
           1 => 'status',
         ),
       ),
-      'dateEndStatus' =>
+      'dateEndStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateEnd',
           1 => 'status',
         ),
       ),
-      'dateStart' =>
+      'dateStart' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'dateStart',
           1 => 'deleted',
         ),
       ),
-      'status' =>
+      'status' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'status',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
-      'assignedUserStatus' =>
+      'assignedUserStatus' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'status',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Beneficios' =>
+  'Beneficios' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'titulo' =>
+      'titulo' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'descripcion' =>
+      'descripcion' => 
       array (
         'type' => 'text',
       ),
-      'direccion' =>
+      'direccion' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'validohasta' =>
+      'validohasta' => 
       array (
         'type' => 'date',
         'notNull' => false,
       ),
-      'titulolegal' =>
+      'titulolegal' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'descripcionlegal' =>
+      'descripcionlegal' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'pasoapaso' =>
+      'pasoapaso' => 
       array (
         'type' => 'text',
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17573,19 +17573,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17593,19 +17593,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17613,19 +17613,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -17633,13 +17633,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'empresaId' =>
+      'empresaId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17647,14 +17647,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'empresaName' =>
+      'empresaName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'empresa',
         'foreign' => 'name',
       ),
-      'proveedorId' =>
+      'proveedorId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17662,14 +17662,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'proveedorName' =>
+      'proveedorName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'proveedor',
         'foreign' => 'name',
       ),
-      'rolId' =>
+      'rolId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17677,14 +17677,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'rolName' =>
+      'rolName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'rol',
         'foreign' => 'name',
       ),
-      'comunaId' =>
+      'comunaId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17692,14 +17692,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'comunaName' =>
+      'comunaName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'comuna',
         'foreign' => 'name',
       ),
-      'categoriaId' =>
+      'categoriaId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17707,14 +17707,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'categoriaName' =>
+      'categoriaName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'categoria',
         'foreign' => 'name',
       ),
-      'doctosBeneficiosIds' =>
+      'doctosBeneficiosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -17722,53 +17722,53 @@ return array (
         'relation' => 'doctosBeneficios',
         'isUnordered' => true,
       ),
-      'doctosBeneficiosNames' =>
+      'doctosBeneficiosNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'doctosBeneficios' =>
+      'doctosBeneficios' => 
       array (
         'type' => 'hasMany',
         'entity' => 'DoctosBeneficio',
         'foreignKey' => 'beneficiosId',
         'foreign' => 'beneficios',
       ),
-      'categoria' =>
+      'categoria' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Categoria',
@@ -17776,7 +17776,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'beneficios',
       ),
-      'comuna' =>
+      'comuna' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Comuna',
@@ -17784,7 +17784,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'beneficios',
       ),
-      'rol' =>
+      'rol' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Rol',
@@ -17792,7 +17792,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'beneficioss',
       ),
-      'proveedor' =>
+      'proveedor' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Proveedor',
@@ -17800,7 +17800,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'beneficios',
       ),
-      'empresa' =>
+      'empresa' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Empresa',
@@ -17808,7 +17808,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'beneficios',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -17816,44 +17816,44 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Beneficios',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17861,7 +17861,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17869,7 +17869,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -17878,71 +17878,71 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Categoria' =>
+  'Categoria' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'nombreCategoria' =>
+      'nombreCategoria' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17950,19 +17950,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17970,19 +17970,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -17990,19 +17990,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18010,13 +18010,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'beneficiosIds' =>
+      'beneficiosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18024,13 +18024,13 @@ return array (
         'relation' => 'beneficios',
         'isUnordered' => true,
       ),
-      'beneficiosNames' =>
+      'beneficiosNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'subcategoriasIds' =>
+      'subcategoriasIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18038,60 +18038,60 @@ return array (
         'relation' => 'subcategorias',
         'isUnordered' => true,
       ),
-      'subcategoriasNames' =>
+      'subcategoriasNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'subcategorias' =>
+      'subcategorias' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Subcategoria',
         'foreignKey' => 'categoriaId',
         'foreign' => 'categoria',
       ),
-      'beneficios' =>
+      'beneficios' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Beneficios',
         'foreignKey' => 'categoriaId',
         'foreign' => 'categoria',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -18099,44 +18099,44 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Categoria',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18144,7 +18144,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18152,7 +18152,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18161,66 +18161,66 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Ciudad' =>
+  'Ciudad' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18228,19 +18228,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18248,19 +18248,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18268,19 +18268,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18288,13 +18288,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'comunasIds' =>
+      'comunasIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18302,53 +18302,53 @@ return array (
         'relation' => 'comunas',
         'isUnordered' => true,
       ),
-      'comunasNames' =>
+      'comunasNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'comunas' =>
+      'comunas' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Comuna',
         'foreignKey' => 'ciudadId',
         'foreign' => 'ciudad',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -18356,44 +18356,44 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Ciudad',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18401,7 +18401,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18409,7 +18409,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18418,66 +18418,66 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Comuna' =>
+  'Comuna' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18485,19 +18485,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18505,19 +18505,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18525,19 +18525,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18545,13 +18545,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'ciudadId' =>
+      'ciudadId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18559,14 +18559,14 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'ciudadName' =>
+      'ciudadName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'ciudad',
         'foreign' => 'name',
       ),
-      'trabajadorIds' =>
+      'trabajadorIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18574,13 +18574,13 @@ return array (
         'relation' => 'trabajador',
         'isUnordered' => true,
       ),
-      'trabajadorNames' =>
+      'trabajadorNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'beneficiosIds' =>
+      'beneficiosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18588,60 +18588,60 @@ return array (
         'relation' => 'beneficios',
         'isUnordered' => true,
       ),
-      'beneficiosNames' =>
+      'beneficiosNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'beneficios' =>
+      'beneficios' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Beneficios',
         'foreignKey' => 'comunaId',
         'foreign' => 'comuna',
       ),
-      'trabajador' =>
+      'trabajador' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Trabajador',
         'foreignKey' => 'comunarelacionId',
         'foreign' => 'comunarelacion',
       ),
-      'ciudad' =>
+      'ciudad' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Ciudad',
@@ -18649,7 +18649,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'comunas',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -18657,44 +18657,44 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Comuna',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18702,7 +18702,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18710,7 +18710,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18719,71 +18719,71 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'DoctosBeneficio' =>
+  'DoctosBeneficio' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'descripcion' =>
+      'descripcion' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18791,19 +18791,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18811,19 +18811,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18831,19 +18831,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -18851,13 +18851,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'documentosbeneficioId' =>
+      'documentosbeneficioId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18865,13 +18865,13 @@ return array (
         'index' => false,
         'notNull' => false,
       ),
-      'documentosbeneficioName' =>
+      'documentosbeneficioName' => 
       array (
         'type' => 'foreign',
         'relation' => 'documentosbeneficio',
         'foreign' => 'name',
       ),
-      'beneficiosId' =>
+      'beneficiosId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -18879,47 +18879,47 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'beneficiosName' =>
+      'beneficiosName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'beneficios',
         'foreign' => 'name',
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'documentosbeneficio' =>
+      'documentosbeneficio' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Attachment',
@@ -18927,7 +18927,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'beneficios' =>
+      'beneficios' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Beneficios',
@@ -18935,7 +18935,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'doctosBeneficios',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -18943,44 +18943,44 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'DoctosBeneficio',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18988,7 +18988,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -18996,7 +18996,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -19005,66 +19005,66 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Empresa' =>
+  'Empresa' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -19072,19 +19072,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -19092,19 +19092,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -19112,19 +19112,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -19132,13 +19132,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'beneficiosIds' =>
+      'beneficiosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -19146,13 +19146,13 @@ return array (
         'relation' => 'beneficios',
         'isUnordered' => true,
       ),
-      'beneficiosNames' =>
+      'beneficiosNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'trabajadorIds' =>
+      'trabajadorIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -19160,60 +19160,60 @@ return array (
         'relation' => 'trabajador',
         'isUnordered' => true,
       ),
-      'trabajadorNames' =>
+      'trabajadorNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'trabajador' =>
+      'trabajador' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Trabajador',
         'relationName' => 'trabajadorEmpresa',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'empresaId',
           1 => 'trabajadorId',
         ),
         'foreign' => 'empresa',
       ),
-      'beneficios' =>
+      'beneficios' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Beneficios',
         'foreignKey' => 'empresaId',
         'foreign' => 'empresa',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Empresa',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -19221,7 +19221,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -19229,7 +19229,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -19238,85 +19238,85 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Formularios' =>
+  'Formularios' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
         'select' => 'TRIM(CONCAT(IFNULL(formularios.first_name, \'\'), \' \', IFNULL(formularios.last_name, \'\')))',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => '(formularios.first_name LIKE {value} OR formularios.last_name LIKE {value} OR CONCAT(formularios.first_name, \' \', formularios.last_name) LIKE {value} OR CONCAT(formularios.last_name, \' \', formularios.first_name) LIKE {value})',
           '=' => '(formularios.first_name = {value} OR formularios.last_name = {value} OR CONCAT(formularios.first_name, \' \', formularios.last_name) = {value} OR CONCAT(formularios.last_name, \' \', formularios.first_name) = {value})',
         ),
         'orderBy' => 'formularios.first_name {direction}',
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'salutationName' =>
+      'salutationName' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'firstName' =>
+      'firstName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'lastName' =>
+      'lastName' => 
       array (
         'type' => 'varchar',
         'len' => 100,
         'default' => '',
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'emailAddress' =>
+      'emailAddress' => 
       array (
         'type' => 'email',
         'notStorable' => true,
         'select' => 'emailAddresses.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'formularios.id IN (
                                 SELECT entity_id
@@ -19326,11 +19326,11 @@ return array (
                                     entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Formularios\' AND
                                     email_address.deleted = 0 AND email_address.lower LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -19339,11 +19339,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -19352,11 +19352,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -19365,11 +19365,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -19378,11 +19378,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -19391,11 +19391,11 @@ return array (
             'sql' => 'emailAddressesMultiple.lower IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'emailAddresses',
                 1 => 'emailAddressesMultiple',
@@ -19407,12 +19407,12 @@ return array (
         ),
         'orderBy' => 'emailAddresses.lower {direction}',
       ),
-      'phoneNumber' =>
+      'phoneNumber' => 
       array (
         'type' => 'phone',
         'notStorable' => true,
         'select' => 'phoneNumbers.name',
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'formularios.id IN (
                                 SELECT entity_id
@@ -19422,11 +19422,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Formularios\' AND
                                     phone_number.deleted = 0 AND phone_number.name LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -19435,11 +19435,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -19448,11 +19448,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -19461,11 +19461,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -19474,11 +19474,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -19487,11 +19487,11 @@ return array (
             'sql' => 'phoneNumbersMultiple.name IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersMultiple',
@@ -19503,103 +19503,103 @@ return array (
         ),
         'orderBy' => 'phoneNumbers.name {direction}',
       ),
-      'addressStreet' =>
+      'addressStreet' => 
       array (
         'type' => 'text',
         'dbType' => 'varchar',
         'len' => 255,
       ),
-      'addressCity' =>
+      'addressCity' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressState' =>
+      'addressState' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressCountry' =>
+      'addressCountry' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'addressPostalCode' =>
+      'addressPostalCode' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'rut' =>
+      'rut' => 
       array (
         'type' => 'varchar',
         'len' => 20,
       ),
-      'beneficioSolicitado' =>
+      'beneficioSolicitado' => 
       array (
         'type' => 'varchar',
         'default' => 'Ninguno',
         'len' => 255,
       ),
-      'fechaSolicitud' =>
+      'fechaSolicitud' => 
       array (
         'type' => 'datetime',
       ),
-      'fechaDesde' =>
+      'fechaDesde' => 
       array (
         'type' => 'date',
       ),
-      'fechaHasta' =>
+      'fechaHasta' => 
       array (
         'type' => 'date',
       ),
-      'listaGym' =>
+      'listaGym' => 
       array (
         'type' => 'varchar',
         'default' => '- Seleccionar Gym -',
         'len' => 255,
       ),
-      'estadoFormulario' =>
+      'estadoFormulario' => 
       array (
         'type' => 'varchar',
         'default' => '- Estado Formulario -',
         'len' => 255,
       ),
-      'observacion' =>
+      'observacion' => 
       array (
         'type' => 'text',
         'len' => 200,
         'default' => 'Sin Observaciones...',
       ),
-      'numeroFormulario' =>
+      'numeroFormulario' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'notNull' => false,
         'unique' => false,
       ),
-      'emailAddressIsOptedOut' =>
+      'emailAddressIsOptedOut' => 
       array (
         'type' => 'bool',
         'notNull' => true,
         'notStorable' => true,
         'select' => 'emailAddresses.opt_out',
-        'where' =>
+        'where' => 
         array (
-          '= TRUE' =>
+          '= TRUE' => 
           array (
             'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
           ),
-          '= FALSE' =>
+          '= FALSE' => 
           array (
             'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
           ),
@@ -19607,27 +19607,27 @@ return array (
         'orderBy' => 'emailAddresses.opt_out {direction}',
         'default' => false,
       ),
-      'addressMap' =>
+      'addressMap' => 
       array (
         'type' => 'map',
         'notExportable' => true,
         'notStorable' => true,
       ),
-      'emailAddressData' =>
+      'emailAddressData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberData' =>
+      'phoneNumberData' => 
       array (
         'type' => 'text',
         'notStorable' => true,
       ),
-      'phoneNumberNumeric' =>
+      'phoneNumberNumeric' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
-        'where' =>
+        'where' => 
         array (
           'LIKE' => 'formularios.id IN (
                                 SELECT entity_id
@@ -19637,11 +19637,11 @@ return array (
                                     entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Formularios\' AND
                                     phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
                             )',
-          '=' =>
+          '=' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -19650,11 +19650,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
             'distinct' => true,
           ),
-          '<>' =>
+          '<>' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -19663,11 +19663,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
             'distinct' => true,
           ),
-          'IN' =>
+          'IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -19676,11 +19676,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
             'distinct' => true,
           ),
-          'NOT IN' =>
+          'NOT IN' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -19689,11 +19689,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
             'distinct' => true,
           ),
-          'IS NULL' =>
+          'IS NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -19702,11 +19702,11 @@ return array (
             'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
             'distinct' => true,
           ),
-          'IS NOT NULL' =>
+          'IS NOT NULL' => 
           array (
-            'leftJoins' =>
+            'leftJoins' => 
             array (
-              0 =>
+              0 => 
               array (
                 0 => 'phoneNumbers',
                 1 => 'phoneNumbersNumericMultiple',
@@ -19717,7 +19717,7 @@ return array (
           ),
         ),
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -19725,19 +19725,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -19745,19 +19745,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -19765,19 +19765,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -19785,13 +19785,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'documentsIds' =>
+      'documentsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -19799,13 +19799,13 @@ return array (
         'relation' => 'documents',
         'isUnordered' => true,
       ),
-      'documentsNames' =>
+      'documentsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'contactId' =>
+      'contactId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -19813,123 +19813,123 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'contactName' =>
+      'contactName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'contact',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'isFollowed' =>
+      'isFollowed' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'followersIds' =>
+      'followersIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'followersNames' =>
+      'followersNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'emailAddresses' =>
+      'emailAddresses' => 
       array (
         'type' => 'manyMany',
         'entity' => 'EmailAddress',
         'relationName' => 'entityEmailAddress',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'emailAddressId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Formularios',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'phoneNumbers' =>
+      'phoneNumbers' => 
       array (
         'type' => 'manyMany',
         'entity' => 'PhoneNumber',
         'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'phoneNumberId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Formularios',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
-          'primary' =>
+          'primary' => 
           array (
             'type' => 'bool',
             'default' => false,
           ),
         ),
       ),
-      'contact' =>
+      'contact' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Contact',
@@ -19937,21 +19937,21 @@ return array (
         'foreignKey' => 'id',
         'foreign' => 'formularios',
       ),
-      'documents' =>
+      'documents' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Document',
         'relationName' => 'formulariosDocument',
         'key' => 'id',
         'foreignKey' => 'id',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'formulariosId',
           1 => 'documentId',
         ),
         'foreign' => 'formularios',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -19959,44 +19959,44 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'Formularios',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -20004,7 +20004,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -20012,7 +20012,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -20021,6031 +20021,86 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'firstName' =>
+      'firstName' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'deleted',
         ),
       ),
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'firstName',
           1 => 'lastName',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Proveedor' =>
+  'MotivoReclamo' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'rut' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'direccion' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'beneficiosIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'beneficios',
-        'isUnordered' => true,
-      ),
-      'beneficiosNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'beneficios' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Beneficios',
-        'foreignKey' => 'proveedorId',
-        'foreign' => 'proveedor',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Proveedor',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Rol' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'beneficiossIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'beneficioss',
-        'isUnordered' => true,
-      ),
-      'beneficiossNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'trabajadorIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'trabajador',
-        'isUnordered' => true,
-      ),
-      'trabajadorNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'trabajador' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Trabajador',
-        'relationName' => 'trabajadorRol',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'rolId',
-          1 => 'trabajadorId',
-        ),
-        'foreign' => 'rol',
-      ),
-      'beneficioss' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Beneficios',
-        'foreignKey' => 'rolId',
-        'foreign' => 'rol',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Rol',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Solicitudes' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-        'select' => 'TRIM(CONCAT(IFNULL(solicitudes.first_name, \'\'), \' \', IFNULL(solicitudes.last_name, \'\')))',
-        'where' =>
-        array (
-          'LIKE' => '(solicitudes.first_name LIKE {value} OR solicitudes.last_name LIKE {value} OR CONCAT(solicitudes.first_name, \' \', solicitudes.last_name) LIKE {value} OR CONCAT(solicitudes.last_name, \' \', solicitudes.first_name) LIKE {value})',
-          '=' => '(solicitudes.first_name = {value} OR solicitudes.last_name = {value} OR CONCAT(solicitudes.first_name, \' \', solicitudes.last_name) = {value} OR CONCAT(solicitudes.last_name, \' \', solicitudes.first_name) = {value})',
-        ),
-        'orderBy' => 'solicitudes.first_name {direction}',
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'salutationName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'firstName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 100,
-        'default' => '',
-      ),
-      'lastName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 100,
-        'default' => '',
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'emailAddress' =>
-      array (
-        'type' => 'email',
-        'notStorable' => true,
-        'select' => 'emailAddresses.name',
-        'where' =>
-        array (
-          'LIKE' => 'solicitudes.id IN (
-                                SELECT entity_id
-                                FROM entity_email_address
-                                JOIN email_address ON email_address.id = entity_email_address.email_address_id
-                                WHERE
-                                    entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Solicitudes\' AND
-                                    email_address.deleted = 0 AND email_address.lower LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-        'orderBy' => 'emailAddresses.lower {direction}',
-      ),
-      'phoneNumber' =>
-      array (
-        'type' => 'phone',
-        'notStorable' => true,
-        'select' => 'phoneNumbers.name',
-        'where' =>
-        array (
-          'LIKE' => 'solicitudes.id IN (
-                                SELECT entity_id
-                                FROM entity_phone_number
-                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
-                                WHERE
-                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Solicitudes\' AND
-                                    phone_number.deleted = 0 AND phone_number.name LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-        'orderBy' => 'phoneNumbers.name {direction}',
-      ),
-      'addressStreet' =>
-      array (
-        'type' => 'text',
-        'dbType' => 'varchar',
-        'len' => 255,
-      ),
-      'addressCity' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressState' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressCountry' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressPostalCode' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'rut' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'estadoSolicitud' =>
-      array (
-        'type' => 'varchar',
-        'default' => 'Aprobado',
-        'len' => 255,
-      ),
-      'beneficio' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'carga' =>
-      array (
-        'type' => 'jsonArray',
-        'storeArrayValues' => true,
-      ),
-      'ciudad' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'categoria' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'subcategoria' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'numeroSolicitud' =>
+      'motivoReclamoId' => 
       array (
         'type' => 'varchar',
         'len' => 36,
         'notNull' => false,
         'unique' => false,
       ),
-      'fechahasta' =>
-      array (
-        'type' => 'date',
-        'notNull' => false,
-      ),
-      'emailAddressIsOptedOut' =>
-      array (
-        'type' => 'bool',
-        'notNull' => true,
-        'notStorable' => true,
-        'select' => 'emailAddresses.opt_out',
-        'where' =>
-        array (
-          '= TRUE' =>
-          array (
-            'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
-          ),
-          '= FALSE' =>
-          array (
-            'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
-          ),
-        ),
-        'orderBy' => 'emailAddresses.opt_out {direction}',
-        'default' => false,
-      ),
-      'addressMap' =>
-      array (
-        'type' => 'map',
-        'notExportable' => true,
-        'notStorable' => true,
-      ),
-      'emailAddressData' =>
-      array (
-        'type' => 'text',
-        'notStorable' => true,
-      ),
-      'phoneNumberData' =>
-      array (
-        'type' => 'text',
-        'notStorable' => true,
-      ),
-      'phoneNumberNumeric' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-        'where' =>
-        array (
-          'LIKE' => 'solicitudes.id IN (
-                                SELECT entity_id
-                                FROM entity_phone_number
-                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
-                                WHERE
-                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Solicitudes\' AND
-                                    phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'documentoId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => false,
-        'notNull' => false,
-      ),
-      'documentoName' =>
-      array (
-        'type' => 'foreign',
-        'relation' => 'documento',
-        'foreign' => 'name',
-      ),
-      'relacionsubcategoriaId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'relacionsubcategoriaName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'relacionsubcategoria',
-        'foreign' => 'name',
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'emailAddresses' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'EmailAddress',
-        'relationName' => 'entityEmailAddress',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'emailAddressId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Solicitudes',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-          'primary' =>
-          array (
-            'type' => 'bool',
-            'default' => false,
-          ),
-        ),
-      ),
-      'phoneNumbers' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'PhoneNumber',
-        'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'phoneNumberId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Solicitudes',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-          'primary' =>
-          array (
-            'type' => 'bool',
-            'default' => false,
-          ),
-        ),
-      ),
-      'documento' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Attachment',
-        'key' => 'documentoId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'relacionsubcategoria' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Subcategoria',
-        'key' => 'relacionsubcategoriaId',
-        'foreignKey' => 'id',
-        'foreign' => 'relacionsolicitudes',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Solicitudes',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'firstName' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'firstName',
-          1 => 'deleted',
-        ),
-      ),
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'firstName',
-          1 => 'lastName',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Subcategoria' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'idcategoria' =>
-      array (
-        'type' => 'int',
-        'len' => 11,
-      ),
-      'nombreSubcategoria' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'relacionsolicitudesIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'relacionsolicitudes',
-        'isUnordered' => true,
-      ),
-      'relacionsolicitudesNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'categoriaId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'categoriaName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'categoria',
-        'foreign' => 'name',
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'categoria' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Categoria',
-        'key' => 'categoriaId',
-        'foreignKey' => 'id',
-        'foreign' => 'subcategorias',
-      ),
-      'relacionsolicitudes' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Solicitudes',
-        'foreignKey' => 'relacionsubcategoriaId',
-        'foreign' => 'relacionsubcategoria',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Subcategoria',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Trabajador' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'validohasta' =>
-      array (
-        'type' => 'date',
-        'notNull' => false,
-      ),
-      'titulolegal' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'descripcionlegal' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'pasoapaso' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'empresaId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'empresaName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'empresa',
-        'foreign' => 'name',
-      ),
-      'proveedorId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'proveedorName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'proveedor',
-        'foreign' => 'name',
-      ),
-      'rolId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'rolName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'rol',
-        'foreign' => 'name',
-      ),
-      'comunaId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'comunaName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'comuna',
-        'foreign' => 'name',
-      ),
-      'categoriaId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'categoriaName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'categoria',
-        'foreign' => 'name',
-      ),
-      'doctosBeneficiosIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'doctosBeneficios',
-        'isUnordered' => true,
-      ),
-      'doctosBeneficiosNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'doctosBeneficios' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'DoctosBeneficio',
-        'foreignKey' => 'beneficiosId',
-        'foreign' => 'beneficios',
-      ),
-      'categoria' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Categoria',
-        'key' => 'categoriaId',
-        'foreignKey' => 'id',
-        'foreign' => 'beneficios',
-      ),
-      'comuna' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Comuna',
-        'key' => 'comunaId',
-        'foreignKey' => 'id',
-        'foreign' => 'beneficios',
-      ),
-      'rol' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Rol',
-        'key' => 'rolId',
-        'foreignKey' => 'id',
-        'foreign' => 'beneficioss',
-      ),
-      'proveedor' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Proveedor',
-        'key' => 'proveedorId',
-        'foreignKey' => 'id',
-        'foreign' => 'beneficios',
-      ),
-      'empresa' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Empresa',
-        'key' => 'empresaId',
-        'foreignKey' => 'id',
-        'foreign' => 'beneficios',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Beneficios',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Categoria' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'nombreCategoria' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'beneficiosIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'beneficios',
-        'isUnordered' => true,
-      ),
-      'beneficiosNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'subcategoriasIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'subcategorias',
-        'isUnordered' => true,
-      ),
-      'subcategoriasNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'subcategorias' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Subcategoria',
-        'foreignKey' => 'categoriaId',
-        'foreign' => 'categoria',
-      ),
-      'beneficios' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Beneficios',
-        'foreignKey' => 'categoriaId',
-        'foreign' => 'categoria',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Categoria',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Ciudad' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'comunasIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'comunas',
-        'isUnordered' => true,
-      ),
-      'comunasNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'comunas' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Comuna',
-        'foreignKey' => 'ciudadId',
-        'foreign' => 'ciudad',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Ciudad',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Comuna' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'ciudadId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'ciudadName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'ciudad',
-        'foreign' => 'name',
-      ),
-      'trabajadorIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'trabajador',
-        'isUnordered' => true,
-      ),
-      'trabajadorNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'beneficiosIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'beneficios',
-        'isUnordered' => true,
-      ),
-      'beneficiosNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'beneficios' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Beneficios',
-        'foreignKey' => 'comunaId',
-        'foreign' => 'comuna',
-      ),
-      'trabajador' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Trabajador',
-        'foreignKey' => 'comunarelacionId',
-        'foreign' => 'comunarelacion',
-      ),
-      'ciudad' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Ciudad',
-        'key' => 'ciudadId',
-        'foreignKey' => 'id',
-        'foreign' => 'comunas',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Comuna',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'DoctosBeneficio' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'descripcion' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'documentosbeneficioId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => false,
-        'notNull' => false,
-      ),
-      'documentosbeneficioName' =>
-      array (
-        'type' => 'foreign',
-        'relation' => 'documentosbeneficio',
-        'foreign' => 'name',
-      ),
-      'beneficiosId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'beneficiosName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'beneficios',
-        'foreign' => 'name',
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'documentosbeneficio' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Attachment',
-        'key' => 'documentosbeneficioId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'beneficios' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Beneficios',
-        'key' => 'beneficiosId',
-        'foreignKey' => 'id',
-        'foreign' => 'doctosBeneficios',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'DoctosBeneficio',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Empresa' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'beneficiosIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'beneficios',
-        'isUnordered' => true,
-      ),
-      'beneficiosNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'trabajadorIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'trabajador',
-        'isUnordered' => true,
-      ),
-      'trabajadorNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'trabajador' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Trabajador',
-        'relationName' => 'trabajadorEmpresa',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'empresaId',
-          1 => 'trabajadorId',
-        ),
-        'foreign' => 'empresa',
-      ),
-      'beneficios' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Beneficios',
-        'foreignKey' => 'empresaId',
-        'foreign' => 'empresa',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Empresa',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Formularios' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-        'select' => 'TRIM(CONCAT(IFNULL(formularios.first_name, \'\'), \' \', IFNULL(formularios.last_name, \'\')))',
-        'where' =>
-        array (
-          'LIKE' => '(formularios.first_name LIKE {value} OR formularios.last_name LIKE {value} OR CONCAT(formularios.first_name, \' \', formularios.last_name) LIKE {value} OR CONCAT(formularios.last_name, \' \', formularios.first_name) LIKE {value})',
-          '=' => '(formularios.first_name = {value} OR formularios.last_name = {value} OR CONCAT(formularios.first_name, \' \', formularios.last_name) = {value} OR CONCAT(formularios.last_name, \' \', formularios.first_name) = {value})',
-        ),
-        'orderBy' => 'formularios.first_name {direction}',
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'salutationName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'firstName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 100,
-        'default' => '',
-      ),
-      'lastName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 100,
-        'default' => '',
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'emailAddress' =>
-      array (
-        'type' => 'email',
-        'notStorable' => true,
-        'select' => 'emailAddresses.name',
-        'where' =>
-        array (
-          'LIKE' => 'formularios.id IN (
-                                SELECT entity_id
-                                FROM entity_email_address
-                                JOIN email_address ON email_address.id = entity_email_address.email_address_id
-                                WHERE
-                                    entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Formularios\' AND
-                                    email_address.deleted = 0 AND email_address.lower LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-        'orderBy' => 'emailAddresses.lower {direction}',
-      ),
-      'phoneNumber' =>
-      array (
-        'type' => 'phone',
-        'notStorable' => true,
-        'select' => 'phoneNumbers.name',
-        'where' =>
-        array (
-          'LIKE' => 'formularios.id IN (
-                                SELECT entity_id
-                                FROM entity_phone_number
-                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
-                                WHERE
-                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Formularios\' AND
-                                    phone_number.deleted = 0 AND phone_number.name LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-        'orderBy' => 'phoneNumbers.name {direction}',
-      ),
-      'addressStreet' =>
-      array (
-        'type' => 'text',
-        'dbType' => 'varchar',
-        'len' => 255,
-      ),
-      'addressCity' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressState' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressCountry' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressPostalCode' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'rut' =>
-      array (
-        'type' => 'varchar',
-        'len' => 20,
-      ),
-      'beneficioSolicitado' =>
-      array (
-        'type' => 'varchar',
-        'default' => 'Ninguno',
-        'len' => 255,
-      ),
-      'fechaSolicitud' =>
-      array (
-        'type' => 'datetime',
-      ),
-      'fechaDesde' =>
-      array (
-        'type' => 'date',
-      ),
-      'fechaHasta' =>
-      array (
-        'type' => 'date',
-      ),
-      'listaGym' =>
-      array (
-        'type' => 'varchar',
-        'default' => '- Seleccionar Gym -',
-        'len' => 255,
-      ),
-      'estadoFormulario' =>
-      array (
-        'type' => 'varchar',
-        'default' => '- Estado Formulario -',
-        'len' => 255,
-      ),
-      'observacion' =>
-      array (
-        'type' => 'text',
-        'len' => 200,
-        'default' => 'Sin Observaciones...',
-      ),
-      'numeroFormulario' =>
-      array (
-        'type' => 'varchar',
-        'len' => 36,
-        'notNull' => false,
-        'unique' => false,
-      ),
-      'emailAddressIsOptedOut' =>
-      array (
-        'type' => 'bool',
-        'notNull' => true,
-        'notStorable' => true,
-        'select' => 'emailAddresses.opt_out',
-        'where' =>
-        array (
-          '= TRUE' =>
-          array (
-            'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
-          ),
-          '= FALSE' =>
-          array (
-            'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
-          ),
-        ),
-        'orderBy' => 'emailAddresses.opt_out {direction}',
-        'default' => false,
-      ),
-      'addressMap' =>
-      array (
-        'type' => 'map',
-        'notExportable' => true,
-        'notStorable' => true,
-      ),
-      'emailAddressData' =>
-      array (
-        'type' => 'text',
-        'notStorable' => true,
-      ),
-      'phoneNumberData' =>
-      array (
-        'type' => 'text',
-        'notStorable' => true,
-      ),
-      'phoneNumberNumeric' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-        'where' =>
-        array (
-          'LIKE' => 'formularios.id IN (
-                                SELECT entity_id
-                                FROM entity_phone_number
-                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
-                                WHERE
-                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Formularios\' AND
-                                    phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'documentsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'documents',
-        'isUnordered' => true,
-      ),
-      'documentsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'contactId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'contactName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'contact',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'isFollowed' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'followersIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'followersNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'emailAddresses' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'EmailAddress',
-        'relationName' => 'entityEmailAddress',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'emailAddressId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Formularios',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-          'primary' =>
-          array (
-            'type' => 'bool',
-            'default' => false,
-          ),
-        ),
-      ),
-      'phoneNumbers' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'PhoneNumber',
-        'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'phoneNumberId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Formularios',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-          'primary' =>
-          array (
-            'type' => 'bool',
-            'default' => false,
-          ),
-        ),
-      ),
-      'contact' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Contact',
-        'key' => 'contactId',
-        'foreignKey' => 'id',
-        'foreign' => 'formularios',
-      ),
-      'documents' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Document',
-        'relationName' => 'formulariosDocument',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'formulariosId',
-          1 => 'documentId',
-        ),
-        'foreign' => 'formularios',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Formularios',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'firstName' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'firstName',
-          1 => 'deleted',
-        ),
-      ),
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'firstName',
-          1 => 'lastName',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Proveedor' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'rut' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'direccion' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'beneficiosIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'beneficios',
-        'isUnordered' => true,
-      ),
-      'beneficiosNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'beneficios' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Beneficios',
-        'foreignKey' => 'proveedorId',
-        'foreign' => 'proveedor',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Proveedor',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Rol' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'beneficiossIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'beneficioss',
-        'isUnordered' => true,
-      ),
-      'beneficiossNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'trabajadorIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'trabajador',
-        'isUnordered' => true,
-      ),
-      'trabajadorNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'trabajador' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Trabajador',
-        'relationName' => 'trabajadorRol',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'rolId',
-          1 => 'trabajadorId',
-        ),
-        'foreign' => 'rol',
-      ),
-      'beneficioss' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Beneficios',
-        'foreignKey' => 'rolId',
-        'foreign' => 'rol',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Rol',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Solicitudes' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-        'select' => 'TRIM(CONCAT(IFNULL(solicitudes.first_name, \'\'), \' \', IFNULL(solicitudes.last_name, \'\')))',
-        'where' =>
-        array (
-          'LIKE' => '(solicitudes.first_name LIKE {value} OR solicitudes.last_name LIKE {value} OR CONCAT(solicitudes.first_name, \' \', solicitudes.last_name) LIKE {value} OR CONCAT(solicitudes.last_name, \' \', solicitudes.first_name) LIKE {value})',
-          '=' => '(solicitudes.first_name = {value} OR solicitudes.last_name = {value} OR CONCAT(solicitudes.first_name, \' \', solicitudes.last_name) = {value} OR CONCAT(solicitudes.last_name, \' \', solicitudes.first_name) = {value})',
-        ),
-        'orderBy' => 'solicitudes.first_name {direction}',
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'salutationName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'firstName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 100,
-        'default' => '',
-      ),
-      'lastName' =>
-      array (
-        'type' => 'varchar',
-        'len' => 100,
-        'default' => '',
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'emailAddress' =>
-      array (
-        'type' => 'email',
-        'notStorable' => true,
-        'select' => 'emailAddresses.name',
-        'where' =>
-        array (
-          'LIKE' => 'solicitudes.id IN (
-                                SELECT entity_id
-                                FROM entity_email_address
-                                JOIN email_address ON email_address.id = entity_email_address.email_address_id
-                                WHERE
-                                    entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Solicitudes\' AND
-                                    email_address.deleted = 0 AND email_address.lower LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'emailAddresses',
-                1 => 'emailAddressesMultiple',
-              ),
-            ),
-            'sql' => 'emailAddressesMultiple.lower IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-        'orderBy' => 'emailAddresses.lower {direction}',
-      ),
-      'phoneNumber' =>
-      array (
-        'type' => 'phone',
-        'notStorable' => true,
-        'select' => 'phoneNumbers.name',
-        'where' =>
-        array (
-          'LIKE' => 'solicitudes.id IN (
-                                SELECT entity_id
-                                FROM entity_phone_number
-                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
-                                WHERE
-                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Solicitudes\' AND
-                                    phone_number.deleted = 0 AND phone_number.name LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersMultiple.name IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-        'orderBy' => 'phoneNumbers.name {direction}',
-      ),
-      'addressStreet' =>
-      array (
-        'type' => 'text',
-        'dbType' => 'varchar',
-        'len' => 255,
-      ),
-      'addressCity' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressState' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressCountry' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'addressPostalCode' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'rut' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'estadoSolicitud' =>
-      array (
-        'type' => 'varchar',
-        'default' => 'Aprobado',
-        'len' => 255,
-      ),
-      'beneficio' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'carga' =>
-      array (
-        'type' => 'jsonArray',
-        'storeArrayValues' => true,
-      ),
-      'ciudad' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'categoria' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'subcategoria' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'numeroSolicitud' =>
-      array (
-        'type' => 'varchar',
-        'len' => 36,
-        'notNull' => false,
-        'unique' => false,
-      ),
-      'fechahasta' =>
-      array (
-        'type' => 'date',
-        'notNull' => false,
-      ),
-      'emailAddressIsOptedOut' =>
-      array (
-        'type' => 'bool',
-        'notNull' => true,
-        'notStorable' => true,
-        'select' => 'emailAddresses.opt_out',
-        'where' =>
-        array (
-          '= TRUE' =>
-          array (
-            'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
-          ),
-          '= FALSE' =>
-          array (
-            'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
-          ),
-        ),
-        'orderBy' => 'emailAddresses.opt_out {direction}',
-        'default' => false,
-      ),
-      'addressMap' =>
-      array (
-        'type' => 'map',
-        'notExportable' => true,
-        'notStorable' => true,
-      ),
-      'emailAddressData' =>
-      array (
-        'type' => 'text',
-        'notStorable' => true,
-      ),
-      'phoneNumberData' =>
-      array (
-        'type' => 'text',
-        'notStorable' => true,
-      ),
-      'phoneNumberNumeric' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-        'where' =>
-        array (
-          'LIKE' => 'solicitudes.id IN (
-                                SELECT entity_id
-                                FROM entity_phone_number
-                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
-                                WHERE
-                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Solicitudes\' AND
-                                    phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
-                            )',
-          '=' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
-            'distinct' => true,
-          ),
-          '<>' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
-            'distinct' => true,
-          ),
-          'IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
-            'distinct' => true,
-          ),
-          'NOT IN' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
-            'distinct' => true,
-          ),
-          'IS NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
-            'distinct' => true,
-          ),
-          'IS NOT NULL' =>
-          array (
-            'leftJoins' =>
-            array (
-              0 =>
-              array (
-                0 => 'phoneNumbers',
-                1 => 'phoneNumbersNumericMultiple',
-              ),
-            ),
-            'sql' => 'phoneNumbersNumericMultiple.numeric IS NOT NULL',
-            'distinct' => true,
-          ),
-        ),
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'documentoId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => false,
-        'notNull' => false,
-      ),
-      'documentoName' =>
-      array (
-        'type' => 'foreign',
-        'relation' => 'documento',
-        'foreign' => 'name',
-      ),
-      'relacionsubcategoriaId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'relacionsubcategoriaName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'relacionsubcategoria',
-        'foreign' => 'name',
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'emailAddresses' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'EmailAddress',
-        'relationName' => 'entityEmailAddress',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'emailAddressId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Solicitudes',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-          'primary' =>
-          array (
-            'type' => 'bool',
-            'default' => false,
-          ),
-        ),
-      ),
-      'phoneNumbers' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'PhoneNumber',
-        'relationName' => 'entityPhoneNumber',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'phoneNumberId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Solicitudes',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-          'primary' =>
-          array (
-            'type' => 'bool',
-            'default' => false,
-          ),
-        ),
-      ),
-      'documento' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Attachment',
-        'key' => 'documentoId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'relacionsubcategoria' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Subcategoria',
-        'key' => 'relacionsubcategoriaId',
-        'foreignKey' => 'id',
-        'foreign' => 'relacionsolicitudes',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Solicitudes',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'firstName' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'firstName',
-          1 => 'deleted',
-        ),
-      ),
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'firstName',
-          1 => 'lastName',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Subcategoria' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'idcategoria' =>
-      array (
-        'type' => 'int',
-        'len' => 11,
-      ),
-      'nombreSubcategoria' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'relacionsolicitudesIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'relacionsolicitudes',
-        'isUnordered' => true,
-      ),
-      'relacionsolicitudesNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'categoriaId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'categoriaName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'categoria',
-        'foreign' => 'name',
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'callsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'callsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'meetingsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-      ),
-      'meetingsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'categoria' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Categoria',
-        'key' => 'categoriaId',
-        'foreignKey' => 'id',
-        'foreign' => 'subcategorias',
-      ),
-      'relacionsolicitudes' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Solicitudes',
-        'foreignKey' => 'relacionsubcategoriaId',
-        'foreign' => 'relacionsubcategoria',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'meetings' =>
-      array (
-        'type' => 'hasMany',
-        'entity' => 'Meeting',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Subcategoria',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'Trabajador' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'nombre' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'rut' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'apellidopaterno' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'apellidomaterno' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'nombrecompleto' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'direccion' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'email' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'telefono' =>
-      array (
-        'type' => 'varchar',
-        'len' => 36,
-        'notNull' => false,
-        'unique' => false,
-      ),
-      'createdById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'createdByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'createdBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'modifiedById' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'modifiedByName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'modifiedBy',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
-        'foreign' =>
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'teamsIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'teams',
-        'isUnordered' => true,
-      ),
-      'teamsNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'comunarelacionId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'comunarelacionName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'comunarelacion',
-        'foreign' => 'name',
-      ),
-      'rolIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'rol',
-        'isUnordered' => true,
-      ),
-      'rolNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'empresaIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'empresa',
-        'isUnordered' => true,
-      ),
-      'empresaNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-    ),
-    'relations' =>
-    array (
-      'empresa' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Empresa',
-        'relationName' => 'trabajadorEmpresa',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'trabajadorId',
-          1 => 'empresaId',
-        ),
-        'foreign' => 'trabajador',
-      ),
-      'rol' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Rol',
-        'relationName' => 'trabajadorRol',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'trabajadorId',
-          1 => 'rolId',
-        ),
-        'foreign' => 'trabajador',
-      ),
-      'comunarelacion' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Comuna',
-        'key' => 'comunarelacionId',
-        'foreignKey' => 'id',
-        'foreign' => 'trabajador',
-      ),
-      'teams' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Team',
-        'relationName' => 'EntityTeam',
-        'midKeys' =>
-        array (
-          0 => 'entityId',
-          1 => 'teamId',
-        ),
-        'conditions' =>
-        array (
-          'entityType' => 'Trabajador',
-        ),
-        'additionalColumns' =>
-        array (
-          'entityType' =>
-          array (
-            'type' => 'varchar',
-            'len' => 100,
-          ),
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'assignedUserId',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'modifiedBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'modifiedById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-      'createdBy' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'User',
-        'key' => 'createdById',
-        'foreignKey' => 'id',
-        'foreign' => NULL,
-      ),
-    ),
-    'indexes' =>
-    array (
-      'name' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'name',
-          1 => 'deleted',
-        ),
-      ),
-      'assignedUser' =>
-      array (
-        'columns' =>
-        array (
-          0 => 'assignedUserId',
-          1 => 'deleted',
-        ),
-      ),
-    ),
-    'collection' =>
-    array (
-      'orderBy' => 'createdAt',
-      'order' => 'DESC',
-    ),
-  ),
-  'MotivoReclamo' =>
-  array (
-    'fields' =>
-    array (
-      'id' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'id',
-      ),
-      'name' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'deleted' =>
-      array (
-        'type' => 'bool',
-        'default' => false,
-      ),
-      'description' =>
-      array (
-        'type' => 'text',
-      ),
-      'createdAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'modifiedAt' =>
-      array (
-        'type' => 'datetime',
-        'notNull' => false,
-      ),
-      'motivoReclamoId' =>
-      array (
-        'type' => 'varchar',
-        'len' => 36,
-        'notNull' => false,
-        'unique' => false,
-      ),
-      'motivoReclamoDescripcion' =>
+      'motivoReclamoDescripcion' => 
       array (
         'type' => 'varchar',
         'len' => 100,
       ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -26053,19 +20108,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -26073,19 +20128,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -26093,19 +20148,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -26113,13 +20168,13 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'reclamosMotivoReclamoIds' =>
+      'reclamosMotivoReclamoIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -26127,53 +20182,53 @@ return array (
         'relation' => 'reclamosMotivoReclamo',
         'isUnordered' => true,
       ),
-      'reclamosMotivoReclamoNames' =>
+      'reclamosMotivoReclamoNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'tasksIds' =>
+      'tasksIds' => 
       array (
         'type' => 'varchar',
         'notStorable' => true,
       ),
-      'tasksNames' =>
+      'tasksNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'callsIds' =>
+      'callsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'callsNames' =>
+      'callsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
-      'meetingsIds' =>
+      'meetingsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
       ),
-      'meetingsNames' =>
+      'meetingsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'reclamosMotivoReclamo' =>
+      'reclamosMotivoReclamo' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Reclamo',
         'foreignKey' => 'motivoReclamoId',
         'foreign' => 'motivoReclamo',
       ),
-      'tasks' =>
+      'tasks' => 
       array (
         'type' => 'hasChildren',
         'entity' => 'Task',
@@ -26181,44 +20236,44 @@ return array (
         'foreignType' => 'parentType',
         'foreign' => 'parent',
       ),
-      'calls' =>
+      'calls' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Call',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'meetings' =>
+      'meetings' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Meeting',
         'foreignKey' => 'parentId',
         'foreign' => 'parent',
       ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
           'entityType' => 'MotivoReclamo',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -26226,7 +20281,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -26234,7 +20289,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -26243,104 +20298,76 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',
     ),
   ),
-  'Reclamo' =>
+  'Proveedor' => 
   array (
-    'fields' =>
+    'fields' => 
     array (
-      'id' =>
+      'id' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
         'type' => 'id',
       ),
-      'name' =>
+      'name' => 
       array (
         'type' => 'varchar',
         'len' => 255,
       ),
-      'nombrecompleto' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'direccion' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'email' =>
-      array (
-        'type' => 'varchar',
-        'len' => 255,
-      ),
-      'telefono' =>
-      array (
-        'type' => 'varchar',
-        'len' => 36,
-        'notNull' => false,
-        'unique' => false,
-      'deleted' =>
+      'deleted' => 
       array (
         'type' => 'bool',
         'default' => false,
       ),
-      'description' =>
+      'description' => 
       array (
         'type' => 'text',
       ),
-      'createdAt' =>
+      'createdAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'modifiedAt' =>
+      'modifiedAt' => 
       array (
         'type' => 'datetime',
         'notNull' => false,
       ),
-      'reclamoId' =>
+      'rut' => 
       array (
         'type' => 'varchar',
-        'len' => 36,
-        'notNull' => false,
-        'unique' => false,
+        'len' => 255,
       ),
-      'reclamoTitulo' =>
+      'direccion' => 
       array (
         'type' => 'varchar',
-        'len' => 100,
+        'len' => 255,
       ),
-      'reclamoObservacion' =>
-      array (
-        'type' => 'text',
-        'len' => 500,
-      ),
-      'createdById' =>
+      'createdById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -26348,19 +20375,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'createdByName' =>
+      'createdByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'createdBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'modifiedById' =>
+      'modifiedById' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -26368,19 +20395,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'modifiedByName' =>
+      'modifiedByName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'assignedUserId' =>
+      'assignedUserId' => 
       array (
         'dbType' => 'varchar',
         'len' => 24,
@@ -26388,19 +20415,19 @@ return array (
         'index' => true,
         'notNull' => false,
       ),
-      'assignedUserName' =>
+      'assignedUserName' => 
       array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'assignedUser',
-        'foreign' =>
+        'foreign' => 
         array (
           0 => 'firstName',
           1 => ' ',
           2 => 'lastName',
         ),
       ),
-      'teamsIds' =>
+      'teamsIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
@@ -26408,158 +20435,60 @@ return array (
         'relation' => 'teams',
         'isUnordered' => true,
       ),
-      'teamsNames' =>
+      'teamsNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'comunarelacionId' =>
-      'motivoReclamoId' =>
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'comunarelacionName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'comunarelacion',
-        'foreign' => 'name',
-      'motivoReclamoName' =>
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'motivoReclamo',
-        'foreign' => 'name',
-      ),
-      'tasksIds' =>
-      array (
-        'type' => 'varchar',
-        'notStorable' => true,
-      ),
-      'tasksNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-      ),
-      'rolIds' =>
+      'beneficiosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
         'isLinkMultipleIdList' => true,
-        'relation' => 'rol',
+        'relation' => 'beneficios',
         'isUnordered' => true,
       ),
-      'rolNames' =>
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
-      ),
-      'empresaIds' =>
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'empresa',
-        'isUnordered' => true,
-      ),
-      'empresaNames' =>
+      'beneficiosNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
     ),
-    'relations' =>
+    'relations' => 
     array (
-      'empresa' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Empresa',
-        'relationName' => 'trabajadorEmpresa',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'trabajadorId',
-          1 => 'empresaId',
-        ),
-        'foreign' => 'trabajador',
-      ),
-      'rol' =>
-      array (
-        'type' => 'manyMany',
-        'entity' => 'Rol',
-        'relationName' => 'trabajadorRol',
-        'key' => 'id',
-        'foreignKey' => 'id',
-        'midKeys' =>
-        array (
-          0 => 'trabajadorId',
-          1 => 'rolId',
-        ),
-        'foreign' => 'trabajador',
-      'motivoReclamo' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'MotivoReclamo',
-        'key' => 'motivoReclamoId',
-        'foreignKey' => 'id',
-        'foreign' => 'reclamosMotivoReclamo',
-      ),
-      'tasks' =>
-      array (
-        'type' => 'hasChildren',
-        'entity' => 'Task',
-        'foreignKey' => 'parentId',
-        'foreignType' => 'parentType',
-        'foreign' => 'parent',
-      ),
-      'calls' =>
+      'beneficios' => 
       array (
         'type' => 'hasMany',
-        'entity' => 'Call',
-        'foreignKey' => 'parentId',
-        'foreign' => 'parent',
+        'entity' => 'Beneficios',
+        'foreignKey' => 'proveedorId',
+        'foreign' => 'proveedor',
       ),
-      'comunarelacion' =>
-      array (
-        'type' => 'belongsTo',
-        'entity' => 'Comuna',
-        'key' => 'comunarelacionId',
-        'foreignKey' => 'id',
-        'foreign' => 'trabajador',
-      ),
-      'teams' =>
+      'teams' => 
       array (
         'type' => 'manyMany',
         'entity' => 'Team',
         'relationName' => 'EntityTeam',
-        'midKeys' =>
+        'midKeys' => 
         array (
           0 => 'entityId',
           1 => 'teamId',
         ),
-        'conditions' =>
+        'conditions' => 
         array (
-          'entityType' => 'Trabajador',
-          'entityType' => 'Reclamo',
+          'entityType' => 'Proveedor',
         ),
-        'additionalColumns' =>
+        'additionalColumns' => 
         array (
-          'entityType' =>
+          'entityType' => 
           array (
             'type' => 'varchar',
             'len' => 100,
           ),
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -26567,7 +20496,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'modifiedBy' =>
+      'modifiedBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -26575,7 +20504,7 @@ return array (
         'foreignKey' => 'id',
         'foreign' => NULL,
       ),
-      'createdBy' =>
+      'createdBy' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'User',
@@ -26584,26 +20513,1946 @@ return array (
         'foreign' => NULL,
       ),
     ),
-    'indexes' =>
+    'indexes' => 
     array (
-      'name' =>
+      'name' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'name',
           1 => 'deleted',
         ),
       ),
-      'assignedUser' =>
+      'assignedUser' => 
       array (
-        'columns' =>
+        'columns' => 
         array (
           0 => 'assignedUserId',
           1 => 'deleted',
         ),
       ),
     ),
-    'collection' =>
+    'collection' => 
+    array (
+      'orderBy' => 'createdAt',
+      'order' => 'DESC',
+    ),
+  ),
+  'Reclamo' => 
+  array (
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'id',
+      ),
+      'name' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'deleted' => 
+      array (
+        'type' => 'bool',
+        'default' => false,
+      ),
+      'description' => 
+      array (
+        'type' => 'text',
+      ),
+      'createdAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'modifiedAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'reclamoId' => 
+      array (
+        'type' => 'varchar',
+        'len' => 36,
+        'notNull' => false,
+        'unique' => false,
+      ),
+      'reclamoTitulo' => 
+      array (
+        'type' => 'varchar',
+        'len' => 100,
+      ),
+      'reclamoObservacion' => 
+      array (
+        'type' => 'text',
+        'len' => 500,
+      ),
+      'createdById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'createdByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'createdBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'modifiedById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'modifiedByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'modifiedBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'assignedUserId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'assignedUserName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'assignedUser',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'teamsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+      ),
+      'teamsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'motivoReclamoId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'motivoReclamoName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'motivoReclamo',
+        'foreign' => 'name',
+      ),
+      'tasksIds' => 
+      array (
+        'type' => 'varchar',
+        'notStorable' => true,
+      ),
+      'tasksNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'callsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'callsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'meetingsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'meetingsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+    ),
+    'relations' => 
+    array (
+      'motivoReclamo' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'MotivoReclamo',
+        'key' => 'motivoReclamoId',
+        'foreignKey' => 'id',
+        'foreign' => 'reclamosMotivoReclamo',
+      ),
+      'tasks' => 
+      array (
+        'type' => 'hasChildren',
+        'entity' => 'Task',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+      ),
+      'calls' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Call',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'meetings' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Meeting',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'teams' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'EntityTeam',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'teamId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'Reclamo',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'modifiedBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'createdBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'name' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'name',
+          1 => 'deleted',
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'assignedUserId',
+          1 => 'deleted',
+        ),
+      ),
+    ),
+    'collection' => 
+    array (
+      'orderBy' => 'createdAt',
+      'order' => 'DESC',
+    ),
+  ),
+  'Rol' => 
+  array (
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'id',
+      ),
+      'name' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'deleted' => 
+      array (
+        'type' => 'bool',
+        'default' => false,
+      ),
+      'description' => 
+      array (
+        'type' => 'text',
+      ),
+      'createdAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'modifiedAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'createdById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'createdByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'createdBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'modifiedById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'modifiedByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'modifiedBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'assignedUserId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'assignedUserName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'assignedUser',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'teamsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+      ),
+      'teamsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'beneficiossIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'beneficioss',
+        'isUnordered' => true,
+      ),
+      'beneficiossNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'trabajadorIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'trabajador',
+        'isUnordered' => true,
+      ),
+      'trabajadorNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'tasksIds' => 
+      array (
+        'type' => 'varchar',
+        'notStorable' => true,
+      ),
+      'tasksNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'callsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'callsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'meetingsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'meetingsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+    ),
+    'relations' => 
+    array (
+      'trabajador' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Trabajador',
+        'relationName' => 'trabajadorRol',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => 
+        array (
+          0 => 'rolId',
+          1 => 'trabajadorId',
+        ),
+        'foreign' => 'rol',
+      ),
+      'beneficioss' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Beneficios',
+        'foreignKey' => 'rolId',
+        'foreign' => 'rol',
+      ),
+      'tasks' => 
+      array (
+        'type' => 'hasChildren',
+        'entity' => 'Task',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+      ),
+      'calls' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Call',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'meetings' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Meeting',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'teams' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'EntityTeam',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'teamId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'Rol',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'modifiedBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'createdBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'name' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'name',
+          1 => 'deleted',
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'assignedUserId',
+          1 => 'deleted',
+        ),
+      ),
+    ),
+    'collection' => 
+    array (
+      'orderBy' => 'createdAt',
+      'order' => 'DESC',
+    ),
+  ),
+  'Solicitudes' => 
+  array (
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'id',
+      ),
+      'name' => 
+      array (
+        'type' => 'varchar',
+        'notStorable' => true,
+        'select' => 'TRIM(CONCAT(IFNULL(solicitudes.first_name, \'\'), \' \', IFNULL(solicitudes.last_name, \'\')))',
+        'where' => 
+        array (
+          'LIKE' => '(solicitudes.first_name LIKE {value} OR solicitudes.last_name LIKE {value} OR CONCAT(solicitudes.first_name, \' \', solicitudes.last_name) LIKE {value} OR CONCAT(solicitudes.last_name, \' \', solicitudes.first_name) LIKE {value})',
+          '=' => '(solicitudes.first_name = {value} OR solicitudes.last_name = {value} OR CONCAT(solicitudes.first_name, \' \', solicitudes.last_name) = {value} OR CONCAT(solicitudes.last_name, \' \', solicitudes.first_name) = {value})',
+        ),
+        'orderBy' => 'solicitudes.first_name {direction}',
+      ),
+      'deleted' => 
+      array (
+        'type' => 'bool',
+        'default' => false,
+      ),
+      'salutationName' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'firstName' => 
+      array (
+        'type' => 'varchar',
+        'len' => 100,
+        'default' => '',
+      ),
+      'lastName' => 
+      array (
+        'type' => 'varchar',
+        'len' => 100,
+        'default' => '',
+      ),
+      'description' => 
+      array (
+        'type' => 'text',
+      ),
+      'emailAddress' => 
+      array (
+        'type' => 'email',
+        'notStorable' => true,
+        'select' => 'emailAddresses.name',
+        'where' => 
+        array (
+          'LIKE' => 'solicitudes.id IN (
+                                SELECT entity_id
+                                FROM entity_email_address
+                                JOIN email_address ON email_address.id = entity_email_address.email_address_id
+                                WHERE
+                                    entity_email_address.deleted = 0 AND entity_email_address.entity_type = \'Solicitudes\' AND
+                                    email_address.deleted = 0 AND email_address.lower LIKE {value}
+                            )',
+          '=' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple',
+              ),
+            ),
+            'sql' => 'emailAddressesMultiple.lower = {value}',
+            'distinct' => true,
+          ),
+          '<>' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple',
+              ),
+            ),
+            'sql' => 'emailAddressesMultiple.lower <> {value}',
+            'distinct' => true,
+          ),
+          'IN' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple',
+              ),
+            ),
+            'sql' => 'emailAddressesMultiple.lower IN {value}',
+            'distinct' => true,
+          ),
+          'NOT IN' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple',
+              ),
+            ),
+            'sql' => 'emailAddressesMultiple.lower NOT IN {value}',
+            'distinct' => true,
+          ),
+          'IS NULL' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple',
+              ),
+            ),
+            'sql' => 'emailAddressesMultiple.lower IS NULL',
+            'distinct' => true,
+          ),
+          'IS NOT NULL' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'emailAddresses',
+                1 => 'emailAddressesMultiple',
+              ),
+            ),
+            'sql' => 'emailAddressesMultiple.lower IS NOT NULL',
+            'distinct' => true,
+          ),
+        ),
+        'orderBy' => 'emailAddresses.lower {direction}',
+      ),
+      'phoneNumber' => 
+      array (
+        'type' => 'phone',
+        'notStorable' => true,
+        'select' => 'phoneNumbers.name',
+        'where' => 
+        array (
+          'LIKE' => 'solicitudes.id IN (
+                                SELECT entity_id
+                                FROM entity_phone_number
+                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
+                                WHERE
+                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Solicitudes\' AND
+                                    phone_number.deleted = 0 AND phone_number.name LIKE {value}
+                            )',
+          '=' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersMultiple.name = {value}',
+            'distinct' => true,
+          ),
+          '<>' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersMultiple.name <> {value}',
+            'distinct' => true,
+          ),
+          'IN' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersMultiple.name IN {value}',
+            'distinct' => true,
+          ),
+          'NOT IN' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersMultiple.name NOT IN {value}',
+            'distinct' => true,
+          ),
+          'IS NULL' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersMultiple.name IS NULL',
+            'distinct' => true,
+          ),
+          'IS NOT NULL' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersMultiple.name IS NOT NULL',
+            'distinct' => true,
+          ),
+        ),
+        'orderBy' => 'phoneNumbers.name {direction}',
+      ),
+      'addressStreet' => 
+      array (
+        'type' => 'text',
+        'dbType' => 'varchar',
+        'len' => 255,
+      ),
+      'addressCity' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'addressState' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'addressCountry' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'addressPostalCode' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'createdAt' => 
+      array (
+        'type' => 'datetime',
+      ),
+      'modifiedAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'rut' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'estadoSolicitud' => 
+      array (
+        'type' => 'varchar',
+        'default' => 'Aprobado',
+        'len' => 255,
+      ),
+      'beneficio' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'carga' => 
+      array (
+        'type' => 'jsonArray',
+        'storeArrayValues' => true,
+      ),
+      'ciudad' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'categoria' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'subcategoria' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'numeroSolicitud' => 
+      array (
+        'type' => 'varchar',
+        'len' => 36,
+        'notNull' => false,
+        'unique' => false,
+      ),
+      'fechahasta' => 
+      array (
+        'type' => 'date',
+        'notNull' => false,
+      ),
+      'emailAddressIsOptedOut' => 
+      array (
+        'type' => 'bool',
+        'notNull' => true,
+        'notStorable' => true,
+        'select' => 'emailAddresses.opt_out',
+        'where' => 
+        array (
+          '= TRUE' => 
+          array (
+            'sql' => 'emailAddresses.opt_out = true AND emailAddresses.opt_out IS NOT NULL',
+          ),
+          '= FALSE' => 
+          array (
+            'sql' => 'emailAddresses.opt_out = false OR emailAddresses.opt_out IS NULL',
+          ),
+        ),
+        'orderBy' => 'emailAddresses.opt_out {direction}',
+        'default' => false,
+      ),
+      'addressMap' => 
+      array (
+        'type' => 'map',
+        'notExportable' => true,
+        'notStorable' => true,
+      ),
+      'emailAddressData' => 
+      array (
+        'type' => 'text',
+        'notStorable' => true,
+      ),
+      'phoneNumberData' => 
+      array (
+        'type' => 'text',
+        'notStorable' => true,
+      ),
+      'phoneNumberNumeric' => 
+      array (
+        'type' => 'varchar',
+        'notStorable' => true,
+        'where' => 
+        array (
+          'LIKE' => 'solicitudes.id IN (
+                                SELECT entity_id
+                                FROM entity_phone_number
+                                JOIN phone_number ON phone_number.id = entity_phone_number.phone_number_id
+                                WHERE
+                                    entity_phone_number.deleted = 0 AND entity_phone_number.entity_type = \'Solicitudes\' AND
+                                    phone_number.deleted = 0 AND phone_number.numeric LIKE {value}
+                            )',
+          '=' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersNumericMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersNumericMultiple.numeric = {value}',
+            'distinct' => true,
+          ),
+          '<>' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersNumericMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersNumericMultiple.numeric <> {value}',
+            'distinct' => true,
+          ),
+          'IN' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersNumericMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersNumericMultiple.numeric IN {value}',
+            'distinct' => true,
+          ),
+          'NOT IN' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersNumericMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersNumericMultiple.numeric NOT IN {value}',
+            'distinct' => true,
+          ),
+          'IS NULL' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersNumericMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersNumericMultiple.numeric IS NULL',
+            'distinct' => true,
+          ),
+          'IS NOT NULL' => 
+          array (
+            'leftJoins' => 
+            array (
+              0 => 
+              array (
+                0 => 'phoneNumbers',
+                1 => 'phoneNumbersNumericMultiple',
+              ),
+            ),
+            'sql' => 'phoneNumbersNumericMultiple.numeric IS NOT NULL',
+            'distinct' => true,
+          ),
+        ),
+      ),
+      'createdById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'createdByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'createdBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'modifiedById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'modifiedByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'modifiedBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'assignedUserId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'assignedUserName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'assignedUser',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'teamsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+      ),
+      'teamsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'documentoId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => false,
+        'notNull' => false,
+      ),
+      'documentoName' => 
+      array (
+        'type' => 'foreign',
+        'relation' => 'documento',
+        'foreign' => 'name',
+      ),
+      'relacionsubcategoriaId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'relacionsubcategoriaName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'relacionsubcategoria',
+        'foreign' => 'name',
+      ),
+      'tasksIds' => 
+      array (
+        'type' => 'varchar',
+        'notStorable' => true,
+      ),
+      'tasksNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'callsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'callsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'meetingsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'meetingsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+    ),
+    'relations' => 
+    array (
+      'emailAddresses' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'EmailAddress',
+        'relationName' => 'entityEmailAddress',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'emailAddressId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'Solicitudes',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+          'primary' => 
+          array (
+            'type' => 'bool',
+            'default' => false,
+          ),
+        ),
+      ),
+      'phoneNumbers' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'PhoneNumber',
+        'relationName' => 'entityPhoneNumber',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'phoneNumberId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'Solicitudes',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+          'primary' => 
+          array (
+            'type' => 'bool',
+            'default' => false,
+          ),
+        ),
+      ),
+      'documento' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'Attachment',
+        'key' => 'documentoId',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'relacionsubcategoria' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'Subcategoria',
+        'key' => 'relacionsubcategoriaId',
+        'foreignKey' => 'id',
+        'foreign' => 'relacionsolicitudes',
+      ),
+      'tasks' => 
+      array (
+        'type' => 'hasChildren',
+        'entity' => 'Task',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+      ),
+      'calls' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Call',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'meetings' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Meeting',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'teams' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'EntityTeam',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'teamId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'Solicitudes',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'modifiedBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'createdBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'firstName' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'firstName',
+          1 => 'deleted',
+        ),
+      ),
+      'name' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'firstName',
+          1 => 'lastName',
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'assignedUserId',
+          1 => 'deleted',
+        ),
+      ),
+    ),
+    'collection' => 
+    array (
+      'orderBy' => 'createdAt',
+      'order' => 'DESC',
+    ),
+  ),
+  'Subcategoria' => 
+  array (
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'id',
+      ),
+      'name' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'deleted' => 
+      array (
+        'type' => 'bool',
+        'default' => false,
+      ),
+      'description' => 
+      array (
+        'type' => 'text',
+      ),
+      'createdAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'modifiedAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'idcategoria' => 
+      array (
+        'type' => 'int',
+        'len' => 11,
+      ),
+      'nombreSubcategoria' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'createdById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'createdByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'createdBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'modifiedById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'modifiedByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'modifiedBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'assignedUserId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'assignedUserName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'assignedUser',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'teamsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+      ),
+      'teamsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'relacionsolicitudesIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'relacionsolicitudes',
+        'isUnordered' => true,
+      ),
+      'relacionsolicitudesNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'categoriaId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'categoriaName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'categoria',
+        'foreign' => 'name',
+      ),
+      'tasksIds' => 
+      array (
+        'type' => 'varchar',
+        'notStorable' => true,
+      ),
+      'tasksNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'callsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'callsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'meetingsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'meetingsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+    ),
+    'relations' => 
+    array (
+      'categoria' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'Categoria',
+        'key' => 'categoriaId',
+        'foreignKey' => 'id',
+        'foreign' => 'subcategorias',
+      ),
+      'relacionsolicitudes' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Solicitudes',
+        'foreignKey' => 'relacionsubcategoriaId',
+        'foreign' => 'relacionsubcategoria',
+      ),
+      'tasks' => 
+      array (
+        'type' => 'hasChildren',
+        'entity' => 'Task',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+      ),
+      'calls' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Call',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'meetings' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Meeting',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'teams' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'EntityTeam',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'teamId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'Subcategoria',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'modifiedBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'createdBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'name' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'name',
+          1 => 'deleted',
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'assignedUserId',
+          1 => 'deleted',
+        ),
+      ),
+    ),
+    'collection' => 
+    array (
+      'orderBy' => 'createdAt',
+      'order' => 'DESC',
+    ),
+  ),
+  'Trabajador' => 
+  array (
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'id',
+      ),
+      'name' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'deleted' => 
+      array (
+        'type' => 'bool',
+        'default' => false,
+      ),
+      'description' => 
+      array (
+        'type' => 'text',
+      ),
+      'createdAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'modifiedAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'nombre' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'rut' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'apellidopaterno' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'apellidomaterno' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'nombrecompleto' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'direccion' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'email' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'telefono' => 
+      array (
+        'type' => 'varchar',
+        'len' => 36,
+        'notNull' => false,
+        'unique' => false,
+      ),
+      'createdById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'createdByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'createdBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'modifiedById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'modifiedByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'modifiedBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'assignedUserId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'assignedUserName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'assignedUser',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'teamsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+      ),
+      'teamsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'comunarelacionId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'comunarelacionName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'comunarelacion',
+        'foreign' => 'name',
+      ),
+      'rolIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'rol',
+        'isUnordered' => true,
+      ),
+      'rolNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'empresaIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'empresa',
+        'isUnordered' => true,
+      ),
+      'empresaNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+    ),
+    'relations' => 
+    array (
+      'empresa' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Empresa',
+        'relationName' => 'trabajadorEmpresa',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => 
+        array (
+          0 => 'trabajadorId',
+          1 => 'empresaId',
+        ),
+        'foreign' => 'trabajador',
+      ),
+      'rol' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Rol',
+        'relationName' => 'trabajadorRol',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => 
+        array (
+          0 => 'trabajadorId',
+          1 => 'rolId',
+        ),
+        'foreign' => 'trabajador',
+      ),
+      'comunarelacion' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'Comuna',
+        'key' => 'comunarelacionId',
+        'foreignKey' => 'id',
+        'foreign' => 'trabajador',
+      ),
+      'teams' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'EntityTeam',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'teamId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'Trabajador',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'modifiedBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'createdBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'name' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'name',
+          1 => 'deleted',
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'assignedUserId',
+          1 => 'deleted',
+        ),
+      ),
+    ),
+    'collection' => 
     array (
       'orderBy' => 'createdAt',
       'order' => 'DESC',

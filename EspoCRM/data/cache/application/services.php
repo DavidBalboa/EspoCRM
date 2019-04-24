@@ -61,12 +61,12 @@ return array (
   'DoctosBeneficio' => '\\Espo\\Custom\\Services\\DoctosBeneficio',
   'Empresa' => '\\Espo\\Custom\\Services\\Empresa',
   'Formularios' => '\\Espo\\Custom\\Services\\Formularios',
+  'MotivoReclamo' => '\\Espo\\Custom\\Services\\MotivoReclamo',
   'Proveedor' => '\\Espo\\Custom\\Services\\Proveedor',
+  'Reclamo' => '\\Espo\\Custom\\Services\\Reclamo',
   'Rol' => '\\Espo\\Custom\\Services\\Rol',
   'Solicitudes' => '\\Espo\\Custom\\Services\\Solicitudes',
   'Subcategoria' => '\\Espo\\Custom\\Services\\Subcategoria',
   'Trabajador' => '\\Espo\\Custom\\Services\\Trabajador',
-  'MotivoReclamo' => '\\Espo\\Custom\\Services\\MotivoReclamo',
-  'Reclamo' => '\\Espo\\Custom\\Services\\Reclamo',
 );
 ?>

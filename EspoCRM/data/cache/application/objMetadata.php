@@ -66,7 +66,7 @@ return (object) [
                     'EmailQueueItem' => false
                 ],
                 'fieldLevel' => (object) [
-
+                    
                 ],
                 'scopeFieldLevel' => (object) [
                     'Attachment' => (object) [
@@ -94,7 +94,7 @@ return (object) [
                     'Import' => false
                 ],
                 'fieldLevel' => (object) [
-
+                    
                 ],
                 'scopeFieldLevel' => (object) [
                     'User' => (object) [
@@ -111,7 +111,7 @@ return (object) [
                     'Import' => false
                 ],
                 'fieldLevel' => (object) [
-
+                    
                 ],
                 'scopeFieldLevel' => (object) [
                     'User' => (object) [
@@ -216,7 +216,7 @@ return (object) [
                     'EmailQueueItem' => false
                 ],
                 'fieldLevel' => (object) [
-
+                    
                 ],
                 'scopeFieldLevel' => (object) [
                     'Preferences' => (object) [
@@ -270,7 +270,7 @@ return (object) [
             ],
             'strictDefault' => (object) [
                 'scopeLevel' => (object) [
-
+                    
                 ],
                 'fieldLevel' => (object) [
                     'assignedUser' => (object) [
@@ -1476,13 +1476,13 @@ return (object) [
                 ]
             ],
             'filterList' => [
-
+                
             ],
             'defaultFilterData' => (object) [
-
+                
             ],
             'boolFilterList' => [
-
+                
             ],
             'iconClass' => 'fas fa-envelope'
         ],
@@ -1785,16 +1785,16 @@ return (object) [
             ],
             'defaultSidePanelFieldLists' => (object) [
                 'detail' => [
-
+                    
                 ],
                 'detailSmall' => [
-
+                    
                 ],
                 'edit' => [
-
+                    
                 ],
                 'editSmall' => [
-
+                    
                 ]
             ]
         ],
@@ -2052,7 +2052,7 @@ return (object) [
                 0 => 'activePortal'
             ],
             'boolFilterList' => [
-
+                
             ],
             'selectDefaultFilters' => (object) [
                 'filter' => 'activePortal'
@@ -3968,11 +3968,70 @@ return (object) [
             'kanbanViewMode' => false
         ],
         'MotivoReclamo' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ],
+            'color' => '#ff0000',
+            'iconClass' => 'fas fa-caret-square-up'
+        ],
         'Proveedor' => (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
                 0 => 'onlyMy'
             ]
+        ],
+        'Reclamo' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ],
+            'color' => '#ff0000',
+            'iconClass' => 'fas fa-tired'
         ],
         'Rol' => (object) [
             'controller' => 'controllers/record',
@@ -4060,8 +4119,6 @@ return (object) [
                     ]
                 ]
             ],
-            'color' => '#ff0000',
-            'iconClass' => 'fas fa-tired'
             'kanbanViewMode' => false,
             'color' => NULL,
             'iconClass' => NULL
@@ -4227,7 +4284,7 @@ return (object) [
                     'autorefreshInterval' => 0.5,
                     'expandedLayout' => (object) [
                         'rows' => [
-
+                            
                         ]
                     ]
                 ],
@@ -6000,9 +6057,9 @@ return (object) [
                         10 => 'DoctosBeneficio',
                         11 => 'Ciudad',
                         12 => 'Comuna',
-                        13 => 'Rol'
-                        6 => 'Reclamo',
-                        7 => 'MotivoReclamo'
+                        13 => 'Rol',
+                        14 => 'Reclamo',
+                        15 => 'MotivoReclamo'
                     ]
                 ],
                 'dateSent' => (object) [
@@ -6170,7 +6227,7 @@ return (object) [
                 'parent' => (object) [
                     'type' => 'belongsToParent',
                     'entityList' => [
-
+                        
                     ],
                     'foreign' => 'emails'
                 ],
@@ -6476,7 +6533,7 @@ return (object) [
                 ]
             ],
             'links' => (object) [
-
+                
             ],
             'collection' => (object) [
                 'sortBy' => 'name',
@@ -7796,7 +7853,7 @@ return (object) [
                 ]
             ],
             'links' => (object) [
-
+                
             ],
             'collection' => (object) [
                 'sortBy' => 'name',
@@ -10666,9 +10723,9 @@ return (object) [
                         10 => 'DoctosBeneficio',
                         11 => 'Ciudad',
                         12 => 'Comuna',
-                        13 => 'Rol'
-                        6 => 'Reclamo',
-                        7 => 'MotivoReclamo'
+                        13 => 'Rol',
+                        14 => 'Reclamo',
+                        15 => 'MotivoReclamo'
                     ]
                 ],
                 'account' => (object) [
@@ -13019,7 +13076,7 @@ return (object) [
             ],
             'convertFields' => (object) [
                 'Contact' => (object) [
-
+                    
                 ],
                 'Account' => (object) [
                     'name' => 'accountName',
@@ -13295,9 +13352,9 @@ return (object) [
                         10 => 'DoctosBeneficio',
                         11 => 'Ciudad',
                         12 => 'Comuna',
-                        13 => 'Rol'
-                        6 => 'Reclamo',
-                        7 => 'MotivoReclamo'
+                        13 => 'Rol',
+                        14 => 'Reclamo',
+                        15 => 'MotivoReclamo'
                     ]
                 ],
                 'account' => (object) [
@@ -14332,9 +14389,9 @@ return (object) [
                         10 => 'DoctosBeneficio',
                         11 => 'Ciudad',
                         12 => 'Comuna',
-                        13 => 'Rol'
-                        6 => 'Reclamo',
-                        7 => 'MotivoReclamo'
+                        13 => 'Rol',
+                        14 => 'Reclamo',
+                        15 => 'MotivoReclamo'
                     ]
                 ],
                 'account' => (object) [
@@ -15109,7 +15166,7 @@ return (object) [
                     'type' => 'file',
                     'required' => false,
                     'sourceList' => [
-
+                        
                     ],
                     'audited' => false,
                     'tooltip' => false,
@@ -15650,6 +15707,137 @@ return (object) [
                 ]
             ]
         ],
+        'MotivoReclamo' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'motivoReclamoId' => (object) [
+                    'type' => 'number',
+                    'len' => 36,
+                    'notNull' => false,
+                    'unique' => false,
+                    'nextNumber' => 1,
+                    'padLength' => 5,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'motivoReclamoDescripcion' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true,
+                    'maxLength' => 100,
+                    'tooltipText' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => true,
+                    'isCustom' => true
+                ],
+                'reclamosMotivoReclamo' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'reclamosMotivoReclamo' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'motivoReclamo',
+                    'entity' => 'Reclamo',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
         'Proveedor' => (object) [
             'fields' => (object) [
                 'name' => (object) [
@@ -15737,6 +15925,144 @@ return (object) [
                     'type' => 'hasMany',
                     'foreign' => 'proveedor',
                     'entity' => 'Beneficios',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Reclamo' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'reclamoId' => (object) [
+                    'type' => 'number',
+                    'len' => 36,
+                    'notNull' => false,
+                    'unique' => false,
+                    'nextNumber' => 1,
+                    'padLength' => 5,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'reclamoTitulo' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true,
+                    'maxLength' => 100,
+                    'tooltipText' => 'Breve descripción del reclamo',
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => true,
+                    'isCustom' => true
+                ],
+                'reclamoObservacion' => (object) [
+                    'type' => 'text',
+                    'required' => true,
+                    'rows' => 30,
+                    'lengthOfCut' => 400,
+                    'maxLength' => 500,
+                    'tooltipText' => 'Describa su situación',
+                    'seeMoreDisabled' => false,
+                    'readOnly' => false,
+                    'tooltip' => true,
+                    'isCustom' => true
+                ],
+                'motivoReclamo' => (object) [
+                    'type' => 'link'
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'motivoReclamo' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'reclamosMotivoReclamo',
+                    'entity' => 'MotivoReclamo',
                     'audited' => false,
                     'isCustom' => true
                 ]
@@ -16090,7 +16416,7 @@ return (object) [
                     'required' => false,
                     'isPersonalData' => false,
                     'sourceList' => [
-
+                        
                     ],
                     'audited' => false,
                     'tooltip' => false,
@@ -16557,275 +16883,6 @@ return (object) [
                     ]
                 ]
             ]
-        ],
-        'MotivoReclamo' => (object) [
-            'fields' => (object) [
-                'name' => (object) [
-                    'type' => 'varchar',
-                    'required' => true,
-                    'trim' => true
-                ],
-                'description' => (object) [
-                    'type' => 'text'
-                ],
-                'createdAt' => (object) [
-                    'type' => 'datetime',
-                    'readOnly' => true
-                ],
-                'modifiedAt' => (object) [
-                    'type' => 'datetime',
-                    'readOnly' => true
-                ],
-                'createdBy' => (object) [
-                    'type' => 'link',
-                    'readOnly' => true,
-                    'view' => 'views/fields/user'
-                ],
-                'modifiedBy' => (object) [
-                    'type' => 'link',
-                    'readOnly' => true,
-                    'view' => 'views/fields/user'
-                ],
-                'assignedUser' => (object) [
-                    'type' => 'link',
-                    'required' => true,
-                    'view' => 'views/fields/assigned-user'
-                ],
-                'teams' => (object) [
-                    'type' => 'linkMultiple',
-                    'view' => 'views/fields/teams'
-                ],
-                'motivoReclamoId' => (object) [
-                    'type' => 'number',
-                    'len' => 36,
-                    'notNull' => false,
-                    'unique' => false,
-                    'nextNumber' => 1,
-                    'padLength' => 5,
-                    'tooltip' => false,
-                    'isCustom' => true
-                ],
-                'motivoReclamoDescripcion' => (object) [
-                    'type' => 'varchar',
-                    'required' => true,
-                    'trim' => true,
-                    'maxLength' => 100,
-                    'tooltipText' => 'Describa los motivos por lo cuales se pueden generar reclamos',
-                    'audited' => false,
-                    'readOnly' => false,
-                    'tooltip' => true,
-                    'isCustom' => true
-                ],
-                'reclamosMotivoReclamo' => (object) [
-                    'type' => 'linkMultiple',
-                    'layoutDetailDisabled' => true,
-                    'layoutMassUpdateDisabled' => true,
-                    'noLoad' => true,
-                    'importDisabled' => true,
-                    'isCustom' => true
-                ]
-            ],
-            'links' => (object) [
-                'createdBy' => (object) [
-                    'type' => 'belongsTo',
-                    'entity' => 'User'
-                ],
-                'modifiedBy' => (object) [
-                    'type' => 'belongsTo',
-                    'entity' => 'User'
-                ],
-                'assignedUser' => (object) [
-                    'type' => 'belongsTo',
-                    'entity' => 'User'
-                ],
-                'teams' => (object) [
-                    'type' => 'hasMany',
-                    'entity' => 'Team',
-                    'relationName' => 'EntityTeam',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'meetings' => (object) [
-                    'type' => 'hasMany',
-                    'entity' => 'Meeting',
-                    'foreign' => 'parent',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'calls' => (object) [
-                    'type' => 'hasMany',
-                    'entity' => 'Call',
-                    'foreign' => 'parent',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'tasks' => (object) [
-                    'type' => 'hasChildren',
-                    'entity' => 'Task',
-                    'foreign' => 'parent',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'reclamosMotivoReclamo' => (object) [
-                    'type' => 'hasMany',
-                    'foreign' => 'motivoReclamo',
-                    'entity' => 'Reclamo',
-                    'audited' => false,
-                    'isCustom' => true
-                ]
-            ],
-            'collection' => (object) [
-                'sortBy' => 'createdAt',
-                'asc' => false
-            ],
-            'indexes' => (object) [
-                'name' => (object) [
-                    'columns' => [
-                        0 => 'name',
-                        1 => 'deleted'
-                    ]
-                ],
-                'assignedUser' => (object) [
-                    'columns' => [
-                        0 => 'assignedUserId',
-                        1 => 'deleted'
-                    ]
-                ]
-            ]
-        ],
-        'Reclamo' => (object) [
-            'fields' => (object) [
-                'name' => (object) [
-                    'type' => 'varchar',
-                    'required' => true,
-                    'trim' => true
-                ],
-                'description' => (object) [
-                    'type' => 'text'
-                ],
-                'createdAt' => (object) [
-                    'type' => 'datetime',
-                    'readOnly' => true
-                ],
-                'modifiedAt' => (object) [
-                    'type' => 'datetime',
-                    'readOnly' => true
-                ],
-                'createdBy' => (object) [
-                    'type' => 'link',
-                    'readOnly' => true,
-                    'view' => 'views/fields/user'
-                ],
-                'modifiedBy' => (object) [
-                    'type' => 'link',
-                    'readOnly' => true,
-                    'view' => 'views/fields/user'
-                ],
-                'assignedUser' => (object) [
-                    'type' => 'link',
-                    'required' => true,
-                    'view' => 'views/fields/assigned-user'
-                ],
-                'teams' => (object) [
-                    'type' => 'linkMultiple',
-                    'view' => 'views/fields/teams'
-                ],
-                'reclamoId' => (object) [
-                    'type' => 'number',
-                    'len' => 36,
-                    'notNull' => false,
-                    'unique' => false,
-                    'nextNumber' => 1,
-                    'padLength' => 5,
-                    'tooltip' => false,
-                    'isCustom' => true
-                ],
-                'reclamoTitulo' => (object) [
-                    'type' => 'varchar',
-                    'required' => true,
-                    'trim' => true,
-                    'maxLength' => 100,
-                    'tooltipText' => 'Breve descripción del reclamo',
-                    'audited' => false,
-                    'readOnly' => false,
-                    'tooltip' => true,
-                    'isCustom' => true
-                ],
-                'reclamoObservacion' => (object) [
-                    'type' => 'text',
-                    'required' => true,
-                    'rows' => 30,
-                    'lengthOfCut' => 400,
-                    'maxLength' => 500,
-                    'tooltipText' => 'Describa su situación',
-                    'seeMoreDisabled' => false,
-                    'readOnly' => false,
-                    'tooltip' => true,
-                    'isCustom' => true
-                ],
-                'motivoReclamo' => (object) [
-                    'type' => 'link'
-                ]
-            ],
-            'links' => (object) [
-                'createdBy' => (object) [
-                    'type' => 'belongsTo',
-                    'entity' => 'User'
-                ],
-                'modifiedBy' => (object) [
-                    'type' => 'belongsTo',
-                    'entity' => 'User'
-                ],
-                'assignedUser' => (object) [
-                    'type' => 'belongsTo',
-                    'entity' => 'User'
-                ],
-                'teams' => (object) [
-                    'type' => 'hasMany',
-                    'entity' => 'Team',
-                    'relationName' => 'EntityTeam',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'meetings' => (object) [
-                    'type' => 'hasMany',
-                    'entity' => 'Meeting',
-                    'foreign' => 'parent',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'calls' => (object) [
-                    'type' => 'hasMany',
-                    'entity' => 'Call',
-                    'foreign' => 'parent',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'tasks' => (object) [
-                    'type' => 'hasChildren',
-                    'entity' => 'Task',
-                    'foreign' => 'parent',
-                    'layoutRelationshipsDisabled' => true
-                ],
-                'motivoReclamo' => (object) [
-                    'type' => 'belongsTo',
-                    'foreign' => 'reclamosMotivoReclamo',
-                    'entity' => 'MotivoReclamo',
-                    'audited' => false,
-                    'isCustom' => true
-                ]
-            ],
-            'collection' => (object) [
-                'sortBy' => 'createdAt',
-                'asc' => false
-            ],
-            'indexes' => (object) [
-                'name' => (object) [
-                    'columns' => [
-                        0 => 'name',
-                        1 => 'deleted'
-                    ]
-                ],
-                'assignedUser' => (object) [
-                    'columns' => [
-                        0 => 'assignedUserId',
-                        1 => 'deleted'
-                    ]
-                ]
-            ]
         ]
     ],
     'fields' => (object) [
@@ -17004,7 +17061,7 @@ return (object) [
         ],
         'autoincrement' => (object) [
             'params' => [
-
+                
             ],
             'notCreatable' => false,
             'filter' => true,
@@ -17121,7 +17178,7 @@ return (object) [
         ],
         'currencyConverted' => (object) [
             'params' => [
-
+                
             ],
             'filter' => true,
             'notCreatable' => true,
@@ -18939,6 +18996,29 @@ return (object) [
             'isCustom' => true,
             'statusField' => NULL
         ],
+        'MotivoReclamo' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
         'Proveedor' => (object) [
             'entity' => true,
             'layouts' => true,
@@ -18962,8 +19042,30 @@ return (object) [
             'object' => true,
             'isCustom' => true
         ],
+        'Reclamo' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
         'Rol' => (object) [
-        'MotivoReclamo' => (object) [
             'entity' => true,
             'layouts' => true,
             'tab' => true,
@@ -19012,7 +19114,6 @@ return (object) [
             'statusField' => NULL
         ],
         'Subcategoria' => (object) [
-        'Reclamo' => (object) [
             'entity' => true,
             'layouts' => true,
             'tab' => true,

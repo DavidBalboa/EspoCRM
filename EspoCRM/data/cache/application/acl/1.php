@@ -405,7 +405,42 @@ return (object) [
             'delete' => 'all',
             'create' => 'yes'
         ],
+        'Proveedor' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
         'Reclamo' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Rol' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Solicitudes' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Subcategoria' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Trabajador' => (object) [
             'read' => 'all',
             'stream' => 'all',
             'edit' => 'all',
@@ -414,10 +449,10 @@ return (object) [
         ]
     ],
     'fieldTable' => (object) [
-
+        
     ],
     'fieldTableQuickAccess' => (object) [
-
+        
     ],
     'assignmentPermission' => 'all',
     'userPermission' => 'all',
