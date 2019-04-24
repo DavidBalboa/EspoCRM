@@ -1,0 +1,19 @@
+{
+    "links": {
+        "meetings": "Presentaciones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "reclamosMotivoReclamo": "Reclamos"
+    },
+    "labels": {
+        "Create MotivoReclamo": "Crear MotivoReclamo"
+    },
+    "fields": {
+        "motivoReclamoId": "MotivoReclamoId",
+        "motivoReclamoDescripcion": "Descripción",
+        "reclamosMotivoReclamo": "Reclamos"
+    },
+    "tooltips": {
+        "motivoReclamoDescripcion": "Describa los motivos por lo cuales se pueden generar reclamos"
+    }
+}

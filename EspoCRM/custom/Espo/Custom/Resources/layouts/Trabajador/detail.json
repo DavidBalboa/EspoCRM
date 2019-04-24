@@ -1,0 +1,52 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "nombrecompleto",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "rut",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "direccion"
+                },
+                {
+                    "name": "comunarelacion"
+                }
+            ],
+            [
+                {
+                    "name": "email"
+                },
+                {
+                    "name": "empresa"
+                }
+            ],
+            [
+                {
+                    "name": "telefono"
+                },
+                {
+                    "name": "rol"
+                }
+            ],
+            [
+                false,
+                false
+            ],
+            [
+                false,
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "General"
+    }
+]

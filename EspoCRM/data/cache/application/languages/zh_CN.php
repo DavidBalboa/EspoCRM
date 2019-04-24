@@ -1107,6 +1107,8 @@ text* - 以text开头,
       'KnowledgeBaseCategory' => '知识库类别',
       'CampaignLogRecord' => '营销活动日志记录',
       'Formularios' => 'Formulario',
+      'Reclamo' => 'Reclamo',
+      'MotivoReclamo' => 'MotivoReclamo',
     ),
     'scopeNamesPlural' => 
     array (
@@ -1167,6 +1169,8 @@ text* - 以text开头,
       'KnowledgeBaseCategory' => '知识库类别',
       'CampaignLogRecord' => '营销活动日志记录',
       'Formularios' => 'Formularios',
+      'Reclamo' => 'Reclamos',
+      'MotivoReclamo' => 'MotivoReclamos',
     ),
     'labels' => 
     array (
@@ -4217,6 +4221,56 @@ E.g. "用户主要名字" or "sAM账户名" 对于活动目录, "uid" for OpenLD
         'Modificado' => 'Modificado',
         'Eliminado' => 'Eliminado',
       ),
+    ),
+  ),
+  'MotivoReclamo' => 
+  array (
+    'fields' => 
+    array (
+      'motivoReclamoId' => 'MotivoReclamoId',
+      'motivoReclamoDescripcion' => 'Descripción',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'links' => 
+    array (
+      'meetings' => '会晤',
+      'calls' => '通话',
+      'tasks' => '任务',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'labels' => 
+    array (
+      'Create MotivoReclamo' => '创建 MotivoReclamo',
+    ),
+    'tooltips' => 
+    array (
+      'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+    ),
+  ),
+  'Reclamo' => 
+  array (
+    'fields' => 
+    array (
+      'reclamoId' => 'ReclamoId',
+      'reclamoTitulo' => 'Título',
+      'reclamoObservacion' => 'Observación',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'links' => 
+    array (
+      'meetings' => '会晤',
+      'calls' => '通话',
+      'tasks' => '任务',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'labels' => 
+    array (
+      'Create Reclamo' => '创建 Reclamo',
+    ),
+    'tooltips' => 
+    array (
+      'reclamoTitulo' => 'Breve descripción del reclamo',
+      'reclamoObservacion' => 'Describa su situación',
     ),
   ),
 );

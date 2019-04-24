@@ -1,0 +1,16 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "categoria"
+                },
+                {
+                    "name": "nombreSubcategoria"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "General"
+    }
+]

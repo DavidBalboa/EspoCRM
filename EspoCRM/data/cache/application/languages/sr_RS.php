@@ -1113,6 +1113,8 @@ Događaj - Dostupan u kalendaru i panelu aktivnosti.',
       'KnowledgeBaseCategory' => 'Baza znanja kategorija',
       'CampaignLogRecord' => 'Upis dnevnika kampanje',
       'Formularios' => 'Formulario',
+      'Reclamo' => 'Reclamo',
+      'MotivoReclamo' => 'MotivoReclamo',
     ),
     'scopeNamesPlural' => 
     array (
@@ -1173,6 +1175,8 @@ Događaj - Dostupan u kalendaru i panelu aktivnosti.',
       'KnowledgeBaseCategory' => 'Baza znanja Kategorije',
       'CampaignLogRecord' => 'Upisi dnevnika kampanje',
       'Formularios' => 'Formularios',
+      'Reclamo' => 'Reclamos',
+      'MotivoReclamo' => 'MotivoReclamos',
     ),
     'labels' => 
     array (
@@ -4221,6 +4225,56 @@ Lozinka: {password}
         'Modificado' => 'Modificado',
         'Eliminado' => 'Eliminado',
       ),
+    ),
+  ),
+  'MotivoReclamo' => 
+  array (
+    'fields' => 
+    array (
+      'motivoReclamoId' => 'MotivoReclamoId',
+      'motivoReclamoDescripcion' => 'Descripción',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Ročišta',
+      'calls' => 'Pozivi',
+      'tasks' => 'Zadaci',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'labels' => 
+    array (
+      'Create MotivoReclamo' => 'Napravi MotivoReclamo',
+    ),
+    'tooltips' => 
+    array (
+      'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+    ),
+  ),
+  'Reclamo' => 
+  array (
+    'fields' => 
+    array (
+      'reclamoId' => 'ReclamoId',
+      'reclamoTitulo' => 'Título',
+      'reclamoObservacion' => 'Observación',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Ročišta',
+      'calls' => 'Pozivi',
+      'tasks' => 'Zadaci',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'labels' => 
+    array (
+      'Create Reclamo' => 'Napravi Reclamo',
+    ),
+    'tooltips' => 
+    array (
+      'reclamoTitulo' => 'Breve descripción del reclamo',
+      'reclamoObservacion' => 'Describa su situación',
     ),
   ),
 );

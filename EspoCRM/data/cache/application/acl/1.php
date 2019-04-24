@@ -355,6 +355,20 @@ return (object) [
             'edit' => 'all',
             'delete' => 'all',
             'create' => 'yes'
+        ],
+        'MotivoReclamo' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Reclamo' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
         ]
     ],
     'fieldTable' => (object) [

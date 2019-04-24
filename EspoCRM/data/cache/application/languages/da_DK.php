@@ -1110,6 +1110,8 @@ tekst* - begynder med tekst
       'KnowledgeBaseCategory' => 'Vidensbase Kategori',
       'CampaignLogRecord' => 'Kampagnelog Post',
       'Formularios' => 'Formulario',
+      'Reclamo' => 'Reclamo',
+      'MotivoReclamo' => 'MotivoReclamo',
     ),
     'scopeNamesPlural' => 
     array (
@@ -1170,6 +1172,8 @@ tekst* - begynder med tekst
       'KnowledgeBaseCategory' => 'Vidensbase Kategorier',
       'CampaignLogRecord' => 'Kampagnelog Post',
       'Formularios' => 'Formularios',
+      'Reclamo' => 'Reclamos',
+      'MotivoReclamo' => 'MotivoReclamos',
     ),
     'labels' => 
     array (
@@ -4229,6 +4233,56 @@ Kodeord: {password}
         'Modificado' => 'Modificado',
         'Eliminado' => 'Eliminado',
       ),
+    ),
+  ),
+  'MotivoReclamo' => 
+  array (
+    'fields' => 
+    array (
+      'motivoReclamoId' => 'MotivoReclamoId',
+      'motivoReclamoDescripcion' => 'Descripción',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'labels' => 
+    array (
+      'Create MotivoReclamo' => 'Opret MotivoReclamo ',
+    ),
+    'tooltips' => 
+    array (
+      'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+    ),
+  ),
+  'Reclamo' => 
+  array (
+    'fields' => 
+    array (
+      'reclamoId' => 'ReclamoId',
+      'reclamoTitulo' => 'Título',
+      'reclamoObservacion' => 'Observación',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'labels' => 
+    array (
+      'Create Reclamo' => 'Opret Reclamo ',
+    ),
+    'tooltips' => 
+    array (
+      'reclamoTitulo' => 'Breve descripción del reclamo',
+      'reclamoObservacion' => 'Describa su situación',
     ),
   ),
 );

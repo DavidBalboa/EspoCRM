@@ -1,0 +1,88 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "subcategoria"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "customLabel": "New panel"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "relacionsubcategoria",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "beneficio",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "descripcionBeneficio",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "fechahasta"
+                },
+                false
+            ]
+        ],
+        "style": "primary",
+        "dynamicLogicVisible": null,
+        "customLabel": "Beneficio"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "rut",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "address"
+                },
+                {
+                    "name": "ciudad"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "emailAddress"
+                }
+            ],
+            [
+                {
+                    "name": "documento"
+                },
+                false
+            ]
+        ],
+        "style": "info",
+        "dynamicLogicVisible": null,
+        "customLabel": "Datos personales"
+    }
+]

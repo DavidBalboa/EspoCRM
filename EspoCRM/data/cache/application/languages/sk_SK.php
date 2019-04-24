@@ -1111,6 +1111,8 @@ Udalosť - dostupná v kalendári a v paneli aktivít.',
       'KnowledgeBaseCategory' => 'Kategória znalostnej databázy',
       'CampaignLogRecord' => 'Záznam protokolu kampane',
       'Formularios' => 'Formulario',
+      'Reclamo' => 'Reclamo',
+      'MotivoReclamo' => 'MotivoReclamo',
     ),
     'scopeNamesPlural' => 
     array (
@@ -1171,6 +1173,8 @@ Udalosť - dostupná v kalendári a v paneli aktivít.',
       'KnowledgeBaseCategory' => 'Kategórie databázy znalostí',
       'CampaignLogRecord' => 'Záznamy protokolu kampane',
       'Formularios' => 'Formularios',
+      'Reclamo' => 'Reclamos',
+      'MotivoReclamo' => 'MotivoReclamos',
     ),
     'labels' => 
     array (
@@ -4223,6 +4227,56 @@ Používatelia budú prijímať emailové upozornenia len od daných typov entí
         'Modificado' => 'Modificado',
         'Eliminado' => 'Eliminado',
       ),
+    ),
+  ),
+  'MotivoReclamo' => 
+  array (
+    'fields' => 
+    array (
+      'motivoReclamoId' => 'MotivoReclamoId',
+      'motivoReclamoDescripcion' => 'Descripción',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Stretnutia',
+      'calls' => 'Hovory',
+      'tasks' => 'Úlohy',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'labels' => 
+    array (
+      'Create MotivoReclamo' => 'Vytvoriť MotivoReclamo',
+    ),
+    'tooltips' => 
+    array (
+      'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+    ),
+  ),
+  'Reclamo' => 
+  array (
+    'fields' => 
+    array (
+      'reclamoId' => 'ReclamoId',
+      'reclamoTitulo' => 'Título',
+      'reclamoObservacion' => 'Observación',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Stretnutia',
+      'calls' => 'Hovory',
+      'tasks' => 'Úlohy',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'labels' => 
+    array (
+      'Create Reclamo' => 'Vytvoriť Reclamo',
+    ),
+    'tooltips' => 
+    array (
+      'reclamoTitulo' => 'Breve descripción del reclamo',
+      'reclamoObservacion' => 'Describa su situación',
     ),
   ),
 );

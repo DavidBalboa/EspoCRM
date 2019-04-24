@@ -1,0 +1,43 @@
+{
+    "fields": {
+        "address": "Address",
+        "rut": "Rut",
+        "estadoSolicitud": "Estado solicitud",
+        "beneficio": "Beneficio",
+        "carga": "Carga",
+        "ciudad": "Ciudad",
+        "categoria": "Categoria",
+        "subcategoria": "Subcategoria",
+        "documento": "Documento",
+        "subcategorias": "Subcategorias",
+        "subcategoria3": "Subcategoria3",
+        "numeroSolicitud": "N° Solicitud",
+        "fechahasta": "Duración del beneficio",
+        "relacionsubcategoria": "relacionSubcategoria",
+        "categoriarela": "Categoriarela"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "subcategorias": "Subcategorias",
+        "subcategoria3": "Subcategoria3",
+        "relacionsubcategoria": "relacionSubcategoria",
+        "categoriarela": "Categoriarela"
+    },
+    "labels": {
+        "Create Solicitudes": "Create Solicitudes"
+    },
+    "options": {
+        "estadoSolicitud": {
+            "Aprobado": "Aprobado",
+            "En proceso": "En proceso",
+            "Rechazado": "Rechazado",
+            "Cancelado": "Cancelado"
+        },
+        "carga": [],
+        "ciudad": [],
+        "categoria": [],
+        "subcategoria": []
+    }
+}

@@ -1108,6 +1108,8 @@ return array (
       'KnowledgeBaseCategory' => 'Категорія Бази Знань',
       'CampaignLogRecord' => 'Лоґ кампанії',
       'Formularios' => 'Formulario',
+      'Reclamo' => 'Reclamo',
+      'MotivoReclamo' => 'MotivoReclamo',
     ),
     'scopeNamesPlural' => 
     array (
@@ -1168,6 +1170,8 @@ return array (
       'KnowledgeBaseCategory' => 'Категорії Бази Знань',
       'CampaignLogRecord' => 'Лоґи кампанії',
       'Formularios' => 'Formularios',
+      'Reclamo' => 'Reclamos',
+      'MotivoReclamo' => 'MotivoReclamos',
     ),
     'labels' => 
     array (
@@ -4220,6 +4224,56 @@ return array (
         'Modificado' => 'Modificado',
         'Eliminado' => 'Eliminado',
       ),
+    ),
+  ),
+  'MotivoReclamo' => 
+  array (
+    'fields' => 
+    array (
+      'motivoReclamoId' => 'MotivoReclamoId',
+      'motivoReclamoDescripcion' => 'Descripción',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Зустрічі',
+      'calls' => 'Дзвінки',
+      'tasks' => 'Завдання',
+      'reclamosMotivoReclamo' => 'Reclamos',
+    ),
+    'labels' => 
+    array (
+      'Create MotivoReclamo' => 'Створити MotivoReclamo',
+    ),
+    'tooltips' => 
+    array (
+      'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+    ),
+  ),
+  'Reclamo' => 
+  array (
+    'fields' => 
+    array (
+      'reclamoId' => 'ReclamoId',
+      'reclamoTitulo' => 'Título',
+      'reclamoObservacion' => 'Observación',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'links' => 
+    array (
+      'meetings' => 'Зустрічі',
+      'calls' => 'Дзвінки',
+      'tasks' => 'Завдання',
+      'motivoReclamo' => 'MotivoReclamo',
+    ),
+    'labels' => 
+    array (
+      'Create Reclamo' => 'Створити Reclamo',
+    ),
+    'tooltips' => 
+    array (
+      'reclamoTitulo' => 'Breve descripción del reclamo',
+      'reclamoObservacion' => 'Describa su situación',
     ),
   ),
 );

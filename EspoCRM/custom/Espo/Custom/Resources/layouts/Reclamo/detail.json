@@ -1,0 +1,33 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "reclamoId"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "motivoReclamo",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "reclamoTitulo",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "reclamoObservacion",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "style": "default",
+        "dynamicLogicVisible": null,
+        "customLabel": "Detalle de reclamo"
+    }
+]

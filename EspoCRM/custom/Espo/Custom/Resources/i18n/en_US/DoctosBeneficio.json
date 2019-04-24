@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "descripcion": "Descripcion",
+        "documentosbeneficio": "Documentos_beneficio",
+        "beneficios": "Beneficios"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "beneficios": "Beneficios"
+    },
+    "labels": {
+        "Create DoctosBeneficio": "Create Doctos_beneficio"
+    }
+}

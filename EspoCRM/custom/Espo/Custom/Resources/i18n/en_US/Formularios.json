@@ -33,7 +33,7 @@
         "Create Formularios": "Create Formulario"
     },
     "tooltips": {
-        "rut": "Ingrese Rut  (Eje: 12.345.678-9)",
+        "rut": "Ingrese Rut  (Ej: 12.345.678-9)",
         "beneficioSolicitado": "Ingrese Beneficio",
         "fechaSolicitud": "Ingrese Fecha Solicitud",
         "fechaHasta": "Ingrese Fecha Hasta",

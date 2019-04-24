@@ -1,8 +1,12 @@
 {
     "scopeNames": {
-        "Formularios": "Formulario"
+        "Formularios": "Formulario",
+        "Reclamo": "Reclamo",
+        "MotivoReclamo": "MotivoReclamo"
     },
     "scopeNamesPlural": {
-        "Formularios": "Formularios"
+        "Formularios": "Formularios",
+        "Reclamo": "Reclamos",
+        "MotivoReclamo": "MotivoReclamos"
     }
 }

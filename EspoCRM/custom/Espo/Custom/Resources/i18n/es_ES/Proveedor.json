@@ -1,0 +1,13 @@
+{
+    "labels": {
+        "Create Proveedor": "Vytvořit Proveedor"
+    },
+    "fields": {
+        "rut": "Rut",
+        "direccion": "Direccion",
+        "beneficios": "Beneficios"
+    },
+    "links": {
+        "beneficios": "Beneficios"
+    }
+}

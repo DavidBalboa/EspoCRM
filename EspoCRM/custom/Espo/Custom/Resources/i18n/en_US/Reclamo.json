@@ -1,0 +1,21 @@
+{
+    "fields": {
+        "reclamoId": "ReclamoId",
+        "reclamoTitulo": "Título",
+        "reclamoObservacion": "Observación",
+        "motivoReclamo": "MotivoReclamo"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "motivoReclamo": "MotivoReclamo"
+    },
+    "labels": {
+        "Create Reclamo": "Create Reclamo"
+    },
+    "tooltips": {
+        "reclamoTitulo": "Breve descripción del reclamo",
+        "reclamoObservacion": "Describa su situación"
+    }
+}

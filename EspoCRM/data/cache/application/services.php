@@ -55,5 +55,7 @@ return array (
   'TargetList' => '\\Espo\\Modules\\Crm\\Services\\TargetList',
   'Task' => '\\Espo\\Modules\\Crm\\Services\\Task',
   'Formularios' => '\\Espo\\Custom\\Services\\Formularios',
+  'MotivoReclamo' => '\\Espo\\Custom\\Services\\MotivoReclamo',
+  'Reclamo' => '\\Espo\\Custom\\Services\\Reclamo',
 );
 ?>

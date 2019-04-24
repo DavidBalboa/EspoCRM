@@ -1,0 +1,313 @@
+{
+    "fields": {
+        "name": {
+            "type": "personName",
+            "isPersonalData": true
+        },
+        "salutationName": {
+            "type": "enum",
+            "options": [
+                "",
+                "Mr.",
+                "Ms.",
+                "Mrs.",
+                "Dr."
+            ]
+        },
+        "firstName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "default": "",
+            "trim": true
+        },
+        "lastName": {
+            "type": "varchar",
+            "maxLength": 100,
+            "required": true,
+            "default": "",
+            "trim": true
+        },
+        "description": {
+            "type": "text"
+        },
+        "emailAddress": {
+            "type": "email",
+            "isPersonalData": true
+        },
+        "phoneNumber": {
+            "type": "phone",
+            "typeList": [
+                "Mobile",
+                "Office",
+                "Home",
+                "Fax",
+                "Other"
+            ],
+            "defaultType": "Mobile",
+            "isPersonalData": true
+        },
+        "address": {
+            "type": "address",
+            "isPersonalData": true
+        },
+        "addressStreet": {
+            "type": "text",
+            "maxLength": 255,
+            "dbType": "varchar"
+        },
+        "addressCity": {
+            "type": "varchar",
+            "trim": true
+        },
+        "addressState": {
+            "type": "varchar",
+            "trim": true
+        },
+        "addressCountry": {
+            "type": "varchar",
+            "trim": true
+        },
+        "addressPostalCode": {
+            "type": "varchar",
+            "trim": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": false,
+            "notNull": false,
+            "isPersonalData": false,
+            "required": true,
+            "useNumericFormat": false,
+            "audited": false,
+            "tooltip": false
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": false,
+            "notNull": false,
+            "isPersonalData": false,
+            "required": false,
+            "useNumericFormat": false,
+            "audited": false,
+            "tooltip": false
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": false,
+            "view": "views/fields/user",
+            "required": false,
+            "audited": false,
+            "tooltip": false
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": false,
+            "view": "views/fields/user",
+            "required": false,
+            "audited": false,
+            "tooltip": false
+        },
+        "assignedUser": {
+            "type": "link",
+            "required": false,
+            "view": "views/fields/assigned-user"
+        },
+        "teams": {
+            "type": "linkMultiple",
+            "view": "views/fields/teams"
+        },
+        "rut": {
+            "type": "varchar",
+            "required": true,
+            "trim": false,
+            "audited": false,
+            "isPersonalData": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "estadoSolicitud": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Aprobado",
+                "En proceso",
+                "Rechazado",
+                "Cancelado"
+            ],
+            "audited": true,
+            "isPersonalData": false,
+            "default": "Aprobado",
+            "isSorted": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "beneficio": {
+            "type": "varchar",
+            "required": false,
+            "trim": false,
+            "isPersonalData": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "carga": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "required": false,
+            "isPersonalData": false,
+            "options": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "ciudad": {
+            "type": "enum",
+            "required": false,
+            "isPersonalData": false,
+            "options": false,
+            "isSorted": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "categoria": {
+            "type": "enum",
+            "required": false,
+            "isPersonalData": false,
+            "options": false,
+            "isSorted": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "subcategoria": {
+            "type": "enum",
+            "required": false,
+            "isPersonalData": false,
+            "options": false,
+            "isSorted": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "documento": {
+            "type": "file",
+            "required": false,
+            "isPersonalData": false,
+            "sourceList": [],
+            "audited": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "numeroSolicitud": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 5,
+            "padLength": 5,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "fechahasta": {
+            "notNull": false,
+            "type": "date",
+            "required": false,
+            "isPersonalData": false,
+            "useNumericFormat": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "relacionsubcategoria": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "assignedUser": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "teams": {
+            "type": "hasMany",
+            "entity": "Team",
+            "relationName": "EntityTeam",
+            "layoutRelationshipsDisabled": true
+        },
+        "meetings": {
+            "type": "hasMany",
+            "entity": "Meeting",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "calls": {
+            "type": "hasMany",
+            "entity": "Call",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "tasks": {
+            "type": "hasChildren",
+            "entity": "Task",
+            "foreign": "parent",
+            "layoutRelationshipsDisabled": true
+        },
+        "documento": {
+            "type": "belongsTo",
+            "entity": "Attachment",
+            "skipOrmDefs": true
+        },
+        "relacionsubcategoria": {
+            "type": "belongsTo",
+            "foreign": "relacionsolicitudes",
+            "entity": "Subcategoria",
+            "audited": false,
+            "isCustom": true
+        }
+    },
+    "collection": {
+        "sortBy": "createdAt",
+        "asc": false,
+        "textFilterFields": [
+            "name",
+            "rut"
+        ],
+        "fullTextSearch": false
+    },
+    "indexes": {
+        "firstName": {
+            "columns": [
+                "firstName",
+                "deleted"
+            ]
+        },
+        "name": {
+            "columns": [
+                "firstName",
+                "lastName"
+            ]
+        },
+        "assignedUser": {
+            "columns": [
+                "assignedUserId",
+                "deleted"
+            ]
+        }
+    }
+}

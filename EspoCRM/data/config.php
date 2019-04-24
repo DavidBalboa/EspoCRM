@@ -1,14 +1,14 @@
 <?php
 return [
-    'cacheTimestamp' => 1546615166,
+    'cacheTimestamp' => 1556113517,
     'database' => [
         'driver' => 'pdo_mysql',
-        'host' => '10.128.0.218',
-        'port' => '3306',
+        'host' => 'localhost',
+        'port' => '',
         'charset' => 'utf8mb4',
-        'dbname' => 'ESPOCRMDB',
-        'user' => 'soporte',
-        'password' => 'soporte'
+        'dbname' => 'espocrmtest',
+        'user' => 'espocrmtest',
+        'password' => 'espocrmtest'
     ],
     'useCache' => true,
     'recordsPerPage' => 20,
@@ -16,8 +16,8 @@ return [
     'applicationName' => 'EspoCRM',
     'version' => '5.4.5',
     'timeZone' => 'America/Santiago',
-    'dateFormat' => 'YYYY-MM-DD',
-    'timeFormat' => 'HH:mm',
+    'dateFormat' => 'DD/MM/YYYY',
+    'timeFormat' => 'hh:mm a',
     'weekStart' => 1,
     'thousandSeparator' => '.',
     'decimalMark' => ',',
@@ -30,15 +30,15 @@ return [
     'currencyRates' => [
         
     ],
-    'outboundEmailIsShared' => false,
-    'outboundEmailFromName' => 'Sebastian',
-    'outboundEmailFromAddress' => 'dbalboa@losheroes.cl',
-    'smtpServer' => 'smtp.losheroes.cl',
-    'smtpPort' => 587,
-    'smtpAuth' => true,
-    'smtpSecurity' => 'TLS',
-    'smtpUsername' => 'dbalboa@losheroes.cl',
-    'smtpPassword' => 'Lleuque.201808',
+    'outboundEmailIsShared' => true,
+    'outboundEmailFromName' => 'EspoCRM',
+    'outboundEmailFromAddress' => '',
+    'smtpServer' => '',
+    'smtpPort' => '25',
+    'smtpAuth' => false,
+    'smtpSecurity' => '',
+    'smtpUsername' => '',
+    'smtpPassword' => '',
     'languageList' => [
         0 => 'en_GB',
         1 => 'en_US',
@@ -81,25 +81,24 @@ return [
         3 => 'Opportunity'
     ],
     'tabList' => [
-        0 => 'Formularios',
-        1 => 'Team',
-        2 => 'Email',
-        3 => 'Contact',
-        4 => 'Account',
+        0 => 'Account',
+        1 => 'Contact',
+        2 => 'Task',
+        3 => 'MotivoReclamo',
+        4 => 'Reclamo',
         5 => '_delimiter_',
         6 => 'Document',
-        7 => 'User',
-        8 => 'Template',
+        7 => 'Campaign',
+        8 => 'KnowledgeBaseArticle',
         9 => 'Stream',
-        10 => 'Calendar',
-        11 => 'Lead',
-        12 => 'EmailTemplate',
-        13 => 'Case',
-        14 => 'Campaign',
-        15 => 'KnowledgeBaseArticle',
-        16 => 'Meeting',
-        17 => 'Task',
-        18 => 'Call'
+        10 => 'User',
+        11 => 'Case',
+        12 => 'Lead',
+        13 => 'Opportunity',
+        14 => 'Meeting',
+        15 => 'Email',
+        16 => 'Calendar',
+        17 => 'Call'
     ],
     'quickCreateList' => [
         0 => 'Account',
@@ -128,8 +127,7 @@ return [
         0 => 'Meeting',
         1 => 'Call',
         2 => 'Task',
-        3 => 'Email',
-        4 => 'Formularios'
+        3 => 'Email'
     ],
     'portalStreamEmailNotifications' => true,
     'streamEmailNotificationsEntityList' => [
@@ -149,7 +147,7 @@ return [
     'followCreatedEntities' => false,
     'b2cMode' => false,
     'restrictedMode' => false,
-    'theme' => 'Espo',
+    'theme' => 'HazyblueVertical',
     'massEmailMaxPerHourCount' => 100,
     'personalEmailMaxPortionSize' => 10,
     'inboundEmailMaxPortionSize' => 20,
@@ -214,21 +212,20 @@ return [
     'noteDeleteThresholdPeriod' => '1 month',
     'noteEditThresholdPeriod' => '7 days',
     'isInstalled' => true,
-    'siteUrl' => 'http://localhost:8080/EspoCRM',
-    'passwordSalt' => 'd2a8a691d4e134d8',
-    'cryptKey' => '036b34d325b82f17e831daf6387d6c09',
+    'siteUrl' => 'http://localhost/EspoCRM/EspoCRM',
+    'passwordSalt' => '839b2ca27dd2c79c',
+    'cryptKey' => '6a9276baffbde7ada768451f036e226d',
+    'defaultPermissions' => [
+        'user' => 33,
+        'group' => 33
+    ],
     'fullTextSearchMinLength' => 4,
-    'outboundEmailBccAddress' => '',
-    'massEmailDisableMandatoryOptOutLink' => false,
     'userThemesDisabled' => false,
     'avatarsDisabled' => false,
     'scopeColorsDisabled' => false,
     'tabIconsDisabled' => false,
     'dashletsOptions' => (object) [
         
-    ],
-    'notificationSoundsDisabled' => false,
-    'mentionEmailNotifications' => false,
-    'streamEmailNotifications' => false
+    ]
 ];
 ?>

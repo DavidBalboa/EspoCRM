@@ -1,0 +1,16 @@
+{
+    "links": {
+        "meetings": "Reuniones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "beneficios": "Beneficios"
+    },
+    "labels": {
+        "Create DoctosBeneficio": "Crear Doctos_beneficio"
+    },
+    "fields": {
+        "descripcion": "Descripcion",
+        "documentosbeneficio": "Documentos_beneficio",
+        "beneficios": "Beneficios"
+    }
+}

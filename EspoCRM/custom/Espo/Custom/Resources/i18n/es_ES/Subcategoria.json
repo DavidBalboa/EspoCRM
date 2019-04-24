@@ -1,0 +1,28 @@
+{
+    "links": {
+        "meetings": "Reuniones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "categoria1": "Categoria",
+        "categoria2": "Categoria2",
+        "categoria4": "Categoria",
+        "categoriass": "Categoriass",
+        "relacioncategoria": "RelacionCategoria",
+        "relacionsolicitudes": "relacionSolicitudes",
+        "categoria": "Categoriarelacion"
+    },
+    "labels": {
+        "Create Subcategoria": "Crear Subcategoria"
+    },
+    "fields": {
+        "idcategoria": "Idcategoria",
+        "categoria1": "Categoria",
+        "nombreSubcategoria": "NombreSubcategoria",
+        "categoria2": "Categoria2",
+        "categoria4": "Categoria",
+        "categoriass": "Categoriass",
+        "relacioncategoria": "RelacionCategoria",
+        "relacionsolicitudes": "relacionSolicitudes",
+        "categoria": "Categoriarelacion"
+    }
+}

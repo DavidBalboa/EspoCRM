@@ -1,0 +1,31 @@
+{
+    "fields": {
+        "titulo": "Titulo",
+        "descripcion": "Descripcion",
+        "direccion": "Direccion",
+        "validohasta": "Valido_hasta",
+        "titulolegal": "Titulo_legal",
+        "descripcionlegal": "Descripcion_legal",
+        "pasoapaso": "Paso_a_paso",
+        "doctosBeneficios": "DoctosBeneficios",
+        "categoria": "Categoria",
+        "empresa": "Empresa",
+        "proveedor": "Proveedor",
+        "rol": "Rol",
+        "comuna": "Comuna"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "doctosBeneficios": "DoctosBeneficios",
+        "categoria": "Categoria",
+        "empresa": "Empresa",
+        "proveedor": "Proveedor",
+        "rol": "Rol",
+        "comuna": "Comuna"
+    },
+    "labels": {
+        "Create Beneficios": "Create Beneficios"
+    }
+}

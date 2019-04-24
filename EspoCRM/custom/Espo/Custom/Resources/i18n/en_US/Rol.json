@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "beneficioss": "Beneficios",
+        "trabajador": "Trabajador"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "beneficioss": "Beneficios",
+        "trabajador": "Trabajador"
+    },
+    "labels": {
+        "Create Rol": "Create Rol"
+    }
+}

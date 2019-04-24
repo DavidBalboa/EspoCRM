@@ -1,0 +1,33 @@
+{
+    "links": {
+        "meetings": "Reuniones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "subcategorias7": "Subcategorias",
+        "subcategoria": "Subcategoria",
+        "subcategoria1": "Subcategoria",
+        "subcategoria2": "Subcategoria2",
+        "subcategorias4": "Subcategorias4",
+        "subcategoriass": "Subcategoriass",
+        "relacionsubcategorias": "RelacionSubcategorias",
+        "solicitudessrelacion": "Solicitudessrelacion",
+        "beneficios": "Beneficios",
+        "subcategorias": "Subcategorias"
+    },
+    "labels": {
+        "Create Categoria": "Crear Categoria"
+    },
+    "fields": {
+        "subcategorias7": "Subcategorias",
+        "subcategoria": "Subcategoria",
+        "subcategoria1": "Subcategoria",
+        "subcategoria2": "Subcategoria2",
+        "nombreCategoria": "Nombre Categoria",
+        "subcategorias4": "Subcategorias4",
+        "subcategoriass": "Subcategoriass",
+        "relacionsubcategorias": "RelacionSubcategorias",
+        "solicitudessrelacion": "Solicitudessrelacion",
+        "beneficios": "Beneficios",
+        "subcategorias": "Subcategorias"
+    }
+}

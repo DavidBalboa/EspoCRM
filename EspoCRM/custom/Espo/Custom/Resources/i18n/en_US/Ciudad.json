@@ -1,0 +1,14 @@
+{
+    "fields": {
+        "comunas": "Comunas"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "comunas": "Comunas"
+    },
+    "labels": {
+        "Create Ciudad": "Create Ciudad"
+    }
+}

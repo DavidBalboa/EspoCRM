@@ -1,0 +1,35 @@
+[
+    {
+        "name": "numeroSolicitud"
+    },
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "subcategoria"
+    },
+    {
+        "name": "categoria"
+    },
+    {
+        "name": "beneficio"
+    },
+    {
+        "name": "fechahasta"
+    },
+    {
+        "name": "rut",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "estadoSolicitud"
+    },
+    {
+        "name": "modifiedBy"
+    }
+]

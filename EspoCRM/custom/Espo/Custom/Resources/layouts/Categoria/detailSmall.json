@@ -1,0 +1,14 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "nombreCategoria",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

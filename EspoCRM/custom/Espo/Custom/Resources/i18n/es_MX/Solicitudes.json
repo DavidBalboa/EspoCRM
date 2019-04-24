@@ -1,0 +1,13 @@
+{
+  "fields": {
+    "address": "Dirección"
+  },
+  "links": {
+    "meetings": "Presentaciones",
+    "calls": "Llamadas",
+    "tasks": "Tareas"
+  },
+  "labels": {
+    "Create Solicitudes": "Crear Solicitudes"
+  }
+}

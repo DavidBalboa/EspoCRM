@@ -1,0 +1,25 @@
+{
+    "labels": {
+        "Create Trabajador": "Vytvořit Trabajador"
+    },
+    "fields": {
+        "nombre": "Nombres",
+        "rut": "Rut",
+        "apellidopaterno": "Apellido_paterno",
+        "apellidomaterno": "Apellido_materno",
+        "nombrecompleto": "Nombre_completo",
+        "direccion": "Direccion",
+        "email": "Email",
+        "telefono": "Telefono",
+        "comunarelacion": "Comunarelacion",
+        "empresas": "Empresas",
+        "rol": "Rolrelacion",
+        "empresa": "Empresa"
+    },
+    "links": {
+        "comunarelacion": "Comunarelacion",
+        "empresas": "Empresas",
+        "rol": "Rolrelacion",
+        "empresa": "Empresa"
+    }
+}
