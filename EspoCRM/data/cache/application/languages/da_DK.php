@@ -1,8 +1,8 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'User',
       'action' => 'Action',
@@ -13,20 +13,20 @@ return array (
       'ipAddress' => 'IP Address',
       'authLogRecord' => 'Auth Log Record',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token',
       'authLogRecord' => 'Auth Log Record',
       'user' => 'User',
       'target' => 'Target',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'onlyMy' => 'Only My',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'read' => 'Read',
         'update' => 'Update',
@@ -35,9 +35,9 @@ return array (
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Enabled' => 'Aktiv',
       'Disabled' => 'Inaktiv',
@@ -100,7 +100,7 @@ return array (
       'Lead Capture' => 'Lead Capture',
       'Attachments' => 'Attachments',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
       'list' => 'Liste',
       'detail' => 'Detalje',
@@ -123,7 +123,7 @@ return array (
       'listForAccount' => 'Liste (for Konto)',
       'listForContact' => 'List (for Contact)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
       'address' => 'Adresse',
       'array' => 'Liste',
@@ -166,7 +166,7 @@ return array (
       'jsonObject' => 'Json Object',
       'multienim' => 'Multiudvælgelse',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'type' => 'Type',
       'name' => 'Navn',
@@ -214,7 +214,7 @@ return array (
       'useNumericFormat' => 'Use Numeric Format',
       'strip' => 'Strip',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'upgradeVersion' => 'EspoCRM will be upgraded to version <strong>{version}</strong>. Please be patient as this may take a while.',
       'upgradeDone' => 'EspoCRM has been upgraded to version <strong>{version}</strong>.',
@@ -233,7 +233,7 @@ return array (
       'newExtensionVersionIsAvailable' => 'New {extensionName} version {latestVersion} is available.',
       'uninstallConfirmation' => 'Are you sure you want to uninstall the extension?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
       'settings' => 'Applikationens systemindstillinger',
       'scheduledJob' => 'Opgaver som køres v.hj.a. et cronjob',
@@ -268,9 +268,9 @@ return array (
       'leadCapture' => 'API entry points for Web-to-Lead.',
       'attachments' => 'All file attachments stored in the system.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
         'x-small' => 'Meget lille',
         'small' => 'Lille',
@@ -278,16 +278,16 @@ return array (
         'large' => 'Stor',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
       'and' => 'AND',
       'or' => 'OR',
       'not' => 'NOT',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Role',
       'related' => 'Related',
@@ -298,9 +298,9 @@ return array (
       'storage' => 'Storage',
       'size' => 'Size (bytes)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Attachment',
         'Inline Attachment' => 'Inline Attachment',
@@ -310,18 +310,18 @@ return array (
         'Mass Pdf' => 'Mass Pdf',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
       'Document' => 'Indsæt dokument.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Orphan',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'username' => 'Username',
       'ipAddress' => 'IP Address',
@@ -336,21 +336,21 @@ return array (
       'requestMethod' => 'Request Method',
       'authTokenIsActive' => 'Auth Token is Active',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token Created',
       'user' => 'User',
       'portal' => 'Portal',
       'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'denied' => 'Denied',
       'accepted' => 'Accepted',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
         'CREDENTIALS' => 'Invalid credentials',
         'INACTIVE_USER' => 'Inactive user',
@@ -360,9 +360,9 @@ return array (
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'Bruger',
       'ipAddress' => 'IP-adresse',
@@ -371,27 +371,27 @@ return array (
       'isActive' => 'Is Active',
       'portal' => 'Portal',
     ),
-    'links' => 
+    'links' =>
     array (
       'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Active',
       'inactive' => 'Inactive',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Set Inactive' => 'Set Inactive',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setInactive' => 'Set Inactive',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'title' => 'Titel',
       'dateFrom' => 'Dato fra.',
@@ -412,9 +412,9 @@ return array (
       'futureDays' => 'Next X Days',
       'useLastStage' => 'Group by last reached stage',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
         'agendaWeek' => 'Uge (agenda)',
         'basicWeek' => 'Uge',
@@ -424,20 +424,20 @@ return array (
         'timeline' => 'Tidslinie',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectEntityType' => 'Select Entity Type in dashlet options.',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Field' => 'Field',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
         'equals' => 'Lig med',
         'notEquals' => 'Ikke Lig Med',
@@ -460,14 +460,14 @@ return array (
         'notHas' => 'Indeholder Ikke',
       ),
     ),
-    'label' => 
+    'label' =>
     array (
       'Field' => 'Felt',
     ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn (Emne)',
       'parent' => 'Henviser til',
@@ -517,7 +517,7 @@ return array (
       'isSystem' => 'Is System',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'replied' => 'Besvaret',
       'replies' => 'Svar',
@@ -533,9 +533,9 @@ return array (
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Kladder',
         'Sending' => 'Sender',
@@ -545,7 +545,7 @@ return array (
         'Failed' => 'Fejlet',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Email' => 'Arkiver Email',
       'Archive Email' => 'Arkiver Email',
@@ -580,7 +580,7 @@ return array (
       'Create Task' => 'Opret Opgave',
       'Create Case' => 'Opret Sag',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'noSmtpSetup' => 'Ingen SMTP indstillinger {link}.',
       'testEmailSent' => 'Test-email afsendt',
@@ -588,7 +588,7 @@ return array (
       'savedAsDraft' => 'Gemt som Kladde',
       'confirmInsertTemplate' => 'The email body will be lost. Are you sure you want to insert the template?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Sendt',
       'archived' => 'Arkiveret',
@@ -597,7 +597,7 @@ return array (
       'trash' => 'Papirkurv',
       'important' => 'Vigtig',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'markAsRead' => 'Marker som Læst',
       'markAsNotRead' => 'Mark som Ikke Læst',
@@ -608,9 +608,9 @@ return array (
       'retrieveFromTrash' => 'Hent fra Papirkurv',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'status' => 'Status',
@@ -635,20 +635,20 @@ return array (
       'smtpUsername' => 'SMTP Brugernavn',
       'smtpPassword' => 'SMTP Kodeord',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filtre',
       'emails' => 'Emails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Inactive' => 'Inaktiv',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailAccount' => 'Opret Emailkonto',
       'IMAP' => 'IMAP',
@@ -657,29 +657,29 @@ return array (
       'Send Test Email' => 'Send Testemail',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Kunne ikke forbinde til IMAP server',
       'connectionIsOk' => 'Forbindelse OK',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'monitoredFolders' => 'Du kan tilføje en \'Sendt\' mappe for at synkronisere emails sendt fra en ekstern emailklient.',
       'storeSentEmails' => 'Sendte emails bliver lagret på IMAP serveren. Emailadressefeltet skal matche adressen emails vil blive sendt fra.',
     ),
   ),
-  'EmailAddress' => 
+  'EmailAddress' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Primary' => 'Primær',
       'Opted Out' => 'Fravalgt',
       'Invalid' => 'Ugyldig',
     ),
   ),
-  'EmailFilter' => 
+  'EmailFilter' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'from' => 'Fra',
       'to' => 'Til',
@@ -689,20 +689,20 @@ return array (
       'isGlobal' => 'Er Global',
       'emailFolder' => 'Mappe',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFilter' => 'Opret Emailfilter',
       'Emails' => 'Emails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Skip' => 'Ignorer',
         'Move to Folder' => 'Læg i Mappe',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'name' => 'Giv filtret et beskrivende navn',
       'subject' => 'Brug et wildcard *
@@ -716,22 +716,22 @@ tekst* - begynder med tekst
       'isGlobal' => 'Bruger dette filter på alle emails, der kommer ind i systemet.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'skipNotifications' => 'Spring over Notifikationer',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFolder' => 'Opret Mappe',
       'Manage Folders' => 'Administrer Mapper',
       'Emails' => 'Emails',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'status' => 'Status',
@@ -743,16 +743,16 @@ tekst* - begynder med tekst
       'oneOff' => 'Kun en gang',
       'category' => 'Category',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplate' => 'Opret Emailskabelon',
       'Info' => 'Info',
       'Available placeholders' => 'Available placeholders',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'infoText' => 'Tilgængelige variabler:
 
@@ -760,41 +760,41 @@ tekst* - begynder med tekst
 
 {optOutLink} &#8211; afmeldingslink',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'oneOff' => 'Check hvis du kun skal bruge denne skabelon en enkelt gang. F.eks. til masse-email.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Aktuel',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
       'optOutUrl' => 'URL for an unsubsbribe link',
       'optOutLink' => 'an unsubscribe link',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Create Category',
       'Manage Categories' => 'Manage Categories',
       'EmailTemplates' => 'Email Templates',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Order',
       'childList' => 'Child List',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'Email Templates',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Fields' => 'Felter',
       'Relationships' => 'Relationer',
@@ -802,7 +802,7 @@ tekst* - begynder med tekst
       'Log' => 'Log',
       'Formula' => 'Formel',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'type' => 'Type',
@@ -832,9 +832,9 @@ tekst* - begynder med tekst
       'iconClass' => 'Icon',
       'fullTextSearch' => 'Full-Text Search',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         '' => 'Ingen',
         'Base' => 'Basis',
@@ -844,7 +844,7 @@ tekst* - begynder med tekst
         'BasePlus' => 'Base Plus',
         'Company' => 'Firma',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
         'manyToMany' => 'n:n',
         'oneToMany' => '1:n',
@@ -852,19 +852,19 @@ tekst* - begynder med tekst
         'parentToChildren' => 'Forældre til Børn',
         'childrenToParent' => 'Børn til Forældre',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
         'asc' => 'Stigende',
         'desc' => 'Faldende',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'entityCreated' => 'Entitet er oprettet',
       'linkAlreadyExists' => 'Navnekonflikt i Link',
       'linkConflict' => 'Navnekonflikt i Link eller Felt med samme navn eksisterer allerede.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'statusField' => 'Opdateringer af dette felt bliver logget i listen',
       'textFilterFields' => 'Felter brugt af tekstsøgning',
@@ -876,26 +876,26 @@ tekst* - begynder med tekst
       'fullTextSearch' => 'Running rebuild is required.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportAllFields' => 'Export all fields',
       'fieldList' => 'Feltliste',
       'format' => 'Format',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
         'xlsx' => 'XLSX (Excel)',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'version' => 'Version',
@@ -903,39 +903,39 @@ tekst* - begynder med tekst
       'isInstalled' => 'Installeret',
       'checkVersionUrl' => 'An URL for checking new versions',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Uninstall' => 'Afinstaller',
       'Install' => 'Installer',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'uninstalled' => 'Udvidelse {name} er blevet afinstalleret',
     ),
   ),
-  'ExternalAccount' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Connect' => 'Forbind',
       'Connected' => 'Forbundet',
     ),
-    'help' => 
+    'help' =>
     array (
     ),
   ),
-  'FieldManager' => 
+  'FieldManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Dynamic Logic' => 'Dynamisk Logik',
       'Name' => 'Name',
       'Label' => 'Label',
       'Type' => 'Type',
     ),
-    'options' => 
+    'options' =>
     array (
-      'dateTimeDefault' => 
+      'dateTimeDefault' =>
       array (
         '' => 'Ingen',
         'javascript: return this.dateTime.getNow(1);' => 'Nu',
@@ -962,7 +962,7 @@ tekst* - begynder med tekst
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 dage',
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 uge',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
         '' => 'Ingen',
         'javascript: return this.dateTime.getToday();' => 'Idag',
@@ -993,7 +993,7 @@ tekst* - begynder med tekst
         'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 år',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'audited' => 'Opdateringer bliver logget i listen',
       'required' => 'Feltet vil være påkrævet. Kan ikke efterlades tomt.',
@@ -1008,9 +1008,9 @@ tekst* - begynder med tekst
       'readOnly' => 'Feltværdien kan ikke angives af brugeren, men beregnes gennem formel.',
       'maxFileSize' => 'If empty or 0 then no limit.',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
         'street' => 'Street',
         'city' => 'City',
@@ -1019,26 +1019,26 @@ tekst* - begynder med tekst
         'postalCode' => 'Postal Code',
         'map' => 'Map',
       ),
-      'personName' => 
+      'personName' =>
       array (
         'salutation' => 'Salutation',
         'first' => 'First',
         'last' => 'Last',
       ),
-      'currency' => 
+      'currency' =>
       array (
         'converted' => '(Converted)',
         'currency' => '(Currency)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
         'date' => 'Date',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
       'Email' => 'Email',
       'User' => 'Bruger',
@@ -1110,10 +1110,21 @@ tekst* - begynder med tekst
       'KnowledgeBaseCategory' => 'Vidensbase Kategori',
       'CampaignLogRecord' => 'Kampagnelog Post',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
       'Email' => 'Emails',
       'User' => 'Brugere',
@@ -1172,10 +1183,21 @@ tekst* - begynder med tekst
       'KnowledgeBaseCategory' => 'Vidensbase Kategorier',
       'CampaignLogRecord' => 'Kampagnelog Post',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Misc' => 'Forskellige',
       'Merge' => 'Sammenfør',
@@ -1342,7 +1364,7 @@ tekst* - begynder med tekst
       'Create Task' => 'Opret Opgave',
       'Tasks' => 'Opgaver',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'pleaseWait' => 'Vent venligst',
       'posting' => 'Sender...',
@@ -1409,17 +1431,17 @@ Tilgængelig syntax:
       'erasePersonalDataConfirmation' => 'Checked fields will be erased permanently. Are you sure?',
       'massPrintPdfMaxCountError' => 'Can\'t print more that {maxCount} records.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMy' => 'Kun Min',
       'followed' => 'Abonneret',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'followed' => 'Abonneret',
       'all' => 'Alt',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'remove' => 'Fjern',
       'merge' => 'Føj sammen',
@@ -1430,7 +1452,7 @@ Tilgængelig syntax:
       'convertCurrency' => 'Convert Currency',
       'printPdf' => 'Print to PDF',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'firstName' => 'Fornavn',
@@ -1483,7 +1505,7 @@ Tilgængelig syntax:
       'shippingAddressPostalCode' => 'Postnummer (Levering)',
       'shippingAddressMap' => 'Kort (Levering)',
     ),
-    'links' => 
+    'links' =>
     array (
       'assignedUser' => 'Tildelt Bruger',
       'createdBy' => 'Oprettet af',
@@ -1508,7 +1530,7 @@ Tilgængelig syntax:
       'opportunity' => 'Mulighed',
       'contact' => 'Kontakt',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
       'Stream' => 'Aktiviteter',
       'Emails' => 'Min Indbakke',
@@ -1526,14 +1548,14 @@ Tilgængelig syntax:
       'SalesPipeline' => 'Salgspipeline',
       'Activities' => 'Mine Aktiviteter',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
       'assign' => '{entityType} {entity} er oprettet til dig',
       'emailReceived' => 'Email modtaget fra {from}',
       'entityRemoved' => '
  {user} fjernede {entityType} {entity} ',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
       'post' => '{user} har noteret på {entityType} {entity}',
       'attach' => '{user} vedhæftede på {entityType} {entity}',
@@ -1590,17 +1612,17 @@ Tilgængelig syntax:
       'emailSent' => '{by} har sendt email relateret til {entityType} {entity}',
       'emailSentThis' => '{by} har sendt email',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
       'postTargetSelfAndOthers' => '{user} sendte til {target} og sig selv',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
       'postTargetSelfAndOthers' => '{user} sendte til {target} og sig selv',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
         0 => 'Januar',
         1 => 'Februar',
@@ -1615,7 +1637,7 @@ Tilgængelig syntax:
         10 => 'November',
         11 => 'December',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
         0 => 'Jan',
         1 => 'Feb',
@@ -1630,7 +1652,7 @@ Tilgængelig syntax:
         10 => 'Nov',
         11 => 'Dec',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
         0 => 'Søndag',
         1 => 'Mandag',
@@ -1640,7 +1662,7 @@ Tilgængelig syntax:
         5 => 'Fredag',
         6 => 'Lørdag',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
         0 => 'Søn',
         1 => 'Man',
@@ -1650,7 +1672,7 @@ Tilgængelig syntax:
         5 => 'Fre',
         6 => 'Lør',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
         0 => 'Sø',
         1 => 'Ma',
@@ -1661,23 +1683,23 @@ Tilgængelig syntax:
         6 => 'Lø',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'd',
       'h' => 'h',
       'm' => 'm',
       's' => 's',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
         'Mr.' => 'Hr.',
         'Mrs.' => 'Fr.',
         'Ms.' => 'Fr.',
         'Dr.' => 'Dr.',
       ),
-      'language' => 
+      'language' =>
       array (
         'af_ZA' => 'Afrikaans',
         'az_AZ' => 'Aserbajdsjansk',
@@ -1752,7 +1774,7 @@ Tilgængelig syntax:
         'zh_HK' => 'Traditionel kinesisk (Hong Kong)',
         'zh_TW' => 'Traditionel kinesisk (Taiwan)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
         'on' => 'On',
         'notOn' => 'Not On',
@@ -1777,7 +1799,7 @@ Tilgængelig syntax:
         'olderThanXDays' => 'Ældre End X Dage',
         'afterXDays' => 'Efter X Dage',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
         'is' => 'Er',
         'isEmpty' => 'Er Tom',
@@ -1789,7 +1811,7 @@ Tilgængelig syntax:
         'anyOf' => 'Any Of',
         'noneOf' => 'None Of',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
         'equals' => 'Er Lig Med',
         'like' => 'Som (%)',
@@ -1802,7 +1824,7 @@ Tilgængelig syntax:
         'isNotEmpty' => 'Er Ikke Tom',
         'notEquals' => 'Not Equals',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
         'equals' => 'Lig Med',
         'notEquals' => 'Ikke Lig Med',
@@ -1814,7 +1836,7 @@ Tilgængelig syntax:
         'isEmpty' => 'Er Tom',
         'isNotEmpty' => 'Er Ikke Tom',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
         0 => 'Ingen',
         '0.5' => '30 sekunder',
@@ -1823,7 +1845,7 @@ Tilgængelig syntax:
         5 => '5 minutter',
         10 => '10 minutter',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
         'Mobile' => 'Mobil',
         'Office' => 'Kontor',
@@ -1831,19 +1853,19 @@ Tilgængelig syntax:
         'Home' => 'Hjemme',
         'Other' => 'Andet',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
         'Popup' => 'Popup',
         'Email' => 'Email',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
         'NOTICE' => 'Du kan finde oversættelse her:
 https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'font' =>
         array (
           'bold' => 'Fed',
           'italic' => 'Kursiv',
@@ -1854,7 +1876,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'name' => 'Font Family',
           'size' => 'Font størrelse',
         ),
-        'image' => 
+        'image' =>
         array (
           'image' => 'Billede',
           'insert' => 'Indsæt Billede',
@@ -1869,7 +1891,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'url' => 'Billede URL',
           'remove' => 'Fjern Billede',
         ),
-        'link' => 
+        'link' =>
         array (
           'link' => 'Link',
           'insert' => 'Indsæt Link',
@@ -1879,7 +1901,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'url' => 'Hvilken URL skal linket henvise til?',
           'openInNewWindow' => 'Åbn i nyt vindue',
         ),
-        'video' => 
+        'video' =>
         array (
           'video' => 'Video',
           'videoLink' => 'Videolink',
@@ -1887,15 +1909,15 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'url' => 'Video URL',
           'providers' => '(YouTube, Vimeo, Vine, Instagram, eller DailyMotion) ',
         ),
-        'table' => 
+        'table' =>
         array (
           'table' => 'Tabel',
         ),
-        'hr' => 
+        'hr' =>
         array (
           'insert' => 'Indsæt vandret streg',
         ),
-        'style' => 
+        'style' =>
         array (
           'style' => 'Stil',
           'normal' => 'Normal',
@@ -1908,18 +1930,18 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'h5' => 'Overskrift 5',
           'h6' => 'Overskrift 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
           'unordered' => 'Usorteret liste',
           'ordered' => 'Nummereret liste',
         ),
-        'options' => 
+        'options' =>
         array (
           'help' => 'Hjælp',
           'fullscreen' => 'Fuld skærm',
           'codeview' => 'Vis Html-kode',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
           'paragraph' => 'Afsnit',
           'outdent' => 'Ryk ud',
@@ -1929,7 +1951,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'right' => 'Højrestillet',
           'justify' => 'Lige margener',
         ),
-        'color' => 
+        'color' =>
         array (
           'recent' => 'Sidste farve',
           'more' => 'Mere farve',
@@ -1940,7 +1962,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'reset' => 'Nulstil',
           'resetToDefault' => 'Nulstil til standard',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
           'shortcuts' => 'Tastaturgenveje',
           'close' => 'Luk',
@@ -1949,19 +1971,19 @@ https://github.com/HackerWins/summernote/tree/master/lang',
           'paragraphFormatting' => 'Afsnitsformatering',
           'documentStyle' => 'Domumentstil',
         ),
-        'history' => 
+        'history' =>
         array (
           'undo' => 'Fortryd',
           'redo' => 'Gendan',
         ),
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
       'list' => 'List',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
       'Espo' => 'Espo',
       'EspoRtl' => 'Højre-Venstre Espo',
@@ -1974,9 +1996,9 @@ https://github.com/HackerWins/summernote/tree/master/lang',
       'HazyblueVertical' => 'Hazyblue m/ sidemenu',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Revert Import' => 'Fortryd Import',
       'Return to Import' => 'Gå tilbage til Import',
@@ -2032,7 +2054,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
       'New Import' => 'New Import',
       'Import Results' => 'Import Results',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'utf8' => 'Kodning skal være UTF-8',
       'duplicatesRemoved' => 'Dubletter fjernet',
@@ -2044,7 +2066,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
       'confirmRemoveImportLog' => 'This will remove the import log. All imported records will be kept. You wan\'t be able to revert import results. Are you sure you?',
       'removeImportLog' => 'This will remove the import log. All imported records will be kept. Use it if you are sure that import is fine.',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'file' => 'Fil',
       'entityType' => 'Entitetstype',
@@ -2053,9 +2075,9 @@ https://github.com/HackerWins/summernote/tree/master/lang',
       'updated' => 'Opdaterede Poster',
       'status' => 'Status',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Failed' => 'Fejlet',
         'In Process' => 'Behandles',
@@ -2063,9 +2085,9 @@ https://github.com/HackerWins/summernote/tree/master/lang',
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'emailAddress' => 'Imailadresse',
@@ -2104,7 +2126,7 @@ https://github.com/HackerWins/summernote/tree/master/lang',
       'smtpIsShared' => 'SMTP Is Shared',
       'smtpIsForMassEmail' => 'SMTP Is for Mass Email',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reply' => 'Giv afsender besked om, at deres email er modtaget
 
@@ -2122,20 +2144,20 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'smtpIsForMassEmail' => 'If checked then SMTP will be available for Mass Email.',
       'storeSentEmails' => 'Sent emails will be stored on the IMAP server.',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filtre',
       'emails' => 'Emails',
       'assignToUser' => 'Assign to User',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Inactive' => 'Inaktiv',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
         '' => 'Ingen',
         'Direct-Assignment' => 'Direkte tildeling',
@@ -2143,21 +2165,21 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
         'Least-Busy' => 'Mindst-Optaget',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create InboundEmail' => 'Opret Emailkonto',
       'IMAP' => 'IMAP',
       'Actions' => 'Handlinger',
       'Main' => 'Main',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Kunne ikke forbinde til IMAPserver',
     ),
   ),
-  'Integration' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'enabled' => 'Aktiv',
       'clientId' => 'Klient ID',
@@ -2165,24 +2187,24 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'redirectUri' => 'Omdiriger URL',
       'apiKey' => 'API Nøgle',
     ),
-    'titles' => 
+    'titles' =>
     array (
       'GoogleMaps' => 'Google Maps',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectIntegration' => 'Vælg en integration fra menu',
       'noIntegrations' => 'Ingen integration til rådighed',
     ),
-    'help' => 
+    'help' =>
     array (
       'Google' => '<p><b>Hent OAuth 2.0 credentials fra Google Developers Console.</b></p><p>Besøg <a href="https://console.developers.google.com/project">Google Developers Console</a> for at hente OAuth 2.0 credentials såsom Client ID og Hemmelig Client  som er kendt af både Google og EspoCRM applicationen.</p> ',
       'GoogleMaps' => '<p>Hent API nøgle <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">her</a>.</p> ',
     ),
   ),
-  'Job' => 
+  'Job' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Status',
       'executeTime' => 'Udfør når',
@@ -2195,9 +2217,9 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'scheduledJobJob' => 'Scheduled Job Name',
       'data' => 'Data',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Afventer',
         'Success' => 'Succes',
@@ -2206,9 +2228,9 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'width' => 'Bredde (%)',
       'link' => 'Link',
@@ -2220,14 +2242,14 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'isLarge' => 'Large font size',
       'dynamicLogicVisible' => 'Conditions making panel visible',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
         'left' => 'Venstre',
         'right' => 'Højre',
       ),
-      'style' => 
+      'style' =>
       array (
         'default' => 'Standard',
         'success' => 'Succes',
@@ -2237,15 +2259,15 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
         'primary' => 'Primær',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'New panel' => 'New panel',
       'Layout' => 'Layout',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'campaign' => 'Campaign',
@@ -2265,7 +2287,7 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Payload',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Target List',
       'campaign' => 'Campaign',
@@ -2273,27 +2295,27 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'targetTeam' => 'Target Team',
       'logRecords' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Create Entry Point',
       'Generate New API Key' => 'Generate New API Key',
       'Request' => 'Request',
       'Confirm Opt-In' => 'Confirm Opt-In',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Create new API Key',
       'optInConfirmationExpired' => 'Opt-in confirmation link is expired.',
       'optInIsConfirmed' => 'Opt-in is confirmed.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Markdown is supported.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Number',
       'data' => 'Data',
@@ -2302,15 +2324,15 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'createdAt' => 'Entered At',
       'isCreated' => 'Is Lead Created',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => 'Lead Capture',
       'target' => 'Target',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'post' => 'Post',
       'attachments' => 'Vedhæftninger',
@@ -2326,15 +2348,15 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'data' => 'Data',
       'number' => 'Number',
     ),
-    'filters' => 
+    'filters' =>
     array (
       'all' => 'Alle',
       'posts' => 'Poster',
       'updates' => 'Opdateringer',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
         'self' => 'til mig selv',
         'users' => 'til bestemt(e) bruger(e)',
@@ -2342,24 +2364,24 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
         'all' => 'til alle interne brugere',
         'portals' => 'til portalbrugere',
       ),
-      'type' => 
+      'type' =>
       array (
         'Post' => 'Post',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'writeMessage' => 'Skriv din meddelelse her',
     ),
-    'links' => 
+    'links' =>
     array (
       'superParent' => 'Super Parent',
       'related' => 'Related',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'logo' => 'Logo',
@@ -2381,18 +2403,18 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'customUrl' => 'Brugerdefineret URL',
       'customId' => 'Brugerdefineret ID',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Brugere',
       'portalRoles' => 'Roller',
       'notes' => 'Notater',
       'articles' => 'Vidensbase Artikler',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portalRoles' => 'Specificerede Portalroller som tildeles alle brugere af denne portal',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Portal' => 'Opret Portal',
       'User Interface' => 'Brugergrænseflade',
@@ -2400,21 +2422,21 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'Settings' => 'Indstillinger',
     ),
   ),
-  'PortalRole' => 
+  'PortalRole' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportPermission' => 'Export Permission',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Brugere',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'exportPermission' => 'Defines whether portal users have an ability to export records.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Adgang',
       'Create PortalRole' => 'Opret Portalrolle',
@@ -2422,16 +2444,16 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'Field Level' => 'Feltniveau',
     ),
   ),
-  'PortalUser' => 
+  'PortalUser' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create PortalUser' => 'Opret Portalbruger',
     ),
   ),
-  'Preferences' => 
+  'Preferences' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'dateFormat' => 'Datoformat',
       'timeFormat' => 'Tidsformat',
@@ -2472,18 +2494,18 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'scopeColorsDisabled' => 'Disable scope colors',
       'tabColorsDisabled' => 'Disable tab colors',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Søndag',
         1 => 'Mandag',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Notifications' => 'Notifikationer',
       'User Interface' => 'Brugergrænseflade',
@@ -2492,7 +2514,7 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'Locale' => 'Landestandard',
       'Reset Dashboard to Default' => 'Reset Dashboard to Default',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'autoFollowEntityTypeList' => 'Bruger vil automatisk følge alle nye poster i de valgte entitetstyper, vil se nyheder i aktiviteter og modtage notifikationer.',
       'doNotFillAssignedUserIfNotRequired' => 'When create record assigned user won\'t be filled with own user unless the field is required.',
@@ -2500,9 +2522,9 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'followCreatedEntityTypeList' => 'When create new records of selected entity types, they will be followed automatically even if assigned to another user.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'roles' => 'Roller',
@@ -2513,12 +2535,12 @@ Kun en email i en bestemt tidsperiode til en modtager for at undgå looping',
       'exportPermission' => 'Export Permission',
       'dataPrivacyPermission' => 'Data Privacy Permission',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Brugere',
       'teams' => 'Teams',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'assignmentPermission' => 'Tillader at begrænse mulighed for at tildele optegnelser og sende meddelelser til andre brugere.
 
@@ -2539,22 +2561,22 @@ nej - kan ikke se',
       'exportPermission' => 'Defines whether users have an ability to export records.',
       'dataPrivacyPermission' => 'Allows to view and erase personal data.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Adgang',
       'Create Role' => 'Opret Rolle',
       'Scope Level' => 'Adgangsniveau',
       'Field Level' => 'Feltniveau',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
         'not-set' => 'Ikke angivet',
         'enabled' => 'Aktiv',
         'disabled' => 'Inaktiv',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
         'all' => 'Alle',
         'team' => 'team',
@@ -2566,7 +2588,7 @@ nej - kan ikke se',
         'not-set' => 'Ikke angivet',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
       'read' => 'Læs',
       'edit' => 'Rediger',
@@ -2574,31 +2596,31 @@ nej - kan ikke se',
       'stream' => 'Aktiviteter',
       'create' => 'Opret',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'changesAfterClearCache' => 'Alle ændringer i adgangskontrol bliver aktiveret efter cache er tømt.',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'status' => 'Status',
       'job' => 'Job',
       'scheduling' => 'Planlæg',
     ),
-    'links' => 
+    'links' =>
     array (
       'log' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create ScheduledJob' => 'Opret Planlagt Job',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
         'Cleanup' => 'Ryd op',
         'CheckInboundEmails' => 'Tjek Gruppe Emailkonti',
@@ -2610,20 +2632,20 @@ nej - kan ikke se',
         'ProcessMassEmail' => 'Send Masse-Emails',
         'ControlKnowledgeBaseArticleStatus' => 'Kontroller Videnbase Artikels Status',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
         'linux' => 'Kommentar: Tilføj denne linje i crontabfilen for at køre Espo-Planlagte Jobs:',
         'mac' => 'Kommentar: Tilføj denne linje i crontabfilen for at køre Espo-Planlagte Jobs:',
         'windows' => 'Kommentar: Opret en batchfil med følgende kommando for at køre Espo-Planlagte Jobs v.hj.a. Windows Opgavestyring.',
         'default' => 'Kommentar: Tilføj denne kommando til Cron Job (Opgavestyring):',
       ),
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Inactive' => 'Inaktiv',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'scheduling' => 'Definerer hvornår og hvor ofte et cronjob kører.
 
@@ -2636,18 +2658,18 @@ nej - kan ikke se',
 0 0 1 * * - den første dag i måneden',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Status',
       'executionTime' => 'Tid for udførelse',
       'target' => 'Mål',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'useCache' => 'Brug Cache',
       'dateFormat' => 'Datoformat',
@@ -2754,33 +2776,33 @@ nej - kan ikke se',
       'outboundEmailBccAddress' => 'BCC address for external clients',
       'cleanupDeletedRecords' => 'Clean up deleted records',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Søndag',
         1 => 'Mandag',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
         1 => '10 USD',
         2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
         'Post' => 'Posts',
         'Status' => 'Status updates',
         'EmailReceived' => 'Received emails',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'recordsPerPage' => 'Antal Poster i listevisning.',
       'recordsPerPageSmall' => 'Antal Poster i relationspaneler',
       'outboundEmailIsShared' => 'Tillad brugere at sende emails vi denne SMTP',
       'followCreatedEntities' => 'Brugere vil automatisk følge poster de har oprettet',
       'emailMessageMaxSize' => 'Alle indkommende emails som overskrider en fastsat størrelse vil blive hentet uden tekst og vedhæftninger.',
-      'authTokenLifetime' => 'Definerer hvor længe tokens kan eksistere. 
+      'authTokenLifetime' => 'Definerer hvor længe tokens kan eksistere.
 0 - betyder udløber aldrig',
       'authTokenMaxIdleTime' => 'Definerer hvor længe tokens kan eksistere efter sidste adgang.
 0 - betyder udløber aldrig',
@@ -2791,7 +2813,7 @@ nej - kan ikke se',
       'ldapUserNameAttribute' => 'Attributten til identifikation af brugeren.
 F.eks. "userPrincipalName" oller "sAMAccountName" til Active Directory, "uid" til OpenLDAP. ',
       'ldapUserObjectClass' => 'ObjectClass attribut til søgning af brugere. F.eks. "person" for AD, "inetOrgPerson" for OpenLDAP',
-      'ldapAccountCanonicalForm' => 'Din kontotypes kanoniske format. Der er 4 muligheder: 
+      'ldapAccountCanonicalForm' => 'Din kontotypes kanoniske format. Der er 4 muligheder:
 <br>- \'Dn\' - varianten i formatet \'CN=tester,OU=espocrm,DC=test, DC=lan\'.<br>- \'Username\' - varianten \'tester\'.<br>- \'Backslash\' - varianten \'COMPANY\\tester\'.<br>- \'Principal\' - varianten \'tester@company.com\'. ',
       'ldapBindRequiresDn' => 'Muligheden for at formatere brugernavnet i DN-format',
       'ldapBaseDn' => 'Standard basis DN der benyttes til søgning af brugere. F.eks. "OU=users,OU=espocrm,DC=test, DC=lan".',
@@ -2824,7 +2846,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'emailAddressIsOptedOutByDefault' => 'When creating new record email addess will be marked as opted-out.',
       'cleanupDeletedRecords' => 'Removed records will be deleted from database after a while.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'System' => 'System',
       'Locale' => 'Område',
@@ -2840,39 +2862,39 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'Activities' => 'Aktiviteter',
       'Admin Notifications' => 'Admin Notifications',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'ldapTestConnection' => 'Forbindelsen er succesfuldt etableret.',
     ),
   ),
-  'Team' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'roles' => 'Roller',
       'positionList' => 'Stillingsbetegnelse',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Brugere',
       'notes' => 'Notater',
       'roles' => 'Roller',
       'inboundEmails' => 'Gruppe-email konti',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'roles' => 'Brugere i dette team arver alle adgangsrettigheder fra de valgte roller.',
       'positionList' => 'Stillinger til rådighed i dette team. F.eks. Sælger, Manager osv.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Team' => 'Opret Team',
     ),
   ),
-  'Template' => 
+  'Template' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'body' => 'Indhold',
@@ -2890,26 +2912,26 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'pageFormat' => 'Paper Format',
       'fontFace' => 'Font',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Template' => 'Opret Skabelon',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
         'Portrait' => 'Portrait',
         'Landscape' => 'Landscape',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
         'today' => 'Today (date)',
         'now' => 'Now (date-time)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefurat',
@@ -2941,15 +2963,15 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
         'times' => 'Times',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'footer' => 'Brug {pageNumber} til at printe sidetal.',
       'variables' => 'Copy-paste needed placeholder to Header, Body or Footer.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'userName' => 'Brugernavn',
@@ -2985,7 +3007,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'acceptanceStatusMeetings' => 'Acceptance Status (Meetings)',
       'acceptanceStatusCalls' => 'Acceptance Status (Calls)',
     ),
-    'links' => 
+    'links' =>
     array (
       'teams' => 'Teams',
       'roles' => 'Roller',
@@ -2998,7 +3020,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'tasks' => 'Opgaver',
       'targetLists' => 'Kontaktlister',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create User' => 'Opret Bruger',
       'Generate' => 'Generér',
@@ -3015,7 +3037,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'Create Portal User' => 'Opret Portalbruger',
       'Proceed w/o Contact' => 'Forsæt uden Kontakt',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'defaultTeam' => 'Alle poster oprettet af denne bruger bliver som standard relateret til dette team.',
       'userName' => 'Bogstaver a-z, tal 0-9, punktummer, bindestreger, @ og understregning er tilladte.',
@@ -3026,7 +3048,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'portalRoles' => 'Yderligere portalroller. Brug det til at udvide adgangsniveauet specielt for denne bruger',
       'portals' => 'Portaler som denne bruger har adgang til.',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'passwordWillBeSent' => 'Kodeord sendes til brugers emailadresse.',
       'accountInfoEmailSubject' => 'EspoCRM Info om Brugeradgang.',
@@ -3049,9 +3071,9 @@ Kodeord: {password}
       'setupSmtpBefore' => 'Det er nødvendigt af udfylde <a href="{url}">SMTP indstillinger</a> for at systemet kan sende kodeordet i en email.',
       'userNameExists' => 'User Name already exists',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
         '' => 'Ikke Sat',
         'Male' => 'Hankøn',
@@ -3059,19 +3081,19 @@ Kodeord: {password}
         'Neutral' => 'Neutral',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMyTeam' => 'Kun Mit Team',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
       'activePortal' => 'Portal Aktiv',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'emailAddress' => 'Email',
@@ -3091,7 +3113,7 @@ Kodeord: {password}
       'originalLead' => 'Oprindelig Lead',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontakter',
       'opportunities' => 'Muligheder',
@@ -3108,16 +3130,16 @@ Kodeord: {password}
       'originalLead' => 'Oprindelig Lead',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Customer' => 'Kunde',
         'Investor' => 'Investor',
         'Partner' => 'Partner',
         'Reseller' => 'Forhandler',
       ),
-      'industry' => 
+      'industry' =>
       array (
         'Aerospace' => 'Luft- og Rumfart',
         'Agriculture' => 'Landbrug',
@@ -3172,22 +3194,22 @@ Kodeord: {password}
         'Water' => 'Vand',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Account' => 'Opret Konto',
       'Copy Billing' => 'Kopier Betalingsadresse',
       'Set Primary' => 'Set Primary',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'customers' => 'Kunder',
       'partners' => 'Partnere',
       'recentlyCreated' => 'Nyligt Oprettet',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
       'month' => 'Måned',
       'week' => 'Uge',
@@ -3196,7 +3218,7 @@ Kodeord: {password}
       'agendaDay' => 'Dag',
       'timeline' => 'Tidslinje',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Today' => 'Idag',
       'Create' => 'Opret',
@@ -3210,9 +3232,9 @@ Kodeord: {password}
       'Create Shared View' => 'Create Shared View',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'parent' => 'Henviser til',
@@ -3229,23 +3251,23 @@ Kodeord: {password}
       'account' => 'Konto',
       'acceptanceStatus' => 'Acceptstatus',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Planlagt',
         'Held' => 'Gennemført',
         'Not Held' => 'Ikke Gennemført',
       ),
-      'direction' => 
+      'direction' =>
       array (
         'Outbound' => 'Udgående',
         'Inbound' => 'Indgående',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => 'Ingen',
         'Accepted' => 'Accepteret',
@@ -3253,28 +3275,28 @@ Kodeord: {password}
         'Tentative' => 'Med Forbehold',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Marker som Gennemført',
       'setNotHeld' => 'Marker som Ikke Gennemført',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Call' => 'Opret Opkald',
       'Set Held' => 'Marker som Gennemført',
       'Set Not Held' => 'Marker som Ikke Gennemført',
       'Send Invitations' => 'Send Invitationer',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Planlagt',
       'held' => 'Gennemført',
       'todays' => 'For Idag',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'description' => 'Beskrivelse',
@@ -3303,7 +3325,7 @@ Kodeord: {password}
       'usersTemplate' => 'Users Template',
       'mailMergeOnlyWithAddress' => 'Skip records w/o filled address',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Kontaktliste',
       'excludingTargetLists' => 'Udelukker Kontaktlister',
@@ -3319,9 +3341,9 @@ Kodeord: {password}
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'Email',
         'Web' => 'Web',
@@ -3330,7 +3352,7 @@ Kodeord: {password}
         'Newsletter' => 'Nyhedsbrev',
         'Mail' => 'Mail',
       ),
-      'status' => 
+      'status' =>
       array (
         'Planning' => 'Planlægning',
         'Active' => 'Aktiv',
@@ -3338,7 +3360,7 @@ Kodeord: {password}
         'Complete' => 'Fuldført',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Campaign' => 'Opret Kampagne',
       'Target Lists' => 'Kontaktlister',
@@ -3354,24 +3376,24 @@ Kodeord: {password}
       'Mail Merge' => 'Mail Merge',
       'Generate Mail Merge PDF' => 'Generate Mail Merge PDF',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'unsubscribed' => 'Din mailadresse er fjernet fra vores mailliste.',
       'subscribedAgain' => 'Du er tilmeldt igen.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'targetLists' => 'Kontakter som skal modtage meddelelser',
       'excludingTargetLists' => 'Kontakter som ikke skal modtage meddelelser',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'action' => 'Handling',
       'actionDate' => 'Dato',
@@ -3385,16 +3407,16 @@ Kodeord: {password}
       'stringAdditionalData' => 'Streng Ekstra Data',
       'isTest' => 'Is Test',
     ),
-    'links' => 
+    'links' =>
     array (
       'queueItem' => 'Sæt i Kø',
       'parent' => 'Henviser til',
       'object' => 'Objekt',
       'campaign' => 'Campaign',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Sent' => 'Sendt',
         'Opened' => 'Åbnet',
@@ -3405,11 +3427,11 @@ Kodeord: {password}
         'Opted In' => 'Opted In',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'All' => 'Alle',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Sendt',
       'opened' => 'Åbnet',
@@ -3420,26 +3442,26 @@ Kodeord: {password}
       'leadCreated' => 'Lead Oprettet',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'url' => 'URL',
       'urlToUse' => 'Kode til indsættelse i stedet for URL',
       'campaign' => 'Kampagne',
     ),
-    'links' => 
+    'links' =>
     array (
       'campaign' => 'Kampagne',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create CampaignTrackingUrl' => 'Opret Tracking URL',
     ),
   ),
-  'Case' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'number' => 'Nummer',
@@ -3454,7 +3476,7 @@ Kodeord: {password}
       'lead' => 'Lead',
       'attachments' => 'Attachments',
     ),
-    'links' => 
+    'links' =>
     array (
       'inboundEmail' => 'Indgående Email',
       'account' => 'Konto',
@@ -3468,9 +3490,9 @@ Kodeord: {password}
       'lead' => 'Lead',
       'attachments' => 'Attachments',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Ny',
         'Assigned' => 'Tildelt',
@@ -3479,21 +3501,21 @@ Kodeord: {password}
         'Rejected' => 'Afvist',
         'Duplicate' => 'Dublet',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Lav',
         'Normal' => 'Normal',
         'High' => 'Høj',
         'Urgent' => 'Vigtig',
       ),
-      'type' => 
+      'type' =>
       array (
         'Question' => 'Spørgsmål',
         'Incident' => 'Hændelse',
         'Problem' => 'Problem',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Case' => 'Opret Sag',
       'Close' => 'Luk',
@@ -3501,15 +3523,15 @@ Kodeord: {password}
       'Closed' => 'Lukket',
       'Rejected' => 'Afvist',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Åben',
       'closed' => 'Lukket',
     ),
   ),
-  'Contact' => 
+  'Contact' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'emailAddress' => 'Email',
@@ -3536,7 +3558,7 @@ Kodeord: {password}
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
       'opportunities' => 'Muligheder',
       'cases' => 'Sager',
@@ -3553,13 +3575,13 @@ Kodeord: {password}
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Contact' => 'Opret Kontakt',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
         '' => '--Ingen--',
         'Decision Maker' => 'Beslutningstager',
@@ -3567,25 +3589,25 @@ Kodeord: {password}
         'Influencer' => 'Har Indflydelse',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'portalUsers' => 'Portalbrugere',
       'notPortalUsers' => 'Ikke Portalbrugere',
       'accountActive' => 'Active',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Document' => 'Opret Dokument',
       'Details' => 'Detaljer',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'status' => 'Status',
@@ -3598,7 +3620,7 @@ Kodeord: {password}
       'folder' => 'Mappe',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Konti',
       'opportunities' => 'Muligheder',
@@ -3607,16 +3629,16 @@ Kodeord: {password}
       'contacts' => 'Kontakter',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Draft' => 'Kladde',
         'Expired' => 'Udløbet',
         'Canceled' => 'Aflyst',
       ),
-      'type' => 
+      'type' =>
       array (
         '' => 'ingen',
         'Contract' => 'Kontrakt',
@@ -3625,28 +3647,28 @@ Kodeord: {password}
         'License Agreement' => 'Licensaftale',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
       'draft' => 'Kladde',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create DocumentFolder' => 'Opret Dokumentmappe',
       'Manage Categories' => 'Administrer Mapper',
       'Documents' => 'Dokumenter',
     ),
-    'links' => 
+    'links' =>
     array (
       'documents' => 'Dokumenter',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'status' => 'Status',
@@ -3657,14 +3679,14 @@ Kodeord: {password}
       'massEmail' => 'Masse-Email',
       'isTest' => 'Er Test',
     ),
-    'links' => 
+    'links' =>
     array (
       'target' => 'Mål',
       'massEmail' => 'Masse-Email',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Afventer',
         'Sent' => 'Sendt',
@@ -3672,16 +3694,16 @@ Kodeord: {password}
         'Sending' => 'Sender',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'pending' => 'Afventer',
       'sent' => 'Sendt',
       'failed' => 'Fejlet',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseArticle' => 'Opret Artikel',
       'Any' => 'hvilken som helst',
@@ -3691,7 +3713,7 @@ Kodeord: {password}
       'Move to Top' => 'Flyt til Top',
       'Move to Bottom' => 'Flyt til Bund',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'status' => 'Status',
@@ -3705,59 +3727,59 @@ Kodeord: {password}
       'language' => 'Sprog',
       'portals' => 'Portaler',
     ),
-    'links' => 
+    'links' =>
     array (
       'cases' => 'Sager',
       'opportunities' => 'Muligheder',
       'categories' => 'Kategorier',
       'portals' => 'Portaler',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'In Review' => 'Venter på Godkendelse',
         'Draft' => 'Kladde',
         'Archived' => 'Arkiveret',
         'Published' => 'Publiseret',
       ),
-      'type' => 
+      'type' =>
       array (
         'Article' => 'Artikel',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portals' => 'Article will be available only in specified portals.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'published' => 'Publiseret',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseCategory' => 'Opret Kategori',
       'Manage Categories' => 'Administrer Kategorier',
       'Articles' => 'Artikler',
     ),
-    'links' => 
+    'links' =>
     array (
       'articles' => 'Artikler',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Converted To' => 'Konverteret Til',
       'Create Lead' => 'Opret Lead',
       'Convert' => 'Konverter',
       'convert' => 'convert',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => ' Navn',
       'emailAddress' => 'Email',
@@ -3784,7 +3806,7 @@ Kodeord: {password}
       'acceptanceStatusMeetings' => 'Acceptance Status (Meetings)',
       'acceptanceStatusCalls' => 'Acceptance Status (Calls)',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Kontaktlister',
       'campaignLogRecords' => 'Kampagne-log',
@@ -3795,9 +3817,9 @@ Kodeord: {password}
       'cases' => 'Sager',
       'documents' => 'Dokumenter',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Ny',
         'Assigned' => 'Tildelt',
@@ -3806,7 +3828,7 @@ Kodeord: {password}
         'Recycled' => 'Genbrugt',
         'Dead' => 'Død',
       ),
-      'source' => 
+      'source' =>
       array (
         '' => 'Ingen',
         'Call' => 'Samtale',
@@ -3819,16 +3841,16 @@ Kodeord: {password}
         'Other' => 'Andet',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
       'actual' => 'Aktuel',
       'converted' => 'Konverteret',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'status' => 'Status',
@@ -3846,7 +3868,7 @@ Kodeord: {password}
       'optOutEntirely' => 'Fuldstændig Opt-Out',
       'smtpAccount' => 'SMTP Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Kontaktlister',
       'excludingTargetLists' => 'Ekskluderer Kontaktlister',
@@ -3855,9 +3877,9 @@ Kodeord: {password}
       'emailTemplate' => 'Emailskabelon',
       'inboundEmail' => 'Emailkonto',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Kladde',
         'Pending' => 'Afventer',
@@ -3867,7 +3889,7 @@ Kodeord: {password}
         'Failed' => 'Fejlet',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create MassEmail' => 'Opret Masse-Email',
       'Send Test' => 'Send Test',
@@ -3875,27 +3897,27 @@ Kodeord: {password}
       'system' => 'system',
       'group' => 'group',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectAtLeastOneTarget' => 'Vælg mindst et Mål',
       'testSent' => 'Testemail(s) formodes at være sendt',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optOutEntirely' => 'Emailadresser tilhørende modtagere, som er afmeldt, bliver markeret som "afmeldt", og de vil ikke modtage masse-emails fremover.',
       'targetLists' => 'Kontakter der skal modtage meddelelser',
       'excludingTargetLists' => 'Kontakter der ikke skal modtage meddelelser',
       'storeSentEmails' => 'Emails will be stored in CRM.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Aktuel',
       'complete' => 'Færdig',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'parent' => 'Henviser til',
@@ -3912,19 +3934,19 @@ Kodeord: {password}
       'acceptanceStatus' => 'Acceptstatus',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Planlagt',
         'Held' => 'Gennemført',
         'Not Held' => 'Ikke Gennemført',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => 'Ingen',
         'Accepted' => 'Accepteret',
@@ -3932,12 +3954,12 @@ Kodeord: {password}
         'Tentative' => 'Forsøgt',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Marker som Gennemført',
       'setNotHeld' => 'Marker som Ikke Gennemført',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Meeting' => 'Opret Møde',
       'Set Held' => 'Marker som Gennemført',
@@ -3946,20 +3968,20 @@ Kodeord: {password}
       'on time' => 'Til Tiden',
       'before' => 'Før',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Planlagt',
       'held' => 'Gennemført',
       'todays' => 'Dagens',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'nothingHasBeenSent' => 'Intet blev sendt',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'account' => 'Konto',
@@ -3979,16 +4001,16 @@ Kodeord: {password}
       'contactRole' => 'Contact Role',
       'lastStage' => 'Last Stage',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontakter',
       'documents' => 'Dokumenter',
       'campaign' => 'Kampagne',
       'originalLead' => 'Oprindelig Lead',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
         'Prospecting' => 'Undersøges',
         'Qualification' => 'Kvalifikation',
@@ -4004,41 +4026,41 @@ Kodeord: {password}
         'Closed Lost' => 'Tabt og Lukket',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Opportunity' => 'Opret Mulighed',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Åbn',
       'won' => 'Vundet',
       'lost' => 'Tabt',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4049,9 +4071,9 @@ Kodeord: {password}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'description' => 'Beskrivelse',
@@ -4065,7 +4087,7 @@ Kodeord: {password}
       'targetStatus' => 'Target Status',
       'isOptedOut' => 'Is Opted Out',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Konti',
       'contacts' => 'Kontakter',
@@ -4073,9 +4095,9 @@ Kodeord: {password}
       'campaigns' => 'Kampagner',
       'massEmails' => 'Masse-Emails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'Email',
         'Web' => 'Web',
@@ -4083,13 +4105,13 @@ Kodeord: {password}
         'Radio' => 'Radio',
         'Newsletter' => 'Nyhedsbrev',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Opted Out',
         'Listed' => 'Listed',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create TargetList' => 'Opret Kontaktliste',
       'Opted Out' => 'Afmeldt',
@@ -4097,9 +4119,9 @@ Kodeord: {password}
       'Opt-Out' => 'Afmeld',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Navn',
       'parent' => 'Henviser til',
@@ -4117,15 +4139,15 @@ Kodeord: {password}
       'reminders' => 'Underretninger',
       'contact' => 'Contact',
     ),
-    'links' => 
+    'links' =>
     array (
       'attachments' => 'Vedhæftede',
       'account' => 'Account',
       'contact' => 'Contact',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Not Started' => 'Ikke Startet',
         'Started' => 'Startet',
@@ -4133,7 +4155,7 @@ Kodeord: {password}
         'Canceled' => 'Afbrudt',
         'Deferred' => 'Udsat',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Lav',
         'Normal' => 'Normal',
@@ -4141,12 +4163,12 @@ Kodeord: {password}
         'Urgent' => 'Vigtig',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Task' => 'Opret Opgave',
       'Complete' => 'Afslut',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Aktuel',
       'completed' => 'Afsluttet',
@@ -4155,9 +4177,158 @@ Kodeord: {password}
       'overdue' => 'Overskredet',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
+    array (
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Opret Beneficios ',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Opret Categoria ',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Opret Ciudad ',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Opret Comuna ',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Opret Doctos_beneficio ',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Opret Empresa ',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
     array (
       'address' => 'Adresse',
       'meetings1' => 'Meetings1',
@@ -4176,7 +4347,7 @@ Kodeord: {password}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Møder',
       'calls' => 'Opkald',
@@ -4189,13 +4360,13 @@ Kodeord: {password}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Formularios' => 'Opret Formulario',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4204,15 +4375,15 @@ Kodeord: {password}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4221,7 +4392,7 @@ Kodeord: {password}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4235,54 +4406,159 @@ Kodeord: {password}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'Proveedor' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'motivoReclamoId' => 'MotivoReclamoId',
-      'motivoReclamoDescripcion' => 'Descripción',
-      'reclamosMotivoReclamo' => 'Reclamos',
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Møder',
-      'calls' => 'Opkald',
-      'tasks' => 'Opgaver',
-      'reclamosMotivoReclamo' => 'Reclamos',
+      'beneficios' => 'Beneficios',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MotivoReclamo' => 'Opret MotivoReclamo ',
-    ),
-    'tooltips' => 
-    array (
-      'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+      'Create Proveedor' => 'Opret Proveedor ',
     ),
   ),
-  'Reclamo' => 
+  'Rol' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'reclamoId' => 'ReclamoId',
-      'reclamoTitulo' => 'Título',
-      'reclamoObservacion' => 'Observación',
-      'motivoReclamo' => 'MotivoReclamo',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Møder',
       'calls' => 'Opkald',
       'tasks' => 'Opgaver',
-      'motivoReclamo' => 'MotivoReclamo',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Reclamo' => 'Opret Reclamo ',
+      'Create Rol' => 'Opret Rol ',
     ),
-    'tooltips' => 
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
     array (
-      'reclamoTitulo' => 'Breve descripción del reclamo',
-      'reclamoObservacion' => 'Describa su situación',
+      'address' => 'Adresse',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Opret Solicitudes',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Møder',
+      'calls' => 'Opkald',
+      'tasks' => 'Opgaver',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'labels' =>
+    array (
+      'Create Subcategoria' => 'Opret Subcategoria ',
+    ),
+  ),
+  'Trabajador' =>
+  array (
+    'fields' =>
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'links' =>
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'labels' =>
+    array (
+      'Create Trabajador' => 'Opret Trabajador ',
     ),
   ),
 );

@@ -1,294 +1,293 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'User',
-      'action' => 'Action',
-      'createdAt' => 'Date',
-      'target' => 'Target',
-      'targetType' => 'Target Type',
-      'authToken' => 'Auth Token',
-      'ipAddress' => 'IP Address',
+      'user' => 'Usuario',
+      'action' => 'Acción',
+      'createdAt' => 'Fecha',
+      'target' => 'Entidad objetivo',
+      'targetType' => 'Tipo de entidad',
+      'authToken' => 'Token de autenticación',
+      'ipAddress' => 'Dirección IP',
       'authLogRecord' => 'Auth Log Record',
     ),
-    'links' => 
+    'links' =>
     array (
-      'authToken' => 'Auth Token',
+      'authToken' => 'Token de autenticación',
       'authLogRecord' => 'Auth Log Record',
-      'user' => 'User',
-      'target' => 'Target',
+      'user' => 'Usuario',
+      'target' => 'Objetivo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'onlyMy' => 'Only My',
+      'onlyMy' => 'Solo míos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'read' => 'Read',
-        'update' => 'Update',
-        'delete' => 'Delete',
-        'create' => 'Create',
+        'read' => 'Leer',
+        'update' => 'Guardar',
+        'delete' => 'Eliminar',
+        'create' => 'Crear',
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Enabled' => 'Diaktifkan',
-      'Disabled' => 'Dinonaktifkan',
-      'System' => 'Sistem',
-      'Users' => 'pengguna',
-      'Email' => 'Email',
-      'Data' => 'Data',
-      'Customization' => 'Sesuaikan',
-      'Available Fields' => 'Kolom yang tersedia',
-      'Layout' => 'Layout',
-      'Entity Manager' => 'Manajer',
-      'Add Panel' => 'Tambah panel',
-      'Add Field' => 'Tambah Kolom Baru',
-      'Settings' => 'pengaturan',
-      'Scheduled Jobs' => 'Pekerjaan yang dijadwalkan',
-      'Upgrade' => 'Upgrade',
-      'Clear Cache' => 'Hapus Cache',
-      'Rebuild' => 'Rebuild',
-      'Teams' => 'Tim',
-      'Roles' => 'Role',
-      'Portal' => 'Portal',
-      'Portals' => 'portal',
-      'Portal Roles' => 'Portal Role',
-      'Portal Users' => 'Portal Users',
-      'Outbound Emails' => 'Email keluar',
-      'Group Email Accounts' => 'Akun Grup Email',
-      'Personal Email Accounts' => 'Akun Email Pribadi',
-      'Inbound Emails' => 'Email masuk',
-      'Email Templates' => 'Template email',
-      'Import' => 'Impor',
-      'Layout Manager' => 'Layout Manajer',
-      'User Interface' => 'Antar pengguna',
-      'Auth Tokens' => 'Token Otorisasi',
+      'Enabled' => 'Activado',
+      'Disabled' => 'Desactivado',
+      'System' => 'Sistema',
+      'Users' => 'Usuarios',
+      'Email' => 'Correos',
+      'Data' => 'Datos',
+      'Customization' => 'Personalizaciones',
+      'Available Fields' => 'Campos disponibles',
+      'Layout' => 'Diseño',
+      'Entity Manager' => 'Entidades',
+      'Add Panel' => 'Añadir Panel',
+      'Add Field' => 'Añadir Campo',
+      'Settings' => 'Ajustes',
+      'Scheduled Jobs' => 'Tareas programadas',
+      'Upgrade' => 'Actualizar',
+      'Clear Cache' => 'Limpiar caché',
+      'Rebuild' => 'Reconstruir',
+      'Teams' => 'Equipos',
+      'Roles' => 'Roles',
+      'Portal' => 'Portales',
+      'Portals' => 'Portales',
+      'Portal Roles' => 'Roles del portal',
+      'Portal Users' => 'Usuarios del portal',
+      'Outbound Emails' => 'Salientes',
+      'Group Email Accounts' => 'Grupales',
+      'Personal Email Accounts' => 'Personales',
+      'Inbound Emails' => 'Entrantes',
+      'Email Templates' => 'Plantillas',
+      'Import' => 'Importar',
+      'Layout Manager' => 'Diseño',
+      'User Interface' => 'Interfaz de usuario',
+      'Auth Tokens' => 'Tokens',
       'Auth Log' => 'Auth Log',
-      'Authentication' => 'pengaturan otentikasi.',
-      'Currency' => 'Mata uang',
-      'Integrations' => 'integrasi',
-      'Extensions' => 'ekstensi',
-      'Upload' => 'Upload',
-      'Installing...' => 'Installing ...',
-      'Upgrading...' => 'Upgrading...',
-      'Upgraded successfully' => 'upgrade berhasil',
-      'Installed successfully' => 'Instalasi berhasil',
-      'Ready for upgrade' => 'Siap untuk upgrade',
-      'Run Upgrade' => 'Jalankan upgrade',
-      'Install' => 'Instal',
-      'Ready for installation' => 'Siap untuk instalasi',
-      'Uninstalling...' => 'Memproses Uninstall',
-      'Uninstalled' => 'Dihapus',
-      'Create Entity' => 'Buat Entity',
-      'Edit Entity' => 'Edit Entity',
-      'Create Link' => 'Buat Tautan',
-      'Edit Link' => 'Edit Tautan',
-      'Notifications' => 'Pemberitahuan',
-      'Jobs' => 'Pekerjaan',
-      'Reset to Default' => 'Reset ke Default',
-      'Email Filters' => 'Filter email',
-      'Action History' => 'Action History',
-      'Label Manager' => 'Label Manager',
+      'Authentication' => 'Autenticación',
+      'Currency' => 'Moneda',
+      'Integrations' => 'Integración',
+      'Extensions' => 'Extensiones',
+      'Upload' => 'Subir',
+      'Installing...' => 'Instalando...',
+      'Upgrading...' => 'Actualizando',
+      'Upgraded successfully' => 'Actualización exitosa',
+      'Installed successfully' => 'Instalado de forma exitosa',
+      'Ready for upgrade' => 'Listo para actualizar',
+      'Run Upgrade' => 'Ejecutar actualización',
+      'Install' => 'Instalar',
+      'Ready for installation' => 'Listo para instalación',
+      'Uninstalling...' => 'Desinstalando',
+      'Uninstalled' => 'Desinstalado',
+      'Create Entity' => 'Crear entidad',
+      'Edit Entity' => 'Editar Entidad',
+      'Create Link' => 'Crear enlace',
+      'Edit Link' => 'Editar Enlace',
+      'Notifications' => 'Notificaciones',
+      'Jobs' => 'Trabajos',
+      'Reset to Default' => 'Aplicar a valores por defecto',
+      'Email Filters' => 'Filtros',
+      'Action History' => 'Histórico',
+      'Label Manager' => 'Etiquetas',
       'Lead Capture' => 'Lead Capture',
       'Attachments' => 'Attachments',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
-      'list' => 'Daftar',
-      'detail' => 'Detail',
-      'listSmall' => 'Daftar (Kecil)',
-      'detailSmall' => 'Detail (Kecil)',
+      'list' => 'Lista',
+      'detail' => 'Detalle',
+      'listSmall' => 'Lista (pequeña)',
+      'detailSmall' => 'Detalle (Pequeño)',
       'detailPortal' => 'Detail (Portal)',
       'detailSmallPortal' => 'Detail (Small, Portal)',
       'listSmallPortal' => 'List (Small, Portal)',
       'listPortal' => 'List (Portal)',
       'relationshipsPortal' => 'Relationship Panels (Portal)',
-      'filters' => 'Filter Pencarian',
-      'massUpdate' => 'Update Massal',
-      'relationships' => 'Hubungan',
-      'sidePanelsDetail' => 'Side Panels (Detail)',
-      'sidePanelsEdit' => 'Side Panels (Edit)',
-      'sidePanelsDetailSmall' => 'Side Panels (Detail Small)',
-      'sidePanelsEditSmall' => 'Side Panels (Edit Small)',
+      'filters' => 'Filtros de Búsqueda',
+      'massUpdate' => 'Actualización masiva',
+      'relationships' => 'Paneles de relaciones',
+      'sidePanelsDetail' => 'Paneles laterales (detalle)',
+      'sidePanelsEdit' => 'Paneles laterales (editar)',
+      'sidePanelsDetailSmall' => 'Paneles laterales (detalle pequeño)',
+      'sidePanelsEditSmall' => 'Paneles laterales (editar pequeño)',
       'kanban' => 'Kanban',
-      'detailConvert' => 'mengkonversi Timbal',
-      'listForAccount' => 'Daftar (untuk Account)',
+      'detailConvert' => 'Convertir posible cliente',
+      'listForAccount' => 'Listado (por Cuentas)',
       'listForContact' => 'List (for Contact)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
-      'address' => 'Alamat',
-      'array' => 'susunan',
-      'foreign' => 'Asing',
-      'duration' => 'Durasi',
-      'password' => 'Kata sandi',
-      'personName' => 'Person Name',
-      'autoincrement' => 'Kenaikan Otomatis',
-      'bool' => 'Boolean (sistem notasi aljabar)',
-      'currency' => 'Mata uang',
-      'currencyConverted' => 'Currency (Converted)',
-      'date' => 'Tanggal',
-      'datetime' => 'Tanggal Waktu',
-      'datetimeOptional' => 'Tanggal / DateTime',
-      'email' => 'Email',
-      'enum' => 'enum',
-      'enumInt' => 'enum Integer',
-      'enumFloat' => 'enum Float',
-      'float' => 'Float',
-      'int' => 'int',
-      'link' => 'Tautan',
-      'linkMultiple' => 'Beberapa Tautan',
-      'linkParent' => 'Tautan Asal',
-      'phone' => 'Telepon',
-      'text' => 'Teks',
-      'url' => 'url',
-      'varchar' => 'varchar',
-      'file' => 'Berkas',
-      'image' => 'Gambar',
-      'multiEnum' => 'Multi-Enum',
-      'attachmentMultiple' => 'Beberapa lampiran',
-      'rangeInt' => 'Range Integer',
-      'rangeFloat' => 'Range Float',
-      'rangeCurrency' => 'Kisaran Mata Uang',
-      'wysiwyg' => 'Wysiwyg',
-      'map' => 'Peta',
-      'number' => 'Number (auto-increment)',
-      'colorpicker' => 'Color Picker',
+      'address' => 'Dirección',
+      'array' => 'Lista ordenable',
+      'foreign' => 'Clave foránea',
+      'duration' => 'Duración',
+      'password' => 'Contraseña',
+      'personName' => 'Nombre',
+      'autoincrement' => 'Incremental',
+      'bool' => 'SI / NO',
+      'currency' => 'Moneda',
+      'currencyConverted' => 'Moneda (convertido)',
+      'date' => 'Fecha',
+      'datetime' => 'Fecha y hora',
+      'datetimeOptional' => 'Fecha / Fecha y hora',
+      'email' => 'Correo electrónico',
+      'enum' => 'Lista',
+      'enumInt' => 'Lista de enteros',
+      'enumFloat' => 'Lista de decimales',
+      'float' => 'Decimal',
+      'int' => 'Entero',
+      'link' => 'Enlace',
+      'linkMultiple' => 'Enlace múltiple',
+      'linkParent' => 'Enlace Padre',
+      'phone' => 'Teléfono',
+      'text' => 'Área de texto simple',
+      'url' => 'Url',
+      'varchar' => 'Texto',
+      'file' => 'Archivo',
+      'image' => 'Imagen',
+      'multiEnum' => 'Lista múltiple',
+      'attachmentMultiple' => 'Adjuntos múltiples',
+      'rangeInt' => 'Rango de enteros',
+      'rangeFloat' => 'Rango de decimales',
+      'rangeCurrency' => 'Rango de moneda',
+      'wysiwyg' => 'Área de texto con editor',
+      'map' => 'Mapa',
+      'number' => 'Número',
+      'colorpicker' => 'Selector de color',
       'jsonArray' => 'Json Array',
       'jsonObject' => 'Json Object',
-      'parsonName' => 'Nama orang',
-      'multienim' => 'Multienum',
+      'multienim' => 'Lista múltiple',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'type' => 'Tipe',
-      'name' => 'Nama',
-      'label' => 'Label',
-      'tooltipText' => 'Tooltip Text',
-      'required' => 'Wajib',
-      'default' => 'Default',
-      'maxLength' => 'Panjang maksimal',
-      'options' => 'Pilihan',
-      'after' => 'Setelah (kolom)',
-      'before' => 'Sebelum (kolom)',
-      'link' => 'Tautan',
-      'field' => 'Kolom',
-      'min' => 'Min',
-      'max' => 'Max',
-      'translation' => 'Terjemahan',
-      'previewSize' => 'Preview Ukuran',
-      'noEmptyString' => 'Tidak ada String kosong',
-      'defaultType' => 'Default Jenis',
-      'seeMoreDisabled' => 'Nonaktifkan Cut Teks',
-      'entityList' => 'Daftar entitas',
-      'isSorted' => 'Apakah Diurut (berdasarkan abjad)',
-      'audited' => 'Diaudit',
-      'trim' => 'Memangkas',
-      'height' => 'Tinggi (px)',
-      'minHeight' => 'Min Tinggi (px)',
-      'provider' => 'Pemberi',
-      'typeList' => 'Jenis Daftar',
-      'rows' => 'Jumlah baris textarea',
-      'lengthOfCut' => 'Panjang dipotong',
-      'sourceList' => 'Daftar Sumber',
-      'prefix' => 'Prefix',
-      'nextNumber' => 'Next Number',
-      'padLength' => 'Pad Length',
-      'disableFormatting' => 'Disable Formatting',
-      'dynamicLogicVisible' => 'Conditions making field visible',
-      'dynamicLogicReadOnly' => 'Conditions making field read-only',
-      'dynamicLogicRequired' => 'Conditions making field required',
-      'dynamicLogicOptions' => 'Conditional options',
-      'probabilityMap' => 'Stage Probabilities (%)',
-      'readOnly' => 'Read-only',
-      'maxFileSize' => 'Max File Size (Mb)',
+      'type' => 'Tipo',
+      'name' => 'Nombre',
+      'label' => 'Etiqueta',
+      'tooltipText' => 'Texto de la ayuda',
+      'required' => 'Requerido',
+      'default' => 'Por defecto',
+      'maxLength' => 'Longitud máxima',
+      'options' => 'Ajustes',
+      'after' => 'Después (campo)',
+      'before' => 'Antes (campo)',
+      'link' => 'Enlace',
+      'field' => 'Campo',
+      'min' => 'Mínimo',
+      'max' => 'Máximo',
+      'translation' => 'Traducción',
+      'previewSize' => 'Tamaño de vista previa',
+      'noEmptyString' => 'No están permitidos los valores de cadenas vacías',
+      'defaultType' => 'Tipo por defecto',
+      'seeMoreDisabled' => 'Desactivar cortar texto',
+      'entityList' => 'Lista de entidades',
+      'isSorted' => '¿Se debe ordenar?',
+      'audited' => 'Auditada',
+      'trim' => 'Recortar',
+      'height' => 'Altura (px)',
+      'minHeight' => 'Altura mínima (px)',
+      'provider' => 'Proveedor',
+      'typeList' => 'Tipo de lista',
+      'rows' => 'Número de filas del área de texto',
+      'lengthOfCut' => 'Longitud del corte',
+      'sourceList' => 'Lista de tomas de contacto',
+      'prefix' => 'Prefijo',
+      'nextNumber' => 'Siguiente Número',
+      'padLength' => 'Longitud del relleno',
+      'disableFormatting' => 'Desactivar formateo',
+      'dynamicLogicVisible' => 'Condiciones para hacer el campo visible',
+      'dynamicLogicReadOnly' => 'Condiciones para hacer el campo solo lectura',
+      'dynamicLogicRequired' => 'Condiciones para hacer el campo obligatorio',
+      'dynamicLogicOptions' => 'Opciones condicionales',
+      'probabilityMap' => 'Probabilidades de la etapa (%)',
+      'readOnly' => 'Solo lectura',
+      'maxFileSize' => 'Tamaño máximo de archivo (MB)',
       'isPersonalData' => 'Is Personal Data',
       'useIframe' => 'Use Iframe',
       'useNumericFormat' => 'Use Numeric Format',
       'strip' => 'Strip',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'upgradeVersion' => 'EspoCRM Anda akan ditingkatkan ke versi <strong> {version} </ strong>. Hal ini dapat memakan waktu.',
-      'upgradeDone' => 'EspoCRM Anda telah ditingkatkan ke versi <strong> {version} </ strong>.',
-      'upgradeBackup' => 'Kami menyarankan untuk membuat cadangan berkas dan data EspoCRM Anda sebelum upgrade.',
-      'thousandSeparatorEqualsDecimalMark' => 'Pemisah ribuan, tidak bisa sama dengan tanda desimal',
-      'userHasNoEmailAddress' => 'Pengguna tidak punya alamat email.',
-      'selectEntityType' => 'Pilih jenis entitas di menu sebelah kiri.',
-      'selectUpgradePackage' => 'Pilih paket upgrade',
-      'downloadUpgradePackage' => 'Ambil paket upgrade (s) <a href="{url}"> sini </a>.',
-      'selectLayout' => 'Pilih layout yang dibutuhkan dalam menu kiri dan mengeditnya.',
-      'selectExtensionPackage' => 'Pilih paket ekstensi',
-      'extensionInstalled' => 'Ekstensi {name} {version} telah diinstal.',
-      'installExtension' => 'Ekstensi {name} {version} siap untuk instalasi.',
-      'cronIsNotConfigured' => 'Scheduled jobs are not running.  Hence inbound emails, notifications and reminders are not working. Please follow the [instructions](https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab) to setup cron job.',
-      'newVersionIsAvailable' => 'New EspoCRM version {latestVersion} is available.',
-      'newExtensionVersionIsAvailable' => 'New {extensionName} version {latestVersion} is available.',
-      'uninstallConfirmation' => 'Apakah Anda benar-benar ingin menghapus ekstensi?',
+      'upgradeVersion' => 'EspoCRM se actualizará a la versión <strong>{version}</ strong>. Por favor sea paciente ya que esto puede tomar varios minutos.',
+      'upgradeDone' => 'EspoCRM se ha actualizado a la versión <strong>{version}</ strong>.',
+      'upgradeBackup' => 'Recomendamos hacer una copia de seguridad de los archivos y datos de EspoCRM antes de actualizar.',
+      'thousandSeparatorEqualsDecimalMark' => 'El símbolo de separador de miles no puede ser el mismo que el de punto decimal.',
+      'userHasNoEmailAddress' => 'El usuario no tiene dirección de correo electrónico.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en el menú de la izquierda.',
+      'selectUpgradePackage' => 'Seleccione el paquete para actualizar',
+      'downloadUpgradePackage' => 'Si necesita paquetes de actualización puede descargarlos desde <a href=\'{url}\'>acá</a>.',
+      'selectLayout' => 'Seleccione el diseño necesario en el menú de la izquierda y edítelo.',
+      'selectExtensionPackage' => 'Seleccione el paquete de la extensión',
+      'extensionInstalled' => 'La extensión {name} {version} ha sido instalada',
+      'installExtension' => 'La extensión {name} {version} está lista para ser instalada.',
+      'cronIsNotConfigured' => 'Las tareas programadas no se están ejecutando. Siga las <a target="_blank" href="https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab">instrucciones</a> para configurar las tareas CRON.',
+      'newVersionIsAvailable' => 'La nueva versión de EspoCRM {latestVersion} está disponible.',
+      'newExtensionVersionIsAvailable' => 'El nuevo lanzamiento {latestVersion} de {extensionName} está disponible.',
+      'uninstallConfirmation' => 'Are you sure you want to uninstall the extension?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
-      'settings' => 'pengaturan sistem aplikasi.',
-      'scheduledJob' => 'Pekerjaan yang dilaksanakan oleh cron.',
-      'upgrade' => 'Upgrade EspoCRM.',
-      'clearCache' => 'Menghapus semua backend cache.',
-      'rebuild' => 'Membangun kembali backend dan clear cache.',
-      'users' => 'manajemen pengguna.',
-      'teams' => 'manajemen tim.',
-      'roles' => 'manajemen peran.',
-      'portals' => 'manajemen portal.',
-      'portalRoles' => 'Peran untuk portal.',
-      'portalUsers' => 'Users of portal.',
-      'outboundEmails' => 'pengaturan SMTP untuk email keluar.',
-      'groupEmailAccounts' => 'Kelompok IMAP akun email IMAP. Email impor dan email-to-Case.',
-      'personalEmailAccounts' => 'Pengguna akun email.',
-      'emailTemplates' => 'Template untuk email outbound.',
-      'import' => 'Impor data dari file CSV.',
-      'layoutManager' => 'Sesuaikan layout (daftar, detail, mengedit, pencarian, update massal).',
-      'entityManager' => 'Menciptakan entitas kustom, mengedit yang sudah ada. Mengelola lapangan dan hubungan.',
-      'userInterface' => 'Konfigurasi UI.',
-      'authTokens' => 'sesi otomatis aktif. alamat IP dan tanggal akses terakhir.',
-      'authentication' => 'pengaturan otentikasi.',
-      'currency' => 'pengaturan mata uang dan rate.',
-      'extensions' => 'Menginstal atau menghapus ekstensi.',
-      'integrations' => 'Integrasi dengan layanan pihak ketiga.',
-      'notifications' => 'Dalam aplikasi dan pengaturan pemberitahuan email.',
-      'inboundEmails' => 'Pengaturan untuk email masuk.',
-      'emailFilters' => 'Email pesan yang cocok dengan filter tertentu tidak akan diimpor.',
-      'actionHistory' => 'Log of user actions.',
-      'labelManager' => 'Customize application labels.',
+      'settings' => 'Ajustes generales del sistema.',
+      'scheduledJob' => 'Trabajos que se ejecutan en segundo plano (CRON).',
+      'upgrade' => 'Actualiza EspoCRM.',
+      'clearCache' => 'Limpia toda la memoria caché del sistema.',
+      'rebuild' => 'Reconstruir el sistema y limpia la caché.',
+      'users' => 'Gestión de usuarios.',
+      'teams' => 'Gestión de equipos.',
+      'roles' => 'Gestión de roles.',
+      'portals' => 'Gestión de portales.',
+      'portalRoles' => 'Roles para el portal.',
+      'portalUsers' => 'Usuarios del portal.',
+      'outboundEmails' => 'Ajustes para los correos del sistema y de envíos masivos.',
+      'groupEmailAccounts' => 'Ajustes de cuentas de correo grupales. Ejemplo: casilla de soporte.',
+      'personalEmailAccounts' => 'Ajustes de cuentas de correo personales de los usuarios.',
+      'emailTemplates' => 'Plantillas para de correos salientes.',
+      'import' => 'Importar datos desde CSV.',
+      'layoutManager' => 'Personalizar diseños (listas, detalles, editar, buscar, actualización masiva).',
+      'entityManager' => 'Crear y editar entidades personalizadas. Administrar campos y relaciones.',
+      'userInterface' => 'Configurar interfaz de usuario: Logo, tema, menu, etc.',
+      'authTokens' => 'Sesiones de usuarios activas. Direcciones IP y última fecha de acceso.',
+      'authentication' => 'Ajustes de autenticación.',
+      'currency' => 'Ajustes de moneda y tipos de cambio.',
+      'extensions' => 'Instalar o desinstalar extensiones.',
+      'integrations' => 'Integración con los servicios de terceros.',
+      'notifications' => 'Ajustes de notificaciones del sistema y por correo electrónico.',
+      'inboundEmails' => 'Ajustes para los correos entrantes.',
+      'emailFilters' => 'Filtros para los correos entrantes.',
+      'actionHistory' => 'Registro de las acciones del usuario.',
+      'labelManager' => 'Personaliza las etiquetas de las aplicaciones.',
       'authLog' => 'Login history.',
       'leadCapture' => 'API entry points for Web-to-Lead.',
       'attachments' => 'All file attachments stored in the system.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
-        'x-small' => 'X-Kecil',
-        'small' => 'Kecil',
-        'medium' => 'Medium',
-        'large' => 'Besar',
+        'x-small' => 'Muy Pequeño',
+        'small' => 'Pequeño',
+        'medium' => 'Mediano',
+        'large' => 'Grande',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
-      'and' => 'AND',
-      'or' => 'OR',
-      'not' => 'NOT',
+      'and' => 'Y',
+      'or' => 'O',
+      'not' => 'NO',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Role',
       'related' => 'Related',
@@ -299,9 +298,9 @@ return array (
       'storage' => 'Storage',
       'size' => 'Size (bytes)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Attachment',
         'Inline Attachment' => 'Inline Attachment',
@@ -311,18 +310,18 @@ return array (
         'Mass Pdf' => 'Mass Pdf',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
-      'Document' => 'Insert Dokumen',
+      'Document' => 'Insertar documento',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Orphan',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'username' => 'Username',
       'ipAddress' => 'IP Address',
@@ -337,21 +336,21 @@ return array (
       'requestMethod' => 'Request Method',
       'authTokenIsActive' => 'Auth Token is Active',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token Created',
       'user' => 'User',
       'portal' => 'Portal',
       'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'denied' => 'Denied',
       'accepted' => 'Accepted',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
         'CREDENTIALS' => 'Invalid credentials',
         'INACTIVE_USER' => 'Inactive user',
@@ -361,148 +360,148 @@ return array (
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'pengguna',
-      'ipAddress' => 'Alamat IP',
-      'lastAccess' => 'Akses terakhir Tanggal',
-      'createdAt' => 'Tanggal Login',
-      'isActive' => 'Is Active',
+      'user' => 'Usuario',
+      'ipAddress' => 'Dirección IP',
+      'lastAccess' => 'Fecha del último acceso',
+      'createdAt' => 'Fecha de acceso',
+      'isActive' => 'Está activo',
       'portal' => 'Portal',
     ),
-    'links' => 
+    'links' =>
     array (
-      'actionHistoryRecords' => 'Action History',
+      'actionHistoryRecords' => 'Histórico',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Active',
-      'inactive' => 'Inactive',
+      'active' => 'Activo',
+      'inactive' => 'Inactivo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Set Inactive' => 'Set Inactive',
+      'Set Inactive' => 'Establecer Inactivo',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setInactive' => 'Set Inactive',
+      'setInactive' => 'Establecer Inactivo',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'title' => 'Judul',
-      'dateFrom' => 'Tanggal Dari',
-      'dateTo' => 'Tanggal Untuk',
-      'autorefreshInterval' => 'Auto-refresh Interval',
-      'displayRecords' => 'tampilan Rekaman',
-      'isDoubleHeight' => '2x tinggi',
-      'mode' => 'Mode',
-      'enabledScopeList' => 'Apa yang akan ditampilkan',
-      'users' => 'pengguna',
-      'entityType' => 'Entity Type',
-      'primaryFilter' => 'Primary Filter',
-      'boolFilterList' => 'Additional Filters',
-      'sortBy' => 'Order (field)',
-      'sortDirection' => 'Order (direction)',
-      'expandedLayout' => 'Layout',
+      'title' => 'Título',
+      'dateFrom' => 'Fecha desde',
+      'dateTo' => 'Fecha hasta',
+      'autorefreshInterval' => 'Actualizar cada:',
+      'displayRecords' => 'Mostrar Registros',
+      'isDoubleHeight' => 'Altitud 2x',
+      'mode' => 'Modo',
+      'enabledScopeList' => 'Qué mostrar',
+      'users' => 'Usuarios',
+      'entityType' => 'Tipo de entidad',
+      'primaryFilter' => 'Filtro principal',
+      'boolFilterList' => 'Filtros adicionales',
+      'sortBy' => 'Ordenar (campo)',
+      'sortDirection' => 'Ordenar (dirección)',
+      'expandedLayout' => 'Diseño',
       'dateFilter' => 'Date Filter',
       'futureDays' => 'Next X Days',
       'useLastStage' => 'Group by last reached stage',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
-        'agendaWeek' => 'Minggu (agenda)',
-        'basicWeek' => 'Minggu',
-        'month' => 'Bulan',
-        'basicDay' => 'Hari',
-        'agendaDay' => 'Hari (agenda)',
-        'timeline' => 'Timeline',
+        'agendaWeek' => 'Semana (orden del día)',
+        'basicWeek' => 'Semana',
+        'month' => 'Mes',
+        'basicDay' => 'Día',
+        'agendaDay' => 'Día (agenda)',
+        'timeline' => 'Línea de tiempo',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectEntityType' => 'Select Entity Type in dashlet options.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en las opciones de la caja.',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Field' => 'Field',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
-        'equals' => 'Equals',
-        'notEquals' => 'Not Equals',
-        'greaterThan' => 'Greater Than',
-        'lessThan' => 'Less Than',
-        'greaterThanOrEquals' => 'Greater Than Or Equals',
-        'lessThanOrEquals' => 'Less Than Or Equals',
-        'in' => 'In',
-        'notIn' => 'Not In',
-        'inPast' => 'In Past',
-        'inFuture' => 'Is Future',
-        'isToday' => 'Is Today',
-        'isTrue' => 'Is True',
-        'isFalse' => 'Is False',
-        'isEmpty' => 'Is Empty',
-        'isNotEmpty' => 'Is Not Empty',
-        'contains' => 'Contains',
-        'notContains' => 'Not Contains',
-        'has' => 'Contains',
-        'notHas' => 'Not Contains',
+        'equals' => 'Es igual',
+        'notEquals' => 'No es igual',
+        'greaterThan' => 'Es mayor que',
+        'lessThan' => 'Es menor que',
+        'greaterThanOrEquals' => 'Es mayor o igual que',
+        'lessThanOrEquals' => 'Es menor o igual que',
+        'in' => 'Está en',
+        'notIn' => 'No está en',
+        'inPast' => 'Es antes de hoy',
+        'inFuture' => 'Es después de hoy',
+        'isToday' => 'Es hoy',
+        'isTrue' => 'Es verdadero',
+        'isFalse' => 'Es falso',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No está vacío',
+        'contains' => 'Contiene',
+        'notContains' => 'No Contiene',
+        'has' => 'Contiene',
+        'notHas' => 'No Contiene',
       ),
     ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'parent' => 'Induk',
-      'status' => 'Status',
-      'dateSent' => 'Tanggal Dikirim',
-      'from' => 'Dari',
-      'to' => 'Untuk',
+      'name' => 'Asunto',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateSent' => 'Fecha de envío',
+      'from' => 'De',
+      'to' => 'Para',
       'cc' => 'CC',
-      'bcc' => 'BCC',
-      'replyTo' => 'Membalas ke',
-      'replyToString' => 'Balas Untuk (String)',
-      'isHtml' => 'Apakah Html',
-      'body' => 'Isi',
-      'bodyPlain' => 'Body (Plain)',
-      'subject' => 'Subyek',
-      'attachments' => 'lampiran',
-      'selectTemplate' => 'Pilih Template',
-      'fromEmailAddress' => 'dari Alamat',
-      'toEmailAddresses' => 'Alamat Tujuan',
-      'emailAddress' => 'Alamat email',
-      'deliveryDate' => 'Tanggal pengiriman',
-      'account' => 'Akun',
-      'users' => 'pengguna',
-      'replied' => 'membalas',
-      'replies' => 'balasan',
-      'isRead' => 'Sudah terbaca',
-      'isNotRead' => 'Belum dibaca',
-      'isImportant' => 'Penting',
-      'isReplied' => 'Is Replied',
-      'isNotReplied' => 'Is Not Replied',
-      'isUsers' => 'Apakah Pengguna',
-      'inTrash' => 'In Trash',
-      'sentBy' => 'Sent By',
-      'folder' => 'Folder',
-      'inboundEmails' => 'Group Accounts',
-      'emailAccounts' => 'Personal Accounts',
-      'hasAttachment' => 'Has Attachment',
-      'assignedUsers' => 'Assigned Users',
+      'bcc' => 'CCO',
+      'replyTo' => 'Responder a',
+      'replyToString' => 'Responder a (string)',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'bodyPlain' => 'Cuerpo (plano)',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'selectTemplate' => 'Seleccione una plantilla',
+      'fromEmailAddress' => 'De (email)',
+      'toEmailAddresses' => 'A (email)',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'deliveryDate' => 'Fecha de entrega',
+      'account' => 'Cuenta',
+      'users' => 'Usuarios',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'isRead' => 'Es leído',
+      'isNotRead' => 'No leído',
+      'isImportant' => 'Es importante',
+      'isReplied' => 'Tiene respuesta',
+      'isNotReplied' => 'No se respondieron',
+      'isUsers' => 'Es del usuario',
+      'inTrash' => 'En papelera',
+      'sentBy' => 'Enviado por',
+      'folder' => 'Carpeta',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'hasAttachment' => 'Tiene adjunto',
+      'assignedUsers' => 'Usuarios asignados',
       'ccEmailAddresses' => 'CC Email Addresses',
       'bccEmailAddresses' => 'BCC EmailAddresses',
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
@@ -514,14 +513,14 @@ return array (
       'isSystem' => 'Is System',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'replied' => 'membalas',
-      'replies' => 'balasan',
-      'inboundEmails' => 'Group Accounts',
-      'emailAccounts' => 'Personal Accounts',
-      'assignedUsers' => 'Assigned Users',
-      'sentBy' => 'Sent By',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'assignedUsers' => 'Usuarios asignados',
+      'sentBy' => 'Enviado por',
       'attachments' => 'Attachments',
       'fromEmailAddress' => 'From Email Address',
       'toEmailAddresses' => 'To EmailAddresses',
@@ -530,795 +529,824 @@ return array (
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'Konsep',
-        'Sending' => 'mengirim',
-        'Sent' => 'Terkirim',
-        'Archived' => 'diarsipkan',
-        'Received' => 'menerima',
-        'Failed' => 'Gagal',
+        'Draft' => 'Borrador',
+        'Sending' => 'Enviando',
+        'Sent' => 'Enviado',
+        'Archived' => 'Archivado',
+        'Received' => 'Recibido',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Email' => 'Arsip Email',
-      'Archive Email' => 'Arsip Email',
-      'Compose' => 'Menyusun',
-      'Reply' => 'Balasan',
-      'Reply to All' => 'Balas ke semua',
-      'Forward' => 'Meneruskan',
-      'Original message' => 'Pesan asli',
-      'Forwarded message' => 'pesan diteruskan',
-      'Email Accounts' => 'Akun Email Pribadi',
-      'Inbound Emails' => 'Akun Group Email',
-      'Email Templates' => 'Template email',
-      'Send Test Email' => 'Tes Kirim Email',
-      'Send' => 'Kirim',
-      'Email Address' => 'Alamat email',
-      'Mark Read' => 'Tandai Terbaca',
-      'Sending...' => 'Mengirim ...',
-      'Save Draft' => 'Simpan konsep',
-      'Mark all as read' => 'tandai semua telah dibaca',
-      'Show Plain Text' => 'Tampilkan Plain Text',
-      'Mark as Important' => 'Tandai sebagai Penting',
-      'Unmark Importance' => 'Hapus tanda Pentingnya',
-      'Move to Trash' => 'Pindah ke Trash',
-      'Retrieve from Trash' => 'Mengambil dari Trash',
-      'Move to Folder' => 'Move to Folder',
-      'Filters' => 'Filters',
-      'Folders' => 'Folders',
-      'Create Lead' => 'Create Lead',
-      'Create Contact' => 'Buat kontak',
-      'Add to Contact' => 'Add to Contact',
-      'Add to Lead' => 'Add to Lead',
-      'Create Task' => 'Buat tugas',
-      'Create Case' => 'Buat Case',
+      'Create Email' => 'Nuevo correo archivado',
+      'Archive Email' => 'Nuevo correo archivado',
+      'Compose' => 'Nuevo',
+      'Reply' => 'Responder',
+      'Reply to All' => 'Responder a todos',
+      'Forward' => 'Reenviar',
+      'Original message' => 'Mensaje original',
+      'Forwarded message' => 'Mensaje reenviado',
+      'Email Accounts' => 'Ir a cuentas de correo personales',
+      'Inbound Emails' => 'Ir a cuentas de correo grupales',
+      'Email Templates' => 'Plantillas de correo',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
+      'Send' => 'Enviar',
+      'Email Address' => 'Correo electrónico',
+      'Mark Read' => 'Marcar como leído',
+      'Sending...' => 'Enviando...',
+      'Save Draft' => 'Guardar borrador',
+      'Mark all as read' => 'Marcar todos como leídos',
+      'Show Plain Text' => 'Ver en texto plano',
+      'Mark as Important' => 'Marcar como importante',
+      'Unmark Importance' => 'Marcar como No importante',
+      'Move to Trash' => 'Mover a la papelera',
+      'Retrieve from Trash' => 'Recuperar de la papelera',
+      'Move to Folder' => 'Mover a la carpeta',
+      'Filters' => 'Filtros',
+      'Folders' => 'Ir a carpetas de correo',
+      'Create Lead' => 'Crear posible cliente',
+      'Create Contact' => 'Crear contacto',
+      'Add to Contact' => 'Agregar a contacto',
+      'Add to Lead' => 'Agregar a posible cliente',
+      'Create Task' => 'Crear tarea',
+      'Create Case' => 'Crear ticket',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'noSmtpSetup' => 'Tidak ada SMTP setup. {link}.',
-      'testEmailSent' => 'tes email telah dikirim',
-      'emailSent' => 'Email telah dikirim',
-      'savedAsDraft' => 'Disimpan sebagai konsep',
+      'noSmtpSetup' => 'Sin configuración SMTP. {link}.',
+      'testEmailSent' => 'El correo de prueba ha sido enviado.',
+      'emailSent' => 'El correo electrónico ha sido enviada',
+      'savedAsDraft' => 'Guardado como borrador',
       'confirmInsertTemplate' => 'The email body will be lost. Are you sure you want to insert the template?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'mengirim',
-      'archived' => 'diarsipkan',
-      'inbox' => 'Inbox',
-      'drafts' => 'draft',
-      'trash' => 'Trash',
-      'important' => 'Important',
+      'sent' => 'Enviados',
+      'archived' => 'Archivado',
+      'inbox' => 'Bandeja de entrada',
+      'drafts' => 'Borradores',
+      'trash' => 'Papelera',
+      'important' => 'Importante',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'markAsRead' => 'Tandai sebagai terbaca',
-      'markAsNotRead' => 'Tandai sebagai Tidak dibaca',
-      'markAsImportant' => 'Tandai sebagai Penting',
-      'markAsNotImportant' => 'Hapus tanda Pentingnya',
-      'moveToTrash' => 'Pindah ke Trash',
-      'moveToFolder' => 'Move to Folder',
-      'retrieveFromTrash' => 'Retrieve from Trash',
+      'markAsRead' => 'Marcar como leído',
+      'markAsNotRead' => 'Marcar como No leído',
+      'markAsImportant' => 'Marcar como importante',
+      'markAsNotImportant' => 'Marcar como No importante',
+      'moveToTrash' => 'Mover a la papelera',
+      'moveToFolder' => 'Mover a la carpeta',
+      'retrieveFromTrash' => 'Recuperar de la papelera',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'status' => 'Status',
-      'host' => 'Host',
-      'username' => 'Nama pengguna',
-      'password' => 'Kata sandi',
-      'port' => 'Port',
-      'monitoredFolders' => 'Folder yang dipantau',
-      'ssl' => 'SSL',
-      'fetchSince' => 'Ambil Sejak',
-      'emailAddress' => 'Alamat email',
-      'sentFolder' => 'Folder terkirim',
-      'storeSentEmails' => 'Simpan email terkirim',
-      'keepFetchedEmailsUnread' => 'Fetched email tetap sebagai belum dibaca',
-      'emailFolder' => 'Put in Folder',
+      'name' => 'Nombre de la cuenta',
+      'status' => 'Estado',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'ssl' => '¿Usa SSL?',
+      'fetchSince' => 'Traer correos desde',
+      'emailAddress' => 'Correo electrónico',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'keepFetchedEmailsUnread' => 'Mantener los correos que se han obtenido sin leer',
+      'emailFolder' => 'Poner en la carpeta',
       'useImap' => 'Fetch Emails',
-      'useSmtp' => 'Use SMTP',
-      'smtpHost' => 'SMTP Host',
-      'smtpPort' => 'SMTP Port',
-      'smtpAuth' => 'SMTP Auth',
-      'smtpSecurity' => 'SMTP Security',
-      'smtpUsername' => 'SMTP Username',
-      'smtpPassword' => 'SMTP Password',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'filter',
-      'emails' => 'Emails',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktif',
-        'Inactive' => 'non-aktif',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailAccount' => 'Buat Akun Email',
+      'Create EmailAccount' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Main' => 'Utama',
-      'Test Connection' => 'Tes koneksi',
-      'Send Test Email' => 'Send Test Email',
+      'Main' => 'Principal',
+      'Test Connection' => 'Probar conexión',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'tidak bisa terhubung ke server IMAP',
-      'connectionIsOk' => 'Koneksi Ok',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
+      'connectionIsOk' => 'Conexión correcta',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'monitoredFolders' => 'Anda dapat menambahkan folder \'Sent\' untuk menyinkronkan email yang dikirim dari klien email eksternal.',
-      'storeSentEmails' => 'email yang dikirim akan disimpan di server IMAP. Alamat email harus banyak alamat email ini sedang dikirim dari.',
-    ),
-  ),
-  'EmailAddress' => 
-  array (
-    'labels' => 
-    array (
-      'Primary' => 'Utama',
-      'Opted Out' => 'Memilih keluar',
-      'Invalid' => 'Invalid',
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.
+
+Puede agregar una carpeta \'Enviados\' para sincronizar los correos electrónicos enviados desde un cliente externo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP. El campo Dirección de correo electrónico debe coincidir con la dirección desde donde se enviarán los correos electrónicos.',
     ),
   ),
-  'EmailFilter' => 
+  'EmailAddress' =>
   array (
-    'fields' => 
+    'labels' =>
     array (
-      'from' => 'Dari',
-      'to' => 'Untuk',
-      'subject' => 'Subyek',
-      'bodyContains' => 'Isi ',
-      'action' => 'Action',
-      'isGlobal' => 'Is Global',
-      'emailFolder' => 'Folder',
+      'Primary' => 'Principal',
+      'Opted Out' => 'Se dieron de baja',
+      'Invalid' => 'Inválido',
     ),
-    'labels' => 
+  ),
+  'EmailFilter' =>
+  array (
+    'fields' =>
     array (
-      'Create EmailFilter' => 'Buat Email Filter',
-      'Emails' => 'Emails',
+      'from' => 'De',
+      'to' => 'Para',
+      'subject' => 'Asunto',
+      'bodyContains' => 'Contenido del cuerpo',
+      'action' => 'Acción',
+      'isGlobal' => 'Es global',
+      'emailFolder' => 'Carpeta',
     ),
-    'options' => 
+    'labels' =>
     array (
-      'action' => 
+      'Create EmailFilter' => 'Crear un filtro de email',
+      'Emails' => 'Correos',
+    ),
+    'options' =>
+    array (
+      'action' =>
       array (
-        'Skip' => 'Ignore',
-        'Move to Folder' => 'Put in Folder',
+        'Skip' => 'Ignorar',
+        'Move to Folder' => 'Poner en la carpeta',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'name' => 'Hanya nama filter.',
-      'subject' => 'Gunakan wildcard *:
+      'name' => 'Dé al filtro un nombre descriptivo.',
+      'subject' => 'Filtra los correos con el asunto. Dejar en blanco si no es necesario. Puede usar el comodín *:
 
-teks * - dimulai dengan teks,
-* Text * - berisi teks,
-* Text - berakhir dengan teks.',
-      'bodyContains' => 'Tubuh email mengandung salah satu dari kata-kata atau frasa tertentu.',
-      'from' => 'Email yang dikirim dari alamat yang ditentukan. Biarkan kosong jika tidak diperlukan. Anda dapat menggunakan wildcard *.',
-      'to' => 'Email yang dikirim ke alamat yang ditentukan. Biarkan kosong jika tidak diperlukan. Anda dapat menggunakan wildcard *.',
-      'isGlobal' => 'Applies this filter to all emails incoming to system.',
-      'parent' => 'Biarkan kosong untuk menerapkan filter ini secara global (untuk semua email yang masuk).',
+texto* - empieza con texto,
+*texot* - contiene texto,
+*texto - termina con texto.',
+      'bodyContains' => 'Filtra los correos que en el cuerpo contengan cualquiera de estas palabras o frases.',
+      'from' => 'Filtra los correos enviados desde esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'to' => 'Filtra los correos enviados a esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'isGlobal' => 'Aplica este filtro a todos los correos entrantes del sistema.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'skipNotifications' => 'Skip Notifications',
+      'skipNotifications' => 'Omitir notificaciones',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailFolder' => 'Create Folder',
-      'Manage Folders' => 'Manage Folders',
-      'Emails' => 'Emails',
+      'Create EmailFolder' => 'Crear carpeta',
+      'Manage Folders' => 'Administrar carpetas',
+      'Emails' => 'Correos',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'status' => 'Status',
-      'isHtml' => 'Apakah Html',
-      'body' => 'Isi',
-      'subject' => 'Subyek',
-      'attachments' => 'lampiran',
-      'insertField' => 'Insert kolom',
-      'oneOff' => 'Satu-off',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'insertField' => 'Insertar campo',
+      'oneOff' => 'Único',
       'category' => 'Category',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailTemplate' => 'Buat Template Email',
-      'Info' => 'Info',
+      'Create EmailTemplate' => 'Crear plantilla de correo',
+      'Info' => 'Información',
       'Available placeholders' => 'Available placeholders',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'infoText' => 'variabel yang tersedia:
+      'infoText' => 'Variables disponibles:
 
-{OptOutUrl} & # 8211; URL untuk link unsubsbribe};
+{optOutUrl} &#8211; URL del enlace de baja.
 
-{OptOutLink} & # 8211; link unsubscribe.',
+{optOutLink} &#8211;  Enlace de baja.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'oneOff' => 'Periksa apakah Anda akan menggunakan template ini hanya sekali. Misalnya. untuk Mass Email.',
+      'oneOff' => 'Marque la casilla si usted va a utilizar esta plantilla solo una vez. Por ejemplo para correo masivo.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Aktual',
+      'actual' => 'Actuales',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
       'optOutUrl' => 'URL for an unsubsbribe link',
       'optOutLink' => 'an unsubscribe link',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Create Category',
       'Manage Categories' => 'Manage Categories',
       'EmailTemplates' => 'Email Templates',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Order',
       'childList' => 'Child List',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'Email Templates',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Fields' => 'kolom',
-      'Relationships' => 'Hubungan',
-      'Schedule' => 'Schedule',
-      'Log' => 'Log',
-      'Formula' => 'Formula',
+      'Fields' => 'Campos',
+      'Relationships' => 'Relaciones',
+      'Schedule' => 'Programar',
+      'Log' => 'Registros',
+      'Formula' => 'Fórmula',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'type' => 'Tipe',
-      'labelSingular' => 'label Singular',
-      'labelPlural' => 'label Plural',
-      'stream' => 'Stream',
-      'label' => 'Label',
-      'linkType' => 'Jenis tautan',
-      'entityForeign' => 'Entitas asing',
-      'linkForeign' => 'Tautan Asing',
-      'link' => 'tautan',
-      'labelForeign' => 'Foreign label',
-      'sortBy' => 'Deafault Order (lapangan)',
-      'sortDirection' => 'Default Order (direction)',
-      'relationName' => 'Tabel Nama Tengah',
-      'linkMultipleField' => 'Link Beberapa Kolom',
-      'linkMultipleFieldForeign' => 'Tautan asing Beberapa Kolom',
-      'disabled' => 'Dinonaktifkan',
-      'textFilterFields' => 'Text Filter Fields',
-      'audited' => 'Audited',
-      'auditedForeign' => 'Foreign Audited',
-      'statusField' => 'Status Field',
-      'beforeSaveCustomScript' => 'Before Save Custom Script',
+      'name' => 'Nombre',
+      'type' => 'Tipo',
+      'labelSingular' => 'Etiqueta en singular',
+      'labelPlural' => 'Etiqueta en plural',
+      'stream' => 'Historia',
+      'label' => 'Etiqueta',
+      'linkType' => 'Tipo de enlace',
+      'entityForeign' => 'Entidad foránea',
+      'linkForeign' => 'Enlace Foráneo',
+      'link' => 'Enlace',
+      'labelForeign' => 'Etiqueta Foránea',
+      'sortBy' => 'Orden por defecto (campo)',
+      'sortDirection' => 'Orden por defecto (dirección)',
+      'relationName' => 'Nombre de la Tabla Intermedia',
+      'linkMultipleField' => 'Enlaza múltiples campos',
+      'linkMultipleFieldForeign' => 'Enlaza múltiples campos foráneos',
+      'disabled' => 'Desactivado',
+      'textFilterFields' => 'Los campos de filtro de texto',
+      'audited' => 'Auditado',
+      'auditedForeign' => 'Foráneo auditado',
+      'statusField' => 'Campo estado',
+      'beforeSaveCustomScript' => 'Antes de guardar la secuencia de comandos personalizada',
       'color' => 'Color',
       'kanbanViewMode' => 'Kanban View',
       'kanbanStatusIgnoreList' => 'Ignored groups in Kanban view',
       'iconClass' => 'Icon',
       'fullTextSearch' => 'Full-Text Search',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        '' => 'None',
-        'Base' => 'Dasar',
-        'Person' => 'Orang',
-        'CategoryTree' => 'Category Tree',
-        'Event' => 'Event',
+        '' => 'Ninguno',
+        'Base' => 'Base',
+        'Person' => 'Persona',
+        'CategoryTree' => 'Árbol de categorías',
+        'Event' => 'Evento',
         'BasePlus' => 'Base Plus',
-        'Company' => 'Company',
+        'Company' => 'Empresa',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
-        'manyToMany' => 'Banyak-ke-banyak',
-        'oneToMany' => 'Satu ke Banyak',
-        'manyToOne' => 'Banyak ke Satu',
-        'parentToChildren' => 'Parent-to-Children',
-        'childrenToParent' => 'Children-to-Parent',
+        'manyToMany' => 'Mucho-a-Muchos',
+        'oneToMany' => 'Uno-a-Muchos',
+        'manyToOne' => 'Muchos-a-uno',
+        'parentToChildren' => 'Padres-a-Hijos',
+        'childrenToParent' => 'Hijos-a-Padres',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
-        'asc' => 'Ascending',
-        'desc' => 'Descending',
+        'asc' => 'Ascendente',
+        'desc' => 'Descendente',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'entityCreated' => 'Entitas telah dibuat',
-      'linkAlreadyExists' => 'Menghubungkan konflik nama.',
-      'linkConflict' => 'Nama konflik: link atau kolom dengan nama yang sama sudah ada.',
+      'entityCreated' => 'La entidad ha sido creada',
+      'linkAlreadyExists' => 'Conflicto de nombres en el enlace.',
+      'linkConflict' => 'Conflicto de nombres: un enlace o campo con el mismo nombre ya existe.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'statusField' => 'Updates of this field are logged in stream.',
-      'textFilterFields' => 'Fields used by text search.',
-      'stream' => 'Whether entity has a Stream.',
-      'disabled' => 'Check if you don\'t need this entity in your system.',
-      'linkAudited' => 'Creating related record and linking with existing record will be logged in Stream.',
-      'linkMultipleField' => 'Link Multiple field provides a handy way to edit relations. Don\'t use it if you can have a large number of related records.',
-      'entityType' => 'Base Plus - has Activities, History and Tasks panels.
+      'statusField' => 'Las actualizaciones de este campo se registran en la historia.',
+      'textFilterFields' => 'Campos utilizados por la búsqueda de texto.',
+      'stream' => 'Marque para que la entidad tenga historia.',
+      'disabled' => 'Marque si no necesita esta entidad en su sistema.',
+      'linkAudited' => 'Crear un registro relacionado y vincularlo con el registro existente, hará que se registre en la historia.',
+      'linkMultipleField' => 'El campo de relaciones múltiples proporciona una manera práctica de editar relaciones. No lo use si puede tener un gran número de registros relacionados.',
+      'entityType' => 'Base: Sin elementos adicionales
 
-Event - available in Calendar and Activities panel.',
+Base Plus - Similar a Posibles clientes y Oportunidades (tiene paneles de Actividades planeadas, Historial de actividades y Tareas).
+
+Evento - Similar a Reuniones y Llamadas (disponible en Calendario y en el Panel de Actividades).
+
+Persona - Similar a Contacto.
+
+Empresa - Similar a Cuenta.',
       'fullTextSearch' => 'Running rebuild is required.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'exportAllFields' => 'Export all fields',
-      'fieldList' => 'Field List',
-      'format' => 'Format',
+      'exportAllFields' => 'Exportar todos los campos',
+      'fieldList' => 'Lista de campos',
+      'format' => 'Formato',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
         'xlsx' => 'XLSX (Excel)',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'version' => 'Versi',
-      'description' => 'Deskripsi',
-      'isInstalled' => 'Terpasang',
+      'name' => 'Nombre',
+      'version' => 'Versión',
+      'description' => 'Descripción',
+      'isInstalled' => 'Instalado',
       'checkVersionUrl' => 'An URL for checking new versions',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Uninstall' => 'Uninstall',
-      'Install' => 'Memasang',
+      'Uninstall' => 'Desinstalar',
+      'Install' => 'Instalar',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'uninstalled' => 'Ekstensi {name} telah dihapus',
-    ),
-  ),
-  'ExternalAccount' => 
-  array (
-    'labels' => 
-    array (
-      'Connect' => 'Menghubungkan',
-      'Connected' => 'terhubung',
-    ),
-    'help' => 
-    array (
+      'uninstalled' => 'Extensión {name} ha sido desinstalada',
     ),
   ),
-  'FieldManager' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Dynamic Logic' => 'Dynamic Logic',
+      'Connect' => 'Conectar',
+      'Connected' => 'Conectado',
+    ),
+    'help' =>
+    array (
+    ),
+  ),
+  'FieldManager' =>
+  array (
+    'labels' =>
+    array (
+      'Dynamic Logic' => 'Lógica dinámica',
       'Name' => 'Name',
       'Label' => 'Label',
       'Type' => 'Type',
     ),
-    'options' => 
+    'options' =>
     array (
-      'dateTimeDefault' => 
+      'dateTimeDefault' =>
       array (
-        '' => 'None',
-        'javascript: return this.dateTime.getNow(1);' => 'Now',
-        'javascript: return this.dateTime.getNow(5);' => 'Now (5m)',
-        'javascript: return this.dateTime.getNow(15);' => 'Now (15m)',
-        'javascript: return this.dateTime.getNow(30);' => 'Now (30m)',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 hour',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+6 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+11 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 hours',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 day',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 days',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 days',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 days',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 days',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 days',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 week',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getNow(1);' => 'Ahora',
+        'javascript: return this.dateTime.getNow(5);' => 'Ahora (5m)',
+        'javascript: return this.dateTime.getNow(15);' => 'Ahora (15m)',
+        'javascript: return this.dateTime.getNow(30);' => 'Ahora (30m)',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 hora',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+6 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+11 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 día',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 semana',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
-        '' => 'None',
-        'javascript: return this.dateTime.getToday();' => 'Today',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 day',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 days',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 week',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+2 weeks',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 weeks',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 month',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+2 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+3 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+5 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+6 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+7 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+10 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+11 months',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 year',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getToday();' => 'Hoy',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 semana',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+2 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 mes',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+2 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+3 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+5 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+6 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+7 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+10 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+11 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 año',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'audited' => 'Updates will be logged in stream.',
-      'required' => 'Field will be mandatory. Can\'t be left empty.',
-      'default' => 'Value will be set by default upon creating.',
-      'min' => 'Min acceptable value.',
-      'max' => 'Max acceptable value.',
-      'seeMoreDisabled' => 'If not checked then long texts will be shortened.',
-      'lengthOfCut' => 'How long text can be before it will be cut.',
-      'maxLength' => 'Max acceptable length of text.',
-      'before' => 'The date value should be before the date value of the specified field.',
-      'after' => 'The date value should be after the date value of the specified field.',
-      'readOnly' => 'Field value can\'t be specified by user. But can be calculated by formula.',
-      'maxFileSize' => 'If empty or 0 then no limit.',
+      'audited' => 'Las actualizaciones se registrarán en la historia.',
+      'required' => 'El campo será obligatorio. No se puede dejar vacío.',
+      'default' => 'El valor se establecerá de forma predeterminada al guardar.',
+      'min' => 'Valor mínimo aceptado.',
+      'max' => 'Valor máximo aceptado.',
+      'seeMoreDisabled' => 'Si no se marca, los textos largos se cortarán.',
+      'lengthOfCut' => 'Que largo tendrán los textos antes de ser cortados.',
+      'maxLength' => 'Longitud máxima aceptable del texto.',
+      'before' => 'El valor de fecha debe ser anterior al valor de fecha del campo especificado.',
+      'after' => 'El valor de fecha debe ser posterior al valor de fecha del campo especificado.',
+      'readOnly' => 'El usuario no puede especificar el valor del campo. Pero se puede calcular por fórmula.',
+      'maxFileSize' => 'Si está vacío o es 0, entonces no limitar',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
-        'street' => 'Street',
-        'city' => 'City',
-        'state' => 'State',
-        'country' => 'Country',
-        'postalCode' => 'Postal Code',
-        'map' => 'Map',
+        'street' => 'Calle',
+        'city' => 'Ciudad',
+        'state' => 'Estado',
+        'country' => 'País',
+        'postalCode' => 'Código Postal',
+        'map' => 'Mapa',
       ),
-      'personName' => 
+      'personName' =>
       array (
-        'salutation' => 'Salutation',
-        'first' => 'First',
-        'last' => 'Last',
+        'salutation' => 'Saludo',
+        'first' => 'Nombre',
+        'last' => 'Apellido',
       ),
-      'currency' => 
+      'currency' =>
       array (
-        'converted' => '(Converted)',
+        'converted' => '(Convertido)',
         'currency' => '(Currency)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
-        'date' => 'Date',
+        'date' => 'Fecha',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
-      'Email' => 'E-mail',
-      'User' => 'pengguna',
-      'Team' => 'Tim',
-      'Role' => 'Peran',
-      'EmailTemplate' => 'Template email',
+      'Email' => 'Correo electrónico',
+      'User' => 'Usuario',
+      'Team' => 'Equipo',
+      'Role' => 'Rol',
+      'EmailTemplate' => 'Plantilla de Correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Akun Email Pribadi',
-      'EmailAccountScope' => 'Akun Email Pribadi',
-      'OutboundEmail' => 'Email keluar',
-      'ScheduledJob' => 'Pekerjaan yang dijadwalkan',
-      'ExternalAccount' => 'Akun eksternal',
-      'Extension' => 'Ekstensiun',
-      'Dashboard' => 'Dasbor',
-      'InboundEmail' => 'Akun Email kelompok',
-      'Stream' => 'Aliran',
-      'Import' => 'Impor',
-      'Template' => 'Template',
-      'Job' => 'Pekerjaan',
-      'EmailFilter' => 'email Filter',
+      'EmailAccount' => 'Cuenta de correo personal',
+      'EmailAccountScope' => 'Cuenta de correo personal',
+      'OutboundEmail' => 'Correo Saliente',
+      'ScheduledJob' => 'Tarea Programada',
+      'ExternalAccount' => 'Cuenta Externa',
+      'Extension' => 'Extensión',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuenta de correo grupal',
+      'Stream' => 'Historia',
+      'Import' => 'Importar',
+      'Template' => 'Plantilla',
+      'Job' => 'Trabajo',
+      'EmailFilter' => 'Filtro de correo',
       'Portal' => 'Portal',
-      'PortalRole' => 'Peran Portal',
-      'Attachment' => 'Lampiran',
-      'EmailFolder' => 'Email Folder',
-      'PortalUser' => 'Portal User',
-      'ScheduledJobLogRecord' => 'Scheduled Job Log Record',
-      'PasswordChangeRequest' => 'Password Change Request',
-      'ActionHistoryRecord' => 'Action History Record',
-      'AuthToken' => 'Auth Token',
-      'UniqueId' => 'Unique ID',
-      'LastViewed' => 'Last Viewed',
-      'Settings' => 'Settings',
-      'FieldManager' => 'Field Manager',
-      'Integration' => 'Integration',
-      'LayoutManager' => 'Layout Manager',
-      'EntityManager' => 'Entity Manager',
-      'Export' => 'Export',
-      'DynamicLogic' => 'Dynamic Logic',
-      'DashletOptions' => 'Dashlet Options',
-      'Admin' => 'Admin',
+      'PortalRole' => 'Rol del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpeta de correo electrónico',
+      'PortalUser' => 'Usuario del portal',
+      'ScheduledJobLogRecord' => 'Registro del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambio de Contraseña',
+      'ActionHistoryRecord' => 'Registro del histórico',
+      'AuthToken' => 'Token de autenticación',
+      'UniqueId' => 'ID Único',
+      'LastViewed' => 'Historial de acciones',
+      'Settings' => 'Ajustes',
+      'FieldManager' => 'Administrador de campos',
+      'Integration' => 'Integración',
+      'LayoutManager' => 'Administrador de diseño',
+      'EntityManager' => 'Gestionar de entidades',
+      'Export' => 'Exportar',
+      'DynamicLogic' => 'Lógica dinámica',
+      'DashletOptions' => 'Ajustes de cajas',
+      'Admin' => 'Administrador',
       'Global' => 'Global',
-      'Preferences' => 'Preferences',
-      'EmailAddress' => 'Email Address',
-      'PhoneNumber' => 'Phone Number',
+      'Preferences' => 'Preferencias',
+      'EmailAddress' => 'Correo electrónico',
+      'PhoneNumber' => 'Número de teléfono',
       'AuthLogRecord' => 'Auth Log Record',
       'AuthFailLogRecord' => 'Auth Fail Log Record',
       'LeadCapture' => 'Lead Capture Entry Point',
       'LeadCaptureLogRecord' => 'Lead Capture Log Record',
       'ArrayValue' => 'Array Value',
-      'Account' => 'Rekening',
-      'Contact' => 'Kontak',
-      'Lead' => 'Memimpin',
-      'Target' => 'Target',
-      'Opportunity' => 'Kesempatan',
-      'Meeting' => 'Rapat',
-      'Calendar' => 'Kalender',
-      'Call' => 'Panggilan',
-      'Task' => 'Tugas',
-      'Case' => 'Kasus',
-      'Document' => 'Dokumen',
-      'DocumentFolder' => 'dokumen Folder',
-      'Campaign' => 'Kampanye',
-      'TargetList' => 'Target Daftar',
-      'MassEmail' => 'Mass Email',
-      'EmailQueueItem' => 'Email Queue Barang',
-      'CampaignTrackingUrl' => 'URL pelacakan',
-      'Activities' => 'Kegiatan',
-      'KnowledgeBaseArticle' => 'Pengetahuan Dasar Kasus',
-      'KnowledgeBaseCategory' => 'Kategori Basis Pengetahuan',
-      'CampaignLogRecord' => 'Campaign Log Record',
+      'Account' => 'Cuenta',
+      'Contact' => 'Contacto',
+      'Lead' => 'Posible cliente',
+      'Target' => 'Objetivo',
+      'Opportunity' => 'Oportunidad',
+      'Meeting' => 'Reunión',
+      'Calendar' => 'Calendario',
+      'Call' => 'Llamada',
+      'Task' => 'Tarea',
+      'Case' => 'Ticket',
+      'Document' => 'Documento',
+      'DocumentFolder' => 'Carpeta de documento',
+      'Campaign' => 'Campaña',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correo masivo',
+      'EmailQueueItem' => 'Elemento en cola de correos',
+      'CampaignTrackingUrl' => 'URL de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Artículo de la base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categoría de la base de conocimiento',
+      'CampaignLogRecord' => 'Registro del registro de la campaña',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
-      'Email' => 'e-mail',
-      'User' => 'pengguna',
-      'Team' => 'tim',
-      'Role' => 'peran',
-      'EmailTemplate' => 'Template email',
+      'Email' => 'Correos',
+      'User' => 'Usuarios',
+      'Team' => 'Equipos',
+      'Role' => 'Roles',
+      'EmailTemplate' => 'Plantillas de correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Akun Email Pribadi',
-      'EmailAccountScope' => 'Akun Email Pribadi',
-      'OutboundEmail' => 'Email Keluar',
-      'ScheduledJob' => 'Pekerjaan Terjadwal',
-      'ExternalAccount' => 'Akun eksternal',
-      'Extension' => 'ekstensi',
-      'Dashboard' => 'Dasbor',
-      'InboundEmail' => 'Akun Group Email',
-      'Stream' => 'Aliran',
-      'Import' => 'impor Hasil',
-      'Template' => 'template',
-      'Job' => 'Pekerjaan',
-      'EmailFilter' => 'Filter email',
-      'Portal' => 'portal',
-      'PortalRole' => 'Peran Portal',
-      'Attachment' => 'lampiran',
-      'EmailFolder' => 'Email Folders',
-      'PortalUser' => 'Portal Users',
-      'ScheduledJobLogRecord' => 'Scheduled Job Log Records',
-      'PasswordChangeRequest' => 'Password Change Requests',
-      'ActionHistoryRecord' => 'Action History',
-      'AuthToken' => 'Auth Tokens',
-      'UniqueId' => 'Unique IDs',
-      'LastViewed' => 'Last Viewed',
+      'EmailAccount' => 'Cuentas de correo personales',
+      'EmailAccountScope' => 'Cuentas de correo personales',
+      'OutboundEmail' => 'Salientes',
+      'ScheduledJob' => 'Tareas programadas',
+      'ExternalAccount' => 'Cuentas externas',
+      'Extension' => 'Extensiones',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuentas de correo grupales',
+      'Stream' => 'Historia',
+      'Import' => 'Resultados de importaciones',
+      'Template' => 'Plantillas',
+      'Job' => 'Trabajos',
+      'EmailFilter' => 'Filtros',
+      'Portal' => 'Portales',
+      'PortalRole' => 'Roles del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpetas de correo',
+      'PortalUser' => 'Usuarios del portal',
+      'ScheduledJobLogRecord' => 'Registros del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambios de Contraseñas',
+      'ActionHistoryRecord' => 'Histórico',
+      'AuthToken' => 'Tokens',
+      'UniqueId' => 'ID Únicos',
+      'LastViewed' => 'Historial de acciones',
       'AuthLogRecord' => 'Auth Log',
       'AuthFailLogRecord' => 'Auth Fail Log',
       'LeadCapture' => 'Lead Capture',
       'LeadCaptureLogRecord' => 'Lead Capture Log',
       'ArrayValue' => 'Array Values',
-      'Account' => 'Akun',
-      'Contact' => 'kontak',
-      'Lead' => 'memimpin',
-      'Target' => 'target',
-      'Opportunity' => 'peluang',
-      'Meeting' => 'rapat',
-      'Calendar' => 'Kalender',
-      'Call' => 'panggilan',
-      'Task' => 'tugas',
-      'Case' => 'kasus',
-      'Document' => 'dokumen',
-      'DocumentFolder' => 'dokumen Folder',
-      'Campaign' => 'kampanye',
-      'TargetList' => 'Daftar Target',
-      'MassEmail' => 'Email massal',
-      'EmailQueueItem' => 'Email Antrian Item',
-      'CampaignTrackingUrl' => 'pelacakan URL',
-      'Activities' => 'Kegiatan',
-      'KnowledgeBaseArticle' => 'Dasar pengetahuan',
-      'KnowledgeBaseCategory' => 'Kategori Basis Pengetahuan',
-      'CampaignLogRecord' => 'Campaign Log Records',
+      'Account' => 'Cuentas',
+      'Contact' => 'Contactos',
+      'Lead' => 'Posibles clientes',
+      'Target' => 'Objetivos',
+      'Opportunity' => 'Oportunidades',
+      'Meeting' => 'Reuniones',
+      'Calendar' => 'Calendario',
+      'Call' => 'Llamadas',
+      'Task' => 'Tareas',
+      'Case' => 'Tickets',
+      'Document' => 'Documentos',
+      'DocumentFolder' => 'Carpetas de documentos',
+      'Campaign' => 'Campañas',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correos masivos',
+      'EmailQueueItem' => 'Elementos en cola de correos',
+      'CampaignTrackingUrl' => 'URLs de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categorías de la base de conocimiento',
+      'CampaignLogRecord' => 'Registros del registro de la campaña',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Misc' => 'Misc',
-      'Merge' => 'Gabung',
-      'None' => 'None',
-      'Home' => 'Beranda',
-      'by' => 'oleh',
-      'Saved' => 'disimpan',
+      'Misc' => 'Misceláneos',
+      'Merge' => 'Unir',
+      'None' => 'Ninguno',
+      'Home' => 'Inicio',
+      'by' => 'por',
+      'Saved' => 'Guardado',
       'Error' => 'Error',
-      'Select' => 'Pilih',
-      'Not valid' => 'Tidak valid',
-      'Please wait...' => 'Mohon tunggu...',
-      'Please wait' => 'Mohon tunggu',
-      'Loading...' => 'Loading...',
-      'Uploading...' => 'Mengunggah ...',
-      'Sending...' => 'Mengirim ...',
-      'Merging...' => 'Mengabungkan...',
-      'Merged' => 'Digabungkan',
-      'Removed' => 'dihapus',
-      'Posted' => 'diposting',
-      'Linked' => 'Linked',
-      'Unlinked' => 'Unlinked',
-      'Done' => 'Selesai',
-      'Access denied' => 'Akses ditolak',
-      'Not found' => 'Tidak ditemukan',
-      'Access' => 'Mengakses',
-      'Are you sure?' => 'Apakah Anda yakin?',
-      'Record has been removed' => 'Record telah dihapus',
-      'Wrong username/password' => 'Kesalahan nama pengguna / kata sandi',
-      'Post cannot be empty' => 'Posting tidak boleh kosong',
-      'Removing...' => 'Menghapus ...',
-      'Unlinking...' => 'Unlinking...',
-      'Posting...' => 'Posting ...',
-      'Username can not be empty!' => 'Nama pengguna tidak boleh kosong!',
-      'Cache is not enabled' => 'Cache tidak diaktifkan',
-      'Cache has been cleared' => 'Cache telah dibersihkan',
-      'Rebuild has been done' => 'Rebuild has been done',
-      'Return to Application' => 'Return to Application',
-      'Saving...' => 'Simpan...',
-      'Modified' => 'Diubah',
-      'Created' => 'dibuat',
-      'Create' => 'Membuat',
-      'create' => 'membuat',
-      'Overview' => 'Overview',
-      'Details' => 'Detail',
-      'Add Field' => 'Tambahkan kolom',
-      'Add Dashlet' => 'Tambahkan Dashlet',
-      'Filter' => 'Filter',
-      'Edit Dashboard' => 'mengedit Dashboard',
-      'Add' => 'Menambahkan',
-      'Add Item' => 'Add Item',
-      'Reset' => 'Reset',
-      'Menu' => 'Menu',
-      'More' => 'More',
-      'Search' => 'Pencarian',
-      'Only My' => 'Only My',
-      'Open' => 'Buka',
-      'Admin' => 'Admin',
-      'About' => 'Tentang',
-      'Refresh' => 'Refresh',
-      'Remove' => 'Remove',
-      'Options' => 'Pilihan',
-      'Username' => 'Nama pengguna',
-      'Password' => 'Kata sandi',
-      'Login' => 'Masuk',
-      'Log Out' => 'Keluar',
-      'Preferences' => 'Pilihan',
-      'State' => 'State',
-      'Street' => 'jalan',
-      'Country' => 'Negara',
-      'City' => 'Kota',
-      'PostalCode' => 'Kode Pos',
-      'Followed' => 'Diikuti',
-      'Follow' => 'Mengikuti',
-      'Followers' => 'pengikut',
-      'Clear Local Cache' => 'Hapus Cache lokal',
-      'Actions' => 'Actions',
-      'Delete' => 'Menghapus',
-      'Update' => 'Memperbarui',
-      'Save' => 'Simpan',
-      'Edit' => 'mengedit',
-      'View' => 'Lihat',
-      'Cancel' => 'Batalkan',
-      'Apply' => 'Apply',
-      'Unlink' => 'Unlink',
-      'Mass Update' => 'Update Massal',
-      'Export' => 'Ekspor',
-      'No Data' => 'Tidak ada data',
-      'No Access' => 'Tidak ada akses',
-      'All' => 'Semua',
-      'Active' => 'Aktif',
-      'Inactive' => 'non-aktif',
-      'Write your comment here' => 'Tulis komentar Anda di sini',
-      'Post' => 'Post',
-      'Stream' => 'Aliran',
-      'Show more' => 'Menampilkan lebih banyak',
-      'Dashlet Options' => 'Dashlet Options',
-      'Full Form' => 'Form lengkap',
-      'Insert' => 'Memasukkan',
-      'Person' => 'Orang',
-      'First Name' => 'Nama depan',
-      'Last Name' => 'Nama keluarga',
+      'Select' => 'Seleccionar',
+      'Not valid' => 'No válido',
+      'Please wait...' => 'Por favor espere...',
+      'Please wait' => 'Por favor espere',
+      'Loading...' => 'Cargando...',
+      'Uploading...' => 'Subiendo...',
+      'Sending...' => 'Enviando...',
+      'Merging...' => 'Fusionando...',
+      'Merged' => 'Fusionado	',
+      'Removed' => 'Eliminado',
+      'Posted' => 'Publicado',
+      'Linked' => 'Enlazado',
+      'Unlinked' => 'Desenlazado',
+      'Done' => 'Hecho',
+      'Access denied' => 'Acceso denegado',
+      'Not found' => 'No encontrado',
+      'Access' => 'Acceso',
+      'Are you sure?' => '¿Está seguro?',
+      'Record has been removed' => 'Registro Eliminado',
+      'Wrong username/password' => 'Nombre de usuario/contraseña incorrectos',
+      'Post cannot be empty' => 'La entrada no puede estar vacia',
+      'Removing...' => 'Removiendo...',
+      'Unlinking...' => 'Desenlazando...',
+      'Posting...' => 'Publicando...',
+      'Username can not be empty!' => '¡El nombre de usuario no puede estar vacío!',
+      'Cache is not enabled' => 'La caché no está habilitada',
+      'Cache has been cleared' => 'La caché fue limpiada correctamente',
+      'Rebuild has been done' => 'El sistema se ha reconstruido correctamente',
+      'Return to Application' => 'Volver a la aplicación',
+      'Saving...' => 'Guardando...',
+      'Modified' => 'Modificado',
+      'Created' => 'Creado',
+      'Create' => 'Crear',
+      'create' => 'crear',
+      'Overview' => 'General',
+      'Details' => 'Detalles',
+      'Add Field' => 'Añadir Campo',
+      'Add Dashlet' => 'Añadir Caja',
+      'Filter' => 'Filtro',
+      'Edit Dashboard' => 'Editar escritorio',
+      'Add' => 'Añadir',
+      'Add Item' => 'Agregar elemento',
+      'Reset' => 'Resetear',
+      'Menu' => 'Menú',
+      'More' => 'Más',
+      'Search' => 'Buscar',
+      'Only My' => 'Solo míos',
+      'Open' => 'Abiertos',
+      'Admin' => 'Administrador',
+      'About' => 'Acerca',
+      'Refresh' => 'Actualizar',
+      'Remove' => 'Eliminar',
+      'Options' => 'Ajustes',
+      'Username' => 'Nombre de usuario',
+      'Password' => 'Contraseña',
+      'Login' => 'Entrar',
+      'Log Out' => 'Salir',
+      'Preferences' => 'Preferencias',
+      'State' => 'Estado',
+      'Street' => 'Calle',
+      'Country' => 'País',
+      'City' => 'Ciudad',
+      'PostalCode' => 'Código Postal',
+      'Followed' => 'Siguiendo',
+      'Follow' => 'Seguir',
+      'Followers' => 'Seguidores',
+      'Clear Local Cache' => 'Borrar la caché local',
+      'Actions' => 'Acciones',
+      'Delete' => 'Borrar',
+      'Update' => 'Guardar',
+      'Save' => 'Guardar',
+      'Edit' => 'Editar',
+      'View' => 'Ver',
+      'Cancel' => 'Cancelar',
+      'Apply' => 'Aplicar',
+      'Unlink' => 'Desenlazar',
+      'Mass Update' => 'Actualización masiva',
+      'Export' => 'Exportar',
+      'No Data' => 'Sin Datos',
+      'No Access' => 'Sin acceso',
+      'All' => 'Todos',
+      'Active' => 'Activo',
+      'Inactive' => 'Inactivo',
+      'Write your comment here' => 'Escriba su comentario aquí',
+      'Post' => 'Publicar',
+      'Stream' => 'Historia',
+      'Show more' => 'Mostrar mas',
+      'Dashlet Options' => 'Ajustes de cajas',
+      'Full Form' => 'Formulario Completo',
+      'Insert' => 'Insertar',
+      'Person' => 'Persona',
+      'First Name' => 'Nombre',
+      'Last Name' => 'Apellidos',
       'Original' => 'Original',
-      'You' => 'Anda',
-      'you' => 'Anda',
-      'change' => 'ubah',
-      'Change' => 'Ubah',
-      'Primary' => 'Primary',
-      'Save Filter' => 'Simpan Filter',
-      'Administration' => 'Administrasi',
-      'Run Import' => 'Run Impor',
-      'Duplicate' => 'Duplikasikan',
-      'Notifications' => 'pemberitahuan',
-      'Mark all read' => 'Tandai semua baca',
-      'See more' => 'Lihat lebih',
-      'Today' => 'Hari ini',
-      'Tomorrow' => 'Besok',
-      'Yesterday' => 'Kemarin',
-      'Submit' => 'Submit',
-      'Close' => 'Tutup',
-      'Yes' => 'Ya',
-      'No' => 'Tidak',
-      'Select All Results' => 'Pilih Semua Hasil',
-      'Value' => 'Nilai',
-      'Current version' => 'Versi sekarang',
-      'List View' => 'Daftar View',
-      'Tree View' => 'tree View',
-      'Unlink All' => 'Unlink semua',
+      'You' => 'Tu',
+      'you' => 'tu',
+      'change' => 'cambiar',
+      'Change' => 'Cambio',
+      'Primary' => 'Principal',
+      'Save Filter' => 'Guardar Filtro',
+      'Administration' => 'Administración',
+      'Run Import' => 'Ejecutar importación',
+      'Duplicate' => 'Duplicar',
+      'Notifications' => 'Notificaciones',
+      'Mark all read' => 'Marcar todos como leído',
+      'See more' => 'Ver más',
+      'Today' => 'Hoy',
+      'Tomorrow' => 'Mañana',
+      'Yesterday' => 'Ayer',
+      'Submit' => 'Enviar',
+      'Close' => 'Cerrar',
+      'Yes' => 'Si',
+      'No' => 'No',
+      'Select All Results' => 'Seleccionar todos los resultados',
+      'Value' => 'Valor',
+      'Current version' => 'Versión actual',
+      'List View' => 'Vista de Lista',
+      'Tree View' => 'Vista de árbol',
+      'Unlink All' => 'Desenlazar todo',
       'Total' => 'Total',
-      'Print to PDF' => 'Cetak ke PDF',
-      'Default' => 'Default',
-      'Number' => 'Number',
-      'From' => 'Dari',
-      'To' => 'Untuk',
-      'Create Post' => 'Buat Post',
-      'Previous Entry' => 'Previous Entry',
-      'Next Entry' => 'Next Entry',
-      'View List' => 'Lihat Daftar',
-      'Attach File' => 'Lampirkan file',
-      'Skip' => 'Skip',
-      'Attribute' => 'Attribute',
-      'Function' => 'Function',
-      'Self-Assign' => 'Self-Assign',
-      'Self-Assigned' => 'Self-Assigned',
+      'Print to PDF' => 'Imprimir PDF',
+      'Default' => 'Por defecto',
+      'Number' => 'Número',
+      'From' => 'De',
+      'To' => 'Para',
+      'Create Post' => 'Crear entrada',
+      'Previous Entry' => 'Entrada anterior',
+      'Next Entry' => 'Siguiente Entrada',
+      'View List' => 'Ver lista completa',
+      'Attach File' => 'Adjuntar archivo',
+      'Skip' => 'Omitir',
+      'Attribute' => 'Atributo',
+      'Function' => 'Función',
+      'Self-Assign' => 'Autoasignar',
+      'Self-Assigned' => 'Autosegnado',
       'Expand' => 'Expand',
       'Collapse' => 'Collapse',
       'New notifications' => 'New notifications',
@@ -1329,712 +1357,715 @@ Event - available in Calendar and Activities panel.',
       'Personal Data' => 'Personal Data',
       'Erase' => 'Erase',
       'Move Over' => 'Move Over',
-      'Create InboundEmail' => 'Buat Inbound Email',
-      'Activities' => 'Kegiatan',
-      'History' => 'Sejarah',
-      'Attendees' => 'peserta',
-      'Schedule Meeting' => 'Jadwal Rapat',
-      'Schedule Call' => 'Jadwal Panggilan',
-      'Compose Email' => 'Menulis email',
-      'Log Meeting' => 'Rapat log',
-      'Log Call' => 'call log',
-      'Archive Email' => 'Arsip Email',
-      'Create Task' => 'Buat tugas',
-      'Tasks' => 'tugas',
+      'Create InboundEmail' => 'Crear correo entrante',
+      'Activities' => 'Actividades',
+      'History' => 'Historial de actividades',
+      'Attendees' => 'Asistentes',
+      'Schedule Meeting' => 'Programar reunión',
+      'Schedule Call' => 'Programar llamada',
+      'Compose Email' => 'Escribir correo',
+      'Log Meeting' => 'Registrar reunión',
+      'Log Call' => 'Registrar llamada',
+      'Archive Email' => 'Nuevo Correo Archivado',
+      'Create Task' => 'Crear tarea',
+      'Tasks' => 'Tareas',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'pleaseWait' => 'Mohon tunggu...',
-      'posting' => 'Posting ...',
-      'loading' => 'Loading...',
-      'saving' => 'Saving...',
-      'confirmLeaveOutMessage' => 'Apakah Anda yakin ingin meninggalkan bentuk?',
-      'notModified' => 'Anda belum mengubah catatan',
-      'duplicate' => 'Catatan Anda membuat tampaknya menjadi duplikat',
-      'dropToAttach' => 'Drop to attach',
-      'fieldIsRequired' => '{field} diperlukan',
-      'fieldShouldBeEmail' => '{field} harus email yang valid',
-      'fieldShouldBeFloat' => '{field} harus mengambang valid',
-      'fieldShouldBeInt' => '{field} harus bilangan bulat yang valid',
-      'fieldShouldBeDate' => '{field} harus tanggal yang valid',
-      'fieldShouldBeDatetime' => '{field} harus tanggal yang valid / waktu',
-      'fieldShouldAfter' => '{field} harus setelah {otherField}',
-      'fieldShouldBefore' => '{field} harus sebelum {otherField}',
-      'fieldShouldBeBetween' => '{field} harus antara {min} dan {max}',
-      'fieldShouldBeLess' => '{field} harus kurang maka {value}',
-      'fieldShouldBeGreater' => '{field} harus lebih besar maka {value}',
-      'fieldBadPasswordConfirm' => '{field} tidak dikonfirmasi benar',
-      'fieldMaxFileSizeError' => 'File should not exceed {max} Mb',
+      'pleaseWait' => 'Por favor espere...',
+      'posting' => 'Publicando...',
+      'loading' => 'Cargando...',
+      'saving' => 'Guardando...',
+      'confirmLeaveOutMessage' => '¿Seguro que quieres salir del formulario?',
+      'notModified' => 'Usted no ha modificado el registro',
+      'duplicate' => 'El registro que está creando parece ser un duplicado',
+      'dropToAttach' => 'Arrastre para adjuntar',
+      'fieldIsRequired' => '{field} es requerido',
+      'fieldShouldBeEmail' => '{field} debe ser un correo electrónico válido',
+      'fieldShouldBeFloat' => '{field} debe ser un decimal válido',
+      'fieldShouldBeInt' => '{field} debe ser un entero válido',
+      'fieldShouldBeDate' => '{field} debe ser una fecha válida',
+      'fieldShouldBeDatetime' => '{field} debe ser una fecha válida fecha/hora',
+      'fieldShouldAfter' => '{field} debe estar después de {otherField}',
+      'fieldShouldBefore' => '{field} debe estar antes de {otherField}',
+      'fieldShouldBeBetween' => '{field} debe estar entre {min} y {max}',
+      'fieldShouldBeLess' => '{field} no debería ser mayor que {value}',
+      'fieldShouldBeGreater' => '{field} no debería ser menor que {value}',
+      'fieldBadPasswordConfirm' => '{field} confirmado de forma incorrecta',
+      'fieldMaxFileSizeError' => 'El archivo no puede exeder los {max} Mb',
       'fieldIsUploading' => 'Uploading in progress',
-      'resetPreferencesDone' => 'Preferensi telah diatur ulang ke default',
-      'confirmation' => 'Apa kamu yakin?',
-      'unlinkAllConfirmation' => 'Apakah Anda yakin ingin membatalkan tautan semua catatan terkait?',
-      'resetPreferencesConfirmation' => 'Apakah Anda yakin ingin ulang preferensi ke default?',
-      'removeRecordConfirmation' => 'Apakah Anda yakin ingin menghapus catatan?',
-      'unlinkRecordConfirmation' => 'Apakah Anda yakin ingin membatalkan tautan catatan terkait?',
-      'removeSelectedRecordsConfirmation' => 'Apakah Anda yakin ingin menghapus catatan yang dipilih?',
-      'massUpdateResult' => '{count} catatan telah diperbarui',
-      'massUpdateResultSingle' => '{count} record telah diperbarui',
-      'noRecordsUpdated' => 'Tidak ada catatan yang diperbarui',
-      'massRemoveResult' => '{count} catatan telah dihapus',
-      'massRemoveResultSingle' => '{count} record telah dihapus',
-      'noRecordsRemoved' => 'Tidak ada catatan yang dihapus',
-      'clickToRefresh' => 'Klik untuk refresh',
-      'streamPostInfo' => 'Ketik <strong> @nama pengguna </ strong> untuk menyebutkan pengguna di pos.
+      'resetPreferencesDone' => 'Preferencias se ha restablecido a los valores predeterminados',
+      'confirmation' => '¿Está seguro?',
+      'unlinkAllConfirmation' => '¿Seguro que deseas desvincular todos los registros relacionados?',
+      'resetPreferencesConfirmation' => '¿Está seguro que desea restablecer las preferencias?',
+      'removeRecordConfirmation' => '¿Está seguro que quiere eliminar los registros?',
+      'unlinkRecordConfirmation' => '¿Está seguro que quiere desenlazar la relación?',
+      'removeSelectedRecordsConfirmation' => '¿Está seguro que quiere eliminar los registros seleccionados?',
+      'massUpdateResult' => '{count} registros se han actualizado',
+      'massUpdateResultSingle' => '{count} registro ha sido actualizado',
+      'noRecordsUpdated' => 'Ningún registro fue actualizado',
+      'massRemoveResult' => '{count} registros se han eliminado',
+      'massRemoveResultSingle' => '{count} registro se ha eliminado',
+      'noRecordsRemoved' => 'Ningún registro fue eliminado',
+      'clickToRefresh' => 'Clic para actualizar',
+      'streamPostInfo' => 'Escriba <strong>@usuario</strong> para mencionar usuarios en el comentario.
 
-Sintaks yang tersedia:
-`<Code> Kode </ code>`
-** <Strong> teks yang kuat </ strong> **
-* <Em> menekankan teks </ em> *
-~ <Del> teks yang dihapus </ del> ~
-> blockquote
-[D](url)',
-      'writeYourCommentHere' => 'Tulis komentar Anda di sini',
-      'writeMessageToUser' => 'Tulis pesan ke {user}',
-      'writeMessageToSelf' => 'Tulis pesan ke diri sendiri',
-      'typeAndPressEnter' => 'Ketik & tekan enter',
-      'checkForNewNotifications' => 'Periksa pemberitahuan baru',
-      'checkForNewNotes' => 'Periksa entri Streaming baru',
-      'internalPost' => 'Post will be seen only by internal users',
-      'internalPostTitle' => 'Post is seen only by internal users',
-      'done' => 'Done',
-      'confirmMassFollow' => 'Are you sure you want to follow selected records?',
-      'confirmMassUnfollow' => 'Are you sure you want to unfollow selected records?',
-      'massFollowResult' => '{count} records now are followed',
-      'massUnfollowResult' => '{count} records now are not followed',
-      'massFollowResultSingle' => '{count} record now is followed',
-      'massUnfollowResultSingle' => '{count} record now is not followed',
-      'massFollowZeroResult' => 'Nothing got followed',
-      'massUnfollowZeroResult' => 'Nothing got unfollowed',
+La sintaxis markdown disponible es:
+
+`<code>código</code>`
+**<strong>texto en negritas</strong>**
+*<em>un texto con énfasis</em>*
+~<del>el texto eliminado</del>~
+> Citar bloque
+[nombre del enlace](url)',
+      'writeYourCommentHere' => 'Escriba su comentario aquí',
+      'writeMessageToUser' => 'Escribir un mensaje a {user}',
+      'writeMessageToSelf' => 'Escribir un mensaje en tu historia',
+      'typeAndPressEnter' => 'Escriba y presione enter',
+      'checkForNewNotifications' => 'Comprobar si hay nuevas notificaciones',
+      'checkForNewNotes' => 'Comprobar si hay actualizaciones en la historia',
+      'internalPost' => 'El puesto será visto solo por los usuarios internos',
+      'internalPostTitle' => 'El mensaje es visto solo por usuarios internos',
+      'done' => 'Hecho',
+      'confirmMassFollow' => '¿Está seguro que desea seguir los registros seleccionados?',
+      'confirmMassUnfollow' => '¿Está seguro que desea dejar de seguir los registros seleccionados?',
+      'massFollowResult' => 'Se han seguido {count} registros',
+      'massUnfollowResult' => 'Se han dejado de seguir {count} registros',
+      'massFollowResultSingle' => 'Se han seguido {count} registro',
+      'massUnfollowResultSingle' => 'Se han dejado de seguir {count} registro',
+      'massFollowZeroResult' => 'Nada se siguió',
+      'massUnfollowZeroResult' => 'Nada se dejó de seguir',
       'erasePersonalDataConfirmation' => 'Checked fields will be erased permanently. Are you sure?',
       'massPrintPdfMaxCountError' => 'Can\'t print more that {maxCount} records.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMy' => 'Only My',
-      'followed' => 'Diikuti',
+      'onlyMy' => 'Solo míos',
+      'followed' => 'Siguiendo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'followed' => 'Diikuti',
-      'all' => 'Semua',
+      'followed' => 'Siguiendo',
+      'all' => 'Todos',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'remove' => 'Menghapus',
-      'merge' => 'Menggabungkan',
-      'massUpdate' => 'Update Massal',
-      'export' => 'Ekspor',
-      'follow' => 'Follow',
-      'unfollow' => 'Unfollow',
+      'remove' => 'Eliminar',
+      'merge' => 'Unir',
+      'massUpdate' => 'Actualización masiva',
+      'export' => 'Exportar',
+      'follow' => 'Seguir',
+      'unfollow' => 'Dejar de seguir',
       'convertCurrency' => 'Convert Currency',
       'printPdf' => 'Print to PDF',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'firstName' => 'Nama depan',
-      'lastName' => 'Nama keluarga',
-      'salutationName' => 'Salam',
-      'assignedUser' => 'Pengguna yang Ditugaskan',
-      'assignedUsers' => 'Pengguna yang Ditugaskan',
-      'emailAddress' => 'Email',
+      'name' => 'Nombre',
+      'firstName' => 'Nombre',
+      'lastName' => 'Apellidos',
+      'salutationName' => 'Saludo',
+      'assignedUser' => 'Usuario asignado',
+      'assignedUsers' => 'Usuarios asignados',
+      'emailAddress' => 'Correo electrónico',
       'emailAddressData' => 'Email Address Data',
       'emailAddressIsOptedOut' => 'Email Address is Opted-Out',
-      'assignedUserName' => 'Nama Pengguna Ditugaskan',
-      'teams' => 'Tim',
-      'createdAt' => 'Dibuat Pada',
-      'modifiedAt' => 'Dimodifikasi Pada',
-      'createdBy' => 'Dibuat oleh',
-      'modifiedBy' => 'Dimodifikasi oleh',
-      'description' => 'Deskripsi',
-      'address' => 'Alamat',
-      'phoneNumber' => 'Telepon',
-      'phoneNumberMobile' => 'Telepon (Ponsel)',
-      'phoneNumberHome' => 'Telepon (Rumah)',
-      'phoneNumberFax' => 'Telepon (Fax)',
-      'phoneNumberOffice' => 'Telepon (Kantor)',
-      'phoneNumberOther' => 'Telepon (Lainnya)',
+      'assignedUserName' => 'Nombre de usuario asignado',
+      'teams' => 'Equipos',
+      'createdAt' => 'Creado en',
+      'modifiedAt' => 'Modificado el',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'description' => 'Descripción',
+      'address' => 'Dirección',
+      'phoneNumber' => 'Teléfono',
+      'phoneNumberMobile' => 'Teléfono (Móvil)',
+      'phoneNumberHome' => 'Teléfono (Casa)',
+      'phoneNumberFax' => 'Teléfono (Fax)',
+      'phoneNumberOffice' => 'Teléfono (Oficina)',
+      'phoneNumberOther' => 'Teléfono (Otro)',
       'phoneNumberData' => 'Phone Number Data',
-      'order' => 'Pesanan',
-      'parent' => 'Induk',
-      'children' => 'Turunan',
+      'order' => 'Orden',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
       'id' => 'ID',
       'ids' => 'IDs',
       'type' => 'Type',
       'names' => 'Names',
       'targetListIsOptedOut' => 'Is Opted Out (Target List)',
-      'billingAddressCity' => 'Kota',
-      'billingAddressCountry' => 'Negara',
-      'billingAddressPostalCode' => 'Kode Pos',
-      'billingAddressState' => 'Negara',
-      'billingAddressStreet' => 'jalan',
-      'billingAddressMap' => 'Peta',
-      'addressCity' => 'Kota',
-      'addressStreet' => 'jalan',
-      'addressCountry' => 'Negara',
-      'addressState' => 'Negara',
-      'addressPostalCode' => 'Kode Pos',
-      'addressMap' => 'Peta',
-      'shippingAddressCity' => 'Kota (Pengiriman)',
-      'shippingAddressStreet' => 'Jalan (Pengiriman)',
-      'shippingAddressCountry' => 'Negara (Pengiriman)',
-      'shippingAddressState' => 'Negara (Pengiriman)',
-      'shippingAddressPostalCode' => 'Kode Pos (Pengiriman)',
-      'shippingAddressMap' => 'Peta (Pengiriman)',
+      'billingAddressCity' => 'Ciudad',
+      'billingAddressCountry' => 'País',
+      'billingAddressPostalCode' => 'Código Postal',
+      'billingAddressState' => 'Estado',
+      'billingAddressStreet' => 'Calle',
+      'billingAddressMap' => 'Mapa',
+      'addressCity' => 'Ciudad',
+      'addressStreet' => 'Calle',
+      'addressCountry' => 'País',
+      'addressState' => 'Estado',
+      'addressPostalCode' => 'Código Postal',
+      'addressMap' => 'Mapa',
+      'shippingAddressCity' => 'Ciudad (envío)',
+      'shippingAddressStreet' => 'Calle (envío)',
+      'shippingAddressCountry' => 'País (envío)',
+      'shippingAddressState' => 'Estado (envío)',
+      'shippingAddressPostalCode' => 'Código Postal (envío)',
+      'shippingAddressMap' => 'Mapa (envío)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'assignedUser' => 'Pengguna yang Ditugaskan',
-      'createdBy' => 'Dibuat Oleh',
-      'modifiedBy' => 'Dimodifikasi Oleh',
-      'team' => 'Tim',
-      'roles' => 'Role',
-      'teams' => 'Tim',
-      'users' => 'Pengguna',
-      'parent' => 'Induk',
-      'children' => 'Turunan',
-      'contacts' => 'kontak',
-      'opportunities' => 'peluang',
-      'leads' => 'memimpin',
-      'meetings' => 'rapat',
-      'calls' => 'panggilan',
-      'tasks' => 'tugas',
-      'emails' => 'email',
-      'accounts' => 'Akun',
-      'cases' => 'kasus',
-      'documents' => 'dokumen',
-      'account' => 'Rekening',
-      'opportunity' => 'Kesempatan',
-      'contact' => 'Kontak',
+      'assignedUser' => 'Usuario asignado',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'team' => 'Equipo',
+      'roles' => 'Roles',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'leads' => 'Posibles clientes',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'accounts' => 'Cuentas',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'account' => 'Cuenta',
+      'opportunity' => 'Oportunidad',
+      'contact' => 'Contacto',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
-      'Stream' => 'Stream',
-      'Emails' => 'My Inbox',
-      'Records' => 'Record List',
-      'Leads' => 'Memimpin saya',
-      'Opportunities' => 'Peluang saya',
-      'Tasks' => 'Tugas saya',
-      'Cases' => 'Kasus saya',
-      'Calendar' => 'Kalender',
-      'Calls' => 'Panggilan saya',
-      'Meetings' => 'Rapat saya',
-      'OpportunitiesByStage' => 'Peluang oleh Tahap',
-      'OpportunitiesByLeadSource' => 'Peluang oleh Lead Source',
-      'SalesByMonth' => 'Penjualan Menurut Bulan',
-      'SalesPipeline' => 'Pipeline penjualan',
-      'Activities' => 'Aktivitas saya',
+      'Stream' => 'Historia',
+      'Emails' => 'Mi bandeja de entrada',
+      'Records' => 'Lista de registros',
+      'Leads' => 'Mis posibles clientes',
+      'Opportunities' => 'Mis oportunidades',
+      'Tasks' => 'Mis tareas',
+      'Cases' => 'Mis tickets',
+      'Calendar' => 'Calendario',
+      'Calls' => 'Mis llamadas',
+      'Meetings' => 'Mis reuniones',
+      'OpportunitiesByStage' => 'Oportunidades por Etapa',
+      'OpportunitiesByLeadSource' => 'Oportunidades por toma de contacto del posible cliente',
+      'SalesByMonth' => 'Ventas por mes',
+      'SalesPipeline' => 'Canalización de ventas',
+      'Activities' => 'Mis próximas actividades',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
-      'assign' => '{EntityType} {entity} Telah ditugaskan pada Anda',
-      'emailReceived' => 'Email diterima dari {dari}',
-      'entityRemoved' => '{pengguna} dihapus {entityType} {entity}',
+      'assign' => '{entityType} {entity} ha sido asignado a usted',
+      'emailReceived' => 'Correo recibido de: <strong>{from}</strong>.',
+      'entityRemoved' => '{user} ha eliminado: <strong>[{entityType}]</strong> {entity}',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
-      'post' => '{pengguna} diposting pada {entityType} {entity}',
-      'attach' => '{pengguna} melekat pada {entityType} {entity}',
-      'status' => '{pengguna} diperbarui {kolom} dari {entityType} {entity}',
-      'update' => '{pengguna} diperbarui {entityType} {entity}',
-      'postTargetTeam' => '{pengguna} diposting ke tim {target}',
-      'postTargetTeams' => '{pengguna} diposting ke tim {target}',
-      'postTargetPortal' => '{pengguna} diposting ke portal {target}',
-      'postTargetPortals' => '{pengguna} diposting ke portal {target}',
-      'postTarget' => '{pengguna} diposting ke {target}',
-      'postTargetYou' => '{pengguna} diposting ke Anda',
-      'postTargetYouAndOthers' => '{pengguna} diposting ke {target} dan Anda',
-      'postTargetAll' => '{pengguna} diposting ke semua',
-      'postTargetSelf' => '{pengguna} diposting ke sendiri',
-      'postTargetSelfAndOthers' => '{pengguna} diposting ke {target} dan sendiri',
-      'mentionInPost' => '{pengguna} disebutkan {disebutkan} di {entityType} {entity}',
-      'mentionYouInPost' => '{pengguna} menyebut Anda dalam {entityType} {entity}',
-      'mentionInPostTarget' => '{pengguna} disebutkan {mentioned} dalam posting',
-      'mentionYouInPostTarget' => '{pengguna
-} menyebut Anda dalam posting ke {target}',
-      'mentionYouInPostTargetAll' => '{pengguna} menyebut Anda dalam posting ke semua',
-      'mentionYouInPostTargetNoTarget' => '{pengguna} menyebut Anda dalam posting',
-      'create' => '{pengguna} dibuat {entityType} {entity}',
-      'createThis' => '{pengguna} dibuat ini {entityType}',
-      'createAssignedThis' => '{pengguna} membuat ini {entityType} ditugaskan kepada {petugas}',
-      'createAssigned' => '{pengguna} membuat {entityType} {entity} ditugaskan kepada {petugas}',
-      'createAssignedYou' => '{user} created {entityType} {entity} assigned to you',
-      'createAssignedThisSelf' => '{user} created this {entityType} self-assigned',
-      'createAssignedSelf' => '{user} created {entityType} {entity} self-assigned',
-      'assign' => '{pengguna} menugaskan {entityType} {entity} ke {petugas}',
-      'assignThis' => '{pengguna} menugaskan ini {entityType} ke {petugas}',
-      'assignYou' => '{user} assigned {entityType} {entity} to you',
-      'assignThisVoid' => '{user} unassigned this {entityType}',
-      'assignVoid' => '{user} unassigned {entityType} {entity}',
-      'assignThisSelf' => '{user} self-assigned this {entityType}',
-      'assignSelf' => '{user} self-assigned {entityType} {entity}',
-      'postThis' => '{pengguna} memposting',
-      'attachThis' => '{pengguna} melampirkan',
-      'statusThis' => '{pengguna} memperbarui {kolom}',
-      'updateThis' => '{pengguna} memperbarui ini {entityType}',
-      'createRelatedThis' => '{pengguna} membuat {relatedEntityType} {relatedEntity} terkait dengan ini {entityType} ',
-      'createRelated' => '{pengguna} membuat {relatedEntityType} {relatedEntity} terkait dengan {entityType} {entity}',
-      'relate' => '{pengguna} linked {relatedEntityType} {relatedEntity} dengan {entityType} {entity}',
-      'relateThis' => '{pengguna} linked {relatedEntityType} {relatedEntity} dengan ini {entityType}',
-      'emailReceivedFromThis' => 'Email yang diterima dari {from}',
-      'emailReceivedInitialFromThis' => 'Email yang diterima dari {from}, ini {entityType} dibuat',
-      'emailReceivedThis' => 'email yang diterima',
-      'emailReceivedInitialThis' => 'Email yang diterima, ini {entityType} dibuat',
-      'emailReceivedFrom' => 'Email yang diterima dari {dari}, terkait dengan {entityType} {entity}',
-      'emailReceivedFromInitial' => 'Email yang diterima dari {dari}, {entityType} {entity} dibuat',
-      'emailReceived' => 'Email yang diterima terkait dengan {entityType} {entity}',
-      'emailReceivedInitial' => 'Email yang diterima: {entityType} {entity} dibuat',
-      'emailReceivedInitialFrom' => 'Email yang diterima dari {dari}, {entityType} {entity} dibuat',
-      'emailSent' => '{Oleh} email yang dikirim berhubungan dengan {entityType} {entity}',
-      'emailSentThis' => '{by} mengirim email',
+      'post' => '{user} ha publicado en: <strong>[{entityType}]</strong> {entity}',
+      'attach' => '{user} ha añadido un archivo adjunto en: <strong>[{entityType}]</strong> {entity}',
+      'status' => '{user} ha actualizado el campo <strong>{field}</strong> en: <strong>[{entityType}]</strong> {entity}',
+      'update' => '{user} ha actualizado: <strong>[{entityType}]</strong> {entity}',
+      'postTargetTeam' => '{user} ha publicado en el equipo {target}',
+      'postTargetTeams' => '{user} ha publicado en los equipos {target}',
+      'postTargetPortal' => '{user} ha publicado en el portal {target}',
+      'postTargetPortals' => '{user} ha publicado en los portales {target}',
+      'postTarget' => '{user} ha publicado en {target}',
+      'postTargetYou' => '{user} ha publicado pora usted',
+      'postTargetYouAndOthers' => '{user} ha publicado para {target} y para usted',
+      'postTargetAll' => '{user} ha publicado para todos',
+      'postTargetSelf' => '{user} se ha enviado un mensaje a sí mismo',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
+      'mentionInPost' => '{user} ha mencionado a {mentioned} en: <strong>[{entityType}]</strong> {entity}',
+      'mentionYouInPost' => '{user} te ha mencionado en: <strong>[{entityType}]</strong> {entity}',
+      'mentionInPostTarget' => '{user} ha mencionado a {mentioned} en la publicación',
+      'mentionYouInPostTarget' => '{user} te ha mencionado en la publicación para {target}',
+      'mentionYouInPostTargetAll' => '{user} te ha mencionado en una publicación para todos',
+      'mentionYouInPostTargetNoTarget' => '{user} te ha mencionado en una publicación',
+      'create' => '{user} ha creado: <strong>[{entityType}]</strong> {entity}',
+      'createThis' => '{user} ha creado: <strong>{entityType}</strong>',
+      'createAssignedThis' => '{user} ha creado y se lo ha asignado a {assignee}: {entityType}',
+      'createAssigned' => '{user} ha creado y se lo ha asignado a {assignee}: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedYou' => '{user} ha creado y te lo ha asignado: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedThisSelf' => '{user} ha creado y se ha asignado a sí mismo: {entityType}',
+      'createAssignedSelf' => '{user} ha creado y se ha asignado a sí mismo: <strong>[{entityType}]</strong> {entity}',
+      'assign' => '{user} ha asignado: <strong>[{entityType}]</strong> {entity} a {assignee}',
+      'assignThis' => '{user} ha asignado {entityType} a {assignee}',
+      'assignYou' => '{user} te ha asignado <strong>[{entityType}]<strong> {entity} a ti',
+      'assignThisVoid' => '{user} ha desasignado: {entityType}',
+      'assignVoid' => '{user} ha desasignado: <strong>[{entityType}]</strong> {entity}',
+      'assignThisSelf' => '{user} se ha asignado así mismo: {entityType}',
+      'assignSelf' => '{user} se ha asignado así mismo: <strong>[{entityType}]</strong> {entity}',
+      'postThis' => '{user} ha publicado',
+      'attachThis' => '{user} ha adjuntado',
+      'statusThis' => '{user} ha actualizado el campo <strong>{field}</strong>',
+      'updateThis' => '{user} ha actualizado: {entityType}',
+      'createRelatedThis' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity}, enlazado a {entityType}',
+      'createRelated' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity} enlazado a <strong>[{entityType}]</strong> {entity}',
+      'relate' => '{user} ha enlazado <strong>[{relatedEntityType}]</strong> {relatedEntity} a <strong>[{entityType}] {entity}',
+      'relateThis' => '{user} vinculado {relatedEntityType} {relatedEntity} con este {entityType}',
+      'emailReceivedFromThis' => 'Correo recibido de: <strong>{from}</strong>.',
+      'emailReceivedInitialFromThis' => 'Correo recibido de {from}, se ha creado: {entityType}',
+      'emailReceivedThis' => 'Correo recibido',
+      'emailReceivedInitialThis' => 'Correo recibido, se ha creado: {entityType}',
+      'emailReceivedFrom' => 'Correo recibido de {from}, relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailReceivedFromInitial' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceived' => 'El correo {email} ha sido recibido para el {entityType} {entity}',
+      'emailReceivedInitial' => 'Correo recibido, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceivedInitialFrom' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailSent' => '{by} ha enviado un correo relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailSentThis' => '{by} ha enviado un correo',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
-      'postTargetSelfAndOthers' => '{user} posted to {target} and himself',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
-      'postTargetSelfAndOthers' => '{user} posted to {target} and herself',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí misma',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
-        0 => 'Januari',
-        1 => 'Februari',
-        2 => 'Maret',
-        3 => 'April',
-        4 => 'Mei',
-        5 => 'Juni',
-        6 => 'Juli',
-        7 => 'Agustus',
-        8 => 'September',
-        9 => 'Oktober',
-        10 => 'November',
-        11 => 'Desember',
+        0 => 'Enero',
+        1 => 'Febrero',
+        2 => 'Marzo',
+        3 => 'Abril',
+        4 => 'Mayo',
+        5 => 'Junio',
+        6 => 'Julio',
+        7 => 'Agosto',
+        8 => 'Septiembre',
+        9 => 'Octubre',
+        10 => 'Noviembre',
+        11 => 'Diciembre',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
-        0 => 'Jan',
-        1 => 'Februari',
+        0 => 'Ene',
+        1 => 'Feb',
         2 => 'Mar',
-        3 => 'April',
-        4 => 'Mei',
-        5 => 'Juni',
-        6 => 'Juli',
-        7 => 'Agustus',
-        8 => 'September',
-        9 => 'Oktober',
-        10 => 'November',
-        11 => 'Desember',
+        3 => 'Abr',
+        4 => 'May',
+        5 => 'Jun',
+        6 => 'Jul',
+        7 => 'Ago',
+        8 => 'Sep',
+        9 => 'Oct',
+        10 => 'Nov',
+        11 => 'Dic',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
-        0 => 'Minggu',
-        1 => 'Senin',
-        2 => 'Selasa',
-        3 => 'Rabu',
-        4 => 'Kamis',
-        5 => 'Jumat',
-        6 => 'Sabtu',
+        0 => 'Domingo',
+        1 => 'Lunes',
+        2 => 'Martes',
+        3 => 'Miércoles',
+        4 => 'Jueves',
+        5 => 'Viernes',
+        6 => 'Sábado',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
-        0 => 'Minggu',
-        1 => 'Senin',
-        2 => 'Selasa',
-        3 => 'Rabu',
-        4 => 'Kamis',
-        5 => 'Jumat',
-        6 => 'Sabtu',
+        0 => 'Dom',
+        1 => 'Lun',
+        2 => 'Mar',
+        3 => 'Mie',
+        4 => 'Jue',
+        5 => 'Vie',
+        6 => 'Sab',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
-        0 => 'Minggu',
-        1 => 'Senin',
-        2 => 'Selasa',
-        3 => 'Rabu',
-        4 => 'Kamis',
-        5 => 'Jumat',
-        6 => 'Sabtu',
+        0 => 'Do',
+        1 => 'Lu',
+        2 => 'Ma',
+        3 => 'Mi',
+        4 => 'Ju',
+        5 => 'Vi',
+        6 => 'Sa',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'd',
       'h' => 'h',
       'm' => 'm',
       's' => 's',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
-        'Mr.' => 'Bapak.',
-        'Mrs.' => 'Ibu',
-        'Ms.' => 'Nona.',
+        'Mr.' => 'Sr.',
+        'Mrs.' => 'Sra.',
+        'Ms.' => 'Sta.',
         'Dr.' => 'Dr.',
       ),
-      'language' => 
+      'language' =>
       array (
-        'af_ZA' => 'Afrikanas',
-        'az_AZ' => 'Azerbaijan',
-        'be_BY' => 'Belarusia',
-        'bg_BG' => 'Bulgaria',
-        'bn_IN' => 'Benggala',
-        'bs_BA' => 'Bosnia',
-        'ca_ES' => 'catalan',
-        'cs_CZ' => 'Ceko',
-        'cy_GB' => 'Welsh',
-        'da_DK' => 'Denmark',
-        'de_DE' => 'Jerman',
-        'el_GR' => 'Yunani',
-        'en_GB' => 'English (UK)',
-        'es_MX' => 'Spanish (Mexico)',
-        'en_US' => 'English (US)',
-        'es_ES' => 'Spanyol (Spain)',
-        'et_EE' => 'Estonia',
-        'eu_ES' => 'basque',
-        'fa_IR' => 'Persia',
-        'fi_FI' => 'Finlandia',
-        'fo_FO' => 'Faroe',
-        'fr_CA' => 'Perancis (Kanada)',
-        'fr_FR' => 'Perancis (France)',
-        'ga_IE' => 'Irlandia',
-        'gl_ES' => 'galician',
-        'gn_PY' => 'Guarani',
-        'he_IL' => 'Ibrani',
+        'af_ZA' => 'Afrikáans',
+        'az_AZ' => 'Azerbaiyán',
+        'be_BY' => 'Bielorruso',
+        'bg_BG' => 'Bulgaro',
+        'bn_IN' => 'Bengalí',
+        'bs_BA' => 'Bosnio',
+        'ca_ES' => 'Catalán',
+        'cs_CZ' => 'Checo',
+        'cy_GB' => 'Galés',
+        'da_DK' => 'Danés',
+        'de_DE' => 'Alemán',
+        'el_GR' => 'Griego',
+        'en_GB' => 'Inglés (UK)',
+        'es_MX' => 'Español (México)',
+        'en_US' => 'Inglés (US)',
+        'es_ES' => 'Español (España)',
+        'et_EE' => 'Estonio',
+        'eu_ES' => 'Vasco',
+        'fa_IR' => 'Persa',
+        'fi_FI' => 'Finlandés',
+        'fo_FO' => 'Feroés',
+        'fr_CA' => 'Francés (Canada)',
+        'fr_FR' => 'Francés (Francia)',
+        'ga_IE' => 'Irlandés',
+        'gl_ES' => 'Gallego',
+        'gn_PY' => 'Guaraní',
+        'he_IL' => 'Hebreo',
         'hi_IN' => 'Hindi',
-        'hr_HR' => 'Kroasia',
-        'hu_HU' => 'Hongaria',
-        'hy_AM' => 'Armenia',
-        'id_ID' => 'bahasa Indonesia',
-        'is_IS' => 'bahasa Islandia',
-        'it_IT' => 'Italia',
-        'ja_JP' => 'Jepang',
-        'ka_GE' => 'Georgia',
-        'km_KH' => 'khmer',
-        'ko_KR' => 'Korea',
-        'ku_TR' => 'Kurd',
-        'lt_LT' => 'Lithuania',
-        'lv_LV' => 'Latvia',
-        'mk_MK' => 'Macedonia',
-        'ml_IN' => 'Malayalam',
-        'ms_MY' => 'Melayu',
-        'nb_NO' => 'Norwegia Bokmål',
-        'nn_NO' => 'Norwegia Norway',
-        'ne_NP' => 'Nepal',
-        'nl_NL' => 'Belanda',
-        'pa_IN' => 'Punjabi',
-        'pl_PL' => 'Polandia',
-        'ps_AF' => 'Pashto',
-        'pt_BR' => 'Portugis (Brasil)',
-        'pt_PT' => 'Portugis (Portugal)',
-        'ro_RO' => 'Rumania',
-        'ru_RU' => 'Rusia',
-        'sk_SK' => 'Slowakia',
-        'sl_SI' => 'Slovenia',
-        'sq_AL' => 'bahasa Albania',
-        'sr_RS' => 'Serbia',
-        'sv_SE' => 'Swedia',
-        'sw_KE' => 'Swahili',
+        'hr_HR' => 'Croata',
+        'hu_HU' => 'Hungaro',
+        'hy_AM' => 'Armenio',
+        'id_ID' => 'Indonesio',
+        'is_IS' => 'Islandés',
+        'it_IT' => 'Italiano',
+        'ja_JP' => 'Japonés',
+        'ka_GE' => 'Georgiano',
+        'km_KH' => 'Camboyano',
+        'ko_KR' => 'Coreano',
+        'ku_TR' => 'Kurdo',
+        'lt_LT' => 'Lituano',
+        'lv_LV' => 'Latón',
+        'mk_MK' => 'Macedonio',
+        'ml_IN' => 'Malabar',
+        'ms_MY' => 'Malayo',
+        'nb_NO' => 'Noruego Bokmål',
+        'nn_NO' => 'Noruego Nynorsk',
+        'ne_NP' => 'Nepalí',
+        'nl_NL' => 'Holandés',
+        'pa_IN' => 'Punyabí',
+        'pl_PL' => 'Polaco',
+        'ps_AF' => 'Pastún',
+        'pt_BR' => 'Portugués (Brasil)',
+        'pt_PT' => 'Portugués (Portugal)',
+        'ro_RO' => 'Rumano',
+        'ru_RU' => 'Ruso',
+        'sk_SK' => 'Eslovaco',
+        'sl_SI' => 'Esloveno',
+        'sq_AL' => 'Albanés',
+        'sr_RS' => 'Serbio',
+        'sv_SE' => 'Sueco',
+        'sw_KE' => 'Suajili',
         'ta_IN' => 'Tamil',
-        'te_IN' => 'Telugu',
-        'th_TH' => 'Thai',
-        'tl_PH' => 'Tagalog',
-        'tr_TR' => 'Turki',
-        'uk_UA' => 'Ukraina',
+        'te_IN' => 'Télugu',
+        'th_TH' => 'Tailandés',
+        'tl_PH' => 'Tagalo',
+        'tr_TR' => 'Turco',
+        'uk_UA' => 'Ucraniano',
         'ur_PK' => 'Urdu',
-        'vi_VN' => 'Vietnam',
-        'zh_CN' => 'Cina Sederhana (Cina)',
-        'zh_HK' => 'Cina tradisional (Hong Kong)',
-        'zh_TW' => 'Tradisional Cina (Taiwan)',
+        'vi_VN' => 'Vietnamita',
+        'zh_CN' => 'Chino Simplificado (China)',
+        'zh_HK' => 'Chino Tradicional (Hong Kong)',
+        'zh_TW' => 'Chino Traditional (Taiwán)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
-        'on' => 'Di',
-        'notOn' => 'Tidak menyala',
-        'after' => 'Setelah',
-        'before' => 'Sebelum',
-        'between' => 'Antara',
-        'today' => 'Hari ini',
-        'past' => 'Lalu',
-        'future' => 'Masa depan',
-        'currentMonth' => 'Bulan berjalan',
-        'lastMonth' => 'Bulan lalu',
-        'nextMonth' => 'Next Month',
-        'currentQuarter' => 'saat Quarter',
-        'lastQuarter' => 'terakhir Quarter',
-        'currentYear' => 'Tahun ini',
-        'lastYear' => 'Tahun lalu',
-        'lastSevenDays' => '7 Hari Terakhir',
-        'lastXDays' => 'X Hari Terakhir',
-        'nextXDays' => 'X Hari Berikutnya',
-        'ever' => 'Pernah',
-        'isEmpty' => 'Is Empty',
-        'olderThanXDays' => 'Older Than X Days',
-        'afterXDays' => 'After X Days',
+        'on' => 'Está en',
+        'notOn' => 'No está en',
+        'after' => 'Después',
+        'before' => 'Antes',
+        'between' => 'Entre',
+        'today' => 'Hoy',
+        'past' => 'Pasado',
+        'future' => 'Futuro',
+        'currentMonth' => 'Mes Actual',
+        'lastMonth' => 'Mes pasado',
+        'nextMonth' => 'Siguiente mes',
+        'currentQuarter' => 'Trimestre Actual',
+        'lastQuarter' => 'Trimestre pasado',
+        'currentYear' => 'Año Actual',
+        'lastYear' => 'Año pasado',
+        'lastSevenDays' => 'Últimos 7 Días',
+        'lastXDays' => 'Últimos X Días',
+        'nextXDays' => 'Próximos X Días',
+        'ever' => 'Nunca',
+        'isEmpty' => 'Está Vacío',
+        'olderThanXDays' => 'Más de X Días',
+        'afterXDays' => 'Después de X días',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
-        'is' => 'Adalah',
-        'isEmpty' => 'Kosong',
-        'isNotEmpty' => 'Tidak Kosong',
-        'isOneOf' => 'Apakah Salah Satu',
-        'isFromTeams' => 'Adalah dari Tim',
-        'isNot' => 'Is Not',
-        'isNotOneOf' => 'None Of',
-        'anyOf' => 'Any Of',
-        'noneOf' => 'None Of',
+        'is' => 'Es',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'isOneOf' => 'Cualquiera de',
+        'isFromTeams' => 'Es del equipo',
+        'isNot' => 'No es',
+        'isNotOneOf' => 'Ninguno de',
+        'anyOf' => 'Cualquiera de',
+        'noneOf' => 'Ninguno de',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
-        'equals' => 'Sama dengan',
-        'like' => 'Seperti (%)',
-        'notLike' => 'Is Not Like (%)',
-        'startsWith' => 'Dimulai dengan',
-        'endsWith' => 'Berakhir dengan',
-        'contains' => 'Isi',
-        'notContains' => 'Not Contains',
-        'isEmpty' => 'Kosong',
-        'isNotEmpty' => 'Tidak Kosong',
-        'notEquals' => 'Not Equals',
+        'equals' => 'Equivale',
+        'like' => 'Es como (%)',
+        'notLike' => 'No es como (%)',
+        'startsWith' => 'Comienza con',
+        'endsWith' => 'Termina con',
+        'contains' => 'Contiene',
+        'notContains' => 'No contiene',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'notEquals' => 'No es igual',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
-        'equals' => 'sama dengan',
-        'notEquals' => 'tidak sama dengan',
-        'greaterThan' => 'Lebih besar dari',
-        'lessThan' => 'Kurang dari',
-        'greaterThanOrEquals' => 'Lebih besar dari, atau setara dengan',
-        'lessThanOrEquals' => 'Kurang dari, atau setara dengan',
-        'between' => 'Antara',
-        'isEmpty' => 'Is Empty',
-        'isNotEmpty' => 'Is Not Empty',
+        'equals' => 'Equivale',
+        'notEquals' => 'Diferentes',
+        'greaterThan' => 'Mayor que',
+        'lessThan' => 'Menor que',
+        'greaterThanOrEquals' => 'Mayor o igual que',
+        'lessThanOrEquals' => 'Menor o igual que',
+        'between' => 'Entre',
+        'isEmpty' => 'Está Vacío',
+        'isNotEmpty' => 'No está Vacío',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
-        0 => 'tak satupun',
-        '0.5' => '30 detik',
-        1 => '1 menit',
-        2 => '2 menit',
-        5 => '5 menit',
-        10 => '10 menit',
+        0 => 'Ninguno',
+        '0.5' => '30 segundos',
+        1 => '1 minuto',
+        2 => '2 minutos',
+        5 => '5 minutos',
+        10 => '10 minutos',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
-        'Mobile' => 'mobil',
-        'Office' => 'Kantor',
+        'Mobile' => 'Teléfono móvil',
+        'Office' => 'Oficina',
         'Fax' => 'Fax',
-        'Home' => 'Rumah',
-        'Other' => 'Lain',
+        'Home' => 'Hogar',
+        'Other' => 'Otro',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
-        'Popup' => 'Muncul',
-        'Email' => 'E-mail',
+        'Popup' => 'Ventana emergente',
+        'Email' => 'Correo electrónico',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
-        'NOTICE' => 'Anda dapat menemukan terjemahan di sini: https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'NOTICE' => 'Usted puede encontrar aquí la traducción: https://github.com/HackerWins/summernote/tree/master/lang',
+        'font' =>
         array (
-          'bold' => 'Tebal',
-          'italic' => 'miring',
-          'underline' => 'Garis bawah',
-          'strike' => 'Strike',
-          'clear' => 'Hapus Font Style',
-          'height' => 'Tinggi garis',
-          'name' => 'Font Family',
-          'size' => 'Ukuran huruf',
+          'bold' => 'Negrita',
+          'italic' => 'Itálico',
+          'underline' => 'Subrayado',
+          'strike' => 'Tachado',
+          'clear' => 'Quitar Estilo de Fuente',
+          'height' => 'Alto de línea',
+          'name' => 'Familia de Fuente',
+          'size' => 'Tamaño de Fuente',
         ),
-        'image' => 
+        'image' =>
         array (
-          'image' => 'Gambar',
-          'insert' => 'Insert Gambar',
-          'resizeFull' => 'mengubah ukuran penuh',
-          'resizeHalf' => 'mengubah separuh ukuran',
-          'resizeQuarter' => 'mengubah seperempat ukuran',
-          'floatLeft' => 'Float Left',
-          'floatRight' => 'Float Right',
-          'floatNone' => 'Float None',
-          'dragImageHere' => 'Seret gambar kesini',
-          'selectFromFiles' => 'Pilih dari file',
-          'url' => 'URL gambar',
-          'remove' => 'Hapus Gambar',
+          'image' => 'Visualización',
+          'insert' => 'Insertar imagen',
+          'resizeFull' => 'Cambiar el tamaño a completo',
+          'resizeHalf' => 'Cambiar el tamaño a la mitad',
+          'resizeQuarter' => 'Cambiar el tamaño a un cuarto',
+          'floatLeft' => 'Flotar Izquierda',
+          'floatRight' => 'Flotar Derecha',
+          'floatNone' => 'Sin Flotar',
+          'dragImageHere' => 'Arrastrar una imagen aquí',
+          'selectFromFiles' => 'Seleccionar desde Archivo',
+          'url' => 'Url de imagen',
+          'remove' => 'Eliminar imagen',
         ),
-        'link' => 
+        'link' =>
         array (
-          'link' => 'Tautan',
-          'insert' => 'Sisipkan Tautan',
-          'unlink' => 'membatalkan tautan',
-          'edit' => 'mengedit',
-          'textToDisplay' => 'Teks untuk menampilkan',
-          'url' => 'Untuk apa URL tautan ini?',
-          'openInNewWindow' => 'Buka di jendela baru',
+          'link' => 'Enlace',
+          'insert' => 'Insertar Enlace',
+          'unlink' => 'Desenlazar',
+          'edit' => 'Editar',
+          'textToDisplay' => 'Texto a mostrar',
+          'url' => '¿A que URL debería ir este enlace?',
+          'openInNewWindow' => 'Abrir en nueva ventana',
         ),
-        'video' => 
+        'video' =>
         array (
           'video' => 'Video',
-          'videoLink' => 'Video link',
-          'insert' => 'Insert Video',
-          'url' => 'URL Video?',
-          'providers' => '(YouTube, Vimeo, Vine, Instagram, atau Dailymotion)',
+          'videoLink' => 'Enlace al Video',
+          'insert' => 'Insertar Video',
+          'url' => '¿URL del Video?',
+          'providers' => '(YouTube, Vimeo, Vine, Instagram, or DailyMotion)',
         ),
-        'table' => 
+        'table' =>
         array (
-          'table' => 'Tabel',
+          'table' => 'Tabla',
         ),
-        'hr' => 
+        'hr' =>
         array (
-          'insert' => 'Masukkan Aturan Horizontal',
+          'insert' => 'Insertar regla horizontal',
         ),
-        'style' => 
+        'style' =>
         array (
-          'style' => 'Style',
+          'style' => 'Estilo',
           'normal' => 'Normal',
-          'blockquote' => 'Kutipan',
-          'pre' => 'Kode',
-          'h1' => 'Header 1',
-          'h2' => 'Header 2',
-          'h3' => 'Header 3',
-          'h4' => 'Header 4',
-          'h5' => 'Header 5',
-          'h6' => 'Header 6',
+          'blockquote' => 'Cita',
+          'pre' => 'Código',
+          'h1' => 'Cabecera 1',
+          'h2' => 'Cabecera 2',
+          'h3' => 'Cabecera 3',
+          'h4' => 'Cabecera 4',
+          'h5' => 'Cabecera 5',
+          'h6' => 'Cabecera 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
-          'unordered' => 'daftar tidak berurutan',
-          'ordered' => 'daftar berurutan',
+          'unordered' => 'Lista sin Ordenar',
+          'ordered' => 'Lista Ordenada',
         ),
-        'options' => 
+        'options' =>
         array (
-          'help' => 'Bantuan',
-          'fullscreen' => 'Layar penuh',
-          'codeview' => 'Tampilan kode',
+          'help' => 'Ayuda',
+          'fullscreen' => 'Pantalla Completa',
+          'codeview' => 'Ver Código',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
-          'paragraph' => 'Paragraf',
-          'outdent' => 'outdent',
-          'indent' => 'Indent',
-          'left' => 'Rata kiri',
-          'center' => 'rata tengah',
-          'right' => 'rata kanan',
-          'justify' => 'sesuaikan penuh',
+          'paragraph' => 'Párrafo',
+          'outdent' => 'Anular sangría',
+          'indent' => 'Sangría',
+          'left' => 'Alinear Izquierda',
+          'center' => 'Alinear Centro',
+          'right' => 'Alinear Derecha',
+          'justify' => 'Justificado',
         ),
-        'color' => 
+        'color' =>
         array (
-          'recent' => 'Warna terbaru',
-          'more' => 'lebih banyak Warna',
-          'background' => 'Warna Belakang',
-          'foreground' => 'Warna huruf',
-          'transparent' => 'Transparan',
-          'setTransparent' => 'set transparan',
-          'reset' => 'reset',
-          'resetToDefault' => 'Reset ke default',
+          'recent' => 'Color Reciente',
+          'more' => 'Mas Colores',
+          'background' => 'Color de Fondo',
+          'foreground' => 'Color de Fuente',
+          'transparent' => 'Transparente',
+          'setTransparent' => 'Establecer transparente',
+          'reset' => 'Resetear',
+          'resetToDefault' => 'Restablecer a (por defecto)',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
-          'shortcuts' => 'shortcut keyboard',
-          'close' => 'Tutup',
-          'textFormatting' => 'format teks',
-          'action' => 'Action',
-          'paragraphFormatting' => 'format paragraf',
-          'documentStyle' => 'dokumen Style',
+          'shortcuts' => 'Atajos de teclado',
+          'close' => 'Cerrar',
+          'textFormatting' => 'Formato de texto',
+          'action' => 'Acción',
+          'paragraphFormatting' => 'Formato de párrafo',
+          'documentStyle' => 'Estilo de Documento',
         ),
-        'history' => 
+        'history' =>
         array (
-          'undo' => 'Undo',
-          'redo' => 'Redo',
+          'undo' => 'Deshacer',
+          'redo' => 'Rehacer',
         ),
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
       'list' => 'List',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
       'Espo' => 'Espo',
       'EspoRtl' => 'RTL Espo',
       'Sakura' => 'Sakura',
-      'EspoVertical' => 'Espo Vertikal',
-      'SakuraVertical' => 'Sakura Vertikal',
-      'Violet' => 'Ungu',
-      'VioletVertical' => 'Violet Vertical',
-      'Hazyblue' => 'Classic Hazyblue',
-      'HazyblueVertical' => 'Vertical Hazyblue',
+      'EspoVertical' => 'Espo con barra lateral',
+      'SakuraVertical' => 'Sakura con barra lateral',
+      'Violet' => 'Violeta',
+      'VioletVertical' => 'Violet con barra lateral',
+      'Hazyblue' => 'Hazyblue',
+      'HazyblueVertical' => 'Hazyblue con barra lateral',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Revert Import' => 'Kembalikan Impor',
-      'Return to Import' => 'Kembali ke Impor',
-      'Run Import' => 'Run Impor',
-      'Back' => 'Kembali',
-      'Field Mapping' => 'Field Mapping',
-      'Default Values' => 'Default Values',
-      'Add Field' => 'Tambahkan kolom',
-      'Created' => 'dibuat',
-      'Updated' => 'Diperbarui',
-      'Result' => 'Hasil',
-      'Show records' => 'Tampilkan catatan',
-      'Remove Duplicates' => 'Hapus Duplikat',
-      'importedCount' => 'Impor (count)',
-      'duplicateCount' => 'Duplikat (count)',
-      'updatedCount' => 'Updated (count)',
-      'Create Only' => 'Create Only',
-      'Create and Update' => 'Create & Update',
-      'Update Only' => 'Update Only',
-      'Update by' => 'Perbarui oleh',
-      'Set as Not Duplicate' => 'Ditetapkan sebagai Tidak Duplikat',
-      'File (CSV)' => 'Berkas (CSV)',
-      'First Row Value' => 'Nilai Row pertama',
-      'Skip' => 'Lewati',
-      'Header Row Value' => 'Header Row Value',
-      'Field' => 'Kolom',
-      'What to Import?' => 'Impor Apa?',
-      'Entity Type' => 'Tipe entitas',
-      'What to do?' => 'Apa yang harus dilakukan?',
-      'Properties' => 'properti',
-      'Header Row' => 'Header Row',
-      'Person Name Format' => 'Format Nama Orang',
-      'John Smith' => 'John Smith',
-      'Smith John' => 'Smith John',
-      'Smith, John' => 'Smith, John',
-      'Field Delimiter' => 'Pembatas Kolom',
-      'Date Format' => 'Format tanggal',
-      'Decimal Mark' => 'Tanda Desimal',
-      'Text Qualifier' => 'Text Qualifier',
-      'Time Format' => 'Format waktu',
-      'Currency' => 'Mata uang',
-      'Preview' => 'Preview',
-      'Next' => 'Berikutnya',
-      'Step 1' => 'Langkah 1',
-      'Step 2' => 'Langkah 2',
-      'Double Quote' => 'Double Quote',
-      'Single Quote' => 'Single Quote',
-      'Imported' => 'Impor',
-      'Duplicates' => 'duplikat',
-      'Skip searching for duplicates' => 'Skip searching for duplicates',
-      'Timezone' => 'Timezone',
+      'Revert Import' => 'Revertir Importación',
+      'Return to Import' => 'Regreso a Importar',
+      'Run Import' => 'Ejecutar importación',
+      'Back' => 'Anterior',
+      'Field Mapping' => 'Mapeo de Campos',
+      'Default Values' => 'Valores por defecto',
+      'Add Field' => 'Añadir Campo',
+      'Created' => 'Creado',
+      'Updated' => 'Actualizado',
+      'Result' => 'Resultado',
+      'Show records' => 'Mostrar registros',
+      'Remove Duplicates' => 'Eliminar Duplicados',
+      'importedCount' => 'Importado (recuento)',
+      'duplicateCount' => 'Duplicados (recuento)',
+      'updatedCount' => 'Actualizado (recuento)',
+      'Create Only' => 'Solo crear',
+      'Create and Update' => 'Crear y actualizar',
+      'Update Only' => 'Solo actualizar',
+      'Update by' => 'Actualizado por',
+      'Set as Not Duplicate' => 'Establecer como No Duplicado',
+      'File (CSV)' => 'Archivo (CSV)',
+      'First Row Value' => 'Valor de la primera fila',
+      'Skip' => 'Omitir',
+      'Header Row Value' => 'Campo del sistema',
+      'Field' => 'Columnas del archivo',
+      'What to Import?' => '¿Qué va a importar?',
+      'Entity Type' => 'Tipo de entidad',
+      'What to do?' => '¿Qué hacer?',
+      'Properties' => 'Propiedades',
+      'Header Row' => '¿Tiene una fila de Encabezado?',
+      'Person Name Format' => 'Formato del nombre de la persona',
+      'John Smith' => 'Juan Pérez',
+      'Smith John' => 'Pérez Juan',
+      'Smith, John' => 'Pérez, Juan',
+      'Field Delimiter' => 'Delimitador de campo',
+      'Date Format' => 'Formato de fecha',
+      'Decimal Mark' => 'Símbolo Decimal',
+      'Text Qualifier' => 'Delimitador de texto',
+      'Time Format' => 'Formato de hora',
+      'Currency' => 'Moneda',
+      'Preview' => 'Vista previa',
+      'Next' => 'Siguiente',
+      'Step 1' => 'Paso 1',
+      'Step 2' => 'Paso 2',
+      'Double Quote' => 'Comillas dobles',
+      'Single Quote' => 'Comillas simples',
+      'Imported' => 'Importado',
+      'Duplicates' => 'Duplicados',
+      'Skip searching for duplicates' => 'Omitir la búsqueda de duplicados',
+      'Timezone' => 'Zona horaria',
       'Remove Import Log' => 'Remove Import Log',
       'New Import' => 'New Import',
       'Import Results' => 'Import Results',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'utf8' => 'Harus UTF-8 encoded',
-      'duplicatesRemoved' => 'duplikat dihapus',
-      'inIdle' => 'Execute in idle (for big data; via cron)',
+      'utf8' => 'Debe ser codificado en UTF-8',
+      'duplicatesRemoved' => 'Duplicados eliminados',
+      'inIdle' => 'Ejecutar en segundo plano (para gran cantidad de datos, vía cron)',
       'revert' => 'This will remove all imported records permanently.',
       'removeDuplicates' => 'This will permanently remove all imported records that were recognized as duplicates.',
       'confirmRevert' => 'This will remove all imported records permanently. Are you sure?',
@@ -2042,208 +2073,208 @@ Sintaks yang tersedia:
       'confirmRemoveImportLog' => 'This will remove the import log. All imported records will be kept. You wan\'t be able to revert import results. Are you sure you?',
       'removeImportLog' => 'This will remove the import log. All imported records will be kept. Use it if you are sure that import is fine.',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'file' => 'File',
-      'entityType' => 'Jenis entitas',
-      'imported' => 'Rekaman dimpor',
-      'duplicates' => 'duplikat Rekaman',
-      'updated' => 'Rekaman Diperbarui',
-      'status' => 'Status',
+      'file' => 'Archivo',
+      'entityType' => 'Tipo de entidad',
+      'imported' => 'Registros Importados',
+      'duplicates' => 'registros Duplicados',
+      'updated' => 'registros Actualizados',
+      'status' => 'Estado',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Failed' => 'Failed',
-        'In Process' => 'In Process',
-        'Complete' => 'Complete',
+        'Failed' => 'Falló',
+        'In Process' => 'En proceso',
+        'Complete' => 'Completo',
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'emailAddress' => 'Alamat email',
-      'team' => 'Tim',
-      'status' => 'Status',
-      'assignToUser' => 'Tugaskan ke Pengguna',
-      'host' => 'Host',
-      'username' => 'Nama pengguna',
-      'password' => 'Kata sandi',
-      'port' => 'Port',
-      'monitoredFolders' => 'Folder yang dipantau',
-      'trashFolder' => 'Trash Folder',
+      'name' => 'Nombre',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'team' => 'Equipo objetivo',
+      'status' => 'Estado',
+      'assignToUser' => 'Asignar al usuario',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'trashFolder' => 'Carpeta de papelera',
       'ssl' => 'SSL',
-      'createCase' => 'Create Case',
-      'reply' => 'Auto-Reply',
-      'caseDistribution' => 'Case Distribution',
-      'replyEmailTemplate' => 'Template Balas Email',
-      'replyFromAddress' => 'Balas Dari Alamat',
-      'replyToAddress' => 'Balas Untuk Alamat',
-      'replyFromName' => 'Balas Dari Nama',
-      'targetUserPosition' => 'Target Posisi Pengguna',
-      'fetchSince' => 'Ambil Sejak',
-      'addAllTeamUsers' => 'Untuk semua pengguna tim',
-      'teams' => 'Teams',
-      'sentFolder' => 'Sent Folder',
-      'storeSentEmails' => 'Store Sent Emails',
+      'createCase' => 'Crear ticket',
+      'reply' => 'Respuesta automática',
+      'caseDistribution' => 'Distribución de tickets',
+      'replyEmailTemplate' => 'Plantilla de respuesta de correo',
+      'replyFromAddress' => 'Responder a (dirección)',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyFromName' => 'Respuesta De (nombre):',
+      'targetUserPosition' => 'Objetivo posición usuario',
+      'fetchSince' => 'Traer correos desde',
+      'addAllTeamUsers' => 'Para todos los usuarios del equipo',
+      'teams' => 'Equipos',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
       'useImap' => 'Fetch Emails',
-      'useSmtp' => 'Use SMTP',
-      'smtpHost' => 'SMTP Host',
-      'smtpPort' => 'SMTP Port',
-      'smtpAuth' => 'SMTP Auth',
-      'smtpSecurity' => 'SMTP Security',
-      'smtpUsername' => 'SMTP Username',
-      'smtpPassword' => 'SMTP Password',
-      'fromName' => 'From Name',
-      'smtpIsShared' => 'SMTP Is Shared',
-      'smtpIsForMassEmail' => 'SMTP Is for Mass Email',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
+      'fromName' => 'De (nombre):',
+      'smtpIsShared' => 'SMTP ¿Es compartido?',
+      'smtpIsForMassEmail' => 'SMTP es para envíos masivos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'reply' => 'Beritahu pengirim email bahwa email mereka telah diterima.
+      'reply' => 'Notifique a los remitentes de correo que han recibido sus mensajes.
 
- Hanya satu email akan dikirim ke penerima tertentu selama beberapa waktu untuk mencegah perulangan.',
-      'createCase' => 'Secara otomatis membuat kasus dari email yang masuk.',
-      'replyToAddress' => 'Tentukan alamat email dari kotak surat ini untuk membuat tanggapan datang ke sini.',
-      'caseDistribution' => 'Bagaimana kasus akan ditugaskan untuk. Ditugaskan langsung ke pengguna atau antar tim.',
-      'assignToUser' => 'email pengguna / kasus akan ditugaskan untuk.',
-      'team' => 'email tim / kasus akan terkait dengan.',
-      'teams' => 'Teams emails will be assigned to.',
-      'targetUserPosition' => 'Menentukan posisi pengguna yang akan didistribusikan dengan kasus.',
-      'addAllTeamUsers' => 'Email akan muncul di Inbox dari semua pengguna dari tim tertentu.',
-      'monitoredFolders' => 'Multiple folders should be separated by comma.',
-      'smtpIsShared' => 'If checked then users will be able to send emails using this SMTP. Availability is controlled by Roles through the Group Email Account permission.',
-      'smtpIsForMassEmail' => 'If checked then SMTP will be available for Mass Email.',
-      'storeSentEmails' => 'Sent emails will be stored on the IMAP server.',
+Solo un correo será enviado a un destinatario particular durante un período de tiempo para evitar bucles.',
+      'createCase' => 'Automaticamente crear un ticket de los correos entrantes.',
+      'replyToAddress' => 'Especifique la dirección de correo de este buzón para hacer que las respuestas vegan aquí.',
+      'caseDistribution' => '¿Cómo serán asignados a los tickets? Asignados directamente a un usuario o al equipo.',
+      'assignToUser' => 'Los tickets de usuario se asignarán a.',
+      'team' => 'Los tickets del equipo serán asignados a.',
+      'teams' => 'Los correos de equipos serán asignados a.',
+      'targetUserPosition' => 'Los usuarios con la posición especificada serán distribuidos a los tickets.',
+      'addAllTeamUsers' => 'Los correos aparecerán en la bandeja de entrada de todos los usuarios de los equipos especificados.',
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.',
+      'smtpIsShared' => 'Si se marca, entonces los usuarios podrán enviar correos usando este SMTP. La disponibilidad está controlada por Roles a través de los permisos de la cuenta de correo grupal.',
+      'smtpIsForMassEmail' => 'Si está marcado, SMTP estará disponible para correo masivo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP.',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'filter',
-      'emails' => 'Emails',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
       'assignToUser' => 'Assign to User',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktif',
-        'Inactive' => 'non-aktif',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
-        '' => 'tak satupun',
-        'Direct-Assignment' => 'Tugas Langsung',
-        'Round-Robin' => 'Round-Robin',
-        'Least-Busy' => 'Setidaknya-Sibuk',
+        '' => 'Ninguno',
+        'Direct-Assignment' => 'Asignación directa',
+        'Round-Robin' => 'Todos contra todos',
+        'Least-Busy' => 'Menos ocupado',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create InboundEmail' => 'Buat Akun Email',
+      'Create InboundEmail' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Actions' => 'Actions',
-      'Main' => 'Utama',
+      'Actions' => 'Acciones',
+      'Main' => 'Principal',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'tidak bisa terhubung ke server IMAP',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
     ),
   ),
-  'Integration' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'enabled' => 'Diaktifkan',
-      'clientId' => 'ID klien',
-      'clientSecret' => 'klien Rahasia',
-      'redirectUri' => 'redirect URI',
-      'apiKey' => 'API Key',
+      'enabled' => 'Activado',
+      'clientId' => 'ID Cliente',
+      'clientSecret' => 'Secreto del cliente',
+      'redirectUri' => 'Redireccionar URI',
+      'apiKey' => ' Clave para el API de JavaScript',
     ),
-    'titles' => 
+    'titles' =>
     array (
       'GoogleMaps' => 'Google Maps',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectIntegration' => 'Pilih integrasi dari menu.',
-      'noIntegrations' => 'Tidak ada integrasi tersedia.',
+      'selectIntegration' => 'Seleccionar una integración en menú',
+      'noIntegrations' => 'No hay integraciones disponibles',
     ),
-    'help' => 
+    'help' =>
     array (
-      'Google' => '<P> <b> Mendapatkan OAuth 2.0 mandat dari Google Developers Console. </ B> </ p> <p> Kunjungi <a href="https://console.developers.google.com/project"> Google Developers konsol </a> untuk mendapatkan OAuth 2.0 mandat seperti ID Klien dan Klien Rahasia yang dikenal baik aplikasi Google dan EspoCRM. </ p>',
-      'GoogleMaps' => '<p>Obtain API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>.</p>',
+      'Google' => '<p><b>Obtener las credenciales de  OAuth 2.0 desde la Consola de Google Developers.</b></p><p>Visita <a href="https://console.developers.google.com/project">Consola Google Developers</a> para obtener las credenciales de  OAuth 2.0 tales como  ID Cliente y Secreto de Cliente que son conocidos por ambos Google y la aplicación EspoCRM.</p>',
+      'GoogleMaps' => '<p>Para obtener una clave para el API de JavaScript, haga <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">click aquí</a>.</p>',
     ),
   ),
-  'Job' => 
+  'Job' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Status',
-      'executeTime' => 'mengeksekusi Pada',
-      'attempts' => 'Attempts Left',
-      'failedAttempts' => 'Failed Attempts',
-      'serviceName' => 'Layanan',
-      'method' => 'metode',
+      'status' => 'Estado',
+      'executeTime' => 'Ejecutar a',
+      'attempts' => 'Intentos restantes',
+      'failedAttempts' => 'Intentos Fallidos',
+      'serviceName' => 'Servicio',
+      'method' => 'Método',
       'methodName' => 'Method',
-      'scheduledJob' => 'Pekerjaan Terjadwal',
+      'scheduledJob' => 'Tarea Programada',
       'scheduledJobJob' => 'Scheduled Job Name',
-      'data' => 'Data',
+      'data' => 'Datos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Pending' => 'Tunda',
-        'Success' => 'Berhasil',
-        'Running' => 'Berjalan',
-        'Failed' => 'Gagal',
+        'Pending' => 'Pendiente',
+        'Success' => 'Exitoso',
+        'Running' => 'Corriendo',
+        'Failed' => 'Falló',
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'width' => 'Lebar (%)',
-      'link' => 'Tautan',
-      'notSortable' => 'Not Sortable',
-      'align' => 'Rata',
-      'panelName' => 'Panel Name',
-      'style' => 'Style',
-      'sticked' => 'Sticked',
+      'width' => 'Ancho (%)',
+      'link' => 'Enlace',
+      'notSortable' => 'No ordenable',
+      'align' => 'Alinear',
+      'panelName' => 'Nombre del Panel',
+      'style' => 'Estilo',
+      'sticked' => 'Pegado',
       'isLarge' => 'Large font size',
       'dynamicLogicVisible' => 'Conditions making panel visible',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
-        'left' => 'Kiri',
-        'right' => 'Kanan',
+        'left' => 'Izquierda',
+        'right' => 'Derecha',
       ),
-      'style' => 
+      'style' =>
       array (
-        'default' => 'Default',
-        'success' => 'Success',
-        'danger' => 'Danger',
-        'info' => 'Info',
-        'warning' => 'Warning',
-        'primary' => 'Primary',
+        'default' => 'Borrador',
+        'success' => 'Exito',
+        'danger' => 'Peligro',
+        'info' => 'Información',
+        'warning' => 'Advertencia',
+        'primary' => 'Principal',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'New panel' => 'New panel',
       'Layout' => 'Layout',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'campaign' => 'Campaign',
@@ -2263,7 +2294,7 @@ Sintaks yang tersedia:
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Payload',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Target List',
       'campaign' => 'Campaign',
@@ -2271,27 +2302,27 @@ Sintaks yang tersedia:
       'targetTeam' => 'Target Team',
       'logRecords' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Create Entry Point',
       'Generate New API Key' => 'Generate New API Key',
       'Request' => 'Request',
       'Confirm Opt-In' => 'Confirm Opt-In',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Create new API Key',
       'optInConfirmationExpired' => 'Opt-in confirmation link is expired.',
       'optInIsConfirmed' => 'Opt-in is confirmed.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Markdown is supported.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Number',
       'data' => 'Data',
@@ -2300,447 +2331,448 @@ Sintaks yang tersedia:
       'createdAt' => 'Entered At',
       'isCreated' => 'Is Lead Created',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => 'Lead Capture',
       'target' => 'Target',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'post' => 'Posting',
-      'attachments' => 'lampiran',
-      'targetType' => 'Target',
-      'teams' => 'tim',
-      'users' => 'pengguna',
-      'portals' => 'portal',
-      'type' => 'Type',
-      'isGlobal' => 'Is Global',
-      'isInternal' => 'Is Internal (for internal users)',
-      'related' => 'Related',
-      'createdByGender' => 'Created By Gender',
-      'data' => 'Data',
-      'number' => 'Number',
+      'post' => 'Entrada',
+      'attachments' => 'Adjuntos',
+      'targetType' => 'Objetivo',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'portals' => 'Portales',
+      'type' => 'Tipo',
+      'isGlobal' => 'Es global',
+      'isInternal' => 'Es Interno (para usuarios internos)',
+      'related' => 'Relacionado',
+      'createdByGender' => 'Creado por género',
+      'data' => 'Datos',
+      'number' => 'Número',
     ),
-    'filters' => 
+    'filters' =>
     array (
-      'all' => 'Semua',
-      'posts' => 'Posts',
-      'updates' => 'update',
+      'all' => 'Todos',
+      'posts' => 'Entradas',
+      'updates' => 'Actualizaciones',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
-        'self' => 'untuk sendiri',
-        'users' => 'Untuk pengguna tertentu',
-        'teams' => 'Untuk tim tertentu',
-        'all' => 'Untuk semua pengguna internal',
-        'portals' => 'Untuk semua pengguna Portal',
+        'self' => 'Para mí',
+        'users' => 'Para determinado/s usuario/s',
+        'teams' => 'Para determinado/s equipo/s',
+        'all' => 'Para todos los usuarios',
+        'portals' => 'Para los usuarios del portal',
       ),
-      'type' => 
+      'type' =>
       array (
         'Post' => 'Post',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'writeMessage' => 'Tulis pesan Anda disini',
+      'writeMessage' => 'Escriba su mensaje aquí',
     ),
-    'links' => 
+    'links' =>
     array (
       'superParent' => 'Super Parent',
       'related' => 'Related',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'logo' => 'Logo',
+      'name' => 'Nombre',
+      'logo' => 'Logotipo',
       'url' => 'URL',
-      'portalRoles' => 'peran',
-      'isActive' => 'Aktif',
-      'isDefault' => 'Atur ',
-      'tabList' => 'Daftar tabel',
-      'quickCreateList' => 'Buat Daftar Cepat',
-      'companyLogo' => 'Logo',
+      'portalRoles' => 'Roles',
+      'isActive' => 'Está activo',
+      'isDefault' => 'Portal por defecto',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'companyLogo' => 'Logotipo',
       'theme' => 'Tema',
-      'language' => 'Bahasa',
-      'dashboardLayout' => 'dashboard Layout',
-      'dateFormat' => 'Format tanggal',
-      'timeFormat' => 'Format waktu',
-      'timeZone' => 'Zona waktu',
-      'weekStart' => 'Hari Pertama dalam satu minggu',
-      'defaultCurrency' => 'Setelan mata uang',
-      'customUrl' => 'Custom URL',
-      'customId' => 'Custom ID',
+      'language' => 'Idioma',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'defaultCurrency' => 'Moneda por defecto',
+      'customUrl' => 'URL personalizada',
+      'customId' => 'ID personalizado',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'pengguna',
-      'portalRoles' => 'peran',
-      'notes' => 'Catatan',
-      'articles' => 'Basis Pengetahuan Artikel',
+      'users' => 'Usuarios',
+      'portalRoles' => 'Roles',
+      'notes' => 'Notas',
+      'articles' => 'Artículos de la base de conocimiento',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portalRoles' => 'Peran spesifik Portal akan diterapkan untuk semua pengguna portal ini.',
+      'portalRoles' => 'Los roles del portal indicados se aplicarán a todos los usuarios de este portal.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Portal' => 'Buat Portal',
-      'User Interface' => 'Antarmuka pengguna',
-      'General' => 'Umum',
-      'Settings' => 'pengaturan',
+      'Create Portal' => 'Crear portal',
+      'User Interface' => 'Interfaz del Usuario',
+      'General' => 'General',
+      'Settings' => 'Ajustes',
     ),
   ),
-  'PortalRole' => 
+  'PortalRole' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportPermission' => 'Export Permission',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'pengguna',
+      'users' => 'Usuarios',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'exportPermission' => 'Defines whether portal users have an ability to export records.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Access' => 'Akses',
-      'Create PortalRole' => 'Buat Portal Peran',
-      'Scope Level' => 'lingkup Tingkat',
-      'Field Level' => 'Tingkat Kolom',
+      'Access' => 'Acceder',
+      'Create PortalRole' => 'Crear rol del portal',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
   ),
-  'PortalUser' => 
+  'PortalUser' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create PortalUser' => 'Create Portal User',
+      'Create PortalUser' => 'Crear usuario del portal',
     ),
   ),
-  'Preferences' => 
+  'Preferences' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'dateFormat' => 'Format tanggal',
-      'timeFormat' => 'Format waktu',
-      'timeZone' => 'Zona waktu',
-      'weekStart' => 'Hari Pertama dalam satu minggu',
-      'thousandSeparator' => 'Thousand Separator',
-      'decimalMark' => 'Tanda desimal',
-      'defaultCurrency' => 'Setelan mata uang',
-      'currencyList' => 'Daftar mata uang',
-      'language' => 'Bahasa',
-      'smtpServer' => 'Server',
-      'smtpPort' => 'Port',
-      'smtpAuth' => 'Tupoksi',
-      'smtpSecurity' => 'Keamanan',
-      'smtpUsername' => 'Nama pengguna',
-      'emailAddress' => 'E-mail',
-      'smtpPassword' => 'Kata sandi',
-      'smtpEmailAddress' => 'Alamat email',
-      'exportDelimiter' => 'Pembatas Ekspor',
-      'receiveAssignmentEmailNotifications' => 'Menerima Pemberitahuan Email pada Tugas',
-      'receiveMentionEmailNotifications' => 'Email notifications about mentions in posts',
-      'receiveStreamEmailNotifications' => 'Email notifications about posts and status updates',
-      'autoFollowEntityTypeList' => 'Auto-Follow',
-      'signature' => 'email Signature',
-      'dashboardTabList' => 'Daftar tabel',
-      'defaultReminders' => 'Atur Pengingat',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'smtpEmailAddress' => 'Correo electrónico',
+      'exportDelimiter' => 'Separador de campos',
+      'receiveAssignmentEmailNotifications' => 'Recibir notificaciones por correo electrónico al ser asignado',
+      'receiveMentionEmailNotifications' => 'Notificaciones por correo electrónico acerca de menciones en los mensajes',
+      'receiveStreamEmailNotifications' => 'Notificaciones por correo electrónico sobre los mensajes y actualizaciones de estado',
+      'autoFollowEntityTypeList' => 'Seguir automaticamente (global)',
+      'signature' => 'Firma de correo',
+      'dashboardTabList' => 'Lista de pestañas',
+      'defaultReminders' => 'Recordatorios por defecto',
       'theme' => 'Tema',
-      'useCustomTabList' => 'Daftar Tabel Biasa',
-      'tabList' => 'Daftar tabel',
-      'emailReplyToAllByDefault' => 'Email Balas ke Semua sebagai pengaturan',
-      'dashboardLayout' => 'Dashboard Layout',
-      'emailReplyForceHtml' => 'Email Reply in HTML',
-      'doNotFillAssignedUserIfNotRequired' => 'Do not pre-fill assigned user on record creation',
-      'followEntityOnStreamPost' => 'Auto-follow record after posting in Stream',
-      'followCreatedEntities' => 'Auto-follow created records',
-      'followCreatedEntityTypeList' => 'Auto-follow created records of specific entity types',
+      'useCustomTabList' => 'Lista de pestañas personalizadas',
+      'tabList' => 'Lista de pestañas',
+      'emailReplyToAllByDefault' => 'Correo: responder a todos por defecto',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'emailReplyForceHtml' => 'Correo: responder en formato HTML',
+      'doNotFillAssignedUserIfNotRequired' => 'No precompletar usuario asignado en la creación de registros',
+      'followEntityOnStreamPost' => 'Seguimiento automático después de publicar en la historia',
+      'followCreatedEntities' => 'Seguimiento automático de registros creados',
+      'followCreatedEntityTypeList' => 'Seguimiento automático de registros creados de tipos de entidades específicos',
       'emailUseExternalClient' => 'Use an external email client',
       'scopeColorsDisabled' => 'Disable scope colors',
       'tabColorsDisabled' => 'Disable tab colors',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'Minggu',
-        1 => 'Senin',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Notifications' => 'pemberitahuan',
-      'User Interface' => 'Antarmuka pengguna',
+      'Notifications' => 'Notificaciones',
+      'User Interface' => 'Interfaz de usuario',
       'SMTP' => 'SMTP',
-      'Misc' => 'Lain-lain',
-      'Locale' => 'lokal',
+      'Misc' => 'Misceláneos',
+      'Locale' => 'Localización',
       'Reset Dashboard to Default' => 'Reset Dashboard to Default',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'autoFollowEntityTypeList' => 'Pengguna secara otomatis akan mengikuti semua catatan baru jenis entitas yang dipilih, akan melihat informasi yang mengalir dan menerima pemberitahuan.',
-      'doNotFillAssignedUserIfNotRequired' => 'When create record assigned user won\'t be filled with own user unless the field is required.',
-      'followCreatedEntities' => 'When create new records, they will be automatically followed even if assigned to another user.',
-      'followCreatedEntityTypeList' => 'When create new records of selected entity types, they will be followed automatically even if assigned to another user.',
+      'autoFollowEntityTypeList' => 'Siguirá automáticamente todos los registros nuevos (creados por cualquier usuario) de los tipos de entidad seleccionados. Para poder ver información en la historia y recibir notificaciones sobre todos los registros en el sistema.',
+      'doNotFillAssignedUserIfNotRequired' => 'Cuando cree un registro, el usuario asignado no se completará con su propio usuario a menos que el campo sea obligatorio.',
+      'followCreatedEntities' => 'Al crear nuevos registros, se seguirán automáticamente incluso si se asignaron a otro usuario.',
+      'followCreatedEntityTypeList' => 'Al crear nuevos registros de los tipos de entidad seleccionados, se seguirán automáticamente incluso si se asignaron a otro usuario.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'roles' => 'peran',
-      'assignmentPermission' => 'Ijin Penugasan',
-      'userPermission' => 'Izin pengguna',
-      'portalPermission' => 'Izin Portal',
-      'groupEmailAccountPermission' => 'Group Email Account Permission',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'assignmentPermission' => 'Asignación de permisos',
+      'userPermission' => 'Permisos de Usuario',
+      'portalPermission' => 'Permisos del portal',
+      'groupEmailAccountPermission' => 'Permiso de la cuenta de correo grupal',
       'exportPermission' => 'Export Permission',
       'dataPrivacyPermission' => 'Data Privacy Permission',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'pengguna',
-      'teams' => 'tim',
+      'users' => 'Usuarios',
+      'teams' => 'Equipos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'assignmentPermission' => 'Memungkinkan untuk membatasi kemampuan untuk menetapkan catatan dan pesan posting ke pengguna lain.
+      'assignmentPermission' => 'Permite restringir la capacidad de los usuarios para que asignen registros y publicaciones a otros usuarios.
 
-semua - tidak ada pembatasan
+todo - sin restricción
 
-Tim - dapat menetapkan dan posting hanya untuk rekan
+equipo - puede asignar a usuarios de su propio equipo
 
-tidak ada - dapat menetapkan dan posting hanya untuk diri',
-      'userPermission' => 'Memungkinkan untuk membatasi kemampuan bagi pengguna untuk melihat kegiatan, kalender dan aliran pengguna lain.
+no - solo puede asignarse a sí mismo',
+      'userPermission' => 'Permite restringir la capacidad de los usuarios para ver tareas, calendarios y la historia de otros usuarios.
 
-semua - bisa melihat semua
+todo - pueden ver todo
 
-Tim - dapat melihat kegiatan rekan tim hanya
+equipo - pueden ver las actividades de su equipo
 
-tidak ada - tidak bisa melihat',
-      'portalPermission' => 'Mendefinisikan akses ke portal informasi, kemampuan untuk mengkonversi kontak untuk pengguna portal dan memposting pesan ke pengguna Portal.',
-      'groupEmailAccountPermission' => 'Defines an access to group email accounts, an ability to send emails from group SMTP.',
+no - solo las propias',
+      'portalPermission' => 'Define un acceso a la información del portal, la capacidad de publicar mensajes a los usuarios del portal.
+',
+      'groupEmailAccountPermission' => 'Define el acceso a las cuentas de correo grupales, la capacidad de enviar correos a través del SMTP grupal.',
       'exportPermission' => 'Defines whether users have an ability to export records.',
       'dataPrivacyPermission' => 'Allows to view and erase personal data.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Access' => 'Mengakses',
-      'Create Role' => 'Buat Peran',
-      'Scope Level' => 'lingkup Tingkat',
-      'Field Level' => 'Tingkat lapangan',
+      'Access' => 'Acceso',
+      'Create Role' => 'Crear rol',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
-        'not-set' => 'tidak diatur',
-        'enabled' => 'diaktifkan',
-        'disabled' => 'dimatikan',
+        'not-set' => 'sin establecer',
+        'enabled' => 'activado',
+        'disabled' => 'desactivado',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
-        'all' => 'semua',
-        'team' => 'tim',
-        'account' => 'Account',
-        'contact' => 'kontak',
-        'own' => 'sendiri',
-        'no' => 'tidak',
-        'yes' => 'ya',
-        'not-set' => 'tidak diatur',
+        'all' => 'Todos',
+        'team' => 'Equipo',
+        'account' => 'Cuenta',
+        'contact' => 'Contacto',
+        'own' => 'Propio',
+        'no' => 'No',
+        'yes' => 'Si',
+        'not-set' => 'Sin establecer',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
-      'read' => 'Baca',
-      'edit' => 'Edit',
-      'delete' => 'Hapus',
-      'stream' => 'Aliran',
-      'create' => 'Membuat',
+      'read' => 'Leer',
+      'edit' => 'Editar',
+      'delete' => 'Borrar',
+      'stream' => 'Historia',
+      'create' => 'Crear',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'changesAfterClearCache' => 'Semua perubahan dalam kontrol akses akan diterapkan setelah cache dibersihkan.',
+      'changesAfterClearCache' => 'Todos los cambios en el control de acceso serán aplicacados después de limpiar la caché',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'status' => 'Status',
-      'job' => 'Pekerjaan',
-      'scheduling' => 'penjadwalan',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'job' => 'Trabajo',
+      'scheduling' => 'Programación (notación CRONTab)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'log' => 'Log',
+      'log' => 'Registro',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create ScheduledJob' => 'Buat Pekerjaan Terjadwal',
+      'Create ScheduledJob' => 'Crear tarea programada',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
-        'Cleanup' => 'Membersihkan',
-        'CheckInboundEmails' => 'Periksa Akun Email Grup',
-        'CheckEmailAccounts' => 'Periksa Akun Email Pribadi',
-        'SendEmailReminders' => 'Kirim Pengingat Email',
-        'AuthTokenControl' => 'Tupoksi Token Kontrol',
-        'SendEmailNotifications' => 'Send Email Notifications',
+        'Cleanup' => 'Limpiar',
+        'CheckInboundEmails' => 'Comprobar cuentas de correo grupales',
+        'CheckEmailAccounts' => 'Comprobar cuentas de correo personales',
+        'SendEmailReminders' => 'Enviar Recordatorios por Email',
+        'AuthTokenControl' => 'Control del Token de Autenticación',
+        'SendEmailNotifications' => 'Enviar notificaciones por correo electrónico',
         'CheckNewVersion' => 'Check for New Version',
-        'ProcessMassEmail' => 'Kirim Mass Email',
-        'ControlKnowledgeBaseArticleStatus' => 'Basis Pengetahuan kontrol Status Pasal',
+        'ProcessMassEmail' => 'Enviar correo masivo',
+        'ControlKnowledgeBaseArticleStatus' => 'Controlar estado de los artículos de la base de conocimiento',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
-        'linux' => 'Catatan: Tambahkan baris ini ke file kontak untuk menjalankan Espo Pekerjaan Terjadwal:',
-        'mac' => 'Catatan: Tambahkan baris ini ke file kontak untuk menjalankan Espo Pekerjaan Terjadwal:',
-        'windows' => 'Catatan: Buat file batch dengan perintah berikut untuk menjalankan Espo Pekerjaan Terjadwal menggunakan Windows Scheduled Tasks:',
-        'default' => 'Catatan: Tambahkan perintah ini untuk Cron Job (Scheduled Task):',
+        'linux' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'mac' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'windows' => 'Nota: Crear un archivo por lotes con los siguientes comandos para ejecutar tareas programadas de EspoCRM usando tareas programadas de Windows:',
+        'default' => 'Nota: Agregar este comando a Cron Job (Tarea Programada):',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktif',
-        'Inactive' => 'non-aktif',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'scheduling' => 'notasi crontab. Mendefinisikan frekuensi berjalan pekerjaan.
+      'scheduling' => 'Define cuándo y cada cuánto el trabajo será ejecutado
 
-* / 5 * * * * - setiap 5 menit
+*/5 * * * * - cada 5 minutos
 
-0 * / 2 * * * - setiap 2 jam
+0 */2 * * * - cada 2 horas
 
-30 1 * * * - di 1:30 sekali sehari
+30 1 * * * - a las 01:30 cada día
 
-0 0 1 * * - pada hari pertama bulan',
+0 0 1 * * - el primer día del mes',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Status',
-      'executionTime' => 'Waktu eksekusi',
-      'target' => 'Target',
+      'status' => 'Estado',
+      'executionTime' => 'Fecha de ejecución',
+      'target' => 'Objetivo',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'useCache' => 'Gunakan Cache',
-      'dateFormat' => 'Format tanggal',
-      'timeFormat' => 'Format waktu',
-      'timeZone' => 'Zona waktu',
-      'weekStart' => 'Hari Pertama Minggu',
-      'thousandSeparator' => 'Pemisah ribuan',
-      'decimalMark' => 'Tanda desimal',
-      'defaultCurrency' => 'Setekan Mata Uang',
-      'baseCurrency' => 'Mata uang dasar',
-      'currencyRates' => 'Nilau Tukar',
-      'currencyList' => 'Daftar mata uang',
-      'language' => 'Bahasa',
-      'companyLogo' => 'Logo perusahaan',
-      'smtpServer' => 'Server',
-      'smtpPort' => 'Port',
-      'smtpAuth' => 'Tupoksi',
-      'smtpSecurity' => 'Keamanan',
-      'smtpUsername' => 'Nama pengguna',
-      'emailAddress' => 'E-mail',
-      'smtpPassword' => 'Kata sandi',
-      'outboundEmailFromName' => 'Dari nama',
-      'outboundEmailFromAddress' => 'dari Alamat',
-      'outboundEmailIsShared' => 'Dibagikan ',
-      'recordsPerPage' => 'Catatan Per Halaman',
-      'recordsPerPageSmall' => 'Catatan Per Halaman (Kecil)',
-      'tabList' => 'Daftar tabel',
-      'quickCreateList' => 'Buat Daftar Cepat ',
-      'exportDelimiter' => 'ekspor Pembatas',
-      'globalSearchEntityList' => 'Daftar Pencarian Global Entity',
-      'authenticationMethod' => 'Metode otentikasi',
-      'ldapHost' => 'Host',
-      'ldapPort' => 'Port',
-      'ldapAuth' => 'Tupoksi',
-      'ldapUsername' => 'Nama pengguna',
-      'ldapPassword' => 'Kata sandi',
-      'ldapBindRequiresDn' => 'Bind Requires Dn',
-      'ldapBaseDn' => 'Base Dn',
-      'ldapAccountCanonicalForm' => 'Account Canonical Form',
-      'ldapAccountDomainName' => 'Nama akun Domain',
-      'ldapTryUsernameSplit' => 'Try Username Split',
+      'useCache' => 'Usar caché',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'baseCurrency' => 'Moneda Base',
+      'currencyRates' => 'Tipos de cambio',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'companyLogo' => 'Logo de la empresa',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'outboundEmailFromName' => 'De (nombre):',
+      'outboundEmailFromAddress' => 'De (email)',
+      'outboundEmailIsShared' => '¿Es compartido?',
+      'recordsPerPage' => 'Registros por página',
+      'recordsPerPageSmall' => 'Registros por página (pequeño)',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'exportDelimiter' => 'Separador de campos',
+      'globalSearchEntityList' => 'Búsqueda Global: Lista de entidades',
+      'authenticationMethod' => 'Método de autenticación',
+      'ldapHost' => 'Servidor',
+      'ldapPort' => 'Puerto',
+      'ldapAuth' => '¿Requiere autenticación?',
+      'ldapUsername' => 'Nombre de usuario',
+      'ldapPassword' => 'Contraseña',
+      'ldapBindRequiresDn' => 'Bind Necesita Nd (Nombre Dominio)',
+      'ldapBaseDn' => 'ND Base',
+      'ldapAccountCanonicalForm' => 'Forma canónica de la cuenta',
+      'ldapAccountDomainName' => 'Nombre de Dominio de la Cuenta',
+      'ldapTryUsernameSplit' => 'Intentar dividir el nombre de Usuario',
       'ldapPortalUserLdapAuth' => 'Use LDAP Authentication for Portal Users',
-      'ldapCreateEspoUser' => 'Buat Pengguna di EspoCRM',
-      'ldapSecurity' => 'Keamanan',
-      'ldapUserLoginFilter' => 'Filter Login Pengguna',
-      'ldapAccountDomainNameShort' => 'Akun Domain Name Pendek',
-      'ldapOptReferrals' => 'opt Rujukan',
-      'ldapUserNameAttribute' => 'Username Attribute',
-      'ldapUserObjectClass' => 'User ObjectClass',
-      'ldapUserTitleAttribute' => 'User Title Attribute',
-      'ldapUserFirstNameAttribute' => 'User First Name Attribute',
-      'ldapUserLastNameAttribute' => 'User Last Name Attribute',
-      'ldapUserEmailAddressAttribute' => 'User Email Address Attribute',
-      'ldapUserTeams' => 'User Teams',
-      'ldapUserDefaultTeam' => 'User Default Team',
-      'ldapUserPhoneNumberAttribute' => 'User Phone Number Attribute',
+      'ldapCreateEspoUser' => 'Crear usuario en EspoCRM',
+      'ldapSecurity' => 'Seguridad',
+      'ldapUserLoginFilter' => 'Usar Filtro en el Login',
+      'ldapAccountDomainNameShort' => 'Nombre Dominio Corto para la Cuenta',
+      'ldapOptReferrals' => 'Referencias Opt',
+      'ldapUserNameAttribute' => 'Atributo de nombre de usuario',
+      'ldapUserObjectClass' => 'Usuario ObjectClass',
+      'ldapUserTitleAttribute' => 'Atributo del usuario Título',
+      'ldapUserFirstNameAttribute' => 'Nombre de usuario Atributo',
+      'ldapUserLastNameAttribute' => 'Apellido de usuario Atributo',
+      'ldapUserEmailAddressAttribute' => 'Dirección de correo electrónico del usuario atributo',
+      'ldapUserTeams' => 'Los equipos de los usuarios',
+      'ldapUserDefaultTeam' => 'Equipo de usuario por defecto',
+      'ldapUserPhoneNumberAttribute' => 'Número de teléfono del usuario Atributo',
       'ldapPortalUserPortals' => 'Default Portals for a Portal User',
       'ldapPortalUserRoles' => 'Default Roles for a Portal User',
-      'exportDisabled' => 'Menonaktifkan Ekspor (hanya admin diperbolehkan)',
-      'assignmentNotificationsEntityList' => 'Entities to Notify about upon Assignment',
-      'assignmentEmailNotifications' => 'Kirim Notifikasi Email pada Tugas',
-      'assignmentEmailNotificationsEntityList' => 'Entitas untuk Beritahu tentang dengan Email pada Tugas',
-      'streamEmailNotifications' => 'Notifications about updates in Stream for internal users',
-      'portalStreamEmailNotifications' => 'Notifications about updates in Stream for portal users',
-      'streamEmailNotificationsEntityList' => 'Stream email notifications scopes',
+      'exportDisabled' => 'Desactivar exportar (Solo estará permitido para el administrador)',
+      'assignmentNotificationsEntityList' => 'Estas entidades notificarán al usuario cuando le sean asignadas',
+      'assignmentEmailNotifications' => 'Se enviará un correo cuando reciba una asignación',
+      'assignmentEmailNotificationsEntityList' => 'Entidades a notificar',
+      'streamEmailNotifications' => 'Se enviará un correo sobre las actualizaciones en la historia para los usuarios internos',
+      'portalStreamEmailNotifications' => 'Se enviará un correo sobre actualizaciones en la historia a los usuarios del portal',
+      'streamEmailNotificationsEntityList' => 'Se notificará por correo en las siguientes entidades',
       'streamEmailNotificationsTypeList' => 'What to notify about',
-      'b2cMode' => 'B2C Modus',
-      'avatarsDisabled' => 'Nonaktifkan Avatar',
-      'followCreatedEntities' => 'Ikuti Entitas yang Dibuat',
-      'displayListViewRecordCount' => 'Menampilkan total Count (pada Daftar View)',
+      'b2cMode' => 'Modo B2C',
+      'avatarsDisabled' => 'Deshabilitar avatares',
+      'followCreatedEntities' => 'Seguir los registros creados',
+      'displayListViewRecordCount' => 'Mostrar totales (en la vista de lista)',
       'theme' => 'Tema',
-      'userThemesDisabled' => 'Nonaktifkan Pengguna Tema',
-      'emailMessageMaxSize' => 'E-mail Max Ukuran (Mb)',
-      'massEmailMaxPerHourCount' => 'Max hitungan e-mail yang dikirim per jam',
-      'personalEmailMaxPortionSize' => 'Max ukuran porsi email untuk pengambilan akun pribadi',
-      'inboundEmailMaxPortionSize' => 'Max ukuran porsi email untuk kelompok akun pengambilan',
-      'maxEmailAccountCount' => 'Max hitungan account email pribadi per pengguna',
-      'authTokenLifetime' => 'Tupoksi Token Lifetime (jam)',
-      'authTokenMaxIdleTime' => 'Tupoksi Token Max Idle Time (jam)',
-      'dashboardLayout' => 'Dashboard Layout (default)',
-      'siteUrl' => 'alamat URL',
-      'addressPreview' => 'alamat Preview',
-      'addressFormat' => 'alamat Format',
-      'notificationSoundsDisabled' => 'Disable Notification Sounds',
-      'applicationName' => 'Application Name',
-      'calendarEntityList' => 'Calendar Entity List',
-      'mentionEmailNotifications' => 'Send email notifications about mentions in posts',
-      'massEmailDisableMandatoryOptOutLink' => 'Disable mandatory opt-out link',
-      'activitiesEntityList' => 'Activities Entity List',
-      'historyEntityList' => 'History Entity List',
-      'currencyFormat' => 'Currency Format',
-      'currencyDecimalPlaces' => 'Currency Decimal Places',
-      'aclStrictMode' => 'ACL Strict Mode',
-      'aclAllowDeleteCreated' => 'Allow to remove created records',
-      'adminNotifications' => 'System notifications in administration panel',
+      'userThemesDisabled' => 'Deshabilitar temas de usuarios',
+      'emailMessageMaxSize' => 'Tamaño máximo de los correos entrantes (Mb)',
+      'massEmailMaxPerHourCount' => 'Cantidad máxima de correos enviados por hora',
+      'personalEmailMaxPortionSize' => 'Cantidad máxima de correos personales que se recuperarán cada vez',
+      'inboundEmailMaxPortionSize' => 'Cantidad máxima de correos grupales que se recuperarán cada vez',
+      'maxEmailAccountCount' => 'Cantidad máxima de cuentas personales que se pueden crear por usuario',
+      'authTokenLifetime' => 'Vida del token de autenticación (horas)',
+      'authTokenMaxIdleTime' => 'Máximo tiempo de inactividad del token de autenticación (horas)',
+      'dashboardLayout' => 'Diseño del escritorio (por defecto)',
+      'siteUrl' => 'URL del sitio',
+      'addressPreview' => 'Vista previa de la dirección',
+      'addressFormat' => 'Formato de la Dirección',
+      'notificationSoundsDisabled' => 'Desactivar los sonidos de notificación',
+      'applicationName' => 'Nombre de la aplicación',
+      'calendarEntityList' => 'Lista de entidades calendario',
+      'mentionEmailNotifications' => 'Se enviará un correo cuando sean mencionados en los mensajes',
+      'massEmailDisableMandatoryOptOutLink' => 'Deshabilitar la obligatoridad del enlace "darse de baja" ',
+      'activitiesEntityList' => 'Lista de entidades de actividades',
+      'historyEntityList' => 'Lista de entidades de historia',
+      'currencyFormat' => 'Formato de Moneda',
+      'currencyDecimalPlaces' => 'Lugares decimales en la moneda',
+      'aclStrictMode' => 'ACL en modo estricto',
+      'aclAllowDeleteCreated' => 'Permitir eliminar registros creados',
+      'adminNotifications' => 'Notificaciones del sistema en el panel de administración',
       'adminNotificationsNewVersion' => 'Show notification when new EspoCRM version is available',
       'adminNotificationsNewExtensionVersion' => 'Show notification when new versions of extensions are available',
       'textFilterUseContainsForVarchar' => 'Use \'contains\' operator when filtering varchar fields',
@@ -2752,51 +2784,55 @@ tidak ada - tidak bisa melihat',
       'outboundEmailBccAddress' => 'BCC address for external clients',
       'cleanupDeletedRecords' => 'Clean up deleted records',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'Minggu',
-        1 => 'Senin',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
         1 => '10 USD',
         2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
         'Post' => 'Posts',
         'Status' => 'Status updates',
         'EmailReceived' => 'Received emails',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'recordsPerPage' => 'Jumlah record awalnya ditampilkan dalam daftar tampilan.',
-      'recordsPerPageSmall' => 'Jumlah record awal ditampilkan dalam panel hubungan.',
-      'outboundEmailIsShared' => 'Memungkinkan pengguna untuk mengirim email melalui SMTP ini.',
-      'followCreatedEntities' => 'Pengguna secara otomatis akan mengikuti catatan mereka menciptakan.',
-      'emailMessageMaxSize' => 'Semua email masuk melebihi ukuran tertentu akan diambil w / o tubuh dan lampiran.',
-      'authTokenLifetime' => 'Mendefinisikan bagaimana token lama bisa eksis.
-0 - berarti tidak ada kadaluarsa.',
-      'authTokenMaxIdleTime' => 'Mendefinisikan berapa lama sejak token akses terakhir bisa eksis.
-0 - berarti tidak ada kadaluarsa.',
-      'userThemesDisabled' => 'Jika dicentang maka pengguna tidak akan dapat memilih tema lain.',
-      'ldapUsername' => 'The full system user DN which allows to search other users. E.g. "CN=LDAP System User,OU=users,OU=espocrm, DC=test,DC=lan".',
-      'ldapPassword' => 'The password to access to LDAP server.',
-      'ldapAuth' => 'Access credentials for the LDAP server.',
-      'ldapUserNameAttribute' => 'The attribute to identify the user. 
-E.g. "userPrincipalName" or "sAMAccountName" for Active Directory, "uid" for OpenLDAP.',
-      'ldapUserObjectClass' => 'ObjectClass attribute for searching users. E.g. "person" for AD, "inetOrgPerson" for OpenLDAP.',
-      'ldapAccountCanonicalForm' => 'The type of your account canonical form. There are 4 options:<br>- \'Dn\' - the form in the format \'CN=tester,OU=espocrm,DC=test, DC=lan\'.<br>- \'Username\' - the form \'tester\'.<br>- \'Backslash\' - the form \'COMPANY\\tester\'.<br>- \'Principal\' - the form \'tester@company.com\'.',
-      'ldapBindRequiresDn' => 'The option to format the username in the DN form.',
-      'ldapBaseDn' => 'The default base DN used for searching users. E.g. "OU=users,OU=espocrm,DC=test, DC=lan".',
-      'ldapTryUsernameSplit' => 'The option to split a username with the domain.',
-      'ldapOptReferrals' => 'if referrals should be followed to the LDAP client.',
+      'recordsPerPage' => 'Número de registros a mostrar inicialmente en las vistas.',
+      'recordsPerPageSmall' => 'Número de registros a mostrar inicialmente en los paneles relacionados',
+      'outboundEmailIsShared' => 'Permitir a los usuarios enviar correos electrónicos desde esta dirección.',
+      'followCreatedEntities' => 'Los usuarios seguirán automáticamente los registros que ellos crearon.',
+      'emailMessageMaxSize' => 'Todos los correos entrantes que superen un tamaño especificado se omitirán.',
+      'authTokenLifetime' => 'Define cuanto tiempo de vida tienen los tokens.
+0 - significa que no caduca.',
+      'authTokenMaxIdleTime' => 'Define cuándo caduca el Token luego del último acceso.
+0 - significa que no caduca.',
+      'userThemesDisabled' => 'Si está marcado, los usuarios no podrán seleccionar otro tema.',
+      'ldapUsername' => 'El sistema de usuario DN completo que permite a los usuarios buscar otros. E.g. "CN=LDAP usuario del sistema,OU=users,OU=espocrm, DC=test,DC=lan".',
+      'ldapPassword' => 'La contraseña para acceder al servidor LDAP.',
+      'ldapAuth' => 'Credenciales de acceso para el servidor LDAP.',
+      'ldapUserNameAttribute' => 'El atributo para identificar al usuario.
+Por ejemplo: "userPrincipalName" o "sAMAccountName" para Active Directory, "uid" para OpenLDAP.',
+      'ldapUserObjectClass' => 'Atributo ObjectClass para buscar usuarios. Por ejemplo: "person" para AD, "inetOrgPerson" para OpenLDAP.',
+      'ldapAccountCanonicalForm' => 'El tipo de canonización de su cuenta. Hay 4 opciones:<br><br>
+\'Dn\' - en el formato \'CN=tester,OU=espocrm,DC=test,DC=lan\'<br>
+\'Username\' - \'tester\'<br>
+\'Backslash\' - "COMPANY/tester\'.<br>
+\'Principal\' - \'tester@company.com \'.',
+      'ldapBindRequiresDn' => 'La opción para formatear el nombre de usuario en el formulario de DN.',
+      'ldapBaseDn' => 'La base DN predeterminado utilizado para la búsqueda de los usuarios. E.g. "OU=users,OU=espocrm,DC=test, DC=lan".',
+      'ldapTryUsernameSplit' => 'La opción de dividir un nombre de usuario con el dominio.',
+      'ldapOptReferrals' => 'La opción de dividir un nombre de usuario con el dominio.',
       'ldapPortalUserLdapAuth' => 'Allow portal users to use LDAP authentication instead of Espo authentication.',
-      'ldapCreateEspoUser' => 'This option allows EspoCRM to create a user from the LDAP.',
-      'ldapUserFirstNameAttribute' => 'LDAP attribute which is used to determine the user first name. E.g. "givenname".',
+      'ldapCreateEspoUser' => 'Esta opción permite EspoCRM para crear un usuario del LDAP.',
+      'ldapUserFirstNameAttribute' => 'atributo LDAP que se utiliza para determinar el nombre de usuario primero. E.g. "givenname".',
       'ldapUserLastNameAttribute' => 'LDAP attribute which is used to determine the user last name. E.g. "sn".',
       'ldapUserTitleAttribute' => 'LDAP attribute which is used to determine the user title. E.g. "title".',
       'ldapUserEmailAddressAttribute' => 'LDAP attribute which is used to determine the user email address. E.g. "mail".',
@@ -2804,108 +2840,108 @@ E.g. "userPrincipalName" or "sAMAccountName" for Active Directory, "uid" for Ope
       'ldapUserLoginFilter' => 'The filter which allows to restrict users who able to use EspoCRM. E.g. "memberOf=CN=espoGroup, OU=groups,OU=espocrm, DC=test,DC=lan".',
       'ldapAccountDomainName' => 'The domain which is used for authorization to LDAP server.',
       'ldapAccountDomainNameShort' => 'The short domain which is used for authorization to LDAP server.',
-      'ldapUserTeams' => 'Teams for created user. For more, see user profile.',
-      'ldapUserDefaultTeam' => 'Default team for created user. For more, see user profile.',
+      'ldapUserTeams' => 'Equipos de usuario creado. Para más información, véase el perfil de usuario.',
+      'ldapUserDefaultTeam' => 'equipo predeterminado de usuario creado. Para más información, véase el perfil de usuario.',
       'ldapPortalUserPortals' => 'Default Portals for created Portal User',
       'ldapPortalUserRoles' => 'Default Roles for created Portal User',
-      'b2cMode' => 'By default EspoCRM is adapted for B2B. You can switch it to B2C.',
-      'currencyDecimalPlaces' => 'Number of decimal places. If empty then all nonempty decimal places will be displayed.',
-      'aclStrictMode' => 'Enabled: Access to scopes will be forbidden if it\'s not specified in roles.
+      'b2cMode' => 'Por defecto EspoCRM esta adaptado para B2B. Usted puede cambiarlo a B2C.',
+      'currencyDecimalPlaces' => 'Número de decimales. Si está vacía, se mostrarán todas las posiciones decimales disponibles.',
+      'aclStrictMode' => 'Activado: el acceso a los ámbitos estará prohibido si no está especificado en roles.
 
-Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
-      'aclAllowDeleteCreated' => 'Users will be able to remove records they created even if they don\'t have a delete access.',
+Deshabilitado: se permitirá el acceso a ámbitos si no está especificado en roles.',
+      'aclAllowDeleteCreated' => 'Los usuarios podrán eliminar los registros que hayan creado, incluso si no tienen un acceso de eliminación.',
       'textFilterUseContainsForVarchar' => 'If not checked then \'starts with\' operator is used. You can use the wildcard \'%\'.',
       'streamEmailNotificationsEntityList' => 'Email notifications about stream updates of followed records. Users will receive email notifications only for specified entity types.',
       'authTokenPreventConcurrent' => 'Users won\'t be able to be logged in on multiple devices simultaneously.',
       'emailAddressIsOptedOutByDefault' => 'When creating new record email addess will be marked as opted-out.',
       'cleanupDeletedRecords' => 'Removed records will be deleted from database after a while.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'System' => 'Sistem',
-      'Locale' => 'lokal',
+      'System' => 'Sistema',
+      'Locale' => 'Localización',
       'SMTP' => 'SMTP',
-      'Configuration' => 'Konfigurasi',
-      'In-app Notifications' => 'Pemberitahuan Dalam aplikasi ',
-      'Email Notifications' => 'notifikasi email',
-      'Currency Settings' => 'Pengaturan mata Uang',
-      'Currency Rates' => 'Rate Mata Uang',
-      'Mass Email' => 'e-mail massal',
-      'Test Connection' => 'Test Connection',
-      'Connecting' => 'Connecting...',
-      'Activities' => 'Activities',
-      'Admin Notifications' => 'Admin Notifications',
+      'Configuration' => 'Configuración',
+      'In-app Notifications' => 'Notificaciones del sistema',
+      'Email Notifications' => 'Notificaciones de correo',
+      'Currency Settings' => 'Ajustes de moneda',
+      'Currency Rates' => 'Tasas de conversión de divisas',
+      'Mass Email' => 'Correo masivo',
+      'Test Connection' => 'Probar conexión',
+      'Connecting' => 'Conectando...',
+      'Activities' => 'Actividades planeadas',
+      'Admin Notifications' => 'Notificaciones de administrador',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'ldapTestConnection' => 'The connection successfully established.',
-    ),
-  ),
-  'Team' => 
-  array (
-    'fields' => 
-    array (
-      'name' => 'Nama',
-      'roles' => 'peran',
-      'positionList' => 'Daftar posisi',
-    ),
-    'links' => 
-    array (
-      'users' => 'pengguna',
-      'notes' => 'Catatan',
-      'roles' => 'peran',
-      'inboundEmails' => 'Group Email Accounts',
-    ),
-    'tooltips' => 
-    array (
-      'roles' => 'Peran akses. Pengguna tim ini memperoleh tingkat kontrol akses dari peran yang dipilih.',
-      'positionList' => 'posisi yang tersedia di tim ini. Misalnya. Sales Person, Manager.',
-    ),
-    'labels' => 
-    array (
-      'Create Team' => 'Buat Tim',
+      'ldapTestConnection' => 'La conexión fue establecida con éxito.',
     ),
   ),
-  'Template' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'body' => 'Tubuh',
-      'entityType' => 'Jenis entitas',
-      'header' => 'Header',
-      'footer' => 'Footer',
-      'leftMargin' => 'Batas Kiri',
-      'topMargin' => 'Batas Atas',
-      'rightMargin' => 'Batas kanan',
-      'bottomMargin' => 'Batas Bawah',
-      'printFooter' => 'cetak Footer',
-      'footerPosition' => 'Posisi Footer ',
-      'variables' => 'Available Placeholders',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'positionList' => 'Lista de puestos',
+    ),
+    'links' =>
+    array (
+      'users' => 'Usuarios',
+      'notes' => 'Notas',
+      'roles' => 'Roles',
+      'inboundEmails' => 'Cuentas de correo grupales',
+    ),
+    'tooltips' =>
+    array (
+      'roles' => 'Todos los usuarios de este equipo tendrán acceso a la configuración desde los roles seleccionados',
+      'positionList' => 'Puestos disponibles en este equipo. Por ejemplo Vendedor, Gerente.',
+    ),
+    'labels' =>
+    array (
+      'Create Team' => 'Crear empresa',
+    ),
+  ),
+  'Template' =>
+  array (
+    'fields' =>
+    array (
+      'name' => 'Nombre',
+      'body' => 'Cuerpo',
+      'entityType' => 'Tipo de entidad',
+      'header' => 'Cabecera',
+      'footer' => 'Pié',
+      'leftMargin' => 'Margen Izquierdo',
+      'topMargin' => 'Margen Superior',
+      'rightMargin' => 'Margen Derecho',
+      'bottomMargin' => 'Margen Inferior',
+      'printFooter' => 'Imprimir Pié',
+      'footerPosition' => 'Posición del Pié',
+      'variables' => 'Etiquetas disponibles.',
       'pageOrientation' => 'Page Orientation',
       'pageFormat' => 'Paper Format',
       'fontFace' => 'Font',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Template' => 'Buat Template',
+      'Create Template' => 'Crear plantilla',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
         'Portrait' => 'Portrait',
         'Landscape' => 'Landscape',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
         'today' => 'Today (date)',
         'now' => 'Now (date-time)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefurat',
@@ -2937,1105 +2973,1104 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
         'times' => 'Times',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'footer' => 'Gunakan {PageNumber} untuk mencetak nomor halaman.',
-      'variables' => 'Copy-paste needed placeholder to Header, Body or Footer.',
+      'footer' => 'Use {pageNumber} para imprimir el número de página.',
+      'variables' => 'Copie y Pegue la etiqueta necesaria en el encabezado, cuerpo o pie de página.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'userName' => 'Nama pengguna',
-      'title' => 'Judul',
-      'isAdmin' => 'adalah Admin',
-      'defaultTeam' => 'Pengaturan Tim',
-      'emailAddress' => 'E-mail',
-      'phoneNumber' => 'Telepon',
-      'roles' => 'peran',
-      'portals' => 'portal',
-      'portalRoles' => 'Peran Portal',
-      'teamRole' => 'Posisi',
-      'password' => 'Kata sandi',
-      'currentPassword' => 'kata sandi saat ini',
-      'passwordConfirm' => 'konfirmasi sandi',
-      'newPassword' => 'kata sandi baru',
-      'newPasswordConfirm' => 'Konfirmasi password baru',
+      'name' => 'Nombre',
+      'userName' => 'Nombre Usuario',
+      'title' => 'Título',
+      'isAdmin' => 'Es administrador',
+      'defaultTeam' => 'Equipo por defecto',
+      'emailAddress' => 'Correo electrónico',
+      'phoneNumber' => 'Teléfono',
+      'roles' => 'Roles',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'teamRole' => 'Puesto',
+      'password' => 'Contraseña',
+      'currentPassword' => 'Contraseña Actual',
+      'passwordConfirm' => 'Confirmar Contraseña',
+      'newPassword' => 'Nueva Contraseña',
+      'newPasswordConfirm' => 'Confirmar Contraseña Nueva',
       'avatar' => 'Avatar',
-      'isActive' => 'Aktif',
-      'isPortalUser' => 'Adalah Portal Pengguna',
-      'contact' => 'Kontak',
-      'accounts' => 'Akun',
-      'account' => 'Account (Primary)',
-      'sendAccessInfo' => 'Kirim Email dengan Access Info untuk Pengguna',
+      'isActive' => 'Está activo',
+      'isPortalUser' => 'Es usuario del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'sendAccessInfo' => 'Enviar información de acceso al usuario',
       'portal' => 'Portal',
-      'gender' => 'Gender',
-      'position' => 'Position in Team',
-      'ipAddress' => 'IP Address',
-      'passwordPreview' => 'Password Preview',
+      'gender' => 'Sexo',
+      'position' => 'Puesto en el equipo',
+      'ipAddress' => 'Dirección IP',
+      'passwordPreview' => 'Vista previa de la contraseña',
       'isSuperAdmin' => 'Is Super Admin',
       'lastAccess' => 'Last Access',
-      'acceptanceStatus' => 'Acceptance Status',
-      'acceptanceStatusMeetings' => 'Acceptance Status (Meetings)',
-      'acceptanceStatusCalls' => 'Acceptance Status (Calls)',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'teams' => 'tim',
+      'teams' => 'Equipos',
       'roles' => 'Roles',
-      'notes' => 'Catatan',
-      'portals' => 'portals',
-      'portalRoles' => 'Portal Roles',
-      'contact' => 'Kontak',
-      'accounts' => 'Akun',
-      'account' => 'Account (Primary)',
-      'tasks' => 'Tasks',
-      'targetLists' => 'Daftar Target',
+      'notes' => 'Notas',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'tasks' => 'Tareas',
+      'targetLists' => 'Lista de objetivos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create User' => 'Buat pengguna',
-      'Generate' => 'Perbanyak',
-      'Access' => 'Akses',
-      'Preferences' => 'Pilihan',
-      'Change Password' => 'Ganti kata sandi',
-      'Teams and Access Control' => 'Tim dan akses kontrol',
-      'Forgot Password?' => 'Lupa kata sandi?',
-      'Password Change Request' => 'Permintaan penggantian kata sandi',
-      'Email Address' => 'Alamat email',
-      'External Accounts' => 'Accounts eksternal',
-      'Email Accounts' => 'Akun email',
+      'Create User' => 'Crear usuario',
+      'Generate' => 'Generar',
+      'Access' => 'Acceso',
+      'Preferences' => 'Preferencias',
+      'Change Password' => 'Cambiar Contraseña',
+      'Teams and Access Control' => 'Equipos y control de acceso',
+      'Forgot Password?' => '¿Olvidó la Contraseña?',
+      'Password Change Request' => 'Solicitar Cambio de Contraseña',
+      'Email Address' => 'Correo electrónico',
+      'External Accounts' => 'Cuentas externas',
+      'Email Accounts' => 'Cuentas de correo',
       'Portal' => 'Portal',
-      'Create Portal User' => 'Buat Portal Pengguna',
-      'Proceed w/o Contact' => 'Proceed w/o Contact',
+      'Create Portal User' => 'Crear usuario del portal',
+      'Proceed w/o Contact' => 'Continuar sin contacto',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'defaultTeam' => 'Semua catatan yang dibuat oleh pengguna ini akan berhubungan dengan tim ini secara default.',
-      'userName' => 'Huruf a-z, angka 0-9, titik, tanda hubung, @ -signs dan garis bawah diperbolehkan.',
-      'isAdmin' => 'user admin dapat mengakses segala sesuatu.',
-      'isActive' => 'Jika dicentang maka pengguna tidak akan bisa login.',
-      'teams' => 'Tim yang pengguna ini milik. Tingkat kontrol akses diwariskan dari peran tim.',
-      'roles' => 'peran akses tambahan. Menggunakannya jika pengguna bukan milik tim manapun atau Anda perlu untuk memperpanjang tingkat kontrol akses eksklusif untuk pengguna ini.',
-      'portalRoles' => 'peran Portal tambahan. Menggunakannya untuk memperluas tingkat kontrol akses eksklusif untuk pengguna ini.',
-      'portals' => 'Portal yang pengguna ini memiliki akses ke.',
+      'defaultTeam' => 'Todos los registros creados por este usuario serán relacionados a este equipo por defecto.',
+      'userName' => 'Letras a-z, números 0-9 y guiones bajos están permitidos',
+      'isAdmin' => 'El usuario administrador puede tener acceso a todo.',
+      'isActive' => 'Si lo desmarca, el usuario no podrá iniciar sesión.',
+      'teams' => 'Equipos a los que este usuario pertenece. Nivel de control de acceso se hereda de los roles de equipo.',
+      'roles' => 'Roles de acceso adicionales. Úsalo si el usuario no pertenece a ningún equipo o si necesita ampliar el nivel de control de acceso solo para este usuario.',
+      'portalRoles' => 'Roles adicionales del portal. Utilícelos para extender el nivel de acceso exclusivamente para este usuario.',
+      'portals' => 'El usuario tiene accesos a los siguientes portales.',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'passwordWillBeSent' => 'Password akan dikirimkan ke alamat email pengguna.',
-      'accountInfoEmailSubject' => 'EspoCRM Info Pengguna Access',
-      'accountInfoEmailBody' => 'akses informasi Anda:
+      'passwordWillBeSent' => 'La Contraseña será enviada al correo electrónico del usuario',
+      'accountInfoEmailSubject' => 'Información Cuenta',
+      'accountInfoEmailBody' => 'Información de tu cuenta:
 
-Username: {username}
-Password: {password}
+Nombre Usuario: {userName}
+Contraseña: {password}
 
 {siteUrl}',
-      'passwordChangeLinkEmailSubject' => 'Ubah Password Permintaan',
-      'passwordChangeLinkEmailBody' => 'Anda dapat mengubah password Anda dengan tautan ini {link}. url yang unik ini akan segera expired.',
-      'passwordChanged' => 'Sandi telah diubah',
-      'userCantBeEmpty' => 'Username tidak boleh kosong',
-      'wrongUsernamePasword' => 'Salah username / password',
-      'emailAddressCantBeEmpty' => 'Alamat Email tidak boleh kosong',
-      'userNameEmailAddressNotFound' => 'Username / Email Alamat tidak ditemukan',
-      'forbidden' => 'Dilarang, coba nanti',
-      'uniqueLinkHasBeenSent' => 'URL unik telah dikirim ke alamat email tertentu.',
-      'passwordChangedByRequest' => 'Password telah berubah.',
-      'setupSmtpBefore' => 'Anda perlu pengaturan href="{url}"> SMTP pengaturan </a> untuk membuat sistem dapat mengirim password email.',
+      'passwordChangeLinkEmailSubject' => 'Solicitud de Cambio de Contraseña',
+      'passwordChangeLinkEmailBody' => 'Puede cambiar su contraseña siguiendo este enlace {link}. Esta URL única expirará pronto.',
+      'passwordChanged' => 'La Contraseña ha sido cambiada',
+      'userCantBeEmpty' => 'El nombre de usuario no puede estar vacío',
+      'wrongUsernamePasword' => 'Nombre de usuario/contraseña incorrectos',
+      'emailAddressCantBeEmpty' => 'La dirección de correo no puede estar vacía',
+      'userNameEmailAddressNotFound' => 'Nombre de Usuario/Correo no encontrado',
+      'forbidden' => 'Prohibido, por favor intente después',
+      'uniqueLinkHasBeenSent' => 'El enlace único ha sido enviado a la dirección de correo electrónico especificada.',
+      'passwordChangedByRequest' => 'La contraseña ha sido cambiada.',
+      'setupSmtpBefore' => 'Necesita configurar los <a href="{url}">ajustes SMTP</a> para que el sistema pueda enviar contraseñas por correo.',
       'userNameExists' => 'User Name already exists',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
-        '' => 'Not Set',
-        'Male' => 'Male',
-        'Female' => 'Female',
+        '' => 'No definido',
+        'Male' => 'Masculino',
+        'Female' => 'Femenino',
         'Neutral' => 'Neutral',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMyTeam' => 'Hanya Tim saya',
+      'onlyMyTeam' => 'Solo de mi equipo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktif',
-      'activePortal' => 'Portal Aktif',
+      'active' => 'Activo',
+      'activePortal' => 'Portales activos',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'emailAddress' => 'E-mail',
-      'website' => 'Situs web',
-      'phoneNumber' => 'Telepon',
-      'billingAddress' => 'Alamat tagihan',
-      'shippingAddress' => 'Alamat Pengiriman',
-      'description' => 'Deskripsi',
-      'sicCode' => 'Kode Sic',
-      'industry' => 'Industri',
-      'type' => 'Mengetik',
-      'contactRole' => 'Judul',
-      'contactIsInactive' => 'Inactive',
-      'campaign' => 'Kampanye',
-      'targetLists' => 'Daftar Target',
-      'targetList' => 'Target Daftar',
-      'originalLead' => 'Original Lead',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'billingAddress' => 'Dirección de facturación',
+      'shippingAddress' => 'Dirección de envío',
+      'description' => 'Descripción',
+      'sicCode' => 'Código SIC',
+      'industry' => 'Industria',
+      'type' => 'Tipo',
+      'contactRole' => 'Título',
+      'contactIsInactive' => 'Inactivo',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'Kontak',
-      'opportunities' => 'peluang',
-      'cases' => 'kasus',
-      'documents' => 'dokumen',
-      'meetingsPrimary' => 'Rapat (diperluas)',
-      'callsPrimary' => 'Panggilan (diperluas)',
-      'tasksPrimary' => 'Tugas (diperluas)',
-      'emailsPrimary' => 'Email (diperluas)',
-      'targetLists' => 'Daftar Target',
-      'campaignLogRecords' => 'kampanye Log',
-      'campaign' => 'Kampanye',
-      'portalUsers' => 'Pengguna Portal',
-      'originalLead' => 'Original Lead',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'meetingsPrimary' => 'Reuniones (ampliado)',
+      'callsPrimary' => 'Llamadas (ampliado)',
+      'tasksPrimary' => 'Tareas (ampliado)',
+      'emailsPrimary' => 'Correos (ampliado)',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'portalUsers' => 'Usuarios del portal',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Customer' => 'Pelanggan',
-        'Investor' => 'Investor',
-        'Partner' => 'Pasangan',
-        'Reseller' => 'Reseller',
+        'Customer' => 'Cliente',
+        'Investor' => 'Inversor',
+        'Partner' => 'Socio',
+        'Reseller' => 'Revendedor',
       ),
-      'industry' => 
+      'industry' =>
       array (
-        'Aerospace' => 'Aerospace',
-        'Agriculture' => 'Pertanian',
-        'Advertising' => 'pengiklanan',
-        'Apparel & Accessories' => 'Pakaian & Aksesoris',
-        'Architecture' => 'Architecture',
-        'Automotive' => 'otomotif',
-        'Banking' => 'Perbankan',
-        'Biotechnology' => 'bioteknologi',
-        'Building Materials & Equipment' => 'Bahan & Peralatan Bangunan',
-        'Chemical' => 'Bahan kimia',
-        'Construction' => 'Construction',
-        'Computer' => 'Komputer',
-        'Defense' => 'Defense',
-        'Creative' => 'Creative',
-        'Culture' => 'Culture',
-        'Consulting' => 'Consulting',
-        'Education' => 'pendidikan',
-        'Electronics' => 'Elektronik',
-        'Electric Power' => 'Electric Power',
-        'Energy' => 'Energi',
-        'Entertainment & Leisure' => 'Hiburan & Kenyamanan',
-        'Finance' => 'Keuangan',
-        'Food & Beverage' => 'makanan & Minuman',
-        'Grocery' => 'toko bahan makanan',
-        'Hospitality' => 'Hospitality',
-        'Healthcare' => 'Kesehatan',
-        'Insurance' => 'Asuransi',
-        'Legal' => 'Hukum',
-        'Manufacturing' => 'pabrik',
-        'Mass Media' => 'Mass Media',
-        'Mining' => 'Mining',
-        'Music' => 'Music',
+        'Aerospace' => 'Aeroespacial',
+        'Agriculture' => 'Agrícola',
+        'Advertising' => 'Publicidad',
+        'Apparel & Accessories' => 'Ropa y accesorios',
+        'Architecture' => 'Arquitectura',
+        'Automotive' => 'Automotriz',
+        'Banking' => 'Banca',
+        'Biotechnology' => 'Biotecnología',
+        'Building Materials & Equipment' => 'Materiales de construcción y equipamiento',
+        'Chemical' => 'Química',
+        'Construction' => 'Construcción',
+        'Computer' => 'Computación',
+        'Defense' => 'Defensa',
+        'Creative' => 'Creativa',
+        'Culture' => 'Cultural',
+        'Consulting' => 'Consultoría',
+        'Education' => 'Educación',
+        'Electronics' => 'Electrónicos',
+        'Electric Power' => 'Energía eléctrica',
+        'Energy' => 'Energía',
+        'Entertainment & Leisure' => 'Entretenimiento y ocio',
+        'Finance' => 'Finanzas',
+        'Food & Beverage' => 'Alimentación y bebidas',
+        'Grocery' => 'Comestibles',
+        'Hospitality' => 'Hostelería',
+        'Healthcare' => 'Cuidado de la salud',
+        'Insurance' => 'Seguros',
+        'Legal' => 'Jurídica',
+        'Manufacturing' => 'Fabricación',
+        'Mass Media' => 'Medios masivos',
+        'Mining' => 'Minería',
+        'Music' => 'Música',
         'Marketing' => 'Marketing',
-        'Publishing' => 'Penerbitan',
-        'Petroleum' => 'Petroleum',
-        'Real Estate' => 'Perumahan',
-        'Retail' => 'Retail',
-        'Shipping' => 'Shipping',
-        'Service' => 'Layanan',
-        'Support' => 'Support',
-        'Sports' => 'Olahraga',
-        'Software' => 'Perangkat lunak',
-        'Technology' => 'Teknologi',
-        'Telecommunications' => 'telekomunikasi',
-        'Television' => 'Televisi',
-        'Testing, Inspection & Certification' => 'Testing, Inspection & Certification',
-        'Transportation' => 'Angkutan',
-        'Travel' => 'Travel',
-        'Venture Capital' => 'Modal usaha',
-        'Wholesale' => 'Wholesale',
-        'Water' => 'Water',
+        'Publishing' => 'Publicaciones',
+        'Petroleum' => 'Petróleo',
+        'Real Estate' => 'Bienes raices',
+        'Retail' => 'Venta al por menor',
+        'Shipping' => 'Naviera',
+        'Service' => 'Servicio',
+        'Support' => 'Soporte',
+        'Sports' => 'Deportes',
+        'Software' => 'Software',
+        'Technology' => 'Tecnología',
+        'Telecommunications' => 'Telecomunicaciones',
+        'Television' => 'Televisión',
+        'Testing, Inspection & Certification' => 'Pruebas, inspección y certificación',
+        'Transportation' => 'Transporte',
+        'Travel' => 'Viajes',
+        'Venture Capital' => 'Capital de riesgo',
+        'Wholesale' => 'Venta al por mayor',
+        'Water' => 'Agua',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Account' => 'buat akun',
-      'Copy Billing' => 'Salin Penagihan',
-      'Set Primary' => 'Set Primary',
+      'Create Account' => 'Crear cuenta',
+      'Copy Billing' => 'Copiar desde facturación',
+      'Set Primary' => 'Establecer como principal',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'customers' => 'pelanggan',
-      'partners' => 'Rekan',
-      'recentlyCreated' => 'Recently Created',
+      'customers' => 'Clientes',
+      'partners' => 'Socios',
+      'recentlyCreated' => 'Creado recientemente',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
-      'month' => 'Bulan',
-      'week' => 'Minggu',
-      'day' => 'Hari',
-      'agendaWeek' => 'Minggu',
-      'agendaDay' => 'Hari',
-      'timeline' => 'Timeline',
+      'month' => 'Mes',
+      'week' => 'Semana',
+      'day' => 'Día',
+      'agendaWeek' => 'Semana',
+      'agendaDay' => 'Día',
+      'timeline' => 'Línea de tiempo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Today' => 'Hari ini',
-      'Create' => 'Membuat',
-      'Shared' => 'Bersama',
-      'Add User' => 'Tambahkan pengguna',
-      'current' => 'arus',
-      'time' => 'waktu',
-      'User List' => 'User List',
-      'Manage Users' => 'Manage Users',
-      'View Calendar' => 'View Calendar',
+      'Today' => 'Hoy',
+      'Create' => 'Crear',
+      'Shared' => 'Compartido',
+      'Add User' => 'Agregar usuario',
+      'current' => 'actual',
+      'time' => 'hora',
+      'User List' => 'Lista de usuarios',
+      'Manage Users' => 'Administrar usuarios',
+      'View Calendar' => 'Ver calendario',
       'Create Shared View' => 'Create Shared View',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'parent' => 'Induk',
-      'status' => 'Status',
-      'dateStart' => 'Tanggal mulai',
-      'dateEnd' => 'Tanggal akhir',
-      'direction' => 'Arah',
-      'duration' => 'Lamanya',
-      'description' => 'Deskripsi',
-      'users' => 'pengguna',
-      'contacts' => 'kontak',
-      'leads' => 'memimpin',
-      'reminders' => 'pengingat',
-      'account' => 'Rekening',
-      'acceptanceStatus' => 'Acceptance Status',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'direction' => 'Dirección',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Berencana',
-        'Held' => 'diadakan',
-        'Not Held' => 'tidak Dimiliki',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'direction' => 
+      'direction' =>
       array (
-        'Outbound' => 'Keluar',
-        'Inbound' => 'Masuk',
+        'Outbound' => 'Saliente',
+        'Inbound' => 'Entrante',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'tak satupun',
-        'Accepted' => 'diterima',
-        'Declined' => 'ditolak',
-        'Tentative' => 'Sementara',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'set Dimiliki',
-      'setNotHeld' => 'Set Tidak Dimiliki',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Call' => 'Buat Panggilan',
-      'Set Held' => 'set Dimiliki',
-      'Set Not Held' => 'Set Tidak Dimiliki',
-      'Send Invitations' => 'Mengirim undangan',
+      'Create Call' => 'Crear llamada',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Berencana',
-      'held' => 'diadakan',
-      'todays' => 'hari ini',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'description' => 'Deskripsi',
-      'status' => 'Status',
-      'type' => 'Mengetik',
-      'startDate' => 'Mulai tanggal',
-      'endDate' => 'Tanggal akhir',
-      'targetLists' => 'Daftar Target',
-      'excludingTargetLists' => 'Tidak termasuk Daftar Sasaran',
-      'sentCount' => 'mengirim',
-      'openedCount' => 'dibuka',
-      'clickedCount' => 'diklik',
-      'optedOutCount' => 'Memilih keluar',
-      'bouncedCount' => 'terpental',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'status' => 'Estado',
+      'type' => 'Tipo',
+      'startDate' => 'Fecha de inicio',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'sentCount' => 'Enviado',
+      'openedCount' => 'Abierto',
+      'clickedCount' => 'Cliqueados',
+      'optedOutCount' => 'Se dieron de baja',
+      'bouncedCount' => 'Rebotados',
       'optedInCount' => 'Opted In',
-      'hardBouncedCount' => 'Terpental Keras',
-      'softBouncedCount' => 'lembut Terpental',
-      'leadCreatedCount' => 'memimpin Dibuat',
-      'revenue' => 'Pendapatan',
-      'revenueConverted' => 'Pendapatan (dikonversi)',
-      'budget' => 'anggaran belanja',
-      'budgetConverted' => 'Anggaran (dikonversi)',
+      'hardBouncedCount' => 'Rebotados Duro',
+      'softBouncedCount' => 'Rebotado Suave',
+      'leadCreatedCount' => 'Posibles clientes creados',
+      'revenue' => 'Ingresos',
+      'revenueConverted' => 'ingresos (convertido)',
+      'budget' => 'Presupuesto',
+      'budgetConverted' => 'Presupuesto (convertido)',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
       'mailMergeOnlyWithAddress' => 'Skip records w/o filled address',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Daftar Target',
-      'excludingTargetLists' => 'Tidak termasuk Daftar Sasaran',
-      'accounts' => 'Akun',
-      'contacts' => 'kontak',
-      'leads' => 'memimpin',
-      'opportunities' => 'peluang',
-      'campaignLogRecords' => 'Log',
-      'massEmails' => 'Email massal',
-      'trackingUrls' => 'pelacakan URL',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'opportunities' => 'Oportunidades',
+      'campaignLogRecords' => 'Registros',
+      'massEmails' => 'Correos masivos',
+      'trackingUrls' => 'URLs de seguimiento',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'E-mail',
-        'Web' => 'jaringan',
-        'Television' => 'Televisi',
+        'Email' => 'Correo electrónico',
+        'Web' => 'Web',
+        'Television' => 'Televisión',
         'Radio' => 'Radio',
-        'Newsletter' => 'laporan berkala',
-        'Mail' => 'Surat',
+        'Newsletter' => 'Boletín de noticias',
+        'Mail' => 'Correo',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Planning' => 'perencanaan',
-        'Active' => 'Aktif',
-        'Inactive' => 'non-aktif',
-        'Complete' => 'Lengkap',
+        'Planning' => 'Planificación',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
+        'Complete' => 'Completada',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Campaign' => 'Buat Kampanye',
-      'Target Lists' => 'Daftar Target',
-      'Statistics' => 'statistika',
-      'hard' => 'keras',
-      'soft' => 'lembut',
-      'Unsubscribe' => 'berhenti berlangganan',
-      'Mass Emails' => 'Email massal',
-      'Email Templates' => 'Template email',
-      'Unsubscribe again' => 'Unsubscribe again',
-      'Subscribe again' => 'Subscribe again',
-      'Create Target List' => 'Create Target List',
+      'Create Campaign' => 'Crear campaña',
+      'Target Lists' => 'Lista de objetivos',
+      'Statistics' => 'Estadísticas',
+      'hard' => 'duro',
+      'soft' => 'suave',
+      'Unsubscribe' => 'Desuscribirse',
+      'Mass Emails' => 'Correos masivos',
+      'Email Templates' => 'Plantillas de correos',
+      'Unsubscribe again' => 'Cancelar otra vez la suscripción',
+      'Subscribe again' => 'Suscribirse nuevamente',
+      'Create Target List' => 'Crear lista de obejtivos',
       'Mail Merge' => 'Mail Merge',
       'Generate Mail Merge PDF' => 'Generate Mail Merge PDF',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktif',
+      'active' => 'Activo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'unsubscribed' => 'Anda telah berhenti berlangganan dari milis kami.',
-      'subscribedAgain' => 'You are subscribed again.',
+      'unsubscribed' => 'Usted ha cancelado la suscripción a nuestra lista de correo.',
+      'subscribedAgain' => 'Se ha vuelto a suscribir.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'targetLists' => 'Target yang harus menerima pesan.',
-      'excludingTargetLists' => 'Target yang seharusnya tidak menerima pesan.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'action' => 'Tindakan',
-      'actionDate' => 'Tanggal',
-      'data' => 'Data',
-      'campaign' => 'Kampanye',
-      'parent' => 'Target',
-      'object' => 'Obyek',
-      'application' => 'Aplikasi',
-      'queueItem' => 'antrian Barang',
-      'stringData' => 'data String',
-      'stringAdditionalData' => 'String Data Tambahan',
-      'isTest' => 'Is Test',
+      'action' => 'Acción',
+      'actionDate' => 'Fecha',
+      'data' => 'Datos',
+      'campaign' => 'Campaña',
+      'parent' => 'Objetivo',
+      'object' => 'Objeto',
+      'application' => 'Aplicacion',
+      'queueItem' => 'Elemento de la cola',
+      'stringData' => 'Cadena de datos',
+      'stringAdditionalData' => 'Cadena de datos adicional',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'queueItem' => 'antrian Barang',
-      'parent' => 'Induk',
-      'object' => 'Obyek',
-      'campaign' => 'Campaign',
+      'queueItem' => 'Elemento de la cola',
+      'parent' => 'Padre',
+      'object' => 'Objeto',
+      'campaign' => 'Campaña',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'Sent' => 'mengirim',
-        'Opened' => 'dibuka',
-        'Opted Out' => 'Memilih keluar',
-        'Bounced' => 'terpental',
-        'Clicked' => 'diklik',
-        'Lead Created' => 'memimpin Dibuat',
+        'Sent' => 'Enviado',
+        'Opened' => 'Abierto',
+        'Opted Out' => 'Se dieron de baja',
+        'Bounced' => 'Rebotados',
+        'Clicked' => 'Cliqueados',
+        'Lead Created' => 'Posible cliente creado',
         'Opted In' => 'Opted In',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'All' => 'Semua',
+      'All' => 'Todos',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'mengirim',
-      'opened' => 'dibuka',
-      'optedOut' => 'Memilih keluar',
+      'sent' => 'Enviado',
+      'opened' => 'Abierto',
+      'optedOut' => 'Se dieron de baja',
       'optedIn' => 'Opted In',
-      'bounced' => 'terpental',
-      'clicked' => 'diklik',
-      'leadCreated' => 'memimpin Dibuat',
+      'bounced' => 'Rebotados',
+      'clicked' => 'Cliqueados',
+      'leadCreated' => 'Posible cliente creado',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'url' => 'URL',
-      'urlToUse' => 'Kode untuk menyisipkan bukan URL',
-      'campaign' => 'Kampanye',
+      'urlToUse' => 'Código para insertar en lugar de la URL',
+      'campaign' => 'Campaña',
     ),
-    'links' => 
+    'links' =>
     array (
-      'campaign' => 'Kampanye',
+      'campaign' => 'Campaña',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create CampaignTrackingUrl' => 'Buat Tracking URL',
+      'Create CampaignTrackingUrl' => 'Crear URL de seguimiento',
     ),
   ),
-  'Case' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'number' => 'Jumlah',
-      'status' => 'Status',
-      'account' => 'Akun',
-      'contact' => 'Kontak',
-      'contacts' => 'kontak',
-      'priority' => 'Prioritas',
-      'type' => 'Mengetik',
-      'description' => 'Deskripsi',
-      'inboundEmail' => 'Email masuk',
-      'lead' => 'Memimpin',
-      'attachments' => 'Attachments',
+      'name' => 'Nombre',
+      'number' => 'Número',
+      'status' => 'Estado',
+      'account' => 'Cuenta',
+      'contact' => 'Contacto',
+      'contacts' => 'Contactos',
+      'priority' => 'Prioridad',
+      'type' => 'Tipo',
+      'description' => 'Descripción',
+      'inboundEmail' => 'Cuenta de Correo',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'inboundEmail' => 'Email masuk',
-      'account' => 'Akun',
-      'contact' => 'Kontak (Primer)',
-      'Contacts' => 'kontak',
-      'meetings' => 'rapat',
-      'calls' => 'panggilan',
-      'tasks' => 'tugas',
-      'emails' => 'email',
-      'articles' => 'Basis Pengetahuan Artikel',
-      'lead' => 'Memimpin',
-      'attachments' => 'Attachments',
+      'inboundEmail' => 'Cuenta de correo',
+      'account' => 'Cuenta',
+      'contact' => 'Contratos (principal)',
+      'Contacts' => 'Contactos',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'articles' => 'Artículos de la base de conocimiento',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'New' => 'Baru',
-        'Assigned' => 'ditugaskan',
-        'Pending' => 'tertunda',
-        'Closed' => 'Tertutup',
-        'Rejected' => 'Ditolak',
-        'Duplicate' => 'Duplikat',
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'Pending' => 'Pendiente',
+        'Closed' => 'Cerrados',
+        'Rejected' => 'Rechazado',
+        'Duplicate' => 'Duplicar',
       ),
-      'priority' => 
+      'priority' =>
       array (
-        'Low' => 'Rendah',
+        'Low' => 'Baja',
         'Normal' => 'Normal',
-        'High' => 'Tinggi',
-        'Urgent' => 'Penting',
+        'High' => 'Alta',
+        'Urgent' => 'Urgente',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Question' => 'Pertanyaan',
-        'Incident' => 'Kejadian',
-        'Problem' => 'Masalah',
+        'Question' => 'Pregunta',
+        'Incident' => 'Incidente',
+        'Problem' => 'Problema',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Case' => 'Buat Case',
-      'Close' => 'Tutup',
-      'Reject' => 'Menolak',
-      'Closed' => 'Tertutup',
-      'Rejected' => 'Ditolak',
+      'Create Case' => 'Crear ticket',
+      'Close' => 'Cerrar',
+      'Reject' => 'Rechazar',
+      'Closed' => 'Cerrados',
+      'Rejected' => 'Rechazado',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'open' => 'Buka',
-      'closed' => 'Tertutup',
+      'open' => 'Abiertos',
+      'closed' => 'Cerrados',
     ),
   ),
-  'Contact' => 
+  'Contact' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'emailAddress' => 'E-mail',
-      'title' => 'Judul',
-      'account' => 'Akun',
-      'accounts' => 'Akun',
-      'phoneNumber' => 'Telepon',
-      'accountType' => 'Jenis akun',
-      'doNotCall' => 'Jangan panggil',
-      'address' => 'Alamat',
-      'opportunityRole' => 'peluang Peran',
-      'accountRole' => 'Judul',
-      'description' => 'Deskripsi',
-      'campaign' => 'Kampanye',
-      'targetLists' => 'Daftar Target',
-      'targetList' => 'Daftar Target',
-      'portalUser' => 'Portal Pengguna',
-      'originalLead' => 'Original Lead',
-      'acceptanceStatus' => 'Acceptance Status',
-      'accountIsInactive' => 'Account Inactive',
-      'acceptanceStatusMeetings' => 'Acceptance Status (Meetings)',
-      'acceptanceStatusCalls' => 'Acceptance Status (Calls)',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'account' => 'Cuenta',
+      'accounts' => 'Cuentas',
+      'phoneNumber' => 'Teléfono',
+      'accountType' => 'Tipo de Cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'opportunityRole' => 'Rol de Oportunidad',
+      'accountRole' => 'Título',
+      'description' => 'Descripción',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'accountIsInactive' => 'Cuenta inactiva',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'opportunities' => 'peluang',
-      'cases' => 'kasus',
-      'targetLists' => 'Daftar Target',
-      'campaignLogRecords' => 'kampanye Log',
-      'campaign' => 'Kampanye',
-      'account' => 'Akun (Primer)',
-      'accounts' => 'Akun',
-      'casesPrimary' => 'Kasus (Primer)',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'account' => 'Cuentas (principal)',
+      'accounts' => 'Cuentas',
+      'casesPrimary' => 'Tickets (principal)',
       'tasksPrimary' => 'Tasks (expanded)',
-      'portalUser' => 'Portal Pengguna',
-      'originalLead' => 'Original Lead',
-      'documents' => 'Documents',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'documents' => 'Documentos',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Contact' => 'Buat kontak',
+      'Create Contact' => 'Crear contacto',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
-        '' => '--tak satupun--',
-        'Decision Maker' => 'Pengambil keputusan',
-        'Evaluator' => 'Penilai',
-        'Influencer' => 'influencer',
+        '' => '--Ninguno--',
+        'Decision Maker' => 'Tomador de decisiones',
+        'Evaluator' => 'Evaluador',
+        'Influencer' => 'Factor de influencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'portalUsers' => 'Pengguna Portal',
-      'notPortalUsers' => 'Bukan Pengguna Portal',
-      'accountActive' => 'Active',
+      'portalUsers' => 'Usuarios del portal',
+      'notPortalUsers' => 'No son usuarios del portal',
+      'accountActive' => 'Activo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create Document' => 'Buat Dokumen',
-      'Details' => 'rincian',
+      'Create Document' => 'Crear documento',
+      'Details' => 'Detalles',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'status' => 'Status',
-      'file' => 'Berkas',
-      'type' => 'Mengetik',
-      'publishDate' => 'mempublikasikan Tanggal',
-      'expirationDate' => 'Tanggal kadaluarsa',
-      'description' => 'Deskripsi',
-      'accounts' => 'Akun',
-      'folder' => 'Direktori',
-      'formularios' => 'Formularios',
-      'source' => 'Sumber',
-    ),
-    'links' => 
-    array (
-      'accounts' => 'Akun',
-      'opportunities' => 'peluang',
-      'folder' => 'Direktori',
-      'leads' => 'Leads',
-      'contacts' => 'Contacts',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'file' => 'Archivo',
+      'type' => 'Tipo',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'accounts' => 'Cuentas',
+      'folder' => 'Carpeta',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'links' =>
     array (
-      'status' => 
+      'accounts' => 'Cuentas',
+      'opportunities' => 'Oportunidades',
+      'folder' => 'Carpeta',
+      'leads' => 'Posibles clientes',
+      'contacts' => 'Contactos',
+      'formularios' => 'Formularios',
+    ),
+    'options' =>
+    array (
+      'status' =>
       array (
-        'Active' => 'Aktif',
-        'Draft' => 'Konsep',
-        'Expired' => 'kedaluwarsa',
-        'Canceled' => 'Dibatalkan',
+        'Active' => 'Activo',
+        'Draft' => 'Borrador',
+        'Expired' => 'Expirado',
+        'Canceled' => 'Cancelado',
       ),
-      'type' => 
+      'type' =>
       array (
-        '' => 'tak satupun',
-        'Contract' => 'Kontrak',
+        '' => 'Ninguno',
+        'Contract' => 'Contrato',
         'NDA' => 'NDA',
         'EULA' => 'EULA',
-        'License Agreement' => 'Perjanjian lisensi',
+        'License Agreement' => 'Contrato de licencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktif',
-      'draft' => 'Konsep',
+      'active' => 'Activo',
+      'draft' => 'Borrador',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create DocumentFolder' => 'Buat Dokumen Folder',
-      'Manage Categories' => 'mengelola Folder',
-      'Documents' => 'Documents',
+      'Create DocumentFolder' => 'Crear carpeta de documentos',
+      'Manage Categories' => 'Administrar carpetas',
+      'Documents' => 'Documentos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'documents' => 'dokumen',
+      'documents' => 'Documentos',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'status' => 'Status',
-      'target' => 'Target',
-      'sentAt' => 'Tanggal Dikirim',
-      'attemptCount' => 'upaya',
-      'emailAddress' => 'Alamat email',
-      'massEmail' => 'Mass Email',
-      'isTest' => 'adalah Uji',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'target' => 'Objetivo',
+      'sentAt' => 'Fecha de envío',
+      'attemptCount' => 'Intentos',
+      'emailAddress' => 'Correo electrónico',
+      'massEmail' => 'Correo masivo',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'target' => 'Target',
-      'massEmail' => 'Email massal',
+      'target' => 'Objetivo',
+      'massEmail' => 'Correo masivo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Pending' => 'tertunda',
-        'Sent' => 'mengirim',
-        'Failed' => 'Gagal',
-        'Sending' => 'Sending',
+        'Pending' => 'Pendiente',
+        'Sent' => 'Enviado',
+        'Failed' => 'Falló',
+        'Sending' => 'Enviando',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'pending' => 'tertunda',
-      'sent' => 'mengirim',
-      'failed' => 'Gagal',
+      'pending' => 'Pendiente',
+      'sent' => 'Enviado',
+      'failed' => 'Falló',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseArticle' => 'Buat Pasal',
-      'Any' => 'Apa saja',
-      'Send in Email' => 'Kirim Email',
-      'Move Up' => 'Move Up',
-      'Move Down' => 'Move Down',
-      'Move to Top' => 'Move to Top',
-      'Move to Bottom' => 'Move to Bottom',
+      'Create KnowledgeBaseArticle' => 'Crear artículo',
+      'Any' => 'Cualquiera',
+      'Send in Email' => 'Enviar por correo',
+      'Move Up' => 'Mover arriba',
+      'Move Down' => 'Mover abajo',
+      'Move to Top' => 'Mover al inicio',
+      'Move to Bottom' => 'Mover al final',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'status' => 'Status',
-      'type' => 'Mengetik',
-      'attachments' => 'lampiran',
-      'publishDate' => 'mempublikasikan Tanggal',
-      'expirationDate' => 'Tanggal kadaluarsa',
-      'description' => 'Deskripsi',
-      'body' => 'Tubuh',
-      'categories' => 'kategori',
-      'language' => 'Bahasa',
-      'portals' => 'portal',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'type' => 'Tipo',
+      'attachments' => 'Adjuntos',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'body' => 'Cuerpo',
+      'categories' => 'Categorías',
+      'language' => 'Idioma',
+      'portals' => 'Portales',
     ),
-    'links' => 
+    'links' =>
     array (
-      'cases' => 'kasus',
-      'opportunities' => 'peluang',
-      'categories' => 'kategori',
-      'portals' => 'portal',
+      'cases' => 'Tickets',
+      'opportunities' => 'Oportunidades',
+      'categories' => 'Categorías',
+      'portals' => 'Portales',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'In Review' => 'dalam Ulasan',
-        'Draft' => 'Konsep',
-        'Archived' => 'diarsipkan',
-        'Published' => 'Diterbitkan',
+        'In Review' => 'En revisión',
+        'Draft' => 'Borrador',
+        'Archived' => 'Archivado',
+        'Published' => 'Publicado',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Article' => 'Artikel',
+        'Article' => 'Artículo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portals' => 'Article will be available only in specified portals.',
+      'portals' => 'El artículo estará disponible solo en los portales especificados.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'published' => 'Diterbitkan',
+      'published' => 'Publicado',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseCategory' => 'Buat Kategori',
-      'Manage Categories' => 'mengelola Kategori',
-      'Articles' => 'Articles',
+      'Create KnowledgeBaseCategory' => 'Crear categoría',
+      'Manage Categories' => 'Administrar categorías',
+      'Articles' => 'Artículos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'articles' => 'Artikel',
+      'articles' => 'Artículos',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Converted To' => 'Dikonversi ke',
-      'Create Lead' => 'Create Lead',
-      'Convert' => 'Ubah',
-      'convert' => 'ubah',
+      'Converted To' => 'Convertido a',
+      'Create Lead' => 'Crear posible cliente',
+      'Convert' => 'Convertir',
+      'convert' => 'convertir',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'emailAddress' => 'E-mail',
-      'title' => 'Judul',
-      'website' => 'Situs web',
-      'phoneNumber' => 'Telepon',
-      'accountName' => 'Nama akun',
-      'doNotCall' => 'Jangan panggil',
-      'address' => 'Alamat',
-      'status' => 'Status',
-      'source' => 'Sumber',
-      'opportunityAmount' => 'peluang Jumlah',
-      'opportunityAmountConverted' => 'Peluang Jumlah (dikonversi)',
-      'description' => 'Deskripsi',
-      'createdAccount' => 'Rekening',
-      'createdContact' => 'Kontak',
-      'createdOpportunity' => 'Kesempatan',
-      'campaign' => 'Kampanye',
-      'targetLists' => 'Daftar Target',
-      'targetList' => 'Target Daftar',
-      'industry' => 'Industry',
-      'acceptanceStatus' => 'Acceptance Status',
-      'opportunityAmountCurrency' => 'Opportunity Amount Currency',
-      'acceptanceStatusMeetings' => 'Acceptance Status (Meetings)',
-      'acceptanceStatusCalls' => 'Acceptance Status (Calls)',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'accountName' => 'Nombre de la cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'status' => 'Estado',
+      'source' => 'Toma de contacto',
+      'opportunityAmount' => 'Costo de oportunidad',
+      'opportunityAmountConverted' => 'Costo de oportunidad (convertido)',
+      'description' => 'Descripción',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Listas de objetivos',
+      'targetList' => 'Lista objetivo',
+      'industry' => 'Industria',
+      'acceptanceStatus' => 'Estado de aceptación',
+      'opportunityAmountCurrency' => 'Moneda del costo de oportunidad',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Daftar Target',
-      'campaignLogRecords' => 'kampanye Log',
-      'campaign' => 'Kampanye',
-      'createdAccount' => 'Rekening',
-      'createdContact' => 'Kontak',
-      'createdOpportunity' => 'Kesempatan',
-      'cases' => 'kasus',
-      'documents' => 'Documents',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registros de la campaña',
+      'campaign' => 'Campaña',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'New' => 'Baru',
-        'Assigned' => 'ditugaskan',
-        'In Process' => 'dalam Proses',
-        'Converted' => 'dikonversi',
-        'Recycled' => 'daur ulang',
-        'Dead' => 'Mati',
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'In Process' => 'En proceso',
+        'Converted' => 'Convertidos',
+        'Recycled' => 'Reciclado',
+        'Dead' => 'Muerto',
       ),
-      'source' => 
+      'source' =>
       array (
-        '' => 'tak satupun',
-        'Call' => 'Panggilan',
-        'Email' => 'E-mail',
-        'Existing Customer' => 'Pelanggan yang ada',
-        'Partner' => 'Pasangan',
-        'Public Relations' => 'Hubungan Masyarakat',
-        'Web Site' => 'Situs web',
-        'Campaign' => 'Kampanye',
-        'Other' => 'Lain',
+        '' => 'Ninguno',
+        'Call' => 'Llamada',
+        'Email' => 'Correo electrónico',
+        'Existing Customer' => 'Cliente Existente',
+        'Partner' => 'Socio',
+        'Public Relations' => 'Relaciones Públicas',
+        'Web Site' => 'Sitio web',
+        'Campaign' => 'Campaña',
+        'Other' => 'Otro',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktif',
-      'actual' => 'Sebenarnya',
-      'converted' => 'dikonversi',
+      'active' => 'Activo',
+      'actual' => 'Actuales',
+      'converted' => 'Convertidos',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'status' => 'Status',
-      'storeSentEmails' => 'Simpan EmailTerkirim',
-      'startAt' => 'Tanggal mulai',
-      'fromAddress' => 'Alamat pengirim',
-      'fromName' => 'nama pengirim',
-      'replyToAddress' => 'Balas ke Alamat',
-      'replyToName' => 'Balas-ke Nama',
-      'campaign' => 'Kampanye',
-      'emailTemplate' => 'Template email',
-      'inboundEmail' => 'Akun email',
-      'targetLists' => 'Daftar Target',
-      'excludingTargetLists' => 'Tidak termasuk Daftar Sasaran',
-      'optOutEntirely' => 'Opt-Out Sepenuhnya',
-      'smtpAccount' => 'SMTP Account',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'startAt' => 'Fecha de inicio',
+      'fromAddress' => 'De (email)',
+      'fromName' => 'De (nombre):',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyToName' => 'Responder a (nombre)',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'optOutEntirely' => 'Dar de baja completamente',
+      'smtpAccount' => 'Cuenta SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Daftar Target',
-      'excludingTargetLists' => 'Tidak termasuk Daftar Sasaran',
-      'queueItems' => 'antrian Item',
-      'campaign' => 'Kampanye',
-      'emailTemplate' => 'Template email',
-      'inboundEmail' => 'Akun email',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'queueItems' => 'Elementos en cola',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'Konsep',
-        'Pending' => 'tertunda',
-        'In Process' => 'dalam Proses',
-        'Complete' => 'Lengkap',
-        'Canceled' => 'Dibatalkan',
-        'Failed' => 'Gagal',
+        'Draft' => 'Borrador',
+        'Pending' => 'Pendiente',
+        'In Process' => 'En proceso',
+        'Complete' => 'Completada',
+        'Canceled' => 'Cancelado',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MassEmail' => 'Buat Mass Email',
-      'Send Test' => 'Kirim Uji',
-      'System SMTP' => 'System SMTP',
-      'system' => 'system',
-      'group' => 'group',
+      'Create MassEmail' => 'Crear correo masivo',
+      'Send Test' => 'Enviar prueba',
+      'System SMTP' => 'Sistema SMTP',
+      'system' => 'sistema',
+      'group' => 'grupo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectAtLeastOneTarget' => 'Pilih setidaknya satu sasaran.',
-      'testSent' => 'Uji email (s) seharusnya dikirim',
+      'selectAtLeastOneTarget' => 'Seleccione al menos un objetivo.',
+      'testSent' => 'Se supone que el/los email/s de preuebas fueron enviados',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'optOutEntirely' => 'alamat email penerima yang berhenti berlangganan akan ditandai sebagai memilih keluar dan mereka tidak akan menerima email massal lagi.',
-      'targetLists' => 'Target yang harus menerima pesan.',
-      'excludingTargetLists' => 'Target yang seharusnya tidak menerima pesan.',
-      'storeSentEmails' => 'Emails will be stored in CRM.',
+      'optOutEntirely' => 'Las direcciones de correo de los destinatarios que se desuscriban serán marcadas como dadas de baja y no van a recibir ningún correo masivo.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
+      'storeSentEmails' => 'Los correos se almacenarán en el CRM.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Actual',
-      'complete' => 'Complete',
+      'actual' => 'Actuales',
+      'complete' => 'Completo',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'parent' => 'Induk',
-      'status' => 'Status',
-      'dateStart' => 'Tanggal mulai',
-      'dateEnd' => 'Tanggal akhir',
-      'duration' => 'Lamanya',
-      'description' => 'Deskripsi',
-      'users' => 'pengguna',
-      'contacts' => 'kontak',
-      'leads' => 'memimpin',
-      'reminders' => 'pengingat',
-      'account' => 'Akun',
-      'acceptanceStatus' => 'Acceptance Status',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Berencana',
-        'Held' => 'diadakan',
-        'Not Held' => 'tidak diadakan',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'tak satupun',
-        'Accepted' => 'diterima',
-        'Declined' => 'ditolak',
-        'Tentative' => 'Sementara',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'set diadakan',
-      'setNotHeld' => 'Set Tidak diadakan',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Meeting' => 'Buat Rapat',
-      'Set Held' => 'set diadakan',
-      'Set Not Held' => 'Set Tidak diadakan',
-      'Send Invitations' => 'Kirim undangan',
-      'on time' => 'tepat waktu',
-      'before' => 'sebelum',
+      'Create Meeting' => 'Crear reunión',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
+      'on time' => 'a tiempo',
+      'before' => 'antes',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Berencana',
-      'held' => 'diadakan',
-      'todays' => 'hari ini',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'nothingHasBeenSent' => 'Nothing were sent',
+      'nothingHasBeenSent' => 'No se ha enviado nada',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'account' => 'Rekening',
-      'stage' => 'Tahap',
-      'amount' => 'Jumlah',
-      'probability' => 'Probabilitas,%',
-      'leadSource' => 'memimpin Sumber',
-      'doNotCall' => 'Jangan panggil',
-      'closeDate' => 'Tutup Tanggal',
-      'contacts' => 'kontak',
-      'description' => 'Deskripsi',
-      'amountConverted' => 'Jumlah (dikonversi)',
-      'amountWeightedConverted' => 'jumlah Tertimbang',
-      'campaign' => 'Kampanye',
-      'originalLead' => 'Original Lead',
-      'amountCurrency' => 'Amount Currency',
-      'contactRole' => 'Contact Role',
+      'name' => 'Nombre',
+      'account' => 'Cuenta',
+      'stage' => 'Etapa de ventas',
+      'amount' => 'Ingresos esperados',
+      'probability' => 'Probabilidad de ganar (%)',
+      'leadSource' => 'Toma de contacto del posible cliente',
+      'doNotCall' => 'No llamar',
+      'closeDate' => 'Fecha esperada de cierre',
+      'contacts' => 'Contactos',
+      'description' => 'Descripción',
+      'amountConverted' => 'Cantidad (convertido)',
+      'amountWeightedConverted' => 'Cantidad Ponderada',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
+      'amountCurrency' => 'Monto de la Moneda',
+      'contactRole' => 'Rol de contacto',
       'lastStage' => 'Last Stage',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'kontak',
-      'documents' => 'dokumen',
-      'campaign' => 'Kampanye',
-      'originalLead' => 'Original Lead',
+      'contacts' => 'Contactos',
+      'documents' => 'Documentos',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
-        'Prospecting' => 'Pencarian',
-        'Qualification' => 'Kualifikasi',
-        'Proposal' => 'Proposal',
-        'Negotiation' => 'Negosiasi',
-        'Needs Analysis' => 'Butuh analisa',
-        'Value Proposition' => 'Proposisi nilai',
-        'Id. Decision Makers' => 'Id. Pembuat keputusan',
-        'Perception Analysis' => 'Analisis persepsi',
-        'Proposal/Price Quote' => 'Proposal / Harga Penawaran',
-        'Negotiation/Review' => 'Negosiasi / Ulasan',
-        'Closed Won' => 'tertutup Won',
-        'Closed Lost' => 'tertutup Hilang',
+        'Prospecting' => 'Prospección',
+        'Qualification' => 'Calificación',
+        'Proposal' => 'Propuesta',
+        'Negotiation' => 'Negociación',
+        'Needs Analysis' => 'Análisis de necesidades',
+        'Value Proposition' => 'Propuesta de valor',
+        'Id. Decision Makers' => 'Identificar tomador de decisiones',
+        'Perception Analysis' => 'Análisis de percepcion',
+        'Proposal/Price Quote' => 'Propuesta/Presupuesto',
+        'Negotiation/Review' => 'Negociación/Revisión',
+        'Closed Won' => 'Cerrado ganado',
+        'Closed Lost' => 'Cerrado perdido',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Opportunity' => 'Buat Peluang',
+      'Create Opportunity' => 'Crear oportunidad',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'open' => 'Buka',
-      'won' => 'Won',
-      'lost' => 'Kalah',
+      'open' => 'Abiertos',
+      'won' => 'Ganados',
+      'lost' => 'Perdido',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4046,117 +4081,266 @@ Password: {password}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'description' => 'Deskripsi',
-      'entryCount' => 'entri Hitungan',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'entryCount' => 'Contador de entrada',
       'optedOutCount' => 'Opted Out Count',
-      'campaigns' => 'kampanye',
-      'endDate' => 'Tanggal akhir',
-      'targetLists' => 'Daftar Target',
-      'includingActionList' => 'Including',
-      'excludingActionList' => 'Excluding',
+      'campaigns' => 'Campañas',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'includingActionList' => 'Incluyendo',
+      'excludingActionList' => 'Excluyendo',
       'targetStatus' => 'Target Status',
       'isOptedOut' => 'Is Opted Out',
     ),
-    'links' => 
+    'links' =>
     array (
-      'accounts' => 'Akun',
-      'contacts' => 'kontak',
-      'leads' => 'memimpin',
-      'campaigns' => 'kampanye',
-      'massEmails' => 'Email massal',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'campaigns' => 'Campañas',
+      'massEmails' => 'Correos masivos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'E-mail',
-        'Web' => 'jaringan',
-        'Television' => 'Televisi',
+        'Email' => 'Correo electrónico',
+        'Web' => 'Web',
+        'Television' => 'Televisión',
         'Radio' => 'Radio',
-        'Newsletter' => 'laporan berkala',
+        'Newsletter' => 'Boletín de noticias',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Opted Out',
         'Listed' => 'Listed',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create TargetList' => 'Buat target Daftar',
-      'Opted Out' => 'Memilih keluar',
-      'Cancel Opt-Out' => 'Batal Opt-Out',
-      'Opt-Out' => 'Opt-Out',
+      'Create TargetList' => 'Crear una lista de objetivos',
+      'Opted Out' => 'Se dieron de baja',
+      'Cancel Opt-Out' => 'Cancelar darse de baja',
+      'Opt-Out' => 'Darse de baja',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nama',
-      'parent' => 'Induk',
-      'status' => 'Status',
-      'dateStart' => 'Tanggal mulai',
-      'dateEnd' => 'Tanggal jatuh tempo',
-      'dateStartDate' => 'Tanggal mulai (sepanjang hari)',
-      'dateEndDate' => 'Tanggal akhir (sepanjang hari)',
-      'priority' => 'Prioritas',
-      'description' => 'Deskripsi',
-      'isOverdue' => 'Apakah tempo',
-      'account' => 'Rekening',
-      'dateCompleted' => 'Tanggal Selesai',
-      'attachments' => 'lampiran',
-      'reminders' => 'Reminders',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de vencimiento',
+      'dateStartDate' => 'Fecha de Inicio (todo el día)',
+      'dateEndDate' => 'Fecha de finalización (todo el día)',
+      'priority' => 'Prioridad',
+      'description' => 'Descripción',
+      'isOverdue' => 'Atrasado',
+      'account' => 'Cuenta',
+      'dateCompleted' => 'Fecha de completado',
+      'attachments' => 'Adjuntos',
+      'reminders' => 'Recordatorios',
       'contact' => 'Contact',
     ),
-    'links' => 
+    'links' =>
     array (
-      'attachments' => 'lampiran',
+      'attachments' => 'Adjuntos',
       'account' => 'Account',
       'contact' => 'Contact',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Not Started' => 'Belum mulai',
-        'Started' => 'mulai',
-        'Completed' => 'Lengkap',
-        'Canceled' => 'Dibatalkan',
-        'Deferred' => 'Tangguhan',
+        'Not Started' => 'Sin empezar',
+        'Started' => 'Comenzado',
+        'Completed' => 'Completado',
+        'Canceled' => 'Cancelado',
+        'Deferred' => 'Diferido',
       ),
-      'priority' => 
+      'priority' =>
       array (
-        'Low' => 'Rendah',
+        'Low' => 'Baja',
         'Normal' => 'Normal',
-        'High' => 'Tinggi',
-        'Urgent' => 'Penting',
+        'High' => 'Alta',
+        'Urgent' => 'Urgente',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Task' => 'Buat tugas',
-      'Complete' => 'Lengkap',
+      'Create Task' => 'Crear tarea',
+      'Complete' => 'Completada',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Sebenarnya',
-      'completed' => 'Lengkap',
-      'deferred' => 'Tangguhan',
-      'todays' => 'hari ini',
-      'overdue' => 'Terlambat',
+      'actual' => 'Actuales',
+      'completed' => 'Completado',
+      'deferred' => 'Diferido',
+      'todays' => 'De hoy',
+      'overdue' => 'Atrazadas',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'address' => 'Address',
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Crear Beneficios',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Crear Categoria',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Crear Ciudad',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Crear Comuna',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Crear Doctos_beneficio',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Vytvořit Empresa',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
       'meetings1' => 'Meetings1',
       'rut' => 'Rut Beneficiario',
       'beneficioSolicitado' => 'Beneficio Solicitado',
@@ -4173,11 +4357,11 @@ Password: {password}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Meetings',
-      'calls' => 'Calls',
-      'tasks' => 'Tasks',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
       'emails' => 'Emails',
       'meetings1' => 'Meetings1',
       'contacts' => 'Beneficiario',
@@ -4186,13 +4370,13 @@ Password: {password}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Formularios' => 'Buat Formulario',
+      'Create Formularios' => 'Crear Formulario',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4201,15 +4385,15 @@ Password: {password}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4218,7 +4402,7 @@ Password: {password}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4232,51 +4416,192 @@ Password: {password}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'MotivoReclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'motivoReclamoId' => 'MotivoReclamoId',
       'motivoReclamoDescripcion' => 'Descripción',
       'reclamosMotivoReclamo' => 'Reclamos',
-    ),
-    'links' => 
+  'Proveedor' =>
+  array (
+    'fields' =>
     array (
-      'meetings' => 'Meetings',
-      'calls' => 'Calls',
-      'tasks' => 'Tasks',
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Proveedor' => 'Vytvořit Proveedor',
+    ),
+  ),
+  'Rol' =>
+  array (
+    'fields' =>
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Rol' => 'Crear Rol',
+    ),
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Crear Solicitudes',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MotivoReclamo' => 'Buat MotivoReclamo',
+      'Create MotivoReclamo' => 'Crear MotivoReclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
     ),
   ),
-  'Reclamo' => 
+  'Reclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'reclamoId' => 'ReclamoId',
       'reclamoTitulo' => 'Título',
       'reclamoObservacion' => 'Observación',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Meetings',
-      'calls' => 'Calls',
-      'tasks' => 'Tasks',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
+    ),
+    'labels' =>
+    array (
+      'Create Subcategoria' => 'Crear Subcategoria',
+    ),
+  ),
+  'Trabajador' =>
+  array (
+    'fields' =>
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'links' =>
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'labels' =>
+    array (
+      'Create Trabajador' => 'Vytvořit Trabajador',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Reclamo' => 'Buat Reclamo',
+      'Create Reclamo' => 'Crear Reclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reclamoTitulo' => 'Breve descripción del reclamo',
       'reclamoObservacion' => 'Describa su situación',

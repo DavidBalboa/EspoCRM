@@ -1,292 +1,293 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'használó',
-      'action' => 'Akció',
-      'createdAt' => 'Dátum',
-      'target' => 'Cél',
-      'targetType' => 'Cél típus',
-      'authToken' => 'Hitel Token',
-      'ipAddress' => 'IP-cím',
-      'authLogRecord' => 'Hitelesítési napló',
+      'user' => 'Usuario',
+      'action' => 'Acción',
+      'createdAt' => 'Fecha',
+      'target' => 'Entidad objetivo',
+      'targetType' => 'Tipo de entidad',
+      'authToken' => 'Token de autenticación',
+      'ipAddress' => 'Dirección IP',
+      'authLogRecord' => 'Auth Log Record',
     ),
-    'links' => 
+    'links' =>
     array (
-      'authToken' => 'Hitel Token',
-      'authLogRecord' => 'Hitelesítési napló',
-      'user' => 'használó',
-      'target' => 'Cél',
+      'authToken' => 'Token de autenticación',
+      'authLogRecord' => 'Auth Log Record',
+      'user' => 'Usuario',
+      'target' => 'Objetivo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'onlyMy' => 'Csak az enyém',
+      'onlyMy' => 'Solo míos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'read' => 'Olvas',
-        'update' => 'frissítés',
-        'delete' => 'Töröl',
-        'create' => 'Teremt',
+        'read' => 'Leer',
+        'update' => 'Guardar',
+        'delete' => 'Eliminar',
+        'create' => 'Crear',
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Enabled' => 'Bekapcsolt',
-      'Disabled' => 'Kikapcsolt',
-      'System' => 'Rendszer',
-      'Users' => 'Felhasználók',
-      'Email' => 'Email',
-      'Data' => 'Adat',
-      'Customization' => 'Testreszabás',
-      'Available Fields' => 'Elérhető mezők',
-      'Layout' => 'Elrendezés',
-      'Entity Manager' => 'Entitás kezelő',
-      'Add Panel' => 'Hozzáadás panelhez',
-      'Add Field' => 'Mező hozzáadása',
-      'Settings' => 'Beállítások',
-      'Scheduled Jobs' => 'Ütemezett munkák',
-      'Upgrade' => 'Frissítés',
-      'Clear Cache' => 'Törölje a gyorsítótárat',
-      'Rebuild' => 'újraépítése',
-      'Teams' => 'csapatok',
-      'Roles' => 'szerepek',
-      'Portal' => 'Portál',
-      'Portals' => 'portálok',
-      'Portal Roles' => 'Portál szerepek',
-      'Portal Users' => 'Portál felhasználók',
-      'Outbound Emails' => 'Kimenő e-mailek',
-      'Group Email Accounts' => 'Csoportos e-mail fiókok',
-      'Personal Email Accounts' => 'Személyes e-mail fiókok',
-      'Inbound Emails' => 'Bejövő e-mailek',
-      'Email Templates' => 'E-mail sablonok',
-      'Import' => 'import',
-      'Layout Manager' => 'Elrendezéskezelő',
-      'User Interface' => 'Felhasználói felület',
-      'Auth Tokens' => 'Hiteles tokenek',
-      'Auth Log' => 'Hitelesítési napló',
-      'Authentication' => 'Hitelesítés',
-      'Currency' => 'Valuta',
-      'Integrations' => 'Integráció',
-      'Extensions' => 'Extensions',
-      'Upload' => 'Feltöltés',
-      'Installing...' => 'Telepítés ...',
-      'Upgrading...' => 'Frissítés ...',
-      'Upgraded successfully' => 'Sikeresen frissített',
-      'Installed successfully' => 'Telepítve sikeresen',
-      'Ready for upgrade' => 'Készen áll a frissítésre',
-      'Run Upgrade' => 'Frissítés futtatása',
-      'Install' => 'Telepítés',
-      'Ready for installation' => 'Készen áll a telepítésre',
-      'Uninstalling...' => 'Eltávolítása ...',
-      'Uninstalled' => 'Eltávolítva',
-      'Create Entity' => 'Hozzon létre egy entitást',
-      'Edit Entity' => 'Entity szerkesztése',
-      'Create Link' => 'Link létrehozása',
-      'Edit Link' => 'Link szerkesztése',
-      'Notifications' => 'értesítések',
-      'Jobs' => 'Állás',
-      'Reset to Default' => 'Visszaállítás alapértelmezettre',
-      'Email Filters' => 'E-mail szűrők',
-      'Action History' => 'Akció története',
-      'Label Manager' => 'Címkekezelő',
+      'Enabled' => 'Activado',
+      'Disabled' => 'Desactivado',
+      'System' => 'Sistema',
+      'Users' => 'Usuarios',
+      'Email' => 'Correos',
+      'Data' => 'Datos',
+      'Customization' => 'Personalizaciones',
+      'Available Fields' => 'Campos disponibles',
+      'Layout' => 'Diseño',
+      'Entity Manager' => 'Entidades',
+      'Add Panel' => 'Añadir Panel',
+      'Add Field' => 'Añadir Campo',
+      'Settings' => 'Ajustes',
+      'Scheduled Jobs' => 'Tareas programadas',
+      'Upgrade' => 'Actualizar',
+      'Clear Cache' => 'Limpiar caché',
+      'Rebuild' => 'Reconstruir',
+      'Teams' => 'Equipos',
+      'Roles' => 'Roles',
+      'Portal' => 'Portales',
+      'Portals' => 'Portales',
+      'Portal Roles' => 'Roles del portal',
+      'Portal Users' => 'Usuarios del portal',
+      'Outbound Emails' => 'Salientes',
+      'Group Email Accounts' => 'Grupales',
+      'Personal Email Accounts' => 'Personales',
+      'Inbound Emails' => 'Entrantes',
+      'Email Templates' => 'Plantillas',
+      'Import' => 'Importar',
+      'Layout Manager' => 'Diseño',
+      'User Interface' => 'Interfaz de usuario',
+      'Auth Tokens' => 'Tokens',
+      'Auth Log' => 'Auth Log',
+      'Authentication' => 'Autenticación',
+      'Currency' => 'Moneda',
+      'Integrations' => 'Integración',
+      'Extensions' => 'Extensiones',
+      'Upload' => 'Subir',
+      'Installing...' => 'Instalando...',
+      'Upgrading...' => 'Actualizando',
+      'Upgraded successfully' => 'Actualización exitosa',
+      'Installed successfully' => 'Instalado de forma exitosa',
+      'Ready for upgrade' => 'Listo para actualizar',
+      'Run Upgrade' => 'Ejecutar actualización',
+      'Install' => 'Instalar',
+      'Ready for installation' => 'Listo para instalación',
+      'Uninstalling...' => 'Desinstalando',
+      'Uninstalled' => 'Desinstalado',
+      'Create Entity' => 'Crear entidad',
+      'Edit Entity' => 'Editar Entidad',
+      'Create Link' => 'Crear enlace',
+      'Edit Link' => 'Editar Enlace',
+      'Notifications' => 'Notificaciones',
+      'Jobs' => 'Trabajos',
+      'Reset to Default' => 'Aplicar a valores por defecto',
+      'Email Filters' => 'Filtros',
+      'Action History' => 'Histórico',
+      'Label Manager' => 'Etiquetas',
       'Lead Capture' => 'Lead Capture',
       'Attachments' => 'Attachments',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
       'list' => 'Lista',
-      'detail' => 'Részlet',
-      'listSmall' => 'Lista (kis)',
-      'detailSmall' => 'Részlet (kis)',
-      'detailPortal' => 'Részlet (portál)',
-      'detailSmallPortal' => 'Részlet (kis, portál)',
-      'listSmallPortal' => 'Lista (kis, portál)',
-      'listPortal' => 'Lista (portál)',
-      'relationshipsPortal' => 'Kapcsolattartó panelek (portál)',
-      'filters' => 'Keresési szűrők',
-      'massUpdate' => 'Tömeges frissítés',
-      'relationships' => 'Kapcsolattartó panelek',
-      'sidePanelsDetail' => 'Oldalsó panelek (részlet)',
-      'sidePanelsEdit' => 'Oldalsó panelek (szerkesztés)',
-      'sidePanelsDetailSmall' => 'Oldalsó panelek (részletes kis)',
-      'sidePanelsEditSmall' => 'Oldalsó panelek (kis szerkesztés)',
+      'detail' => 'Detalle',
+      'listSmall' => 'Lista (pequeña)',
+      'detailSmall' => 'Detalle (Pequeño)',
+      'detailPortal' => 'Detail (Portal)',
+      'detailSmallPortal' => 'Detail (Small, Portal)',
+      'listSmallPortal' => 'List (Small, Portal)',
+      'listPortal' => 'List (Portal)',
+      'relationshipsPortal' => 'Relationship Panels (Portal)',
+      'filters' => 'Filtros de Búsqueda',
+      'massUpdate' => 'Actualización masiva',
+      'relationships' => 'Paneles de relaciones',
+      'sidePanelsDetail' => 'Paneles laterales (detalle)',
+      'sidePanelsEdit' => 'Paneles laterales (editar)',
+      'sidePanelsDetailSmall' => 'Paneles laterales (detalle pequeño)',
+      'sidePanelsEditSmall' => 'Paneles laterales (editar pequeño)',
       'kanban' => 'Kanban',
-      'detailConvert' => 'Átalakító',
-      'listForAccount' => 'Lista (a fiókhoz)',
-      'listForContact' => 'Lista (az elérhetőséghez)',
+      'detailConvert' => 'Convertir posible cliente',
+      'listForAccount' => 'Listado (por Cuentas)',
+      'listForContact' => 'List (for Contact)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
-      'address' => 'Cím',
-      'array' => 'Sor',
-      'foreign' => 'Külföldi',
-      'duration' => 'tartam',
-      'password' => 'Jelszó',
-      'personName' => 'Személynév',
-      'autoincrement' => 'Auto-növekmény',
-      'bool' => 'logikai',
-      'currency' => 'Valuta',
-      'currencyConverted' => 'Pénznem (konvertált)',
-      'date' => 'Dátum',
-      'datetime' => 'Date-Time',
-      'datetimeOptional' => 'Date/Date-Time',
-      'email' => 'Email',
-      'enum' => 'Felsorolt',
-      'enumInt' => 'Enum egész szám',
-      'enumFloat' => 'Enum Float',
-      'float' => 'Úszó',
-      'int' => 'Egész szám',
-      'link' => 'Link',
-      'linkMultiple' => 'Link Többszörös',
-      'linkParent' => 'Link Szülő',
-      'phone' => 'Telefon',
-      'text' => 'Szöveg',
-      'url' => 'url',
-      'varchar' => 'varchar',
-      'file' => 'fájl',
-      'image' => 'Kép',
-      'multiEnum' => 'Multi-Felsorolt',
-      'attachmentMultiple' => 'Többszörös csatolás',
-      'rangeInt' => 'Teljes egész szám',
-      'rangeFloat' => 'Range Float',
-      'rangeCurrency' => 'Tartomány pénzneme',
-      'wysiwyg' => 'wYSIWYG',
-      'map' => 'Térkép',
-      'number' => 'Szám (automatikus növekmény)',
-      'colorpicker' => 'Színválasztó',
+      'address' => 'Dirección',
+      'array' => 'Lista ordenable',
+      'foreign' => 'Clave foránea',
+      'duration' => 'Duración',
+      'password' => 'Contraseña',
+      'personName' => 'Nombre',
+      'autoincrement' => 'Incremental',
+      'bool' => 'SI / NO',
+      'currency' => 'Moneda',
+      'currencyConverted' => 'Moneda (convertido)',
+      'date' => 'Fecha',
+      'datetime' => 'Fecha y hora',
+      'datetimeOptional' => 'Fecha / Fecha y hora',
+      'email' => 'Correo electrónico',
+      'enum' => 'Lista',
+      'enumInt' => 'Lista de enteros',
+      'enumFloat' => 'Lista de decimales',
+      'float' => 'Decimal',
+      'int' => 'Entero',
+      'link' => 'Enlace',
+      'linkMultiple' => 'Enlace múltiple',
+      'linkParent' => 'Enlace Padre',
+      'phone' => 'Teléfono',
+      'text' => 'Área de texto simple',
+      'url' => 'Url',
+      'varchar' => 'Texto',
+      'file' => 'Archivo',
+      'image' => 'Imagen',
+      'multiEnum' => 'Lista múltiple',
+      'attachmentMultiple' => 'Adjuntos múltiples',
+      'rangeInt' => 'Rango de enteros',
+      'rangeFloat' => 'Rango de decimales',
+      'rangeCurrency' => 'Rango de moneda',
+      'wysiwyg' => 'Área de texto con editor',
+      'map' => 'Mapa',
+      'number' => 'Número',
+      'colorpicker' => 'Selector de color',
       'jsonArray' => 'Json Array',
-      'jsonObject' => 'Json objektum',
+      'jsonObject' => 'Json Object',
+      'multienim' => 'Lista múltiple',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'type' => 'típus',
-      'name' => 'Név',
-      'label' => 'Címke',
-      'tooltipText' => 'Tooltip szöveg',
-      'required' => 'Kívánt',
-      'default' => 'Alapértelmezett',
-      'maxLength' => 'Max. Hosszúság',
-      'options' => 'Lehetőségek',
-      'after' => 'Miután (mező)',
-      'before' => 'Mielőtt (mező)',
-      'link' => 'Link',
-      'field' => 'Mező',
-      'min' => 'min',
-      'max' => 'Max',
-      'translation' => 'Fordítás',
-      'previewSize' => 'Előnézeti méret',
-      'noEmptyString' => 'Az üres karakterlánc értéke nem engedélyezett',
-      'defaultType' => 'Alapértelmezett típus',
-      'seeMoreDisabled' => 'Letiltja a szövegvágást',
-      'entityList' => 'Entity List',
-      'isSorted' => 'Rendezve van (betűrendben)',
-      'audited' => 'ellenőrzött',
-      'trim' => 'állapot',
-      'height' => 'Magasság (px)',
-      'minHeight' => 'Min magasság (px)',
-      'provider' => 'ellátó',
-      'typeList' => 'Típus lista',
-      'rows' => 'A textarea sorainak száma',
-      'lengthOfCut' => 'A vágás hossza',
-      'sourceList' => 'Forráslista',
-      'prefix' => 'előtagja',
-      'nextNumber' => 'Következő szám',
-      'padLength' => 'Pad Hossz',
-      'disableFormatting' => 'A formázás letiltása',
-      'dynamicLogicVisible' => 'A mező láthatóvá tétele',
-      'dynamicLogicReadOnly' => 'A mező csak olvasható',
-      'dynamicLogicRequired' => 'Feltételek, amelyek szükségesek a területen',
-      'dynamicLogicOptions' => 'Feltételes lehetőségek',
-      'probabilityMap' => 'Stage Probabilities (%)',
-      'readOnly' => 'Csak olvasható',
-      'maxFileSize' => 'Max fájlméret (Mb)',
-      'isPersonalData' => 'Személyes adatok',
+      'type' => 'Tipo',
+      'name' => 'Nombre',
+      'label' => 'Etiqueta',
+      'tooltipText' => 'Texto de la ayuda',
+      'required' => 'Requerido',
+      'default' => 'Por defecto',
+      'maxLength' => 'Longitud máxima',
+      'options' => 'Ajustes',
+      'after' => 'Después (campo)',
+      'before' => 'Antes (campo)',
+      'link' => 'Enlace',
+      'field' => 'Campo',
+      'min' => 'Mínimo',
+      'max' => 'Máximo',
+      'translation' => 'Traducción',
+      'previewSize' => 'Tamaño de vista previa',
+      'noEmptyString' => 'No están permitidos los valores de cadenas vacías',
+      'defaultType' => 'Tipo por defecto',
+      'seeMoreDisabled' => 'Desactivar cortar texto',
+      'entityList' => 'Lista de entidades',
+      'isSorted' => '¿Se debe ordenar?',
+      'audited' => 'Auditada',
+      'trim' => 'Recortar',
+      'height' => 'Altura (px)',
+      'minHeight' => 'Altura mínima (px)',
+      'provider' => 'Proveedor',
+      'typeList' => 'Tipo de lista',
+      'rows' => 'Número de filas del área de texto',
+      'lengthOfCut' => 'Longitud del corte',
+      'sourceList' => 'Lista de tomas de contacto',
+      'prefix' => 'Prefijo',
+      'nextNumber' => 'Siguiente Número',
+      'padLength' => 'Longitud del relleno',
+      'disableFormatting' => 'Desactivar formateo',
+      'dynamicLogicVisible' => 'Condiciones para hacer el campo visible',
+      'dynamicLogicReadOnly' => 'Condiciones para hacer el campo solo lectura',
+      'dynamicLogicRequired' => 'Condiciones para hacer el campo obligatorio',
+      'dynamicLogicOptions' => 'Opciones condicionales',
+      'probabilityMap' => 'Probabilidades de la etapa (%)',
+      'readOnly' => 'Solo lectura',
+      'maxFileSize' => 'Tamaño máximo de archivo (MB)',
+      'isPersonalData' => 'Is Personal Data',
       'useIframe' => 'Use Iframe',
       'useNumericFormat' => 'Use Numeric Format',
       'strip' => 'Strip',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'upgradeVersion' => 'Az EspoCRM frissítésre kerül a <strong> {verzió} </ strong> verzióra. Kérjük, legyen türelemmel, mert ez eltarthat egy ideig.',
-      'upgradeDone' => 'Az EspoCRM frissítve lett a <strong> {verzió} </ strong> verzióra.',
-      'upgradeBackup' => 'Javasoljuk, hogy biztonsági másolatot készítsen az EspoCRM fájlokról és adatokról a frissítés előtt.',
-      'thousandSeparatorEqualsDecimalMark' => 'A több ezer elválasztó karakter nem lehet ugyanaz, mint a tizedespont karakter.',
-      'userHasNoEmailAddress' => 'A felhasználónak nincs e-mail címe.',
-      'selectEntityType' => 'Válassza ki az entitás típusát a bal oldali menüben.',
-      'selectUpgradePackage' => 'Válassza ki a frissítési csomagot',
-      'downloadUpgradePackage' => 'Frissítő csomag (ok) letöltése <a href="{url}"> itt </a>.',
-      'selectLayout' => 'Válassza ki a kívánt elrendezést a bal oldali menüben és szerkessze azt.',
-      'selectExtensionPackage' => 'Válassza ki a bővítménycsomagot',
-      'extensionInstalled' => 'A (z) {name} {version} bővítmény telepítve lett.',
-      'installExtension' => 'A (z) {name} {version} bővítmény készen áll a telepítésre.',
-      'cronIsNotConfigured' => 'Az ütemezett feladatok nem futnak. Ezért a bejövő e-mailek, értesítések és emlékeztetők nem működnek. Kérjük, kövesse az <a target="_blank" href="https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab"> utasításokat </a> a beállításhoz cron munka.',
-      'newVersionIsAvailable' => 'Új EspoCRM verzió {latestVersion} elérhető.',
-      'newExtensionVersionIsAvailable' => 'A (z) {extensionName} új kiadása {latestVersion} elérhető.',
-      'uninstallConfirmation' => 'Biztosan eltávolítja a bővítményt?',
+      'upgradeVersion' => 'EspoCRM se actualizará a la versión <strong>{version}</ strong>. Por favor sea paciente ya que esto puede tomar varios minutos.',
+      'upgradeDone' => 'EspoCRM se ha actualizado a la versión <strong>{version}</ strong>.',
+      'upgradeBackup' => 'Recomendamos hacer una copia de seguridad de los archivos y datos de EspoCRM antes de actualizar.',
+      'thousandSeparatorEqualsDecimalMark' => 'El símbolo de separador de miles no puede ser el mismo que el de punto decimal.',
+      'userHasNoEmailAddress' => 'El usuario no tiene dirección de correo electrónico.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en el menú de la izquierda.',
+      'selectUpgradePackage' => 'Seleccione el paquete para actualizar',
+      'downloadUpgradePackage' => 'Si necesita paquetes de actualización puede descargarlos desde <a href=\'{url}\'>acá</a>.',
+      'selectLayout' => 'Seleccione el diseño necesario en el menú de la izquierda y edítelo.',
+      'selectExtensionPackage' => 'Seleccione el paquete de la extensión',
+      'extensionInstalled' => 'La extensión {name} {version} ha sido instalada',
+      'installExtension' => 'La extensión {name} {version} está lista para ser instalada.',
+      'cronIsNotConfigured' => 'Las tareas programadas no se están ejecutando. Siga las <a target="_blank" href="https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab">instrucciones</a> para configurar las tareas CRON.',
+      'newVersionIsAvailable' => 'La nueva versión de EspoCRM {latestVersion} está disponible.',
+      'newExtensionVersionIsAvailable' => 'El nuevo lanzamiento {latestVersion} de {extensionName} está disponible.',
+      'uninstallConfirmation' => 'Are you sure you want to uninstall the extension?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
-      'settings' => 'Az alkalmazás rendszerbeállításai.',
-      'scheduledJob' => 'A cron által végzett munkák.',
-      'upgrade' => 'Frissítés EspoCRM.',
-      'clearCache' => 'Töröljön minden háttértárat.',
-      'rebuild' => 'Rebuild backend és clear cache.',
-      'users' => 'Felhasználók kezelése.',
-      'teams' => 'Csapatkezelés.',
-      'roles' => 'Szerepkörök irányítása.',
-      'portals' => 'Portálok kezelése.',
-      'portalRoles' => 'Szerepek a portálhoz.',
-      'portalUsers' => 'A portál felhasználói.',
-      'outboundEmails' => 'SMTP-beállítások a kimenő e-mailekhez.',
-      'groupEmailAccounts' => 'Group IMAP e-mail fiókok. E-mail importálás és e-mail ügy.',
-      'personalEmailAccounts' => 'A felhasználók e-mail fiókjai.',
-      'emailTemplates' => 'Sablonok a kimenő e-mailekhez.',
-      'import' => 'Adatok importálása CSV-fájlból.',
-      'layoutManager' => 'Testreszabható elrendezések (listák, részletek, szerkesztés, keresés, tömeges frissítés).',
-      'entityManager' => 'Egyéni entitások létrehozása és szerkesztése. Mezők és kapcsolatok kezelése.',
-      'userInterface' => 'Az UI konfigurálása.',
-      'authTokens' => 'Aktív hitelesítések. IP-címet és az utolsó hozzáférési dátumot.',
-      'authentication' => 'Hitelesítési beállítások.',
-      'currency' => 'Valuta beállítások és árak.',
-      'extensions' => 'A bővítmények telepítése vagy eltávolítása.',
-      'integrations' => 'Integráció harmadik féltől származó szolgáltatásokkal.',
-      'notifications' => 'Alkalmazáson belüli és e-mail értesítési beállítások.',
-      'inboundEmails' => 'A bejövő e-mailek beállításai.',
-      'emailFilters' => 'A megadott szűrővel egyező e-mail üzeneteket nem importálják.',
-      'actionHistory' => 'A felhasználói műveletek naplózása.',
-      'labelManager' => 'Alkalmazáscímkék testreszabása.',
-      'authLog' => 'Bejelentkezés története.',
+      'settings' => 'Ajustes generales del sistema.',
+      'scheduledJob' => 'Trabajos que se ejecutan en segundo plano (CRON).',
+      'upgrade' => 'Actualiza EspoCRM.',
+      'clearCache' => 'Limpia toda la memoria caché del sistema.',
+      'rebuild' => 'Reconstruir el sistema y limpia la caché.',
+      'users' => 'Gestión de usuarios.',
+      'teams' => 'Gestión de equipos.',
+      'roles' => 'Gestión de roles.',
+      'portals' => 'Gestión de portales.',
+      'portalRoles' => 'Roles para el portal.',
+      'portalUsers' => 'Usuarios del portal.',
+      'outboundEmails' => 'Ajustes para los correos del sistema y de envíos masivos.',
+      'groupEmailAccounts' => 'Ajustes de cuentas de correo grupales. Ejemplo: casilla de soporte.',
+      'personalEmailAccounts' => 'Ajustes de cuentas de correo personales de los usuarios.',
+      'emailTemplates' => 'Plantillas para de correos salientes.',
+      'import' => 'Importar datos desde CSV.',
+      'layoutManager' => 'Personalizar diseños (listas, detalles, editar, buscar, actualización masiva).',
+      'entityManager' => 'Crear y editar entidades personalizadas. Administrar campos y relaciones.',
+      'userInterface' => 'Configurar interfaz de usuario: Logo, tema, menu, etc.',
+      'authTokens' => 'Sesiones de usuarios activas. Direcciones IP y última fecha de acceso.',
+      'authentication' => 'Ajustes de autenticación.',
+      'currency' => 'Ajustes de moneda y tipos de cambio.',
+      'extensions' => 'Instalar o desinstalar extensiones.',
+      'integrations' => 'Integración con los servicios de terceros.',
+      'notifications' => 'Ajustes de notificaciones del sistema y por correo electrónico.',
+      'inboundEmails' => 'Ajustes para los correos entrantes.',
+      'emailFilters' => 'Filtros para los correos entrantes.',
+      'actionHistory' => 'Registro de las acciones del usuario.',
+      'labelManager' => 'Personaliza las etiquetas de las aplicaciones.',
+      'authLog' => 'Login history.',
       'leadCapture' => 'API entry points for Web-to-Lead.',
       'attachments' => 'All file attachments stored in the system.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
-        'x-small' => 'X-Small',
-        'small' => 'Kicsi',
-        'medium' => 'Közepes',
-        'large' => 'Nagy',
+        'x-small' => 'Muy Pequeño',
+        'small' => 'Pequeño',
+        'medium' => 'Mediano',
+        'large' => 'Grande',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
-      'and' => 'ÉS',
-      'or' => 'VAGY',
-      'not' => 'NEM',
+      'and' => 'Y',
+      'or' => 'O',
+      'not' => 'NO',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Role',
       'related' => 'Related',
@@ -297,9 +298,9 @@ return array (
       'storage' => 'Storage',
       'size' => 'Size (bytes)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Attachment',
         'Inline Attachment' => 'Inline Attachment',
@@ -309,1934 +310,1971 @@ return array (
         'Mass Pdf' => 'Mass Pdf',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
-      'Document' => 'Dokumentum beszúrása',
+      'Document' => 'Insertar documento',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Orphan',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'username' => 'Felhasználónév',
-      'ipAddress' => 'IP-cím',
-      'requestTime' => 'Kérés ideje',
-      'createdAt' => 'Kért At',
-      'isDenied' => 'Megtagadva',
+      'username' => 'Username',
+      'ipAddress' => 'IP Address',
+      'requestTime' => 'Request Time',
+      'createdAt' => 'Requested At',
+      'isDenied' => 'Is Denied',
       'denialReason' => 'Denial Reason',
-      'portal' => 'Portál',
-      'user' => 'használó',
-      'authToken' => 'Hitel Token létrehozva',
-      'requestUrl' => 'URL kérése',
-      'requestMethod' => 'Kérés módja',
-      'authTokenIsActive' => 'Az Auth Token aktív',
+      'portal' => 'Portal',
+      'user' => 'User',
+      'authToken' => 'Auth Token Created',
+      'requestUrl' => 'Request URL',
+      'requestMethod' => 'Request Method',
+      'authTokenIsActive' => 'Auth Token is Active',
     ),
-    'links' => 
+    'links' =>
     array (
-      'authToken' => 'Hitel Token létrehozva',
-      'user' => 'használó',
-      'portal' => 'Portál',
-      'actionHistoryRecords' => 'Akció története',
+      'authToken' => 'Auth Token Created',
+      'user' => 'User',
+      'portal' => 'Portal',
+      'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'denied' => 'tiltott',
-      'accepted' => 'Elfogadott',
+      'denied' => 'Denied',
+      'accepted' => 'Accepted',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
-        'CREDENTIALS' => 'Érvénytelen hitelesítő adatok',
-        'INACTIVE_USER' => 'Inaktív felhasználó',
-        'IS_PORTAL_USER' => 'Portál felhasználó',
-        'IS_NOT_PORTAL_USER' => 'Nem portál felhasználó',
-        'USER_IS_NOT_IN_PORTAL' => 'A felhasználó nem kapcsolódik a portálhoz',
+        'CREDENTIALS' => 'Invalid credentials',
+        'INACTIVE_USER' => 'Inactive user',
+        'IS_PORTAL_USER' => 'Portal user',
+        'IS_NOT_PORTAL_USER' => 'Not a portal user',
+        'USER_IS_NOT_IN_PORTAL' => 'User is not related to the portal',
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'használó',
-      'ipAddress' => 'IP-cím',
-      'lastAccess' => 'Utolsó hozzáférési dátum',
-      'createdAt' => 'Bejelentkezési dátum',
-      'isActive' => 'Aktív',
-      'portal' => 'Portál',
+      'user' => 'Usuario',
+      'ipAddress' => 'Dirección IP',
+      'lastAccess' => 'Fecha del último acceso',
+      'createdAt' => 'Fecha de acceso',
+      'isActive' => 'Está activo',
+      'portal' => 'Portal',
     ),
-    'links' => 
+    'links' =>
     array (
-      'actionHistoryRecords' => 'Akció története',
+      'actionHistoryRecords' => 'Histórico',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktív',
-      'inactive' => 'tétlen',
+      'active' => 'Activo',
+      'inactive' => 'Inactivo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Set Inactive' => 'Inaktív beállítás',
+      'Set Inactive' => 'Establecer Inactivo',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setInactive' => 'Inaktív beállítás',
+      'setInactive' => 'Establecer Inactivo',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'title' => 'Cím',
-      'dateFrom' => 'Dátum óta',
-      'dateTo' => 'Dátum',
-      'autorefreshInterval' => 'Automatikus frissítési időköz',
-      'displayRecords' => 'Megjeleníti a rekordokat',
-      'isDoubleHeight' => 'Magasság 2x',
-      'mode' => 'Mód',
-      'enabledScopeList' => 'Mit jelenjen meg',
-      'users' => 'felhasználók',
-      'entityType' => 'Entity Type',
-      'primaryFilter' => 'Elsődleges szűrő',
-      'boolFilterList' => 'További szűrők',
-      'sortBy' => 'Rendelés (mező)',
-      'sortDirection' => 'Rendelés (irány)',
-      'expandedLayout' => 'Elrendezés',
-      'dateFilter' => 'Dátum szűrő',
-      'futureDays' => 'Következő X napok',
+      'title' => 'Título',
+      'dateFrom' => 'Fecha desde',
+      'dateTo' => 'Fecha hasta',
+      'autorefreshInterval' => 'Actualizar cada:',
+      'displayRecords' => 'Mostrar Registros',
+      'isDoubleHeight' => 'Altitud 2x',
+      'mode' => 'Modo',
+      'enabledScopeList' => 'Qué mostrar',
+      'users' => 'Usuarios',
+      'entityType' => 'Tipo de entidad',
+      'primaryFilter' => 'Filtro principal',
+      'boolFilterList' => 'Filtros adicionales',
+      'sortBy' => 'Ordenar (campo)',
+      'sortDirection' => 'Ordenar (dirección)',
+      'expandedLayout' => 'Diseño',
+      'dateFilter' => 'Date Filter',
+      'futureDays' => 'Next X Days',
       'useLastStage' => 'Group by last reached stage',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
-        'agendaWeek' => 'Hét (napirend)',
-        'basicWeek' => 'Hét',
-        'month' => 'Hónap',
-        'basicDay' => 'Nap',
-        'agendaDay' => 'Nap (napirend)',
-        'timeline' => 'Idővonal',
+        'agendaWeek' => 'Semana (orden del día)',
+        'basicWeek' => 'Semana',
+        'month' => 'Mes',
+        'basicDay' => 'Día',
+        'agendaDay' => 'Día (agenda)',
+        'timeline' => 'Línea de tiempo',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectEntityType' => 'Válassza ki az Entity Type elemet a vázlatos beállításokban.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en las opciones de la caja.',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Field' => 'Mező',
+      'Field' => 'Field',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
-        'equals' => 'egyenlő',
-        'notEquals' => 'Nem egyenlő',
-        'greaterThan' => 'Nagyobb, mint',
-        'lessThan' => 'Kevesebb, mint',
-        'greaterThanOrEquals' => 'Nagyobb vagy egyenlő',
-        'lessThanOrEquals' => 'Kevesebb mint vagy egyenlő',
-        'in' => 'Ban ben',
-        'notIn' => 'Nem bent',
-        'inPast' => 'A múltban',
-        'inFuture' => 'Jövő',
-        'isToday' => 'Ma van',
-        'isTrue' => 'Igaz',
-        'isFalse' => 'Hamis',
-        'isEmpty' => 'Üres',
-        'isNotEmpty' => 'Nem üres',
-        'contains' => 'tartalmazza',
-        'notContains' => 'Nem tartalmaz',
-        'has' => 'tartalmazza',
-        'notHas' => 'Nem tartalmaz',
+        'equals' => 'Es igual',
+        'notEquals' => 'No es igual',
+        'greaterThan' => 'Es mayor que',
+        'lessThan' => 'Es menor que',
+        'greaterThanOrEquals' => 'Es mayor o igual que',
+        'lessThanOrEquals' => 'Es menor o igual que',
+        'in' => 'Está en',
+        'notIn' => 'No está en',
+        'inPast' => 'Es antes de hoy',
+        'inFuture' => 'Es después de hoy',
+        'isToday' => 'Es hoy',
+        'isTrue' => 'Es verdadero',
+        'isFalse' => 'Es falso',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No está vacío',
+        'contains' => 'Contiene',
+        'notContains' => 'No Contiene',
+        'has' => 'Contiene',
+        'notHas' => 'No Contiene',
       ),
     ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név (Tárgy)',
-      'parent' => 'Szülő',
-      'status' => 'Állapot',
-      'dateSent' => 'Dátum elküldve',
-      'from' => 'Tól től',
-      'to' => 'Nak nek',
+      'name' => 'Asunto',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateSent' => 'Fecha de envío',
+      'from' => 'De',
+      'to' => 'Para',
       'cc' => 'CC',
-      'bcc' => 'BCC',
-      'replyTo' => 'Válaszolni',
-      'replyToString' => 'Válasz erre (karakterlánc)',
-      'isHtml' => 'Html',
-      'body' => 'Test',
-      'bodyPlain' => 'Test (egyszerű)',
-      'subject' => 'Tantárgy',
-      'attachments' => 'Mellékletek',
-      'selectTemplate' => 'Válassza a Sablon lehetőséget',
-      'fromEmailAddress' => 'Címtől',
-      'toEmailAddresses' => 'Az e-mail címzettjeihez',
-      'emailAddress' => 'Email cím',
-      'deliveryDate' => 'Kiszállítási dátum',
-      'account' => 'számla',
-      'users' => 'felhasználók',
-      'replied' => 'válaszolt',
-      'replies' => 'Válaszok',
-      'isRead' => 'Olvasson',
-      'isNotRead' => 'Nem olvasta',
-      'isImportant' => 'Fontos',
-      'isReplied' => 'Válaszol',
-      'isNotReplied' => 'Nem válaszol',
-      'isUsers' => 'A felhasználó',
-      'inTrash' => 'A kukába',
-      'sentBy' => 'Elküldött',
-      'folder' => 'Folder',
-      'inboundEmails' => 'Csoportszámlák',
-      'emailAccounts' => 'Személyes számlák',
-      'hasAttachment' => 'Csatlakozás',
-      'assignedUsers' => 'Hozzárendelt felhasználók',
-      'ccEmailAddresses' => 'CC e-mail címek',
+      'bcc' => 'CCO',
+      'replyTo' => 'Responder a',
+      'replyToString' => 'Responder a (string)',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'bodyPlain' => 'Cuerpo (plano)',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'selectTemplate' => 'Seleccione una plantilla',
+      'fromEmailAddress' => 'De (email)',
+      'toEmailAddresses' => 'A (email)',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'deliveryDate' => 'Fecha de entrega',
+      'account' => 'Cuenta',
+      'users' => 'Usuarios',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'isRead' => 'Es leído',
+      'isNotRead' => 'No leído',
+      'isImportant' => 'Es importante',
+      'isReplied' => 'Tiene respuesta',
+      'isNotReplied' => 'No se respondieron',
+      'isUsers' => 'Es del usuario',
+      'inTrash' => 'En papelera',
+      'sentBy' => 'Enviado por',
+      'folder' => 'Carpeta',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'hasAttachment' => 'Tiene adjunto',
+      'assignedUsers' => 'Usuarios asignados',
+      'ccEmailAddresses' => 'CC Email Addresses',
       'bccEmailAddresses' => 'BCC EmailAddresses',
-      'replyToEmailAddresses' => 'Válasz az e-mail címekre',
-      'messageId' => 'Üzenetazonosító',
-      'messageIdInternal' => 'Üzenetazonosító (belső)',
-      'folderId' => 'Mappaazonosító',
-      'fromName' => 'Névből',
-      'fromString' => 'A karakterláncból',
-      'isSystem' => 'Rendszer',
+      'replyToEmailAddresses' => 'Reply-To EmailAddresses',
+      'messageId' => 'Message Id',
+      'messageIdInternal' => 'Message Id (Internal)',
+      'folderId' => 'Folder Id',
+      'fromName' => 'From Name',
+      'fromString' => 'From String',
+      'isSystem' => 'Is System',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'replied' => 'válaszolt',
-      'replies' => 'Válaszok',
-      'inboundEmails' => 'Csoportszámlák',
-      'emailAccounts' => 'Személyes számlák',
-      'assignedUsers' => 'Hozzárendelt felhasználók',
-      'sentBy' => 'Elküldött',
-      'attachments' => 'Mellékletek',
-      'fromEmailAddress' => 'Az e-mail címről',
-      'toEmailAddresses' => 'Az e-mail címzettjeihez',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'assignedUsers' => 'Usuarios asignados',
+      'sentBy' => 'Enviado por',
+      'attachments' => 'Attachments',
+      'fromEmailAddress' => 'From Email Address',
+      'toEmailAddresses' => 'To EmailAddresses',
       'ccEmailAddresses' => 'CC EmailAddresses',
       'bccEmailAddresses' => 'BCC EmailAddresses',
-      'replyToEmailAddresses' => 'Válasz az e-mail címekre',
+      'replyToEmailAddresses' => 'Reply-To EmailAddresses',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'vázlat',
-        'Sending' => 'elküldés',
-        'Sent' => 'Küldött',
-        'Archived' => 'Archivált',
-        'Received' => 'kapott',
-        'Failed' => 'nem sikerült',
+        'Draft' => 'Borrador',
+        'Sending' => 'Enviando',
+        'Sent' => 'Enviado',
+        'Archived' => 'Archivado',
+        'Received' => 'Recibido',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Email' => 'Archívum e-mailben',
-      'Archive Email' => 'Archívum e-mailben',
-      'Compose' => 'Összeállít',
-      'Reply' => 'Válasz',
-      'Reply to All' => 'Válasz mindenkinek',
-      'Forward' => 'Előre',
-      'Original message' => 'Eredeti üzenet',
-      'Forwarded message' => 'továbbított üzenet',
-      'Email Accounts' => 'Személyes e-mail fiókok',
-      'Inbound Emails' => 'Csoportos e-mail fiókok',
-      'Email Templates' => 'E-mail sablonok',
-      'Send Test Email' => 'Küldjön e-mailt',
-      'Send' => 'Elküld',
-      'Email Address' => 'Email cím',
-      'Mark Read' => 'Olvasottnak jelöl',
-      'Sending...' => 'Küldés ...',
-      'Save Draft' => 'Piszkozat mentése',
-      'Mark all as read' => 'összes megjelölése olvasottként',
-      'Show Plain Text' => 'Egyszerű szöveg megjelenítése',
-      'Mark as Important' => 'Megjelölés fontosnak',
-      'Unmark Importance' => 'Jelölje meg a fontosságot',
-      'Move to Trash' => 'Kidobni a kukába',
-      'Retrieve from Trash' => 'Visszalépés a kukából',
-      'Move to Folder' => 'Áthelyezés a mappába',
-      'Filters' => 'Szűrők',
-      'Folders' => 'mappák',
-      'Create Lead' => 'Lead létrehozása',
-      'Create Contact' => 'Kapcsolat létrehozása',
-      'Add to Contact' => 'Hozzáadás a kapcsolatokhoz',
-      'Add to Lead' => 'Add az ólomhoz',
-      'Create Task' => 'Feladat létrehozása',
-      'Create Case' => 'Létrehozás',
+      'Create Email' => 'Nuevo correo archivado',
+      'Archive Email' => 'Nuevo correo archivado',
+      'Compose' => 'Nuevo',
+      'Reply' => 'Responder',
+      'Reply to All' => 'Responder a todos',
+      'Forward' => 'Reenviar',
+      'Original message' => 'Mensaje original',
+      'Forwarded message' => 'Mensaje reenviado',
+      'Email Accounts' => 'Ir a cuentas de correo personales',
+      'Inbound Emails' => 'Ir a cuentas de correo grupales',
+      'Email Templates' => 'Plantillas de correo',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
+      'Send' => 'Enviar',
+      'Email Address' => 'Correo electrónico',
+      'Mark Read' => 'Marcar como leído',
+      'Sending...' => 'Enviando...',
+      'Save Draft' => 'Guardar borrador',
+      'Mark all as read' => 'Marcar todos como leídos',
+      'Show Plain Text' => 'Ver en texto plano',
+      'Mark as Important' => 'Marcar como importante',
+      'Unmark Importance' => 'Marcar como No importante',
+      'Move to Trash' => 'Mover a la papelera',
+      'Retrieve from Trash' => 'Recuperar de la papelera',
+      'Move to Folder' => 'Mover a la carpeta',
+      'Filters' => 'Filtros',
+      'Folders' => 'Ir a carpetas de correo',
+      'Create Lead' => 'Crear posible cliente',
+      'Create Contact' => 'Crear contacto',
+      'Add to Contact' => 'Agregar a contacto',
+      'Add to Lead' => 'Agregar a posible cliente',
+      'Create Task' => 'Crear tarea',
+      'Create Case' => 'Crear ticket',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'noSmtpSetup' => 'Nincs SMTP beállítás. {link}.',
-      'testEmailSent' => 'A tesztüzenet elküldésre került',
-      'emailSent' => 'Az e-mail el lett küldve',
-      'savedAsDraft' => 'Mentve mint tervezet',
-      'confirmInsertTemplate' => 'Az e-mail szervezet elvész. Biztosan be kívánja illeszteni a sablont?',
+      'noSmtpSetup' => 'Sin configuración SMTP. {link}.',
+      'testEmailSent' => 'El correo de prueba ha sido enviado.',
+      'emailSent' => 'El correo electrónico ha sido enviada',
+      'savedAsDraft' => 'Guardado como borrador',
+      'confirmInsertTemplate' => 'The email body will be lost. Are you sure you want to insert the template?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'Küldött',
-      'archived' => 'Archivált',
-      'inbox' => 'Bejövő',
-      'drafts' => 'Dámajáték',
-      'trash' => 'Szemét',
-      'important' => 'Fontos',
+      'sent' => 'Enviados',
+      'archived' => 'Archivado',
+      'inbox' => 'Bandeja de entrada',
+      'drafts' => 'Borradores',
+      'trash' => 'Papelera',
+      'important' => 'Importante',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'markAsRead' => 'Jelöld olvasottként',
-      'markAsNotRead' => 'Megjelölés nem olvasható',
-      'markAsImportant' => 'Megjelölés fontosnak',
-      'markAsNotImportant' => 'Jelölje meg a fontosságot',
-      'moveToTrash' => 'Kidobni a kukába',
-      'moveToFolder' => 'Áthelyezés a mappába',
-      'retrieveFromTrash' => 'Visszalépés a kukából',
+      'markAsRead' => 'Marcar como leído',
+      'markAsNotRead' => 'Marcar como No leído',
+      'markAsImportant' => 'Marcar como importante',
+      'markAsNotImportant' => 'Marcar como No importante',
+      'moveToTrash' => 'Mover a la papelera',
+      'moveToFolder' => 'Mover a la carpeta',
+      'retrieveFromTrash' => 'Recuperar de la papelera',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'status' => 'Állapot',
-      'host' => 'Házigazda',
-      'username' => 'Felhasználónév',
-      'password' => 'Jelszó',
-      'port' => 'Kikötő',
-      'monitoredFolders' => 'Figyelt mappák',
-      'ssl' => 'SSL',
-      'fetchSince' => 'Fetch As',
-      'emailAddress' => 'Email cím',
-      'sentFolder' => 'Elküldött mappa',
-      'storeSentEmails' => 'Elküldött e-mailek tárolása',
-      'keepFetchedEmailsUnread' => 'A letöltött e-mailek olvasatlanok maradjanak',
-      'emailFolder' => 'Tegye be a mappába',
-      'useImap' => 'E-mailek lekérése',
-      'useSmtp' => 'SMTP használata',
-      'smtpHost' => 'SMTP fogadó',
-      'smtpPort' => 'SMTP port',
-      'smtpAuth' => 'SMTP hitelesítés',
-      'smtpSecurity' => 'SMTP biztonság',
-      'smtpUsername' => 'SMTP felhasználónév',
-      'smtpPassword' => 'SMTP jelszó',
+      'name' => 'Nombre de la cuenta',
+      'status' => 'Estado',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'ssl' => '¿Usa SSL?',
+      'fetchSince' => 'Traer correos desde',
+      'emailAddress' => 'Correo electrónico',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'keepFetchedEmailsUnread' => 'Mantener los correos que se han obtenido sin leer',
+      'emailFolder' => 'Poner en la carpeta',
+      'useImap' => 'Fetch Emails',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'Szűrők',
-      'emails' => 'e-mailek',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktív',
-        'Inactive' => 'tétlen',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailAccount' => 'E-mail fiók létrehozása',
+      'Create EmailAccount' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Main' => 'Fő',
-      'Test Connection' => 'Vizsgálati kapcsolat',
-      'Send Test Email' => 'Küldjön e-mailt',
+      'Main' => 'Principal',
+      'Test Connection' => 'Probar conexión',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'Nem sikerült csatlakozni az IMAP kiszolgálóhoz',
-      'connectionIsOk' => 'A kapcsolat rendben van',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
+      'connectionIsOk' => 'Conexión correcta',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'monitoredFolders' => 'A több mappát vesszővel kell elválasztani.
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.
 
-Hozzáadhat egy "Elküldött" mappát a külső e-mail kliensnek küldött e-mailek szinkronizálásához.',
-      'storeSentEmails' => 'Az elküldött e-maileket az IMAP szerveren tárolja. Az e-mail cím mezőjének meg kell egyeznie a cím e-mailjeivel.',
+Puede agregar una carpeta \'Enviados\' para sincronizar los correos electrónicos enviados desde un cliente externo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP. El campo Dirección de correo electrónico debe coincidir con la dirección desde donde se enviarán los correos electrónicos.',
     ),
   ),
-  'EmailAddress' => 
+  'EmailAddress' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Primary' => 'Elsődleges',
-      'Opted Out' => 'Elutasított',
-      'Invalid' => 'Érvénytelen',
+      'Primary' => 'Principal',
+      'Opted Out' => 'Se dieron de baja',
+      'Invalid' => 'Inválido',
     ),
   ),
-  'EmailFilter' => 
+  'EmailFilter' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'from' => 'Tól től',
-      'to' => 'Nak nek',
-      'subject' => 'Tantárgy',
-      'bodyContains' => 'A test tartalmaz',
-      'action' => 'Akció',
-      'isGlobal' => 'Globális',
-      'emailFolder' => 'Folder',
+      'from' => 'De',
+      'to' => 'Para',
+      'subject' => 'Asunto',
+      'bodyContains' => 'Contenido del cuerpo',
+      'action' => 'Acción',
+      'isGlobal' => 'Es global',
+      'emailFolder' => 'Carpeta',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailFilter' => 'E-mail szűrő létrehozása',
-      'Emails' => 'e-mailek',
+      'Create EmailFilter' => 'Crear un filtro de email',
+      'Emails' => 'Correos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'Skip' => 'Figyelmen kívül hagyni',
-        'Move to Folder' => 'Tegye be a mappába',
+        'Skip' => 'Ignorar',
+        'Move to Folder' => 'Poner en la carpeta',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'name' => 'Adja meg a szűrőnek egy leíró nevet.',
-      'subject' => 'Használjon helyettesítőt *:
+      'name' => 'Dé al filtro un nombre descriptivo.',
+      'subject' => 'Filtra los correos con el asunto. Dejar en blanco si no es necesario. Puede usar el comodín *:
 
-szöveg * - szöveggel kezdődik,
-* szöveg * - szöveg,
-* szöveg - szöveggel végződik.',
-      'bodyContains' => 'Az e-mail teste tartalmazza a megadott szavakat vagy kifejezéseket.',
-      'from' => 'E-mailek küldése a megadott címről. Hagyja üresen, ha nem szükséges. Használhat helyettesítőt *.',
-      'to' => 'E-mailek küldése a megadott címre. Hagyja üresen, ha nem szükséges. Használhat helyettesítőt *.',
-      'isGlobal' => 'Ez a szűrő a rendszerbe érkező összes e-mailre vonatkozik.',
+texto* - empieza con texto,
+*texot* - contiene texto,
+*texto - termina con texto.',
+      'bodyContains' => 'Filtra los correos que en el cuerpo contengan cualquiera de estas palabras o frases.',
+      'from' => 'Filtra los correos enviados desde esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'to' => 'Filtra los correos enviados a esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'isGlobal' => 'Aplica este filtro a todos los correos entrantes del sistema.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'skipNotifications' => 'Értesítések kihagyása',
+      'skipNotifications' => 'Omitir notificaciones',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailFolder' => 'Mappa létrehozás',
-      'Manage Folders' => 'Mappák kezelése',
-      'Emails' => 'e-mailek',
+      'Create EmailFolder' => 'Crear carpeta',
+      'Manage Folders' => 'Administrar carpetas',
+      'Emails' => 'Correos',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'status' => 'Állapot',
-      'isHtml' => 'Html',
-      'body' => 'Test',
-      'subject' => 'Tantárgy',
-      'attachments' => 'Mellékletek',
-      'insertField' => 'Terület beillesztése',
-      'oneOff' => 'Egyszeri',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'insertField' => 'Insertar campo',
+      'oneOff' => 'Único',
       'category' => 'Category',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailTemplate' => 'E-mail sablon létrehozása',
-      'Info' => 'Info',
-      'Available placeholders' => 'Rendelkezésre álló helyőrzők',
+      'Create EmailTemplate' => 'Crear plantilla de correo',
+      'Info' => 'Información',
+      'Available placeholders' => 'Available placeholders',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'infoText' => 'Rendelkezésre álló helyőrzők:
+      'infoText' => 'Variables disponibles:
 
-{optOutUrl} & # 8211; A megtagadási link URL-je;
+{optOutUrl} &#8211; URL del enlace de baja.
 
-{optOutLink} & # 8211; leiratkozási link.',
+{optOutLink} &#8211;  Enlace de baja.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'oneOff' => 'Ellenőrizze, hogy ezt a sablont csak egyszer használja. Például. Mass Email számára.',
+      'oneOff' => 'Marque la casilla si usted va a utilizar esta plantilla solo una vez. Por ejemplo para correo masivo.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Tényleges',
+      'actual' => 'Actuales',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
-      'optOutUrl' => 'A le nem adható link URL-je',
-      'optOutLink' => 'leiratkozási link',
+      'optOutUrl' => 'URL for an unsubsbribe link',
+      'optOutLink' => 'an unsubscribe link',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Create Category',
       'Manage Categories' => 'Manage Categories',
       'EmailTemplates' => 'Email Templates',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Order',
       'childList' => 'Child List',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'Email Templates',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Fields' => 'Fields',
-      'Relationships' => 'Kapcsolatok',
-      'Schedule' => 'Menetrend',
-      'Log' => 'Bejelentkezés',
-      'Formula' => 'Képlet',
+      'Fields' => 'Campos',
+      'Relationships' => 'Relaciones',
+      'Schedule' => 'Programar',
+      'Log' => 'Registros',
+      'Formula' => 'Fórmula',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'type' => 'típus',
-      'labelSingular' => 'Egyetlen címke',
-      'labelPlural' => 'Plurális címke',
-      'stream' => 'Folyam',
-      'label' => 'Címke',
-      'linkType' => 'Link típusa',
-      'entityForeign' => 'Külföldi szervezet',
-      'linkForeign' => 'Külföldi link',
-      'link' => 'Link',
-      'labelForeign' => 'Külföldi címke',
-      'sortBy' => 'Alapértelmezett megrendelés (mező)',
-      'sortDirection' => 'Alapértelmezett megrendelés (irány)',
-      'relationName' => 'A középső tábla neve',
-      'linkMultipleField' => 'Link Több mező',
-      'linkMultipleFieldForeign' => 'Külföldi link több területen',
-      'disabled' => 'Tiltva',
-      'textFilterFields' => 'Szövegszűrős mezők',
-      'audited' => 'ellenőrzött',
-      'auditedForeign' => 'Külföldi ellenőrzés',
-      'statusField' => 'Állapotmező',
-      'beforeSaveCustomScript' => 'Mielőtt elment volna az egyéni scriptet',
-      'color' => 'Szín',
+      'name' => 'Nombre',
+      'type' => 'Tipo',
+      'labelSingular' => 'Etiqueta en singular',
+      'labelPlural' => 'Etiqueta en plural',
+      'stream' => 'Historia',
+      'label' => 'Etiqueta',
+      'linkType' => 'Tipo de enlace',
+      'entityForeign' => 'Entidad foránea',
+      'linkForeign' => 'Enlace Foráneo',
+      'link' => 'Enlace',
+      'labelForeign' => 'Etiqueta Foránea',
+      'sortBy' => 'Orden por defecto (campo)',
+      'sortDirection' => 'Orden por defecto (dirección)',
+      'relationName' => 'Nombre de la Tabla Intermedia',
+      'linkMultipleField' => 'Enlaza múltiples campos',
+      'linkMultipleFieldForeign' => 'Enlaza múltiples campos foráneos',
+      'disabled' => 'Desactivado',
+      'textFilterFields' => 'Los campos de filtro de texto',
+      'audited' => 'Auditado',
+      'auditedForeign' => 'Foráneo auditado',
+      'statusField' => 'Campo estado',
+      'beforeSaveCustomScript' => 'Antes de guardar la secuencia de comandos personalizada',
+      'color' => 'Color',
       'kanbanViewMode' => 'Kanban View',
-      'kanbanStatusIgnoreList' => 'A Kanban nézetben figyelmen kívül hagyott csoportok',
-      'iconClass' => 'Ikon',
+      'kanbanStatusIgnoreList' => 'Ignored groups in Kanban view',
+      'iconClass' => 'Icon',
       'fullTextSearch' => 'Full-Text Search',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        '' => 'Egyik sem',
-        'Base' => 'Bázis',
-        'Person' => 'Személy',
-        'CategoryTree' => 'Kategóriafa',
-        'Event' => 'Esemény',
+        '' => 'Ninguno',
+        'Base' => 'Base',
+        'Person' => 'Persona',
+        'CategoryTree' => 'Árbol de categorías',
+        'Event' => 'Evento',
         'BasePlus' => 'Base Plus',
-        'Company' => 'Vállalat',
+        'Company' => 'Empresa',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
-        'manyToMany' => 'Sok-sok',
-        'oneToMany' => 'Egy a sokhoz',
-        'manyToOne' => 'Sok-to-One',
-        'parentToChildren' => 'Szülő-to-Children',
-        'childrenToParent' => 'Gyermek-to-Parent',
+        'manyToMany' => 'Mucho-a-Muchos',
+        'oneToMany' => 'Uno-a-Muchos',
+        'manyToOne' => 'Muchos-a-uno',
+        'parentToChildren' => 'Padres-a-Hijos',
+        'childrenToParent' => 'Hijos-a-Padres',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
-        'asc' => 'növekvő',
-        'desc' => 'csökkenő',
+        'asc' => 'Ascendente',
+        'desc' => 'Descendente',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'entityCreated' => 'Az entitást létrehozták',
-      'linkAlreadyExists' => 'Link név konfliktus.',
-      'linkConflict' => 'Névkonfliktus: már létezik egy azonos nevű link vagy mező.',
+      'entityCreated' => 'La entidad ha sido creada',
+      'linkAlreadyExists' => 'Conflicto de nombres en el enlace.',
+      'linkConflict' => 'Conflicto de nombres: un enlace o campo con el mismo nombre ya existe.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'statusField' => 'A mező frissítései be vannak jelentkezve az adatfolyamba.',
-      'textFilterFields' => 'A szöveges keresés által használt mezők.',
-      'stream' => 'Függetlenül attól, hogy az entitás Stream-lel rendelkezik',
-      'disabled' => 'Ellenőrizze, hogy nincs-e szüksége erre a rendszerre.',
-      'linkAudited' => 'A kapcsolódó rekordok létrehozása és a meglévő rekordok összekapcsolása folyamatban lesz.',
-      'linkMultipleField' => 'Link Több mező hasznos módja a kapcsolatok szerkesztéséhez. Ne használja, ha nagyszámú kapcsolódó nyilvántartással rendelkezik.',
-      'entityType' => 'Base Plus - Tevékenységek, előzmények és feladatok panelek.
+      'statusField' => 'Las actualizaciones de este campo se registran en la historia.',
+      'textFilterFields' => 'Campos utilizados por la búsqueda de texto.',
+      'stream' => 'Marque para que la entidad tenga historia.',
+      'disabled' => 'Marque si no necesita esta entidad en su sistema.',
+      'linkAudited' => 'Crear un registro relacionado y vincularlo con el registro existente, hará que se registre en la historia.',
+      'linkMultipleField' => 'El campo de relaciones múltiples proporciona una manera práctica de editar relaciones. No lo use si puede tener un gran número de registros relacionados.',
+      'entityType' => 'Base: Sin elementos adicionales
 
-Esemény - elérhető a Naptár és tevékenységek panelben.',
+Base Plus - Similar a Posibles clientes y Oportunidades (tiene paneles de Actividades planeadas, Historial de actividades y Tareas).
+
+Evento - Similar a Reuniones y Llamadas (disponible en Calendario y en el Panel de Actividades).
+
+Persona - Similar a Contacto.
+
+Empresa - Similar a Cuenta.',
       'fullTextSearch' => 'Running rebuild is required.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'exportAllFields' => 'Minden mező exportálása',
-      'fieldList' => 'Mező lista',
-      'format' => 'Formátum',
+      'exportAllFields' => 'Exportar todos los campos',
+      'fieldList' => 'Lista de campos',
+      'format' => 'Formato',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
         'xlsx' => 'XLSX (Excel)',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'version' => 'Változat',
-      'description' => 'Leírás',
-      'isInstalled' => 'telepített',
+      'name' => 'Nombre',
+      'version' => 'Versión',
+      'description' => 'Descripción',
+      'isInstalled' => 'Instalado',
       'checkVersionUrl' => 'An URL for checking new versions',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Uninstall' => 'Eltávolítás',
-      'Install' => 'Telepítés',
+      'Uninstall' => 'Desinstalar',
+      'Install' => 'Instalar',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'uninstalled' => 'A (z) {name} bővítmény eltávolításra került',
-    ),
-  ),
-  'ExternalAccount' => 
-  array (
-    'labels' => 
-    array (
-      'Connect' => 'Csatlakozás',
-      'Connected' => 'csatlakoztatva',
-    ),
-    'help' => 
-    array (
+      'uninstalled' => 'Extensión {name} ha sido desinstalada',
     ),
   ),
-  'FieldManager' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Dynamic Logic' => 'Dinamikus logika',
-      'Name' => 'Név',
-      'Label' => 'Címke',
-      'Type' => 'típus',
+      'Connect' => 'Conectar',
+      'Connected' => 'Conectado',
     ),
-    'options' => 
+    'help' =>
     array (
-      'dateTimeDefault' => 
+    ),
+  ),
+  'FieldManager' =>
+  array (
+    'labels' =>
+    array (
+      'Dynamic Logic' => 'Lógica dinámica',
+      'Name' => 'Name',
+      'Label' => 'Label',
+      'Type' => 'Type',
+    ),
+    'options' =>
+    array (
+      'dateTimeDefault' =>
       array (
-        '' => 'Egyik sem',
-        'javascript: return this.dateTime.getNow(1);' => 'Most',
-        'javascript: return this.dateTime.getNow(5);' => 'Most (5 m)',
-        'javascript: return this.dateTime.getNow(15);' => 'Most (15 m)',
-        'javascript: return this.dateTime.getNow(30);' => 'Most (30 m)',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+ 6 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+ 11 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 óra',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 nap',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 nap',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 nap',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 nap',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 nap',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 nap',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 hét',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getNow(1);' => 'Ahora',
+        'javascript: return this.dateTime.getNow(5);' => 'Ahora (5m)',
+        'javascript: return this.dateTime.getNow(15);' => 'Ahora (15m)',
+        'javascript: return this.dateTime.getNow(30);' => 'Ahora (30m)',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 hora',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+6 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+11 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 día',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 semana',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
-        '' => 'Egyik sem',
-        'javascript: return this.dateTime.getToday();' => 'Ma',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 nap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 hét',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+ 2 hét',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 hét',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+ 2 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+ 3 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+ 5 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+ 6 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+ 7 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+ 10 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+ 11 hónap',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 év',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getToday();' => 'Hoy',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 semana',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+2 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 mes',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+2 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+3 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+5 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+6 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+7 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+10 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+11 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 año',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'audited' => 'A frissítések naplózásra kerülnek.',
-      'required' => 'A mező kötelező lesz. Nem lehet üresen hagyni.',
-      'default' => 'A létrehozáskor alapértelmezett érték lesz.',
-      'min' => 'Minimális elfogadható érték.',
-      'max' => 'Maximális elfogadható érték.',
-      'seeMoreDisabled' => 'Ha nincs bejelölve, a hosszú szövegek lerövidülnek.',
-      'lengthOfCut' => 'Mennyi ideig lehet a szöveg előtt vágni.',
-      'maxLength' => 'Max elfogadható szöveghossz.',
-      'before' => 'A dátumértéknek meg kell felelnie a megadott mező dátumértékének.',
-      'after' => 'A dátumértéknek a megadott mező dátumértékének után kell lennie.',
-      'readOnly' => 'A mező értékét a felhasználó nem határozhatja meg. De kiszámítható a képlet szerint.',
-      'maxFileSize' => 'Ha üres vagy 0, akkor nincs korlátozás.',
+      'audited' => 'Las actualizaciones se registrarán en la historia.',
+      'required' => 'El campo será obligatorio. No se puede dejar vacío.',
+      'default' => 'El valor se establecerá de forma predeterminada al guardar.',
+      'min' => 'Valor mínimo aceptado.',
+      'max' => 'Valor máximo aceptado.',
+      'seeMoreDisabled' => 'Si no se marca, los textos largos se cortarán.',
+      'lengthOfCut' => 'Que largo tendrán los textos antes de ser cortados.',
+      'maxLength' => 'Longitud máxima aceptable del texto.',
+      'before' => 'El valor de fecha debe ser anterior al valor de fecha del campo especificado.',
+      'after' => 'El valor de fecha debe ser posterior al valor de fecha del campo especificado.',
+      'readOnly' => 'El usuario no puede especificar el valor del campo. Pero se puede calcular por fórmula.',
+      'maxFileSize' => 'Si está vacío o es 0, entonces no limitar',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
-        'street' => 'utca',
-        'city' => 'Város',
-        'state' => 'Állapot',
-        'country' => 'Ország',
-        'postalCode' => 'Irányítószám',
-        'map' => 'Térkép',
+        'street' => 'Calle',
+        'city' => 'Ciudad',
+        'state' => 'Estado',
+        'country' => 'País',
+        'postalCode' => 'Código Postal',
+        'map' => 'Mapa',
       ),
-      'personName' => 
+      'personName' =>
       array (
-        'salutation' => 'Üdvözlés',
-        'first' => 'Első',
-        'last' => 'Utolsó',
+        'salutation' => 'Saludo',
+        'first' => 'Nombre',
+        'last' => 'Apellido',
       ),
-      'currency' => 
+      'currency' =>
       array (
-        'converted' => '(Konvertált)',
-        'currency' => '(Valuta)',
+        'converted' => '(Convertido)',
+        'currency' => '(Currency)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
-        'date' => 'Dátum',
+        'date' => 'Fecha',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
-      'Email' => 'Email',
-      'User' => 'használó',
-      'Team' => 'Csapat',
-      'Role' => 'Szerep',
-      'EmailTemplate' => 'E-mail sablon',
+      'Email' => 'Correo electrónico',
+      'User' => 'Usuario',
+      'Team' => 'Equipo',
+      'Role' => 'Rol',
+      'EmailTemplate' => 'Plantilla de Correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Személyes e-mail fiók',
-      'EmailAccountScope' => 'Személyes e-mail fiók',
-      'OutboundEmail' => 'Kimenő e-mail',
-      'ScheduledJob' => 'Ütemezett munka',
-      'ExternalAccount' => 'Külső számla',
-      'Extension' => 'Kiterjesztés',
-      'Dashboard' => 'Irányítópult',
-      'InboundEmail' => 'Csoportos e-mail fiók',
-      'Stream' => 'Folyam',
-      'Import' => 'import',
-      'Template' => 'Sablon',
-      'Job' => 'Munka',
-      'EmailFilter' => 'E-mail szűrő',
-      'Portal' => 'Portál',
-      'PortalRole' => 'Portál szerep',
-      'Attachment' => 'Attachment',
-      'EmailFolder' => 'E-mail mappa',
-      'PortalUser' => 'Portál felhasználó',
-      'ScheduledJobLogRecord' => 'Ütemezett feladatnapló',
-      'PasswordChangeRequest' => 'Jelszóváltási kérelem',
-      'ActionHistoryRecord' => 'Művelettörténeti rekord',
-      'AuthToken' => 'Hitel Token',
-      'UniqueId' => 'Egyéni azonosító',
-      'LastViewed' => 'Utoljára megtekintett',
-      'Settings' => 'Beállítások',
-      'FieldManager' => 'Field Manager',
-      'Integration' => 'Integráció',
-      'LayoutManager' => 'Elrendezéskezelő',
-      'EntityManager' => 'Entity Manager',
-      'Export' => 'Export',
-      'DynamicLogic' => 'Dinamikus logika',
-      'DashletOptions' => 'Dashlet opciók',
-      'Admin' => 'admin',
-      'Global' => 'Globális',
-      'Preferences' => 'preferenciák',
-      'EmailAddress' => 'Email cím',
-      'PhoneNumber' => 'Telefonszám',
-      'AuthLogRecord' => 'Hitelesítési napló',
-      'AuthFailLogRecord' => 'Hitelesítési hibaüzenet',
+      'EmailAccount' => 'Cuenta de correo personal',
+      'EmailAccountScope' => 'Cuenta de correo personal',
+      'OutboundEmail' => 'Correo Saliente',
+      'ScheduledJob' => 'Tarea Programada',
+      'ExternalAccount' => 'Cuenta Externa',
+      'Extension' => 'Extensión',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuenta de correo grupal',
+      'Stream' => 'Historia',
+      'Import' => 'Importar',
+      'Template' => 'Plantilla',
+      'Job' => 'Trabajo',
+      'EmailFilter' => 'Filtro de correo',
+      'Portal' => 'Portal',
+      'PortalRole' => 'Rol del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpeta de correo electrónico',
+      'PortalUser' => 'Usuario del portal',
+      'ScheduledJobLogRecord' => 'Registro del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambio de Contraseña',
+      'ActionHistoryRecord' => 'Registro del histórico',
+      'AuthToken' => 'Token de autenticación',
+      'UniqueId' => 'ID Único',
+      'LastViewed' => 'Historial de acciones',
+      'Settings' => 'Ajustes',
+      'FieldManager' => 'Administrador de campos',
+      'Integration' => 'Integración',
+      'LayoutManager' => 'Administrador de diseño',
+      'EntityManager' => 'Gestionar de entidades',
+      'Export' => 'Exportar',
+      'DynamicLogic' => 'Lógica dinámica',
+      'DashletOptions' => 'Ajustes de cajas',
+      'Admin' => 'Administrador',
+      'Global' => 'Global',
+      'Preferences' => 'Preferencias',
+      'EmailAddress' => 'Correo electrónico',
+      'PhoneNumber' => 'Número de teléfono',
+      'AuthLogRecord' => 'Auth Log Record',
+      'AuthFailLogRecord' => 'Auth Fail Log Record',
       'LeadCapture' => 'Lead Capture Entry Point',
       'LeadCaptureLogRecord' => 'Lead Capture Log Record',
       'ArrayValue' => 'Array Value',
-      'Account' => 'számla',
-      'Contact' => 'Kapcsolatba lépni',
-      'Lead' => 'Vezet',
-      'Target' => 'Cél',
-      'Opportunity' => 'Lehetőség',
-      'Meeting' => 'Találkozó',
-      'Calendar' => 'Naptár',
-      'Call' => 'Hívás',
-      'Task' => 'Feladat',
-      'Case' => 'Ügy',
-      'Document' => 'Dokumentum',
-      'DocumentFolder' => 'Dokumentum mappa',
-      'Campaign' => 'Kampány',
-      'TargetList' => 'Tűztábla',
-      'MassEmail' => 'Tömeges e-mail',
-      'EmailQueueItem' => 'E-mail soros tétel',
-      'CampaignTrackingUrl' => 'Követési URL',
-      'Activities' => 'Tevékenységek',
-      'KnowledgeBaseArticle' => 'Tudásbázis cikk',
-      'KnowledgeBaseCategory' => 'Tudásbázis-kategória',
-      'CampaignLogRecord' => 'Kampánynaplófelvétel',
+      'Account' => 'Cuenta',
+      'Contact' => 'Contacto',
+      'Lead' => 'Posible cliente',
+      'Target' => 'Objetivo',
+      'Opportunity' => 'Oportunidad',
+      'Meeting' => 'Reunión',
+      'Calendar' => 'Calendario',
+      'Call' => 'Llamada',
+      'Task' => 'Tarea',
+      'Case' => 'Ticket',
+      'Document' => 'Documento',
+      'DocumentFolder' => 'Carpeta de documento',
+      'Campaign' => 'Campaña',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correo masivo',
+      'EmailQueueItem' => 'Elemento en cola de correos',
+      'CampaignTrackingUrl' => 'URL de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Artículo de la base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categoría de la base de conocimiento',
+      'CampaignLogRecord' => 'Registro del registro de la campaña',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
-      'Email' => 'e-mailek',
-      'User' => 'felhasználók',
-      'Team' => 'csapatok',
-      'Role' => 'szerepek',
-      'EmailTemplate' => 'E-mail sablonok',
+      'Email' => 'Correos',
+      'User' => 'Usuarios',
+      'Team' => 'Equipos',
+      'Role' => 'Roles',
+      'EmailTemplate' => 'Plantillas de correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Személyes e-mail fiókok',
-      'EmailAccountScope' => 'Személyes e-mail fiókok',
-      'OutboundEmail' => 'Kimenő e-mailek',
-      'ScheduledJob' => 'Ütemezett munkák',
-      'ExternalAccount' => 'Külső számlák',
-      'Extension' => 'Extensions',
-      'Dashboard' => 'Irányítópult',
-      'InboundEmail' => 'Csoportos e-mail fiókok',
-      'Stream' => 'Folyam',
-      'Import' => 'Eredmények importálása',
-      'Template' => 'sablonok',
-      'Job' => 'Állás',
-      'EmailFilter' => 'E-mail szűrők',
-      'Portal' => 'portálok',
-      'PortalRole' => 'Portál szerepek',
-      'Attachment' => 'Mellékletek',
-      'EmailFolder' => 'E-mail mappák',
-      'PortalUser' => 'Portál felhasználók',
-      'ScheduledJobLogRecord' => 'Ütemezett munkanaplórekordok',
-      'PasswordChangeRequest' => 'Jelszóváltási kérelmek',
-      'ActionHistoryRecord' => 'Akció története',
-      'AuthToken' => 'Hiteles tokenek',
-      'UniqueId' => 'Egyedi azonosító',
-      'LastViewed' => 'Utoljára megtekintett',
-      'AuthLogRecord' => 'Hitelesítési napló',
+      'EmailAccount' => 'Cuentas de correo personales',
+      'EmailAccountScope' => 'Cuentas de correo personales',
+      'OutboundEmail' => 'Salientes',
+      'ScheduledJob' => 'Tareas programadas',
+      'ExternalAccount' => 'Cuentas externas',
+      'Extension' => 'Extensiones',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuentas de correo grupales',
+      'Stream' => 'Historia',
+      'Import' => 'Resultados de importaciones',
+      'Template' => 'Plantillas',
+      'Job' => 'Trabajos',
+      'EmailFilter' => 'Filtros',
+      'Portal' => 'Portales',
+      'PortalRole' => 'Roles del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpetas de correo',
+      'PortalUser' => 'Usuarios del portal',
+      'ScheduledJobLogRecord' => 'Registros del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambios de Contraseñas',
+      'ActionHistoryRecord' => 'Histórico',
+      'AuthToken' => 'Tokens',
+      'UniqueId' => 'ID Únicos',
+      'LastViewed' => 'Historial de acciones',
+      'AuthLogRecord' => 'Auth Log',
       'AuthFailLogRecord' => 'Auth Fail Log',
       'LeadCapture' => 'Lead Capture',
       'LeadCaptureLogRecord' => 'Lead Capture Log',
       'ArrayValue' => 'Array Values',
-      'Account' => 'Fiókok',
-      'Contact' => 'Kapcsolatok',
-      'Lead' => 'vezet',
-      'Target' => 'célok',
-      'Opportunity' => 'lehetőségek',
-      'Meeting' => 'találkozók',
-      'Calendar' => 'Naptár',
-      'Call' => 'felhívja',
-      'Task' => 'feladatok',
-      'Case' => 'Olyan esetek,',
-      'Document' => 'Dokumentumok',
-      'DocumentFolder' => 'Dokumentummappák',
-      'Campaign' => 'kampányok',
-      'TargetList' => 'Céllista',
-      'MassEmail' => 'Tömeges e-mailek',
-      'EmailQueueItem' => 'E-mail soros elemek',
-      'CampaignTrackingUrl' => 'Nyomon követési URL-ek',
-      'Activities' => 'Tevékenységek',
-      'KnowledgeBaseArticle' => 'Tudásbázis',
-      'KnowledgeBaseCategory' => 'Tudásbázis kategóriák',
-      'CampaignLogRecord' => 'Kampánynaplórekordok',
+      'Account' => 'Cuentas',
+      'Contact' => 'Contactos',
+      'Lead' => 'Posibles clientes',
+      'Target' => 'Objetivos',
+      'Opportunity' => 'Oportunidades',
+      'Meeting' => 'Reuniones',
+      'Calendar' => 'Calendario',
+      'Call' => 'Llamadas',
+      'Task' => 'Tareas',
+      'Case' => 'Tickets',
+      'Document' => 'Documentos',
+      'DocumentFolder' => 'Carpetas de documentos',
+      'Campaign' => 'Campañas',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correos masivos',
+      'EmailQueueItem' => 'Elementos en cola de correos',
+      'CampaignTrackingUrl' => 'URLs de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categorías de la base de conocimiento',
+      'CampaignLogRecord' => 'Registros del registro de la campaña',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Misc' => 'Egyéb',
-      'Merge' => 'Összeolvad',
-      'None' => 'Egyik sem',
-      'Home' => 'itthon',
-      'by' => 'által',
-      'Saved' => 'Mentett',
-      'Error' => 'Hiba',
-      'Select' => 'választ',
-      'Not valid' => 'Nem érvényes',
-      'Please wait...' => 'Kérlek várj...',
-      'Please wait' => 'Kérlek várj',
-      'Loading...' => 'Betöltés...',
-      'Uploading...' => 'Feltöltés...',
-      'Sending...' => 'Küldés ...',
-      'Merging...' => 'Összevonása ...',
-      'Merged' => 'összeolvadt',
-      'Removed' => 'Eltávolított',
-      'Posted' => 'Közzétett',
-      'Linked' => 'összekapcsolt',
-      'Unlinked' => 'Nem összekapcsolt',
-      'Done' => 'Kész',
-      'Access denied' => 'Hozzáférés megtagadva',
-      'Not found' => 'Nem található',
-      'Access' => 'Hozzáférés',
-      'Are you sure?' => 'biztos vagy ebben?',
-      'Record has been removed' => 'A felvételt eltávolították',
-      'Wrong username/password' => 'Helytelen felhasználónév / jelszó',
-      'Post cannot be empty' => 'A bejegyzés nem lehet üres',
-      'Removing...' => 'Eltávolítása ...',
-      'Unlinking...' => 'Unlinking ...',
-      'Posting...' => 'Közzététel ...',
-      'Username can not be empty!' => 'A felhasználónév nem lehet üres!',
-      'Cache is not enabled' => 'A gyorsítótár nem engedélyezett',
-      'Cache has been cleared' => 'A gyorsítótár törlődött',
-      'Rebuild has been done' => 'Újraépítés történt',
-      'Return to Application' => 'Visszatérés az alkalmazáshoz',
-      'Saving...' => 'Megtakarítás...',
-      'Modified' => 'Módosított',
-      'Created' => 'Alkotó',
-      'Create' => 'Teremt',
-      'create' => 'teremt',
-      'Overview' => 'Áttekintés',
-      'Details' => 'Részletek',
-      'Add Field' => 'Mező hozzáadása',
-      'Add Dashlet' => 'Add hozzá a Dashletet',
-      'Filter' => 'Szűrő',
-      'Edit Dashboard' => 'Az irányítópult szerkesztése',
-      'Add' => 'hozzáad',
-      'Add Item' => 'Elem hozzáadása',
-      'Reset' => 'Visszaállítás',
-      'Menu' => 'Menü',
-      'More' => 'Több',
-      'Search' => 'Keresés',
-      'Only My' => 'Csak az enyém',
-      'Open' => 'Nyisd ki',
-      'Admin' => 'admin',
-      'About' => 'Ról ről',
-      'Refresh' => 'Frissítés',
-      'Remove' => 'eltávolít',
-      'Options' => 'Lehetőségek',
-      'Username' => 'Felhasználónév',
-      'Password' => 'Jelszó',
-      'Login' => 'Belépés',
-      'Log Out' => 'Kijelentkezés',
-      'Preferences' => 'preferenciák',
-      'State' => 'Állapot',
-      'Street' => 'utca',
-      'Country' => 'Ország',
-      'City' => 'Város',
-      'PostalCode' => 'Irányítószám',
-      'Followed' => 'Követi',
-      'Follow' => 'Kövesse',
-      'Followers' => 'Követő',
-      'Clear Local Cache' => 'Helyi gyorsítótár törlése',
-      'Actions' => 'Hozzászólások',
-      'Delete' => 'Töröl',
-      'Update' => 'frissítés',
-      'Save' => 'Mentés',
-      'Edit' => 'szerkesztése',
-      'View' => 'Kilátás',
-      'Cancel' => 'Megszünteti',
-      'Apply' => 'Alkalmaz',
-      'Unlink' => 'kapcsolatának megszüntetése',
-      'Mass Update' => 'Tömeges frissítés',
-      'Export' => 'Export',
-      'No Data' => 'Nincs adat',
-      'No Access' => 'Nincs hozzáférés',
-      'All' => 'Minden',
-      'Active' => 'Aktív',
-      'Inactive' => 'tétlen',
-      'Write your comment here' => 'Írja meg észrevételeit itt',
-      'Post' => 'posta',
-      'Stream' => 'Folyam',
-      'Show more' => 'Mutass többet',
-      'Dashlet Options' => 'Dashlet opciók',
-      'Full Form' => 'Teljes alak',
-      'Insert' => 'Insert',
-      'Person' => 'Személy',
-      'First Name' => 'Keresztnév',
-      'Last Name' => 'Vezetéknév',
-      'Original' => 'Eredeti',
-      'You' => 'te',
-      'you' => 'te',
-      'change' => 'változás',
-      'Change' => 'változás',
-      'Primary' => 'Elsődleges',
-      'Save Filter' => 'Szűrés mentése',
-      'Administration' => 'Adminisztráció',
-      'Run Import' => 'Importálás futtatása',
-      'Duplicate' => 'Másolat',
-      'Notifications' => 'értesítések',
-      'Mark all read' => 'Jelölje meg az összeset',
-      'See more' => 'Többet látni',
-      'Today' => 'Ma',
-      'Tomorrow' => 'Holnap',
-      'Yesterday' => 'Tegnap',
-      'Submit' => 'beküldése',
-      'Close' => 'Bezárás',
-      'Yes' => 'Igen',
-      'No' => 'Nem',
-      'Select All Results' => 'Válassza ki az összes eredményt',
-      'Value' => 'Érték',
-      'Current version' => 'Jelenlegi verzió',
-      'List View' => 'Lista nézet',
-      'Tree View' => 'Fanézet',
-      'Unlink All' => 'Minden összekapcsolása',
-      'Total' => 'Teljes',
-      'Print to PDF' => 'Nyomtatás PDF formátumba',
-      'Default' => 'Alapértelmezett',
-      'Number' => 'Szám',
-      'From' => 'Tól től',
-      'To' => 'Nak nek',
-      'Create Post' => 'Hozzon létre üzenetet',
-      'Previous Entry' => 'Előző bejegyzés',
-      'Next Entry' => 'Következő bejegyzés',
-      'View List' => 'Lista megtekintése',
-      'Attach File' => 'Fájl csatolása',
-      'Skip' => 'Skip',
-      'Attribute' => 'Tulajdonság',
-      'Function' => 'Funkció',
-      'Self-Assign' => 'Self-hozzárendelése',
-      'Self-Assigned' => 'Self-Címzett',
-      'Expand' => 'Kiterjed',
-      'Collapse' => 'Összeomlás',
-      'New notifications' => 'Új értesítések',
-      'Manage Categories' => 'Kategóriák kezelése',
-      'Manage Folders' => 'Mappák kezelése',
-      'Convert to' => 'Konvertálás',
-      'View Personal Data' => 'Személyes adatok megtekintése',
-      'Personal Data' => 'Személyes adatok',
-      'Erase' => 'Törli',
+      'Misc' => 'Misceláneos',
+      'Merge' => 'Unir',
+      'None' => 'Ninguno',
+      'Home' => 'Inicio',
+      'by' => 'por',
+      'Saved' => 'Guardado',
+      'Error' => 'Error',
+      'Select' => 'Seleccionar',
+      'Not valid' => 'No válido',
+      'Please wait...' => 'Por favor espere...',
+      'Please wait' => 'Por favor espere',
+      'Loading...' => 'Cargando...',
+      'Uploading...' => 'Subiendo...',
+      'Sending...' => 'Enviando...',
+      'Merging...' => 'Fusionando...',
+      'Merged' => 'Fusionado	',
+      'Removed' => 'Eliminado',
+      'Posted' => 'Publicado',
+      'Linked' => 'Enlazado',
+      'Unlinked' => 'Desenlazado',
+      'Done' => 'Hecho',
+      'Access denied' => 'Acceso denegado',
+      'Not found' => 'No encontrado',
+      'Access' => 'Acceso',
+      'Are you sure?' => '¿Está seguro?',
+      'Record has been removed' => 'Registro Eliminado',
+      'Wrong username/password' => 'Nombre de usuario/contraseña incorrectos',
+      'Post cannot be empty' => 'La entrada no puede estar vacia',
+      'Removing...' => 'Removiendo...',
+      'Unlinking...' => 'Desenlazando...',
+      'Posting...' => 'Publicando...',
+      'Username can not be empty!' => '¡El nombre de usuario no puede estar vacío!',
+      'Cache is not enabled' => 'La caché no está habilitada',
+      'Cache has been cleared' => 'La caché fue limpiada correctamente',
+      'Rebuild has been done' => 'El sistema se ha reconstruido correctamente',
+      'Return to Application' => 'Volver a la aplicación',
+      'Saving...' => 'Guardando...',
+      'Modified' => 'Modificado',
+      'Created' => 'Creado',
+      'Create' => 'Crear',
+      'create' => 'crear',
+      'Overview' => 'General',
+      'Details' => 'Detalles',
+      'Add Field' => 'Añadir Campo',
+      'Add Dashlet' => 'Añadir Caja',
+      'Filter' => 'Filtro',
+      'Edit Dashboard' => 'Editar escritorio',
+      'Add' => 'Añadir',
+      'Add Item' => 'Agregar elemento',
+      'Reset' => 'Resetear',
+      'Menu' => 'Menú',
+      'More' => 'Más',
+      'Search' => 'Buscar',
+      'Only My' => 'Solo míos',
+      'Open' => 'Abiertos',
+      'Admin' => 'Administrador',
+      'About' => 'Acerca',
+      'Refresh' => 'Actualizar',
+      'Remove' => 'Eliminar',
+      'Options' => 'Ajustes',
+      'Username' => 'Nombre de usuario',
+      'Password' => 'Contraseña',
+      'Login' => 'Entrar',
+      'Log Out' => 'Salir',
+      'Preferences' => 'Preferencias',
+      'State' => 'Estado',
+      'Street' => 'Calle',
+      'Country' => 'País',
+      'City' => 'Ciudad',
+      'PostalCode' => 'Código Postal',
+      'Followed' => 'Siguiendo',
+      'Follow' => 'Seguir',
+      'Followers' => 'Seguidores',
+      'Clear Local Cache' => 'Borrar la caché local',
+      'Actions' => 'Acciones',
+      'Delete' => 'Borrar',
+      'Update' => 'Guardar',
+      'Save' => 'Guardar',
+      'Edit' => 'Editar',
+      'View' => 'Ver',
+      'Cancel' => 'Cancelar',
+      'Apply' => 'Aplicar',
+      'Unlink' => 'Desenlazar',
+      'Mass Update' => 'Actualización masiva',
+      'Export' => 'Exportar',
+      'No Data' => 'Sin Datos',
+      'No Access' => 'Sin acceso',
+      'All' => 'Todos',
+      'Active' => 'Activo',
+      'Inactive' => 'Inactivo',
+      'Write your comment here' => 'Escriba su comentario aquí',
+      'Post' => 'Publicar',
+      'Stream' => 'Historia',
+      'Show more' => 'Mostrar mas',
+      'Dashlet Options' => 'Ajustes de cajas',
+      'Full Form' => 'Formulario Completo',
+      'Insert' => 'Insertar',
+      'Person' => 'Persona',
+      'First Name' => 'Nombre',
+      'Last Name' => 'Apellidos',
+      'Original' => 'Original',
+      'You' => 'Tu',
+      'you' => 'tu',
+      'change' => 'cambiar',
+      'Change' => 'Cambio',
+      'Primary' => 'Principal',
+      'Save Filter' => 'Guardar Filtro',
+      'Administration' => 'Administración',
+      'Run Import' => 'Ejecutar importación',
+      'Duplicate' => 'Duplicar',
+      'Notifications' => 'Notificaciones',
+      'Mark all read' => 'Marcar todos como leído',
+      'See more' => 'Ver más',
+      'Today' => 'Hoy',
+      'Tomorrow' => 'Mañana',
+      'Yesterday' => 'Ayer',
+      'Submit' => 'Enviar',
+      'Close' => 'Cerrar',
+      'Yes' => 'Si',
+      'No' => 'No',
+      'Select All Results' => 'Seleccionar todos los resultados',
+      'Value' => 'Valor',
+      'Current version' => 'Versión actual',
+      'List View' => 'Vista de Lista',
+      'Tree View' => 'Vista de árbol',
+      'Unlink All' => 'Desenlazar todo',
+      'Total' => 'Total',
+      'Print to PDF' => 'Imprimir PDF',
+      'Default' => 'Por defecto',
+      'Number' => 'Número',
+      'From' => 'De',
+      'To' => 'Para',
+      'Create Post' => 'Crear entrada',
+      'Previous Entry' => 'Entrada anterior',
+      'Next Entry' => 'Siguiente Entrada',
+      'View List' => 'Ver lista completa',
+      'Attach File' => 'Adjuntar archivo',
+      'Skip' => 'Omitir',
+      'Attribute' => 'Atributo',
+      'Function' => 'Función',
+      'Self-Assign' => 'Autoasignar',
+      'Self-Assigned' => 'Autosegnado',
+      'Expand' => 'Expand',
+      'Collapse' => 'Collapse',
+      'New notifications' => 'New notifications',
+      'Manage Categories' => 'Manage Categories',
+      'Manage Folders' => 'Manage Folders',
+      'Convert to' => 'Convert to',
+      'View Personal Data' => 'View Personal Data',
+      'Personal Data' => 'Personal Data',
+      'Erase' => 'Erase',
       'Move Over' => 'Move Over',
-      'Create InboundEmail' => 'Bejövő e-mail létrehozása',
-      'Activities' => 'Tevékenységek',
-      'History' => 'Történelem',
-      'Attendees' => 'résztvevők',
-      'Schedule Meeting' => 'Menetrend Találkozó',
-      'Schedule Call' => 'Hívás ütemezése',
-      'Compose Email' => 'E-mail írása',
-      'Log Meeting' => 'Naplózás',
-      'Log Call' => 'Naplóhívás',
-      'Archive Email' => 'Archívum e-mailben',
-      'Create Task' => 'Feladat létrehozása',
-      'Tasks' => 'feladatok',
+      'Create InboundEmail' => 'Crear correo entrante',
+      'Activities' => 'Actividades',
+      'History' => 'Historial de actividades',
+      'Attendees' => 'Asistentes',
+      'Schedule Meeting' => 'Programar reunión',
+      'Schedule Call' => 'Programar llamada',
+      'Compose Email' => 'Escribir correo',
+      'Log Meeting' => 'Registrar reunión',
+      'Log Call' => 'Registrar llamada',
+      'Archive Email' => 'Nuevo Correo Archivado',
+      'Create Task' => 'Crear tarea',
+      'Tasks' => 'Tareas',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'pleaseWait' => 'Kérlek várj...',
-      'posting' => 'Közzététel ...',
-      'loading' => 'Betöltés...',
-      'saving' => 'Megtakarítás...',
-      'confirmLeaveOutMessage' => 'Biztosan elhagyja az űrlapot?',
-      'notModified' => 'Nem módosította a rekordot',
-      'duplicate' => 'A létrehozott rekord már létezhet',
-      'dropToAttach' => 'Csúszás csatolni',
-      'fieldIsRequired' => '{kötelező mező',
-      'fieldShouldBeEmail' => 'A {field} érvényes e-mailnek kell lennie',
-      'fieldShouldBeFloat' => 'A {field} érvényes úszónak kell lennie',
-      'fieldShouldBeInt' => 'A {field} érvényes egész számnak kell lennie',
-      'fieldShouldBeDate' => 'A {field} érvényes dátumnak kell lennie',
-      'fieldShouldBeDatetime' => '{field} érvényes dátumnak és időnek kell lennie',
-      'fieldShouldAfter' => '{field} kell a {otherField} után',
-      'fieldShouldBefore' => '{field} a {otherField}',
-      'fieldShouldBeBetween' => '{field} legyen {min} és {max} között',
-      'fieldShouldBeLess' => '{field} nem lehet nagyobb, mint {value}',
-      'fieldShouldBeGreater' => '{field} nem lehet kevesebb, mint {value}',
-      'fieldBadPasswordConfirm' => '{field} nincs megfelelően megerősítve',
-      'fieldMaxFileSizeError' => 'A fájl nem haladhatja meg a {max} Mb-t',
-      'fieldIsUploading' => 'Feltöltés folyamatban',
-      'resetPreferencesDone' => 'A beállítások alapértelmezettre álltak',
-      'confirmation' => 'biztos vagy ebben?',
-      'unlinkAllConfirmation' => 'Biztos benne, hogy le szeretné kapcsolni az összes kapcsolódó iratot?',
-      'resetPreferencesConfirmation' => 'Biztosan vissza kívánja állítani az alapértelmezett beállításokat?',
-      'removeRecordConfirmation' => 'Biztosan eltávolítja a rekordot?',
-      'unlinkRecordConfirmation' => 'Biztos benne, hogy le szeretné kapcsolni a kapcsolódó rekordot?',
-      'removeSelectedRecordsConfirmation' => 'Biztosan törölni szeretne kiválasztott rekordokat?',
-      'massUpdateResult' => '{count} rekordok frissítve',
-      'massUpdateResultSingle' => 'A (z) {count} rekord frissítve lett',
-      'noRecordsUpdated' => 'Nem készült feljegyzés',
-      'massRemoveResult' => 'A (z) {count} rekordok eltávolításra kerültek',
-      'massRemoveResultSingle' => 'A (z) {count} rekord eltávolítva',
-      'noRecordsRemoved' => 'Nincsenek bejegyzések eltávolítva',
-      'clickToRefresh' => 'Kattintson a frissítéshez',
-      'streamPostInfo' => 'Írja be a <strong> @ felhasználónevet </ strong>, hogy megemlítse a felhasználókban a bejegyzést.
+      'pleaseWait' => 'Por favor espere...',
+      'posting' => 'Publicando...',
+      'loading' => 'Cargando...',
+      'saving' => 'Guardando...',
+      'confirmLeaveOutMessage' => '¿Seguro que quieres salir del formulario?',
+      'notModified' => 'Usted no ha modificado el registro',
+      'duplicate' => 'El registro que está creando parece ser un duplicado',
+      'dropToAttach' => 'Arrastre para adjuntar',
+      'fieldIsRequired' => '{field} es requerido',
+      'fieldShouldBeEmail' => '{field} debe ser un correo electrónico válido',
+      'fieldShouldBeFloat' => '{field} debe ser un decimal válido',
+      'fieldShouldBeInt' => '{field} debe ser un entero válido',
+      'fieldShouldBeDate' => '{field} debe ser una fecha válida',
+      'fieldShouldBeDatetime' => '{field} debe ser una fecha válida fecha/hora',
+      'fieldShouldAfter' => '{field} debe estar después de {otherField}',
+      'fieldShouldBefore' => '{field} debe estar antes de {otherField}',
+      'fieldShouldBeBetween' => '{field} debe estar entre {min} y {max}',
+      'fieldShouldBeLess' => '{field} no debería ser mayor que {value}',
+      'fieldShouldBeGreater' => '{field} no debería ser menor que {value}',
+      'fieldBadPasswordConfirm' => '{field} confirmado de forma incorrecta',
+      'fieldMaxFileSizeError' => 'El archivo no puede exeder los {max} Mb',
+      'fieldIsUploading' => 'Uploading in progress',
+      'resetPreferencesDone' => 'Preferencias se ha restablecido a los valores predeterminados',
+      'confirmation' => '¿Está seguro?',
+      'unlinkAllConfirmation' => '¿Seguro que deseas desvincular todos los registros relacionados?',
+      'resetPreferencesConfirmation' => '¿Está seguro que desea restablecer las preferencias?',
+      'removeRecordConfirmation' => '¿Está seguro que quiere eliminar los registros?',
+      'unlinkRecordConfirmation' => '¿Está seguro que quiere desenlazar la relación?',
+      'removeSelectedRecordsConfirmation' => '¿Está seguro que quiere eliminar los registros seleccionados?',
+      'massUpdateResult' => '{count} registros se han actualizado',
+      'massUpdateResultSingle' => '{count} registro ha sido actualizado',
+      'noRecordsUpdated' => 'Ningún registro fue actualizado',
+      'massRemoveResult' => '{count} registros se han eliminado',
+      'massRemoveResultSingle' => '{count} registro se ha eliminado',
+      'noRecordsRemoved' => 'Ningún registro fue eliminado',
+      'clickToRefresh' => 'Clic para actualizar',
+      'streamPostInfo' => 'Escriba <strong>@usuario</strong> para mencionar usuarios en el comentario.
 
-Elérhető markdown szintaxis:
-`<Code> kódot </ code>`
-`` `<kód> többsoros kód </ code>` ``
-** <strong> erős szöveg </ strong> **
-* <em> kiemelt szöveg </ em> *
-~~ <del> törölt szöveg </ del> ~~
-> blockquote
-[link szöveg] (url)',
-      'writeYourCommentHere' => 'Írja meg észrevételeit itt',
-      'writeMessageToUser' => 'Írj üzenetet {user}',
-      'writeMessageToSelf' => 'Írj üzenetet az adatfolyamodra',
-      'typeAndPressEnter' => 'Írja be és nyomja meg az enter billentyűt',
-      'checkForNewNotifications' => 'Új bejelentések ellenőrzése',
-      'checkForNewNotes' => 'Ellenőrizze az adatfolyam frissítéseit',
-      'internalPost' => 'A bejegyzést csak a belső felhasználók láthatják',
-      'internalPostTitle' => 'A bejegyzést csak a belső felhasználók láthatják',
-      'done' => 'Kész',
-      'confirmMassFollow' => 'Biztosan követni szeretné a kiválasztott rekordokat?',
-      'confirmMassUnfollow' => 'Biztosan el szeretné távolítani a kiválasztott rekordokat?',
-      'massFollowResult' => 'A (z) {count} rekordokat követjük',
-      'massUnfollowResult' => 'A (z) {count} rekordok nem lesznek követve',
-      'massFollowResultSingle' => 'A (z) {count} rekordot követjük',
-      'massUnfollowResultSingle' => 'A (z) {count} rekordot nem követi',
-      'massFollowZeroResult' => 'Semmit nem követett',
-      'massUnfollowZeroResult' => 'Semmi sem volt követett',
-      'erasePersonalDataConfirmation' => 'A bejelölt mezők véglegesen törlődnek. biztos vagy ebben?',
+La sintaxis markdown disponible es:
+
+`<code>código</code>`
+**<strong>texto en negritas</strong>**
+*<em>un texto con énfasis</em>*
+~<del>el texto eliminado</del>~
+> Citar bloque
+[nombre del enlace](url)',
+      'writeYourCommentHere' => 'Escriba su comentario aquí',
+      'writeMessageToUser' => 'Escribir un mensaje a {user}',
+      'writeMessageToSelf' => 'Escribir un mensaje en tu historia',
+      'typeAndPressEnter' => 'Escriba y presione enter',
+      'checkForNewNotifications' => 'Comprobar si hay nuevas notificaciones',
+      'checkForNewNotes' => 'Comprobar si hay actualizaciones en la historia',
+      'internalPost' => 'El puesto será visto solo por los usuarios internos',
+      'internalPostTitle' => 'El mensaje es visto solo por usuarios internos',
+      'done' => 'Hecho',
+      'confirmMassFollow' => '¿Está seguro que desea seguir los registros seleccionados?',
+      'confirmMassUnfollow' => '¿Está seguro que desea dejar de seguir los registros seleccionados?',
+      'massFollowResult' => 'Se han seguido {count} registros',
+      'massUnfollowResult' => 'Se han dejado de seguir {count} registros',
+      'massFollowResultSingle' => 'Se han seguido {count} registro',
+      'massUnfollowResultSingle' => 'Se han dejado de seguir {count} registro',
+      'massFollowZeroResult' => 'Nada se siguió',
+      'massUnfollowZeroResult' => 'Nada se dejó de seguir',
+      'erasePersonalDataConfirmation' => 'Checked fields will be erased permanently. Are you sure?',
       'massPrintPdfMaxCountError' => 'Can\'t print more that {maxCount} records.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMy' => 'Csak az enyém',
-      'followed' => 'Követi',
+      'onlyMy' => 'Solo míos',
+      'followed' => 'Siguiendo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'followed' => 'Követi',
-      'all' => 'Minden',
+      'followed' => 'Siguiendo',
+      'all' => 'Todos',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'remove' => 'eltávolít',
-      'merge' => 'Összeolvad',
-      'massUpdate' => 'Tömeges frissítés',
-      'export' => 'Export',
-      'follow' => 'Kövesse',
-      'unfollow' => 'unfollow',
-      'convertCurrency' => 'Pénznem konvertálása',
+      'remove' => 'Eliminar',
+      'merge' => 'Unir',
+      'massUpdate' => 'Actualización masiva',
+      'export' => 'Exportar',
+      'follow' => 'Seguir',
+      'unfollow' => 'Dejar de seguir',
+      'convertCurrency' => 'Convert Currency',
       'printPdf' => 'Print to PDF',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'firstName' => 'Keresztnév',
-      'lastName' => 'Vezetéknév',
-      'salutationName' => 'Üdvözlés',
-      'assignedUser' => 'Hozzárendelt felhasználó',
-      'assignedUsers' => 'Hozzárendelt felhasználók',
-      'emailAddress' => 'Email',
-      'emailAddressData' => 'E-mail címadatok',
-      'emailAddressIsOptedOut' => 'Az e-mail cím ki van kapcsolva',
-      'assignedUserName' => 'Hozzárendelt felhasználónév',
-      'teams' => 'csapatok',
-      'createdAt' => 'Létrehozva',
-      'modifiedAt' => 'Módosított At',
-      'createdBy' => 'Készítette',
-      'modifiedBy' => 'Módosította',
-      'description' => 'Leírás',
-      'address' => 'Cím',
-      'phoneNumber' => 'Telefon',
-      'phoneNumberMobile' => 'Telefon (mobil)',
-      'phoneNumberHome' => 'Haza telefonálni)',
-      'phoneNumberFax' => 'Telefon (fax)',
-      'phoneNumberOffice' => 'Telefon (iroda)',
-      'phoneNumberOther' => 'Telefon (egyéb)',
-      'phoneNumberData' => 'Telefonszámadatok',
-      'order' => 'Sorrend',
-      'parent' => 'Szülő',
-      'children' => 'Gyermekek',
+      'name' => 'Nombre',
+      'firstName' => 'Nombre',
+      'lastName' => 'Apellidos',
+      'salutationName' => 'Saludo',
+      'assignedUser' => 'Usuario asignado',
+      'assignedUsers' => 'Usuarios asignados',
+      'emailAddress' => 'Correo electrónico',
+      'emailAddressData' => 'Email Address Data',
+      'emailAddressIsOptedOut' => 'Email Address is Opted-Out',
+      'assignedUserName' => 'Nombre de usuario asignado',
+      'teams' => 'Equipos',
+      'createdAt' => 'Creado en',
+      'modifiedAt' => 'Modificado el',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'description' => 'Descripción',
+      'address' => 'Dirección',
+      'phoneNumber' => 'Teléfono',
+      'phoneNumberMobile' => 'Teléfono (Móvil)',
+      'phoneNumberHome' => 'Teléfono (Casa)',
+      'phoneNumberFax' => 'Teléfono (Fax)',
+      'phoneNumberOffice' => 'Teléfono (Oficina)',
+      'phoneNumberOther' => 'Teléfono (Otro)',
+      'phoneNumberData' => 'Phone Number Data',
+      'order' => 'Orden',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
       'id' => 'ID',
-      'ids' => 'azonosítók',
+      'ids' => 'IDs',
       'type' => 'Type',
-      'names' => 'nevek',
+      'names' => 'Names',
       'targetListIsOptedOut' => 'Is Opted Out (Target List)',
-      'billingAddressCity' => 'Város',
-      'billingAddressCountry' => 'Ország',
-      'billingAddressPostalCode' => 'Irányítószám',
-      'billingAddressState' => 'Állapot',
-      'billingAddressStreet' => 'utca',
-      'billingAddressMap' => 'Térkép',
-      'addressCity' => 'Város',
-      'addressStreet' => 'utca',
-      'addressCountry' => 'Ország',
-      'addressState' => 'Állapot',
-      'addressPostalCode' => 'Irányítószám',
-      'addressMap' => 'Térkép',
-      'shippingAddressCity' => 'Város (Szállítás)',
-      'shippingAddressStreet' => 'Utca (Szállítás)',
-      'shippingAddressCountry' => 'Ország (szállítás)',
-      'shippingAddressState' => 'Állam (szállítás)',
-      'shippingAddressPostalCode' => 'Irányítószám (Szállítás)',
-      'shippingAddressMap' => 'Térkép (Szállítás)',
+      'billingAddressCity' => 'Ciudad',
+      'billingAddressCountry' => 'País',
+      'billingAddressPostalCode' => 'Código Postal',
+      'billingAddressState' => 'Estado',
+      'billingAddressStreet' => 'Calle',
+      'billingAddressMap' => 'Mapa',
+      'addressCity' => 'Ciudad',
+      'addressStreet' => 'Calle',
+      'addressCountry' => 'País',
+      'addressState' => 'Estado',
+      'addressPostalCode' => 'Código Postal',
+      'addressMap' => 'Mapa',
+      'shippingAddressCity' => 'Ciudad (envío)',
+      'shippingAddressStreet' => 'Calle (envío)',
+      'shippingAddressCountry' => 'País (envío)',
+      'shippingAddressState' => 'Estado (envío)',
+      'shippingAddressPostalCode' => 'Código Postal (envío)',
+      'shippingAddressMap' => 'Mapa (envío)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'assignedUser' => 'Hozzárendelt felhasználó',
-      'createdBy' => 'Készítette',
-      'modifiedBy' => 'Módosította',
-      'team' => 'Csapat',
-      'roles' => 'szerepek',
-      'teams' => 'csapatok',
-      'users' => 'felhasználók',
-      'parent' => 'Szülő',
-      'children' => 'Gyermekek',
-      'contacts' => 'Kapcsolatok',
-      'opportunities' => 'lehetőségek',
-      'leads' => 'vezet',
-      'meetings' => 'találkozók',
-      'calls' => 'felhívja',
-      'tasks' => 'feladatok',
-      'emails' => 'e-mailek',
-      'accounts' => 'Fiókok',
-      'cases' => 'Olyan esetek,',
-      'documents' => 'Dokumentumok',
-      'account' => 'számla',
-      'opportunity' => 'Lehetőség',
-      'contact' => 'Kapcsolatba lépni',
+      'assignedUser' => 'Usuario asignado',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'team' => 'Equipo',
+      'roles' => 'Roles',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'leads' => 'Posibles clientes',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'accounts' => 'Cuentas',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'account' => 'Cuenta',
+      'opportunity' => 'Oportunidad',
+      'contact' => 'Contacto',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
-      'Stream' => 'Folyam',
-      'Emails' => 'Bejövõ postafiókom',
-      'Records' => 'Felvételi lista',
-      'Leads' => 'Az én vezetem',
-      'Opportunities' => 'Lehetőségek',
-      'Tasks' => 'Saját feladatok',
-      'Cases' => 'Az én ügyeim',
-      'Calendar' => 'Naptár',
-      'Calls' => 'Saját hívások',
-      'Meetings' => 'Találkozásom',
-      'OpportunitiesByStage' => 'Lehetőségek színpadon',
-      'OpportunitiesByLeadSource' => 'Lehetőségek a vezető forrásból',
-      'SalesByMonth' => 'Havi eladások',
-      'SalesPipeline' => 'Értékesítési csővezeték',
-      'Activities' => 'Tevékenységem',
+      'Stream' => 'Historia',
+      'Emails' => 'Mi bandeja de entrada',
+      'Records' => 'Lista de registros',
+      'Leads' => 'Mis posibles clientes',
+      'Opportunities' => 'Mis oportunidades',
+      'Tasks' => 'Mis tareas',
+      'Cases' => 'Mis tickets',
+      'Calendar' => 'Calendario',
+      'Calls' => 'Mis llamadas',
+      'Meetings' => 'Mis reuniones',
+      'OpportunitiesByStage' => 'Oportunidades por Etapa',
+      'OpportunitiesByLeadSource' => 'Oportunidades por toma de contacto del posible cliente',
+      'SalesByMonth' => 'Ventas por mes',
+      'SalesPipeline' => 'Canalización de ventas',
+      'Activities' => 'Mis próximas actividades',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
-      'assign' => '{entityType} {entitás} van hozzárendelve',
-      'emailReceived' => 'E-mail érkezett {from}',
-      'entityRemoved' => '{user} eltávolítva {entityType} {entitás}',
+      'assign' => '{entityType} {entity} ha sido asignado a usted',
+      'emailReceived' => 'Correo recibido de: <strong>{from}</strong>.',
+      'entityRemoved' => '{user} ha eliminado: <strong>[{entityType}]</strong> {entity}',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
-      'post' => '{felhasználó} a {entityType} {entitás}',
-      'attach' => '{user} csatolt {entityType} {entitás}',
-      'status' => '{user} frissített {field} a {entityType} {entitás}',
-      'update' => '{user} frissített {entityType} {entitás}',
-      'postTargetTeam' => 'a (z) {user} csapat {target}',
-      'postTargetTeams' => '{user} a csapatoknak {target}',
-      'postTargetPortal' => '{user} a portálra {target}',
-      'postTargetPortals' => '{user} kiküldött portálokra {target}',
-      'postTarget' => '{felhasználó} a {target}',
-      'postTargetYou' => '{felhasználó} küldött neked',
-      'postTargetYouAndOthers' => '{felhasználó} a (z) {target} címre és Önnek',
-      'postTargetAll' => '{felhasználó} mindenkinek',
-      'postTargetSelf' => '{user} önállóan',
-      'postTargetSelfAndOthers' => '{felhasználó} a {target} -be és a saját oldalára',
-      'mentionInPost' => 'A (z) {felhasználó} megemlítette: {named} {entityType} {entitás}',
-      'mentionYouInPost' => '{user} megemlítettél a (z) {entityType} {entitás}',
-      'mentionInPostTarget' => 'A (z) {felhasználó} megemlítette a (z) {mentioned} címet',
-      'mentionYouInPostTarget' => '{user} megemlített téged a {target}',
-      'mentionYouInPostTargetAll' => '{user} megemlített téged a postában mindenkinek',
-      'mentionYouInPostTargetNoTarget' => '{user} megemlített téged a postában',
-      'create' => '{user} létre {entityType} {entitás}',
-      'createThis' => '{user} létrehozta ezt a {entityType}',
-      'createAssignedThis' => '{user} létrehozta ezt {entityType} hozzárendelve {assignee}',
-      'createAssigned' => '{user} létre {entityType} {entitás} hozzárendelve {assignee}',
-      'createAssignedYou' => '{user} által létrehozott {entityType} {entitás} hozzá van rendelve',
-      'createAssignedThisSelf' => '{user} létrehozta ezt a {entityType} önálló rendszert',
-      'createAssignedSelf' => '{user} létrehozta a {entityType} {entitás} önálló hozzárendelést',
-      'assign' => '{user} hozzárendelt {entityType} {entitás} a {assignee}',
-      'assignThis' => '{user} ezt a {entityType} nevet {assignee}',
-      'assignYou' => '{user} kijelölt {entityType} {entitás} Önnek',
-      'assignThisVoid' => '{user} nem rendelte hozzá ezt a {entityType}',
-      'assignVoid' => '{user} unassigned {entityType} {entitás}',
-      'assignThisSelf' => '{user} ezt a {entityType}',
-      'assignSelf' => '{user} önkiszolgáló {entityType} {entitás}',
-      'postThis' => '{user} postázva',
-      'attachThis' => '{user} csatolt',
-      'statusThis' => '{user} frissített {field}',
-      'updateThis' => '{user} frissítette ezt a {entityType}',
-      'createRelatedThis' => '{user} létrehozta a {relatedEntityType} {relatedEntity} kapcsolatos {entityType}',
-      'createRelated' => '{user} létrehozta a {relatedEntityType} {relatedEntity} típust {entityType} {entitás}',
-      'relate' => '{user} kapcsolódó {relatedEntityType} {relatedEntity} a {entityType} {entitás}',
-      'relateThis' => '{user} kapcsolt {relatedEntityType} {relatedEntity} ezzel a {entityType}',
-      'emailReceivedFromThis' => 'E-mail érkezett {from}',
-      'emailReceivedInitialFromThis' => 'E-mail érkezett {from}, ez a {entityType} létrehozva',
-      'emailReceivedThis' => 'E-mail érkezett',
-      'emailReceivedInitialThis' => 'E-mail érkezett, ez a {entityType} létrehozva',
-      'emailReceivedFrom' => 'E-mail érkezett {from}, {entityType} {entitás}',
-      'emailReceivedFromInitial' => 'Az {from}, {entityType} {entitás} kapott e-mailek létrejöttek',
-      'emailReceived' => 'A (z) {entityType} {entitás}',
-      'emailReceivedInitial' => 'Megkapott e-mail: {entityType} {entitás} létrehozva',
-      'emailReceivedInitialFrom' => 'Az {from}, {entityType} {entitás} kapott e-mailek létrejöttek',
-      'emailSent' => '{by} {entityType} {entitás}',
-      'emailSentThis' => '{by} küldött e-mailt',
+      'post' => '{user} ha publicado en: <strong>[{entityType}]</strong> {entity}',
+      'attach' => '{user} ha añadido un archivo adjunto en: <strong>[{entityType}]</strong> {entity}',
+      'status' => '{user} ha actualizado el campo <strong>{field}</strong> en: <strong>[{entityType}]</strong> {entity}',
+      'update' => '{user} ha actualizado: <strong>[{entityType}]</strong> {entity}',
+      'postTargetTeam' => '{user} ha publicado en el equipo {target}',
+      'postTargetTeams' => '{user} ha publicado en los equipos {target}',
+      'postTargetPortal' => '{user} ha publicado en el portal {target}',
+      'postTargetPortals' => '{user} ha publicado en los portales {target}',
+      'postTarget' => '{user} ha publicado en {target}',
+      'postTargetYou' => '{user} ha publicado pora usted',
+      'postTargetYouAndOthers' => '{user} ha publicado para {target} y para usted',
+      'postTargetAll' => '{user} ha publicado para todos',
+      'postTargetSelf' => '{user} se ha enviado un mensaje a sí mismo',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
+      'mentionInPost' => '{user} ha mencionado a {mentioned} en: <strong>[{entityType}]</strong> {entity}',
+      'mentionYouInPost' => '{user} te ha mencionado en: <strong>[{entityType}]</strong> {entity}',
+      'mentionInPostTarget' => '{user} ha mencionado a {mentioned} en la publicación',
+      'mentionYouInPostTarget' => '{user} te ha mencionado en la publicación para {target}',
+      'mentionYouInPostTargetAll' => '{user} te ha mencionado en una publicación para todos',
+      'mentionYouInPostTargetNoTarget' => '{user} te ha mencionado en una publicación',
+      'create' => '{user} ha creado: <strong>[{entityType}]</strong> {entity}',
+      'createThis' => '{user} ha creado: <strong>{entityType}</strong>',
+      'createAssignedThis' => '{user} ha creado y se lo ha asignado a {assignee}: {entityType}',
+      'createAssigned' => '{user} ha creado y se lo ha asignado a {assignee}: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedYou' => '{user} ha creado y te lo ha asignado: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedThisSelf' => '{user} ha creado y se ha asignado a sí mismo: {entityType}',
+      'createAssignedSelf' => '{user} ha creado y se ha asignado a sí mismo: <strong>[{entityType}]</strong> {entity}',
+      'assign' => '{user} ha asignado: <strong>[{entityType}]</strong> {entity} a {assignee}',
+      'assignThis' => '{user} ha asignado {entityType} a {assignee}',
+      'assignYou' => '{user} te ha asignado <strong>[{entityType}]<strong> {entity} a ti',
+      'assignThisVoid' => '{user} ha desasignado: {entityType}',
+      'assignVoid' => '{user} ha desasignado: <strong>[{entityType}]</strong> {entity}',
+      'assignThisSelf' => '{user} se ha asignado así mismo: {entityType}',
+      'assignSelf' => '{user} se ha asignado así mismo: <strong>[{entityType}]</strong> {entity}',
+      'postThis' => '{user} ha publicado',
+      'attachThis' => '{user} ha adjuntado',
+      'statusThis' => '{user} ha actualizado el campo <strong>{field}</strong>',
+      'updateThis' => '{user} ha actualizado: {entityType}',
+      'createRelatedThis' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity}, enlazado a {entityType}',
+      'createRelated' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity} enlazado a <strong>[{entityType}]</strong> {entity}',
+      'relate' => '{user} ha enlazado <strong>[{relatedEntityType}]</strong> {relatedEntity} a <strong>[{entityType}] {entity}',
+      'relateThis' => '{user} vinculado {relatedEntityType} {relatedEntity} con este {entityType}',
+      'emailReceivedFromThis' => 'Correo recibido de: <strong>{from}</strong>.',
+      'emailReceivedInitialFromThis' => 'Correo recibido de {from}, se ha creado: {entityType}',
+      'emailReceivedThis' => 'Correo recibido',
+      'emailReceivedInitialThis' => 'Correo recibido, se ha creado: {entityType}',
+      'emailReceivedFrom' => 'Correo recibido de {from}, relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailReceivedFromInitial' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceived' => 'El correo {email} ha sido recibido para el {entityType} {entity}',
+      'emailReceivedInitial' => 'Correo recibido, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceivedInitialFrom' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailSent' => '{by} ha enviado un correo relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailSentThis' => '{by} ha enviado un correo',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
-      'postTargetSelfAndOthers' => '{felhasználó} a (z) {target} címre és magát',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
-      'postTargetSelfAndOthers' => '{felhasználó} a {target} -be és önmagába küldött',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí misma',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
-        0 => 'Január',
-        1 => 'Február',
-        2 => 'Március',
-        3 => 'Április',
-        4 => 'Május',
-        5 => 'Június',
-        6 => 'Július',
-        7 => 'Augusztus',
-        8 => 'Szeptember',
-        9 => 'Október',
-        10 => 'November',
-        11 => 'December',
+        0 => 'Enero',
+        1 => 'Febrero',
+        2 => 'Marzo',
+        3 => 'Abril',
+        4 => 'Mayo',
+        5 => 'Junio',
+        6 => 'Julio',
+        7 => 'Agosto',
+        8 => 'Septiembre',
+        9 => 'Octubre',
+        10 => 'Noviembre',
+        11 => 'Diciembre',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
-        0 => 'Jan',
+        0 => 'Ene',
         1 => 'Feb',
         2 => 'Mar',
-        3 => 'Apr',
+        3 => 'Abr',
         4 => 'May',
         5 => 'Jun',
         6 => 'Jul',
-        7 => 'Aug',
+        7 => 'Ago',
         8 => 'Sep',
         9 => 'Oct',
         10 => 'Nov',
-        11 => 'Dec',
+        11 => 'Dic',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
-        0 => 'Vasárnap Hétfő Kedd Szerda Csütörtök Péntek Szombat',
+        0 => 'Domingo',
+        1 => 'Lunes',
+        2 => 'Martes',
+        3 => 'Miércoles',
+        4 => 'Jueves',
+        5 => 'Viernes',
+        6 => 'Sábado',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
-        0 => 'Nap',
-        1 => 'H',
-        2 => 'Hé',
-        3 => 'Hét',
-        4 => 'Hét',
-        5 => 'Hét',
-        6 => 'Hét',
+        0 => 'Dom',
+        1 => 'Lun',
+        2 => 'Mar',
+        3 => 'Mie',
+        4 => 'Jue',
+        5 => 'Vie',
+        6 => 'Sab',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
-        0 => 'Su',
-        1 => 'Mo',
-        2 => 'Tu',
+        0 => 'Do',
+        1 => 'Lu',
+        2 => 'Ma',
         3 => 'Mi',
-        4 => 'Th',
-        5 => 'Fr',
+        4 => 'Ju',
+        5 => 'Vi',
         6 => 'Sa',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'd',
       'h' => 'h',
       'm' => 'm',
       's' => 's',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
-        'Mr.' => 'Úr.',
-        'Mrs.' => 'Asszony.',
-        'Ms.' => 'Kisasszony.',
+        'Mr.' => 'Sr.',
+        'Mrs.' => 'Sra.',
+        'Ms.' => 'Sta.',
         'Dr.' => 'Dr.',
       ),
-      'language' => 
+      'language' =>
       array (
-        'af_ZA' => 'Afrikaans',
-        'az_AZ' => 'azerbajdzsáni',
-        'be_BY' => 'belorusz',
-        'bg_BG' => 'bolgár',
-        'bn_IN' => 'bengáli',
-        'bs_BA' => 'bosnyák',
-        'ca_ES' => 'katalán',
-        'cs_CZ' => 'cseh',
-        'cy_GB' => 'walesi',
-        'da_DK' => 'dán',
-        'de_DE' => 'német',
-        'el_GR' => 'görög',
-        'en_GB' => 'Angol (UK)',
-        'es_MX' => 'Spanyol (Mexikó)',
-        'en_US' => 'Angol (USA)',
-        'es_ES' => 'Spanyol (spanyol)',
-        'et_EE' => 'észt',
-        'eu_ES' => 'baszk',
-        'fa_IR' => 'perzsa',
-        'fi_FI' => 'finn',
-        'fo_FO' => 'feröeri',
-        'fr_CA' => 'Francia (Kanada)',
-        'fr_FR' => 'Francia (Franciaország)',
-        'ga_IE' => 'ír',
-        'gl_ES' => 'galíciai',
-        'gn_PY' => 'guarani',
-        'he_IL' => 'héber',
-        'hi_IN' => 'hindi',
-        'hr_HR' => 'horvát',
-        'hu_HU' => 'Magyar',
-        'hy_AM' => 'örmény',
-        'id_ID' => 'indonéz',
-        'is_IS' => 'izlandi',
-        'it_IT' => 'olasz',
-        'ja_JP' => 'japán',
-        'ka_GE' => 'grúz',
-        'km_KH' => 'khmer',
-        'ko_KR' => 'koreai',
-        'ku_TR' => 'kurd',
-        'lt_LT' => 'litván',
-        'lv_LV' => 'lett',
-        'mk_MK' => 'macedóniai',
-        'ml_IN' => 'Malayalam',
-        'ms_MY' => 'maláj',
-        'nb_NO' => 'Norvég bokmål',
-        'nn_NO' => 'Norvég nynorsk',
-        'ne_NP' => 'nepáli',
-        'nl_NL' => 'holland',
-        'pa_IN' => 'pandzsábi',
-        'pl_PL' => 'lengyel',
-        'ps_AF' => 'pastu',
-        'pt_BR' => 'Portugál (brazil)',
-        'pt_PT' => 'Portugál (portugál)',
-        'ro_RO' => 'román',
-        'ru_RU' => 'orosz',
-        'sk_SK' => 'szlovák',
-        'sl_SI' => 'szlovén',
-        'sq_AL' => 'albán',
-        'sr_RS' => 'szerb',
-        'sv_SE' => 'svéd',
-        'sw_KE' => 'szuahéli',
-        'ta_IN' => 'tamil',
-        'te_IN' => 'telugu',
-        'th_TH' => 'thai',
-        'tl_PH' => 'tagalog',
-        'tr_TR' => 'török',
-        'uk_UA' => 'ukrán',
-        'ur_PK' => 'urdu',
-        'vi_VN' => 'vietnami',
-        'zh_CN' => 'Egyszerűsített kínai (Kína)',
-        'zh_HK' => 'Hagyományos kínai (Hongkong)',
-        'zh_TW' => 'Hagyományos kínai (tajvani)',
+        'af_ZA' => 'Afrikáans',
+        'az_AZ' => 'Azerbaiyán',
+        'be_BY' => 'Bielorruso',
+        'bg_BG' => 'Bulgaro',
+        'bn_IN' => 'Bengalí',
+        'bs_BA' => 'Bosnio',
+        'ca_ES' => 'Catalán',
+        'cs_CZ' => 'Checo',
+        'cy_GB' => 'Galés',
+        'da_DK' => 'Danés',
+        'de_DE' => 'Alemán',
+        'el_GR' => 'Griego',
+        'en_GB' => 'Inglés (UK)',
+        'es_MX' => 'Español (México)',
+        'en_US' => 'Inglés (US)',
+        'es_ES' => 'Español (España)',
+        'et_EE' => 'Estonio',
+        'eu_ES' => 'Vasco',
+        'fa_IR' => 'Persa',
+        'fi_FI' => 'Finlandés',
+        'fo_FO' => 'Feroés',
+        'fr_CA' => 'Francés (Canada)',
+        'fr_FR' => 'Francés (Francia)',
+        'ga_IE' => 'Irlandés',
+        'gl_ES' => 'Gallego',
+        'gn_PY' => 'Guaraní',
+        'he_IL' => 'Hebreo',
+        'hi_IN' => 'Hindi',
+        'hr_HR' => 'Croata',
+        'hu_HU' => 'Hungaro',
+        'hy_AM' => 'Armenio',
+        'id_ID' => 'Indonesio',
+        'is_IS' => 'Islandés',
+        'it_IT' => 'Italiano',
+        'ja_JP' => 'Japonés',
+        'ka_GE' => 'Georgiano',
+        'km_KH' => 'Camboyano',
+        'ko_KR' => 'Coreano',
+        'ku_TR' => 'Kurdo',
+        'lt_LT' => 'Lituano',
+        'lv_LV' => 'Latón',
+        'mk_MK' => 'Macedonio',
+        'ml_IN' => 'Malabar',
+        'ms_MY' => 'Malayo',
+        'nb_NO' => 'Noruego Bokmål',
+        'nn_NO' => 'Noruego Nynorsk',
+        'ne_NP' => 'Nepalí',
+        'nl_NL' => 'Holandés',
+        'pa_IN' => 'Punyabí',
+        'pl_PL' => 'Polaco',
+        'ps_AF' => 'Pastún',
+        'pt_BR' => 'Portugués (Brasil)',
+        'pt_PT' => 'Portugués (Portugal)',
+        'ro_RO' => 'Rumano',
+        'ru_RU' => 'Ruso',
+        'sk_SK' => 'Eslovaco',
+        'sl_SI' => 'Esloveno',
+        'sq_AL' => 'Albanés',
+        'sr_RS' => 'Serbio',
+        'sv_SE' => 'Sueco',
+        'sw_KE' => 'Suajili',
+        'ta_IN' => 'Tamil',
+        'te_IN' => 'Télugu',
+        'th_TH' => 'Tailandés',
+        'tl_PH' => 'Tagalo',
+        'tr_TR' => 'Turco',
+        'uk_UA' => 'Ucraniano',
+        'ur_PK' => 'Urdu',
+        'vi_VN' => 'Vietnamita',
+        'zh_CN' => 'Chino Simplificado (China)',
+        'zh_HK' => 'Chino Tradicional (Hong Kong)',
+        'zh_TW' => 'Chino Traditional (Taiwán)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
-        'on' => 'Tovább',
-        'notOn' => 'Nem',
-        'after' => 'Után',
-        'before' => 'Előtt',
-        'between' => 'Között',
-        'today' => 'Ma',
-        'past' => 'Múlt',
-        'future' => 'Jövő',
-        'currentMonth' => 'Jelenlegi hónap',
-        'lastMonth' => 'Múlt hónap',
-        'nextMonth' => 'Következő hónap',
-        'currentQuarter' => 'Jelenlegi negyedév',
-        'lastQuarter' => 'Utolsó negyed',
-        'currentYear' => 'Jelen év',
-        'lastYear' => 'Tavaly',
-        'lastSevenDays' => 'Az elmúlt 7 nap',
-        'lastXDays' => 'Az utolsó X napok',
-        'nextXDays' => 'Következő X napok',
-        'ever' => 'Valaha',
-        'isEmpty' => 'Üres',
-        'olderThanXDays' => 'Régebbi, mint X nap',
-        'afterXDays' => 'X nap után',
+        'on' => 'Está en',
+        'notOn' => 'No está en',
+        'after' => 'Después',
+        'before' => 'Antes',
+        'between' => 'Entre',
+        'today' => 'Hoy',
+        'past' => 'Pasado',
+        'future' => 'Futuro',
+        'currentMonth' => 'Mes Actual',
+        'lastMonth' => 'Mes pasado',
+        'nextMonth' => 'Siguiente mes',
+        'currentQuarter' => 'Trimestre Actual',
+        'lastQuarter' => 'Trimestre pasado',
+        'currentYear' => 'Año Actual',
+        'lastYear' => 'Año pasado',
+        'lastSevenDays' => 'Últimos 7 Días',
+        'lastXDays' => 'Últimos X Días',
+        'nextXDays' => 'Próximos X Días',
+        'ever' => 'Nunca',
+        'isEmpty' => 'Está Vacío',
+        'olderThanXDays' => 'Más de X Días',
+        'afterXDays' => 'Después de X días',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
-        'is' => 'van',
-        'isEmpty' => 'Üres',
-        'isNotEmpty' => 'Nem üres',
-        'isOneOf' => 'Bármelyik',
-        'isFromTeams' => 'A csapatból',
-        'isNot' => 'Nem',
-        'isNotOneOf' => 'Egyik sem',
-        'anyOf' => 'Bármelyik',
-        'noneOf' => 'Egyik sem',
+        'is' => 'Es',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'isOneOf' => 'Cualquiera de',
+        'isFromTeams' => 'Es del equipo',
+        'isNot' => 'No es',
+        'isNotOneOf' => 'Ninguno de',
+        'anyOf' => 'Cualquiera de',
+        'noneOf' => 'Ninguno de',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
-        'equals' => 'egyenlő',
-        'like' => 'Olyan, mint (%)',
-        'notLike' => 'Nem tetszik (%)',
-        'startsWith' => 'Kezdődik',
-        'endsWith' => 'Végződik',
-        'contains' => 'tartalmazza',
-        'notContains' => 'Nem tartalmaz',
-        'isEmpty' => 'Üres',
-        'isNotEmpty' => 'Nem üres',
-        'notEquals' => 'Nem egyenlő',
+        'equals' => 'Equivale',
+        'like' => 'Es como (%)',
+        'notLike' => 'No es como (%)',
+        'startsWith' => 'Comienza con',
+        'endsWith' => 'Termina con',
+        'contains' => 'Contiene',
+        'notContains' => 'No contiene',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'notEquals' => 'No es igual',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
-        'equals' => 'egyenlő',
-        'notEquals' => 'Nem egyenlő',
-        'greaterThan' => 'Nagyobb, mint',
-        'lessThan' => 'Kevesebb, mint',
-        'greaterThanOrEquals' => 'Nagyobb vagy egyenlő',
-        'lessThanOrEquals' => 'Kevesebb mint vagy egyenlő',
-        'between' => 'Között',
-        'isEmpty' => 'Üres',
-        'isNotEmpty' => 'Nem üres',
+        'equals' => 'Equivale',
+        'notEquals' => 'Diferentes',
+        'greaterThan' => 'Mayor que',
+        'lessThan' => 'Menor que',
+        'greaterThanOrEquals' => 'Mayor o igual que',
+        'lessThanOrEquals' => 'Menor o igual que',
+        'between' => 'Entre',
+        'isEmpty' => 'Está Vacío',
+        'isNotEmpty' => 'No está Vacío',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
-        0 => 'Egyik sem',
-        '0.5' => '30 másodperc',
-        1 => '1 perc',
-        2 => '2 perc',
-        5 => '5 perc',
-        10 => '10 perc',
+        0 => 'Ninguno',
+        '0.5' => '30 segundos',
+        1 => '1 minuto',
+        2 => '2 minutos',
+        5 => '5 minutos',
+        10 => '10 minutos',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
-        'Mobile' => 'Mobil',
-        'Office' => 'Hivatal',
+        'Mobile' => 'Teléfono móvil',
+        'Office' => 'Oficina',
         'Fax' => 'Fax',
-        'Home' => 'itthon',
-        'Other' => 'Más',
+        'Home' => 'Hogar',
+        'Other' => 'Otro',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
-        'Popup' => 'Felugrik',
-        'Email' => 'Email',
+        'Popup' => 'Ventana emergente',
+        'Email' => 'Correo electrónico',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
-        'NOTICE' => 'A fordítás megtalálható itt: https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'NOTICE' => 'Usted puede encontrar aquí la traducción: https://github.com/HackerWins/summernote/tree/master/lang',
+        'font' =>
         array (
-          'bold' => 'Bátor',
-          'italic' => 'dőlt betű',
-          'underline' => 'Aláhúzás',
-          'strike' => 'Sztrájk',
-          'clear' => 'A betűtípus stílusának eltávolítása',
-          'height' => 'Vonalmagasság',
-          'name' => 'Betűtípus család',
-          'size' => 'Betűméret',
+          'bold' => 'Negrita',
+          'italic' => 'Itálico',
+          'underline' => 'Subrayado',
+          'strike' => 'Tachado',
+          'clear' => 'Quitar Estilo de Fuente',
+          'height' => 'Alto de línea',
+          'name' => 'Familia de Fuente',
+          'size' => 'Tamaño de Fuente',
         ),
-        'image' => 
+        'image' =>
         array (
-          'image' => 'Kép',
-          'insert' => 'Kép beszúrása',
-          'resizeFull' => 'Teljes méret megváltoztatása',
-          'resizeHalf' => 'Félidő átméretezése',
-          'resizeQuarter' => 'Negyedik átméretezés',
-          'floatLeft' => 'Balra lebeg',
-          'floatRight' => 'Float Right',
-          'floatNone' => 'Float None',
-          'dragImageHere' => 'Húzza itt a képet',
-          'selectFromFiles' => 'Válasszon a fájlok közül',
-          'url' => 'Kép URL',
-          'remove' => 'Kép eltávolítása',
+          'image' => 'Visualización',
+          'insert' => 'Insertar imagen',
+          'resizeFull' => 'Cambiar el tamaño a completo',
+          'resizeHalf' => 'Cambiar el tamaño a la mitad',
+          'resizeQuarter' => 'Cambiar el tamaño a un cuarto',
+          'floatLeft' => 'Flotar Izquierda',
+          'floatRight' => 'Flotar Derecha',
+          'floatNone' => 'Sin Flotar',
+          'dragImageHere' => 'Arrastrar una imagen aquí',
+          'selectFromFiles' => 'Seleccionar desde Archivo',
+          'url' => 'Url de imagen',
+          'remove' => 'Eliminar imagen',
         ),
-        'link' => 
+        'link' =>
         array (
-          'link' => 'Link',
-          'insert' => 'Link beszúrása',
-          'unlink' => 'kapcsolatának megszüntetése',
-          'edit' => 'szerkesztése',
-          'textToDisplay' => 'Megjeleníteni kívánt szöveg',
-          'url' => 'Milyen URL-címre kell ez a link?',
-          'openInNewWindow' => 'Megnyitás új ablakban',
+          'link' => 'Enlace',
+          'insert' => 'Insertar Enlace',
+          'unlink' => 'Desenlazar',
+          'edit' => 'Editar',
+          'textToDisplay' => 'Texto a mostrar',
+          'url' => '¿A que URL debería ir este enlace?',
+          'openInNewWindow' => 'Abrir en nueva ventana',
         ),
-        'video' => 
+        'video' =>
         array (
-          'video' => 'Videó',
-          'videoLink' => 'Video Link',
-          'insert' => 'Videó beszúrása',
-          'url' => 'Videó URL-je?',
-          'providers' => '(YouTube, Vimeo, Vine, Instagram vagy DailyMotion)',
+          'video' => 'Video',
+          'videoLink' => 'Enlace al Video',
+          'insert' => 'Insertar Video',
+          'url' => '¿URL del Video?',
+          'providers' => '(YouTube, Vimeo, Vine, Instagram, or DailyMotion)',
         ),
-        'table' => 
+        'table' =>
         array (
-          'table' => 'asztal',
+          'table' => 'Tabla',
         ),
-        'hr' => 
+        'hr' =>
         array (
-          'insert' => 'A horizontális szabály beillesztése',
+          'insert' => 'Insertar regla horizontal',
         ),
-        'style' => 
+        'style' =>
         array (
-          'style' => 'Stílus',
-          'normal' => 'Normál',
-          'blockquote' => 'Idézet',
-          'pre' => 'Kód',
-          'h1' => '1. fejléc',
-          'h2' => '2. fejléc',
-          'h3' => '3. fejléc',
-          'h4' => '4. fejléc',
-          'h5' => '5. fejléc',
-          'h6' => '6. fejléc',
+          'style' => 'Estilo',
+          'normal' => 'Normal',
+          'blockquote' => 'Cita',
+          'pre' => 'Código',
+          'h1' => 'Cabecera 1',
+          'h2' => 'Cabecera 2',
+          'h3' => 'Cabecera 3',
+          'h4' => 'Cabecera 4',
+          'h5' => 'Cabecera 5',
+          'h6' => 'Cabecera 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
-          'unordered' => 'Rendezetlen lista',
-          'ordered' => 'Rendezett lista',
+          'unordered' => 'Lista sin Ordenar',
+          'ordered' => 'Lista Ordenada',
         ),
-        'options' => 
+        'options' =>
         array (
-          'help' => 'Segítség',
-          'fullscreen' => 'Teljes képernyő',
-          'codeview' => 'Kód nézet',
+          'help' => 'Ayuda',
+          'fullscreen' => 'Pantalla Completa',
+          'codeview' => 'Ver Código',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
-          'paragraph' => 'Bekezdés',
-          'outdent' => 'Outdent',
-          'indent' => 'bekezdés',
-          'left' => 'Balra igazít',
-          'center' => 'Állítsa be a központot',
-          'right' => 'Igazíts jobbra',
-          'justify' => 'Teljesen igazoljon',
+          'paragraph' => 'Párrafo',
+          'outdent' => 'Anular sangría',
+          'indent' => 'Sangría',
+          'left' => 'Alinear Izquierda',
+          'center' => 'Alinear Centro',
+          'right' => 'Alinear Derecha',
+          'justify' => 'Justificado',
         ),
-        'color' => 
+        'color' =>
         array (
-          'recent' => 'Legutóbbi szín',
-          'more' => 'Több szín',
-          'background' => 'BackColor',
-          'foreground' => 'Betű szín',
-          'transparent' => 'Átlátszó',
-          'setTransparent' => 'Átlátszó',
-          'reset' => 'Visszaállítás',
-          'resetToDefault' => 'Visszaállítás alapértelmezettre',
+          'recent' => 'Color Reciente',
+          'more' => 'Mas Colores',
+          'background' => 'Color de Fondo',
+          'foreground' => 'Color de Fuente',
+          'transparent' => 'Transparente',
+          'setTransparent' => 'Establecer transparente',
+          'reset' => 'Resetear',
+          'resetToDefault' => 'Restablecer a (por defecto)',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
-          'shortcuts' => 'Gyorsbillentyűket',
-          'close' => 'Bezárás',
-          'textFormatting' => 'Szövegformázás',
-          'action' => 'Akció',
-          'paragraphFormatting' => 'Bekezdés formázása',
-          'documentStyle' => 'Dokumentum stílusa',
+          'shortcuts' => 'Atajos de teclado',
+          'close' => 'Cerrar',
+          'textFormatting' => 'Formato de texto',
+          'action' => 'Acción',
+          'paragraphFormatting' => 'Formato de párrafo',
+          'documentStyle' => 'Estilo de Documento',
         ),
-        'history' => 
+        'history' =>
         array (
-          'undo' => 'kibont',
-          'redo' => 'Újra',
+          'undo' => 'Deshacer',
+          'redo' => 'Rehacer',
         ),
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
-      'list' => 'Lista',
+      'list' => 'List',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
-      'Espo' => 'Klasszikus Espo',
+      'Espo' => 'Espo',
       'EspoRtl' => 'RTL Espo',
-      'Sakura' => 'Klasszikus Sakura',
-      'EspoVertical' => 'Függőleges Espo',
-      'SakuraVertical' => 'Függő Sakura',
-      'Violet' => 'Klasszikus Violet',
-      'VioletVertical' => 'Függőleges Violet',
-      'Hazyblue' => 'Klasszikus Hazyblue',
-      'HazyblueVertical' => 'Függőleges Hazyblue',
+      'Sakura' => 'Sakura',
+      'EspoVertical' => 'Espo con barra lateral',
+      'SakuraVertical' => 'Sakura con barra lateral',
+      'Violet' => 'Violeta',
+      'VioletVertical' => 'Violet con barra lateral',
+      'Hazyblue' => 'Hazyblue',
+      'HazyblueVertical' => 'Hazyblue con barra lateral',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Revert Import' => 'Visszavált importálás',
-      'Return to Import' => 'Vissza az Importáláshoz',
-      'Run Import' => 'Importálás futtatása',
-      'Back' => 'Hát',
-      'Field Mapping' => 'Field Mapping',
-      'Default Values' => 'Alapértelmezett értékek',
-      'Add Field' => 'Mező hozzáadása',
-      'Created' => 'Alkotó',
-      'Updated' => 'korszerűsített',
-      'Result' => 'Eredmény',
-      'Show records' => 'Rekordok megjelenítése',
-      'Remove Duplicates' => 'Duplikátumok eltávolítása',
-      'importedCount' => 'Importált (számlálás)',
-      'duplicateCount' => 'Duplikátumok (számlálás)',
-      'updatedCount' => 'Frissítve (számlálás)',
-      'Create Only' => 'Csak hozzon létre',
-      'Create and Update' => 'Létrehozása és frissítése',
-      'Update Only' => 'Frissítés csak',
-      'Update by' => 'Frissítés',
-      'Set as Not Duplicate' => 'Állítsa be, hogy ne legyen kettős',
-      'File (CSV)' => 'Fájl (CSV)',
-      'First Row Value' => 'Első soros érték',
-      'Skip' => 'Skip',
-      'Header Row Value' => 'Header Row Value',
-      'Field' => 'Mező',
-      'What to Import?' => 'Mi importálni?',
-      'Entity Type' => 'Entity Type',
-      'What to do?' => 'Mit kell tenni?',
-      'Properties' => 'Tulajdonságok',
-      'Header Row' => 'Fejléc sor',
-      'Person Name Format' => 'Személynév formátum',
-      'John Smith' => 'John Smith',
-      'Smith John' => 'Smith John',
-      'Smith, John' => 'Smith, John',
-      'Field Delimiter' => 'Mezőhatároló',
-      'Date Format' => 'Dátum formátum',
-      'Decimal Mark' => 'Tizedesjel',
-      'Text Qualifier' => 'Text Qualifier',
-      'Time Format' => 'Idő formátum',
-      'Currency' => 'Valuta',
-      'Preview' => 'Előnézet',
-      'Next' => 'Következő',
-      'Step 1' => '1. lépés',
-      'Step 2' => '2. lépés',
-      'Double Quote' => 'Dupla idézet',
-      'Single Quote' => 'Egyetlen idézet',
-      'Imported' => 'Importált',
-      'Duplicates' => 'ismétlődések',
-      'Skip searching for duplicates' => 'Keresse meg a másolatok keresését',
-      'Timezone' => 'Időzóna',
-      'Remove Import Log' => 'Importálási napló eltávolítása',
+      'Revert Import' => 'Revertir Importación',
+      'Return to Import' => 'Regreso a Importar',
+      'Run Import' => 'Ejecutar importación',
+      'Back' => 'Anterior',
+      'Field Mapping' => 'Mapeo de Campos',
+      'Default Values' => 'Valores por defecto',
+      'Add Field' => 'Añadir Campo',
+      'Created' => 'Creado',
+      'Updated' => 'Actualizado',
+      'Result' => 'Resultado',
+      'Show records' => 'Mostrar registros',
+      'Remove Duplicates' => 'Eliminar Duplicados',
+      'importedCount' => 'Importado (recuento)',
+      'duplicateCount' => 'Duplicados (recuento)',
+      'updatedCount' => 'Actualizado (recuento)',
+      'Create Only' => 'Solo crear',
+      'Create and Update' => 'Crear y actualizar',
+      'Update Only' => 'Solo actualizar',
+      'Update by' => 'Actualizado por',
+      'Set as Not Duplicate' => 'Establecer como No Duplicado',
+      'File (CSV)' => 'Archivo (CSV)',
+      'First Row Value' => 'Valor de la primera fila',
+      'Skip' => 'Omitir',
+      'Header Row Value' => 'Campo del sistema',
+      'Field' => 'Columnas del archivo',
+      'What to Import?' => '¿Qué va a importar?',
+      'Entity Type' => 'Tipo de entidad',
+      'What to do?' => '¿Qué hacer?',
+      'Properties' => 'Propiedades',
+      'Header Row' => '¿Tiene una fila de Encabezado?',
+      'Person Name Format' => 'Formato del nombre de la persona',
+      'John Smith' => 'Juan Pérez',
+      'Smith John' => 'Pérez Juan',
+      'Smith, John' => 'Pérez, Juan',
+      'Field Delimiter' => 'Delimitador de campo',
+      'Date Format' => 'Formato de fecha',
+      'Decimal Mark' => 'Símbolo Decimal',
+      'Text Qualifier' => 'Delimitador de texto',
+      'Time Format' => 'Formato de hora',
+      'Currency' => 'Moneda',
+      'Preview' => 'Vista previa',
+      'Next' => 'Siguiente',
+      'Step 1' => 'Paso 1',
+      'Step 2' => 'Paso 2',
+      'Double Quote' => 'Comillas dobles',
+      'Single Quote' => 'Comillas simples',
+      'Imported' => 'Importado',
+      'Duplicates' => 'Duplicados',
+      'Skip searching for duplicates' => 'Omitir la búsqueda de duplicados',
+      'Timezone' => 'Zona horaria',
+      'Remove Import Log' => 'Remove Import Log',
       'New Import' => 'New Import',
       'Import Results' => 'Import Results',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'utf8' => 'Kell UTF-8 kódolva',
-      'duplicatesRemoved' => 'A másolatok eltávolítása',
-      'inIdle' => 'Végrehajtás készenléti állapotban (nagy adatok esetén cronon keresztül)',
-      'revert' => 'Ez véglegesen eltávolítja az importált rekordokat.',
-      'removeDuplicates' => 'Ez véglegesen eltávolítja az összes olyan importált rekordot, amelyet duplikátumként ismernek el.',
-      'confirmRevert' => 'Ez véglegesen eltávolítja az importált rekordokat. biztos vagy ebben?',
-      'confirmRemoveDuplicates' => 'Ez véglegesen eltávolítja az összes olyan importált rekordot, amelyet duplikátumként ismernek el. biztos vagy ebben?',
-      'confirmRemoveImportLog' => 'Ez eltávolítja az importnaplót. Minden importált nyilvántartást vezetnek. Nem tudja visszaállítani az importálási eredményeket. Biztos vagy benne?',
-      'removeImportLog' => 'Ez eltávolítja az importnaplót. Minden importált nyilvántartást vezetnek. Használja, ha biztos benne, hogy az import rendben van.',
+      'utf8' => 'Debe ser codificado en UTF-8',
+      'duplicatesRemoved' => 'Duplicados eliminados',
+      'inIdle' => 'Ejecutar en segundo plano (para gran cantidad de datos, vía cron)',
+      'revert' => 'This will remove all imported records permanently.',
+      'removeDuplicates' => 'This will permanently remove all imported records that were recognized as duplicates.',
+      'confirmRevert' => 'This will remove all imported records permanently. Are you sure?',
+      'confirmRemoveDuplicates' => 'This will permanently remove all imported records that were recognized as duplicates. Are you sure?',
+      'confirmRemoveImportLog' => 'This will remove the import log. All imported records will be kept. You wan\'t be able to revert import results. Are you sure you?',
+      'removeImportLog' => 'This will remove the import log. All imported records will be kept. Use it if you are sure that import is fine.',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'file' => 'fájl',
-      'entityType' => 'Entity Type',
-      'imported' => 'Importált rekordok',
-      'duplicates' => 'Duplikált felvételek',
-      'updated' => 'Frissített felvételek',
-      'status' => 'Állapot',
+      'file' => 'Archivo',
+      'entityType' => 'Tipo de entidad',
+      'imported' => 'Registros Importados',
+      'duplicates' => 'registros Duplicados',
+      'updated' => 'registros Actualizados',
+      'status' => 'Estado',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Failed' => 'nem sikerült',
-        'In Process' => 'Folyamatban',
-        'Complete' => 'teljes',
+        'Failed' => 'Falló',
+        'In Process' => 'En proceso',
+        'Complete' => 'Completo',
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'emailAddress' => 'Email cím',
-      'team' => 'Célcsoport',
-      'status' => 'Állapot',
-      'assignToUser' => 'Hozzárendelés a felhasználóhoz',
-      'host' => 'Házigazda',
-      'username' => 'Felhasználónév',
-      'password' => 'Jelszó',
-      'port' => 'Kikötő',
-      'monitoredFolders' => 'Figyelt mappák',
-      'trashFolder' => 'Kuka mappa',
+      'name' => 'Nombre',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'team' => 'Equipo objetivo',
+      'status' => 'Estado',
+      'assignToUser' => 'Asignar al usuario',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'trashFolder' => 'Carpeta de papelera',
       'ssl' => 'SSL',
-      'createCase' => 'Létrehozás',
-      'reply' => 'Autómatikus válasz',
-      'caseDistribution' => 'Case Distribution',
-      'replyEmailTemplate' => 'Válasz e-mail sablon',
-      'replyFromAddress' => 'Válasz a címről',
-      'replyToAddress' => 'Válasz a címre',
-      'replyFromName' => 'Válasz a névből',
-      'targetUserPosition' => 'Célozza meg a felhasználó pozícióját',
-      'fetchSince' => 'Fetch As',
-      'addAllTeamUsers' => 'Minden csapatfelhasználó számára',
-      'teams' => 'csapatok',
-      'sentFolder' => 'Elküldött mappa',
-      'storeSentEmails' => 'Elküldött e-mailek tárolása',
-      'useImap' => 'E-mailek lekérése',
-      'useSmtp' => 'SMTP használata',
-      'smtpHost' => 'SMTP fogadó',
-      'smtpPort' => 'SMTP port',
-      'smtpAuth' => 'SMTP hitelesítés',
-      'smtpSecurity' => 'SMTP biztonság',
-      'smtpUsername' => 'SMTP felhasználónév',
-      'smtpPassword' => 'SMTP jelszó',
-      'fromName' => 'Névből',
-      'smtpIsShared' => 'Az SMTP megosztott',
-      'smtpIsForMassEmail' => 'Az SMTP a tömeges e-mailhez tartozik',
+      'createCase' => 'Crear ticket',
+      'reply' => 'Respuesta automática',
+      'caseDistribution' => 'Distribución de tickets',
+      'replyEmailTemplate' => 'Plantilla de respuesta de correo',
+      'replyFromAddress' => 'Responder a (dirección)',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyFromName' => 'Respuesta De (nombre):',
+      'targetUserPosition' => 'Objetivo posición usuario',
+      'fetchSince' => 'Traer correos desde',
+      'addAllTeamUsers' => 'Para todos los usuarios del equipo',
+      'teams' => 'Equipos',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'useImap' => 'Fetch Emails',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
+      'fromName' => 'De (nombre):',
+      'smtpIsShared' => 'SMTP ¿Es compartido?',
+      'smtpIsForMassEmail' => 'SMTP es para envíos masivos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'reply' => 'Értesítse az e-maileket arról, hogy e-mailjeiket megkapta.
+      'reply' => 'Notifique a los remitentes de correo que han recibido sus mensajes.
 
- Néhány idő alatt csak egy e-mailt küldünk egy adott címzettnek a hurkolás megakadályozása érdekében.',
-      'createCase' => 'Automatikusan hozzon létre ügyet a bejövő e-mailekről.',
-      'replyToAddress' => 'Adja meg e postafiók e-mail címét, hogy a válaszok itt érkezzenek.',
-      'caseDistribution' => 'Az ügyek rendezésének módja. Közvetlenül a felhasználóhoz vagy a csapathoz rendelhető.',
-      'assignToUser' => 'A felhasználói ügyek hozzárendelésre kerülnek.',
-      'team' => 'Csapatügyek fognak hozzárendelni.',
-      'teams' => 'A csoportok e-mailjeihez hozzárendelnek.',
-      'targetUserPosition' => 'Meghatározott pozícióval rendelkező felhasználókat az esetekkel osztják el.',
-      'addAllTeamUsers' => 'Az e-mailek megjelennek a megadott csoportok összes felhasználójának Postafiókjában.',
-      'monitoredFolders' => 'A több mappát vesszővel kell elválasztani.',
-      'smtpIsShared' => 'Ha be van jelölve, akkor a felhasználók e-maileket küldhetnek az SMTP használatával. Az elérhetőséget a Szerepkörök a csoportos e-mail fiók engedélyével szabályozzák.',
-      'smtpIsForMassEmail' => 'Ha be van jelölve, az SMTP elérhető lesz a Mass Email-hez.',
-      'storeSentEmails' => 'Az elküldött e-maileket az IMAP szerveren tárolja.',
+Solo un correo será enviado a un destinatario particular durante un período de tiempo para evitar bucles.',
+      'createCase' => 'Automaticamente crear un ticket de los correos entrantes.',
+      'replyToAddress' => 'Especifique la dirección de correo de este buzón para hacer que las respuestas vegan aquí.',
+      'caseDistribution' => '¿Cómo serán asignados a los tickets? Asignados directamente a un usuario o al equipo.',
+      'assignToUser' => 'Los tickets de usuario se asignarán a.',
+      'team' => 'Los tickets del equipo serán asignados a.',
+      'teams' => 'Los correos de equipos serán asignados a.',
+      'targetUserPosition' => 'Los usuarios con la posición especificada serán distribuidos a los tickets.',
+      'addAllTeamUsers' => 'Los correos aparecerán en la bandeja de entrada de todos los usuarios de los equipos especificados.',
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.',
+      'smtpIsShared' => 'Si se marca, entonces los usuarios podrán enviar correos usando este SMTP. La disponibilidad está controlada por Roles a través de los permisos de la cuenta de correo grupal.',
+      'smtpIsForMassEmail' => 'Si está marcado, SMTP estará disponible para correo masivo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP.',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'Szűrők',
-      'emails' => 'e-mailek',
-      'assignToUser' => 'Hozzárendelés a felhasználóhoz',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
+      'assignToUser' => 'Assign to User',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktív',
-        'Inactive' => 'tétlen',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
-        '' => 'Egyik sem',
-        'Direct-Assignment' => 'Közvetlen hozzárendelés',
-        'Round-Robin' => 'Round-Robin',
-        'Least-Busy' => 'A legkevésbé foglalt',
+        '' => 'Ninguno',
+        'Direct-Assignment' => 'Asignación directa',
+        'Round-Robin' => 'Todos contra todos',
+        'Least-Busy' => 'Menos ocupado',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create InboundEmail' => 'E-mail fiók létrehozása',
+      'Create InboundEmail' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Actions' => 'Hozzászólások',
-      'Main' => 'Fő',
+      'Actions' => 'Acciones',
+      'Main' => 'Principal',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'Nem sikerült csatlakozni az IMAP kiszolgálóhoz',
-    ),
-  ),
-  'Integration' => 
-  array (
-    'fields' => 
-    array (
-      'enabled' => 'Bekapcsolt',
-      'clientId' => 'Ügyfélazonosító',
-      'clientSecret' => 'Ügyfél titka',
-      'redirectUri' => 'Átirányítási URI',
-      'apiKey' => 'API kulcs',
-    ),
-    'titles' => 
-    array (
-      'GoogleMaps' => 'Google térkép',
-    ),
-    'messages' => 
-    array (
-      'selectIntegration' => 'Válasszon ki egy integrációt a menüből.',
-      'noIntegrations' => 'Nincs integráció.',
-    ),
-    'help' => 
-    array (
-      'Google' => '<p> <b> A Google Developers Console-ban szerezze be az OAuth 2.0-hitelesítő adatokat. </ b> </ p> <p> Látogassa meg a <a href="https://console.developers.google.com/project"> Google fejlesztőket Konzolt </a>, hogy megkaphassa az OAuth 2.0 hitelesítő adatait, például egy ügyfélazonosítót és ügyféltitkot, amelyek mind a Google, mind az EspoCRM alkalmazásban ismertek. </ P>',
-      'GoogleMaps' => '<p> Az API-kulcs beszerzése <a href="https://developers.google.com/maps/documentation/javascript/get-api-key"> itt </a>. </ p>',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
     ),
   ),
-  'Job' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Állapot',
-      'executeTime' => 'Execute At',
-      'attempts' => 'Kísérletek balra',
-      'failedAttempts' => 'Sikertelen kísérletek',
-      'serviceName' => 'Szolgáltatás',
-      'method' => 'Módszer (elavult)',
-      'methodName' => 'Módszer',
-      'scheduledJob' => 'Ütemezett munka',
-      'scheduledJobJob' => 'Ütemezett feladat neve',
-      'data' => 'Adat',
+      'enabled' => 'Activado',
+      'clientId' => 'ID Cliente',
+      'clientSecret' => 'Secreto del cliente',
+      'redirectUri' => 'Redireccionar URI',
+      'apiKey' => ' Clave para el API de JavaScript',
     ),
-    'options' => 
+    'titles' =>
     array (
-      'status' => 
+      'GoogleMaps' => 'Google Maps',
+    ),
+    'messages' =>
+    array (
+      'selectIntegration' => 'Seleccionar una integración en menú',
+      'noIntegrations' => 'No hay integraciones disponibles',
+    ),
+    'help' =>
+    array (
+      'Google' => '<p><b>Obtener las credenciales de  OAuth 2.0 desde la Consola de Google Developers.</b></p><p>Visita <a href="https://console.developers.google.com/project">Consola Google Developers</a> para obtener las credenciales de  OAuth 2.0 tales como  ID Cliente y Secreto de Cliente que son conocidos por ambos Google y la aplicación EspoCRM.</p>',
+      'GoogleMaps' => '<p>Para obtener una clave para el API de JavaScript, haga <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">click aquí</a>.</p>',
+    ),
+  ),
+  'Job' =>
+  array (
+    'fields' =>
+    array (
+      'status' => 'Estado',
+      'executeTime' => 'Ejecutar a',
+      'attempts' => 'Intentos restantes',
+      'failedAttempts' => 'Intentos Fallidos',
+      'serviceName' => 'Servicio',
+      'method' => 'Método',
+      'methodName' => 'Method',
+      'scheduledJob' => 'Tarea Programada',
+      'scheduledJobJob' => 'Scheduled Job Name',
+      'data' => 'Datos',
+    ),
+    'options' =>
+    array (
+      'status' =>
       array (
-        'Pending' => 'Függőben levő',
-        'Success' => 'Siker',
-        'Running' => 'Futás',
-        'Failed' => 'nem sikerült',
+        'Pending' => 'Pendiente',
+        'Success' => 'Exitoso',
+        'Running' => 'Corriendo',
+        'Failed' => 'Falló',
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'width' => 'Szélesség (%)',
-      'link' => 'Link',
-      'notSortable' => 'Nem sortható',
-      'align' => 'Igazítsa',
-      'panelName' => 'Panel neve',
-      'style' => 'Stílus',
-      'sticked' => 'ragasztott',
-      'isLarge' => 'Nagy betűméret',
+      'width' => 'Ancho (%)',
+      'link' => 'Enlace',
+      'notSortable' => 'No ordenable',
+      'align' => 'Alinear',
+      'panelName' => 'Nombre del Panel',
+      'style' => 'Estilo',
+      'sticked' => 'Pegado',
+      'isLarge' => 'Large font size',
       'dynamicLogicVisible' => 'Conditions making panel visible',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
-        'left' => 'Balra',
-        'right' => 'Jobb',
+        'left' => 'Izquierda',
+        'right' => 'Derecha',
       ),
-      'style' => 
+      'style' =>
       array (
-        'default' => 'Alapértelmezett',
-        'success' => 'Siker',
-        'danger' => 'Veszély',
-        'info' => 'Info',
-        'warning' => 'Figyelem',
-        'primary' => 'Elsődleges',
+        'default' => 'Borrador',
+        'success' => 'Exito',
+        'danger' => 'Peligro',
+        'info' => 'Información',
+        'warning' => 'Advertencia',
+        'primary' => 'Principal',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'New panel' => 'Új panel',
-      'Layout' => 'Elrendezés',
+      'New panel' => 'New panel',
+      'Layout' => 'Layout',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'campaign' => 'Campaign',
@@ -2256,7 +2294,7 @@ Elérhető markdown szintaxis:
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Payload',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Target List',
       'campaign' => 'Campaign',
@@ -2264,27 +2302,27 @@ Elérhető markdown szintaxis:
       'targetTeam' => 'Target Team',
       'logRecords' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Create Entry Point',
       'Generate New API Key' => 'Generate New API Key',
       'Request' => 'Request',
       'Confirm Opt-In' => 'Confirm Opt-In',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Create new API Key',
       'optInConfirmationExpired' => 'Opt-in confirmation link is expired.',
       'optInIsConfirmed' => 'Opt-in is confirmed.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Markdown is supported.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Number',
       'data' => 'Data',
@@ -2293,611 +2331,617 @@ Elérhető markdown szintaxis:
       'createdAt' => 'Entered At',
       'isCreated' => 'Is Lead Created',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => 'Lead Capture',
       'target' => 'Target',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'post' => 'posta',
-      'attachments' => 'Mellékletek',
-      'targetType' => 'Cél',
-      'teams' => 'csapatok',
-      'users' => 'felhasználók',
-      'portals' => 'portálok',
-      'type' => 'típus',
-      'isGlobal' => 'Globális',
-      'isInternal' => 'Belső (belső felhasználók számára)',
-      'related' => 'Összefüggő',
-      'createdByGender' => 'Létrehozta Nem',
-      'data' => 'Adat',
-      'number' => 'Szám',
+      'post' => 'Entrada',
+      'attachments' => 'Adjuntos',
+      'targetType' => 'Objetivo',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'portals' => 'Portales',
+      'type' => 'Tipo',
+      'isGlobal' => 'Es global',
+      'isInternal' => 'Es Interno (para usuarios internos)',
+      'related' => 'Relacionado',
+      'createdByGender' => 'Creado por género',
+      'data' => 'Datos',
+      'number' => 'Número',
     ),
-    'filters' => 
+    'filters' =>
     array (
-      'all' => 'Minden',
-      'posts' => 'Hozzászólások',
-      'updates' => 'Frissítés',
+      'all' => 'Todos',
+      'posts' => 'Entradas',
+      'updates' => 'Actualizaciones',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
-        'self' => 'magamnak',
-        'users' => 'az adott felhasználó (k) számára',
-        'teams' => 'bizonyos csapat (ok)',
-        'all' => 'minden belső felhasználó számára',
-        'portals' => 'a portál felhasználók számára',
+        'self' => 'Para mí',
+        'users' => 'Para determinado/s usuario/s',
+        'teams' => 'Para determinado/s equipo/s',
+        'all' => 'Para todos los usuarios',
+        'portals' => 'Para los usuarios del portal',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Post' => 'posta',
+        'Post' => 'Post',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'writeMessage' => 'Írja ide az üzenetet',
+      'writeMessage' => 'Escriba su mensaje aquí',
     ),
-    'links' => 
+    'links' =>
     array (
-      'superParent' => 'Szuper szülő',
-      'related' => 'Összefüggő',
+      'superParent' => 'Super Parent',
+      'related' => 'Related',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'logo' => 'logo',
+      'name' => 'Nombre',
+      'logo' => 'Logotipo',
       'url' => 'URL',
-      'portalRoles' => 'szerepek',
-      'isActive' => 'Aktív',
-      'isDefault' => 'Alapértelmezett',
-      'tabList' => 'Tab listát',
-      'quickCreateList' => 'Gyors létrehozási lista',
-      'companyLogo' => 'logo',
-      'theme' => 'Téma',
-      'language' => 'Nyelv',
-      'dashboardLayout' => 'Irányítópult elrendezés',
-      'dateFormat' => 'Dátum formátum',
-      'timeFormat' => 'Idő formátum',
-      'timeZone' => 'Időzóna',
-      'weekStart' => 'A hét első napja',
-      'defaultCurrency' => 'Alapértelmezett pénznem',
-      'customUrl' => 'Egyéni URL',
-      'customId' => 'Egyéni azonosító',
+      'portalRoles' => 'Roles',
+      'isActive' => 'Está activo',
+      'isDefault' => 'Portal por defecto',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'companyLogo' => 'Logotipo',
+      'theme' => 'Tema',
+      'language' => 'Idioma',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'defaultCurrency' => 'Moneda por defecto',
+      'customUrl' => 'URL personalizada',
+      'customId' => 'ID personalizado',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'felhasználók',
-      'portalRoles' => 'szerepek',
-      'notes' => 'Megjegyzések',
-      'articles' => 'Tudásbázis-cikkek',
+      'users' => 'Usuarios',
+      'portalRoles' => 'Roles',
+      'notes' => 'Notas',
+      'articles' => 'Artículos de la base de conocimiento',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portalRoles' => 'Meghatározott portál szerepköröket fognak alkalmazni a portál összes felhasználójára.',
+      'portalRoles' => 'Los roles del portal indicados se aplicarán a todos los usuarios de este portal.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Portal' => 'Portál létrehozása',
-      'User Interface' => 'Felhasználói felület',
-      'General' => 'Tábornok',
-      'Settings' => 'Beállítások',
-    ),
-  ),
-  'PortalRole' => 
-  array (
-    'fields' => 
-    array (
-      'exportPermission' => 'Exportengedély',
-    ),
-    'links' => 
-    array (
-      'users' => 'felhasználók',
-    ),
-    'tooltips' => 
-    array (
-      'exportPermission' => 'Megadja, hogy a portál felhasználói képesek exportálni a rekordokat.',
-    ),
-    'labels' => 
-    array (
-      'Access' => 'Hozzáférés',
-      'Create PortalRole' => 'Portál szerep létrehozása',
-      'Scope Level' => 'Teljesítményszint',
-      'Field Level' => 'Térségi szint',
+      'Create Portal' => 'Crear portal',
+      'User Interface' => 'Interfaz del Usuario',
+      'General' => 'General',
+      'Settings' => 'Ajustes',
     ),
   ),
-  'PortalUser' => 
+  'PortalRole' =>
   array (
-    'labels' => 
+    'fields' =>
     array (
-      'Create PortalUser' => 'Portal felhasználó létrehozása',
+      'exportPermission' => 'Export Permission',
+    ),
+    'links' =>
+    array (
+      'users' => 'Usuarios',
+    ),
+    'tooltips' =>
+    array (
+      'exportPermission' => 'Defines whether portal users have an ability to export records.',
+    ),
+    'labels' =>
+    array (
+      'Access' => 'Acceder',
+      'Create PortalRole' => 'Crear rol del portal',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
   ),
-  'Preferences' => 
+  'PortalUser' =>
   array (
-    'fields' => 
+    'labels' =>
     array (
-      'dateFormat' => 'Dátum formátum',
-      'timeFormat' => 'Idő formátum',
-      'timeZone' => 'Időzóna',
-      'weekStart' => 'A hét első napja',
-      'thousandSeparator' => 'Ezer elválasztó',
-      'decimalMark' => 'Tizedesjel',
-      'defaultCurrency' => 'Alapértelmezett pénznem',
-      'currencyList' => 'Pénznem listája',
-      'language' => 'Nyelv',
-      'smtpServer' => 'szerver',
-      'smtpPort' => 'Kikötő',
-      'smtpAuth' => 'Auth',
-      'smtpSecurity' => 'Biztonság',
-      'smtpUsername' => 'Felhasználónév',
-      'emailAddress' => 'Email',
-      'smtpPassword' => 'Jelszó',
-      'smtpEmailAddress' => 'Email cím',
-      'exportDelimiter' => 'Export-határoló',
-      'receiveAssignmentEmailNotifications' => 'E-mail értesítések hozzárendeléskor',
-      'receiveMentionEmailNotifications' => 'E-mail értesítések a bejegyzésben szereplő megjegyzésekről',
-      'receiveStreamEmailNotifications' => 'E-mail értesítések a bejegyzésekről és az állapotfrissítésekről',
-      'autoFollowEntityTypeList' => 'Globális automatikus követés',
-      'signature' => 'Email aláírás',
-      'dashboardTabList' => 'Tab listát',
-      'defaultReminders' => 'Alapértelmezett emlékeztetők',
-      'theme' => 'Téma',
-      'useCustomTabList' => 'Egyéni füllista',
-      'tabList' => 'Tab listát',
-      'emailReplyToAllByDefault' => 'Alapértelmezés szerint az E-mail Válasz mindenkinek',
-      'dashboardLayout' => 'Irányítópult elrendezés',
-      'emailReplyForceHtml' => 'Email Válasz HTML-ben',
-      'doNotFillAssignedUserIfNotRequired' => 'Ne töltse fel előzetesen a kijelölt felhasználót a rekord létrehozásakor',
-      'followEntityOnStreamPost' => 'Az adatrögzítés után automatikusan követheti a felvételt',
-      'followCreatedEntities' => 'A létrehozott rekordok automatikus követése',
-      'followCreatedEntityTypeList' => 'Automatikusan követheti az egyes entitástípusok létrehozott rekordjait',
-      'emailUseExternalClient' => 'Külső e-mail klienst használjon',
-      'scopeColorsDisabled' => 'Távolítsa el a színeket',
-      'tabColorsDisabled' => 'Letiltja a lapok színeit',
+      'Create PortalUser' => 'Crear usuario del portal',
     ),
-    'links' => 
+  ),
+  'Preferences' =>
+  array (
+    'fields' =>
+    array (
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'smtpEmailAddress' => 'Correo electrónico',
+      'exportDelimiter' => 'Separador de campos',
+      'receiveAssignmentEmailNotifications' => 'Recibir notificaciones por correo electrónico al ser asignado',
+      'receiveMentionEmailNotifications' => 'Notificaciones por correo electrónico acerca de menciones en los mensajes',
+      'receiveStreamEmailNotifications' => 'Notificaciones por correo electrónico sobre los mensajes y actualizaciones de estado',
+      'autoFollowEntityTypeList' => 'Seguir automaticamente (global)',
+      'signature' => 'Firma de correo',
+      'dashboardTabList' => 'Lista de pestañas',
+      'defaultReminders' => 'Recordatorios por defecto',
+      'theme' => 'Tema',
+      'useCustomTabList' => 'Lista de pestañas personalizadas',
+      'tabList' => 'Lista de pestañas',
+      'emailReplyToAllByDefault' => 'Correo: responder a todos por defecto',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'emailReplyForceHtml' => 'Correo: responder en formato HTML',
+      'doNotFillAssignedUserIfNotRequired' => 'No precompletar usuario asignado en la creación de registros',
+      'followEntityOnStreamPost' => 'Seguimiento automático después de publicar en la historia',
+      'followCreatedEntities' => 'Seguimiento automático de registros creados',
+      'followCreatedEntityTypeList' => 'Seguimiento automático de registros creados de tipos de entidades específicos',
+      'emailUseExternalClient' => 'Use an external email client',
+      'scopeColorsDisabled' => 'Disable scope colors',
+      'tabColorsDisabled' => 'Disable tab colors',
+    ),
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'vasárnap',
-        1 => 'hétfő',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Notifications' => 'értesítések',
-      'User Interface' => 'Felhasználói felület',
+      'Notifications' => 'Notificaciones',
+      'User Interface' => 'Interfaz de usuario',
       'SMTP' => 'SMTP',
-      'Misc' => 'Egyéb',
-      'Locale' => 'helyszín',
+      'Misc' => 'Misceláneos',
+      'Locale' => 'Localización',
       'Reset Dashboard to Default' => 'Reset Dashboard to Default',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'autoFollowEntityTypeList' => 'Automatikusan kövesse az összes új rekordot (amelyet bármely felhasználó hoz létre) a kiválasztott entitás típusokból. Annak érdekében, hogy információkat láthasson az adatfolyamban, és értesítéseket kaphasson a rendszer minden rekordjáról.',
-      'doNotFillAssignedUserIfNotRequired' => 'A létrehozott hozzárendelt felhasználó létrehozásakor nem töltődik be saját felhasználó, hacsak a mező nem kötelező.',
-      'followCreatedEntities' => 'Új rekordok létrehozásakor automatikusan követik őket, még akkor is, ha másik felhasználónak van megadva.',
-      'followCreatedEntityTypeList' => 'Amikor új rekordokat hoz létre a kiválasztott entitás típusokról, automatikusan követni fog őket, még akkor is, ha másik felhasználónak van megadva.',
+      'autoFollowEntityTypeList' => 'Siguirá automáticamente todos los registros nuevos (creados por cualquier usuario) de los tipos de entidad seleccionados. Para poder ver información en la historia y recibir notificaciones sobre todos los registros en el sistema.',
+      'doNotFillAssignedUserIfNotRequired' => 'Cuando cree un registro, el usuario asignado no se completará con su propio usuario a menos que el campo sea obligatorio.',
+      'followCreatedEntities' => 'Al crear nuevos registros, se seguirán automáticamente incluso si se asignaron a otro usuario.',
+      'followCreatedEntityTypeList' => 'Al crear nuevos registros de los tipos de entidad seleccionados, se seguirán automáticamente incluso si se asignaron a otro usuario.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'roles' => 'szerepek',
-      'assignmentPermission' => 'Hozzárendelési engedély',
-      'userPermission' => 'Felhasználói engedély',
-      'portalPermission' => 'Portál engedély',
-      'groupEmailAccountPermission' => 'Csoportos e-mail fiók engedély',
-      'exportPermission' => 'Exportengedély',
-      'dataPrivacyPermission' => 'Adatvédelmi engedély',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'assignmentPermission' => 'Asignación de permisos',
+      'userPermission' => 'Permisos de Usuario',
+      'portalPermission' => 'Permisos del portal',
+      'groupEmailAccountPermission' => 'Permiso de la cuenta de correo grupal',
+      'exportPermission' => 'Export Permission',
+      'dataPrivacyPermission' => 'Data Privacy Permission',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'felhasználók',
-      'teams' => 'csapatok',
+      'users' => 'Usuarios',
+      'teams' => 'Equipos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'assignmentPermission' => 'Lehetővé teszi a rekordok hozzárendelésének és üzenetek üzeneteinek más felhasználók általi korlátozását.
+      'assignmentPermission' => 'Permite restringir la capacidad de los usuarios para que asignen registros y publicaciones a otros usuarios.
 
-minden - nincs korlátozás
+todo - sin restricción
 
-csapat - csak csapattársakhoz rendelhet és küldhet
+equipo - puede asignar a usuarios de su propio equipo
 
-nem - csak az énhez rendelhet és küldhet',
-      'userPermission' => 'Lehetővé teszi a felhasználók azon képességének korlátozását, hogy megtekinthessék a többi felhasználó tevékenységét, naptárát és streamjét.
+no - solo puede asignarse a sí mismo',
+      'userPermission' => 'Permite restringir la capacidad de los usuarios para ver tareas, calendarios y la historia de otros usuarios.
 
-mindenki - mindent megnéz
+todo - pueden ver todo
 
-csapat - csak a csapattársak tevékenységét tekintheti meg
+equipo - pueden ver las actividades de su equipo
 
-nem - nem lehet megtekinteni',
-      'portalPermission' => 'Meghatározza a portálinformációkhoz való hozzáférést, és képes üzenetet küldeni a portál felhasználóknak.',
-      'groupEmailAccountPermission' => 'Meghatározza a csoportos e-mail fiókokhoz való hozzáférést, és képes e-maileket küldeni az SMTP csoportból.',
-      'exportPermission' => 'Meghatározza, hogy a felhasználók a rekordok exportálhatók-e.',
-      'dataPrivacyPermission' => 'Lehetővé teszi a személyes adatok megtekintését és törlését.',
+no - solo las propias',
+      'portalPermission' => 'Define un acceso a la información del portal, la capacidad de publicar mensajes a los usuarios del portal.
+',
+      'groupEmailAccountPermission' => 'Define el acceso a las cuentas de correo grupales, la capacidad de enviar correos a través del SMTP grupal.',
+      'exportPermission' => 'Defines whether users have an ability to export records.',
+      'dataPrivacyPermission' => 'Allows to view and erase personal data.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Access' => 'Hozzáférés',
-      'Create Role' => 'Szerezzen szerepet',
-      'Scope Level' => 'Teljesítményszint',
-      'Field Level' => 'Térségi szint',
+      'Access' => 'Acceso',
+      'Create Role' => 'Crear rol',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
-        'not-set' => 'nincs beállítva',
-        'enabled' => 'engedélyezve',
-        'disabled' => 'Tiltva',
+        'not-set' => 'sin establecer',
+        'enabled' => 'activado',
+        'disabled' => 'desactivado',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
-        'all' => 'minden',
-        'team' => 'csapat',
-        'account' => 'számla',
-        'contact' => 'kapcsolatba lépni',
-        'own' => 'saját',
-        'no' => 'nem',
-        'yes' => 'Igen',
-        'not-set' => 'nincs beállítva',
+        'all' => 'Todos',
+        'team' => 'Equipo',
+        'account' => 'Cuenta',
+        'contact' => 'Contacto',
+        'own' => 'Propio',
+        'no' => 'No',
+        'yes' => 'Si',
+        'not-set' => 'Sin establecer',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
-      'read' => 'Olvas',
-      'edit' => 'szerkesztése',
-      'delete' => 'Töröl',
-      'stream' => 'Folyam',
-      'create' => 'Teremt',
+      'read' => 'Leer',
+      'edit' => 'Editar',
+      'delete' => 'Borrar',
+      'stream' => 'Historia',
+      'create' => 'Crear',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'changesAfterClearCache' => 'A hozzáférés-vezérlés minden módosítását a gyorsítótár letiltása után alkalmazzák.',
+      'changesAfterClearCache' => 'Todos los cambios en el control de acceso serán aplicacados después de limpiar la caché',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'status' => 'Állapot',
-      'job' => 'Munka',
-      'scheduling' => 'ütemezése',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'job' => 'Trabajo',
+      'scheduling' => 'Programación (notación CRONTab)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'log' => 'Bejelentkezés',
+      'log' => 'Registro',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create ScheduledJob' => 'Ütemezett feladat létrehozása',
+      'Create ScheduledJob' => 'Crear tarea programada',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
-        'Cleanup' => 'Nagytakarítás',
-        'CheckInboundEmails' => 'Ellenőrizze a csoportos e-mail fiókokat',
-        'CheckEmailAccounts' => 'Ellenőrizze a személyes e-mail fiókokat',
-        'SendEmailReminders' => 'Küldjön e-mailes emlékeztetőket',
-        'AuthTokenControl' => 'Auth Token Control',
-        'SendEmailNotifications' => 'Küldjön e-mail értesítéseket',
-        'CheckNewVersion' => 'Ellenőrizze az új verziót',
-        'ProcessMassEmail' => 'Küldjön e-maileket',
-        'ControlKnowledgeBaseArticleStatus' => 'A Tudásbázis-cikk állapota',
+        'Cleanup' => 'Limpiar',
+        'CheckInboundEmails' => 'Comprobar cuentas de correo grupales',
+        'CheckEmailAccounts' => 'Comprobar cuentas de correo personales',
+        'SendEmailReminders' => 'Enviar Recordatorios por Email',
+        'AuthTokenControl' => 'Control del Token de Autenticación',
+        'SendEmailNotifications' => 'Enviar notificaciones por correo electrónico',
+        'CheckNewVersion' => 'Check for New Version',
+        'ProcessMassEmail' => 'Enviar correo masivo',
+        'ControlKnowledgeBaseArticleStatus' => 'Controlar estado de los artículos de la base de conocimiento',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
-        'linux' => 'Megjegyzés: Adja hozzá ezt a sort a crontab fájlhoz az Espo Scheduled Jobs futtatásához:',
-        'mac' => 'Megjegyzés: Adja hozzá ezt a sort a crontab fájlhoz az Espo Scheduled Jobs futtatásához:',
-        'windows' => 'Megjegyzés: Hozzon létre egy kötegelt fájlt a következő parancsokkal, hogy futtassa az Espo Scheduled Jobs programot az ütemezett feladatokkal:',
-        'default' => 'Megjegyzés: Adja hozzá ezt a parancsot a Cron feladathoz (Ütemezett feladat):',
+        'linux' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'mac' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'windows' => 'Nota: Crear un archivo por lotes con los siguientes comandos para ejecutar tareas programadas de EspoCRM usando tareas programadas de Windows:',
+        'default' => 'Nota: Agregar este comando a Cron Job (Tarea Programada):',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktív',
-        'Inactive' => 'tétlen',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'scheduling' => 'Crontab jelölés. Meghatározza a munkák gyakoriságát.
+      'scheduling' => 'Define cuándo y cada cuánto el trabajo será ejecutado
 
-* / 5 * * * * - 5 percenként
+*/5 * * * * - cada 5 minutos
 
-0 * / 2 * * * - 2 óránként
+0 */2 * * * - cada 2 horas
 
-30 1 * * * - 01: 30-ban naponta egyszer
+30 1 * * * - a las 01:30 cada día
 
-0 0 1 * * - a hónap első napján',
+0 0 1 * * - el primer día del mes',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Állapot',
-      'executionTime' => 'Végrehajtási idő',
-      'target' => 'Cél',
+      'status' => 'Estado',
+      'executionTime' => 'Fecha de ejecución',
+      'target' => 'Objetivo',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'useCache' => 'Használja a gyorsítótárat',
-      'dateFormat' => 'Dátum formátum',
-      'timeFormat' => 'Idő formátum',
-      'timeZone' => 'Időzóna',
-      'weekStart' => 'A hét első napja',
-      'thousandSeparator' => 'Ezer elválasztó',
-      'decimalMark' => 'Tizedesjel',
-      'defaultCurrency' => 'Alapértelmezett pénznem',
-      'baseCurrency' => 'Alap pénznem',
-      'currencyRates' => 'Értékértékek',
-      'currencyList' => 'Pénznem listája',
-      'language' => 'Nyelv',
-      'companyLogo' => 'Vállalati logó',
-      'smtpServer' => 'szerver',
-      'smtpPort' => 'Kikötő',
-      'smtpAuth' => 'Auth',
-      'smtpSecurity' => 'Biztonság',
-      'smtpUsername' => 'Felhasználónév',
-      'emailAddress' => 'Email',
-      'smtpPassword' => 'Jelszó',
-      'outboundEmailFromName' => 'Névből',
-      'outboundEmailFromAddress' => 'Címtől',
-      'outboundEmailIsShared' => 'Megosztott',
-      'recordsPerPage' => 'Oldalankénti nyilvántartások',
-      'recordsPerPageSmall' => 'Oldalankénti feljegyzések (kicsi)',
-      'tabList' => 'Tab listát',
-      'quickCreateList' => 'Gyors létrehozási lista',
-      'exportDelimiter' => 'Export-határoló',
-      'globalSearchEntityList' => 'Globális keresés entitás listája',
-      'authenticationMethod' => 'hitelesítési módszer',
-      'ldapHost' => 'Házigazda',
-      'ldapPort' => 'Kikötő',
-      'ldapAuth' => 'Auth',
-      'ldapUsername' => 'Teljes felhasználói DN',
-      'ldapPassword' => 'Jelszó',
-      'ldapBindRequiresDn' => 'A kötés DN-t igényel',
-      'ldapBaseDn' => 'Base DN',
-      'ldapAccountCanonicalForm' => 'Fiók Canonical Form',
-      'ldapAccountDomainName' => 'Fiók domainnév',
-      'ldapTryUsernameSplit' => 'Próbálja ki a felhasználónevet',
+      'useCache' => 'Usar caché',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'baseCurrency' => 'Moneda Base',
+      'currencyRates' => 'Tipos de cambio',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'companyLogo' => 'Logo de la empresa',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'outboundEmailFromName' => 'De (nombre):',
+      'outboundEmailFromAddress' => 'De (email)',
+      'outboundEmailIsShared' => '¿Es compartido?',
+      'recordsPerPage' => 'Registros por página',
+      'recordsPerPageSmall' => 'Registros por página (pequeño)',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'exportDelimiter' => 'Separador de campos',
+      'globalSearchEntityList' => 'Búsqueda Global: Lista de entidades',
+      'authenticationMethod' => 'Método de autenticación',
+      'ldapHost' => 'Servidor',
+      'ldapPort' => 'Puerto',
+      'ldapAuth' => '¿Requiere autenticación?',
+      'ldapUsername' => 'Nombre de usuario',
+      'ldapPassword' => 'Contraseña',
+      'ldapBindRequiresDn' => 'Bind Necesita Nd (Nombre Dominio)',
+      'ldapBaseDn' => 'ND Base',
+      'ldapAccountCanonicalForm' => 'Forma canónica de la cuenta',
+      'ldapAccountDomainName' => 'Nombre de Dominio de la Cuenta',
+      'ldapTryUsernameSplit' => 'Intentar dividir el nombre de Usuario',
       'ldapPortalUserLdapAuth' => 'Use LDAP Authentication for Portal Users',
-      'ldapCreateEspoUser' => 'Felhasználó létrehozása az EspoCRM-ben',
-      'ldapSecurity' => 'Biztonság',
-      'ldapUserLoginFilter' => 'Felhasználói bejelentkezési szűrő',
-      'ldapAccountDomainNameShort' => 'Fiók domain neve rövid',
-      'ldapOptReferrals' => 'Opt Referrals',
-      'ldapUserNameAttribute' => 'Felhasználónév attribútum',
-      'ldapUserObjectClass' => 'Felhasználó ObjectClass',
-      'ldapUserTitleAttribute' => 'Felhasználói cím attribútum',
-      'ldapUserFirstNameAttribute' => 'Felhasználói név tulajdonsága',
-      'ldapUserLastNameAttribute' => 'Felhasználó utónév attribútuma',
-      'ldapUserEmailAddressAttribute' => 'Felhasználói e-mail cím attribútuma',
-      'ldapUserTeams' => 'Felhasználó csapatok',
-      'ldapUserDefaultTeam' => 'Felhasználói alapértelmezett csapat',
-      'ldapUserPhoneNumberAttribute' => 'Felhasználói telefonszám attribútum',
+      'ldapCreateEspoUser' => 'Crear usuario en EspoCRM',
+      'ldapSecurity' => 'Seguridad',
+      'ldapUserLoginFilter' => 'Usar Filtro en el Login',
+      'ldapAccountDomainNameShort' => 'Nombre Dominio Corto para la Cuenta',
+      'ldapOptReferrals' => 'Referencias Opt',
+      'ldapUserNameAttribute' => 'Atributo de nombre de usuario',
+      'ldapUserObjectClass' => 'Usuario ObjectClass',
+      'ldapUserTitleAttribute' => 'Atributo del usuario Título',
+      'ldapUserFirstNameAttribute' => 'Nombre de usuario Atributo',
+      'ldapUserLastNameAttribute' => 'Apellido de usuario Atributo',
+      'ldapUserEmailAddressAttribute' => 'Dirección de correo electrónico del usuario atributo',
+      'ldapUserTeams' => 'Los equipos de los usuarios',
+      'ldapUserDefaultTeam' => 'Equipo de usuario por defecto',
+      'ldapUserPhoneNumberAttribute' => 'Número de teléfono del usuario Atributo',
       'ldapPortalUserPortals' => 'Default Portals for a Portal User',
       'ldapPortalUserRoles' => 'Default Roles for a Portal User',
-      'exportDisabled' => 'Export tiltása (csak az admin engedélyezve van)',
-      'assignmentNotificationsEntityList' => 'Azokat a szervezeteket, amelyek értesítést kapnak a megbízásról',
-      'assignmentEmailNotifications' => 'Értesítések a megbízáskor',
-      'assignmentEmailNotificationsEntityList' => 'Az e-mail értesítések hozzárendelése',
-      'streamEmailNotifications' => 'Értesítések a frissítések frissítéséről a belső felhasználók számára',
-      'portalStreamEmailNotifications' => 'A portál felhasználói számára készült frissítésekről szóló értesítések',
-      'streamEmailNotificationsEntityList' => 'Az e-mail értesítések átvitele',
-      'streamEmailNotificationsTypeList' => 'Mit kell értesíteni',
-      'b2cMode' => 'B2C mód',
-      'avatarsDisabled' => 'Letiltja az avatarokat',
-      'followCreatedEntities' => 'Kövesse a létrehozott rekordokat',
-      'displayListViewRecordCount' => 'Teljes szám megjelenítése (a lista nézetben)',
-      'theme' => 'Téma',
-      'userThemesDisabled' => 'A felhasználói témák letiltása',
-      'emailMessageMaxSize' => 'E-mail maximális méret (Mb)',
-      'massEmailMaxPerHourCount' => 'Maximum óránként küldött e-mailek száma',
-      'personalEmailMaxPortionSize' => 'Maximális e-mail részméret a személyes fiókok lekéréséhez',
-      'inboundEmailMaxPortionSize' => 'Max. E-mail adagméret a csoportos fiókok lekéréséhez',
-      'maxEmailAccountCount' => 'Személyes e-mail fiókok maximális száma felhasználóanként',
-      'authTokenLifetime' => 'Hitel Token Élettartam (óra)',
-      'authTokenMaxIdleTime' => 'Hitel Token Max Idle Time (óra)',
-      'dashboardLayout' => 'Az irányítópult elrendezése (alapértelmezett)',
-      'siteUrl' => 'A webhely URL-je',
-      'addressPreview' => 'Cím előnézet',
-      'addressFormat' => 'Címformátum',
-      'notificationSoundsDisabled' => 'Értesítési hangok letiltása',
-      'applicationName' => 'Alkalmazás neve',
-      'calendarEntityList' => 'Naptár-entitások listája',
-      'mentionEmailNotifications' => 'Küldjön e-mail értesítéseket a bejegyzésekben szereplő megjegyzésekről',
-      'massEmailDisableMandatoryOptOutLink' => 'Tiltsa le a kötelező opt-out kapcsolatot',
-      'activitiesEntityList' => 'Tevékenységek entitás listája',
-      'historyEntityList' => 'Történelem entitás listája',
-      'currencyFormat' => 'Valuta formátum',
-      'currencyDecimalPlaces' => 'Valuta tizedes helyek',
-      'aclStrictMode' => 'ACL szigorú üzemmód',
-      'aclAllowDeleteCreated' => 'Lehetővé teszi a létrehozott rekordok eltávolítását',
-      'adminNotifications' => 'Rendszer értesítések az adminisztrációs panelben',
-      'adminNotificationsNewVersion' => 'Az új EspoCRM verzió elérhetőségének megjelenítése',
+      'exportDisabled' => 'Desactivar exportar (Solo estará permitido para el administrador)',
+      'assignmentNotificationsEntityList' => 'Estas entidades notificarán al usuario cuando le sean asignadas',
+      'assignmentEmailNotifications' => 'Se enviará un correo cuando reciba una asignación',
+      'assignmentEmailNotificationsEntityList' => 'Entidades a notificar',
+      'streamEmailNotifications' => 'Se enviará un correo sobre las actualizaciones en la historia para los usuarios internos',
+      'portalStreamEmailNotifications' => 'Se enviará un correo sobre actualizaciones en la historia a los usuarios del portal',
+      'streamEmailNotificationsEntityList' => 'Se notificará por correo en las siguientes entidades',
+      'streamEmailNotificationsTypeList' => 'What to notify about',
+      'b2cMode' => 'Modo B2C',
+      'avatarsDisabled' => 'Deshabilitar avatares',
+      'followCreatedEntities' => 'Seguir los registros creados',
+      'displayListViewRecordCount' => 'Mostrar totales (en la vista de lista)',
+      'theme' => 'Tema',
+      'userThemesDisabled' => 'Deshabilitar temas de usuarios',
+      'emailMessageMaxSize' => 'Tamaño máximo de los correos entrantes (Mb)',
+      'massEmailMaxPerHourCount' => 'Cantidad máxima de correos enviados por hora',
+      'personalEmailMaxPortionSize' => 'Cantidad máxima de correos personales que se recuperarán cada vez',
+      'inboundEmailMaxPortionSize' => 'Cantidad máxima de correos grupales que se recuperarán cada vez',
+      'maxEmailAccountCount' => 'Cantidad máxima de cuentas personales que se pueden crear por usuario',
+      'authTokenLifetime' => 'Vida del token de autenticación (horas)',
+      'authTokenMaxIdleTime' => 'Máximo tiempo de inactividad del token de autenticación (horas)',
+      'dashboardLayout' => 'Diseño del escritorio (por defecto)',
+      'siteUrl' => 'URL del sitio',
+      'addressPreview' => 'Vista previa de la dirección',
+      'addressFormat' => 'Formato de la Dirección',
+      'notificationSoundsDisabled' => 'Desactivar los sonidos de notificación',
+      'applicationName' => 'Nombre de la aplicación',
+      'calendarEntityList' => 'Lista de entidades calendario',
+      'mentionEmailNotifications' => 'Se enviará un correo cuando sean mencionados en los mensajes',
+      'massEmailDisableMandatoryOptOutLink' => 'Deshabilitar la obligatoridad del enlace "darse de baja" ',
+      'activitiesEntityList' => 'Lista de entidades de actividades',
+      'historyEntityList' => 'Lista de entidades de historia',
+      'currencyFormat' => 'Formato de Moneda',
+      'currencyDecimalPlaces' => 'Lugares decimales en la moneda',
+      'aclStrictMode' => 'ACL en modo estricto',
+      'aclAllowDeleteCreated' => 'Permitir eliminar registros creados',
+      'adminNotifications' => 'Notificaciones del sistema en el panel de administración',
+      'adminNotificationsNewVersion' => 'Show notification when new EspoCRM version is available',
       'adminNotificationsNewExtensionVersion' => 'Show notification when new versions of extensions are available',
-      'textFilterUseContainsForVarchar' => 'A varchar mezők szűrésénél a "contains" operátort használja',
-      'authTokenPreventConcurrent' => 'Felhasználónként csak egy hitelesítési azonosító',
-      'scopeColorsDisabled' => 'Távolítsa el a színeket',
-      'tabColorsDisabled' => 'Letiltja a lapok színeit',
-      'tabIconsDisabled' => 'Letiltja a fül ikont',
-      'emailAddressIsOptedOutByDefault' => 'Jelöljön ki új e-mail címeket, mint opciót',
+      'textFilterUseContainsForVarchar' => 'Use \'contains\' operator when filtering varchar fields',
+      'authTokenPreventConcurrent' => 'Only one auth token per user',
+      'scopeColorsDisabled' => 'Disable scope colors',
+      'tabColorsDisabled' => 'Disable tab colors',
+      'tabIconsDisabled' => 'Disable tab icons',
+      'emailAddressIsOptedOutByDefault' => 'Mark new email addresses as opted-out',
       'outboundEmailBccAddress' => 'BCC address for external clients',
       'cleanupDeletedRecords' => 'Clean up deleted records',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'vasárnap',
-        1 => 'hétfő',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
-        2 => '$ 10',
+        1 => '10 USD',
+        2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
-        'Post' => 'Hozzászólások',
-        'Status' => 'Státusz frissítések',
-        'EmailReceived' => 'Fogadott e-mailek',
+        'Post' => 'Posts',
+        'Status' => 'Status updates',
+        'EmailReceived' => 'Received emails',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'recordsPerPage' => 'A listanézetben eredetileg megjelenített bejegyzések száma.',
-      'recordsPerPageSmall' => 'A kapcsolattartó panelekben eredetileg megjelenített rekordok száma.',
-      'outboundEmailIsShared' => 'Engedélyezze a felhasználóknak e-maileket ebből a címről.',
-      'followCreatedEntities' => 'A felhasználók automatikusan követik az általuk létrehozott rekordokat.',
-      'emailMessageMaxSize' => 'Minden bejövő e-mailt, amely meghaladja a megadott méretet, nem a test és a mellékletek alapján kerül lekérésre.',
-      'authTokenLifetime' => 'Meghatározza, hogy mekkora hosszúságú jelek létezhetnek.
-0 - nem jelenti a lejáratot.',
-      'authTokenMaxIdleTime' => 'Meghatározza, hogy az utolsó hozzáférési tokenek mennyi ideig létezhetnek.
-0 - nem jelenti a lejáratot.',
-      'userThemesDisabled' => 'Ha be van jelölve, akkor a felhasználók nem tudnak másik témát kiválasztani.',
-      'ldapUsername' => 'A teljes DN rendszerfelhasználó, amely lehetővé teszi más felhasználók keresését. Például. "CN = LDAP rendszer felhasználó, OU = felhasználók, OU = expozíció, DC = teszt, DC = lan".',
-      'ldapPassword' => 'Az LDAP kiszolgálóhoz való hozzáféréshez használt jelszó.',
-      'ldapAuth' => 'Hozzáférési hitelesítő adatok az LDAP kiszolgálóhoz.',
-      'ldapUserNameAttribute' => 'A felhasználó azonosítására szolgáló attribútum.
-Például. "userPrincipalName" vagy "sAMAccountName" az Active Directoryhoz, az "uid" az OpenLDAP-hoz.',
-      'ldapUserObjectClass' => 'ObjectClass attribútum a felhasználók kereséséhez. Például. "személy" az AD számára, "inetOrgPerson" az OpenLDAP számára.',
-      'ldapAccountCanonicalForm' => 'Fiókja típusának kanonikus alakja. 4 lehetőség van: <br> - "Dn" - az űrlap a következő formátumban: CN = tesztelő, OU = expozíció, DC = teszt, DC = lan. <br> - "Backslash" - a "COMPANY \\ tester" űrlap. <br> - "Principal" - az "tester@company.com" formanyomtatvány.',
-      'ldapBindRequiresDn' => 'A felhasználónév formázása a DN formában.',
-      'ldapBaseDn' => 'A felhasználók keresésére használt alapértelmezett DN alap. Például. "OU = felhasználók, OU = expozíció, DC = teszt, DC = lan".',
-      'ldapTryUsernameSplit' => 'A felhasználónév megosztására vonatkozó lehetőség a domainnel.',
-      'ldapOptReferrals' => 'ha a hivatkozásokat az LDAP ügyfélnek kell követnie.',
+      'recordsPerPage' => 'Número de registros a mostrar inicialmente en las vistas.',
+      'recordsPerPageSmall' => 'Número de registros a mostrar inicialmente en los paneles relacionados',
+      'outboundEmailIsShared' => 'Permitir a los usuarios enviar correos electrónicos desde esta dirección.',
+      'followCreatedEntities' => 'Los usuarios seguirán automáticamente los registros que ellos crearon.',
+      'emailMessageMaxSize' => 'Todos los correos entrantes que superen un tamaño especificado se omitirán.',
+      'authTokenLifetime' => 'Define cuanto tiempo de vida tienen los tokens.
+0 - significa que no caduca.',
+      'authTokenMaxIdleTime' => 'Define cuándo caduca el Token luego del último acceso.
+0 - significa que no caduca.',
+      'userThemesDisabled' => 'Si está marcado, los usuarios no podrán seleccionar otro tema.',
+      'ldapUsername' => 'El sistema de usuario DN completo que permite a los usuarios buscar otros. E.g. "CN=LDAP usuario del sistema,OU=users,OU=espocrm, DC=test,DC=lan".',
+      'ldapPassword' => 'La contraseña para acceder al servidor LDAP.',
+      'ldapAuth' => 'Credenciales de acceso para el servidor LDAP.',
+      'ldapUserNameAttribute' => 'El atributo para identificar al usuario.
+Por ejemplo: "userPrincipalName" o "sAMAccountName" para Active Directory, "uid" para OpenLDAP.',
+      'ldapUserObjectClass' => 'Atributo ObjectClass para buscar usuarios. Por ejemplo: "person" para AD, "inetOrgPerson" para OpenLDAP.',
+      'ldapAccountCanonicalForm' => 'El tipo de canonización de su cuenta. Hay 4 opciones:<br><br>
+\'Dn\' - en el formato \'CN=tester,OU=espocrm,DC=test,DC=lan\'<br>
+\'Username\' - \'tester\'<br>
+\'Backslash\' - "COMPANY/tester\'.<br>
+\'Principal\' - \'tester@company.com \'.',
+      'ldapBindRequiresDn' => 'La opción para formatear el nombre de usuario en el formulario de DN.',
+      'ldapBaseDn' => 'La base DN predeterminado utilizado para la búsqueda de los usuarios. E.g. "OU=users,OU=espocrm,DC=test, DC=lan".',
+      'ldapTryUsernameSplit' => 'La opción de dividir un nombre de usuario con el dominio.',
+      'ldapOptReferrals' => 'La opción de dividir un nombre de usuario con el dominio.',
       'ldapPortalUserLdapAuth' => 'Allow portal users to use LDAP authentication instead of Espo authentication.',
-      'ldapCreateEspoUser' => 'Ez az opció lehetővé teszi, hogy az EspoCRM hozzon létre egy felhasználót az LDAP-ból.',
-      'ldapUserFirstNameAttribute' => 'Az LDAP attribútum, amelyet a felhasználó első nevének meghatározására használnak. Például. "keresztnév".',
-      'ldapUserLastNameAttribute' => 'Az LDAP attribútum, amelyet a felhasználó vezetéknevének meghatározására használnak. Például. "Sn".',
-      'ldapUserTitleAttribute' => 'Az LDAP attribútum, amely a felhasználó címének meghatározására szolgál. Például. "cím".',
-      'ldapUserEmailAddressAttribute' => 'LDAP attribútum, amely a felhasználó e-mail címének meghatározására szolgál. Például. "levél".',
-      'ldapUserPhoneNumberAttribute' => 'LDAP attribútum, amely a felhasználó telefonszámának meghatározására szolgál. Például. "telefonszám".',
-      'ldapUserLoginFilter' => 'A szűrő, amely lehetővé teszi az EspoCRM használatára képes felhasználók korlátozását. Például. "memberOf = CN = espoGroup, OU = csoportok, OU = espocrm, DC = teszt, DC = lan".',
-      'ldapAccountDomainName' => 'Az LDAP kiszolgáló engedélyezéséhez használt tartomány.',
-      'ldapAccountDomainNameShort' => 'Az LDAP kiszolgálóhoz való engedélyezéshez használt rövid domain.',
-      'ldapUserTeams' => 'Csapatok létrehozott felhasználó számára. További információért lásd a felhasználói profilot.',
-      'ldapUserDefaultTeam' => 'Alapértelmezett csapat létrehozott felhasználó számára. További információért lásd a felhasználói profilot.',
+      'ldapCreateEspoUser' => 'Esta opción permite EspoCRM para crear un usuario del LDAP.',
+      'ldapUserFirstNameAttribute' => 'atributo LDAP que se utiliza para determinar el nombre de usuario primero. E.g. "givenname".',
+      'ldapUserLastNameAttribute' => 'LDAP attribute which is used to determine the user last name. E.g. "sn".',
+      'ldapUserTitleAttribute' => 'LDAP attribute which is used to determine the user title. E.g. "title".',
+      'ldapUserEmailAddressAttribute' => 'LDAP attribute which is used to determine the user email address. E.g. "mail".',
+      'ldapUserPhoneNumberAttribute' => 'LDAP attribute which is used to determine the user phone number. E.g. "telephoneNumber".',
+      'ldapUserLoginFilter' => 'The filter which allows to restrict users who able to use EspoCRM. E.g. "memberOf=CN=espoGroup, OU=groups,OU=espocrm, DC=test,DC=lan".',
+      'ldapAccountDomainName' => 'The domain which is used for authorization to LDAP server.',
+      'ldapAccountDomainNameShort' => 'The short domain which is used for authorization to LDAP server.',
+      'ldapUserTeams' => 'Equipos de usuario creado. Para más información, véase el perfil de usuario.',
+      'ldapUserDefaultTeam' => 'equipo predeterminado de usuario creado. Para más información, véase el perfil de usuario.',
       'ldapPortalUserPortals' => 'Default Portals for created Portal User',
       'ldapPortalUserRoles' => 'Default Roles for created Portal User',
-      'b2cMode' => 'Az EspoCRM alapértelmezés szerint a B2B-hez igazodik. Átválthatod B2C-re.',
-      'currencyDecimalPlaces' => 'Tizedesjegyek száma. Ha üres, akkor minden meg nem térő tizedeshely jelenik meg.',
-      'aclStrictMode' => 'Engedélyezve: A körök elérése tilos, ha szerepkörben nincs megadva.
+      'b2cMode' => 'Por defecto EspoCRM esta adaptado para B2B. Usted puede cambiarlo a B2C.',
+      'currencyDecimalPlaces' => 'Número de decimales. Si está vacía, se mostrarán todas las posiciones decimales disponibles.',
+      'aclStrictMode' => 'Activado: el acceso a los ámbitos estará prohibido si no está especificado en roles.
 
-Letiltva: A körök elérése akkor engedélyezett, ha szerepkörben nincs megadva.',
-      'aclAllowDeleteCreated' => 'A felhasználók képesek lesznek eltávolítani a létrehozott rekordokat, még akkor is, ha nincsenek törlési hozzáféréssel.',
-      'textFilterUseContainsForVarchar' => 'Ha nincs bejelölve, akkor az "operátorral kezdődik". Használhatja a "%" helyettesítő jellel.',
-      'streamEmailNotificationsEntityList' => 'E-mail értesítések a követett rekordok frissítéséről. A felhasználók e-mail értesítéseket kapnak csak meghatározott entitástípusok esetén.',
-      'authTokenPreventConcurrent' => 'A felhasználók több eszközön egyszerre nem tudnak bejelentkezni.',
-      'emailAddressIsOptedOutByDefault' => 'Az új rekordlemezek létrehozásakor kizárt lesz.',
+Deshabilitado: se permitirá el acceso a ámbitos si no está especificado en roles.',
+      'aclAllowDeleteCreated' => 'Los usuarios podrán eliminar los registros que hayan creado, incluso si no tienen un acceso de eliminación.',
+      'textFilterUseContainsForVarchar' => 'If not checked then \'starts with\' operator is used. You can use the wildcard \'%\'.',
+      'streamEmailNotificationsEntityList' => 'Email notifications about stream updates of followed records. Users will receive email notifications only for specified entity types.',
+      'authTokenPreventConcurrent' => 'Users won\'t be able to be logged in on multiple devices simultaneously.',
+      'emailAddressIsOptedOutByDefault' => 'When creating new record email addess will be marked as opted-out.',
       'cleanupDeletedRecords' => 'Removed records will be deleted from database after a while.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'System' => 'Rendszer',
-      'Locale' => 'helyszín',
+      'System' => 'Sistema',
+      'Locale' => 'Localización',
       'SMTP' => 'SMTP',
-      'Configuration' => 'Configuration',
-      'In-app Notifications' => 'Alkalmazáson belüli értesítések',
-      'Email Notifications' => 'Email Értesítések',
-      'Currency Settings' => 'Pénznem beállítások',
-      'Currency Rates' => 'Valutaárfolyamok',
-      'Mass Email' => 'Tömeges e-mail',
-      'Test Connection' => 'Vizsgálati kapcsolat',
-      'Connecting' => 'Csatlakozás ...',
-      'Activities' => 'Tevékenységek',
-      'Admin Notifications' => 'Admin értesítések',
+      'Configuration' => 'Configuración',
+      'In-app Notifications' => 'Notificaciones del sistema',
+      'Email Notifications' => 'Notificaciones de correo',
+      'Currency Settings' => 'Ajustes de moneda',
+      'Currency Rates' => 'Tasas de conversión de divisas',
+      'Mass Email' => 'Correo masivo',
+      'Test Connection' => 'Probar conexión',
+      'Connecting' => 'Conectando...',
+      'Activities' => 'Actividades planeadas',
+      'Admin Notifications' => 'Notificaciones de administrador',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'ldapTestConnection' => 'A kapcsolat sikeresen létrejött.',
-    ),
-  ),
-  'Team' => 
-  array (
-    'fields' => 
-    array (
-      'name' => 'Név',
-      'roles' => 'szerepek',
-      'positionList' => 'Pozíciójegyzék',
-    ),
-    'links' => 
-    array (
-      'users' => 'felhasználók',
-      'notes' => 'Megjegyzések',
-      'roles' => 'szerepek',
-      'inboundEmails' => 'Csoportos e-mail fiókok',
-    ),
-    'tooltips' => 
-    array (
-      'roles' => 'Hozzáférési szerepek. A csapat felhasználói hozzáférést biztosítanak a kiválasztott szerepekhez.',
-      'positionList' => 'Elérhető pozíciók ebben a csapatban. Például. Értékes, menedzser.',
-    ),
-    'labels' => 
-    array (
-      'Create Team' => 'Csapat létrehozása',
+      'ldapTestConnection' => 'La conexión fue establecida con éxito.',
     ),
   ),
-  'Template' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'body' => 'Test',
-      'entityType' => 'Entity Type',
-      'header' => 'Fejléc',
-      'footer' => 'Lábjegyzet',
-      'leftMargin' => 'Bal margó',
-      'topMargin' => 'Felső margó',
-      'rightMargin' => 'Jobb margó',
-      'bottomMargin' => 'Alsó margó',
-      'printFooter' => 'Nyomtatási Lábléc',
-      'footerPosition' => 'Footer Position',
-      'variables' => 'Szabad helyfoglalók',
-      'pageOrientation' => 'Oldal tájolása',
-      'pageFormat' => 'Papírformátum',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'positionList' => 'Lista de puestos',
+    ),
+    'links' =>
+    array (
+      'users' => 'Usuarios',
+      'notes' => 'Notas',
+      'roles' => 'Roles',
+      'inboundEmails' => 'Cuentas de correo grupales',
+    ),
+    'tooltips' =>
+    array (
+      'roles' => 'Todos los usuarios de este equipo tendrán acceso a la configuración desde los roles seleccionados',
+      'positionList' => 'Puestos disponibles en este equipo. Por ejemplo Vendedor, Gerente.',
+    ),
+    'labels' =>
+    array (
+      'Create Team' => 'Crear empresa',
+    ),
+  ),
+  'Template' =>
+  array (
+    'fields' =>
+    array (
+      'name' => 'Nombre',
+      'body' => 'Cuerpo',
+      'entityType' => 'Tipo de entidad',
+      'header' => 'Cabecera',
+      'footer' => 'Pié',
+      'leftMargin' => 'Margen Izquierdo',
+      'topMargin' => 'Margen Superior',
+      'rightMargin' => 'Margen Derecho',
+      'bottomMargin' => 'Margen Inferior',
+      'printFooter' => 'Imprimir Pié',
+      'footerPosition' => 'Posición del Pié',
+      'variables' => 'Etiquetas disponibles.',
+      'pageOrientation' => 'Page Orientation',
+      'pageFormat' => 'Paper Format',
       'fontFace' => 'Font',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Template' => 'Sablon létrehozása',
+      'Create Template' => 'Crear plantilla',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
-        'Portrait' => 'portré',
-        'Landscape' => 'Tájkép',
+        'Portrait' => 'Portrait',
+        'Landscape' => 'Landscape',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
-        'today' => 'Ma (dátum)',
-        'now' => 'Most (dátum-idő)',
+        'today' => 'Today (date)',
+        'now' => 'Now (date-time)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefurat',
@@ -2929,1104 +2973,1104 @@ Letiltva: A körök elérése akkor engedélyezett, ha szerepkörben nincs megad
         'times' => 'Times',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'footer' => 'Használja a {pageNumber} gombot az oldalszám nyomtatásához.',
-      'variables' => 'Másolja be a szükséges helyőrzőt a fejlécre, a testre vagy a láblécre.',
+      'footer' => 'Use {pageNumber} para imprimir el número de página.',
+      'variables' => 'Copie y Pegue la etiqueta necesaria en el encabezado, cuerpo o pie de página.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'userName' => 'Felhasználónév',
-      'title' => 'Cím',
-      'isAdmin' => 'Admin',
-      'defaultTeam' => 'Alapértelmezett csapat',
-      'emailAddress' => 'Email',
-      'phoneNumber' => 'Telefon',
-      'roles' => 'szerepek',
-      'portals' => 'portálok',
-      'portalRoles' => 'Portál szerepek',
-      'teamRole' => 'Pozíció',
-      'password' => 'Jelszó',
-      'currentPassword' => 'jelenlegi jelszó',
-      'passwordConfirm' => 'Jelszó megerősítése',
-      'newPassword' => 'új jelszó',
-      'newPasswordConfirm' => 'Erősítse meg az új jelszót',
+      'name' => 'Nombre',
+      'userName' => 'Nombre Usuario',
+      'title' => 'Título',
+      'isAdmin' => 'Es administrador',
+      'defaultTeam' => 'Equipo por defecto',
+      'emailAddress' => 'Correo electrónico',
+      'phoneNumber' => 'Teléfono',
+      'roles' => 'Roles',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'teamRole' => 'Puesto',
+      'password' => 'Contraseña',
+      'currentPassword' => 'Contraseña Actual',
+      'passwordConfirm' => 'Confirmar Contraseña',
+      'newPassword' => 'Nueva Contraseña',
+      'newPasswordConfirm' => 'Confirmar Contraseña Nueva',
       'avatar' => 'Avatar',
-      'isActive' => 'Aktív',
-      'isPortalUser' => 'Portal felhasználó',
-      'contact' => 'Kapcsolatba lépni',
-      'accounts' => 'Fiókok',
-      'account' => 'Fiók (elsődleges)',
-      'sendAccessInfo' => 'Küldjön e-mailt az Access Info a felhasználóhoz',
-      'portal' => 'Portál',
-      'gender' => 'nem',
-      'position' => 'Pozíció a csapatban',
-      'ipAddress' => 'IP-cím',
-      'passwordPreview' => 'Jelszó előnézet',
-      'isSuperAdmin' => 'A Super Admin',
-      'lastAccess' => 'Utolsó hozzáférés',
-      'acceptanceStatus' => 'Átvételi állapot',
-      'acceptanceStatusMeetings' => 'Átvételi állapot (ülések)',
-      'acceptanceStatusCalls' => 'Átvételi állapot (hívások)',
+      'isActive' => 'Está activo',
+      'isPortalUser' => 'Es usuario del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'sendAccessInfo' => 'Enviar información de acceso al usuario',
+      'portal' => 'Portal',
+      'gender' => 'Sexo',
+      'position' => 'Puesto en el equipo',
+      'ipAddress' => 'Dirección IP',
+      'passwordPreview' => 'Vista previa de la contraseña',
+      'isSuperAdmin' => 'Is Super Admin',
+      'lastAccess' => 'Last Access',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'teams' => 'csapatok',
-      'roles' => 'szerepek',
-      'notes' => 'Megjegyzések',
-      'portals' => 'portálok',
-      'portalRoles' => 'Portál szerepek',
-      'contact' => 'Kapcsolatba lépni',
-      'accounts' => 'Fiókok',
-      'account' => 'Fiók (elsődleges)',
-      'tasks' => 'feladatok',
-      'targetLists' => 'Céllista',
+      'teams' => 'Equipos',
+      'roles' => 'Roles',
+      'notes' => 'Notas',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'tasks' => 'Tareas',
+      'targetLists' => 'Lista de objetivos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create User' => 'Felhasználó létrehozása',
-      'Generate' => 'generál',
-      'Access' => 'Hozzáférés',
-      'Preferences' => 'preferenciák',
-      'Change Password' => 'Jelszó módosítása',
-      'Teams and Access Control' => 'Csapatok és beléptetés',
-      'Forgot Password?' => 'Elfelejtett jelszó?',
-      'Password Change Request' => 'Jelszóváltási kérelem',
-      'Email Address' => 'Email cím',
-      'External Accounts' => 'Külső számlák',
-      'Email Accounts' => 'E-mail fiókok',
-      'Portal' => 'Portál',
-      'Create Portal User' => 'Portal felhasználó létrehozása',
-      'Proceed w/o Contact' => 'Folytassa a Kapcsolat nélkül',
+      'Create User' => 'Crear usuario',
+      'Generate' => 'Generar',
+      'Access' => 'Acceso',
+      'Preferences' => 'Preferencias',
+      'Change Password' => 'Cambiar Contraseña',
+      'Teams and Access Control' => 'Equipos y control de acceso',
+      'Forgot Password?' => '¿Olvidó la Contraseña?',
+      'Password Change Request' => 'Solicitar Cambio de Contraseña',
+      'Email Address' => 'Correo electrónico',
+      'External Accounts' => 'Cuentas externas',
+      'Email Accounts' => 'Cuentas de correo',
+      'Portal' => 'Portal',
+      'Create Portal User' => 'Crear usuario del portal',
+      'Proceed w/o Contact' => 'Continuar sin contacto',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'defaultTeam' => 'A felhasználó által létrehozott összes rekord alapértelmezés szerint ehhez a csapathoz tartozik.',
-      'userName' => 'Az a-z betűk, 0-9 számok, pontok, kötőjelek, @ jelek és aláhúzás megengedettek.',
-      'isAdmin' => 'Adminisztrátori felhasználó hozzáférhet mindent.',
-      'isActive' => 'Ha nincs bejelölve, akkor a felhasználó nem tud bejelentkezni.',
-      'teams' => 'Azok a csapatok, amelyekhez ez a felhasználó tartozik. A beléptetési szint a csapat szerepét örökli.',
-      'roles' => 'Kiegészítő hozzáférési szerepek. Használja, ha a felhasználó nem tartozik semmilyen csoporthoz, vagy csak a felhasználó számára kell hozzáférési szintet megnövelnie.',
-      'portalRoles' => 'További portál szerepek. Használja ezt a hozzáférési szintet kizárólag a felhasználó számára.',
-      'portals' => 'Azok a portálok, amelyekhez a felhasználó hozzáfér.',
+      'defaultTeam' => 'Todos los registros creados por este usuario serán relacionados a este equipo por defecto.',
+      'userName' => 'Letras a-z, números 0-9 y guiones bajos están permitidos',
+      'isAdmin' => 'El usuario administrador puede tener acceso a todo.',
+      'isActive' => 'Si lo desmarca, el usuario no podrá iniciar sesión.',
+      'teams' => 'Equipos a los que este usuario pertenece. Nivel de control de acceso se hereda de los roles de equipo.',
+      'roles' => 'Roles de acceso adicionales. Úsalo si el usuario no pertenece a ningún equipo o si necesita ampliar el nivel de control de acceso solo para este usuario.',
+      'portalRoles' => 'Roles adicionales del portal. Utilícelos para extender el nivel de acceso exclusivamente para este usuario.',
+      'portals' => 'El usuario tiene accesos a los siguientes portales.',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'passwordWillBeSent' => 'A jelszó a felhasználó e-mail címére lesz elküldve.',
-      'accountInfoEmailSubject' => 'EspoCRM felhasználói hozzáférési információ',
-      'accountInfoEmailBody' => 'A hozzáférési adatai:
+      'passwordWillBeSent' => 'La Contraseña será enviada al correo electrónico del usuario',
+      'accountInfoEmailSubject' => 'Información Cuenta',
+      'accountInfoEmailBody' => 'Información de tu cuenta:
 
-Felhasználónév: {userName}
-Jelszó: {jelszó}
+Nombre Usuario: {userName}
+Contraseña: {password}
 
-{SITEURL}',
-      'passwordChangeLinkEmailSubject' => 'Jelszó megváltoztatása',
-      'passwordChangeLinkEmailBody' => 'A {link} következő linket megváltoztathatja. Ez az egyedi URL hamarosan lejár.',
-      'passwordChanged' => 'A jelszó megváltozott',
-      'userCantBeEmpty' => 'A felhasználónév nem lehet üres',
-      'wrongUsernamePasword' => 'Helytelen felhasználónév / jelszó',
-      'emailAddressCantBeEmpty' => 'Az e-mail cím nem lehet üres',
-      'userNameEmailAddressNotFound' => 'A felhasználónév / e-mail cím nem található',
-      'forbidden' => 'Tilos, próbálkozzon később',
-      'uniqueLinkHasBeenSent' => 'Az egyedi URL-t elküldtük a megadott e-mail címre.',
-      'passwordChangedByRequest' => 'A jelszó megváltozott.',
-      'setupSmtpBefore' => 'Be kell állítania az <a href="{url}"> SMTP-beállításokat </a>, hogy a rendszer képes legyen jelszót küldeni e-mailben.',
-      'userNameExists' => 'Felhasználónév már létezik',
+{siteUrl}',
+      'passwordChangeLinkEmailSubject' => 'Solicitud de Cambio de Contraseña',
+      'passwordChangeLinkEmailBody' => 'Puede cambiar su contraseña siguiendo este enlace {link}. Esta URL única expirará pronto.',
+      'passwordChanged' => 'La Contraseña ha sido cambiada',
+      'userCantBeEmpty' => 'El nombre de usuario no puede estar vacío',
+      'wrongUsernamePasword' => 'Nombre de usuario/contraseña incorrectos',
+      'emailAddressCantBeEmpty' => 'La dirección de correo no puede estar vacía',
+      'userNameEmailAddressNotFound' => 'Nombre de Usuario/Correo no encontrado',
+      'forbidden' => 'Prohibido, por favor intente después',
+      'uniqueLinkHasBeenSent' => 'El enlace único ha sido enviado a la dirección de correo electrónico especificada.',
+      'passwordChangedByRequest' => 'La contraseña ha sido cambiada.',
+      'setupSmtpBefore' => 'Necesita configurar los <a href="{url}">ajustes SMTP</a> para que el sistema pueda enviar contraseñas por correo.',
+      'userNameExists' => 'User Name already exists',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
-        '' => 'Nincs beállítva',
-        'Male' => 'Férfi',
-        'Female' => 'Női',
-        'Neutral' => 'Semleges',
+        '' => 'No definido',
+        'Male' => 'Masculino',
+        'Female' => 'Femenino',
+        'Neutral' => 'Neutral',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMyTeam' => 'Csak a csapatom',
+      'onlyMyTeam' => 'Solo de mi equipo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktív',
-      'activePortal' => 'Portál aktív',
+      'active' => 'Activo',
+      'activePortal' => 'Portales activos',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'emailAddress' => 'Email',
-      'website' => 'Weboldal',
-      'phoneNumber' => 'Telefon',
-      'billingAddress' => 'számlázási cím',
-      'shippingAddress' => 'szállítási cím',
-      'description' => 'Leírás',
-      'sicCode' => 'Sic kód',
-      'industry' => 'Ipar',
-      'type' => 'típus',
-      'contactRole' => 'Cím',
-      'contactIsInactive' => 'tétlen',
-      'campaign' => 'Kampány',
-      'targetLists' => 'Céllista',
-      'targetList' => 'Tűztábla',
-      'originalLead' => 'Eredeti vezető',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'billingAddress' => 'Dirección de facturación',
+      'shippingAddress' => 'Dirección de envío',
+      'description' => 'Descripción',
+      'sicCode' => 'Código SIC',
+      'industry' => 'Industria',
+      'type' => 'Tipo',
+      'contactRole' => 'Título',
+      'contactIsInactive' => 'Inactivo',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'Kapcsolatok',
-      'opportunities' => 'lehetőségek',
-      'cases' => 'Olyan esetek,',
-      'documents' => 'Dokumentumok',
-      'meetingsPrimary' => 'Találkozók (bővített)',
-      'callsPrimary' => 'Hívások (kibővített)',
-      'tasksPrimary' => 'Feladatok (bővítve)',
-      'emailsPrimary' => 'E-mailek (bővítve)',
-      'targetLists' => 'Céllista',
-      'campaignLogRecords' => 'Kampánynapló',
-      'campaign' => 'Kampány',
-      'portalUsers' => 'Portál felhasználók',
-      'originalLead' => 'Eredeti vezető',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'meetingsPrimary' => 'Reuniones (ampliado)',
+      'callsPrimary' => 'Llamadas (ampliado)',
+      'tasksPrimary' => 'Tareas (ampliado)',
+      'emailsPrimary' => 'Correos (ampliado)',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'portalUsers' => 'Usuarios del portal',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Customer' => 'Vevő',
-        'Investor' => 'Befektetői',
-        'Partner' => 'Partner',
-        'Reseller' => 'viszonteladó',
+        'Customer' => 'Cliente',
+        'Investor' => 'Inversor',
+        'Partner' => 'Socio',
+        'Reseller' => 'Revendedor',
       ),
-      'industry' => 
+      'industry' =>
       array (
-        'Aerospace' => 'légtér',
-        'Agriculture' => 'Mezőgazdaság',
-        'Advertising' => 'Hirdető',
-        'Apparel & Accessories' => 'Ruházat és kiegészítők',
-        'Architecture' => 'Építészet',
-        'Automotive' => 'Autóipari',
-        'Banking' => 'Banki',
-        'Biotechnology' => 'Biotechnológiai',
-        'Building Materials & Equipment' => 'Építőanyagok és berendezések',
-        'Chemical' => 'Kémiai',
-        'Construction' => 'Építés',
-        'Computer' => 'Számítógép',
-        'Defense' => 'Védelem',
-        'Creative' => 'Kreatív',
-        'Culture' => 'Kultúra',
-        'Consulting' => 'Tanácsadó',
-        'Education' => 'Oktatás',
-        'Electronics' => 'Elektronika',
-        'Electric Power' => 'Elektromos energia',
-        'Energy' => 'Energia',
-        'Entertainment & Leisure' => 'Szórakozás és szabadidő',
-        'Finance' => 'Pénzügy',
-        'Food & Beverage' => 'étel és ital',
-        'Grocery' => 'Élelmiszerbolt',
-        'Hospitality' => 'Vendégszeretet',
-        'Healthcare' => 'Egészségügy',
-        'Insurance' => 'Biztosítás',
-        'Legal' => 'Jogi',
-        'Manufacturing' => 'Gyártás',
-        'Mass Media' => 'Tömegmédia',
-        'Mining' => 'Bányászati',
-        'Music' => 'Zene',
-        'Marketing' => 'értékesítés',
-        'Publishing' => 'Kiadás',
-        'Petroleum' => 'Petróleum',
-        'Real Estate' => 'Ingatlan',
-        'Retail' => 'Kiskereskedelem',
-        'Shipping' => 'Szállítás',
-        'Service' => 'Szolgáltatás',
-        'Support' => 'Támogatás',
-        'Sports' => 'Sport',
-        'Software' => 'Szoftver',
-        'Technology' => 'Technológia',
-        'Telecommunications' => 'Távközlési',
-        'Television' => 'Televízió',
-        'Testing, Inspection & Certification' => 'Vizsgálat, ellenőrzés és tanúsítás',
-        'Transportation' => 'Szállítás',
-        'Travel' => 'Utazás',
-        'Venture Capital' => 'Kockázati tőke',
-        'Wholesale' => 'nagybani',
-        'Water' => 'Víz',
+        'Aerospace' => 'Aeroespacial',
+        'Agriculture' => 'Agrícola',
+        'Advertising' => 'Publicidad',
+        'Apparel & Accessories' => 'Ropa y accesorios',
+        'Architecture' => 'Arquitectura',
+        'Automotive' => 'Automotriz',
+        'Banking' => 'Banca',
+        'Biotechnology' => 'Biotecnología',
+        'Building Materials & Equipment' => 'Materiales de construcción y equipamiento',
+        'Chemical' => 'Química',
+        'Construction' => 'Construcción',
+        'Computer' => 'Computación',
+        'Defense' => 'Defensa',
+        'Creative' => 'Creativa',
+        'Culture' => 'Cultural',
+        'Consulting' => 'Consultoría',
+        'Education' => 'Educación',
+        'Electronics' => 'Electrónicos',
+        'Electric Power' => 'Energía eléctrica',
+        'Energy' => 'Energía',
+        'Entertainment & Leisure' => 'Entretenimiento y ocio',
+        'Finance' => 'Finanzas',
+        'Food & Beverage' => 'Alimentación y bebidas',
+        'Grocery' => 'Comestibles',
+        'Hospitality' => 'Hostelería',
+        'Healthcare' => 'Cuidado de la salud',
+        'Insurance' => 'Seguros',
+        'Legal' => 'Jurídica',
+        'Manufacturing' => 'Fabricación',
+        'Mass Media' => 'Medios masivos',
+        'Mining' => 'Minería',
+        'Music' => 'Música',
+        'Marketing' => 'Marketing',
+        'Publishing' => 'Publicaciones',
+        'Petroleum' => 'Petróleo',
+        'Real Estate' => 'Bienes raices',
+        'Retail' => 'Venta al por menor',
+        'Shipping' => 'Naviera',
+        'Service' => 'Servicio',
+        'Support' => 'Soporte',
+        'Sports' => 'Deportes',
+        'Software' => 'Software',
+        'Technology' => 'Tecnología',
+        'Telecommunications' => 'Telecomunicaciones',
+        'Television' => 'Televisión',
+        'Testing, Inspection & Certification' => 'Pruebas, inspección y certificación',
+        'Transportation' => 'Transporte',
+        'Travel' => 'Viajes',
+        'Venture Capital' => 'Capital de riesgo',
+        'Wholesale' => 'Venta al por mayor',
+        'Water' => 'Agua',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Account' => 'Fiók létrehozása',
-      'Copy Billing' => 'Számlázás másolása',
-      'Set Primary' => 'Állítsa be az Elsődleges beállítást',
+      'Create Account' => 'Crear cuenta',
+      'Copy Billing' => 'Copiar desde facturación',
+      'Set Primary' => 'Establecer como principal',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'customers' => 'Az ügyfelek',
-      'partners' => 'partnerek',
-      'recentlyCreated' => 'A közelmúltban létrehozott',
+      'customers' => 'Clientes',
+      'partners' => 'Socios',
+      'recentlyCreated' => 'Creado recientemente',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
-      'month' => 'Hónap',
-      'week' => 'Hét',
-      'day' => 'Nap',
-      'agendaWeek' => 'Hét',
-      'agendaDay' => 'Nap',
-      'timeline' => 'Idővonal',
+      'month' => 'Mes',
+      'week' => 'Semana',
+      'day' => 'Día',
+      'agendaWeek' => 'Semana',
+      'agendaDay' => 'Día',
+      'timeline' => 'Línea de tiempo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Today' => 'Ma',
-      'Create' => 'Teremt',
-      'Shared' => 'megosztott',
-      'Add User' => 'Felhasználó hozzáadása',
-      'current' => 'jelenlegi',
-      'time' => 'idő',
-      'User List' => 'Felhasználói lista',
-      'Manage Users' => 'Felhasználók kezelése',
-      'View Calendar' => 'Naptár megtekintése',
-      'Create Shared View' => 'Megosztott nézet létrehozása',
+      'Today' => 'Hoy',
+      'Create' => 'Crear',
+      'Shared' => 'Compartido',
+      'Add User' => 'Agregar usuario',
+      'current' => 'actual',
+      'time' => 'hora',
+      'User List' => 'Lista de usuarios',
+      'Manage Users' => 'Administrar usuarios',
+      'View Calendar' => 'Ver calendario',
+      'Create Shared View' => 'Create Shared View',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'parent' => 'Szülő',
-      'status' => 'Állapot',
-      'dateStart' => 'Dátum kezdete',
-      'dateEnd' => 'Dátum vége',
-      'direction' => 'Irány',
-      'duration' => 'tartam',
-      'description' => 'Leírás',
-      'users' => 'felhasználók',
-      'contacts' => 'Kapcsolatok',
-      'leads' => 'vezet',
-      'reminders' => 'Emlékeztetők',
-      'account' => 'számla',
-      'acceptanceStatus' => 'Átvételi állapot',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'direction' => 'Dirección',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Tervezett',
-        'Held' => 'Held',
-        'Not Held' => 'Nem tartott',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'direction' => 
+      'direction' =>
       array (
-        'Outbound' => 'induló',
-        'Inbound' => 'Bejövő',
+        'Outbound' => 'Saliente',
+        'Inbound' => 'Entrante',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'Egyik sem',
-        'Accepted' => 'Elfogadott',
-        'Declined' => 'Elutasította',
-        'Tentative' => 'Kísérleti',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'Set Held',
-      'setNotHeld' => 'Set Not Held',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Call' => 'Hívás létrehozása',
-      'Set Held' => 'Set Held',
-      'Set Not Held' => 'Set Not Held',
-      'Send Invitations' => 'Küldjön meghívókat',
+      'Create Call' => 'Crear llamada',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Tervezett',
-      'held' => 'Held',
-      'todays' => 'A mai',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'description' => 'Leírás',
-      'status' => 'Állapot',
-      'type' => 'típus',
-      'startDate' => 'Kezdő dátum',
-      'endDate' => 'Befejezés dátuma',
-      'targetLists' => 'Céllista',
-      'excludingTargetLists' => 'Céllista kivételével',
-      'sentCount' => 'Küldött',
-      'openedCount' => 'Nyitott',
-      'clickedCount' => 'Kattintott',
-      'optedOutCount' => 'Elutasított',
-      'bouncedCount' => 'Visszafordulást',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'status' => 'Estado',
+      'type' => 'Tipo',
+      'startDate' => 'Fecha de inicio',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'sentCount' => 'Enviado',
+      'openedCount' => 'Abierto',
+      'clickedCount' => 'Cliqueados',
+      'optedOutCount' => 'Se dieron de baja',
+      'bouncedCount' => 'Rebotados',
       'optedInCount' => 'Opted In',
-      'hardBouncedCount' => 'Hard Bounced',
-      'softBouncedCount' => 'Lágy visszahúzódott',
-      'leadCreatedCount' => 'Leads létrehozva',
-      'revenue' => 'jövedelem',
-      'revenueConverted' => 'Bevétel (átváltva)',
-      'budget' => 'Költségvetés',
-      'budgetConverted' => 'Költségkeret (átváltva)',
+      'hardBouncedCount' => 'Rebotados Duro',
+      'softBouncedCount' => 'Rebotado Suave',
+      'leadCreatedCount' => 'Posibles clientes creados',
+      'revenue' => 'Ingresos',
+      'revenueConverted' => 'ingresos (convertido)',
+      'budget' => 'Presupuesto',
+      'budgetConverted' => 'Presupuesto (convertido)',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
       'mailMergeOnlyWithAddress' => 'Skip records w/o filled address',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Céllista',
-      'excludingTargetLists' => 'Céllista kivételével',
-      'accounts' => 'Fiókok',
-      'contacts' => 'Kapcsolatok',
-      'leads' => 'vezet',
-      'opportunities' => 'lehetőségek',
-      'campaignLogRecords' => 'Bejelentkezés',
-      'massEmails' => 'Tömeges e-mailek',
-      'trackingUrls' => 'Nyomon követési URL-ek',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'opportunities' => 'Oportunidades',
+      'campaignLogRecords' => 'Registros',
+      'massEmails' => 'Correos masivos',
+      'trackingUrls' => 'URLs de seguimiento',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'Email',
-        'Web' => 'háló',
-        'Television' => 'Televízió',
-        'Radio' => 'Rádió',
-        'Newsletter' => 'Hírlevél',
-        'Mail' => 'Levél',
+        'Email' => 'Correo electrónico',
+        'Web' => 'Web',
+        'Television' => 'Televisión',
+        'Radio' => 'Radio',
+        'Newsletter' => 'Boletín de noticias',
+        'Mail' => 'Correo',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Planning' => 'Tervezés',
-        'Active' => 'Aktív',
-        'Inactive' => 'tétlen',
-        'Complete' => 'teljes',
+        'Planning' => 'Planificación',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
+        'Complete' => 'Completada',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Campaign' => 'Kampány létrehozása',
-      'Target Lists' => 'Céllista',
-      'Statistics' => 'Statisztika',
-      'hard' => 'kemény',
-      'soft' => 'puha',
-      'Unsubscribe' => 'Leiratkozás',
-      'Mass Emails' => 'Tömeges e-mailek',
-      'Email Templates' => 'E-mail sablonok',
-      'Unsubscribe again' => 'Újrairatkozás újra',
-      'Subscribe again' => 'Feliratkozás újra',
-      'Create Target List' => 'Céllista létrehozása',
+      'Create Campaign' => 'Crear campaña',
+      'Target Lists' => 'Lista de objetivos',
+      'Statistics' => 'Estadísticas',
+      'hard' => 'duro',
+      'soft' => 'suave',
+      'Unsubscribe' => 'Desuscribirse',
+      'Mass Emails' => 'Correos masivos',
+      'Email Templates' => 'Plantillas de correos',
+      'Unsubscribe again' => 'Cancelar otra vez la suscripción',
+      'Subscribe again' => 'Suscribirse nuevamente',
+      'Create Target List' => 'Crear lista de obejtivos',
       'Mail Merge' => 'Mail Merge',
       'Generate Mail Merge PDF' => 'Generate Mail Merge PDF',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktív',
+      'active' => 'Activo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'unsubscribed' => 'Leiratkozott a levelezési listáról.',
-      'subscribedAgain' => 'Újra feliratkozol.',
+      'unsubscribed' => 'Usted ha cancelado la suscripción a nuestra lista de correo.',
+      'subscribedAgain' => 'Se ha vuelto a suscribir.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'targetLists' => 'Olyan célok, amelyeknek üzeneteket kell kapniuk.',
-      'excludingTargetLists' => 'Olyan célzások, amelyeknek nem kell üzeneteket kapnia.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'action' => 'Akció',
-      'actionDate' => 'Dátum',
-      'data' => 'Adat',
-      'campaign' => 'Kampány',
-      'parent' => 'Cél',
-      'object' => 'Tárgy',
-      'application' => 'Alkalmazás',
-      'queueItem' => 'Sor tétel',
-      'stringData' => 'String adatok',
-      'stringAdditionalData' => 'String kiegészítő adatok',
-      'isTest' => 'A teszt',
+      'action' => 'Acción',
+      'actionDate' => 'Fecha',
+      'data' => 'Datos',
+      'campaign' => 'Campaña',
+      'parent' => 'Objetivo',
+      'object' => 'Objeto',
+      'application' => 'Aplicacion',
+      'queueItem' => 'Elemento de la cola',
+      'stringData' => 'Cadena de datos',
+      'stringAdditionalData' => 'Cadena de datos adicional',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'queueItem' => 'Sor tétel',
-      'parent' => 'Szülő',
-      'object' => 'Tárgy',
-      'campaign' => 'Kampány',
+      'queueItem' => 'Elemento de la cola',
+      'parent' => 'Padre',
+      'object' => 'Objeto',
+      'campaign' => 'Campaña',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'Sent' => 'Küldött',
-        'Opened' => 'Nyitott',
-        'Opted Out' => 'Elutasított',
-        'Bounced' => 'Visszafordulást',
-        'Clicked' => 'Kattintott',
-        'Lead Created' => 'Lead Created',
+        'Sent' => 'Enviado',
+        'Opened' => 'Abierto',
+        'Opted Out' => 'Se dieron de baja',
+        'Bounced' => 'Rebotados',
+        'Clicked' => 'Cliqueados',
+        'Lead Created' => 'Posible cliente creado',
         'Opted In' => 'Opted In',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'All' => 'Minden',
+      'All' => 'Todos',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'Küldött',
-      'opened' => 'Nyitott',
-      'optedOut' => 'Elutasított',
+      'sent' => 'Enviado',
+      'opened' => 'Abierto',
+      'optedOut' => 'Se dieron de baja',
       'optedIn' => 'Opted In',
-      'bounced' => 'Visszafordulást',
-      'clicked' => 'Kattintott',
-      'leadCreated' => 'Lead Created',
+      'bounced' => 'Rebotados',
+      'clicked' => 'Cliqueados',
+      'leadCreated' => 'Posible cliente creado',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'url' => 'URL',
-      'urlToUse' => 'Kód helyett URL helyett',
-      'campaign' => 'Kampány',
+      'urlToUse' => 'Código para insertar en lugar de la URL',
+      'campaign' => 'Campaña',
     ),
-    'links' => 
+    'links' =>
     array (
-      'campaign' => 'Kampány',
+      'campaign' => 'Campaña',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create CampaignTrackingUrl' => 'Követési URL létrehozása',
-    ),
-  ),
-  'Case' => 
-  array (
-    'fields' => 
-    array (
-      'name' => 'Név',
-      'number' => 'Szám',
-      'status' => 'Állapot',
-      'account' => 'számla',
-      'contact' => 'Kapcsolatba lépni',
-      'contacts' => 'Kapcsolatok',
-      'priority' => 'Kiemelten fontos',
-      'type' => 'típus',
-      'description' => 'Leírás',
-      'inboundEmail' => 'Csoportos e-mail fiók',
-      'lead' => 'Vezet',
-      'attachments' => 'Mellékletek',
-    ),
-    'links' => 
-    array (
-      'inboundEmail' => 'Csoportos e-mail fiók',
-      'account' => 'számla',
-      'contact' => 'Kapcsolat (elsődleges)',
-      'Contacts' => 'Kapcsolatok',
-      'meetings' => 'találkozók',
-      'calls' => 'felhívja',
-      'tasks' => 'feladatok',
-      'emails' => 'e-mailek',
-      'articles' => 'Tudásbázis-cikkek',
-      'lead' => 'Vezet',
-      'attachments' => 'Mellékletek',
-    ),
-    'options' => 
-    array (
-      'status' => 
-      array (
-        'New' => 'Új',
-        'Assigned' => 'Kijelölt',
-        'Pending' => 'Függőben levő',
-        'Closed' => 'Zárva',
-        'Rejected' => 'Elutasítva',
-        'Duplicate' => 'Másolat',
-      ),
-      'priority' => 
-      array (
-        'Low' => 'Alacsony',
-        'Normal' => 'Normál',
-        'High' => 'Magas',
-        'Urgent' => 'Sürgős',
-      ),
-      'type' => 
-      array (
-        'Question' => 'Kérdés',
-        'Incident' => 'Incidens',
-        'Problem' => 'Probléma',
-      ),
-    ),
-    'labels' => 
-    array (
-      'Create Case' => 'Létrehozás',
-      'Close' => 'Bezárás',
-      'Reject' => 'Elutasít',
-      'Closed' => 'Zárva',
-      'Rejected' => 'Elutasítva',
-    ),
-    'presetFilters' => 
-    array (
-      'open' => 'Nyisd ki',
-      'closed' => 'Zárva',
+      'Create CampaignTrackingUrl' => 'Crear URL de seguimiento',
     ),
   ),
-  'Contact' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'emailAddress' => 'Email',
-      'title' => 'Cím',
-      'account' => 'számla',
-      'accounts' => 'Fiókok',
-      'phoneNumber' => 'Telefon',
-      'accountType' => 'Fiók Típus',
-      'doNotCall' => 'Ne hívj',
-      'address' => 'Cím',
-      'opportunityRole' => 'Lehetőség szerep',
-      'accountRole' => 'Cím',
-      'description' => 'Leírás',
-      'campaign' => 'Kampány',
-      'targetLists' => 'Céllista',
-      'targetList' => 'Tűztábla',
-      'portalUser' => 'Portál felhasználó',
-      'originalLead' => 'Eredeti vezető',
-      'acceptanceStatus' => 'Átvételi állapot',
-      'accountIsInactive' => 'inaktív fiók',
-      'acceptanceStatusMeetings' => 'Átvételi állapot (ülések)',
-      'acceptanceStatusCalls' => 'Átvételi állapot (hívások)',
+      'name' => 'Nombre',
+      'number' => 'Número',
+      'status' => 'Estado',
+      'account' => 'Cuenta',
+      'contact' => 'Contacto',
+      'contacts' => 'Contactos',
+      'priority' => 'Prioridad',
+      'type' => 'Tipo',
+      'description' => 'Descripción',
+      'inboundEmail' => 'Cuenta de Correo',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
+    ),
+    'links' =>
+    array (
+      'inboundEmail' => 'Cuenta de correo',
+      'account' => 'Cuenta',
+      'contact' => 'Contratos (principal)',
+      'Contacts' => 'Contactos',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'articles' => 'Artículos de la base de conocimiento',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
+    ),
+    'options' =>
+    array (
+      'status' =>
+      array (
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'Pending' => 'Pendiente',
+        'Closed' => 'Cerrados',
+        'Rejected' => 'Rechazado',
+        'Duplicate' => 'Duplicar',
+      ),
+      'priority' =>
+      array (
+        'Low' => 'Baja',
+        'Normal' => 'Normal',
+        'High' => 'Alta',
+        'Urgent' => 'Urgente',
+      ),
+      'type' =>
+      array (
+        'Question' => 'Pregunta',
+        'Incident' => 'Incidente',
+        'Problem' => 'Problema',
+      ),
+    ),
+    'labels' =>
+    array (
+      'Create Case' => 'Crear ticket',
+      'Close' => 'Cerrar',
+      'Reject' => 'Rechazar',
+      'Closed' => 'Cerrados',
+      'Rejected' => 'Rechazado',
+    ),
+    'presetFilters' =>
+    array (
+      'open' => 'Abiertos',
+      'closed' => 'Cerrados',
+    ),
+  ),
+  'Contact' =>
+  array (
+    'fields' =>
+    array (
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'account' => 'Cuenta',
+      'accounts' => 'Cuentas',
+      'phoneNumber' => 'Teléfono',
+      'accountType' => 'Tipo de Cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'opportunityRole' => 'Rol de Oportunidad',
+      'accountRole' => 'Título',
+      'description' => 'Descripción',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'accountIsInactive' => 'Cuenta inactiva',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'opportunities' => 'lehetőségek',
-      'cases' => 'Olyan esetek,',
-      'targetLists' => 'Céllista',
-      'campaignLogRecords' => 'Kampánynapló',
-      'campaign' => 'Kampány',
-      'account' => 'Fiók (elsődleges)',
-      'accounts' => 'Fiókok',
-      'casesPrimary' => 'Ügyek (elsődleges)',
-      'tasksPrimary' => 'Feladatok (bővítve)',
-      'portalUser' => 'Portál felhasználó',
-      'originalLead' => 'Eredeti vezető',
-      'documents' => 'Dokumentumok',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'account' => 'Cuentas (principal)',
+      'accounts' => 'Cuentas',
+      'casesPrimary' => 'Tickets (principal)',
+      'tasksPrimary' => 'Tasks (expanded)',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'documents' => 'Documentos',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Contact' => 'Kapcsolat létrehozása',
+      'Create Contact' => 'Crear contacto',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
-        '' => '--Egyik sem--',
-        'Decision Maker' => 'Döntéshozó',
-        'Evaluator' => 'Kiértékelő',
-        'Influencer' => 'Befolyásoló',
+        '' => '--Ninguno--',
+        'Decision Maker' => 'Tomador de decisiones',
+        'Evaluator' => 'Evaluador',
+        'Influencer' => 'Factor de influencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'portalUsers' => 'Portál felhasználók',
-      'notPortalUsers' => 'Nem Portal felhasználók',
-      'accountActive' => 'Aktív',
+      'portalUsers' => 'Usuarios del portal',
+      'notPortalUsers' => 'No son usuarios del portal',
+      'accountActive' => 'Activo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create Document' => 'Dokumentum létrehozása',
-      'Details' => 'Részletek',
+      'Create Document' => 'Crear documento',
+      'Details' => 'Detalles',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'status' => 'Állapot',
-      'file' => 'fájl',
-      'type' => 'típus',
-      'publishDate' => 'Megjelenési dátum',
-      'expirationDate' => 'Lejárati dátum',
-      'description' => 'Leírás',
-      'accounts' => 'Fiókok',
-      'folder' => 'Folder',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'file' => 'Archivo',
+      'type' => 'Tipo',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'accounts' => 'Cuentas',
+      'folder' => 'Carpeta',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'accounts' => 'Fiókok',
-      'opportunities' => 'lehetőségek',
-      'folder' => 'Folder',
-      'leads' => 'vezet',
-      'contacts' => 'Kapcsolatok',
+      'accounts' => 'Cuentas',
+      'opportunities' => 'Oportunidades',
+      'folder' => 'Carpeta',
+      'leads' => 'Posibles clientes',
+      'contacts' => 'Contactos',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktív',
-        'Draft' => 'vázlat',
-        'Expired' => 'Lejárt',
-        'Canceled' => 'Törölve',
+        'Active' => 'Activo',
+        'Draft' => 'Borrador',
+        'Expired' => 'Expirado',
+        'Canceled' => 'Cancelado',
       ),
-      'type' => 
+      'type' =>
       array (
-        '' => 'Egyik sem',
-        'Contract' => 'Szerződés',
+        '' => 'Ninguno',
+        'Contract' => 'Contrato',
         'NDA' => 'NDA',
         'EULA' => 'EULA',
-        'License Agreement' => 'Licencszerződés',
+        'License Agreement' => 'Contrato de licencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktív',
-      'draft' => 'vázlat',
+      'active' => 'Activo',
+      'draft' => 'Borrador',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create DocumentFolder' => 'Dokumentummappa létrehozása',
-      'Manage Categories' => 'Mappák kezelése',
-      'Documents' => 'Dokumentumok',
+      'Create DocumentFolder' => 'Crear carpeta de documentos',
+      'Manage Categories' => 'Administrar carpetas',
+      'Documents' => 'Documentos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'documents' => 'Dokumentumok',
+      'documents' => 'Documentos',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'status' => 'Állapot',
-      'target' => 'Cél',
-      'sentAt' => 'Dátum elküldve',
-      'attemptCount' => 'Kísérletek',
-      'emailAddress' => 'Email cím',
-      'massEmail' => 'Tömeges e-mail',
-      'isTest' => 'A teszt',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'target' => 'Objetivo',
+      'sentAt' => 'Fecha de envío',
+      'attemptCount' => 'Intentos',
+      'emailAddress' => 'Correo electrónico',
+      'massEmail' => 'Correo masivo',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'target' => 'Cél',
-      'massEmail' => 'Tömeges e-mail',
+      'target' => 'Objetivo',
+      'massEmail' => 'Correo masivo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Pending' => 'Függőben levő',
-        'Sent' => 'Küldött',
-        'Failed' => 'nem sikerült',
-        'Sending' => 'elküldés',
+        'Pending' => 'Pendiente',
+        'Sent' => 'Enviado',
+        'Failed' => 'Falló',
+        'Sending' => 'Enviando',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'pending' => 'Függőben levő',
-      'sent' => 'Küldött',
-      'failed' => 'nem sikerült',
+      'pending' => 'Pendiente',
+      'sent' => 'Enviado',
+      'failed' => 'Falló',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseArticle' => 'Cikk létrehozása',
-      'Any' => 'Bármilyen',
-      'Send in Email' => 'Küldjön e-mailt',
-      'Move Up' => 'Feljebb',
-      'Move Down' => 'Lépjen le',
-      'Move to Top' => 'Ugrás a tetejére',
-      'Move to Bottom' => 'Ugrás az aljára',
+      'Create KnowledgeBaseArticle' => 'Crear artículo',
+      'Any' => 'Cualquiera',
+      'Send in Email' => 'Enviar por correo',
+      'Move Up' => 'Mover arriba',
+      'Move Down' => 'Mover abajo',
+      'Move to Top' => 'Mover al inicio',
+      'Move to Bottom' => 'Mover al final',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'status' => 'Állapot',
-      'type' => 'típus',
-      'attachments' => 'Mellékletek',
-      'publishDate' => 'Megjelenési dátum',
-      'expirationDate' => 'Lejárati dátum',
-      'description' => 'Leírás',
-      'body' => 'Test',
-      'categories' => 'Kategóriák',
-      'language' => 'Nyelv',
-      'portals' => 'portálok',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'type' => 'Tipo',
+      'attachments' => 'Adjuntos',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'body' => 'Cuerpo',
+      'categories' => 'Categorías',
+      'language' => 'Idioma',
+      'portals' => 'Portales',
     ),
-    'links' => 
+    'links' =>
     array (
-      'cases' => 'Olyan esetek,',
-      'opportunities' => 'lehetőségek',
-      'categories' => 'Kategóriák',
-      'portals' => 'portálok',
+      'cases' => 'Tickets',
+      'opportunities' => 'Oportunidades',
+      'categories' => 'Categorías',
+      'portals' => 'Portales',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'In Review' => 'A felülvizsgálat során',
-        'Draft' => 'vázlat',
-        'Archived' => 'Archivált',
-        'Published' => 'Közzétett',
+        'In Review' => 'En revisión',
+        'Draft' => 'Borrador',
+        'Archived' => 'Archivado',
+        'Published' => 'Publicado',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Article' => 'Cikk',
+        'Article' => 'Artículo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portals' => 'A cikk csak meghatározott portálokon érhető el.',
+      'portals' => 'El artículo estará disponible solo en los portales especificados.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'published' => 'Közzétett',
+      'published' => 'Publicado',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseCategory' => 'Kategória létrehozása',
-      'Manage Categories' => 'Kategóriák kezelése',
-      'Articles' => 'Cikkek',
+      'Create KnowledgeBaseCategory' => 'Crear categoría',
+      'Manage Categories' => 'Administrar categorías',
+      'Articles' => 'Artículos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'articles' => 'Cikkek',
+      'articles' => 'Artículos',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Converted To' => 'Átalakítva',
-      'Create Lead' => 'Lead létrehozása',
-      'Convert' => 'Alakítani',
-      'convert' => 'alakítani',
+      'Converted To' => 'Convertido a',
+      'Create Lead' => 'Crear posible cliente',
+      'Convert' => 'Convertir',
+      'convert' => 'convertir',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'emailAddress' => 'Email',
-      'title' => 'Cím',
-      'website' => 'Weboldal',
-      'phoneNumber' => 'Telefon',
-      'accountName' => 'Felhasználónév',
-      'doNotCall' => 'Ne hívj',
-      'address' => 'Cím',
-      'status' => 'Állapot',
-      'source' => 'Forrás',
-      'opportunityAmount' => 'Lehetőség összege',
-      'opportunityAmountConverted' => 'Lehetőség Összeg (konvertált)',
-      'description' => 'Leírás',
-      'createdAccount' => 'számla',
-      'createdContact' => 'Kapcsolatba lépni',
-      'createdOpportunity' => 'Lehetőség',
-      'campaign' => 'Kampány',
-      'targetLists' => 'Céllista',
-      'targetList' => 'Tűztábla',
-      'industry' => 'Ipar',
-      'acceptanceStatus' => 'Átvételi állapot',
-      'opportunityAmountCurrency' => 'Lehetőség Összeg Valuta',
-      'acceptanceStatusMeetings' => 'Átvételi állapot (ülések)',
-      'acceptanceStatusCalls' => 'Átvételi állapot (hívások)',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'accountName' => 'Nombre de la cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'status' => 'Estado',
+      'source' => 'Toma de contacto',
+      'opportunityAmount' => 'Costo de oportunidad',
+      'opportunityAmountConverted' => 'Costo de oportunidad (convertido)',
+      'description' => 'Descripción',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Listas de objetivos',
+      'targetList' => 'Lista objetivo',
+      'industry' => 'Industria',
+      'acceptanceStatus' => 'Estado de aceptación',
+      'opportunityAmountCurrency' => 'Moneda del costo de oportunidad',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Céllista',
-      'campaignLogRecords' => 'Kampánynapló',
-      'campaign' => 'Kampány',
-      'createdAccount' => 'számla',
-      'createdContact' => 'Kapcsolatba lépni',
-      'createdOpportunity' => 'Lehetőség',
-      'cases' => 'Olyan esetek,',
-      'documents' => 'Dokumentumok',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registros de la campaña',
+      'campaign' => 'Campaña',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'New' => 'Új',
-        'Assigned' => 'Kijelölt',
-        'In Process' => 'Folyamatban',
-        'Converted' => 'konvertált',
-        'Recycled' => 'újrahasznosított',
-        'Dead' => 'Halott',
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'In Process' => 'En proceso',
+        'Converted' => 'Convertidos',
+        'Recycled' => 'Reciclado',
+        'Dead' => 'Muerto',
       ),
-      'source' => 
+      'source' =>
       array (
-        '' => 'Egyik sem',
-        'Call' => 'Hívás',
-        'Email' => 'Email',
-        'Existing Customer' => 'A meglévő ügyfelek',
-        'Partner' => 'Partner',
-        'Public Relations' => 'Közkapcsolatok',
-        'Web Site' => 'Weboldal',
-        'Campaign' => 'Kampány',
-        'Other' => 'Más',
+        '' => 'Ninguno',
+        'Call' => 'Llamada',
+        'Email' => 'Correo electrónico',
+        'Existing Customer' => 'Cliente Existente',
+        'Partner' => 'Socio',
+        'Public Relations' => 'Relaciones Públicas',
+        'Web Site' => 'Sitio web',
+        'Campaign' => 'Campaña',
+        'Other' => 'Otro',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktív',
-      'actual' => 'Tényleges',
-      'converted' => 'konvertált',
+      'active' => 'Activo',
+      'actual' => 'Actuales',
+      'converted' => 'Convertidos',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'status' => 'Állapot',
-      'storeSentEmails' => 'Elküldött e-mailek tárolása',
-      'startAt' => 'Dátum kezdete',
-      'fromAddress' => 'Címtől',
-      'fromName' => 'Névből',
-      'replyToAddress' => 'Válaszcím',
-      'replyToName' => 'Válasznév',
-      'campaign' => 'Kampány',
-      'emailTemplate' => 'E-mail sablon',
-      'inboundEmail' => 'Email fiók',
-      'targetLists' => 'Céllista',
-      'excludingTargetLists' => 'Céllista kivételével',
-      'optOutEntirely' => 'Teljesen kizárni',
-      'smtpAccount' => 'SMTP-fiók',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'startAt' => 'Fecha de inicio',
+      'fromAddress' => 'De (email)',
+      'fromName' => 'De (nombre):',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyToName' => 'Responder a (nombre)',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'optOutEntirely' => 'Dar de baja completamente',
+      'smtpAccount' => 'Cuenta SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Céllista',
-      'excludingTargetLists' => 'Céllista kivételével',
-      'queueItems' => 'Soros tételek',
-      'campaign' => 'Kampány',
-      'emailTemplate' => 'E-mail sablon',
-      'inboundEmail' => 'Email fiók',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'queueItems' => 'Elementos en cola',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'vázlat',
-        'Pending' => 'Függőben levő',
-        'In Process' => 'Folyamatban',
-        'Complete' => 'teljes',
-        'Canceled' => 'Törölve',
-        'Failed' => 'nem sikerült',
+        'Draft' => 'Borrador',
+        'Pending' => 'Pendiente',
+        'In Process' => 'En proceso',
+        'Complete' => 'Completada',
+        'Canceled' => 'Cancelado',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MassEmail' => 'Tömeges e-mail létrehozása',
-      'Send Test' => 'Teszt küldése',
-      'System SMTP' => 'Rendszer SMTP',
-      'system' => 'rendszer',
-      'group' => 'csoport',
+      'Create MassEmail' => 'Crear correo masivo',
+      'Send Test' => 'Enviar prueba',
+      'System SMTP' => 'Sistema SMTP',
+      'system' => 'sistema',
+      'group' => 'grupo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectAtLeastOneTarget' => 'Válasszon legalább egy célt.',
-      'testSent' => 'Tesztelendő e-mail (ek) elküldése',
+      'selectAtLeastOneTarget' => 'Seleccione al menos un objetivo.',
+      'testSent' => 'Se supone que el/los email/s de preuebas fueron enviados',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'optOutEntirely' => 'A leiratkozott címzettek e-mail címei ki lesz jelölve, és többé nem kapnak tömeges e-maileket.',
-      'targetLists' => 'Olyan célok, amelyeknek üzeneteket kell kapniuk.',
-      'excludingTargetLists' => 'Olyan célzások, amelyeknek nem kell üzeneteket kapnia.',
-      'storeSentEmails' => 'Az e-maileket a CRM tárolja.',
+      'optOutEntirely' => 'Las direcciones de correo de los destinatarios que se desuscriban serán marcadas como dadas de baja y no van a recibir ningún correo masivo.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
+      'storeSentEmails' => 'Los correos se almacenarán en el CRM.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Tényleges',
-      'complete' => 'teljes',
+      'actual' => 'Actuales',
+      'complete' => 'Completo',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'parent' => 'Szülő',
-      'status' => 'Állapot',
-      'dateStart' => 'Dátum kezdete',
-      'dateEnd' => 'Dátum vége',
-      'duration' => 'tartam',
-      'description' => 'Leírás',
-      'users' => 'felhasználók',
-      'contacts' => 'Kapcsolatok',
-      'leads' => 'vezet',
-      'reminders' => 'Emlékeztetők',
-      'account' => 'számla',
-      'acceptanceStatus' => 'Átvételi állapot',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Tervezett',
-        'Held' => 'Held',
-        'Not Held' => 'Nem tartott',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'Egyik sem',
-        'Accepted' => 'Elfogadott',
-        'Declined' => 'Elutasította',
-        'Tentative' => 'Kísérleti',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'Set Held',
-      'setNotHeld' => 'Set Not Held',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Meeting' => 'Találkozó létrehozása',
-      'Set Held' => 'Set Held',
-      'Set Not Held' => 'Set Not Held',
-      'Send Invitations' => 'Küldjön meghívókat',
-      'on time' => 'időben',
-      'before' => 'előtt',
+      'Create Meeting' => 'Crear reunión',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
+      'on time' => 'a tiempo',
+      'before' => 'antes',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Tervezett',
-      'held' => 'Held',
-      'todays' => 'A mai',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'nothingHasBeenSent' => 'Semmi sem volt elküldve',
+      'nothingHasBeenSent' => 'No se ha enviado nada',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'account' => 'számla',
-      'stage' => 'Színpad',
-      'amount' => 'Összeg',
-      'probability' => 'Valószínűség,%',
-      'leadSource' => 'Ólomforrás',
-      'doNotCall' => 'Ne hívj',
-      'closeDate' => 'Bezárás dátuma',
-      'contacts' => 'Kapcsolatok',
-      'description' => 'Leírás',
-      'amountConverted' => 'Összeg (konvertált)',
-      'amountWeightedConverted' => 'Súlyozott összeg',
-      'campaign' => 'Kampány',
-      'originalLead' => 'Eredeti vezető',
-      'amountCurrency' => 'Valamennyi pénznem',
-      'contactRole' => 'Kapcsolatfelvétel',
+      'name' => 'Nombre',
+      'account' => 'Cuenta',
+      'stage' => 'Etapa de ventas',
+      'amount' => 'Ingresos esperados',
+      'probability' => 'Probabilidad de ganar (%)',
+      'leadSource' => 'Toma de contacto del posible cliente',
+      'doNotCall' => 'No llamar',
+      'closeDate' => 'Fecha esperada de cierre',
+      'contacts' => 'Contactos',
+      'description' => 'Descripción',
+      'amountConverted' => 'Cantidad (convertido)',
+      'amountWeightedConverted' => 'Cantidad Ponderada',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
+      'amountCurrency' => 'Monto de la Moneda',
+      'contactRole' => 'Rol de contacto',
       'lastStage' => 'Last Stage',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'Kapcsolatok',
-      'documents' => 'Dokumentumok',
-      'campaign' => 'Kampány',
-      'originalLead' => 'Eredeti vezető',
+      'contacts' => 'Contactos',
+      'documents' => 'Documentos',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
-        'Prospecting' => 'Geológiai',
-        'Qualification' => 'Képesítés',
-        'Proposal' => 'Javaslat',
-        'Negotiation' => 'Tárgyalás',
-        'Needs Analysis' => 'Szükséges elemzés',
-        'Value Proposition' => 'Értékajánlat',
-        'Id. Decision Makers' => 'Id. Döntés hozó',
-        'Perception Analysis' => 'Percepcióelemzés',
-        'Proposal/Price Quote' => 'Javaslat / Ár ajánlat',
-        'Negotiation/Review' => 'Tárgyalás / felülvizsgálata',
-        'Closed Won' => 'Zárva nyert',
-        'Closed Lost' => 'Zárva elveszett',
+        'Prospecting' => 'Prospección',
+        'Qualification' => 'Calificación',
+        'Proposal' => 'Propuesta',
+        'Negotiation' => 'Negociación',
+        'Needs Analysis' => 'Análisis de necesidades',
+        'Value Proposition' => 'Propuesta de valor',
+        'Id. Decision Makers' => 'Identificar tomador de decisiones',
+        'Perception Analysis' => 'Análisis de percepcion',
+        'Proposal/Price Quote' => 'Propuesta/Presupuesto',
+        'Negotiation/Review' => 'Negociación/Revisión',
+        'Closed Won' => 'Cerrado ganado',
+        'Closed Lost' => 'Cerrado perdido',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Opportunity' => 'Lehetőség létrehozása',
+      'Create Opportunity' => 'Crear oportunidad',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'open' => 'Nyisd ki',
-      'won' => 'Nyerte',
-      'lost' => 'Elveszett',
+      'open' => 'Abiertos',
+      'won' => 'Ganados',
+      'lost' => 'Perdido',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4037,117 +4081,266 @@ Jelszó: {jelszó}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'description' => 'Leírás',
-      'entryCount' => 'Belépési szám',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'entryCount' => 'Contador de entrada',
       'optedOutCount' => 'Opted Out Count',
-      'campaigns' => 'kampányok',
-      'endDate' => 'Befejezés dátuma',
-      'targetLists' => 'Céllista',
-      'includingActionList' => 'Beleértve',
-      'excludingActionList' => 'Kizárás',
+      'campaigns' => 'Campañas',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'includingActionList' => 'Incluyendo',
+      'excludingActionList' => 'Excluyendo',
       'targetStatus' => 'Target Status',
       'isOptedOut' => 'Is Opted Out',
     ),
-    'links' => 
+    'links' =>
     array (
-      'accounts' => 'Fiókok',
-      'contacts' => 'Kapcsolatok',
-      'leads' => 'vezet',
-      'campaigns' => 'kampányok',
-      'massEmails' => 'Tömeges e-mailek',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'campaigns' => 'Campañas',
+      'massEmails' => 'Correos masivos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'Email',
-        'Web' => 'háló',
-        'Television' => 'Televízió',
-        'Radio' => 'Rádió',
-        'Newsletter' => 'Hírlevél',
+        'Email' => 'Correo electrónico',
+        'Web' => 'Web',
+        'Television' => 'Televisión',
+        'Radio' => 'Radio',
+        'Newsletter' => 'Boletín de noticias',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Opted Out',
         'Listed' => 'Listed',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create TargetList' => 'Céllista létrehozása',
-      'Opted Out' => 'Elutasított',
-      'Cancel Opt-Out' => 'Visszavonás törlése',
-      'Opt-Out' => 'Kiszáll',
+      'Create TargetList' => 'Crear una lista de objetivos',
+      'Opted Out' => 'Se dieron de baja',
+      'Cancel Opt-Out' => 'Cancelar darse de baja',
+      'Opt-Out' => 'Darse de baja',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Név',
-      'parent' => 'Szülő',
-      'status' => 'Állapot',
-      'dateStart' => 'Dátum kezdete',
-      'dateEnd' => 'Határidő',
-      'dateStartDate' => 'Dátum kezdete (egész nap)',
-      'dateEndDate' => 'Dátum vége (egész nap)',
-      'priority' => 'Kiemelten fontos',
-      'description' => 'Leírás',
-      'isOverdue' => 'Elkésett',
-      'account' => 'számla',
-      'dateCompleted' => 'Teljesítés dátuma',
-      'attachments' => 'Mellékletek',
-      'reminders' => 'Emlékeztetők',
-      'contact' => 'Kapcsolatba lépni',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de vencimiento',
+      'dateStartDate' => 'Fecha de Inicio (todo el día)',
+      'dateEndDate' => 'Fecha de finalización (todo el día)',
+      'priority' => 'Prioridad',
+      'description' => 'Descripción',
+      'isOverdue' => 'Atrasado',
+      'account' => 'Cuenta',
+      'dateCompleted' => 'Fecha de completado',
+      'attachments' => 'Adjuntos',
+      'reminders' => 'Recordatorios',
+      'contact' => 'Contact',
     ),
-    'links' => 
+    'links' =>
     array (
-      'attachments' => 'Mellékletek',
-      'account' => 'számla',
-      'contact' => 'Kapcsolatba lépni',
+      'attachments' => 'Adjuntos',
+      'account' => 'Account',
+      'contact' => 'Contact',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Not Started' => 'Nem kezdődött',
-        'Started' => 'lépések',
-        'Completed' => 'befejezték',
-        'Canceled' => 'Törölve',
-        'Deferred' => 'halasztott',
+        'Not Started' => 'Sin empezar',
+        'Started' => 'Comenzado',
+        'Completed' => 'Completado',
+        'Canceled' => 'Cancelado',
+        'Deferred' => 'Diferido',
       ),
-      'priority' => 
+      'priority' =>
       array (
-        'Low' => 'Alacsony',
-        'Normal' => 'Normál',
-        'High' => 'Magas',
-        'Urgent' => 'Sürgős',
+        'Low' => 'Baja',
+        'Normal' => 'Normal',
+        'High' => 'Alta',
+        'Urgent' => 'Urgente',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Task' => 'Feladat létrehozása',
-      'Complete' => 'teljes',
+      'Create Task' => 'Crear tarea',
+      'Complete' => 'Completada',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Tényleges',
-      'completed' => 'befejezték',
-      'deferred' => 'halasztott',
-      'todays' => 'A mai',
-      'overdue' => 'Lejárt',
+      'actual' => 'Actuales',
+      'completed' => 'Completado',
+      'deferred' => 'Diferido',
+      'todays' => 'De hoy',
+      'overdue' => 'Atrazadas',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'address' => 'Cím',
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Crear Beneficios',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Crear Categoria',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Crear Ciudad',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Crear Comuna',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Crear Doctos_beneficio',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Vytvořit Empresa',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
       'meetings1' => 'Meetings1',
       'rut' => 'Rut Beneficiario',
       'beneficioSolicitado' => 'Beneficio Solicitado',
@@ -4164,11 +4357,11 @@ Jelszó: {jelszó}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'találkozók',
-      'calls' => 'felhívja',
-      'tasks' => 'feladatok',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
       'emails' => 'Emails',
       'meetings1' => 'Meetings1',
       'contacts' => 'Beneficiario',
@@ -4177,13 +4370,13 @@ Jelszó: {jelszó}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Formularios' => '{EntityTypeTranslated} létrehozása',
+      'Create Formularios' => 'Crear Formulario',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4192,15 +4385,15 @@ Jelszó: {jelszó}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4209,7 +4402,7 @@ Jelszó: {jelszó}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4223,51 +4416,192 @@ Jelszó: {jelszó}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'MotivoReclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'motivoReclamoId' => 'MotivoReclamoId',
       'motivoReclamoDescripcion' => 'Descripción',
       'reclamosMotivoReclamo' => 'Reclamos',
-    ),
-    'links' => 
+  'Proveedor' =>
+  array (
+    'fields' =>
     array (
-      'meetings' => 'találkozók',
-      'calls' => 'felhívja',
-      'tasks' => 'feladatok',
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Proveedor' => 'Vytvořit Proveedor',
+    ),
+  ),
+  'Rol' =>
+  array (
+    'fields' =>
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Rol' => 'Crear Rol',
+    ),
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Crear Solicitudes',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MotivoReclamo' => '{EntityTypeTranslated} létrehozása',
+      'Create MotivoReclamo' => 'Crear MotivoReclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
     ),
   ),
-  'Reclamo' => 
+  'Reclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'reclamoId' => 'ReclamoId',
       'reclamoTitulo' => 'Título',
       'reclamoObservacion' => 'Observación',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'találkozók',
-      'calls' => 'felhívja',
-      'tasks' => 'feladatok',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
+    ),
+    'labels' =>
+    array (
+      'Create Subcategoria' => 'Crear Subcategoria',
+    ),
+  ),
+  'Trabajador' =>
+  array (
+    'fields' =>
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'links' =>
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'labels' =>
+    array (
+      'Create Trabajador' => 'Vytvořit Trabajador',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Reclamo' => '{EntityTypeTranslated} létrehozása',
+      'Create Reclamo' => 'Crear Reclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reclamoTitulo' => 'Breve descripción del reclamo',
       'reclamoObservacion' => 'Describa su situación',

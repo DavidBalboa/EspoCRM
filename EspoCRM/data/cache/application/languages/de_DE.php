@@ -1,8 +1,8 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'Benutzer',
       'action' => 'Aktion',
@@ -13,20 +13,20 @@ return array (
       'ipAddress' => 'IP-Adresse',
       'authLogRecord' => 'Auth Log-Datensatz',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token',
       'authLogRecord' => 'Auth Log-Datensatz',
       'user' => 'Benutzer',
       'target' => 'Ziel',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'onlyMy' => 'Nur meine',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'read' => 'Lesen',
         'update' => 'Aktualisieren',
@@ -35,9 +35,9 @@ return array (
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Enabled' => 'Aktiv',
       'Disabled' => 'Inaktiv',
@@ -100,7 +100,7 @@ return array (
       'Lead Capture' => 'Erfassung des Interessenten',
       'Attachments' => 'Anhänge',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
       'list' => 'Liste',
       'detail' => 'Detail',
@@ -123,7 +123,7 @@ return array (
       'listForAccount' => 'Liste (für Firma)',
       'listForContact' => 'Liste (für Kontakt)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
       'address' => 'Adresse',
       'array' => 'Liste',
@@ -165,7 +165,7 @@ return array (
       'jsonArray' => 'Json Array',
       'jsonObject' => 'Json Objekt',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'type' => 'Typ',
       'name' => 'Name',
@@ -213,7 +213,7 @@ return array (
       'useNumericFormat' => 'Verwenden Sie das numerische Format',
       'strip' => 'Strip',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'upgradeVersion' => 'Ihr EspoCRM wird nun auf Version <strong>{version}</strong> aktualisiert. Dies kann einige Zeit dauern.',
       'upgradeDone' => 'Ihr EspoCRM wurde auf Version <strong>{version}</strong> aktualisiert.',
@@ -232,7 +232,7 @@ return array (
       'newExtensionVersionIsAvailable' => 'Die neue {extensionName} Version {latestVersion} ist verfügbar.',
       'uninstallConfirmation' => 'Möchten Sie die Erweiterung wirklich deinstallieren?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
       'settings' => 'Systemeinstellungen der Applikation.',
       'scheduledJob' => 'Aufgaben die durch einen Cronjob ausgeführt werden.',
@@ -267,9 +267,9 @@ return array (
       'leadCapture' => 'API-Einstiegspunkte für Web-zu-Interessent.',
       'attachments' => 'Alle Dateianhänge, die im System gespeichert sind.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
         'x-small' => 'Sehr klein',
         'small' => 'Klein',
@@ -277,16 +277,16 @@ return array (
         'large' => 'Groß',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
       'and' => 'AND',
       'or' => 'OR',
       'not' => 'NOT',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Rolle',
       'related' => 'Verbunden',
@@ -297,9 +297,9 @@ return array (
       'storage' => 'Speicher',
       'size' => 'Größe (Bytes)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Anhang',
         'Inline Attachment' => 'Inline-Anhang',
@@ -309,18 +309,18 @@ return array (
         'Mass Pdf' => 'Mass PDF',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
       'Document' => 'Dokument einfügen',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Waise',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'username' => 'Benutzername',
       'ipAddress' => 'IP Adresse',
@@ -335,21 +335,21 @@ return array (
       'requestMethod' => 'Anforderungsmethode',
       'authTokenIsActive' => 'Auth Token ist aktiv',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token erstellt',
       'user' => 'Benutzer',
       'portal' => 'Portal',
       'actionHistoryRecords' => 'Aktionsverlauf',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'denied' => 'Verweigert',
       'accepted' => 'Akzeptiert',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
         'CREDENTIALS' => 'Ungültige Anmeldeinformationen',
         'INACTIVE_USER' => 'Inaktiver Benutzer',
@@ -359,9 +359,9 @@ return array (
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'Benutzer',
       'ipAddress' => 'IP Adresse',
@@ -370,27 +370,27 @@ return array (
       'isActive' => 'Ist aktiv',
       'portal' => 'Portal',
     ),
-    'links' => 
+    'links' =>
     array (
       'actionHistoryRecords' => 'Aktionsverlauf',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
       'inactive' => 'Inaktiv',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Set Inactive' => 'Inaktiv setzen',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setInactive' => 'Inaktiv setzen',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'title' => 'Titel',
       'dateFrom' => 'Von Datum',
@@ -411,9 +411,9 @@ return array (
       'futureDays' => 'Nächste X Tage',
       'useLastStage' => 'Gruppierung nach der zuletzt erreichten Verkaufsphase',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
         'agendaWeek' => 'Woche (Agenda)',
         'basicWeek' => 'Woche',
@@ -423,20 +423,20 @@ return array (
         'timeline' => 'Zeitachse',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectEntityType' => 'Wählen Sie Entitätstyp in Dashlet-Optionen.',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Field' => 'Feld',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
         'equals' => 'Ist gleich',
         'notEquals' => 'Ist nicht gleich',
@@ -460,9 +460,9 @@ return array (
       ),
     ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'parent' => 'Bezieht sich auf',
@@ -512,7 +512,7 @@ return array (
       'isSystem' => 'Ist System',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'replied' => 'Beantwortet',
       'replies' => 'Antworten',
@@ -528,9 +528,9 @@ return array (
       'replyToEmailAddresses' => 'Antwort-an E-Mail Adressen',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Entwurf',
         'Sending' => 'Wird gesendet',
@@ -540,7 +540,7 @@ return array (
         'Failed' => 'Fehlgeschlagen',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Email' => 'E-Mail archivieren',
       'Archive Email' => 'E-Mail archivieren',
@@ -575,7 +575,7 @@ return array (
       'Create Task' => 'Neue Aufgabe',
       'Create Case' => 'Fall erstellen',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'noSmtpSetup' => 'Keine SMTP Einstellungen {link}.',
       'testEmailSent' => 'Eine Test E-Mail wurde gesendet',
@@ -583,7 +583,7 @@ return array (
       'savedAsDraft' => 'Als Entwurf gepeichert',
       'confirmInsertTemplate' => 'Der E-Mail Text wird gelöscht. Möchten Sie die Vorlage wirklich einfügen?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Gesendet',
       'archived' => 'Archiviert',
@@ -592,7 +592,7 @@ return array (
       'trash' => 'Papierkorb',
       'important' => 'Wichtig',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'markAsRead' => 'Als gelesen markieren',
       'markAsNotRead' => 'Als ungelesen markieren',
@@ -603,9 +603,9 @@ return array (
       'retrieveFromTrash' => 'Aus dem Papierkorb holen',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -630,20 +630,20 @@ return array (
       'smtpUsername' => 'SMTP Benutzername',
       'smtpPassword' => 'SMTP Passwort',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filter',
       'emails' => 'E-Mails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Inactive' => 'Inaktiv',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailAccount' => 'E-Mail Konto erstellen',
       'IMAP' => 'IMAP',
@@ -652,29 +652,29 @@ return array (
       'Send Test Email' => 'Test E-Mail senden',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Kann keine Verbindung zum IMAP Server herstellen',
       'connectionIsOk' => 'Verbindung ist in Ordnung',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'monitoredFolders' => 'Sie können einen \'Gesendet\' Ordner hinzufügen um E-Mails zu synchronisieren, die von einem externen Programm gesendet wurden.',
       'storeSentEmails' => 'Gesendete E-Mail werden auf einem IMAP Server gespeichert. Die E-Mail Adresse muss jene sein, von der die E-Mail gesendet wurde.',
     ),
   ),
-  'EmailAddress' => 
+  'EmailAddress' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Primary' => 'Primär',
       'Opted Out' => 'Opt-Out gesetzt',
       'Invalid' => 'Ungültig',
     ),
   ),
-  'EmailFilter' => 
+  'EmailFilter' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'from' => 'Von',
       'to' => 'An',
@@ -684,20 +684,20 @@ return array (
       'isGlobal' => 'Ist global',
       'emailFolder' => 'Ordner',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFilter' => 'E.Mail Filter erstellen',
       'Emails' => 'E-Mails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Skip' => 'Ignorieren',
         'Move to Folder' => 'In Ordner ablegen',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'name' => 'Ein Name für den Filter',
       'subject' => 'Verwendung des Platzhalters *:
@@ -711,22 +711,22 @@ text* - beginnt mit text,
       'isGlobal' => 'Wendet diesen Filter auf alle eingehenden E-Mails im System an.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'skipNotifications' => 'Benachrichtigungen überspringen',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFolder' => 'Ordner erstellen',
       'Manage Folders' => 'Ordner verwalten',
       'Emails' => 'E-Mails',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -738,16 +738,16 @@ text* - beginnt mit text,
       'oneOff' => 'Ein-Aus',
       'category' => 'Kategorie',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplate' => 'E-Mail Vorlage erstellen',
       'Info' => 'Info',
       'Available placeholders' => 'Verfügbare Platzhalter',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'infoText' => 'Verfügbare Platzhalter:
 
@@ -755,42 +755,42 @@ text* - beginnt mit text,
 
 {optOutLink} &#8211; ein Abmeldelink.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'oneOff' => 'Überprüfen Sie, ob Sie die Vorlage nur einmal benutzen z.B. für eine Massenaussendung',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Aktuell',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
       'optOutUrl' => 'URL für einen Abmeldelink
 ',
       'optOutLink' => 'ein Abmeldelink',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Neue Kategorie',
       'Manage Categories' => 'Kategorien verwalten',
       'EmailTemplates' => 'E-Mail Vorlagen',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Reihenfolge',
       'childList' => 'Untergeordnete Liste',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'E-Mail Vorlagen',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Fields' => 'Felder',
       'Relationships' => 'Beziehungen',
@@ -798,7 +798,7 @@ text* - beginnt mit text,
       'Log' => 'Log',
       'Formula' => 'Formel',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'type' => 'Typ',
@@ -828,9 +828,9 @@ text* - beginnt mit text,
       'iconClass' => 'Icon',
       'fullTextSearch' => 'Volltextsuche',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         '' => 'Kein(e)',
         'Base' => 'Basis',
@@ -840,7 +840,7 @@ text* - beginnt mit text,
         'BasePlus' => 'Basis Plus',
         'Company' => 'Firma',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
         'manyToMany' => 'n:n',
         'oneToMany' => '1:n',
@@ -848,19 +848,19 @@ text* - beginnt mit text,
         'parentToChildren' => 'Eltern zu Kind',
         'childrenToParent' => 'Kind zu Eltern',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
         'asc' => 'Aufsteigend',
         'desc' => 'Absteigend',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'entityCreated' => 'Entität wurde erstellt',
       'linkAlreadyExists' => 'Relationsnamenkonflikt',
       'linkConflict' => 'Eine Relation mit diesem Namen existiert bereits',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'statusField' => 'Updates dieses Feldes werden im Stream protokolliert.',
       'textFilterFields' => 'Von der Textsuche verwendete Felder.',
@@ -868,32 +868,32 @@ text* - beginnt mit text,
       'disabled' => 'Überprüfen Sie, ob Sie diese Entität nicht in Ihrem System benötigen.',
       'linkAudited' => 'Das Erstellen eines verknüpften Datensatzes und das Verknüpfen mit dem vorhandenen Datensatz wird in Stream protokolliert.',
       'linkMultipleField' => 'verlinken mehrere Felder bietet eine praktische Möglichkeit Beziehungen zu bearbeiten. Nicht benutzen wenn Sie eine große Anzahl von Verknüpfungen haben.',
-      'entityType' => 'Base Plus - enthält Aktivitäten, Verlaufs- und Aufgabenfelder. 
+      'entityType' => 'Base Plus - enthält Aktivitäten, Verlaufs- und Aufgabenfelder.
 
 Event - verfügbar im Fenster "Kalender und Aktivitäten".',
       'fullTextSearch' => 'Ausführung der Wiederherstellung ist erforderlich.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportAllFields' => 'Exportieren alle Felder',
       'fieldList' => 'Feldliste',
       'format' => 'Format',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
         'xlsx' => 'XLSX (Excel)',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'version' => 'Version',
@@ -901,39 +901,39 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
       'isInstalled' => 'Installiert',
       'checkVersionUrl' => 'Eine URL zum Überprüfen neuer Versionen',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Uninstall' => 'Deinstallieren',
       'Install' => 'Installieren',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'uninstalled' => 'Erweiterung {name} wurde deinstalliert',
     ),
   ),
-  'ExternalAccount' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Connect' => 'Verbinden',
       'Connected' => 'Verbunden',
     ),
-    'help' => 
+    'help' =>
     array (
     ),
   ),
-  'FieldManager' => 
+  'FieldManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Dynamic Logic' => 'Dynamische Logik',
       'Name' => 'Name',
       'Label' => 'Bezeichnung',
       'Type' => 'Typ',
     ),
-    'options' => 
+    'options' =>
     array (
-      'dateTimeDefault' => 
+      'dateTimeDefault' =>
       array (
         '' => 'nichts',
         'javascript: return this.dateTime.getNow(1);' => 'jetzt',
@@ -960,7 +960,7 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 Tage',
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 Woche',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
         '' => 'keine',
         'javascript: return this.dateTime.getToday();' => 'Heute',
@@ -991,7 +991,7 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
         'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 Jahr',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'audited' => 'Updates werden im Verlauf geloggt.',
       'required' => 'Das Feld ist ein Pflichtfeld und darf nicht leer sein.',
@@ -1006,9 +1006,9 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
       'readOnly' => 'Feldwert kann nicht vom Benutzer angegebe, aber durch Formel berechnet werden.',
       'maxFileSize' => 'Wenn leer oder 0, dann keine Begrenzung.',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
         'street' => 'Straße',
         'city' => 'Ort',
@@ -1017,26 +1017,26 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
         'postalCode' => 'PLZ',
         'map' => 'Karte',
       ),
-      'personName' => 
+      'personName' =>
       array (
         'salutation' => 'Anrede',
         'first' => 'Vorname',
         'last' => 'Nachname',
       ),
-      'currency' => 
+      'currency' =>
       array (
         'converted' => '(Konvertiert)',
         'currency' => '(Währung)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
         'date' => 'Datum',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
       'Email' => 'E-Mail',
       'User' => 'Benutzer',
@@ -1108,10 +1108,21 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
       'KnowledgeBaseCategory' => 'Wissensbasis Kategorie',
       'CampaignLogRecord' => 'Kampagnen-Logeintrag',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
       'Email' => 'E-Mails',
       'User' => 'Benutzer',
@@ -1170,10 +1181,21 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
       'KnowledgeBaseCategory' => 'Wissensbasis Kategorien',
       'CampaignLogRecord' => 'Kampagnen-Logeinträge',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Misc' => 'Verschiedenes',
       'Merge' => 'Zusammenführen',
@@ -1340,7 +1362,7 @@ Event - verfügbar im Fenster "Kalender und Aktivitäten".',
       'Create Task' => 'Neue Aufgabe',
       'Tasks' => 'Aufgaben',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'pleaseWait' => 'Bitte warten...',
       'posting' => 'Poste...',
@@ -1407,17 +1429,17 @@ Verfügbare Syntax:
       'erasePersonalDataConfirmation' => 'Überprüfte Felder werden dauerhaft gelöscht. Sind Sie sicher?',
       'massPrintPdfMaxCountError' => 'Es kann nicht mehr als {maxCount} Datensätze gedruckt werden.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMy' => 'Nur Meine',
       'followed' => 'Abonniert',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'followed' => 'Abonniert',
       'all' => 'Alle',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'remove' => 'Löschen',
       'merge' => 'Zusammenführen',
@@ -1428,7 +1450,7 @@ Verfügbare Syntax:
       'convertCurrency' => 'Währung umrechnen',
       'printPdf' => 'Als PDF drucken',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'firstName' => 'Vorname',
@@ -1481,7 +1503,7 @@ Verfügbare Syntax:
       'shippingAddressPostalCode' => 'PLZ (Lieferadresse)',
       'shippingAddressMap' => 'Karte (Lieferadresse)',
     ),
-    'links' => 
+    'links' =>
     array (
       'assignedUser' => 'Zugewiesener Benutzer',
       'createdBy' => 'Erstellt von',
@@ -1506,7 +1528,7 @@ Verfügbare Syntax:
       'opportunity' => 'Verkaufschance',
       'contact' => 'Kontakt',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
       'Stream' => 'Aktivitäten',
       'Emails' => 'Mein Posteingang',
@@ -1524,13 +1546,13 @@ Verfügbare Syntax:
       'SalesPipeline' => 'Verkaufspipeline',
       'Activities' => 'Meine Aktivitäten',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
       'assign' => '{entityType} {entity} wurde Ihnen zugewiesen',
       'emailReceived' => 'E-Mail empfangen von {from}',
       'entityRemoved' => '{user} hat {entityType} {entity} entfernt',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
       'post' => '{user} hat zu {entityType} {entity} notiert',
       'attach' => '{user} hat zu {entityType} {entity} hinzugefügt',
@@ -1586,17 +1608,17 @@ Verfügbare Syntax:
       'emailSent' => '{by} hat eine E-Mail verbunden mit {entityType} {entity} gesendet',
       'emailSentThis' => '{by} hat eine E-Mail gesendet',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
       'postTargetSelfAndOthers' => '{user} hat nach {target} und sich selbst gepostet',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
       'postTargetSelfAndOthers' => '{user} hat nach {target} und sich selbst gepostet',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
         0 => 'Januar',
         1 => 'Februar',
@@ -1611,7 +1633,7 @@ Verfügbare Syntax:
         10 => 'November',
         11 => 'Dezember',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
         0 => 'Jan',
         1 => 'Feb',
@@ -1626,7 +1648,7 @@ Verfügbare Syntax:
         10 => 'Nov',
         11 => 'Dez',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
         0 => 'Sonntag',
         1 => 'Montag',
@@ -1636,7 +1658,7 @@ Verfügbare Syntax:
         5 => 'Freitag',
         6 => 'Samstag',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
         0 => 'So',
         1 => 'Mo',
@@ -1646,7 +1668,7 @@ Verfügbare Syntax:
         5 => 'Fr',
         6 => 'Sa',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
         0 => 'So',
         1 => 'Mo',
@@ -1657,23 +1679,23 @@ Verfügbare Syntax:
         6 => 'Sa',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'T',
       'h' => 'St',
       'm' => 'M',
       's' => 'S',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
         'Mr.' => 'Herr',
         'Mrs.' => 'Frau',
         'Ms.' => 'Frau',
         'Dr.' => 'Dr.',
       ),
-      'language' => 
+      'language' =>
       array (
         'af_ZA' => 'Afrikaans',
         'az_AZ' => 'Aserbaidschanisch',
@@ -1748,7 +1770,7 @@ Verfügbare Syntax:
         'zh_HK' => 'Chinesisch traditionell (HK)',
         'zh_TW' => 'Chinesisch traditionell (TW)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
         'on' => 'Am',
         'notOn' => 'Nicht am',
@@ -1773,7 +1795,7 @@ Verfügbare Syntax:
         'olderThanXDays' => 'älter als X Tage',
         'afterXDays' => 'nach X Tagen',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
         'is' => 'Ist',
         'isEmpty' => 'Ist leer',
@@ -1785,7 +1807,7 @@ Verfügbare Syntax:
         'anyOf' => 'Irgendein von',
         'noneOf' => 'Keiner von',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
         'equals' => 'Gleich',
         'like' => 'Wie (%)',
@@ -1798,7 +1820,7 @@ Verfügbare Syntax:
         'isNotEmpty' => 'Ist nicht leer',
         'notEquals' => 'Nicht gleich',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
         'equals' => 'Gleich',
         'notEquals' => 'Nicht gleich',
@@ -1810,7 +1832,7 @@ Verfügbare Syntax:
         'isEmpty' => 'Ist leer',
         'isNotEmpty' => 'Ist nicht leer',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
         0 => 'Kein(e)',
         '0.5' => '30 Sekunden',
@@ -1819,7 +1841,7 @@ Verfügbare Syntax:
         5 => '5 Minuten',
         10 => '10 Minuten',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
         'Mobile' => 'Telefon Mobil',
         'Office' => 'Telefon Büro',
@@ -1827,18 +1849,18 @@ Verfügbare Syntax:
         'Home' => 'Telefon Privat',
         'Other' => 'Telefon Andere',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
         'Popup' => 'Popup',
         'Email' => 'E-Mail',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
         'NOTICE' => 'Sie finden die Übersetzung hier: https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'font' =>
         array (
           'bold' => 'Fett',
           'italic' => 'Kursiv',
@@ -1849,7 +1871,7 @@ Verfügbare Syntax:
           'name' => 'Schriftfamilie',
           'size' => 'Schriftgröße',
         ),
-        'image' => 
+        'image' =>
         array (
           'image' => 'Bild',
           'insert' => 'Bild einfügen',
@@ -1864,7 +1886,7 @@ Verfügbare Syntax:
           'url' => 'Grafik URL',
           'remove' => 'Grafik entfernen',
         ),
-        'link' => 
+        'link' =>
         array (
           'link' => 'Link',
           'insert' => 'Link einfügen',
@@ -1874,7 +1896,7 @@ Verfügbare Syntax:
           'url' => 'Ziel des Links?',
           'openInNewWindow' => 'In einem neuen Fenster öffnen',
         ),
-        'video' => 
+        'video' =>
         array (
           'video' => 'Video',
           'videoLink' => 'Video Link',
@@ -1882,15 +1904,15 @@ Verfügbare Syntax:
           'url' => 'Video URL?',
           'providers' => '(YouTube, Vimeo, Vine, Instagram oder DailyMotion)',
         ),
-        'table' => 
+        'table' =>
         array (
           'table' => 'Tabelle',
         ),
-        'hr' => 
+        'hr' =>
         array (
           'insert' => 'Eine horizontale Linie einfügen',
         ),
-        'style' => 
+        'style' =>
         array (
           'style' => 'Stil',
           'normal' => 'Normal',
@@ -1903,18 +1925,18 @@ Verfügbare Syntax:
           'h5' => 'Überschrift 5',
           'h6' => 'Überschrift 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
           'unordered' => 'Unsortierte Liste',
           'ordered' => 'Nummerierte Liste',
         ),
-        'options' => 
+        'options' =>
         array (
           'help' => 'Hilfe',
           'fullscreen' => 'Vollbild',
           'codeview' => 'HTML-Code anzeigen',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
           'paragraph' => 'Absatz',
           'outdent' => 'Ausrückung',
@@ -1924,7 +1946,7 @@ Verfügbare Syntax:
           'right' => 'Rechts ausrichten',
           'justify' => 'Blocksatz',
         ),
-        'color' => 
+        'color' =>
         array (
           'recent' => 'Letzte Farbe',
           'more' => 'Mehr Farben',
@@ -1935,7 +1957,7 @@ Verfügbare Syntax:
           'reset' => 'Zurücksetzen',
           'resetToDefault' => 'Zurücksetzen auf Standard',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
           'shortcuts' => 'Tastaturkürzel',
           'close' => 'Schließen',
@@ -1944,19 +1966,19 @@ Verfügbare Syntax:
           'paragraphFormatting' => 'Absatzformatierung',
           'documentStyle' => 'Dokumentenstil',
         ),
-        'history' => 
+        'history' =>
         array (
           'undo' => 'Rückgängig',
           'redo' => 'Wiederholen',
         ),
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
       'list' => 'Liste',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
       'Espo' => 'Classic Espo',
       'EspoRtl' => 'Espo (rechtsbündig)',
@@ -1969,9 +1991,9 @@ Verfügbare Syntax:
       'HazyblueVertical' => 'Vertical Hazyblue',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Revert Import' => 'Import rückgängig machen',
       'Return to Import' => 'Zurück zum Import',
@@ -2027,7 +2049,7 @@ Verfügbare Syntax:
       'New Import' => 'Neuer Import',
       'Import Results' => 'Importergebnisse',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'utf8' => 'Sollte UTF-8 kodiert sein',
       'duplicatesRemoved' => 'Duplikate entfernt',
@@ -2039,7 +2061,7 @@ Verfügbare Syntax:
       'confirmRemoveImportLog' => 'Dies wird das Importprotokoll entfernen. Alle importierten Datensätze werden beibehalten. Sie können den Import rückgängig nicht machen. Sind Sie sicher?',
       'removeImportLog' => 'Dies wird das Importprotokoll entfernen. Alle importierten Datensätze werden beibehalten. Verwenden Sie es, wenn Sie sicher sind, dass der Import in Ordnung ist.',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'file' => 'Datei',
       'entityType' => 'Entitätstyp',
@@ -2048,9 +2070,9 @@ Verfügbare Syntax:
       'updated' => 'Aktualisierte Datensätze',
       'status' => 'Status',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Failed' => 'Fehler',
         'In Process' => 'In Arbeit',
@@ -2058,9 +2080,9 @@ Verfügbare Syntax:
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'emailAddress' => 'E-Mail Adresse',
@@ -2099,7 +2121,7 @@ Verfügbare Syntax:
       'smtpIsShared' => 'SMTP ist freigegeben',
       'smtpIsForMassEmail' => 'SMTP ist für Massen-E-Mails',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reply' => 'Benachrichtigt E-Mail Empfänger beim Empfang der Nachrichten.
 
@@ -2117,20 +2139,20 @@ Verfügbare Syntax:
       'smtpIsForMassEmail' => 'Wenn diese Option aktiviert ist, steht SMTP für Massen-E-Mail zur Verfügung.',
       'storeSentEmails' => 'Gesendete E-Mails werden auf dem IMAP-Server gespeichert.',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filter',
       'emails' => 'E-Mails',
       'assignToUser' => 'Mit Benutzer verknüpfen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Inactive' => 'Inaktiv',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
         '' => 'Kein(e)',
         'Direct-Assignment' => 'Direkte Zuordnung',
@@ -2138,21 +2160,21 @@ Verfügbare Syntax:
         'Least-Busy' => 'Geringste Auslastung',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create InboundEmail' => 'E-Mail Konto erstellen',
       'IMAP' => 'IMAP',
       'Actions' => 'Aktionen',
       'Main' => 'Hauptteil',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Kann keine Verbindung zum IMAP Server herstellen',
     ),
   ),
-  'Integration' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'enabled' => 'Aktiv',
       'clientId' => 'Client ID',
@@ -2160,24 +2182,24 @@ Verfügbare Syntax:
       'redirectUri' => 'Weiterleitungs URI',
       'apiKey' => 'API Key',
     ),
-    'titles' => 
+    'titles' =>
     array (
       'GoogleMaps' => 'Google Maps',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectIntegration' => 'Wählen Sie eine Integration aus dem Menü.',
       'noIntegrations' => 'Keine Integration verfügbar.',
     ),
-    'help' => 
+    'help' =>
     array (
       'Google' => '<p><b>Holen Sie die OAuth 2.0 Credentials über die Google Developers Console.</b></p><p>Besuchen Sie <a href="https://console.developers.google.com/project">die Google Developers Console</a> um OAuth 2.0 Credentials wie eine Client ID und Client Geheimnis zu erhalten die sowohl Google als auch EspoCRM bekannt sind.</p>',
       'GoogleMaps' => '<p>API Key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">hier</a> beantragen.</p>',
     ),
   ),
-  'Job' => 
+  'Job' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Status',
       'executeTime' => 'Ausführen um',
@@ -2190,9 +2212,9 @@ Verfügbare Syntax:
       'scheduledJobJob' => 'Geplante Aufgabe Name',
       'data' => 'Daten',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Schwebend',
         'Success' => 'Erfolg',
@@ -2201,9 +2223,9 @@ Verfügbare Syntax:
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'width' => 'Breite (%)',
       'link' => 'Link',
@@ -2215,14 +2237,14 @@ Verfügbare Syntax:
       'isLarge' => 'Große Schriftgröße',
       'dynamicLogicVisible' => 'Bedingungen, die das Panel sichtbar machen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
         'left' => 'Links',
         'right' => 'Rechts',
       ),
-      'style' => 
+      'style' =>
       array (
         'default' => 'Standard',
         'success' => 'Erfolgreich',
@@ -2232,15 +2254,15 @@ Verfügbare Syntax:
         'primary' => 'Primär',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'New panel' => 'Neues Panel',
       'Layout' => 'Layout',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'campaign' => 'Kampagne',
@@ -2260,7 +2282,7 @@ Verfügbare Syntax:
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Nutzlast',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Kontaktliste',
       'campaign' => 'Kampagne',
@@ -2268,27 +2290,27 @@ Verfügbare Syntax:
       'targetTeam' => 'Zielteam',
       'logRecords' => 'Protokoll',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Einstiegspunkt erstellen',
       'Generate New API Key' => 'Eines neuen API Key generieren',
       'Request' => 'Anforderung',
       'Confirm Opt-In' => 'Opt-In bestätigen',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Eines neuen API Key erstellen',
       'optInConfirmationExpired' => 'Opt-in-Bestätigungslink ist abgelaufen.',
       'optInIsConfirmed' => 'Die Bestätigung ist bestätigt.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Markdown ist unterstützt.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Nummer',
       'data' => 'Daten',
@@ -2297,15 +2319,15 @@ Verfügbare Syntax:
       'createdAt' => 'Eingegeben bei',
       'isCreated' => 'Ist einen Interessenten erstellt',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => 'Erfassung des Interessenten',
       'target' => 'Ziel',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'post' => 'Senden',
       'attachments' => 'Anhänge',
@@ -2321,15 +2343,15 @@ Verfügbare Syntax:
       'data' => 'Daten',
       'number' => 'Nummer',
     ),
-    'filters' => 
+    'filters' =>
     array (
       'all' => 'Alle',
       'posts' => 'Posts',
       'updates' => 'Aktualisierungen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
         'self' => 'An sich selbst',
         'users' => 'An (einen) bestimmte(n) Benutzer',
@@ -2337,24 +2359,24 @@ Verfügbare Syntax:
         'all' => 'An alle Benutzer',
         'portals' => 'An alle Portal Benutzer',
       ),
-      'type' => 
+      'type' =>
       array (
         'Post' => 'Senden',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'writeMessage' => 'Schreiben Sie hier Ihre Nachricht',
     ),
-    'links' => 
+    'links' =>
     array (
       'superParent' => 'Super Eltern',
       'related' => 'Verbunden',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'logo' => 'Logo',
@@ -2376,18 +2398,18 @@ Verfügbare Syntax:
       'customUrl' => 'Benutzerdefinierte URL',
       'customId' => 'Benutzerdefinierte ID',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Benutzer',
       'portalRoles' => 'Rollen',
       'notes' => 'Notizen',
       'articles' => 'Wissensbasis Artikel',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portalRoles' => 'Die spezifizierten Portal Rollen werden auf alle Benutzer dieses Portals angewendet.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Portal' => 'Portal erstellen',
       'User Interface' => 'Benutzeroberfläche',
@@ -2395,21 +2417,21 @@ Verfügbare Syntax:
       'Settings' => 'Einstellungen',
     ),
   ),
-  'PortalRole' => 
+  'PortalRole' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportPermission' => 'Exportberechtigung',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Benutzer',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'exportPermission' => 'Definiert, ob Portalbenutzer Datensätze exportieren können.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Berechtigungen',
       'Create PortalRole' => 'Portal Rolle erstellen',
@@ -2417,16 +2439,16 @@ Verfügbare Syntax:
       'Field Level' => 'Feldebene',
     ),
   ),
-  'PortalUser' => 
+  'PortalUser' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create PortalUser' => 'Erstelle Portal User',
     ),
   ),
-  'Preferences' => 
+  'Preferences' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'dateFormat' => 'Datumsformat',
       'timeFormat' => 'Zeitformat',
@@ -2467,18 +2489,18 @@ Verfügbare Syntax:
       'scopeColorsDisabled' => 'Bereichsfarben deaktivieren',
       'tabColorsDisabled' => 'Tabfarben deaktivieren',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Sonntag',
         1 => 'Montag',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Notifications' => 'Benachrichtigungen',
       'User Interface' => 'Benutzeroberfläche',
@@ -2487,7 +2509,7 @@ Verfügbare Syntax:
       'Locale' => 'Lokalisierungs-Einstellungen',
       'Reset Dashboard to Default' => 'Dashboard auf Standard zurücksetzen',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'autoFollowEntityTypeList' => 'Der Benutzer abonniert automatisch alle neuen Einträge der gewählten Entitätstypen, sieht Neuigkeiten in den Aktivitäten und erhält Benachrichtigungen.',
       'doNotFillAssignedUserIfNotRequired' => 'Wenn der Benutzer einen neuen Eintrag erstellt, wird zugwiesener Benutzer mit deisem Benutzer nicht ausfüllen, sofern nicht das Feld erforderlich ist.',
@@ -2495,9 +2517,9 @@ Verfügbare Syntax:
       'followCreatedEntityTypeList' => 'Wenn neue Datensätze von ausgewählten Entitätstypen erstellt werden, werden diese automatisch gefolgt, auch wenn sie einem anderen Benutzer zugewiesen sind.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'roles' => 'Rollen',
@@ -2508,12 +2530,12 @@ Verfügbare Syntax:
       'exportPermission' => 'Exportberechtigung',
       'dataPrivacyPermission' => 'Datenschutz Erlaubnis',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Benutzer',
       'teams' => 'Teams',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'assignmentPermission' => 'Ermöglicht das Recht der Zuweisung von Datensätzen und das Senden von Nachrichten an andere Benutzer zu beschränken
 
@@ -2534,22 +2556,22 @@ Nein - Kann keine anderen Aktivitäten sehen',
       'exportPermission' => 'Definiert, ob Benutzer Datensätze exportieren können.',
       'dataPrivacyPermission' => 'Ermöglicht das Anzeigen und Löschen persönlicher Daten.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Berechtigungen',
       'Create Role' => 'Rolle erstellen',
       'Scope Level' => 'Berechtigungsumfang',
       'Field Level' => 'Feldebene',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
         'not-set' => 'nicht gesetzt',
         'enabled' => 'Aktiv',
         'disabled' => 'Inaktiv',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
         'all' => 'Alle',
         'team' => 'Team',
@@ -2561,7 +2583,7 @@ Nein - Kann keine anderen Aktivitäten sehen',
         'not-set' => 'nicht gesetzt',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
       'read' => 'Lesen',
       'edit' => 'Bearbeiten',
@@ -2569,31 +2591,31 @@ Nein - Kann keine anderen Aktivitäten sehen',
       'stream' => 'Aktivitäten',
       'create' => 'Erstellen',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'changesAfterClearCache' => 'Alle Änderungen werden erst nach Leeren des Caches wirksam.',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'job' => 'Job',
       'scheduling' => 'Planung',
     ),
-    'links' => 
+    'links' =>
     array (
       'log' => 'Protokoll',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create ScheduledJob' => 'Geplante Aufgabe erstellen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
         'Cleanup' => 'Aufräumen',
         'CheckInboundEmails' => 'Gruppen E-Mail Konten überprüfen',
@@ -2605,20 +2627,20 @@ Nein - Kann keine anderen Aktivitäten sehen',
         'ProcessMassEmail' => 'Massen E-Mails senden',
         'ControlKnowledgeBaseArticleStatus' => 'Wissensbasis Artikel Status kontrollieren',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
         'linux' => 'Hinweis: Fügen Sie diese Zeile zu Ihrer Crontab Datei hinzu, um geplante Aufgaben durchführen zu können:',
         'mac' => 'Hinweis: Fügen Sie diese Zeile zu Ihrer Crontab Datei hinzu, um geplante Aufgaben durchführen zu können:',
         'windows' => 'Hinweis: Erstellen Sie eine Stapeldatei mit den folgenden Kommandos um geplante Aufgaben mit dem Windows Aufgabenplaner durchzuführen:',
         'default' => 'Hinweis: fügen Sie dieses Kommando zum CronJob hinzu (Geplante Aufgaben):',
       ),
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Inactive' => 'Inaktiv',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'scheduling' => 'Definiert wann und wie oft ein Job läuft
 
@@ -2631,18 +2653,18 @@ Nein - Kann keine anderen Aktivitäten sehen',
 0 0 1 * * - am ersten Tag des Monats',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Status',
       'executionTime' => 'Ausführungszeit',
       'target' => 'Ziel',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'useCache' => 'Benutzer Cache',
       'dateFormat' => 'Datumsformat',
@@ -2749,26 +2771,26 @@ Nein - Kann keine anderen Aktivitäten sehen',
       'outboundEmailBccAddress' => 'BCC-Adresse für externe Clients',
       'cleanupDeletedRecords' => 'Gelöschte Datensätze aufräumen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Sonntag',
         1 => 'Montag',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
         1 => '10 USD',
         2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
         'Post' => 'Posts',
         'Status' => 'Statusaktualisierungen',
         'EmailReceived' => 'Empfangene E-Mails',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'recordsPerPage' => 'Anzahl Sätze In Listenansichten (Standard) ',
       'recordsPerPageSmall' => 'Anzahl Sätze in Beziehungssubpanels',
@@ -2817,7 +2839,7 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
       'emailAddressIsOptedOutByDefault' => 'Beim Erstellen eines neuen Datensatzes wird die E-Mail-Adresse als Opt-Out  markiert.',
       'cleanupDeletedRecords' => 'Removed records will be deleted from database after a while.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'System' => 'System',
       'Locale' => 'Lokale Einstellungen',
@@ -2833,39 +2855,39 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
       'Activities' => 'Aktivitäten',
       'Admin Notifications' => 'Admin-Benachrichtigungen',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'ldapTestConnection' => 'Die Verbindung wurde erfolgreich hergestellt.',
     ),
   ),
-  'Team' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'roles' => 'Rollen',
       'positionList' => 'Positionsbezeichnungen',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Benutzer',
       'notes' => 'Notizen',
       'roles' => 'Rollen',
       'inboundEmails' => 'Gruppen E-Mail Konten',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'roles' => 'Benutzer dieses Teams erben alle Zugriffsberechtigungen von der ausgewählten Rollen.',
       'positionList' => 'Verfügbare Positionen in diesem Team. Z.B. Verkäufer, Manager etc.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Team' => 'Team erstellen',
     ),
   ),
-  'Template' => 
+  'Template' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'body' => 'Inhalt',
@@ -2883,26 +2905,26 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
       'pageFormat' => 'Papierformat',
       'fontFace' => 'Schriftart',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Template' => 'Vorlage erstellen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
         'Portrait' => 'Hochformat',
         'Landscape' => 'Querformat',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
         'today' => 'Heute (Datum)',
         'now' => 'Jetzt (Datum-Uhrzeit)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefurat',
@@ -2934,15 +2956,15 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
         'times' => 'Times',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'footer' => 'Verwenden Sie den Platzhalter  {pageNumber} um eine Seitennummer zu drucken.',
       'variables' => 'Kopieren und einfügen Sie benötigter Platzhalter in die Kopfzeile, in den Inhalt oder in die Fußzeile.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'userName' => 'Benutzername',
@@ -2978,7 +3000,7 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
       'acceptanceStatusMeetings' => 'Akzeptanzstatus (Meetings)',
       'acceptanceStatusCalls' => 'Akzeptanzstatus (Anrufe)',
     ),
-    'links' => 
+    'links' =>
     array (
       'teams' => 'Teams',
       'roles' => 'Rollen',
@@ -2991,7 +3013,7 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
       'tasks' => 'Aufgaben',
       'targetLists' => 'Kontaktlisten',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create User' => 'Benutzer erstellen',
       'Generate' => 'Erzeugen',
@@ -3008,7 +3030,7 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
       'Create Portal User' => 'Portalbenutzer erstellen',
       'Proceed w/o Contact' => 'Weiter mit Kontakt',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'defaultTeam' => 'Alle Datensätze dieses Benutzers werden standardmäßig seinem Team zugeordnet.',
       'userName' => 'Erlaubte Zeichen sind die Buchstaben a-z, Ziffern, Punkt, @-Symbol, Strich und Unterstrich.',
@@ -3019,7 +3041,7 @@ Deaktiviert: Der Zugriff auf Bereiche ist zulässig, wenn er nicht in Rollen ang
       'portalRoles' => 'Zusätzliche Portal Rollen. Benutzen Sie diese wenn Sie die Zugriffsberechtigung nur für diesen Benutzer erweitern wollen.',
       'portals' => 'Portale auf die der Benutzer Zugriff hat.',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'passwordWillBeSent' => 'Das Passwort wird an die E-Mail Adresse des Benutzers gesendet',
       'accountInfoEmailSubject' => 'EspoCRM Benutzerzugriffsinfo',
@@ -3042,9 +3064,9 @@ Passwort: {password}
       'setupSmtpBefore' => 'Sie müssen die <a href="{url}">SMTP Einstellungen</a> setzen damit das System Passwörter in E-Mails senden kann.',
       'userNameExists' => 'Benutzername existiert bereits',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
         '' => 'Nicht gesetzt',
         'Male' => 'Männlich',
@@ -3052,19 +3074,19 @@ Passwort: {password}
         'Neutral' => 'Neutral',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMyTeam' => 'Nur mein Team',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
       'activePortal' => 'Portal Aktiv',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'emailAddress' => 'E-Mail',
@@ -3084,7 +3106,7 @@ Passwort: {password}
       'originalLead' => 'Ursprünglicher Interessent',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontakte',
       'opportunities' => 'Verkaufschancen',
@@ -3101,16 +3123,16 @@ Passwort: {password}
       'originalLead' => 'Ursprünglicher Interessent',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Customer' => 'Kunde',
         'Investor' => 'Investor',
         'Partner' => 'Partner',
         'Reseller' => 'Wiederverkäufer',
       ),
-      'industry' => 
+      'industry' =>
       array (
         'Aerospace' => 'Luft- und Raumfahrt',
         'Agriculture' => 'Landwirtschaft',
@@ -3165,22 +3187,22 @@ Passwort: {password}
         'Water' => 'Wasserwesen',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Account' => 'Firma erstellen',
       'Copy Billing' => 'Rechnungsadresse kopieren',
       'Set Primary' => 'Primär setzen',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'customers' => 'Kunden',
       'partners' => 'Partner',
       'recentlyCreated' => 'Kürzlich erstellt',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
       'month' => 'Monat',
       'week' => 'Woche',
@@ -3189,7 +3211,7 @@ Passwort: {password}
       'agendaDay' => 'Tag',
       'timeline' => 'Zeitachse',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Today' => 'Heute',
       'Create' => 'Erstellen',
@@ -3203,9 +3225,9 @@ Passwort: {password}
       'Create Shared View' => 'Gemeinsame Ansicht erstellen',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'parent' => 'Bezieht sich auf',
@@ -3222,23 +3244,23 @@ Passwort: {password}
       'account' => 'Firma',
       'acceptanceStatus' => 'Akzeptanzstatus',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Geplant',
         'Held' => 'Durchgeführt',
         'Not Held' => 'Nicht durchgeführt',
       ),
-      'direction' => 
+      'direction' =>
       array (
         'Outbound' => 'Ausgehend',
         'Inbound' => 'Eingehend',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => 'Kein(e)',
         'Accepted' => 'Akzeptiert',
@@ -3246,28 +3268,28 @@ Passwort: {password}
         'Tentative' => 'Mit Vorbehalt',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Auf durchgeführt setzen',
       'setNotHeld' => 'Auf nicht durchgeführt setzen',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Call' => 'Anruf erstellen',
       'Set Held' => 'Auf durchgeführt setzen',
       'Set Not Held' => 'Auf nicht durchgeführt setzen',
       'Send Invitations' => 'Einladungen versenden',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Geplant',
       'held' => 'Durchgeführt',
       'todays' => 'Heutige',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'description' => 'Beschreibung',
@@ -3296,7 +3318,7 @@ Passwort: {password}
       'usersTemplate' => 'Benutzervorlage',
       'mailMergeOnlyWithAddress' => 'Datensätze ohne gefüllte Adresse überspringen',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Kontaktlisten',
       'excludingTargetLists' => 'Kontaktlisten ausschließen',
@@ -3312,9 +3334,9 @@ Passwort: {password}
       'accountsTemplate' => 'Kontenvorlage',
       'usersTemplate' => 'Benutzervorlage',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'E-Mail',
         'Web' => 'Web',
@@ -3323,7 +3345,7 @@ Passwort: {password}
         'Newsletter' => 'Newsletter',
         'Mail' => 'Mail',
       ),
-      'status' => 
+      'status' =>
       array (
         'Planning' => 'Planung',
         'Active' => 'Aktiv',
@@ -3331,7 +3353,7 @@ Passwort: {password}
         'Complete' => 'Abgeschlossen',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Campaign' => 'Neue Kampagne',
       'Target Lists' => 'Kontaktlisten',
@@ -3347,24 +3369,24 @@ Passwort: {password}
       'Mail Merge' => 'Serienbrief',
       'Generate Mail Merge PDF' => 'Serienbrief-PDF generieren',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'unsubscribed' => 'Sie wurden erfolgreich aus unserem Verteiler entfernt',
       'subscribedAgain' => 'Sie sind wieder angemeldet.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'targetLists' => 'Zielkontakte die Nachrichten empfangen sollen',
       'excludingTargetLists' => 'Zielkontakte die keine Nachrichten empfangen sollen',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'action' => 'Aktion',
       'actionDate' => 'Datum',
@@ -3378,16 +3400,16 @@ Passwort: {password}
       'stringAdditionalData' => 'String zusätzliche Daten',
       'isTest' => 'Ist Test',
     ),
-    'links' => 
+    'links' =>
     array (
       'queueItem' => 'Warteschlangeneintrag',
       'parent' => 'Bezieht sich auf',
       'object' => 'Objekt',
       'campaign' => 'Kampagne',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Sent' => 'Gesendet',
         'Opened' => 'Geöffnet',
@@ -3398,11 +3420,11 @@ Passwort: {password}
         'Opted In' => 'Opt-In gesetzt',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'All' => 'Alle',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Gesendet',
       'opened' => 'Geöffnet',
@@ -3413,26 +3435,26 @@ Passwort: {password}
       'leadCreated' => 'Interessent erstellt',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'url' => 'URL',
       'urlToUse' => 'Code zum Einfügen anstelle einer URL',
       'campaign' => 'Kampagne',
     ),
-    'links' => 
+    'links' =>
     array (
       'campaign' => 'Kampagne',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create CampaignTrackingUrl' => 'Tracking URL erstellen',
     ),
   ),
-  'Case' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'number' => 'Nummer',
@@ -3447,7 +3469,7 @@ Passwort: {password}
       'lead' => 'Interessent',
       'attachments' => 'Anhänge',
     ),
-    'links' => 
+    'links' =>
     array (
       'inboundEmail' => 'Gruppen E-Mail Konto',
       'account' => 'Firma',
@@ -3461,9 +3483,9 @@ Passwort: {password}
       'lead' => 'Interessent',
       'attachments' => 'Anhänge',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Neu',
         'Assigned' => 'Zugewiesen',
@@ -3472,21 +3494,21 @@ Passwort: {password}
         'Rejected' => 'Abgelehnt',
         'Duplicate' => 'Duplizieren',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Niedrig',
         'Normal' => 'Normal',
         'High' => 'Hoch',
         'Urgent' => 'Dringend',
       ),
-      'type' => 
+      'type' =>
       array (
         'Question' => 'Frage',
         'Incident' => 'Vorfall',
         'Problem' => 'Problem',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Case' => 'Fall erstellen',
       'Close' => 'Schließen',
@@ -3494,15 +3516,15 @@ Passwort: {password}
       'Closed' => 'Abgeschlossen',
       'Rejected' => 'Abgelehnt',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Offen',
       'closed' => 'Abgeschlossen',
     ),
   ),
-  'Contact' => 
+  'Contact' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'emailAddress' => 'E-Mail',
@@ -3529,7 +3551,7 @@ Passwort: {password}
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
       'opportunities' => 'Verkaufschancen',
       'cases' => 'Fälle',
@@ -3546,13 +3568,13 @@ Passwort: {password}
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Contact' => 'Kontakt erstellen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
         '' => '--Kein(e)--',
         'Decision Maker' => 'Entscheider',
@@ -3560,25 +3582,25 @@ Passwort: {password}
         'Influencer' => 'Einflussreiche Person',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'portalUsers' => 'Portal Benutzer',
       'notPortalUsers' => 'Keine Portal Benutzer',
       'accountActive' => 'Aktiv',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Document' => 'Dokument erstellen',
       'Details' => 'Details',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -3591,7 +3613,7 @@ Passwort: {password}
       'folder' => 'Ordner',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Firmen',
       'opportunities' => 'Verkaufschancen',
@@ -3600,16 +3622,16 @@ Passwort: {password}
       'contacts' => 'Kontakte',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktiv',
         'Draft' => 'Entwurf',
         'Expired' => 'Abgelaufen',
         'Canceled' => 'Storniert',
       ),
-      'type' => 
+      'type' =>
       array (
         '' => 'Kein(e)',
         'Contract' => 'Vertrag',
@@ -3618,28 +3640,28 @@ Passwort: {password}
         'License Agreement' => 'Lizenzvereinbarung',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
       'draft' => 'Entwurf',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create DocumentFolder' => 'Dokumentenordner erstellen',
       'Manage Categories' => 'Ordner verwalten',
       'Documents' => 'Dokumente',
     ),
-    'links' => 
+    'links' =>
     array (
       'documents' => 'Dokumente',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -3650,14 +3672,14 @@ Passwort: {password}
       'massEmail' => 'Massen E-Mails',
       'isTest' => 'Ist Test',
     ),
-    'links' => 
+    'links' =>
     array (
       'target' => 'Ziel',
       'massEmail' => 'Massen E-Mails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Schwebend',
         'Sent' => 'Gesendet',
@@ -3665,16 +3687,16 @@ Passwort: {password}
         'Sending' => 'Wird gesendet',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'pending' => 'Schwebend',
       'sent' => 'Gesendet',
       'failed' => 'Fehlgeschlagen',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseArticle' => 'Artikel erstellen',
       'Any' => 'Beliebig',
@@ -3684,7 +3706,7 @@ Passwort: {password}
       'Move to Top' => 'zu Anfang',
       'Move to Bottom' => 'zum Ende',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -3698,59 +3720,59 @@ Passwort: {password}
       'language' => 'Sprache',
       'portals' => 'Portale',
     ),
-    'links' => 
+    'links' =>
     array (
       'cases' => 'Fälle',
       'opportunities' => 'Verkaufschancen',
       'categories' => 'Kategorien',
       'portals' => 'Portale',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'In Review' => 'In Prüfung',
         'Draft' => 'Entwurf',
         'Archived' => 'Archiviert',
         'Published' => 'Veröffentlicht',
       ),
-      'type' => 
+      'type' =>
       array (
         'Article' => 'Artikel',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portals' => 'Artikel wird nur in bestimmten Portalen verfügbar sein.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'published' => 'Publiziert',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseCategory' => 'Neue Kategorie',
       'Manage Categories' => 'Kategorien verwalten',
       'Articles' => 'Artikel',
     ),
-    'links' => 
+    'links' =>
     array (
       'articles' => 'Artikel',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Converted To' => 'Umgewandelt zu',
       'Create Lead' => 'Interessent erstellen',
       'Convert' => 'Umwandeln',
       'convert' => 'umwandeln',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'emailAddress' => 'E-Mail',
@@ -3777,7 +3799,7 @@ Passwort: {password}
       'acceptanceStatusMeetings' => 'Akzeptanzstatus (Meetings)',
       'acceptanceStatusCalls' => 'Akzeptanzstatus (Anrufe)',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Kontaktlisten',
       'campaignLogRecords' => 'Kampagnen Log',
@@ -3788,9 +3810,9 @@ Passwort: {password}
       'cases' => 'Fälle',
       'documents' => 'Dokumente',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Neu',
         'Assigned' => 'Zugewiesen',
@@ -3799,7 +3821,7 @@ Passwort: {password}
         'Recycled' => 'Wiedereröffnet',
         'Dead' => '\'Gestorben\'',
       ),
-      'source' => 
+      'source' =>
       array (
         '' => 'Kein(e)',
         'Call' => 'Anruf',
@@ -3812,16 +3834,16 @@ Passwort: {password}
         'Other' => 'Andere',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktiv',
       'actual' => 'Aktuell',
       'converted' => 'Umgewandelt',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -3839,7 +3861,7 @@ Passwort: {password}
       'optOutEntirely' => 'Vollständiger Opt-Out',
       'smtpAccount' => 'SMTP-Konto',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Kontaktlisten',
       'excludingTargetLists' => 'Kontaktlisten ausschließen',
@@ -3848,9 +3870,9 @@ Passwort: {password}
       'emailTemplate' => 'E-Mail Vorlage',
       'inboundEmail' => 'E-Mail Konto',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Entwurf',
         'Pending' => 'Schwebend',
@@ -3860,7 +3882,7 @@ Passwort: {password}
         'Failed' => 'Fehlgeschlagen',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create MassEmail' => 'Massen E-Mail erstellen',
       'Send Test' => 'Test senden',
@@ -3868,27 +3890,27 @@ Passwort: {password}
       'system' => 'System',
       'group' => 'Gruppe',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectAtLeastOneTarget' => 'Zumindest ein Ziel auswählen',
       'testSent' => 'Test E-Mail(s) die gesendet werden sollen',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optOutEntirely' => 'Für E-Mail Adressen von Empfängern, die sich abgemeldet haben, wird ein Opt-out gesetzt. Diese werden keine Massenaussendungen mehr erhalten.',
       'targetLists' => 'Zielkontakte die Nachrichten empfangen sollen',
       'excludingTargetLists' => 'Zielkontakte die keine Nachrichten empfangen sollen',
       'storeSentEmails' => 'E-Mails werden in CRM gespeichert.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Aktuell',
       'complete' => 'Fertig',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'parent' => 'Bezieht sich auf',
@@ -3905,19 +3927,19 @@ Passwort: {password}
       'acceptanceStatus' => 'Akzeptanzstatus',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Geplant',
         'Held' => 'Abgehalten',
         'Not Held' => 'Nicht durchgeführt',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => 'Kein(e)',
         'Accepted' => 'Akzeptiert',
@@ -3925,12 +3947,12 @@ Passwort: {password}
         'Tentative' => 'Mit Vorbehalt',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Auf abgehalten setzen',
       'setNotHeld' => 'Auf nicht abgehalten setzen',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Meeting' => 'Meeting erstellen',
       'Set Held' => 'Auf abgehalten setzen',
@@ -3939,20 +3961,20 @@ Passwort: {password}
       'on time' => 'Genaue Uhrzeit',
       'before' => 'vorher',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Geplant',
       'held' => 'Abgehalten',
       'todays' => 'Heutige',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'nothingHasBeenSent' => 'Es wurde nicht gesendet',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'account' => 'Firma',
@@ -3972,16 +3994,16 @@ Passwort: {password}
       'contactRole' => 'Kontaktrolle',
       'lastStage' => 'Letzte Verkaufsphase',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontakte',
       'documents' => 'Dokumente',
       'campaign' => 'Kampagne',
       'originalLead' => 'Ursprünglicher Interessent',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
         'Prospecting' => 'Identifikation',
         'Qualification' => 'Qualifikation',
@@ -3997,41 +4019,41 @@ Passwort: {password}
         'Closed Lost' => 'Verloren',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Opportunity' => 'Verkaufschance erstellen',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Offen',
       'won' => 'Gewonnen',
       'lost' => 'Verloren',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4042,9 +4064,9 @@ Passwort: {password}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'description' => 'Beschreibung',
@@ -4058,7 +4080,7 @@ Passwort: {password}
       'targetStatus' => 'Zielstatus',
       'isOptedOut' => 'Ist Opt-Out gesetzt',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Firmen',
       'contacts' => 'Kontakte',
@@ -4066,9 +4088,9 @@ Passwort: {password}
       'campaigns' => 'Kampagnen',
       'massEmails' => 'Massen E-Mails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'E-Mail',
         'Web' => 'Web',
@@ -4076,13 +4098,13 @@ Passwort: {password}
         'Radio' => 'Radio',
         'Newsletter' => 'Newsletter',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Opt-Out gesetzt',
         'Listed' => 'aufgelistet',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create TargetList' => 'Kontaktliste erstellen',
       'Opted Out' => 'Opt-Out gesetzt',
@@ -4090,9 +4112,9 @@ Passwort: {password}
       'Opt-Out' => 'Opt-Out',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'parent' => 'Bezieht sich auf',
@@ -4110,15 +4132,15 @@ Passwort: {password}
       'reminders' => 'Erinnerungen',
       'contact' => 'Kontakt',
     ),
-    'links' => 
+    'links' =>
     array (
       'attachments' => 'Anhänge',
       'account' => 'Firma',
       'contact' => 'Kontakt',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Not Started' => 'Nicht begonnen',
         'Started' => 'In Bearbeitung',
@@ -4126,7 +4148,7 @@ Passwort: {password}
         'Canceled' => 'Storniert',
         'Deferred' => 'Zurückgestellt',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Niedrig',
         'Normal' => 'Normal',
@@ -4134,12 +4156,12 @@ Passwort: {password}
         'Urgent' => 'Dringend',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Task' => 'Neue Aufgabe',
       'Complete' => 'Fertig',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Aktuell',
       'completed' => 'Abgeschlossen',
@@ -4148,9 +4170,158 @@ Passwort: {password}
       'overdue' => 'Überfällig',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
+    array (
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Anrufe',
+      'tasks' => 'Aufgaben',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Beneficios erstellen',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Anrufe',
+      'tasks' => 'Aufgaben',
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Categoria erstellen',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Anrufe',
+      'tasks' => 'Aufgaben',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Ciudad erstellen',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Anrufe',
+      'tasks' => 'Aufgaben',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Comuna erstellen',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Anrufe',
+      'tasks' => 'Aufgaben',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Doctos_beneficio erstellen',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Empresa erstellen',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
     array (
       'address' => 'Adresse',
       'meetings1' => 'Meetings1',
@@ -4169,7 +4340,7 @@ Passwort: {password}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Meetings',
       'calls' => 'Anrufe',
@@ -4182,13 +4353,13 @@ Passwort: {password}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Formularios' => 'Formulario erstellen',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4197,15 +4368,15 @@ Passwort: {password}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4214,7 +4385,7 @@ Passwort: {password}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4228,51 +4399,192 @@ Passwort: {password}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'Proveedor' =>
   array (
-    'fields' => 
+    'fields' =>
+    array (
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Proveedor' => 'Proveedor erstellen',
+    ),
+  ),
+  'Rol' =>
+  array (
+    'fields' =>
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Anrufe',
+      'tasks' => 'Aufgaben',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Rol' => 'Rol erstellen',
+    ),
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Adresse',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+  'MotivoReclamo' =>
+  array (
+    'fields' =>
     array (
       'motivoReclamoId' => 'MotivoReclamoId',
       'motivoReclamoDescripcion' => 'Descripción',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Meetings',
       'calls' => 'Anrufe',
       'tasks' => 'Aufgaben',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Solicitudes erstellen',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create MotivoReclamo' => 'MotivoReclamo erstellen',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
     ),
   ),
-  'Reclamo' => 
+  'Reclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'reclamoId' => 'ReclamoId',
       'reclamoTitulo' => 'Título',
       'reclamoObservacion' => 'Observación',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Meetings',
       'calls' => 'Anrufe',
       'tasks' => 'Aufgaben',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'labels' =>
+    array (
+      'Create Subcategoria' => 'Subcategoria erstellen',
+    ),
+  ),
+  'Trabajador' =>
+  array (
+    'fields' =>
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'links' =>
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'labels' =>
+    array (
+      'Create Trabajador' => 'Trabajador erstellen',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Reclamo' => 'Reclamo erstellen',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reclamoTitulo' => 'Breve descripción del reclamo',
       'reclamoObservacion' => 'Describa su situación',

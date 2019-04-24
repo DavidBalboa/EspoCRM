@@ -66,7 +66,7 @@ return (object) [
                     'EmailQueueItem' => false
                 ],
                 'fieldLevel' => (object) [
-                    
+
                 ],
                 'scopeFieldLevel' => (object) [
                     'Attachment' => (object) [
@@ -94,7 +94,7 @@ return (object) [
                     'Import' => false
                 ],
                 'fieldLevel' => (object) [
-                    
+
                 ],
                 'scopeFieldLevel' => (object) [
                     'User' => (object) [
@@ -111,7 +111,7 @@ return (object) [
                     'Import' => false
                 ],
                 'fieldLevel' => (object) [
-                    
+
                 ],
                 'scopeFieldLevel' => (object) [
                     'User' => (object) [
@@ -216,7 +216,7 @@ return (object) [
                     'EmailQueueItem' => false
                 ],
                 'fieldLevel' => (object) [
-                    
+
                 ],
                 'scopeFieldLevel' => (object) [
                     'Preferences' => (object) [
@@ -270,7 +270,7 @@ return (object) [
             ],
             'strictDefault' => (object) [
                 'scopeLevel' => (object) [
-                    
+
                 ],
                 'fieldLevel' => (object) [
                     'assignedUser' => (object) [
@@ -1476,13 +1476,13 @@ return (object) [
                 ]
             ],
             'filterList' => [
-                
+
             ],
             'defaultFilterData' => (object) [
-                
+
             ],
             'boolFilterList' => [
-                
+
             ],
             'iconClass' => 'fas fa-envelope'
         ],
@@ -1785,16 +1785,16 @@ return (object) [
             ],
             'defaultSidePanelFieldLists' => (object) [
                 'detail' => [
-                    
+
                 ],
                 'detailSmall' => [
-                    
+
                 ],
                 'edit' => [
-                    
+
                 ],
                 'editSmall' => [
-                    
+
                 ]
             ]
         ],
@@ -2052,7 +2052,7 @@ return (object) [
                 0 => 'activePortal'
             ],
             'boolFilterList' => [
-                
+
             ],
             'selectDefaultFilters' => (object) [
                 'filter' => 'activePortal'
@@ -3790,6 +3790,152 @@ return (object) [
             'iconClass' => 'fas fa-tasks',
             'kanbanViewMode' => true
         ],
+        'Beneficios' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ]
+        ],
+        'Categoria' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ]
+        ],
+        'Ciudad' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ]
+        ],
+        'Comuna' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ]
+        ],
+        'DoctosBeneficio' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ]
+        ],
+        'Empresa' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ]
+        ],
         'Formularios' => (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
@@ -3822,6 +3968,41 @@ return (object) [
             'kanbanViewMode' => false
         ],
         'MotivoReclamo' => (object) [
+        'Proveedor' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ]
+        ],
+        'Rol' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ]
+        ],
+        'Solicitudes' => (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
                 0 => 'onlyMy'
@@ -3848,10 +4029,11 @@ return (object) [
                     ]
                 ]
             ],
-            'color' => '#ff0000',
-            'iconClass' => 'fas fa-caret-square-up'
+            'kanbanViewMode' => false,
+            'color' => NULL,
+            'iconClass' => NULL
         ],
-        'Reclamo' => (object) [
+        'Subcategoria' => (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
                 0 => 'onlyMy'
@@ -3880,6 +4062,15 @@ return (object) [
             ],
             'color' => '#ff0000',
             'iconClass' => 'fas fa-tired'
+            'kanbanViewMode' => false,
+            'color' => NULL,
+            'iconClass' => NULL
+        ],
+        'Trabajador' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ]
         ]
     ],
     'dashlets' => (object) [
@@ -4036,7 +4227,7 @@ return (object) [
                     'autorefreshInterval' => 0.5,
                     'expandedLayout' => (object) [
                         'rows' => [
-                            
+
                         ]
                     ]
                 ],
@@ -5802,6 +5993,14 @@ return (object) [
                         3 => 'Opportunity',
                         4 => 'Case',
                         5 => 'Formularios',
+                        6 => 'Solicitudes',
+                        7 => 'Categoria',
+                        8 => 'Subcategoria',
+                        9 => 'Beneficios',
+                        10 => 'DoctosBeneficio',
+                        11 => 'Ciudad',
+                        12 => 'Comuna',
+                        13 => 'Rol'
                         6 => 'Reclamo',
                         7 => 'MotivoReclamo'
                     ]
@@ -5971,7 +6170,7 @@ return (object) [
                 'parent' => (object) [
                     'type' => 'belongsToParent',
                     'entityList' => [
-                        
+
                     ],
                     'foreign' => 'emails'
                 ],
@@ -6277,7 +6476,7 @@ return (object) [
                 ]
             ],
             'links' => (object) [
-                
+
             ],
             'collection' => (object) [
                 'sortBy' => 'name',
@@ -7597,7 +7796,7 @@ return (object) [
                 ]
             ],
             'links' => (object) [
-                
+
             ],
             'collection' => (object) [
                 'sortBy' => 'name',
@@ -10460,6 +10659,14 @@ return (object) [
                         3 => 'Opportunity',
                         4 => 'Case',
                         5 => 'Formularios',
+                        6 => 'Solicitudes',
+                        7 => 'Categoria',
+                        8 => 'Subcategoria',
+                        9 => 'Beneficios',
+                        10 => 'DoctosBeneficio',
+                        11 => 'Ciudad',
+                        12 => 'Comuna',
+                        13 => 'Rol'
                         6 => 'Reclamo',
                         7 => 'MotivoReclamo'
                     ]
@@ -12812,7 +13019,7 @@ return (object) [
             ],
             'convertFields' => (object) [
                 'Contact' => (object) [
-                    
+
                 ],
                 'Account' => (object) [
                     'name' => 'accountName',
@@ -13081,6 +13288,14 @@ return (object) [
                         3 => 'Opportunity',
                         4 => 'Case',
                         5 => 'Formularios',
+                        6 => 'Solicitudes',
+                        7 => 'Categoria',
+                        8 => 'Subcategoria',
+                        9 => 'Beneficios',
+                        10 => 'DoctosBeneficio',
+                        11 => 'Ciudad',
+                        12 => 'Comuna',
+                        13 => 'Rol'
                         6 => 'Reclamo',
                         7 => 'MotivoReclamo'
                     ]
@@ -14110,6 +14325,14 @@ return (object) [
                         3 => 'Opportunity',
                         4 => 'Case',
                         5 => 'Formularios',
+                        6 => 'Solicitudes',
+                        7 => 'Categoria',
+                        8 => 'Subcategoria',
+                        9 => 'Beneficios',
+                        10 => 'DoctosBeneficio',
+                        11 => 'Ciudad',
+                        12 => 'Comuna',
+                        13 => 'Rol'
                         6 => 'Reclamo',
                         7 => 'MotivoReclamo'
                     ]
@@ -14232,6 +14455,847 @@ return (object) [
                 ]
             ]
         ],
+        'Beneficios' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'titulo' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'descripcion' => (object) [
+                    'type' => 'wysiwyg',
+                    'required' => false,
+                    'readOnly' => false,
+                    'useIframe' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'direccion' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'validohasta' => (object) [
+                    'notNull' => false,
+                    'type' => 'date',
+                    'required' => false,
+                    'useNumericFormat' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'titulolegal' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'descripcionlegal' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'pasoapaso' => (object) [
+                    'type' => 'wysiwyg',
+                    'required' => false,
+                    'readOnly' => false,
+                    'useIframe' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'empresa' => (object) [
+                    'type' => 'link'
+                ],
+                'proveedor' => (object) [
+                    'type' => 'link'
+                ],
+                'rol' => (object) [
+                    'type' => 'link'
+                ],
+                'comuna' => (object) [
+                    'type' => 'link'
+                ],
+                'categoria' => (object) [
+                    'type' => 'link'
+                ],
+                'doctosBeneficios' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'empresa' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'beneficios',
+                    'entity' => 'Empresa',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'proveedor' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'beneficios',
+                    'entity' => 'Proveedor',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'rol' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'beneficioss',
+                    'entity' => 'Rol',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'comuna' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'beneficios',
+                    'entity' => 'Comuna',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'categoria' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'beneficios',
+                    'entity' => 'Categoria',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'doctosBeneficios' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'beneficios',
+                    'entity' => 'DoctosBeneficio',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Categoria' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'nombreCategoria' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'subcategorias' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'categoria',
+                    'entity' => 'Beneficios',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'subcategorias' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'categoria',
+                    'entity' => 'Subcategoria',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Ciudad' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'comunas' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'comunas' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'ciudad',
+                    'entity' => 'Comuna',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Comuna' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'ciudad' => (object) [
+                    'type' => 'link'
+                ],
+                'trabajador' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'ciudad' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'comunas',
+                    'entity' => 'Ciudad',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'trabajador' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'comunarelacion',
+                    'entity' => 'Trabajador',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'comuna',
+                    'entity' => 'Beneficios',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'DoctosBeneficio' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'descripcion' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'documentosbeneficio' => (object) [
+                    'type' => 'file',
+                    'required' => false,
+                    'sourceList' => [
+
+                    ],
+                    'audited' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'link'
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'documentosbeneficio' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'Attachment',
+                    'skipOrmDefs' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'doctosBeneficios',
+                    'entity' => 'Beneficios',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Empresa' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'beneficios' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'trabajador' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'empresa',
+                    'entity' => 'Beneficios',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'trabajador' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'trabajadorEmpresa',
+                    'foreign' => 'empresa',
+                    'entity' => 'Trabajador',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
         'Formularios' => (object) [
             'fields' => (object) [
                 'name' => (object) [
@@ -14347,7 +15411,7 @@ return (object) [
                     'required' => true,
                     'trim' => true,
                     'maxLength' => 20,
-                    'tooltipText' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+                    'tooltipText' => 'Ingrese Rut  (Ej: 12.345.678-9)',
                     'isPersonalData' => false,
                     'audited' => false,
                     'readOnly' => false,
@@ -14576,6 +15640,914 @@ return (object) [
                     'columns' => [
                         0 => 'firstName',
                         1 => 'lastName'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Proveedor' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'rut' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'direccion' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'beneficios' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'proveedor',
+                    'entity' => 'Beneficios',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Rol' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'beneficioss' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'trabajador' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'beneficioss' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'rol',
+                    'entity' => 'Beneficios',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'trabajador' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'trabajadorRol',
+                    'foreign' => 'rol',
+                    'entity' => 'Trabajador',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Solicitudes' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'personName',
+                    'isPersonalData' => true
+                ],
+                'salutationName' => (object) [
+                    'type' => 'enum',
+                    'options' => [
+                        0 => '',
+                        1 => 'Mr.',
+                        2 => 'Ms.',
+                        3 => 'Mrs.',
+                        4 => 'Dr.'
+                    ]
+                ],
+                'firstName' => (object) [
+                    'type' => 'varchar',
+                    'trim' => true,
+                    'maxLength' => 100,
+                    'default' => ''
+                ],
+                'lastName' => (object) [
+                    'type' => 'varchar',
+                    'trim' => true,
+                    'maxLength' => 100,
+                    'required' => true,
+                    'default' => ''
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'emailAddress' => (object) [
+                    'type' => 'email',
+                    'isPersonalData' => true
+                ],
+                'phoneNumber' => (object) [
+                    'type' => 'phone',
+                    'typeList' => [
+                        0 => 'Mobile',
+                        1 => 'Office',
+                        2 => 'Home',
+                        3 => 'Fax',
+                        4 => 'Other'
+                    ],
+                    'defaultType' => 'Mobile',
+                    'isPersonalData' => true
+                ],
+                'address' => (object) [
+                    'type' => 'address',
+                    'isPersonalData' => true
+                ],
+                'addressStreet' => (object) [
+                    'type' => 'text',
+                    'maxLength' => 255,
+                    'dbType' => 'varchar'
+                ],
+                'addressCity' => (object) [
+                    'type' => 'varchar',
+                    'trim' => true
+                ],
+                'addressState' => (object) [
+                    'type' => 'varchar',
+                    'trim' => true
+                ],
+                'addressCountry' => (object) [
+                    'type' => 'varchar',
+                    'trim' => true
+                ],
+                'addressPostalCode' => (object) [
+                    'type' => 'varchar',
+                    'trim' => true
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => false,
+                    'notNull' => false,
+                    'isPersonalData' => false,
+                    'required' => true,
+                    'useNumericFormat' => false,
+                    'audited' => false,
+                    'tooltip' => false
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => false,
+                    'notNull' => false,
+                    'isPersonalData' => false,
+                    'required' => false,
+                    'useNumericFormat' => false,
+                    'audited' => false,
+                    'tooltip' => false
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => false,
+                    'view' => 'views/fields/user',
+                    'required' => false,
+                    'audited' => false,
+                    'tooltip' => false
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => false,
+                    'view' => 'views/fields/user',
+                    'required' => false,
+                    'audited' => false,
+                    'tooltip' => false
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => false,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'rut' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => false,
+                    'audited' => false,
+                    'isPersonalData' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'estadoSolicitud' => (object) [
+                    'type' => 'enum',
+                    'required' => true,
+                    'options' => [
+                        0 => 'Aprobado',
+                        1 => 'En proceso',
+                        2 => 'Rechazado',
+                        3 => 'Cancelado'
+                    ],
+                    'audited' => true,
+                    'isPersonalData' => false,
+                    'default' => 'Aprobado',
+                    'isSorted' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'beneficio' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => false,
+                    'isPersonalData' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'carga' => (object) [
+                    'type' => 'multiEnum',
+                    'storeArrayValues' => true,
+                    'required' => false,
+                    'isPersonalData' => false,
+                    'options' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'ciudad' => (object) [
+                    'type' => 'enum',
+                    'required' => false,
+                    'isPersonalData' => false,
+                    'options' => false,
+                    'isSorted' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'categoria' => (object) [
+                    'type' => 'enum',
+                    'required' => false,
+                    'isPersonalData' => false,
+                    'options' => false,
+                    'isSorted' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'subcategoria' => (object) [
+                    'type' => 'enum',
+                    'required' => false,
+                    'isPersonalData' => false,
+                    'options' => false,
+                    'isSorted' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'documento' => (object) [
+                    'type' => 'file',
+                    'required' => false,
+                    'isPersonalData' => false,
+                    'sourceList' => [
+
+                    ],
+                    'audited' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'numeroSolicitud' => (object) [
+                    'type' => 'number',
+                    'len' => 36,
+                    'notNull' => false,
+                    'unique' => false,
+                    'nextNumber' => 5,
+                    'padLength' => 5,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'fechahasta' => (object) [
+                    'notNull' => false,
+                    'type' => 'date',
+                    'required' => false,
+                    'isPersonalData' => false,
+                    'useNumericFormat' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'relacionsubcategoria' => (object) [
+                    'type' => 'link'
+                ],
+                'emailAddressIsOptedOut' => (object) [
+                    'type' => 'bool',
+                    'notStorable' => true,
+                    'layoutDetailDisabled' => true,
+                    'mergeDisabled' => true,
+                    'customizationDefaultDisabled' => true,
+                    'customizationReadOnlyDisabled' => true
+                ],
+                'addressMap' => (object) [
+                    'type' => 'map',
+                    'notStorable' => true,
+                    'readOnly' => true,
+                    'layoutListDisabled' => true,
+                    'provider' => 'Google',
+                    'height' => 300,
+                    'exportDisabled' => true,
+                    'importDisabled' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'documento' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'Attachment',
+                    'skipOrmDefs' => true
+                ],
+                'relacionsubcategoria' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'relacionsolicitudes',
+                    'entity' => 'Subcategoria',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false,
+                'textFilterFields' => [
+                    0 => 'name',
+                    1 => 'rut'
+                ],
+                'fullTextSearch' => false
+            ],
+            'indexes' => (object) [
+                'firstName' => (object) [
+                    'columns' => [
+                        0 => 'firstName',
+                        1 => 'deleted'
+                    ]
+                ],
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'firstName',
+                        1 => 'lastName'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Subcategoria' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'idcategoria' => (object) [
+                    'type' => 'int',
+                    'required' => false,
+                    'disableFormatting' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'nombreSubcategoria' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'relacionsolicitudes' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'categoria' => (object) [
+                    'type' => 'link',
+                    'required' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'relacionsolicitudes' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'relacionsubcategoria',
+                    'entity' => 'Solicitudes',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'categoria' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'subcategorias',
+                    'entity' => 'Categoria',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false,
+                'textFilterFields' => [
+                    0 => 'name',
+                    1 => 'nombreSubcategoria'
+                ],
+                'fullTextSearch' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'Trabajador' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'nombre' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'rut' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'apellidopaterno' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'apellidomaterno' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'nombrecompleto' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'direccion' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'email' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'telefono' => (object) [
+                    'type' => 'number',
+                    'len' => 36,
+                    'notNull' => false,
+                    'unique' => false,
+                    'nextNumber' => 1,
+                    'padLength' => 9,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'comunarelacion' => (object) [
+                    'type' => 'link'
+                ],
+                'rol' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
+                ],
+                'empresa' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'comunarelacion' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'trabajador',
+                    'entity' => 'Comuna',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'rol' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'trabajadorRol',
+                    'foreign' => 'trabajador',
+                    'entity' => 'Rol',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'empresa' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'trabajadorEmpresa',
+                    'foreign' => 'trabajador',
+                    'entity' => 'Empresa',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
                     ]
                 ],
                 'assignedUser' => (object) [
@@ -15032,7 +17004,7 @@ return (object) [
         ],
         'autoincrement' => (object) [
             'params' => [
-                
+
             ],
             'notCreatable' => false,
             'filter' => true,
@@ -15149,7 +17121,7 @@ return (object) [
         ],
         'currencyConverted' => (object) [
             'params' => [
-                
+
             ],
             'filter' => true,
             'notCreatable' => true,
@@ -16804,6 +18776,144 @@ return (object) [
                 1 => 'Deferred'
             ]
         ],
+        'Beneficios' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
+        'Categoria' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
+        'Ciudad' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
+        'Comuna' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
+        'DoctosBeneficio' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
+        'Empresa' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'Base',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
         'Formularios' => (object) [
             'entity' => true,
             'layouts' => true,
@@ -16829,6 +18939,30 @@ return (object) [
             'isCustom' => true,
             'statusField' => NULL
         ],
+        'Proveedor' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'Base',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
+        'Rol' => (object) [
         'MotivoReclamo' => (object) [
             'entity' => true,
             'layouts' => true,
@@ -16852,6 +18986,32 @@ return (object) [
             'object' => true,
             'isCustom' => true
         ],
+        'Solicitudes' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'hasPersonalData' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'Person',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true,
+            'statusField' => NULL
+        ],
+        'Subcategoria' => (object) [
         'Reclamo' => (object) [
             'entity' => true,
             'layouts' => true,
@@ -16871,6 +19031,30 @@ return (object) [
             'stream' => false,
             'disabled' => false,
             'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true,
+            'statusField' => NULL
+        ],
+        'Trabajador' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'Base',
             'module' => 'Custom',
             'object' => true,
             'isCustom' => true

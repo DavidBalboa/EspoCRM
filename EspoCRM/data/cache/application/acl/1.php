@@ -349,6 +349,48 @@ return (object) [
             'delete' => 'all',
             'create' => 'yes'
         ],
+        'Beneficios' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Categoria' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Ciudad' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Comuna' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'DoctosBeneficio' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
+        'Empresa' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
         'Formularios' => (object) [
             'read' => 'all',
             'stream' => 'all',
@@ -372,10 +414,10 @@ return (object) [
         ]
     ],
     'fieldTable' => (object) [
-        
+
     ],
     'fieldTableQuickAccess' => (object) [
-        
+
     ],
     'assignmentPermission' => 'all',
     'userPermission' => 'all',

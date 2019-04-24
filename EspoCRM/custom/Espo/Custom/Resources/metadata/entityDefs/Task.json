@@ -8,6 +8,14 @@
                 "Opportunity",
                 "Case",
                 "Formularios",
+                "Solicitudes",
+                "Categoria",
+                "Subcategoria",
+                "Beneficios",
+                "DoctosBeneficio",
+                "Ciudad",
+                "Comuna",
+                "Rol",
                 "Reclamo",
                 "MotivoReclamo"
             ]

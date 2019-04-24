@@ -1,293 +1,293 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'User',
-      'action' => 'Action',
-      'createdAt' => 'Data',
-      'target' => 'Target',
-      'targetType' => 'Target Type',
-      'authToken' => 'Token di autenticazione',
-      'ipAddress' => 'IP Address',
+      'user' => 'Usuario',
+      'action' => 'Acción',
+      'createdAt' => 'Fecha',
+      'target' => 'Entidad objetivo',
+      'targetType' => 'Tipo de entidad',
+      'authToken' => 'Token de autenticación',
+      'ipAddress' => 'Dirección IP',
       'authLogRecord' => 'Auth Log Record',
     ),
-    'links' => 
+    'links' =>
     array (
-      'authToken' => 'Token di autenticazione',
+      'authToken' => 'Token de autenticación',
       'authLogRecord' => 'Auth Log Record',
-      'user' => 'User',
-      'target' => 'Target',
+      'user' => 'Usuario',
+      'target' => 'Objetivo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'onlyMy' => 'Only My',
+      'onlyMy' => 'Solo míos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'read' => 'Read',
-        'update' => 'Aggiorna',
-        'delete' => 'Elimina',
-        'create' => 'Crea',
+        'read' => 'Leer',
+        'update' => 'Guardar',
+        'delete' => 'Eliminar',
+        'create' => 'Crear',
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Enabled' => 'Abilitato',
-      'Disabled' => 'Disabilitato',
+      'Enabled' => 'Activado',
+      'Disabled' => 'Desactivado',
       'System' => 'Sistema',
-      'Users' => 'Utenti',
-      'Email' => 'Email',
-      'Data' => 'Dati',
-      'Customization' => 'Personalizzazione',
-      'Available Fields' => 'Campi disponibili',
-      'Layout' => 'Layout',
-      'Entity Manager' => 'Gestione Entità',
-      'Add Panel' => 'Aggiungi pannello',
-      'Add Field' => 'Aggiungi campo',
-      'Settings' => 'Impostazioni',
-      'Scheduled Jobs' => 'Jobs pianificati',
-      'Upgrade' => 'Aggiornamento',
-      'Clear Cache' => 'Svuota cache',
-      'Rebuild' => 'Ricostruisci',
-      'Teams' => 'Teams',
-      'Roles' => 'Ruoli',
-      'Portal' => 'Portale',
-      'Portals' => 'Portali',
-      'Portal Roles' => 'Ruoli portale',
-      'Portal Users' => 'Utenti portale',
-      'Outbound Emails' => 'Email in uscita',
-      'Group Email Accounts' => 'Gruppi accounts email',
-      'Personal Email Accounts' => 'Account email personale',
-      'Inbound Emails' => 'Email in arrivo',
-      'Email Templates' => 'Modelli Email',
-      'Import' => 'Importa',
-      'Layout Manager' => 'Gestore Layout',
-      'User Interface' => 'Interfaccia Utente',
-      'Auth Tokens' => 'Tokens di autenticazione',
+      'Users' => 'Usuarios',
+      'Email' => 'Correos',
+      'Data' => 'Datos',
+      'Customization' => 'Personalizaciones',
+      'Available Fields' => 'Campos disponibles',
+      'Layout' => 'Diseño',
+      'Entity Manager' => 'Entidades',
+      'Add Panel' => 'Añadir Panel',
+      'Add Field' => 'Añadir Campo',
+      'Settings' => 'Ajustes',
+      'Scheduled Jobs' => 'Tareas programadas',
+      'Upgrade' => 'Actualizar',
+      'Clear Cache' => 'Limpiar caché',
+      'Rebuild' => 'Reconstruir',
+      'Teams' => 'Equipos',
+      'Roles' => 'Roles',
+      'Portal' => 'Portales',
+      'Portals' => 'Portales',
+      'Portal Roles' => 'Roles del portal',
+      'Portal Users' => 'Usuarios del portal',
+      'Outbound Emails' => 'Salientes',
+      'Group Email Accounts' => 'Grupales',
+      'Personal Email Accounts' => 'Personales',
+      'Inbound Emails' => 'Entrantes',
+      'Email Templates' => 'Plantillas',
+      'Import' => 'Importar',
+      'Layout Manager' => 'Diseño',
+      'User Interface' => 'Interfaz de usuario',
+      'Auth Tokens' => 'Tokens',
       'Auth Log' => 'Auth Log',
-      'Authentication' => 'Autenticazione',
-      'Currency' => 'Valuta',
-      'Integrations' => 'Integrazioni',
-      'Extensions' => 'Estensioni',
-      'Upload' => 'Caricamento',
-      'Installing...' => 'Installazione...',
-      'Upgrading...' => 'Aggiornamento...',
-      'Upgraded successfully' => 'Aggiornamento completato',
-      'Installed successfully' => 'Installazione completata',
-      'Ready for upgrade' => 'Pronto per l\'aggiornamento',
-      'Run Upgrade' => 'Esegui aggiornamento',
-      'Install' => 'Installa',
-      'Ready for installation' => 'Pronto per l\'installazione',
-      'Uninstalling...' => 'Disinstallazione...',
-      'Uninstalled' => 'Non installato',
-      'Create Entity' => 'Crea Entità',
-      'Edit Entity' => 'Modifica Entità',
-      'Create Link' => 'Crea Link',
-      'Edit Link' => 'Modifica Link',
-      'Notifications' => 'Notifiche',
-      'Jobs' => 'Compiti',
-      'Reset to Default' => 'Ripristina alle condizioni di default',
-      'Email Filters' => 'Filtri email',
-      'Action History' => 'Storico azioni',
-      'Label Manager' => 'Gestione etichetta',
+      'Authentication' => 'Autenticación',
+      'Currency' => 'Moneda',
+      'Integrations' => 'Integración',
+      'Extensions' => 'Extensiones',
+      'Upload' => 'Subir',
+      'Installing...' => 'Instalando...',
+      'Upgrading...' => 'Actualizando',
+      'Upgraded successfully' => 'Actualización exitosa',
+      'Installed successfully' => 'Instalado de forma exitosa',
+      'Ready for upgrade' => 'Listo para actualizar',
+      'Run Upgrade' => 'Ejecutar actualización',
+      'Install' => 'Instalar',
+      'Ready for installation' => 'Listo para instalación',
+      'Uninstalling...' => 'Desinstalando',
+      'Uninstalled' => 'Desinstalado',
+      'Create Entity' => 'Crear entidad',
+      'Edit Entity' => 'Editar Entidad',
+      'Create Link' => 'Crear enlace',
+      'Edit Link' => 'Editar Enlace',
+      'Notifications' => 'Notificaciones',
+      'Jobs' => 'Trabajos',
+      'Reset to Default' => 'Aplicar a valores por defecto',
+      'Email Filters' => 'Filtros',
+      'Action History' => 'Histórico',
+      'Label Manager' => 'Etiquetas',
       'Lead Capture' => 'Lead Capture',
       'Attachments' => 'Attachments',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
-      'list' => 'Elenco',
-      'detail' => 'Dettaglio',
-      'listSmall' => 'Elenco (ridotto)',
-      'detailSmall' => 'Dettaglio (ridotto)',
+      'list' => 'Lista',
+      'detail' => 'Detalle',
+      'listSmall' => 'Lista (pequeña)',
+      'detailSmall' => 'Detalle (Pequeño)',
       'detailPortal' => 'Detail (Portal)',
       'detailSmallPortal' => 'Detail (Small, Portal)',
       'listSmallPortal' => 'List (Small, Portal)',
       'listPortal' => 'List (Portal)',
       'relationshipsPortal' => 'Relationship Panels (Portal)',
-      'filters' => 'Filtri di ricerca',
-      'massUpdate' => 'Aggiornamento massivo',
-      'relationships' => 'Pannelli relazioni',
-      'sidePanelsDetail' => 'Pannelli laterali (dettaglio)',
-      'sidePanelsEdit' => 'Pannelli laterali (modifica)',
-      'sidePanelsDetailSmall' => 'Pannelli laterali (dettaglio ridotto)',
-      'sidePanelsEditSmall' => 'Pannelli laterali (modifica ridotto)',
+      'filters' => 'Filtros de Búsqueda',
+      'massUpdate' => 'Actualización masiva',
+      'relationships' => 'Paneles de relaciones',
+      'sidePanelsDetail' => 'Paneles laterales (detalle)',
+      'sidePanelsEdit' => 'Paneles laterales (editar)',
+      'sidePanelsDetailSmall' => 'Paneles laterales (detalle pequeño)',
+      'sidePanelsEditSmall' => 'Paneles laterales (editar pequeño)',
       'kanban' => 'Kanban',
-      'detailConvert' => 'Convert Lead',
-      'listForAccount' => 'Elenco (per Account)',
+      'detailConvert' => 'Convertir posible cliente',
+      'listForAccount' => 'Listado (por Cuentas)',
       'listForContact' => 'List (for Contact)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
-      'address' => 'Indirizzi',
-      'array' => 'Array',
-      'foreign' => 'Esterna',
-      'duration' => 'Durata',
-      'password' => 'Password',
-      'personName' => 'Nome persona',
-      'autoincrement' => 'Auto-increment',
-      'bool' => 'Boolean',
-      'currency' => 'Valuta',
-      'currencyConverted' => 'Valuta (convertita)',
-      'date' => 'Data',
-      'datetime' => 'DataOra',
-      'datetimeOptional' => 'Data/DataOra',
-      'email' => 'Email',
-      'enum' => 'Enum',
-      'enumInt' => 'Enum Integer',
-      'enumFloat' => 'Enum Float',
-      'float' => 'Float',
-      'int' => 'Int',
-      'link' => 'Link',
-      'linkMultiple' => 'Link Multiplo',
-      'linkParent' => 'Link Parent',
-      'phone' => 'Telefono',
-      'text' => 'Testo',
+      'address' => 'Dirección',
+      'array' => 'Lista ordenable',
+      'foreign' => 'Clave foránea',
+      'duration' => 'Duración',
+      'password' => 'Contraseña',
+      'personName' => 'Nombre',
+      'autoincrement' => 'Incremental',
+      'bool' => 'SI / NO',
+      'currency' => 'Moneda',
+      'currencyConverted' => 'Moneda (convertido)',
+      'date' => 'Fecha',
+      'datetime' => 'Fecha y hora',
+      'datetimeOptional' => 'Fecha / Fecha y hora',
+      'email' => 'Correo electrónico',
+      'enum' => 'Lista',
+      'enumInt' => 'Lista de enteros',
+      'enumFloat' => 'Lista de decimales',
+      'float' => 'Decimal',
+      'int' => 'Entero',
+      'link' => 'Enlace',
+      'linkMultiple' => 'Enlace múltiple',
+      'linkParent' => 'Enlace Padre',
+      'phone' => 'Teléfono',
+      'text' => 'Área de texto simple',
       'url' => 'Url',
-      'varchar' => 'Varchar',
-      'file' => 'File',
-      'image' => 'Immagine',
-      'multiEnum' => 'Multi-Enum',
-      'attachmentMultiple' => 'Multi Allegato',
-      'rangeInt' => 'Range Integer',
-      'rangeFloat' => 'Range Float',
-      'rangeCurrency' => 'Range Currency',
-      'wysiwyg' => 'Wysiwyg',
-      'map' => 'Mappa',
-      'number' => 'Numero',
-      'colorpicker' => 'Scelta colore',
+      'varchar' => 'Texto',
+      'file' => 'Archivo',
+      'image' => 'Imagen',
+      'multiEnum' => 'Lista múltiple',
+      'attachmentMultiple' => 'Adjuntos múltiples',
+      'rangeInt' => 'Rango de enteros',
+      'rangeFloat' => 'Rango de decimales',
+      'rangeCurrency' => 'Rango de moneda',
+      'wysiwyg' => 'Área de texto con editor',
+      'map' => 'Mapa',
+      'number' => 'Número',
+      'colorpicker' => 'Selector de color',
       'jsonArray' => 'Json Array',
       'jsonObject' => 'Json Object',
-      'multienim' => 'Multienum',
+      'multienim' => 'Lista múltiple',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'type' => 'Tipo',
-      'name' => 'Nome',
-      'label' => 'Etichetta',
-      'tooltipText' => 'Testo suggerimento',
-      'required' => 'Richiesto',
-      'default' => 'Default',
-      'maxLength' => 'Lunghezza Massima',
-      'options' => 'Opzioni',
-      'after' => 'Dopo (campo)',
-      'before' => 'Prima (campo)',
-      'link' => 'Link',
+      'name' => 'Nombre',
+      'label' => 'Etiqueta',
+      'tooltipText' => 'Texto de la ayuda',
+      'required' => 'Requerido',
+      'default' => 'Por defecto',
+      'maxLength' => 'Longitud máxima',
+      'options' => 'Ajustes',
+      'after' => 'Después (campo)',
+      'before' => 'Antes (campo)',
+      'link' => 'Enlace',
       'field' => 'Campo',
-      'min' => 'Min',
-      'max' => 'Max',
-      'translation' => 'Traduzione',
-      'previewSize' => 'Anteprima dimensione',
-      'noEmptyString' => 'Una stringa vuota non è consentita',
-      'defaultType' => 'Tipo di Default',
-      'seeMoreDisabled' => 'Disabilitare Taglio Testo',
-      'entityList' => 'Elenco Entità',
-      'isSorted' => 'Ordinato (alfabeticamente)',
-      'audited' => 'Sottoposto a Revisione Contabile',
-      'trim' => 'Trim',
-      'height' => 'Altezza (px)',
-      'minHeight' => 'Altezza min. (px)',
-      'provider' => 'Provider',
-      'typeList' => 'Elenco Tipi',
-      'rows' => 'Numero di righe dell\'area Testuale',
-      'lengthOfCut' => 'Lunghezza del taglio',
-      'sourceList' => 'Elenco Sorgenti',
-      'prefix' => 'Prefisso',
-      'nextNumber' => 'Prossimo Numero',
-      'padLength' => 'Lunghezza Pad',
-      'disableFormatting' => 'Disabilita formattazione',
-      'dynamicLogicVisible' => 'Condizioni per rendere il campo visibile',
-      'dynamicLogicReadOnly' => 'Condizioni per rendere il campo di sola lettura',
-      'dynamicLogicRequired' => 'Condizioni per rendere il campo obbligatorio',
-      'dynamicLogicOptions' => 'Opzioni condizionali',
-      'probabilityMap' => 'Probabilità della fase (%)',
-      'readOnly' => 'Sola lettura',
-      'maxFileSize' => 'Max File Size (Mb)',
+      'min' => 'Mínimo',
+      'max' => 'Máximo',
+      'translation' => 'Traducción',
+      'previewSize' => 'Tamaño de vista previa',
+      'noEmptyString' => 'No están permitidos los valores de cadenas vacías',
+      'defaultType' => 'Tipo por defecto',
+      'seeMoreDisabled' => 'Desactivar cortar texto',
+      'entityList' => 'Lista de entidades',
+      'isSorted' => '¿Se debe ordenar?',
+      'audited' => 'Auditada',
+      'trim' => 'Recortar',
+      'height' => 'Altura (px)',
+      'minHeight' => 'Altura mínima (px)',
+      'provider' => 'Proveedor',
+      'typeList' => 'Tipo de lista',
+      'rows' => 'Número de filas del área de texto',
+      'lengthOfCut' => 'Longitud del corte',
+      'sourceList' => 'Lista de tomas de contacto',
+      'prefix' => 'Prefijo',
+      'nextNumber' => 'Siguiente Número',
+      'padLength' => 'Longitud del relleno',
+      'disableFormatting' => 'Desactivar formateo',
+      'dynamicLogicVisible' => 'Condiciones para hacer el campo visible',
+      'dynamicLogicReadOnly' => 'Condiciones para hacer el campo solo lectura',
+      'dynamicLogicRequired' => 'Condiciones para hacer el campo obligatorio',
+      'dynamicLogicOptions' => 'Opciones condicionales',
+      'probabilityMap' => 'Probabilidades de la etapa (%)',
+      'readOnly' => 'Solo lectura',
+      'maxFileSize' => 'Tamaño máximo de archivo (MB)',
       'isPersonalData' => 'Is Personal Data',
       'useIframe' => 'Use Iframe',
       'useNumericFormat' => 'Use Numeric Format',
       'strip' => 'Strip',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'upgradeVersion' => 'EspoCRM verrà aggiornato alla versione <strong>{version}</strong>. Si raccomanda un pò di pazienza perché questo richiede tempo.',
-      'upgradeDone' => 'EspoCRM è stato aggiornato alla versione <strong>{version}</strong>.',
-      'upgradeBackup' => 'Si raccomanda di eseguire un backup dei file e dei dati di EspoCRM prima di eseguire l\'aggiornamento.',
-      'thousandSeparatorEqualsDecimalMark' => 'Il separatore delle migliaia non può essere uguale al separatore decimale.',
-      'userHasNoEmailAddress' => 'L\'utente non ha un indirizzo email.',
-      'selectEntityType' => 'Scegli il tipo di entità dal menu di sinistra.',
-      'selectUpgradePackage' => 'Seleziona il pacchetto di aggiornamento',
-      'downloadUpgradePackage' => 'Scarica il pacchetto di aggiornamento <a href="{url}">da qui</a>.',
-      'selectLayout' => 'Scegli il layout dal menu di sinistra e modificalo.',
-      'selectExtensionPackage' => 'Seleziona pacchetto di estensioni',
-      'extensionInstalled' => 'L\'estensione {name} {version} è stata installata',
-      'installExtension' => 'L\'estensione {name} {version} è pronto per essere installata',
-      'cronIsNotConfigured' => 'Scheduled jobs are not running.  Hence inbound emails, notifications and reminders are not working. Please follow the [instructions](https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab) to setup cron job.',
-      'newVersionIsAvailable' => 'New EspoCRM version {latestVersion} is available.',
-      'newExtensionVersionIsAvailable' => 'New {extensionName} version {latestVersion} is available.',
-      'uninstallConfirmation' => 'Vuoi veramente disinstallare l\'estensione?',
+      'upgradeVersion' => 'EspoCRM se actualizará a la versión <strong>{version}</ strong>. Por favor sea paciente ya que esto puede tomar varios minutos.',
+      'upgradeDone' => 'EspoCRM se ha actualizado a la versión <strong>{version}</ strong>.',
+      'upgradeBackup' => 'Recomendamos hacer una copia de seguridad de los archivos y datos de EspoCRM antes de actualizar.',
+      'thousandSeparatorEqualsDecimalMark' => 'El símbolo de separador de miles no puede ser el mismo que el de punto decimal.',
+      'userHasNoEmailAddress' => 'El usuario no tiene dirección de correo electrónico.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en el menú de la izquierda.',
+      'selectUpgradePackage' => 'Seleccione el paquete para actualizar',
+      'downloadUpgradePackage' => 'Si necesita paquetes de actualización puede descargarlos desde <a href=\'{url}\'>acá</a>.',
+      'selectLayout' => 'Seleccione el diseño necesario en el menú de la izquierda y edítelo.',
+      'selectExtensionPackage' => 'Seleccione el paquete de la extensión',
+      'extensionInstalled' => 'La extensión {name} {version} ha sido instalada',
+      'installExtension' => 'La extensión {name} {version} está lista para ser instalada.',
+      'cronIsNotConfigured' => 'Las tareas programadas no se están ejecutando. Siga las <a target="_blank" href="https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab">instrucciones</a> para configurar las tareas CRON.',
+      'newVersionIsAvailable' => 'La nueva versión de EspoCRM {latestVersion} está disponible.',
+      'newExtensionVersionIsAvailable' => 'El nuevo lanzamiento {latestVersion} de {extensionName} está disponible.',
+      'uninstallConfirmation' => 'Are you sure you want to uninstall the extension?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
-      'settings' => 'Impostazioni di sistema dell\'applicazione.',
-      'scheduledJob' => 'Jobs eseguiti da Cron.',
-      'upgrade' => 'Aggiorna EspoCRM.',
-      'clearCache' => 'Pulisci la cache del backend.',
-      'rebuild' => 'Ricostruisci backend e pulisci cache.',
-      'users' => 'Gestione utenti.',
-      'teams' => 'Gestione teams.',
-      'roles' => 'Gestione ruoli.',
-      'portals' => 'Portals management.',
-      'portalRoles' => 'Roles for portal.',
-      'portalUsers' => 'Utenti del portale.',
-      'outboundEmails' => 'Impostazioni SMTP per le email in uscita.',
-      'groupEmailAccounts' => 'Group IMAP email accounts. Email import and Email-to-Case.',
-      'personalEmailAccounts' => 'Account di posta elettronica .',
-      'emailTemplates' => 'Modelli per email di uscita.',
-      'import' => 'Importa dati da file CSV.',
-      'layoutManager' => 'Personalizza layouts (elenco, dettaglio, modifica, ricerca, aggiornamenti massivi).',
-      'entityManager' => 'Crea e modifica entità personalizzate. Gestisci campi e relazioni.',
-      'userInterface' => 'Configura Interfaccia.',
-      'authTokens' => 'Sessioni autorizzate attive. indirizzo IP e data di ultimo accesso .',
-      'authentication' => 'Impostazioni di autenticazione.',
-      'currency' => 'Impostazioni di Valuta e tassi .',
-      'extensions' => 'Installa o Disinstalla le estensioni.',
-      'integrations' => 'Integrazione con servizi di terze parti.',
-      'notifications' => 'Impostazioni delle notifiche via email ed in-app.',
-      'inboundEmails' => 'Impostazioni per le email in arrivo.',
-      'emailFilters' => 'I messaggi email che corrispondono al filtro specificato non verranno importati.',
-      'actionHistory' => 'Registro delle azioni utente.',
-      'labelManager' => 'Personalizza etichette dell\'applicazione',
+      'settings' => 'Ajustes generales del sistema.',
+      'scheduledJob' => 'Trabajos que se ejecutan en segundo plano (CRON).',
+      'upgrade' => 'Actualiza EspoCRM.',
+      'clearCache' => 'Limpia toda la memoria caché del sistema.',
+      'rebuild' => 'Reconstruir el sistema y limpia la caché.',
+      'users' => 'Gestión de usuarios.',
+      'teams' => 'Gestión de equipos.',
+      'roles' => 'Gestión de roles.',
+      'portals' => 'Gestión de portales.',
+      'portalRoles' => 'Roles para el portal.',
+      'portalUsers' => 'Usuarios del portal.',
+      'outboundEmails' => 'Ajustes para los correos del sistema y de envíos masivos.',
+      'groupEmailAccounts' => 'Ajustes de cuentas de correo grupales. Ejemplo: casilla de soporte.',
+      'personalEmailAccounts' => 'Ajustes de cuentas de correo personales de los usuarios.',
+      'emailTemplates' => 'Plantillas para de correos salientes.',
+      'import' => 'Importar datos desde CSV.',
+      'layoutManager' => 'Personalizar diseños (listas, detalles, editar, buscar, actualización masiva).',
+      'entityManager' => 'Crear y editar entidades personalizadas. Administrar campos y relaciones.',
+      'userInterface' => 'Configurar interfaz de usuario: Logo, tema, menu, etc.',
+      'authTokens' => 'Sesiones de usuarios activas. Direcciones IP y última fecha de acceso.',
+      'authentication' => 'Ajustes de autenticación.',
+      'currency' => 'Ajustes de moneda y tipos de cambio.',
+      'extensions' => 'Instalar o desinstalar extensiones.',
+      'integrations' => 'Integración con los servicios de terceros.',
+      'notifications' => 'Ajustes de notificaciones del sistema y por correo electrónico.',
+      'inboundEmails' => 'Ajustes para los correos entrantes.',
+      'emailFilters' => 'Filtros para los correos entrantes.',
+      'actionHistory' => 'Registro de las acciones del usuario.',
+      'labelManager' => 'Personaliza las etiquetas de las aplicaciones.',
       'authLog' => 'Login history.',
       'leadCapture' => 'API entry points for Web-to-Lead.',
       'attachments' => 'All file attachments stored in the system.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
-        'x-small' => 'X-Small',
-        'small' => 'Small',
-        'medium' => 'Medium',
-        'large' => 'Large',
+        'x-small' => 'Muy Pequeño',
+        'small' => 'Pequeño',
+        'medium' => 'Mediano',
+        'large' => 'Grande',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
-      'and' => 'AND',
-      'or' => 'OR',
-      'not' => 'NOT',
+      'and' => 'Y',
+      'or' => 'O',
+      'not' => 'NO',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Role',
       'related' => 'Related',
@@ -298,9 +298,9 @@ return array (
       'storage' => 'Storage',
       'size' => 'Size (bytes)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Attachment',
         'Inline Attachment' => 'Inline Attachment',
@@ -310,18 +310,18 @@ return array (
         'Mass Pdf' => 'Mass Pdf',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
-      'Document' => 'Inserisci documento',
+      'Document' => 'Insertar documento',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Orphan',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'username' => 'Username',
       'ipAddress' => 'IP Address',
@@ -336,21 +336,21 @@ return array (
       'requestMethod' => 'Request Method',
       'authTokenIsActive' => 'Auth Token is Active',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token Created',
       'user' => 'User',
       'portal' => 'Portal',
       'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'denied' => 'Denied',
       'accepted' => 'Accepted',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
         'CREDENTIALS' => 'Invalid credentials',
         'INACTIVE_USER' => 'Inactive user',
@@ -360,152 +360,148 @@ return array (
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'Utente',
-      'ipAddress' => 'indirizzi IP',
-      'lastAccess' => 'Data ultimo accesso',
-      'createdAt' => 'Data accesso',
-      'isActive' => 'Attivo',
-      'portal' => 'Portale',
+      'user' => 'Usuario',
+      'ipAddress' => 'Dirección IP',
+      'lastAccess' => 'Fecha del último acceso',
+      'createdAt' => 'Fecha de acceso',
+      'isActive' => 'Está activo',
+      'portal' => 'Portal',
     ),
-    'links' => 
+    'links' =>
     array (
-      'actionHistoryRecords' => 'Storico azioni',
+      'actionHistoryRecords' => 'Histórico',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Attivo',
-      'inactive' => 'Inattivo',
+      'active' => 'Activo',
+      'inactive' => 'Inactivo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Set Inactive' => 'Imposta come inattivo',
+      'Set Inactive' => 'Establecer Inactivo',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setInactive' => 'Imposta come inattivo',
+      'setInactive' => 'Establecer Inactivo',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'title' => 'Titolo',
-      'dateFrom' => 'Data da',
-      'dateTo' => 'Data a',
-      'autorefreshInterval' => 'Intervallo di Aggiornamento automatico',
-      'displayRecords' => 'Visualizzare i record',
-      'isDoubleHeight' => 'Altezza 2x',
+      'title' => 'Título',
+      'dateFrom' => 'Fecha desde',
+      'dateTo' => 'Fecha hasta',
+      'autorefreshInterval' => 'Actualizar cada:',
+      'displayRecords' => 'Mostrar Registros',
+      'isDoubleHeight' => 'Altitud 2x',
       'mode' => 'Modo',
-      'enabledScopeList' => 'Cose da visualizzare',
-      'users' => 'Utenti',
-      'entityType' => 'Tipo di entità',
-      'primaryFilter' => 'Filtro primario',
-      'boolFilterList' => 'Filtri ulteriori',
-      'sortBy' => 'Ordina (campo)',
-      'sortDirection' => 'Ordina (direzione)',
-      'expandedLayout' => 'Layout',
+      'enabledScopeList' => 'Qué mostrar',
+      'users' => 'Usuarios',
+      'entityType' => 'Tipo de entidad',
+      'primaryFilter' => 'Filtro principal',
+      'boolFilterList' => 'Filtros adicionales',
+      'sortBy' => 'Ordenar (campo)',
+      'sortDirection' => 'Ordenar (dirección)',
+      'expandedLayout' => 'Diseño',
       'dateFilter' => 'Date Filter',
       'futureDays' => 'Next X Days',
       'useLastStage' => 'Group by last reached stage',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
-        'agendaWeek' => 'Settimana (agenda)',
-        'basicWeek' => 'Settimana',
-        'month' => 'Mese',
-        'basicDay' => 'Giorno',
-        'agendaDay' => 'Giorno (agenda)',
-        'timeline' => 'Sequenza Temporale',
+        'agendaWeek' => 'Semana (orden del día)',
+        'basicWeek' => 'Semana',
+        'month' => 'Mes',
+        'basicDay' => 'Día',
+        'agendaDay' => 'Día (agenda)',
+        'timeline' => 'Línea de tiempo',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectEntityType' => 'Seleziona il tipo di entità nelle opzioni del dashlet.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en las opciones de la caja.',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Field' => 'Field',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
-        'equals' => 'Uguale',
-        'notEquals' => 'Non uguale',
-        'greaterThan' => 'Maggiore di',
-        'lessThan' => 'Minore di',
-        'greaterThanOrEquals' => 'Maggiore o uguale',
-        'lessThanOrEquals' => 'Minore di o uguale a',
-        'in' => 'In',
-        'notIn' => 'Non in',
-        'inPast' => 'Nel passato',
-        'inFuture' => 'Futuro',
-        'isToday' => 'Oggi',
-        'isTrue' => 'Vero',
-        'isFalse' => 'Falso',
-        'isEmpty' => 'Vuoto',
-        'isNotEmpty' => 'Non vuoto',
+        'equals' => 'Es igual',
+        'notEquals' => 'No es igual',
+        'greaterThan' => 'Es mayor que',
+        'lessThan' => 'Es menor que',
+        'greaterThanOrEquals' => 'Es mayor o igual que',
+        'lessThanOrEquals' => 'Es menor o igual que',
+        'in' => 'Está en',
+        'notIn' => 'No está en',
+        'inPast' => 'Es antes de hoy',
+        'inFuture' => 'Es después de hoy',
+        'isToday' => 'Es hoy',
+        'isTrue' => 'Es verdadero',
+        'isFalse' => 'Es falso',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No está vacío',
         'contains' => 'Contiene',
-        'notContains' => 'Non contiene',
+        'notContains' => 'No Contiene',
         'has' => 'Contiene',
-        'notHas' => 'Non contiene',
+        'notHas' => 'No Contiene',
       ),
     ),
-    'label' => 
-    array (
-      'Field' => 'Campo',
-    ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome (Soggetto)',
-      'parent' => 'Genitore',
-      'status' => 'Stato',
-      'dateSent' => 'Data invio',
-      'from' => 'Da',
-      'to' => 'A',
+      'name' => 'Asunto',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateSent' => 'Fecha de envío',
+      'from' => 'De',
+      'to' => 'Para',
       'cc' => 'CC',
-      'bcc' => 'BCC',
-      'replyTo' => 'Rispondi a',
-      'replyToString' => 'Rispondi da (String)',
-      'isHtml' => 'È Html',
-      'body' => 'Corpo',
-      'bodyPlain' => 'Body (Plain)',
-      'subject' => 'Soggetto',
-      'attachments' => 'Allegato',
-      'selectTemplate' => 'Seleziona Modello',
-      'fromEmailAddress' => 'Indirizzo mittente',
-      'toEmailAddresses' => 'Indirizzo destinatario',
-      'emailAddress' => 'Indirizzo email',
-      'deliveryDate' => 'Data di consegna',
-      'account' => 'Account',
-      'users' => 'Utenti',
-      'replied' => 'Risposta',
-      'replies' => 'Risposte',
-      'isRead' => 'Letto',
-      'isNotRead' => 'Non letto',
-      'isImportant' => 'Importante',
-      'isReplied' => 'Risposto',
-      'isNotReplied' => 'Non Risposto',
-      'isUsers' => 'Utente',
-      'inTrash' => 'Nel Cestino',
-      'sentBy' => 'Inviato da',
-      'folder' => 'Cartella',
-      'inboundEmails' => 'Gruppo di Account',
-      'emailAccounts' => 'Account Personale',
-      'hasAttachment' => 'Ha allegato',
-      'assignedUsers' => 'Utenti assegnati',
+      'bcc' => 'CCO',
+      'replyTo' => 'Responder a',
+      'replyToString' => 'Responder a (string)',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'bodyPlain' => 'Cuerpo (plano)',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'selectTemplate' => 'Seleccione una plantilla',
+      'fromEmailAddress' => 'De (email)',
+      'toEmailAddresses' => 'A (email)',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'deliveryDate' => 'Fecha de entrega',
+      'account' => 'Cuenta',
+      'users' => 'Usuarios',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'isRead' => 'Es leído',
+      'isNotRead' => 'No leído',
+      'isImportant' => 'Es importante',
+      'isReplied' => 'Tiene respuesta',
+      'isNotReplied' => 'No se respondieron',
+      'isUsers' => 'Es del usuario',
+      'inTrash' => 'En papelera',
+      'sentBy' => 'Enviado por',
+      'folder' => 'Carpeta',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'hasAttachment' => 'Tiene adjunto',
+      'assignedUsers' => 'Usuarios asignados',
       'ccEmailAddresses' => 'CC Email Addresses',
       'bccEmailAddresses' => 'BCC EmailAddresses',
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
@@ -517,14 +513,14 @@ return array (
       'isSystem' => 'Is System',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'replied' => 'Risposto',
-      'replies' => 'Risposte',
-      'inboundEmails' => 'Gruppi di Account',
-      'emailAccounts' => 'Account Personali',
-      'assignedUsers' => 'Utenti assegnati',
-      'sentBy' => 'Inviato da',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'assignedUsers' => 'Usuarios asignados',
+      'sentBy' => 'Enviado por',
       'attachments' => 'Attachments',
       'fromEmailAddress' => 'From Email Address',
       'toEmailAddresses' => 'To EmailAddresses',
@@ -533,796 +529,824 @@ return array (
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'Bozza',
-        'Sending' => 'Invio',
-        'Sent' => 'Inviato',
-        'Archived' => 'Archiviato',
-        'Received' => 'Ricevuto',
-        'Failed' => 'Fallito',
+        'Draft' => 'Borrador',
+        'Sending' => 'Enviando',
+        'Sent' => 'Enviado',
+        'Archived' => 'Archivado',
+        'Received' => 'Recibido',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Email' => 'Archivio email',
-      'Archive Email' => 'Archivio email',
-      'Compose' => 'Comporre',
-      'Reply' => 'Rispondi',
-      'Reply to All' => 'Rispondi a tutti',
-      'Forward' => 'Inoltrare',
-      'Original message' => 'Messaggio originale',
-      'Forwarded message' => 'Messaggio inoltrato',
-      'Email Accounts' => 'Accounts email personali',
-      'Inbound Emails' => 'Gruppo di accounts email',
-      'Email Templates' => 'Modelli email',
-      'Send Test Email' => 'Invia mail di prova',
-      'Send' => 'Invio',
-      'Email Address' => 'Indirizzo email',
-      'Mark Read' => 'Contrassegna come letto',
-      'Sending...' => 'Invio...',
-      'Save Draft' => 'Salva Bozza',
-      'Mark all as read' => 'Contrassegna tutti come letto',
-      'Show Plain Text' => 'Visualizza testo normale',
-      'Mark as Important' => 'Contrassegna come Importante',
-      'Unmark Importance' => 'Deselezione come Importante',
-      'Move to Trash' => 'Sposta nel Cestino',
-      'Retrieve from Trash' => 'Ripristina da Cestino',
-      'Move to Folder' => 'Sposta nella Cartella',
-      'Filters' => 'Filtri',
-      'Folders' => 'Cartelle',
-      'Create Lead' => 'Crea Guida',
-      'Create Contact' => 'Crea Contatto',
-      'Add to Contact' => 'Aggiungi al contatto',
-      'Add to Lead' => 'Aggiungi all\'iniziativa',
-      'Create Task' => 'Crea Compito',
-      'Create Case' => 'Crea Caso',
+      'Create Email' => 'Nuevo correo archivado',
+      'Archive Email' => 'Nuevo correo archivado',
+      'Compose' => 'Nuevo',
+      'Reply' => 'Responder',
+      'Reply to All' => 'Responder a todos',
+      'Forward' => 'Reenviar',
+      'Original message' => 'Mensaje original',
+      'Forwarded message' => 'Mensaje reenviado',
+      'Email Accounts' => 'Ir a cuentas de correo personales',
+      'Inbound Emails' => 'Ir a cuentas de correo grupales',
+      'Email Templates' => 'Plantillas de correo',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
+      'Send' => 'Enviar',
+      'Email Address' => 'Correo electrónico',
+      'Mark Read' => 'Marcar como leído',
+      'Sending...' => 'Enviando...',
+      'Save Draft' => 'Guardar borrador',
+      'Mark all as read' => 'Marcar todos como leídos',
+      'Show Plain Text' => 'Ver en texto plano',
+      'Mark as Important' => 'Marcar como importante',
+      'Unmark Importance' => 'Marcar como No importante',
+      'Move to Trash' => 'Mover a la papelera',
+      'Retrieve from Trash' => 'Recuperar de la papelera',
+      'Move to Folder' => 'Mover a la carpeta',
+      'Filters' => 'Filtros',
+      'Folders' => 'Ir a carpetas de correo',
+      'Create Lead' => 'Crear posible cliente',
+      'Create Contact' => 'Crear contacto',
+      'Add to Contact' => 'Agregar a contacto',
+      'Add to Lead' => 'Agregar a posible cliente',
+      'Create Task' => 'Crear tarea',
+      'Create Case' => 'Crear ticket',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'noSmtpSetup' => 'Nessun setup per l\'SMTP. {link}.',
-      'testEmailSent' => 'L\'email di prova è stata inviata',
-      'emailSent' => 'L\'email è stata inviata',
-      'savedAsDraft' => 'Salvato come bozza.',
+      'noSmtpSetup' => 'Sin configuración SMTP. {link}.',
+      'testEmailSent' => 'El correo de prueba ha sido enviado.',
+      'emailSent' => 'El correo electrónico ha sido enviada',
+      'savedAsDraft' => 'Guardado como borrador',
       'confirmInsertTemplate' => 'The email body will be lost. Are you sure you want to insert the template?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'Inviato',
-      'archived' => 'Archiviato',
-      'inbox' => 'Inbox',
-      'drafts' => 'Bozze',
-      'trash' => 'Cestino',
-      'important' => 'Importantw',
+      'sent' => 'Enviados',
+      'archived' => 'Archivado',
+      'inbox' => 'Bandeja de entrada',
+      'drafts' => 'Borradores',
+      'trash' => 'Papelera',
+      'important' => 'Importante',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'markAsRead' => 'Contrassegna come Letto',
-      'markAsNotRead' => 'Contrassegna come non Letto',
-      'markAsImportant' => 'Contrassegna come Importante',
-      'markAsNotImportant' => 'Deseleziona come Importante',
-      'moveToTrash' => 'Sposta nel Cestino',
-      'moveToFolder' => 'Sposta nella Cartella',
-      'retrieveFromTrash' => 'Recupera dal Cestino',
+      'markAsRead' => 'Marcar como leído',
+      'markAsNotRead' => 'Marcar como No leído',
+      'markAsImportant' => 'Marcar como importante',
+      'markAsNotImportant' => 'Marcar como No importante',
+      'moveToTrash' => 'Mover a la papelera',
+      'moveToFolder' => 'Mover a la carpeta',
+      'retrieveFromTrash' => 'Recuperar de la papelera',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'status' => 'Stato',
-      'host' => 'Host',
-      'username' => 'Username',
-      'password' => 'Password',
-      'port' => 'Porta',
-      'monitoredFolders' => 'Cartelle Monitorate',
-      'ssl' => 'SSL',
-      'fetchSince' => 'Da Raggiungere',
-      'emailAddress' => 'Indirizzo email',
-      'sentFolder' => 'Cartella Inviate',
-      'storeSentEmails' => 'Emailinviate',
-      'keepFetchedEmailsUnread' => 'Mantieni le email non lette',
-      'emailFolder' => 'Sposta nella Cartella',
+      'name' => 'Nombre de la cuenta',
+      'status' => 'Estado',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'ssl' => '¿Usa SSL?',
+      'fetchSince' => 'Traer correos desde',
+      'emailAddress' => 'Correo electrónico',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'keepFetchedEmailsUnread' => 'Mantener los correos que se han obtenido sin leer',
+      'emailFolder' => 'Poner en la carpeta',
       'useImap' => 'Fetch Emails',
-      'useSmtp' => 'Usa SMTP',
-      'smtpHost' => 'Host SMTP',
-      'smtpPort' => 'Porta SMTP',
-      'smtpAuth' => 'Autenticazione SMTP',
-      'smtpSecurity' => 'Sicurezza SMTP',
-      'smtpUsername' => 'Nome utente SMTP',
-      'smtpPassword' => 'Password SMTP',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'Filtri',
-      'emails' => 'Emails',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Attivo',
-        'Inactive' => 'Inattivo',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailAccount' => 'Crea Account email',
+      'Create EmailAccount' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Main' => 'Principale',
-      'Test Connection' => 'Test della connessione',
-      'Send Test Email' => 'Invia email di prova',
+      'Main' => 'Principal',
+      'Test Connection' => 'Probar conexión',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'Impossibile connettersi al server IMAP',
-      'connectionIsOk' => 'La Connessione è Ok',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
+      'connectionIsOk' => 'Conexión correcta',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'monitoredFolders' => 'Cartelle multiple devono essere separate dalla virgola.
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.
 
-È possibile aggiungere una cartella "Inviata" per sincronizzare le email inviate da un client di posta elettronica esterno.',
-      'storeSentEmails' => 'Sent emails will be stored on the IMAP server. Email Address field should match the address emails will be sent from.',
+Puede agregar una carpeta \'Enviados\' para sincronizar los correos electrónicos enviados desde un cliente externo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP. El campo Dirección de correo electrónico debe coincidir con la dirección desde donde se enviarán los correos electrónicos.',
     ),
   ),
-  'EmailAddress' => 
+  'EmailAddress' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Primary' => 'Primario',
-      'Opted Out' => 'Rinuncia',
-      'Invalid' => 'Non valido',
+      'Primary' => 'Principal',
+      'Opted Out' => 'Se dieron de baja',
+      'Invalid' => 'Inválido',
     ),
   ),
-  'EmailFilter' => 
+  'EmailFilter' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'from' => 'Da',
-      'to' => 'A',
-      'subject' => 'Soggetto',
-      'bodyContains' => 'Contenuto del Corpo',
-      'action' => 'Azione',
-      'isGlobal' => 'Globale',
-      'emailFolder' => 'Cartella',
+      'from' => 'De',
+      'to' => 'Para',
+      'subject' => 'Asunto',
+      'bodyContains' => 'Contenido del cuerpo',
+      'action' => 'Acción',
+      'isGlobal' => 'Es global',
+      'emailFolder' => 'Carpeta',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailFilter' => 'Crea un filtro per le email',
-      'Emails' => 'Emails',
+      'Create EmailFilter' => 'Crear un filtro de email',
+      'Emails' => 'Correos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'Skip' => 'Ignora',
-        'Move to Folder' => 'Sposta nella Cartella',
+        'Skip' => 'Ignorar',
+        'Move to Folder' => 'Poner en la carpeta',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'name' => 'Dai al filtro un nome descrittivo.',
-      'subject' => 'Utilizzo del carattere jolly *:
+      'name' => 'Dé al filtro un nombre descriptivo.',
+      'subject' => 'Filtra los correos con el asunto. Dejar en blanco si no es necesario. Puede usar el comodín *:
 
-testo* - inizia con il testo,
-*testo* - contiene il testo,
-*testo - termina con il testo.',
-      'bodyContains' => 'Il corpo del messaggio contiene una delle parole, o frasi, specificate',
-      'from' => 'Messaggi di posta elettronica inviati dall\'indirizzo specificato. Lascia vuoto se non necessario. È possibile utilizzare caratteri jolly *.',
-      'to' => 'Messaggi di posta elettronica inviati all\'indirizzo specificato . Lascia vuoto se non necessario . È possibile utilizzare caratteri jolly *.',
-      'isGlobal' => 'Applica questo filtro a tutte le email in arrivo al sistema.',
+texto* - empieza con texto,
+*texot* - contiene texto,
+*texto - termina con texto.',
+      'bodyContains' => 'Filtra los correos que en el cuerpo contengan cualquiera de estas palabras o frases.',
+      'from' => 'Filtra los correos enviados desde esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'to' => 'Filtra los correos enviados a esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'isGlobal' => 'Aplica este filtro a todos los correos entrantes del sistema.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'skipNotifications' => 'Salta Notifica',
+      'skipNotifications' => 'Omitir notificaciones',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailFolder' => 'Crea Cartella',
-      'Manage Folders' => 'Gestione Cartelle',
-      'Emails' => 'Emails',
+      'Create EmailFolder' => 'Crear carpeta',
+      'Manage Folders' => 'Administrar carpetas',
+      'Emails' => 'Correos',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'status' => 'Stato',
-      'isHtml' => 'Is Html',
-      'body' => 'Corpo',
-      'subject' => 'Soggetto',
-      'attachments' => 'Allegato',
-      'insertField' => 'Inserisci Campo',
-      'oneOff' => 'One-off',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'insertField' => 'Insertar campo',
+      'oneOff' => 'Único',
       'category' => 'Category',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailTemplate' => 'Crea Modello email',
-      'Info' => 'Info',
+      'Create EmailTemplate' => 'Crear plantilla de correo',
+      'Info' => 'Información',
       'Available placeholders' => 'Available placeholders',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'infoText' => 'Variabili disponibili :
+      'infoText' => 'Variables disponibles:
 
-{optOutUrl} &#8211; URL per cancellare l\'iscrizione;
+{optOutUrl} &#8211; URL del enlace de baja.
 
-{optOutLink} &#8211; link per cancellare l\'iscrizione.',
+{optOutLink} &#8211;  Enlace de baja.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'oneOff' => 'Controllare se avete intenzione di utilizzare questo modello una sola volta. Per esempio. per Email Massive.',
+      'oneOff' => 'Marque la casilla si usted va a utilizar esta plantilla solo una vez. Por ejemplo para correo masivo.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Attuale',
+      'actual' => 'Actuales',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
       'optOutUrl' => 'URL for an unsubsbribe link',
       'optOutLink' => 'an unsubscribe link',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Create Category',
       'Manage Categories' => 'Manage Categories',
       'EmailTemplates' => 'Email Templates',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Order',
       'childList' => 'Child List',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'Email Templates',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Fields' => 'Campi',
-      'Relationships' => 'Relazioni',
-      'Schedule' => 'Programma',
-      'Log' => 'Log',
-      'Formula' => 'Formula',
+      'Fields' => 'Campos',
+      'Relationships' => 'Relaciones',
+      'Schedule' => 'Programar',
+      'Log' => 'Registros',
+      'Formula' => 'Fórmula',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
+      'name' => 'Nombre',
       'type' => 'Tipo',
-      'labelSingular' => 'Etichetta Singola',
-      'labelPlural' => 'Etichetta Multipla',
-      'stream' => 'Flusso attività',
-      'label' => 'Etichetta',
-      'linkType' => 'Link Type',
-      'entityForeign' => 'Entità esterna',
-      'linkForeign' => 'Collegamento Esterno',
-      'link' => 'Link',
-      'labelForeign' => 'Label Esterna',
-      'sortBy' => 'Impostazione predefinita ( campo)',
-      'sortDirection' => 'Impostazione predefinita ( indirizzo)',
-      'relationName' => 'Tab Secono Nome',
-      'linkMultipleField' => 'Collegamento Multiplo ai Campi',
-      'linkMultipleFieldForeign' => 'Collegamento Esterno Link Multiplo ai Campi',
-      'disabled' => 'Disabilitato',
-      'textFilterFields' => 'Filtro testuale Campi',
-      'audited' => 'Controllato',
-      'auditedForeign' => 'Controllato esternamente',
-      'statusField' => 'Campo di stato',
-      'beforeSaveCustomScript' => 'Prima di salvare lo script personalizzato',
+      'labelSingular' => 'Etiqueta en singular',
+      'labelPlural' => 'Etiqueta en plural',
+      'stream' => 'Historia',
+      'label' => 'Etiqueta',
+      'linkType' => 'Tipo de enlace',
+      'entityForeign' => 'Entidad foránea',
+      'linkForeign' => 'Enlace Foráneo',
+      'link' => 'Enlace',
+      'labelForeign' => 'Etiqueta Foránea',
+      'sortBy' => 'Orden por defecto (campo)',
+      'sortDirection' => 'Orden por defecto (dirección)',
+      'relationName' => 'Nombre de la Tabla Intermedia',
+      'linkMultipleField' => 'Enlaza múltiples campos',
+      'linkMultipleFieldForeign' => 'Enlaza múltiples campos foráneos',
+      'disabled' => 'Desactivado',
+      'textFilterFields' => 'Los campos de filtro de texto',
+      'audited' => 'Auditado',
+      'auditedForeign' => 'Foráneo auditado',
+      'statusField' => 'Campo estado',
+      'beforeSaveCustomScript' => 'Antes de guardar la secuencia de comandos personalizada',
       'color' => 'Color',
       'kanbanViewMode' => 'Kanban View',
       'kanbanStatusIgnoreList' => 'Ignored groups in Kanban view',
       'iconClass' => 'Icon',
       'fullTextSearch' => 'Full-Text Search',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        '' => 'Nessun',
+        '' => 'Ninguno',
         'Base' => 'Base',
-        'Person' => 'Persone',
-        'CategoryTree' => 'Albero delle Categorie',
+        'Person' => 'Persona',
+        'CategoryTree' => 'Árbol de categorías',
         'Event' => 'Evento',
         'BasePlus' => 'Base Plus',
-        'Company' => 'Compagnia',
+        'Company' => 'Empresa',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
-        'manyToMany' => 'Molti-a-Molti',
-        'oneToMany' => 'Uno-a-Molti',
-        'manyToOne' => 'Molti-a-Uno',
-        'parentToChildren' => 'Padre-a-Figlio',
-        'childrenToParent' => 'Figlio-a-Padre',
+        'manyToMany' => 'Mucho-a-Muchos',
+        'oneToMany' => 'Uno-a-Muchos',
+        'manyToOne' => 'Muchos-a-uno',
+        'parentToChildren' => 'Padres-a-Hijos',
+        'childrenToParent' => 'Hijos-a-Padres',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
         'asc' => 'Ascendente',
-        'desc' => 'Discendente',
+        'desc' => 'Descendente',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'entityCreated' => 'L\'Entità è stata creata',
-      'linkAlreadyExists' => 'Nome del link errato.',
-      'linkConflict' => 'Nome conflitto : link o campo con lo stesso nome già esistente',
+      'entityCreated' => 'La entidad ha sido creada',
+      'linkAlreadyExists' => 'Conflicto de nombres en el enlace.',
+      'linkConflict' => 'Conflicto de nombres: un enlace o campo con el mismo nombre ya existe.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'statusField' => 'Gli aggiornamenti a questo campo verranno registrati nel flusso attività.',
-      'textFilterFields' => 'Campi utilizzati dalla ricerca testuale.',
-      'stream' => 'Se l\'entità ha un flusso attività.',
-      'disabled' => 'Spunta, se non hai bisogno di questa entità nel tuo sistema.',
-      'linkAudited' => 'La creazione di record correlati ed il collegamento con il record esistente verranno registrati nelle attività.',
-      'linkMultipleField' => 'Collegare un campo multiplo è una via pratica per modificare le relazioni. Non utilizzarlo se prevedi un elevato numero di record correlati.',
-      'entityType' => 'Base Plus - dispone di pannelli Attività, Storia e Compiti.
+      'statusField' => 'Las actualizaciones de este campo se registran en la historia.',
+      'textFilterFields' => 'Campos utilizados por la búsqueda de texto.',
+      'stream' => 'Marque para que la entidad tenga historia.',
+      'disabled' => 'Marque si no necesita esta entidad en su sistema.',
+      'linkAudited' => 'Crear un registro relacionado y vincularlo con el registro existente, hará que se registre en la historia.',
+      'linkMultipleField' => 'El campo de relaciones múltiples proporciona una manera práctica de editar relaciones. No lo use si puede tener un gran número de registros relacionados.',
+      'entityType' => 'Base: Sin elementos adicionales
 
-Evento - disponibile nei pannelli Calendario ed Attività.',
+Base Plus - Similar a Posibles clientes y Oportunidades (tiene paneles de Actividades planeadas, Historial de actividades y Tareas).
+
+Evento - Similar a Reuniones y Llamadas (disponible en Calendario y en el Panel de Actividades).
+
+Persona - Similar a Contacto.
+
+Empresa - Similar a Cuenta.',
       'fullTextSearch' => 'Running rebuild is required.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'exportAllFields' => 'Esporta tutti i campi',
-      'fieldList' => 'Elenco campi',
+      'exportAllFields' => 'Exportar todos los campos',
+      'fieldList' => 'Lista de campos',
       'format' => 'Formato',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
         'xlsx' => 'XLSX (Excel)',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'version' => 'Versione',
-      'description' => 'Descrizione',
-      'isInstalled' => 'Installato',
+      'name' => 'Nombre',
+      'version' => 'Versión',
+      'description' => 'Descripción',
+      'isInstalled' => 'Instalado',
       'checkVersionUrl' => 'An URL for checking new versions',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Uninstall' => 'Disinstallato',
-      'Install' => 'Installa',
+      'Uninstall' => 'Desinstalar',
+      'Install' => 'Instalar',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'uninstalled' => 'L\'Estensione {nome} è stata disinstallata',
-    ),
-  ),
-  'ExternalAccount' => 
-  array (
-    'labels' => 
-    array (
-      'Connect' => 'Connettersi',
-      'Connected' => 'Connesso',
-    ),
-    'help' => 
-    array (
+      'uninstalled' => 'Extensión {name} ha sido desinstalada',
     ),
   ),
-  'FieldManager' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Dynamic Logic' => 'Logica dinamica',
+      'Connect' => 'Conectar',
+      'Connected' => 'Conectado',
+    ),
+    'help' =>
+    array (
+    ),
+  ),
+  'FieldManager' =>
+  array (
+    'labels' =>
+    array (
+      'Dynamic Logic' => 'Lógica dinámica',
       'Name' => 'Name',
       'Label' => 'Label',
       'Type' => 'Type',
     ),
-    'options' => 
+    'options' =>
     array (
-      'dateTimeDefault' => 
+      'dateTimeDefault' =>
       array (
-        '' => 'Nessun',
-        'javascript: return this.dateTime.getNow(1);' => 'Ora',
-        'javascript: return this.dateTime.getNow(5);' => 'Ora (5m)',
-        'javascript: return this.dateTime.getNow(15);' => 'Ora (15m)',
-        'javascript: return this.dateTime.getNow(30);' => 'Ora (30m)',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 ora',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+6 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+11 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 ore',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 giorno',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 giorni',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 giorni',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 giorni',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 giorni',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 giorni',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 settimana',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getNow(1);' => 'Ahora',
+        'javascript: return this.dateTime.getNow(5);' => 'Ahora (5m)',
+        'javascript: return this.dateTime.getNow(15);' => 'Ahora (15m)',
+        'javascript: return this.dateTime.getNow(30);' => 'Ahora (30m)',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 hora',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+6 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+11 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 día',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 semana',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
-        '' => 'Nessun',
-        'javascript: return this.dateTime.getToday();' => 'Oggi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 giorno',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 giorni',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 settimana',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+2 settimane',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 settimane',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 mese',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+2 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+3 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+5 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+6 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+7 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+10 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+11 mesi',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 anno',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getToday();' => 'Hoy',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 semana',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+2 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 mes',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+2 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+3 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+5 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+6 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+7 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+10 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+11 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 año',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'audited' => 'Gli aggiornamenti verranno registrati nel flusso attivita.',
-      'required' => 'Il campo sarà obbligatorio. Non potrà essere vuoto.',
-      'default' => 'Sarà impostato al valore di default durante la creazione.',
-      'min' => 'Valore minimo accettabile.',
-      'max' => 'Valore massimo accettabile.',
-      'seeMoreDisabled' => 'Se non selezionato, i testi lunghi saranno tagliati.',
-      'lengthOfCut' => 'Lunghezza del testo prima del taglio.',
-      'maxLength' => 'Lunghezza massima accettabile del testo.',
-      'before' => 'Il valore della data deve essere precedente al valore della data del campo specificato.',
-      'after' => 'Il valore della data deve essere successivo al valore della data del campo specificato.',
-      'readOnly' => 'Il valore del campo non può essere specificato dall\'utente. Ma può essere calcolato da una formula.',
-      'maxFileSize' => 'If empty or 0 then no limit.',
+      'audited' => 'Las actualizaciones se registrarán en la historia.',
+      'required' => 'El campo será obligatorio. No se puede dejar vacío.',
+      'default' => 'El valor se establecerá de forma predeterminada al guardar.',
+      'min' => 'Valor mínimo aceptado.',
+      'max' => 'Valor máximo aceptado.',
+      'seeMoreDisabled' => 'Si no se marca, los textos largos se cortarán.',
+      'lengthOfCut' => 'Que largo tendrán los textos antes de ser cortados.',
+      'maxLength' => 'Longitud máxima aceptable del texto.',
+      'before' => 'El valor de fecha debe ser anterior al valor de fecha del campo especificado.',
+      'after' => 'El valor de fecha debe ser posterior al valor de fecha del campo especificado.',
+      'readOnly' => 'El usuario no puede especificar el valor del campo. Pero se puede calcular por fórmula.',
+      'maxFileSize' => 'Si está vacío o es 0, entonces no limitar',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
-        'street' => 'Street',
-        'city' => 'City',
-        'state' => 'State',
-        'country' => 'Country',
-        'postalCode' => 'Postal Code',
-        'map' => 'Map',
+        'street' => 'Calle',
+        'city' => 'Ciudad',
+        'state' => 'Estado',
+        'country' => 'País',
+        'postalCode' => 'Código Postal',
+        'map' => 'Mapa',
       ),
-      'personName' => 
+      'personName' =>
       array (
-        'salutation' => 'Salutation',
-        'first' => 'First',
-        'last' => 'Last',
+        'salutation' => 'Saludo',
+        'first' => 'Nombre',
+        'last' => 'Apellido',
       ),
-      'currency' => 
+      'currency' =>
       array (
-        'converted' => '(Converted)',
+        'converted' => '(Convertido)',
         'currency' => '(Currency)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
-        'date' => 'Date',
+        'date' => 'Fecha',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
-      'Email' => 'Email',
-      'User' => 'Utente',
-      'Team' => 'Team',
-      'Role' => 'Ruolo',
-      'EmailTemplate' => 'Modello email',
+      'Email' => 'Correo electrónico',
+      'User' => 'Usuario',
+      'Team' => 'Equipo',
+      'Role' => 'Rol',
+      'EmailTemplate' => 'Plantilla de Correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Account email personale',
-      'EmailAccountScope' => 'Account email personale',
-      'OutboundEmail' => 'Email in uscita',
-      'ScheduledJob' => 'Job Schedulato',
-      'ExternalAccount' => 'External Account',
-      'Extension' => 'Estensione',
-      'Dashboard' => 'Dashboard',
-      'InboundEmail' => 'Gruppo Account Email',
-      'Stream' => 'Flusso attività',
-      'Import' => 'Importa',
-      'Template' => 'Modello',
-      'Job' => 'Job',
-      'EmailFilter' => 'Filtri Email',
-      'Portal' => 'Portale',
-      'PortalRole' => 'Ruolo Portale',
-      'Attachment' => 'Allegato',
-      'EmailFolder' => 'Casella Email',
-      'PortalUser' => 'Utente portale',
-      'ScheduledJobLogRecord' => 'Scheduled Job Log Record',
-      'PasswordChangeRequest' => 'Richiesta di cambio password',
-      'ActionHistoryRecord' => 'Action History Record',
-      'AuthToken' => 'Token di autenticazione',
-      'UniqueId' => 'ID univoco',
-      'LastViewed' => 'Ultima visualizzazione',
-      'Settings' => 'Impostazioni',
-      'FieldManager' => 'Gestione campo',
-      'Integration' => 'Integrazione',
-      'LayoutManager' => 'Gestione layout',
-      'EntityManager' => 'Gestione entità',
-      'Export' => 'Esporta',
-      'DynamicLogic' => 'Logica dinamica',
-      'DashletOptions' => 'Opzioni dashlet',
-      'Admin' => 'Admin',
-      'Global' => 'Globale',
-      'Preferences' => 'Preferenze',
-      'EmailAddress' => 'Indirizzo email',
-      'PhoneNumber' => 'Numero di telefono',
+      'EmailAccount' => 'Cuenta de correo personal',
+      'EmailAccountScope' => 'Cuenta de correo personal',
+      'OutboundEmail' => 'Correo Saliente',
+      'ScheduledJob' => 'Tarea Programada',
+      'ExternalAccount' => 'Cuenta Externa',
+      'Extension' => 'Extensión',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuenta de correo grupal',
+      'Stream' => 'Historia',
+      'Import' => 'Importar',
+      'Template' => 'Plantilla',
+      'Job' => 'Trabajo',
+      'EmailFilter' => 'Filtro de correo',
+      'Portal' => 'Portal',
+      'PortalRole' => 'Rol del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpeta de correo electrónico',
+      'PortalUser' => 'Usuario del portal',
+      'ScheduledJobLogRecord' => 'Registro del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambio de Contraseña',
+      'ActionHistoryRecord' => 'Registro del histórico',
+      'AuthToken' => 'Token de autenticación',
+      'UniqueId' => 'ID Único',
+      'LastViewed' => 'Historial de acciones',
+      'Settings' => 'Ajustes',
+      'FieldManager' => 'Administrador de campos',
+      'Integration' => 'Integración',
+      'LayoutManager' => 'Administrador de diseño',
+      'EntityManager' => 'Gestionar de entidades',
+      'Export' => 'Exportar',
+      'DynamicLogic' => 'Lógica dinámica',
+      'DashletOptions' => 'Ajustes de cajas',
+      'Admin' => 'Administrador',
+      'Global' => 'Global',
+      'Preferences' => 'Preferencias',
+      'EmailAddress' => 'Correo electrónico',
+      'PhoneNumber' => 'Número de teléfono',
       'AuthLogRecord' => 'Auth Log Record',
       'AuthFailLogRecord' => 'Auth Fail Log Record',
       'LeadCapture' => 'Lead Capture Entry Point',
       'LeadCaptureLogRecord' => 'Lead Capture Log Record',
       'ArrayValue' => 'Array Value',
-      'Account' => 'Account',
-      'Contact' => 'Contatti',
-      'Lead' => 'Guida',
-      'Target' => 'Target',
-      'Opportunity' => 'Opportunità',
-      'Meeting' => 'Riunione',
+      'Account' => 'Cuenta',
+      'Contact' => 'Contacto',
+      'Lead' => 'Posible cliente',
+      'Target' => 'Objetivo',
+      'Opportunity' => 'Oportunidad',
+      'Meeting' => 'Reunión',
       'Calendar' => 'Calendario',
-      'Call' => 'Chiamata',
-      'Task' => 'Compito',
-      'Case' => 'Casi',
-      'Document' => 'Document',
-      'DocumentFolder' => 'Cartella Documenti',
-      'Campaign' => 'Campagna',
-      'TargetList' => 'Lista di destinazione',
-      'MassEmail' => 'Email Massima',
-      'EmailQueueItem' => 'Email Queue Item',
-      'CampaignTrackingUrl' => 'Tracking URL',
-      'Activities' => 'Attivià',
-      'KnowledgeBaseArticle' => 'Consocenza di Base degli Aticolo ',
-      'KnowledgeBaseCategory' => 'Consocenza di Basec della Categoria ',
-      'CampaignLogRecord' => 'Campaign Log Record',
+      'Call' => 'Llamada',
+      'Task' => 'Tarea',
+      'Case' => 'Ticket',
+      'Document' => 'Documento',
+      'DocumentFolder' => 'Carpeta de documento',
+      'Campaign' => 'Campaña',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correo masivo',
+      'EmailQueueItem' => 'Elemento en cola de correos',
+      'CampaignTrackingUrl' => 'URL de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Artículo de la base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categoría de la base de conocimiento',
+      'CampaignLogRecord' => 'Registro del registro de la campaña',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
-      'Email' => 'Email',
-      'User' => 'Utenti',
-      'Team' => 'Teams',
-      'Role' => 'Ruoli',
-      'EmailTemplate' => 'Modelli Email',
+      'Email' => 'Correos',
+      'User' => 'Usuarios',
+      'Team' => 'Equipos',
+      'Role' => 'Roles',
+      'EmailTemplate' => 'Plantillas de correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Account email personale',
-      'EmailAccountScope' => 'Account email personale',
-      'OutboundEmail' => 'Email in uscita',
-      'ScheduledJob' => 'Jobs schedulati',
-      'ExternalAccount' => 'Account Esterni',
-      'Extension' => 'Estensioni',
-      'Dashboard' => 'Dashboard',
-      'InboundEmail' => 'Gruppo account email',
-      'Stream' => 'Flusso attività',
-      'Import' => 'Importa Risultati',
-      'Template' => 'Modelli',
-      'Job' => 'Jobs',
-      'EmailFilter' => 'Filtri email',
-      'Portal' => 'Portali',
-      'PortalRole' => 'Ruoli Portale',
-      'Attachment' => 'Allegato',
-      'EmailFolder' => 'Caselle Email',
-      'PortalUser' => 'Utenti portale',
-      'ScheduledJobLogRecord' => 'Scheduled Job Log Records',
-      'PasswordChangeRequest' => 'Richiesta di cambio password',
-      'ActionHistoryRecord' => 'Storico azioni',
-      'AuthToken' => 'Tokens di autenticazione',
-      'UniqueId' => 'ID univoci',
-      'LastViewed' => 'Ultima visualizzazione',
+      'EmailAccount' => 'Cuentas de correo personales',
+      'EmailAccountScope' => 'Cuentas de correo personales',
+      'OutboundEmail' => 'Salientes',
+      'ScheduledJob' => 'Tareas programadas',
+      'ExternalAccount' => 'Cuentas externas',
+      'Extension' => 'Extensiones',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuentas de correo grupales',
+      'Stream' => 'Historia',
+      'Import' => 'Resultados de importaciones',
+      'Template' => 'Plantillas',
+      'Job' => 'Trabajos',
+      'EmailFilter' => 'Filtros',
+      'Portal' => 'Portales',
+      'PortalRole' => 'Roles del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpetas de correo',
+      'PortalUser' => 'Usuarios del portal',
+      'ScheduledJobLogRecord' => 'Registros del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambios de Contraseñas',
+      'ActionHistoryRecord' => 'Histórico',
+      'AuthToken' => 'Tokens',
+      'UniqueId' => 'ID Únicos',
+      'LastViewed' => 'Historial de acciones',
       'AuthLogRecord' => 'Auth Log',
       'AuthFailLogRecord' => 'Auth Fail Log',
       'LeadCapture' => 'Lead Capture',
       'LeadCaptureLogRecord' => 'Lead Capture Log',
       'ArrayValue' => 'Array Values',
-      'Account' => 'Account',
-      'Contact' => 'Contatti',
-      'Lead' => 'Comando',
-      'Target' => 'Targets',
-      'Opportunity' => 'Opportunita\'',
-      'Meeting' => 'Riunioni',
+      'Account' => 'Cuentas',
+      'Contact' => 'Contactos',
+      'Lead' => 'Posibles clientes',
+      'Target' => 'Objetivos',
+      'Opportunity' => 'Oportunidades',
+      'Meeting' => 'Reuniones',
       'Calendar' => 'Calendario',
-      'Call' => 'Chiamate',
-      'Task' => 'Compiti',
-      'Case' => 'Casi',
-      'Document' => 'Documenti',
-      'DocumentFolder' => 'Cartella Documenti',
-      'Campaign' => 'Campagna',
-      'TargetList' => 'Liste di destinazione',
-      'MassEmail' => 'Email Massive',
-      'EmailQueueItem' => 'Email Queue Items',
-      'CampaignTrackingUrl' => 'Tracking URLs',
-      'Activities' => 'Attivià',
-      'KnowledgeBaseArticle' => 'Conoscenza di Base',
-      'KnowledgeBaseCategory' => 'Conoscenza di Base Categorie',
-      'CampaignLogRecord' => 'Campaign Log Records',
+      'Call' => 'Llamadas',
+      'Task' => 'Tareas',
+      'Case' => 'Tickets',
+      'Document' => 'Documentos',
+      'DocumentFolder' => 'Carpetas de documentos',
+      'Campaign' => 'Campañas',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correos masivos',
+      'EmailQueueItem' => 'Elementos en cola de correos',
+      'CampaignTrackingUrl' => 'URLs de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categorías de la base de conocimiento',
+      'CampaignLogRecord' => 'Registros del registro de la campaña',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Misc' => 'Varie',
-      'Merge' => 'Unire',
-      'None' => 'Nessun',
-      'Home' => 'Home',
-      'by' => 'di',
-      'Saved' => 'Salvato',
-      'Error' => 'Errore',
-      'Select' => 'Selezionare',
-      'Not valid' => 'Non valido',
-      'Please wait...' => 'Attendere...',
-      'Please wait' => 'Attendere',
-      'Loading...' => 'Caricamento in corso...',
-      'Uploading...' => 'Caricamento...',
-      'Sending...' => 'Invio...',
-      'Merging...' => 'Merging...',
-      'Merged' => 'Merged',
-      'Removed' => 'Rimosso',
-      'Posted' => 'Postato',
-      'Linked' => 'Connesso',
-      'Unlinked' => 'Non Connesso',
-      'Done' => 'Fatto',
-      'Access denied' => 'Accesso negato',
-      'Not found' => 'Non trovato',
-      'Access' => 'Accesso',
-      'Are you sure?' => 'Sei sicuro?',
-      'Record has been removed' => 'Il Record è stato rimosso',
-      'Wrong username/password' => 'I dati forniti non sono corretti',
-      'Post cannot be empty' => 'Il Post puo\' essere vuoto',
-      'Removing...' => 'Cancellazione...',
-      'Unlinking...' => 'Disconnessione...',
-      'Posting...' => 'Posting...',
-      'Username can not be empty!' => 'L\'Username non può essere vuota!',
-      'Cache is not enabled' => 'Cache non abilitata',
-      'Cache has been cleared' => 'Cache gia\' liberata',
-      'Rebuild has been done' => 'Rebuild gia\' concluso',
-      'Return to Application' => 'Ritorna all\'applicazione',
-      'Saving...' => 'Salvataggio...',
-      'Modified' => 'Modificato',
-      'Created' => 'Creato',
-      'Create' => 'Creare',
-      'create' => 'creare',
-      'Overview' => 'Panoramica',
-      'Details' => 'Dettagli',
-      'Add Field' => 'Aggiungi Campo',
-      'Add Dashlet' => 'Aggiungi Dashlet',
-      'Filter' => 'Filter',
-      'Edit Dashboard' => 'Edit Dashboard',
-      'Add' => 'Aggiungi',
-      'Add Item' => 'Add Item',
-      'Reset' => 'Reset',
-      'Menu' => 'Menu',
-      'More' => 'Altro',
-      'Search' => 'Cerca',
-      'Only My' => 'Solo il mio',
-      'Open' => 'Aperto',
-      'Admin' => 'Admministratore',
-      'About' => 'A riguardo',
-      'Refresh' => 'Ricaricare',
-      'Remove' => 'Eliminare',
-      'Options' => 'Opzioni',
-      'Username' => 'Username',
-      'Password' => 'Password',
-      'Login' => 'Login',
-      'Log Out' => 'Log Out',
-      'Preferences' => 'Preferenze',
-      'State' => 'Provincia',
-      'Street' => 'Strada',
-      'Country' => 'Nazione',
-      'City' => 'Citta\'',
-      'PostalCode' => 'Codici Postale',
-      'Followed' => 'Seguire',
-      'Follow' => 'Segui',
-      'Followers' => 'Followers',
-      'Clear Local Cache' => 'Cancella la Cache locale',
-      'Actions' => 'Azioni',
-      'Delete' => 'Cancellare',
-      'Update' => 'Aggiorna',
-      'Save' => 'Salvare',
-      'Edit' => 'Modificare',
-      'View' => 'View',
-      'Cancel' => 'Annullare',
-      'Apply' => 'Applicare',
-      'Unlink' => 'Scollegare',
-      'Mass Update' => 'Aggiornamento Massivo',
-      'Export' => 'Esporta',
-      'No Data' => 'Nessun Dato',
-      'No Access' => 'No Access',
-      'All' => 'Tutti',
-      'Active' => 'Attivo',
-      'Inactive' => 'Inattivo',
-      'Write your comment here' => 'Scrivi il tuo commento qui',
-      'Post' => 'Post',
-      'Stream' => 'Flusso attività',
-      'Show more' => 'Mostra altro',
-      'Dashlet Options' => 'Opzioni Dashlet',
-      'Full Form' => 'Modulo Completo',
-      'Insert' => 'Inserire',
-      'Person' => 'Persone',
-      'First Name' => 'Nome',
-      'Last Name' => 'Cognome',
-      'Original' => 'Originale',
+      'Misc' => 'Misceláneos',
+      'Merge' => 'Unir',
+      'None' => 'Ninguno',
+      'Home' => 'Inicio',
+      'by' => 'por',
+      'Saved' => 'Guardado',
+      'Error' => 'Error',
+      'Select' => 'Seleccionar',
+      'Not valid' => 'No válido',
+      'Please wait...' => 'Por favor espere...',
+      'Please wait' => 'Por favor espere',
+      'Loading...' => 'Cargando...',
+      'Uploading...' => 'Subiendo...',
+      'Sending...' => 'Enviando...',
+      'Merging...' => 'Fusionando...',
+      'Merged' => 'Fusionado	',
+      'Removed' => 'Eliminado',
+      'Posted' => 'Publicado',
+      'Linked' => 'Enlazado',
+      'Unlinked' => 'Desenlazado',
+      'Done' => 'Hecho',
+      'Access denied' => 'Acceso denegado',
+      'Not found' => 'No encontrado',
+      'Access' => 'Acceso',
+      'Are you sure?' => '¿Está seguro?',
+      'Record has been removed' => 'Registro Eliminado',
+      'Wrong username/password' => 'Nombre de usuario/contraseña incorrectos',
+      'Post cannot be empty' => 'La entrada no puede estar vacia',
+      'Removing...' => 'Removiendo...',
+      'Unlinking...' => 'Desenlazando...',
+      'Posting...' => 'Publicando...',
+      'Username can not be empty!' => '¡El nombre de usuario no puede estar vacío!',
+      'Cache is not enabled' => 'La caché no está habilitada',
+      'Cache has been cleared' => 'La caché fue limpiada correctamente',
+      'Rebuild has been done' => 'El sistema se ha reconstruido correctamente',
+      'Return to Application' => 'Volver a la aplicación',
+      'Saving...' => 'Guardando...',
+      'Modified' => 'Modificado',
+      'Created' => 'Creado',
+      'Create' => 'Crear',
+      'create' => 'crear',
+      'Overview' => 'General',
+      'Details' => 'Detalles',
+      'Add Field' => 'Añadir Campo',
+      'Add Dashlet' => 'Añadir Caja',
+      'Filter' => 'Filtro',
+      'Edit Dashboard' => 'Editar escritorio',
+      'Add' => 'Añadir',
+      'Add Item' => 'Agregar elemento',
+      'Reset' => 'Resetear',
+      'Menu' => 'Menú',
+      'More' => 'Más',
+      'Search' => 'Buscar',
+      'Only My' => 'Solo míos',
+      'Open' => 'Abiertos',
+      'Admin' => 'Administrador',
+      'About' => 'Acerca',
+      'Refresh' => 'Actualizar',
+      'Remove' => 'Eliminar',
+      'Options' => 'Ajustes',
+      'Username' => 'Nombre de usuario',
+      'Password' => 'Contraseña',
+      'Login' => 'Entrar',
+      'Log Out' => 'Salir',
+      'Preferences' => 'Preferencias',
+      'State' => 'Estado',
+      'Street' => 'Calle',
+      'Country' => 'País',
+      'City' => 'Ciudad',
+      'PostalCode' => 'Código Postal',
+      'Followed' => 'Siguiendo',
+      'Follow' => 'Seguir',
+      'Followers' => 'Seguidores',
+      'Clear Local Cache' => 'Borrar la caché local',
+      'Actions' => 'Acciones',
+      'Delete' => 'Borrar',
+      'Update' => 'Guardar',
+      'Save' => 'Guardar',
+      'Edit' => 'Editar',
+      'View' => 'Ver',
+      'Cancel' => 'Cancelar',
+      'Apply' => 'Aplicar',
+      'Unlink' => 'Desenlazar',
+      'Mass Update' => 'Actualización masiva',
+      'Export' => 'Exportar',
+      'No Data' => 'Sin Datos',
+      'No Access' => 'Sin acceso',
+      'All' => 'Todos',
+      'Active' => 'Activo',
+      'Inactive' => 'Inactivo',
+      'Write your comment here' => 'Escriba su comentario aquí',
+      'Post' => 'Publicar',
+      'Stream' => 'Historia',
+      'Show more' => 'Mostrar mas',
+      'Dashlet Options' => 'Ajustes de cajas',
+      'Full Form' => 'Formulario Completo',
+      'Insert' => 'Insertar',
+      'Person' => 'Persona',
+      'First Name' => 'Nombre',
+      'Last Name' => 'Apellidos',
+      'Original' => 'Original',
       'You' => 'Tu',
       'you' => 'tu',
-      'change' => 'modificare',
-      'Change' => 'Change',
-      'Primary' => 'Primario',
-      'Save Filter' => 'Save Filter',
-      'Administration' => 'Amministrazione',
-      'Run Import' => 'Avvia Importazione',
-      'Duplicate' => 'Duplicato',
-      'Notifications' => 'Notifica',
-      'Mark all read' => 'Contrassegna tutti come letto',
-      'See more' => 'Vedi altro',
-      'Today' => 'Oggi',
-      'Tomorrow' => 'Domani',
-      'Yesterday' => 'Ieri',
-      'Submit' => 'Invio',
-      'Close' => 'Chiuso',
-      'Yes' => 'Yes',
+      'change' => 'cambiar',
+      'Change' => 'Cambio',
+      'Primary' => 'Principal',
+      'Save Filter' => 'Guardar Filtro',
+      'Administration' => 'Administración',
+      'Run Import' => 'Ejecutar importación',
+      'Duplicate' => 'Duplicar',
+      'Notifications' => 'Notificaciones',
+      'Mark all read' => 'Marcar todos como leído',
+      'See more' => 'Ver más',
+      'Today' => 'Hoy',
+      'Tomorrow' => 'Mañana',
+      'Yesterday' => 'Ayer',
+      'Submit' => 'Enviar',
+      'Close' => 'Cerrar',
+      'Yes' => 'Si',
       'No' => 'No',
-      'Select All Results' => 'Seleziona tutti i risultati',
-      'Value' => 'Valore',
-      'Current version' => 'Versione in uso',
-      'List View' => 'Vista elenco',
-      'Tree View' => 'Visualizzazione ad Albero',
-      'Unlink All' => 'Scollegare tutti',
-      'Total' => 'Totale',
-      'Print to PDF' => 'Stampa in PDF',
-      'Default' => 'Default',
-      'Number' => 'Numero',
-      'From' => 'Da',
-      'To' => 'A',
-      'Create Post' => 'Crea Post',
-      'Previous Entry' => 'Anteprima Accesso',
-      'Next Entry' => 'Prossimo Accesso',
-      'View List' => 'Visualizza elenco',
-      'Attach File' => 'Allega File',
-      'Skip' => 'Salta',
-      'Attribute' => 'Attributo',
-      'Function' => 'Funzione',
-      'Self-Assign' => 'Autoassegna',
-      'Self-Assigned' => 'Autoassegnato',
+      'Select All Results' => 'Seleccionar todos los resultados',
+      'Value' => 'Valor',
+      'Current version' => 'Versión actual',
+      'List View' => 'Vista de Lista',
+      'Tree View' => 'Vista de árbol',
+      'Unlink All' => 'Desenlazar todo',
+      'Total' => 'Total',
+      'Print to PDF' => 'Imprimir PDF',
+      'Default' => 'Por defecto',
+      'Number' => 'Número',
+      'From' => 'De',
+      'To' => 'Para',
+      'Create Post' => 'Crear entrada',
+      'Previous Entry' => 'Entrada anterior',
+      'Next Entry' => 'Siguiente Entrada',
+      'View List' => 'Ver lista completa',
+      'Attach File' => 'Adjuntar archivo',
+      'Skip' => 'Omitir',
+      'Attribute' => 'Atributo',
+      'Function' => 'Función',
+      'Self-Assign' => 'Autoasignar',
+      'Self-Assigned' => 'Autosegnado',
       'Expand' => 'Expand',
       'Collapse' => 'Collapse',
       'New notifications' => 'New notifications',
@@ -1333,712 +1357,715 @@ Evento - disponibile nei pannelli Calendario ed Attività.',
       'Personal Data' => 'Personal Data',
       'Erase' => 'Erase',
       'Move Over' => 'Move Over',
-      'Create InboundEmail' => 'Creare Email in entrata',
-      'Activities' => 'Attivià',
-      'History' => 'History',
-      'Attendees' => 'Partecipanti',
-      'Schedule Meeting' => 'Pianifica Riunione',
-      'Schedule Call' => 'Pianifica chiamata',
-      'Compose Email' => 'Componi email',
-      'Log Meeting' => 'Registro Riunione',
-      'Log Call' => 'Registro chiamata',
-      'Archive Email' => 'Archivio Email',
-      'Create Task' => 'Crea Compito',
-      'Tasks' => 'Compiti',
+      'Create InboundEmail' => 'Crear correo entrante',
+      'Activities' => 'Actividades',
+      'History' => 'Historial de actividades',
+      'Attendees' => 'Asistentes',
+      'Schedule Meeting' => 'Programar reunión',
+      'Schedule Call' => 'Programar llamada',
+      'Compose Email' => 'Escribir correo',
+      'Log Meeting' => 'Registrar reunión',
+      'Log Call' => 'Registrar llamada',
+      'Archive Email' => 'Nuevo Correo Archivado',
+      'Create Task' => 'Crear tarea',
+      'Tasks' => 'Tareas',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'pleaseWait' => 'Attendere...',
-      'posting' => 'Spedizione...',
-      'loading' => 'Caricamento...',
-      'saving' => 'Salvataggio...',
-      'confirmLeaveOutMessage' => 'Sei sicuro di volere lasciare il form?',
-      'notModified' => 'Non hai modificato il record',
-      'duplicate' => 'Il record che si sta creando sembra essere un duplicato',
-      'dropToAttach' => 'Rilascia per allegare',
-      'fieldIsRequired' => '{field} è richiesto',
-      'fieldShouldBeEmail' => '{field} deve essere un indirizzo email valido',
-      'fieldShouldBeFloat' => '{field} deve essere un numero decimale',
-      'fieldShouldBeInt' => '{field} deve essere un intero valido',
-      'fieldShouldBeDate' => '{field} deve essere una data valida',
-      'fieldShouldBeDatetime' => '{field} deve essere una data/ora valida',
-      'fieldShouldAfter' => '{field} deve essere dopo {otherField}',
-      'fieldShouldBefore' => '{field} deve essere prima {otherField}',
-      'fieldShouldBeBetween' => '{field} deve essere compreso tra {min} e {max}',
-      'fieldShouldBeLess' => '{field} deve essere minore di {value}',
-      'fieldShouldBeGreater' => '{field} deve essere maggiore di {value}',
-      'fieldBadPasswordConfirm' => '{field} non confermato correttamente',
-      'fieldMaxFileSizeError' => 'File should not exceed {max} Mb',
+      'pleaseWait' => 'Por favor espere...',
+      'posting' => 'Publicando...',
+      'loading' => 'Cargando...',
+      'saving' => 'Guardando...',
+      'confirmLeaveOutMessage' => '¿Seguro que quieres salir del formulario?',
+      'notModified' => 'Usted no ha modificado el registro',
+      'duplicate' => 'El registro que está creando parece ser un duplicado',
+      'dropToAttach' => 'Arrastre para adjuntar',
+      'fieldIsRequired' => '{field} es requerido',
+      'fieldShouldBeEmail' => '{field} debe ser un correo electrónico válido',
+      'fieldShouldBeFloat' => '{field} debe ser un decimal válido',
+      'fieldShouldBeInt' => '{field} debe ser un entero válido',
+      'fieldShouldBeDate' => '{field} debe ser una fecha válida',
+      'fieldShouldBeDatetime' => '{field} debe ser una fecha válida fecha/hora',
+      'fieldShouldAfter' => '{field} debe estar después de {otherField}',
+      'fieldShouldBefore' => '{field} debe estar antes de {otherField}',
+      'fieldShouldBeBetween' => '{field} debe estar entre {min} y {max}',
+      'fieldShouldBeLess' => '{field} no debería ser mayor que {value}',
+      'fieldShouldBeGreater' => '{field} no debería ser menor que {value}',
+      'fieldBadPasswordConfirm' => '{field} confirmado de forma incorrecta',
+      'fieldMaxFileSizeError' => 'El archivo no puede exeder los {max} Mb',
       'fieldIsUploading' => 'Uploading in progress',
-      'resetPreferencesDone' => 'Le preferenze sono state ripristinate alle impostazioni predefinite',
-      'confirmation' => 'Sei sicuro?',
-      'unlinkAllConfirmation' => 'Sei sicuro di scollegare tutti i record correlati?',
-      'resetPreferencesConfirmation' => 'Sei sicuro di voler ripristinare le preferenze ai valori predefiniti?',
-      'removeRecordConfirmation' => 'Sei sicuro di voler rimuovere il record?',
-      'unlinkRecordConfirmation' => 'Sei sicuro di voler scollegare il record correlato?',
-      'removeSelectedRecordsConfirmation' => 'Sei sicuro di voler rimuovere i record selezionati?',
-      'massUpdateResult' => '{count} record sono stati aggiornati',
-      'massUpdateResultSingle' => 'Records aggiornati: {count}',
-      'noRecordsUpdated' => 'Nessun record sono stati aggiornati',
-      'massRemoveResult' => '{count} record sono stati rimossi',
-      'massRemoveResultSingle' => 'Records rimossi: {count}',
-      'noRecordsRemoved' => 'Nessun record è stato rimosso',
-      'clickToRefresh' => 'Clicca per aggiornare',
-      'streamPostInfo' => 'Type <strong>@username</strong> to mention users in the post.
+      'resetPreferencesDone' => 'Preferencias se ha restablecido a los valores predeterminados',
+      'confirmation' => '¿Está seguro?',
+      'unlinkAllConfirmation' => '¿Seguro que deseas desvincular todos los registros relacionados?',
+      'resetPreferencesConfirmation' => '¿Está seguro que desea restablecer las preferencias?',
+      'removeRecordConfirmation' => '¿Está seguro que quiere eliminar los registros?',
+      'unlinkRecordConfirmation' => '¿Está seguro que quiere desenlazar la relación?',
+      'removeSelectedRecordsConfirmation' => '¿Está seguro que quiere eliminar los registros seleccionados?',
+      'massUpdateResult' => '{count} registros se han actualizado',
+      'massUpdateResultSingle' => '{count} registro ha sido actualizado',
+      'noRecordsUpdated' => 'Ningún registro fue actualizado',
+      'massRemoveResult' => '{count} registros se han eliminado',
+      'massRemoveResultSingle' => '{count} registro se ha eliminado',
+      'noRecordsRemoved' => 'Ningún registro fue eliminado',
+      'clickToRefresh' => 'Clic para actualizar',
+      'streamPostInfo' => 'Escriba <strong>@usuario</strong> para mencionar usuarios en el comentario.
 
-Available markdown syntax:
-`<code>code</code>`
-**<strong>strong text</strong>**
-*<em>emphasized text</em>*
-~<del>deleted text</del>~
-> blockquote
-[text](url)',
-      'writeYourCommentHere' => 'Scrivi il tuo commento qui',
-      'writeMessageToUser' => 'Scrivi un messaggio a {user}',
-      'writeMessageToSelf' => 'Scrivi un messaggio nel tuo flusso attività',
-      'typeAndPressEnter' => 'Digita e Schiaccia Invio',
-      'checkForNewNotifications' => 'Verifica la presenza di nuove notifiche',
-      'checkForNewNotes' => 'Controlla aggiornamenti nel flusso attività',
-      'internalPost' => 'Il Messaggio sarà visto solo da utenti interni',
-      'internalPostTitle' => 'Il messaggio è visto solo dagli utenti interni',
-      'done' => 'Fatto',
-      'confirmMassFollow' => 'Vuoi veramente seguire i record selezionati?',
-      'confirmMassUnfollow' => 'Vuoi veramente non seguire più i record selezionati?',
-      'massFollowResult' => 'Ora sono seguiti {count} records',
-      'massUnfollowResult' => 'Ora non sono più seguiti {count} records',
-      'massFollowResultSingle' => 'Ora è seguito {count} record',
-      'massUnfollowResultSingle' => 'Ora non è più seguito {count} record',
-      'massFollowZeroResult' => 'Nulla è stato seguito',
-      'massUnfollowZeroResult' => 'Nulla è stato non più seguito',
+La sintaxis markdown disponible es:
+
+`<code>código</code>`
+**<strong>texto en negritas</strong>**
+*<em>un texto con énfasis</em>*
+~<del>el texto eliminado</del>~
+> Citar bloque
+[nombre del enlace](url)',
+      'writeYourCommentHere' => 'Escriba su comentario aquí',
+      'writeMessageToUser' => 'Escribir un mensaje a {user}',
+      'writeMessageToSelf' => 'Escribir un mensaje en tu historia',
+      'typeAndPressEnter' => 'Escriba y presione enter',
+      'checkForNewNotifications' => 'Comprobar si hay nuevas notificaciones',
+      'checkForNewNotes' => 'Comprobar si hay actualizaciones en la historia',
+      'internalPost' => 'El puesto será visto solo por los usuarios internos',
+      'internalPostTitle' => 'El mensaje es visto solo por usuarios internos',
+      'done' => 'Hecho',
+      'confirmMassFollow' => '¿Está seguro que desea seguir los registros seleccionados?',
+      'confirmMassUnfollow' => '¿Está seguro que desea dejar de seguir los registros seleccionados?',
+      'massFollowResult' => 'Se han seguido {count} registros',
+      'massUnfollowResult' => 'Se han dejado de seguir {count} registros',
+      'massFollowResultSingle' => 'Se han seguido {count} registro',
+      'massUnfollowResultSingle' => 'Se han dejado de seguir {count} registro',
+      'massFollowZeroResult' => 'Nada se siguió',
+      'massUnfollowZeroResult' => 'Nada se dejó de seguir',
       'erasePersonalDataConfirmation' => 'Checked fields will be erased permanently. Are you sure?',
       'massPrintPdfMaxCountError' => 'Can\'t print more that {maxCount} records.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMy' => 'Solo il mio',
-      'followed' => 'Seguire',
+      'onlyMy' => 'Solo míos',
+      'followed' => 'Siguiendo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'followed' => 'Seguire',
-      'all' => 'Tutti',
+      'followed' => 'Siguiendo',
+      'all' => 'Todos',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'remove' => 'Eliminare',
-      'merge' => 'Unire',
-      'massUpdate' => 'Aggiornamento Massivo',
-      'export' => 'Esporta',
-      'follow' => 'Segui',
-      'unfollow' => 'Non seguire',
+      'remove' => 'Eliminar',
+      'merge' => 'Unir',
+      'massUpdate' => 'Actualización masiva',
+      'export' => 'Exportar',
+      'follow' => 'Seguir',
+      'unfollow' => 'Dejar de seguir',
       'convertCurrency' => 'Convert Currency',
       'printPdf' => 'Print to PDF',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'firstName' => 'Nome',
-      'lastName' => 'Cognome',
-      'salutationName' => 'Saluto',
-      'assignedUser' => 'Utente assegnato',
-      'assignedUsers' => 'Utenti assegnati',
-      'emailAddress' => 'Email',
+      'name' => 'Nombre',
+      'firstName' => 'Nombre',
+      'lastName' => 'Apellidos',
+      'salutationName' => 'Saludo',
+      'assignedUser' => 'Usuario asignado',
+      'assignedUsers' => 'Usuarios asignados',
+      'emailAddress' => 'Correo electrónico',
       'emailAddressData' => 'Email Address Data',
       'emailAddressIsOptedOut' => 'Email Address is Opted-Out',
-      'assignedUserName' => 'Nome utente assegnato',
-      'teams' => 'Team',
-      'createdAt' => 'Creato il',
-      'modifiedAt' => 'Modificato il',
-      'createdBy' => 'Creato da',
-      'modifiedBy' => 'Modificato da',
-      'description' => 'Descrizione',
-      'address' => 'Indirizzi',
-      'phoneNumber' => 'Telefono',
-      'phoneNumberMobile' => 'Telefono (Mobile)',
-      'phoneNumberHome' => 'Telefono (Home)',
-      'phoneNumberFax' => 'Telefono (Fax)',
-      'phoneNumberOffice' => 'Telefono (Office)',
-      'phoneNumberOther' => 'Telefono (Other)',
+      'assignedUserName' => 'Nombre de usuario asignado',
+      'teams' => 'Equipos',
+      'createdAt' => 'Creado en',
+      'modifiedAt' => 'Modificado el',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'description' => 'Descripción',
+      'address' => 'Dirección',
+      'phoneNumber' => 'Teléfono',
+      'phoneNumberMobile' => 'Teléfono (Móvil)',
+      'phoneNumberHome' => 'Teléfono (Casa)',
+      'phoneNumberFax' => 'Teléfono (Fax)',
+      'phoneNumberOffice' => 'Teléfono (Oficina)',
+      'phoneNumberOther' => 'Teléfono (Otro)',
       'phoneNumberData' => 'Phone Number Data',
-      'order' => 'Ordine',
-      'parent' => 'Genitore',
-      'children' => 'Children',
+      'order' => 'Orden',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
       'id' => 'ID',
       'ids' => 'IDs',
       'type' => 'Type',
       'names' => 'Names',
       'targetListIsOptedOut' => 'Is Opted Out (Target List)',
-      'billingAddressCity' => 'Citta\'',
-      'billingAddressCountry' => 'Nazione',
-      'billingAddressPostalCode' => 'Codice Postale',
-      'billingAddressState' => 'Provincia',
-      'billingAddressStreet' => 'Strada',
-      'billingAddressMap' => 'Map',
-      'addressCity' => 'Citta\'',
-      'addressStreet' => 'Strada',
-      'addressCountry' => 'Nazione',
-      'addressState' => 'Provincia',
-      'addressPostalCode' => 'Codice Postale',
-      'addressMap' => 'Map',
-      'shippingAddressCity' => 'Citta\' (Spedizione)',
-      'shippingAddressStreet' => 'Strada (Spedizione)',
-      'shippingAddressCountry' => 'Nazione (Spedizione)',
-      'shippingAddressState' => 'Stato (Spedizione)',
-      'shippingAddressPostalCode' => 'Codice Postale (Spedizione)',
-      'shippingAddressMap' => 'Mappa (Spedizione)',
+      'billingAddressCity' => 'Ciudad',
+      'billingAddressCountry' => 'País',
+      'billingAddressPostalCode' => 'Código Postal',
+      'billingAddressState' => 'Estado',
+      'billingAddressStreet' => 'Calle',
+      'billingAddressMap' => 'Mapa',
+      'addressCity' => 'Ciudad',
+      'addressStreet' => 'Calle',
+      'addressCountry' => 'País',
+      'addressState' => 'Estado',
+      'addressPostalCode' => 'Código Postal',
+      'addressMap' => 'Mapa',
+      'shippingAddressCity' => 'Ciudad (envío)',
+      'shippingAddressStreet' => 'Calle (envío)',
+      'shippingAddressCountry' => 'País (envío)',
+      'shippingAddressState' => 'Estado (envío)',
+      'shippingAddressPostalCode' => 'Código Postal (envío)',
+      'shippingAddressMap' => 'Mapa (envío)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'assignedUser' => 'Utente assegnato',
-      'createdBy' => 'Creato da',
-      'modifiedBy' => 'Modificato da',
-      'team' => 'Team',
-      'roles' => 'Ruoli',
-      'teams' => 'Teams',
-      'users' => 'Utenti',
-      'parent' => 'Genitore',
-      'children' => 'Children',
-      'contacts' => 'Contatti',
-      'opportunities' => 'Opportunita\'',
-      'leads' => 'Comando',
-      'meetings' => 'Riunioni',
-      'calls' => 'Chiamate',
-      'tasks' => 'Compiti',
-      'emails' => 'Email',
-      'accounts' => 'Account',
-      'cases' => 'Casi',
-      'documents' => 'Documenti',
-      'account' => 'Account',
-      'opportunity' => 'Opportunità',
-      'contact' => 'Contatti',
+      'assignedUser' => 'Usuario asignado',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'team' => 'Equipo',
+      'roles' => 'Roles',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'leads' => 'Posibles clientes',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'accounts' => 'Cuentas',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'account' => 'Cuenta',
+      'opportunity' => 'Oportunidad',
+      'contact' => 'Contacto',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
-      'Stream' => 'Flusso attività',
-      'Emails' => 'My Inbox',
-      'Records' => 'Elenco records',
-      'Leads' => 'Le mie Guide',
-      'Opportunities' => 'Le mie Opportunità',
-      'Tasks' => 'I miei Compiti',
-      'Cases' => 'I miei Casi',
+      'Stream' => 'Historia',
+      'Emails' => 'Mi bandeja de entrada',
+      'Records' => 'Lista de registros',
+      'Leads' => 'Mis posibles clientes',
+      'Opportunities' => 'Mis oportunidades',
+      'Tasks' => 'Mis tareas',
+      'Cases' => 'Mis tickets',
       'Calendar' => 'Calendario',
-      'Calls' => 'Le mie Chiamate',
-      'Meetings' => 'Le mie Riunioni',
-      'OpportunitiesByStage' => 'Opportunità di stage',
-      'OpportunitiesByLeadSource' => 'Opportunities by Lead Source',
-      'SalesByMonth' => 'Vendite per Mese',
-      'SalesPipeline' => 'Canale di Vendita',
-      'Activities' => 'le mie Attività',
+      'Calls' => 'Mis llamadas',
+      'Meetings' => 'Mis reuniones',
+      'OpportunitiesByStage' => 'Oportunidades por Etapa',
+      'OpportunitiesByLeadSource' => 'Oportunidades por toma de contacto del posible cliente',
+      'SalesByMonth' => 'Ventas por mes',
+      'SalesPipeline' => 'Canalización de ventas',
+      'Activities' => 'Mis próximas actividades',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
-      'assign' => '{entityType} {entity} è stato assegnato a te',
-      'emailReceived' => 'Email ricevuta da {from}',
-      'entityRemoved' => '{user} ha rimosso {entityType} {entity}',
+      'assign' => '{entityType} {entity} ha sido asignado a usted',
+      'emailReceived' => 'Correo recibido de: <strong>{from}</strong>.',
+      'entityRemoved' => '{user} ha eliminado: <strong>[{entityType}]</strong> {entity}',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
-      'post' => '{user} ha pubblicato {entityType} {entity}',
-      'attach' => '{user} ha allegato a {entityType} {entity}',
-      'status' => '{user} ha aggiornato {field} di {entityType} {entity}',
-      'update' => '{user} ha aggiornato {entityType} {entity}',
-      'postTargetTeam' => '{user} ha pubblicato al team {target}',
-      'postTargetTeams' => '{user} ha pubblicato ai team {target}',
-      'postTargetPortal' => '{user} ha postato sul portale {target}',
-      'postTargetPortals' => '{user} ha postato sui portali {target}',
-      'postTarget' => '{user} ha postato a {target}',
-      'postTargetYou' => '{user} ha postato a te',
-      'postTargetYouAndOthers' => '{user} ha postato a {target} e a te',
-      'postTargetAll' => '{user} ha postato a tutti',
-      'postTargetSelf' => '{user} auto-pubblicato',
-      'postTargetSelfAndOthers' => '{user} ha pubblicato a {target}',
-      'mentionInPost' => '{user} menzionato {mentioned} in {entityType} {entity}',
-      'mentionYouInPost' => '{user} ti ha menzionato in {entityType} {entity}',
-      'mentionInPostTarget' => '{user} ha menzionato {mentioned} in un post',
-      'mentionYouInPostTarget' => '{user} ti ha menzionato in un post riguardante {target}',
-      'mentionYouInPostTargetAll' => '{user} ti ha menzionato in un post visibile a tutti',
-      'mentionYouInPostTargetNoTarget' => '{user} ti ha menzionato in un post',
-      'create' => '{user} creato {entityType} {entity}',
-      'createThis' => '{user} ha creato {entityType}',
-      'createAssignedThis' => '{user} ha creato {entity} assegnandolo a {assignee}',
-      'createAssigned' => '{user} ha creato {entityType} {entity} assegnato a {assignee}',
-      'createAssignedYou' => '{user} ha creato {entityType} {entity} e lo ha assegnato a te',
-      'createAssignedThisSelf' => '{user} ha creato questo {entityType} e lo ha auto-assegnato',
-      'createAssignedSelf' => '{user} ha creato {entityType} {entity} e lo ha auto-assegnato',
-      'assign' => '{user} ha assegnato {entityType} {entity} a {assignee}',
-      'assignThis' => '{user} ha assegnato {entityType} a {assignee}',
-      'assignYou' => '{user} ha assegnato {entityType} {entity} a te',
-      'assignThisVoid' => '{user} ha revocato questo {entityType}',
-      'assignVoid' => '{user} ha revocato {entityType} {entity}',
-      'assignThisSelf' => '{user} ha auto-assegnato {entityType}',
-      'assignSelf' => '{user} ha auto-assegnato {entityType} {entity}',
-      'postThis' => '{user} pubblicato',
-      'attachThis' => '{user} ha allegato',
-      'statusThis' => '{user} ha aggiornato {field}',
-      'updateThis' => '{user} ha aggiornato {entityType}',
-      'createRelatedThis' => '{user} ha creato {relatedEntityType} {relatedEntity} correlato al {entityType}',
-      'createRelated' => '{user} ha creato {relatedEntityType} {relatedEntity} correlato al {entityType} {entity}',
-      'relate' => '{user} si è collegato a {relatedEntityType} {relatedEntity} con {entityType} {entity}',
-      'relateThis' => '{user} si è collegato a {relatedEntityType} {relatedEntity} con {entityType}',
-      'emailReceivedFromThis' => 'Email ricevuta da {from}',
-      'emailReceivedInitialFromThis' => 'Email ricevuta da {from}, {entityType} è stato creato',
-      'emailReceivedThis' => 'Email ricevuta',
-      'emailReceivedInitialThis' => 'Email ricevuta,{entityType} è stato creato',
-      'emailReceivedFrom' => 'Email ricevuta da {from}, collegata con {entityType} {entity}',
-      'emailReceivedFromInitial' => 'Email ricevuta da {from}, {entityType} {entity} creata',
-      'emailReceived' => 'Email ricevute in relazione a {entityType} {entity}',
-      'emailReceivedInitial' => 'Email ricevuta: {entityType} {entity} creato',
-      'emailReceivedInitialFrom' => 'Email ricevuta da {from}, {entityType} {entity} creata',
-      'emailSent' => '{by} email inviata relativa a {entityType} {entity}',
-      'emailSentThis' => '{by} email inviata',
+      'post' => '{user} ha publicado en: <strong>[{entityType}]</strong> {entity}',
+      'attach' => '{user} ha añadido un archivo adjunto en: <strong>[{entityType}]</strong> {entity}',
+      'status' => '{user} ha actualizado el campo <strong>{field}</strong> en: <strong>[{entityType}]</strong> {entity}',
+      'update' => '{user} ha actualizado: <strong>[{entityType}]</strong> {entity}',
+      'postTargetTeam' => '{user} ha publicado en el equipo {target}',
+      'postTargetTeams' => '{user} ha publicado en los equipos {target}',
+      'postTargetPortal' => '{user} ha publicado en el portal {target}',
+      'postTargetPortals' => '{user} ha publicado en los portales {target}',
+      'postTarget' => '{user} ha publicado en {target}',
+      'postTargetYou' => '{user} ha publicado pora usted',
+      'postTargetYouAndOthers' => '{user} ha publicado para {target} y para usted',
+      'postTargetAll' => '{user} ha publicado para todos',
+      'postTargetSelf' => '{user} se ha enviado un mensaje a sí mismo',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
+      'mentionInPost' => '{user} ha mencionado a {mentioned} en: <strong>[{entityType}]</strong> {entity}',
+      'mentionYouInPost' => '{user} te ha mencionado en: <strong>[{entityType}]</strong> {entity}',
+      'mentionInPostTarget' => '{user} ha mencionado a {mentioned} en la publicación',
+      'mentionYouInPostTarget' => '{user} te ha mencionado en la publicación para {target}',
+      'mentionYouInPostTargetAll' => '{user} te ha mencionado en una publicación para todos',
+      'mentionYouInPostTargetNoTarget' => '{user} te ha mencionado en una publicación',
+      'create' => '{user} ha creado: <strong>[{entityType}]</strong> {entity}',
+      'createThis' => '{user} ha creado: <strong>{entityType}</strong>',
+      'createAssignedThis' => '{user} ha creado y se lo ha asignado a {assignee}: {entityType}',
+      'createAssigned' => '{user} ha creado y se lo ha asignado a {assignee}: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedYou' => '{user} ha creado y te lo ha asignado: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedThisSelf' => '{user} ha creado y se ha asignado a sí mismo: {entityType}',
+      'createAssignedSelf' => '{user} ha creado y se ha asignado a sí mismo: <strong>[{entityType}]</strong> {entity}',
+      'assign' => '{user} ha asignado: <strong>[{entityType}]</strong> {entity} a {assignee}',
+      'assignThis' => '{user} ha asignado {entityType} a {assignee}',
+      'assignYou' => '{user} te ha asignado <strong>[{entityType}]<strong> {entity} a ti',
+      'assignThisVoid' => '{user} ha desasignado: {entityType}',
+      'assignVoid' => '{user} ha desasignado: <strong>[{entityType}]</strong> {entity}',
+      'assignThisSelf' => '{user} se ha asignado así mismo: {entityType}',
+      'assignSelf' => '{user} se ha asignado así mismo: <strong>[{entityType}]</strong> {entity}',
+      'postThis' => '{user} ha publicado',
+      'attachThis' => '{user} ha adjuntado',
+      'statusThis' => '{user} ha actualizado el campo <strong>{field}</strong>',
+      'updateThis' => '{user} ha actualizado: {entityType}',
+      'createRelatedThis' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity}, enlazado a {entityType}',
+      'createRelated' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity} enlazado a <strong>[{entityType}]</strong> {entity}',
+      'relate' => '{user} ha enlazado <strong>[{relatedEntityType}]</strong> {relatedEntity} a <strong>[{entityType}] {entity}',
+      'relateThis' => '{user} vinculado {relatedEntityType} {relatedEntity} con este {entityType}',
+      'emailReceivedFromThis' => 'Correo recibido de: <strong>{from}</strong>.',
+      'emailReceivedInitialFromThis' => 'Correo recibido de {from}, se ha creado: {entityType}',
+      'emailReceivedThis' => 'Correo recibido',
+      'emailReceivedInitialThis' => 'Correo recibido, se ha creado: {entityType}',
+      'emailReceivedFrom' => 'Correo recibido de {from}, relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailReceivedFromInitial' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceived' => 'El correo {email} ha sido recibido para el {entityType} {entity}',
+      'emailReceivedInitial' => 'Correo recibido, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceivedInitialFrom' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailSent' => '{by} ha enviado un correo relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailSentThis' => '{by} ha enviado un correo',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
-      'postTargetSelfAndOthers' => '{user} ha postato a {target} e se stesso',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
-      'postTargetSelfAndOthers' => '{user} ha postato a {target} e se stessa',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí misma',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
-        0 => 'Gennaio',
-        1 => 'Febbario',
+        0 => 'Enero',
+        1 => 'Febrero',
         2 => 'Marzo',
-        3 => 'Aprile',
-        4 => 'Maggio',
-        5 => 'Giugno',
-        6 => 'Luglio',
+        3 => 'Abril',
+        4 => 'Mayo',
+        5 => 'Junio',
+        6 => 'Julio',
         7 => 'Agosto',
-        8 => 'Settembre',
-        9 => 'Ottobre',
-        10 => 'Novembre',
-        11 => 'Dicembre',
+        8 => 'Septiembre',
+        9 => 'Octubre',
+        10 => 'Noviembre',
+        11 => 'Diciembre',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
-        0 => 'Gen',
+        0 => 'Ene',
         1 => 'Feb',
         2 => 'Mar',
-        3 => 'Apr',
-        4 => 'Mag',
-        5 => 'Giu',
-        6 => 'Lug',
+        3 => 'Abr',
+        4 => 'May',
+        5 => 'Jun',
+        6 => 'Jul',
         7 => 'Ago',
-        8 => 'Set',
-        9 => 'Ott',
+        8 => 'Sep',
+        9 => 'Oct',
         10 => 'Nov',
         11 => 'Dic',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
-        0 => 'Domenica',
-        1 => 'Lunedi',
-        2 => 'Martedi',
-        3 => 'Mercoledi',
-        4 => 'Giovedi',
-        5 => 'Venerdi',
-        6 => 'Sabato',
+        0 => 'Domingo',
+        1 => 'Lunes',
+        2 => 'Martes',
+        3 => 'Miércoles',
+        4 => 'Jueves',
+        5 => 'Viernes',
+        6 => 'Sábado',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
         0 => 'Dom',
         1 => 'Lun',
         2 => 'Mar',
-        3 => 'Mer',
-        4 => 'Gio',
-        5 => 'Ven',
+        3 => 'Mie',
+        4 => 'Jue',
+        5 => 'Vie',
         6 => 'Sab',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
         0 => 'Do',
         1 => 'Lu',
         2 => 'Ma',
-        3 => 'Me',
-        4 => 'Gi',
-        5 => 'Ve',
+        3 => 'Mi',
+        4 => 'Ju',
+        5 => 'Vi',
         6 => 'Sa',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'd',
       'h' => 'h',
       'm' => 'm',
       's' => 's',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
-        'Mr.' => 'Mr.',
-        'Mrs.' => 'Mrs.',
-        'Ms.' => 'Ms.',
+        'Mr.' => 'Sr.',
+        'Mrs.' => 'Sra.',
+        'Ms.' => 'Sta.',
         'Dr.' => 'Dr.',
       ),
-      'language' => 
+      'language' =>
       array (
-        'af_ZA' => 'Afrikaans',
-        'az_AZ' => 'Azerbaijani',
-        'be_BY' => 'Belarusian',
-        'bg_BG' => 'Bulgarian',
-        'bn_IN' => 'Bengali',
-        'bs_BA' => 'Bosnian',
-        'ca_ES' => 'Catalan',
-        'cs_CZ' => 'Czech',
-        'cy_GB' => 'Welsh',
-        'da_DK' => 'Danish',
-        'de_DE' => 'German',
-        'el_GR' => 'Greek',
-        'en_GB' => 'English (UK)',
-        'es_MX' => 'Spagnolo (Messico)',
-        'en_US' => 'English (US)',
-        'es_ES' => 'Spanish (Spain)',
-        'et_EE' => 'Estonian',
-        'eu_ES' => 'Basque',
-        'fa_IR' => 'Persian',
-        'fi_FI' => 'Finnish',
-        'fo_FO' => 'Faroese',
-        'fr_CA' => 'French (Canada)',
-        'fr_FR' => 'French (France)',
-        'ga_IE' => 'Irish',
-        'gl_ES' => 'Galician',
-        'gn_PY' => 'Guarani',
-        'he_IL' => 'Hebrew',
+        'af_ZA' => 'Afrikáans',
+        'az_AZ' => 'Azerbaiyán',
+        'be_BY' => 'Bielorruso',
+        'bg_BG' => 'Bulgaro',
+        'bn_IN' => 'Bengalí',
+        'bs_BA' => 'Bosnio',
+        'ca_ES' => 'Catalán',
+        'cs_CZ' => 'Checo',
+        'cy_GB' => 'Galés',
+        'da_DK' => 'Danés',
+        'de_DE' => 'Alemán',
+        'el_GR' => 'Griego',
+        'en_GB' => 'Inglés (UK)',
+        'es_MX' => 'Español (México)',
+        'en_US' => 'Inglés (US)',
+        'es_ES' => 'Español (España)',
+        'et_EE' => 'Estonio',
+        'eu_ES' => 'Vasco',
+        'fa_IR' => 'Persa',
+        'fi_FI' => 'Finlandés',
+        'fo_FO' => 'Feroés',
+        'fr_CA' => 'Francés (Canada)',
+        'fr_FR' => 'Francés (Francia)',
+        'ga_IE' => 'Irlandés',
+        'gl_ES' => 'Gallego',
+        'gn_PY' => 'Guaraní',
+        'he_IL' => 'Hebreo',
         'hi_IN' => 'Hindi',
-        'hr_HR' => 'Croatian',
-        'hu_HU' => 'Hungarian',
-        'hy_AM' => 'Armenian',
-        'id_ID' => 'Indonesian',
-        'is_IS' => 'Icelandic',
-        'it_IT' => 'Italian',
-        'ja_JP' => 'Japanese',
-        'ka_GE' => 'Georgian',
-        'km_KH' => 'Khmer',
-        'ko_KR' => 'Korean',
-        'ku_TR' => 'Kurdish',
-        'lt_LT' => 'Lithuanian',
-        'lv_LV' => 'Latvian',
-        'mk_MK' => 'Macedonian',
-        'ml_IN' => 'Malayalam',
-        'ms_MY' => 'Malay',
-        'nb_NO' => 'Norwegian Bokmål',
-        'nn_NO' => 'Norwegian Nynorsk',
-        'ne_NP' => 'Nepali',
-        'nl_NL' => 'Dutch',
-        'pa_IN' => 'Punjabi',
-        'pl_PL' => 'Polish',
-        'ps_AF' => 'Pashto',
-        'pt_BR' => 'Portuguese (Brazil)',
-        'pt_PT' => 'Portuguese (Portugal)',
-        'ro_RO' => 'Romanian',
-        'ru_RU' => 'Russian',
-        'sk_SK' => 'Slovak',
-        'sl_SI' => 'Slovene',
-        'sq_AL' => 'Albanian',
-        'sr_RS' => 'Serbian',
-        'sv_SE' => 'Swedish',
-        'sw_KE' => 'Swahili',
+        'hr_HR' => 'Croata',
+        'hu_HU' => 'Hungaro',
+        'hy_AM' => 'Armenio',
+        'id_ID' => 'Indonesio',
+        'is_IS' => 'Islandés',
+        'it_IT' => 'Italiano',
+        'ja_JP' => 'Japonés',
+        'ka_GE' => 'Georgiano',
+        'km_KH' => 'Camboyano',
+        'ko_KR' => 'Coreano',
+        'ku_TR' => 'Kurdo',
+        'lt_LT' => 'Lituano',
+        'lv_LV' => 'Latón',
+        'mk_MK' => 'Macedonio',
+        'ml_IN' => 'Malabar',
+        'ms_MY' => 'Malayo',
+        'nb_NO' => 'Noruego Bokmål',
+        'nn_NO' => 'Noruego Nynorsk',
+        'ne_NP' => 'Nepalí',
+        'nl_NL' => 'Holandés',
+        'pa_IN' => 'Punyabí',
+        'pl_PL' => 'Polaco',
+        'ps_AF' => 'Pastún',
+        'pt_BR' => 'Portugués (Brasil)',
+        'pt_PT' => 'Portugués (Portugal)',
+        'ro_RO' => 'Rumano',
+        'ru_RU' => 'Ruso',
+        'sk_SK' => 'Eslovaco',
+        'sl_SI' => 'Esloveno',
+        'sq_AL' => 'Albanés',
+        'sr_RS' => 'Serbio',
+        'sv_SE' => 'Sueco',
+        'sw_KE' => 'Suajili',
         'ta_IN' => 'Tamil',
-        'te_IN' => 'Telugu',
-        'th_TH' => 'Thai',
-        'tl_PH' => 'Tagalog',
-        'tr_TR' => 'Turkish',
-        'uk_UA' => 'Ukrainian',
+        'te_IN' => 'Télugu',
+        'th_TH' => 'Tailandés',
+        'tl_PH' => 'Tagalo',
+        'tr_TR' => 'Turco',
+        'uk_UA' => 'Ucraniano',
         'ur_PK' => 'Urdu',
-        'vi_VN' => 'Vietnamese',
-        'zh_CN' => 'Simplified Chinese (China)',
-        'zh_HK' => 'Traditional Chinese (Hong Kong)',
-        'zh_TW' => 'Traditional Chinese (Taiwan)',
+        'vi_VN' => 'Vietnamita',
+        'zh_CN' => 'Chino Simplificado (China)',
+        'zh_HK' => 'Chino Tradicional (Hong Kong)',
+        'zh_TW' => 'Chino Traditional (Taiwán)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
-        'on' => 'Attivo',
-        'notOn' => 'Non attivo',
-        'after' => 'Dopo',
-        'before' => 'Prima',
-        'between' => 'Fra',
-        'today' => 'Oggi',
-        'past' => 'Past',
+        'on' => 'Está en',
+        'notOn' => 'No está en',
+        'after' => 'Después',
+        'before' => 'Antes',
+        'between' => 'Entre',
+        'today' => 'Hoy',
+        'past' => 'Pasado',
         'future' => 'Futuro',
-        'currentMonth' => 'Mese in corso',
-        'lastMonth' => 'Ultimo mese',
-        'nextMonth' => 'Next Month',
-        'currentQuarter' => 'Trimestre in corso',
-        'lastQuarter' => 'Ultimo trimestre',
-        'currentYear' => 'Anno in corso',
-        'lastYear' => 'Ultimo anno',
-        'lastSevenDays' => 'Ultimi 7 giorni',
-        'lastXDays' => 'Ultimi X giorni',
-        'nextXDays' => 'Successivi X giorni',
-        'ever' => 'Mai',
-        'isEmpty' => 'Vuoto',
-        'olderThanXDays' => 'Più vecchio di X giorni',
-        'afterXDays' => 'Dopo X giorni',
+        'currentMonth' => 'Mes Actual',
+        'lastMonth' => 'Mes pasado',
+        'nextMonth' => 'Siguiente mes',
+        'currentQuarter' => 'Trimestre Actual',
+        'lastQuarter' => 'Trimestre pasado',
+        'currentYear' => 'Año Actual',
+        'lastYear' => 'Año pasado',
+        'lastSevenDays' => 'Últimos 7 Días',
+        'lastXDays' => 'Últimos X Días',
+        'nextXDays' => 'Próximos X Días',
+        'ever' => 'Nunca',
+        'isEmpty' => 'Está Vacío',
+        'olderThanXDays' => 'Más de X Días',
+        'afterXDays' => 'Después de X días',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
-        'is' => 'È',
-        'isEmpty' => 'È Vuoto',
-        'isNotEmpty' => 'Non è Vuoto',
-        'isOneOf' => 'Qualsiasi di',
-        'isFromTeams' => 'È del Team',
-        'isNot' => 'Non è',
-        'isNotOneOf' => 'Nessuno di',
-        'anyOf' => 'Qualsiasi di',
-        'noneOf' => 'Nessuno di',
+        'is' => 'Es',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'isOneOf' => 'Cualquiera de',
+        'isFromTeams' => 'Es del equipo',
+        'isNot' => 'No es',
+        'isNotOneOf' => 'Ninguno de',
+        'anyOf' => 'Cualquiera de',
+        'noneOf' => 'Ninguno de',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
-        'equals' => 'Uguale',
-        'like' => 'È come (%)',
-        'notLike' => 'Is not like (%)',
-        'startsWith' => 'Inzia Con',
-        'endsWith' => 'Finsice con',
+        'equals' => 'Equivale',
+        'like' => 'Es como (%)',
+        'notLike' => 'No es como (%)',
+        'startsWith' => 'Comienza con',
+        'endsWith' => 'Termina con',
         'contains' => 'Contiene',
-        'notContains' => 'Non contiene',
-        'isEmpty' => 'È Vuoto',
-        'isNotEmpty' => 'Non è Vuoto',
-        'notEquals' => 'Non uguale',
+        'notContains' => 'No contiene',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'notEquals' => 'No es igual',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
-        'equals' => 'Uguale',
-        'notEquals' => 'Diverso',
-        'greaterThan' => 'Maggiore di',
-        'lessThan' => 'Minore di',
-        'greaterThanOrEquals' => 'Maggiore-Uguale a ',
-        'lessThanOrEquals' => 'Minore di o uguale a',
-        'between' => 'Fra',
-        'isEmpty' => 'È vuoto',
-        'isNotEmpty' => 'Non vuoto',
+        'equals' => 'Equivale',
+        'notEquals' => 'Diferentes',
+        'greaterThan' => 'Mayor que',
+        'lessThan' => 'Menor que',
+        'greaterThanOrEquals' => 'Mayor o igual que',
+        'lessThanOrEquals' => 'Menor o igual que',
+        'between' => 'Entre',
+        'isEmpty' => 'Está Vacío',
+        'isNotEmpty' => 'No está Vacío',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
-        0 => 'Nessun',
-        '0.5' => '30 secondi',
+        0 => 'Ninguno',
+        '0.5' => '30 segundos',
         1 => '1 minuto',
-        2 => '2 minuti',
-        5 => '5 minuti',
-        10 => '10 minuti',
+        2 => '2 minutos',
+        5 => '5 minutos',
+        10 => '10 minutos',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
-        'Mobile' => 'Mobile',
-        'Office' => 'Ufficio',
+        'Mobile' => 'Teléfono móvil',
+        'Office' => 'Oficina',
         'Fax' => 'Fax',
-        'Home' => 'Casa',
-        'Other' => 'Altro',
+        'Home' => 'Hogar',
+        'Other' => 'Otro',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
-        'Popup' => 'Popup',
-        'Email' => 'Email',
+        'Popup' => 'Ventana emergente',
+        'Email' => 'Correo electrónico',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
-        'NOTICE' => 'Potete torvare qui la traduzione: https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'NOTICE' => 'Usted puede encontrar aquí la traducción: https://github.com/HackerWins/summernote/tree/master/lang',
+        'font' =>
         array (
-          'bold' => 'Grassetto',
-          'italic' => 'Corsivo',
-          'underline' => 'Sottolineato',
-          'strike' => 'Barrare',
-          'clear' => 'Rimuovere Stile del Carattere',
-          'height' => 'Altezza linea',
-          'name' => 'Tipo di Font',
-          'size' => 'Dimensione Font',
+          'bold' => 'Negrita',
+          'italic' => 'Itálico',
+          'underline' => 'Subrayado',
+          'strike' => 'Tachado',
+          'clear' => 'Quitar Estilo de Fuente',
+          'height' => 'Alto de línea',
+          'name' => 'Familia de Fuente',
+          'size' => 'Tamaño de Fuente',
         ),
-        'image' => 
+        'image' =>
         array (
-          'image' => 'Immagine',
-          'insert' => 'Inserisci Immagini',
-          'resizeFull' => 'Ridimensione Completa',
-          'resizeHalf' => 'Ridimensiona a metà',
-          'resizeQuarter' => 'Ridimensione un Quarto',
-          'floatLeft' => 'Float a Sinistra',
-          'floatRight' => 'Float a Destra',
-          'floatNone' => 'Nessun Float',
-          'dragImageHere' => 'Trascinare un\'immagine qui',
-          'selectFromFiles' => 'Seleziona da File',
-          'url' => 'URL dell\'Immagine',
-          'remove' => 'Rimuovi l\'Immagine',
+          'image' => 'Visualización',
+          'insert' => 'Insertar imagen',
+          'resizeFull' => 'Cambiar el tamaño a completo',
+          'resizeHalf' => 'Cambiar el tamaño a la mitad',
+          'resizeQuarter' => 'Cambiar el tamaño a un cuarto',
+          'floatLeft' => 'Flotar Izquierda',
+          'floatRight' => 'Flotar Derecha',
+          'floatNone' => 'Sin Flotar',
+          'dragImageHere' => 'Arrastrar una imagen aquí',
+          'selectFromFiles' => 'Seleccionar desde Archivo',
+          'url' => 'Url de imagen',
+          'remove' => 'Eliminar imagen',
         ),
-        'link' => 
+        'link' =>
         array (
-          'link' => 'Link',
-          'insert' => 'Inserisci link',
-          'unlink' => 'Scollegare',
-          'edit' => 'Modificare',
-          'textToDisplay' => 'Testo da mostrare',
-          'url' => 'A quale URL deve far riferimento questo link?',
-          'openInNewWindow' => 'Apri in una nuova finestra',
+          'link' => 'Enlace',
+          'insert' => 'Insertar Enlace',
+          'unlink' => 'Desenlazar',
+          'edit' => 'Editar',
+          'textToDisplay' => 'Texto a mostrar',
+          'url' => '¿A que URL debería ir este enlace?',
+          'openInNewWindow' => 'Abrir en nueva ventana',
         ),
-        'video' => 
+        'video' =>
         array (
           'video' => 'Video',
-          'videoLink' => 'Video Link',
-          'insert' => 'Inserisici Video',
-          'url' => 'Video URL?',
+          'videoLink' => 'Enlace al Video',
+          'insert' => 'Insertar Video',
+          'url' => '¿URL del Video?',
           'providers' => '(YouTube, Vimeo, Vine, Instagram, or DailyMotion)',
         ),
-        'table' => 
+        'table' =>
         array (
-          'table' => 'Table',
+          'table' => 'Tabla',
         ),
-        'hr' => 
+        'hr' =>
         array (
-          'insert' => 'Inserire regola orizzontale',
+          'insert' => 'Insertar regla horizontal',
         ),
-        'style' => 
+        'style' =>
         array (
-          'style' => 'Stile',
-          'normal' => 'Normale',
-          'blockquote' => 'Quote',
-          'pre' => 'Codice',
-          'h1' => 'Intestazione 1',
-          'h2' => 'Intestazione 2',
-          'h3' => 'Intestazione 3',
-          'h4' => 'Intestazione 4',
-          'h5' => 'Intestazione 5',
-          'h6' => 'Intestazione 6',
+          'style' => 'Estilo',
+          'normal' => 'Normal',
+          'blockquote' => 'Cita',
+          'pre' => 'Código',
+          'h1' => 'Cabecera 1',
+          'h2' => 'Cabecera 2',
+          'h3' => 'Cabecera 3',
+          'h4' => 'Cabecera 4',
+          'h5' => 'Cabecera 5',
+          'h6' => 'Cabecera 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
-          'unordered' => 'Elenco non ordinato',
-          'ordered' => 'Elenco ordinato',
+          'unordered' => 'Lista sin Ordenar',
+          'ordered' => 'Lista Ordenada',
         ),
-        'options' => 
+        'options' =>
         array (
-          'help' => 'Aiuto',
-          'fullscreen' => 'Schermo intero',
-          'codeview' => 'Codice visibile',
+          'help' => 'Ayuda',
+          'fullscreen' => 'Pantalla Completa',
+          'codeview' => 'Ver Código',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
-          'paragraph' => 'Paragrafo',
-          'outdent' => 'Rientro a sinistra',
-          'indent' => 'Rientro a destra',
-          'left' => 'Allinea a sinistra',
-          'center' => 'Allinea al centror',
-          'right' => 'Allinea a destra',
-          'justify' => 'Autorizza tutto',
+          'paragraph' => 'Párrafo',
+          'outdent' => 'Anular sangría',
+          'indent' => 'Sangría',
+          'left' => 'Alinear Izquierda',
+          'center' => 'Alinear Centro',
+          'right' => 'Alinear Derecha',
+          'justify' => 'Justificado',
         ),
-        'color' => 
+        'color' =>
         array (
-          'recent' => 'Ultimo Colore',
-          'more' => 'Altri Colori',
-          'background' => 'Colore di sfondo',
-          'foreground' => 'Colore del testo',
-          'transparent' => 'Trasparente',
-          'setTransparent' => 'imposta trasparente',
-          'reset' => 'Reset',
-          'resetToDefault' => 'Riportare alle condizioni originali',
+          'recent' => 'Color Reciente',
+          'more' => 'Mas Colores',
+          'background' => 'Color de Fondo',
+          'foreground' => 'Color de Fuente',
+          'transparent' => 'Transparente',
+          'setTransparent' => 'Establecer transparente',
+          'reset' => 'Resetear',
+          'resetToDefault' => 'Restablecer a (por defecto)',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
-          'shortcuts' => 'Tasti rapidi',
-          'close' => 'Chiuso',
-          'textFormatting' => 'Formattazione testo',
-          'action' => 'Azione',
-          'paragraphFormatting' => 'Fomrattazione paragrafo',
-          'documentStyle' => 'Stile documento',
+          'shortcuts' => 'Atajos de teclado',
+          'close' => 'Cerrar',
+          'textFormatting' => 'Formato de texto',
+          'action' => 'Acción',
+          'paragraphFormatting' => 'Formato de párrafo',
+          'documentStyle' => 'Estilo de Documento',
         ),
-        'history' => 
+        'history' =>
         array (
-          'undo' => 'Annulla',
-          'redo' => 'Ripeti azione',
+          'undo' => 'Deshacer',
+          'redo' => 'Rehacer',
         ),
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
       'list' => 'List',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
       'Espo' => 'Espo',
-      'EspoRtl' => 'RTL Espo
-',
+      'EspoRtl' => 'RTL Espo',
       'Sakura' => 'Sakura',
-      'EspoVertical' => 'Espo Vertical',
-      'SakuraVertical' => 'Sakura Vertical',
-      'Violet' => 'Violet',
-      'VioletVertical' => 'Violet Vertical',
+      'EspoVertical' => 'Espo con barra lateral',
+      'SakuraVertical' => 'Sakura con barra lateral',
+      'Violet' => 'Violeta',
+      'VioletVertical' => 'Violet con barra lateral',
       'Hazyblue' => 'Hazyblue',
-      'HazyblueVertical' => 'Hazyblue con barra laterale',
+      'HazyblueVertical' => 'Hazyblue con barra lateral',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Revert Import' => 'Ripristina Import',
-      'Return to Import' => 'Ritorna a Import',
-      'Run Import' => 'Esegui Import',
-      'Back' => 'indietro',
-      'Field Mapping' => 'Mapping Campo',
-      'Default Values' => 'Valore di default',
-      'Add Field' => 'Aggiungi Campo',
-      'Created' => 'Creato',
-      'Updated' => 'Aggiornato',
-      'Result' => 'Risultato',
-      'Show records' => 'Mostra i Record',
-      'Remove Duplicates' => 'Rimuovi Duplicati',
-      'importedCount' => 'Importato (count)',
-      'duplicateCount' => 'Duplicato (count)',
-      'updatedCount' => 'Aggiornato (conto)',
-      'Create Only' => 'Crea Solo',
-      'Create and Update' => 'Crea & Aggiorna',
-      'Update Only' => 'Aggiorna solo',
-      'Update by' => 'Aggiorna da',
-      'Set as Not Duplicate' => 'Imposta come non duplicati',
-      'File (CSV)' => 'File (CSV)',
-      'First Row Value' => 'Primo valore di riga',
-      'Skip' => 'Salta',
-      'Header Row Value' => 'Intestazione Riga',
-      'Field' => 'Campo',
-      'What to Import?' => 'Cosa Importare?',
-      'Entity Type' => 'Tipo di entità',
-      'What to do?' => 'Cosa fare?',
-      'Properties' => 'Proprietà',
-      'Header Row' => 'Intestazione Riga',
-      'Person Name Format' => 'Persona Nome Formato',
-      'John Smith' => 'John Smith',
-      'Smith John' => 'Smith John',
-      'Smith, John' => 'Smith, John',
-      'Field Delimiter' => 'Delimitatore di campo',
-      'Date Format' => 'Formato Data',
-      'Decimal Mark' => 'Marcatore Decimali',
-      'Text Qualifier' => 'Qualificatore di Testo',
-      'Time Format' => 'Formato Ora',
-      'Currency' => 'Valuta',
-      'Preview' => 'Anteprima',
-      'Next' => 'Avanti',
-      'Step 1' => 'Step 1',
-      'Step 2' => 'Step 2',
-      'Double Quote' => 'Virgolette',
-      'Single Quote' => 'Apici',
-      'Imported' => 'Importato',
-      'Duplicates' => 'Duplicati',
-      'Skip searching for duplicates' => 'Salta la ricerca per duplicati',
-      'Timezone' => 'Timezone',
+      'Revert Import' => 'Revertir Importación',
+      'Return to Import' => 'Regreso a Importar',
+      'Run Import' => 'Ejecutar importación',
+      'Back' => 'Anterior',
+      'Field Mapping' => 'Mapeo de Campos',
+      'Default Values' => 'Valores por defecto',
+      'Add Field' => 'Añadir Campo',
+      'Created' => 'Creado',
+      'Updated' => 'Actualizado',
+      'Result' => 'Resultado',
+      'Show records' => 'Mostrar registros',
+      'Remove Duplicates' => 'Eliminar Duplicados',
+      'importedCount' => 'Importado (recuento)',
+      'duplicateCount' => 'Duplicados (recuento)',
+      'updatedCount' => 'Actualizado (recuento)',
+      'Create Only' => 'Solo crear',
+      'Create and Update' => 'Crear y actualizar',
+      'Update Only' => 'Solo actualizar',
+      'Update by' => 'Actualizado por',
+      'Set as Not Duplicate' => 'Establecer como No Duplicado',
+      'File (CSV)' => 'Archivo (CSV)',
+      'First Row Value' => 'Valor de la primera fila',
+      'Skip' => 'Omitir',
+      'Header Row Value' => 'Campo del sistema',
+      'Field' => 'Columnas del archivo',
+      'What to Import?' => '¿Qué va a importar?',
+      'Entity Type' => 'Tipo de entidad',
+      'What to do?' => '¿Qué hacer?',
+      'Properties' => 'Propiedades',
+      'Header Row' => '¿Tiene una fila de Encabezado?',
+      'Person Name Format' => 'Formato del nombre de la persona',
+      'John Smith' => 'Juan Pérez',
+      'Smith John' => 'Pérez Juan',
+      'Smith, John' => 'Pérez, Juan',
+      'Field Delimiter' => 'Delimitador de campo',
+      'Date Format' => 'Formato de fecha',
+      'Decimal Mark' => 'Símbolo Decimal',
+      'Text Qualifier' => 'Delimitador de texto',
+      'Time Format' => 'Formato de hora',
+      'Currency' => 'Moneda',
+      'Preview' => 'Vista previa',
+      'Next' => 'Siguiente',
+      'Step 1' => 'Paso 1',
+      'Step 2' => 'Paso 2',
+      'Double Quote' => 'Comillas dobles',
+      'Single Quote' => 'Comillas simples',
+      'Imported' => 'Importado',
+      'Duplicates' => 'Duplicados',
+      'Skip searching for duplicates' => 'Omitir la búsqueda de duplicados',
+      'Timezone' => 'Zona horaria',
       'Remove Import Log' => 'Remove Import Log',
       'New Import' => 'New Import',
       'Import Results' => 'Import Results',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'utf8' => 'Dovrebbe avere codifica UTF-8',
-      'duplicatesRemoved' => 'Duplicati rimossi',
-      'inIdle' => 'Esegui quando inattivo (per grandi dati, via cron)',
+      'utf8' => 'Debe ser codificado en UTF-8',
+      'duplicatesRemoved' => 'Duplicados eliminados',
+      'inIdle' => 'Ejecutar en segundo plano (para gran cantidad de datos, vía cron)',
       'revert' => 'This will remove all imported records permanently.',
       'removeDuplicates' => 'This will permanently remove all imported records that were recognized as duplicates.',
       'confirmRevert' => 'This will remove all imported records permanently. Are you sure?',
@@ -2046,208 +2073,208 @@ Available markdown syntax:
       'confirmRemoveImportLog' => 'This will remove the import log. All imported records will be kept. You wan\'t be able to revert import results. Are you sure you?',
       'removeImportLog' => 'This will remove the import log. All imported records will be kept. Use it if you are sure that import is fine.',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'file' => 'File',
-      'entityType' => 'Tipo di entità',
-      'imported' => 'Record Importati',
-      'duplicates' => 'Record Duplicati',
-      'updated' => 'Record Aggiornati',
-      'status' => 'Stato',
+      'file' => 'Archivo',
+      'entityType' => 'Tipo de entidad',
+      'imported' => 'Registros Importados',
+      'duplicates' => 'registros Duplicados',
+      'updated' => 'registros Actualizados',
+      'status' => 'Estado',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Failed' => 'Fallito',
-        'In Process' => 'In corso',
+        'Failed' => 'Falló',
+        'In Process' => 'En proceso',
         'Complete' => 'Completo',
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'emailAddress' => 'Indirizzo Email',
-      'team' => 'Team',
-      'status' => 'Stato',
-      'assignToUser' => 'Assegna a utente',
-      'host' => 'Host',
-      'username' => 'Username',
-      'password' => 'Password',
-      'port' => 'Porta',
-      'monitoredFolders' => 'Cartelle Monitorate',
-      'trashFolder' => 'Cestino',
+      'name' => 'Nombre',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'team' => 'Equipo objetivo',
+      'status' => 'Estado',
+      'assignToUser' => 'Asignar al usuario',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'trashFolder' => 'Carpeta de papelera',
       'ssl' => 'SSL',
-      'createCase' => 'Crea Caso',
-      'reply' => 'Risposta automatica',
-      'caseDistribution' => 'Caso di Distribuzione',
-      'replyEmailTemplate' => 'Modello Email di Risposta ',
-      'replyFromAddress' => 'Replica da (indirizzo)',
-      'replyToAddress' => 'Replica a (indirizzo)',
-      'replyFromName' => 'Replica da (nome)',
-      'targetUserPosition' => 'Obiettivo posizione utente',
-      'fetchSince' => 'Portare Dal',
-      'addAllTeamUsers' => 'Per tutti gli utenti del team',
-      'teams' => 'Teams',
-      'sentFolder' => 'Sent Folder',
-      'storeSentEmails' => 'Store Sent Emails',
+      'createCase' => 'Crear ticket',
+      'reply' => 'Respuesta automática',
+      'caseDistribution' => 'Distribución de tickets',
+      'replyEmailTemplate' => 'Plantilla de respuesta de correo',
+      'replyFromAddress' => 'Responder a (dirección)',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyFromName' => 'Respuesta De (nombre):',
+      'targetUserPosition' => 'Objetivo posición usuario',
+      'fetchSince' => 'Traer correos desde',
+      'addAllTeamUsers' => 'Para todos los usuarios del equipo',
+      'teams' => 'Equipos',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
       'useImap' => 'Fetch Emails',
-      'useSmtp' => 'Use SMTP',
-      'smtpHost' => 'SMTP Host',
-      'smtpPort' => 'SMTP Port',
-      'smtpAuth' => 'SMTP Auth',
-      'smtpSecurity' => 'SMTP Security',
-      'smtpUsername' => 'SMTP Username',
-      'smtpPassword' => 'SMTP Password',
-      'fromName' => 'From Name',
-      'smtpIsShared' => 'SMTP Is Shared',
-      'smtpIsForMassEmail' => 'SMTP Is for Mass Email',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
+      'fromName' => 'De (nombre):',
+      'smtpIsShared' => 'SMTP ¿Es compartido?',
+      'smtpIsForMassEmail' => 'SMTP es para envíos masivos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'reply' => 'Notifica ai mittenti che le loro email sono state ricevute.
+      'reply' => 'Notifique a los remitentes de correo que han recibido sus mensajes.
 
-Verrà inviata una sola email per destinatario, in un determinato periodo di tempo, per evitare loops.',
-      'createCase' => 'Creazione automatica di un Caso all\'arrivo di una email.',
-      'replyToAddress' => 'Indicare l\'indirizzo email di questo account di posta, per indirizzare qui le risposte.',
-      'caseDistribution' => 'Come verranno assegnati i Casi . Assegnato direttamente all\'utente o all\'interno del team.',
-      'assignToUser' => 'Assegnatari dei processi utente.',
-      'team' => 'Assegnatari dei processi dei teams.',
-      'teams' => 'Assegnatari delle email dei teams.',
-      'targetUserPosition' => 'Gli utenti con posizione specifica verranno distribuiti con i casi.',
-      'addAllTeamUsers' => 'I Messaggi di posta elettronica vengono visualizzati nella cartella di Posta in arrivo di tutti gli utenti di un gruppo specifico.',
-      'monitoredFolders' => 'Se più cartelle, devono essere separate da virgola',
-      'smtpIsShared' => 'If checked then users will be able to send emails using this SMTP. Availability is controlled by Roles through the Group Email Account permission.',
-      'smtpIsForMassEmail' => 'If checked then SMTP will be available for Mass Email.',
-      'storeSentEmails' => 'Sent emails will be stored on the IMAP server.',
+Solo un correo será enviado a un destinatario particular durante un período de tiempo para evitar bucles.',
+      'createCase' => 'Automaticamente crear un ticket de los correos entrantes.',
+      'replyToAddress' => 'Especifique la dirección de correo de este buzón para hacer que las respuestas vegan aquí.',
+      'caseDistribution' => '¿Cómo serán asignados a los tickets? Asignados directamente a un usuario o al equipo.',
+      'assignToUser' => 'Los tickets de usuario se asignarán a.',
+      'team' => 'Los tickets del equipo serán asignados a.',
+      'teams' => 'Los correos de equipos serán asignados a.',
+      'targetUserPosition' => 'Los usuarios con la posición especificada serán distribuidos a los tickets.',
+      'addAllTeamUsers' => 'Los correos aparecerán en la bandeja de entrada de todos los usuarios de los equipos especificados.',
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.',
+      'smtpIsShared' => 'Si se marca, entonces los usuarios podrán enviar correos usando este SMTP. La disponibilidad está controlada por Roles a través de los permisos de la cuenta de correo grupal.',
+      'smtpIsForMassEmail' => 'Si está marcado, SMTP estará disponible para correo masivo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP.',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'Filtri',
-      'emails' => 'Email',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
       'assignToUser' => 'Assign to User',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Attivo',
-        'Inactive' => 'Inattivo',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
-        '' => 'Nessun',
-        'Direct-Assignment' => 'Assegnazione diretta',
-        'Round-Robin' => 'Round-Robin',
-        'Least-Busy' => 'Least-Busy',
+        '' => 'Ninguno',
+        'Direct-Assignment' => 'Asignación directa',
+        'Round-Robin' => 'Todos contra todos',
+        'Least-Busy' => 'Menos ocupado',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create InboundEmail' => 'Crea un Account Email',
+      'Create InboundEmail' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Actions' => 'Azioni',
-      'Main' => 'Main',
+      'Actions' => 'Acciones',
+      'Main' => 'Principal',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'Impossibile connettersi al server IMAP',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
     ),
   ),
-  'Integration' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'enabled' => 'Abilitato',
-      'clientId' => 'Client ID',
-      'clientSecret' => 'Client Secret',
-      'redirectUri' => 'Reindirizzare URI',
-      'apiKey' => 'API Key',
+      'enabled' => 'Activado',
+      'clientId' => 'ID Cliente',
+      'clientSecret' => 'Secreto del cliente',
+      'redirectUri' => 'Redireccionar URI',
+      'apiKey' => ' Clave para el API de JavaScript',
     ),
-    'titles' => 
+    'titles' =>
     array (
       'GoogleMaps' => 'Google Maps',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectIntegration' => 'Selezionare una integrazione dal menù.',
-      'noIntegrations' => 'Nessuna integrazioni è disponibile .',
+      'selectIntegration' => 'Seleccionar una integración en menú',
+      'noIntegrations' => 'No hay integraciones disponibles',
     ),
-    'help' => 
+    'help' =>
     array (
-      'Google' => '<p><b>Ottenere OAuth 2.0 credenziali da Google Developers Console .</b></p><p>Visit <a href="https://console.developers.google.com/project">Google Developers Console</a> to obtain OAuth 2.0 credentials such as a Client ID and Client Secret that are known to both Google and EspoCRM application.</p>',
-      'GoogleMaps' => '<p>Ottinei chiave API <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>.</p>',
+      'Google' => '<p><b>Obtener las credenciales de  OAuth 2.0 desde la Consola de Google Developers.</b></p><p>Visita <a href="https://console.developers.google.com/project">Consola Google Developers</a> para obtener las credenciales de  OAuth 2.0 tales como  ID Cliente y Secreto de Cliente que son conocidos por ambos Google y la aplicación EspoCRM.</p>',
+      'GoogleMaps' => '<p>Para obtener una clave para el API de JavaScript, haga <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">click aquí</a>.</p>',
     ),
   ),
-  'Job' => 
+  'Job' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Stato',
-      'executeTime' => 'Esegui a',
-      'attempts' => 'Tentativi Left',
-      'failedAttempts' => 'Tentativo fallito',
-      'serviceName' => 'Servizio',
-      'method' => 'Metodo',
+      'status' => 'Estado',
+      'executeTime' => 'Ejecutar a',
+      'attempts' => 'Intentos restantes',
+      'failedAttempts' => 'Intentos Fallidos',
+      'serviceName' => 'Servicio',
+      'method' => 'Método',
       'methodName' => 'Method',
-      'scheduledJob' => 'Job Schedulato',
+      'scheduledJob' => 'Tarea Programada',
       'scheduledJobJob' => 'Scheduled Job Name',
-      'data' => 'Data',
+      'data' => 'Datos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Pending' => 'In attesa',
-        'Success' => 'Successo',
-        'Running' => 'In esecuzione',
-        'Failed' => 'Fallito',
+        'Pending' => 'Pendiente',
+        'Success' => 'Exitoso',
+        'Running' => 'Corriendo',
+        'Failed' => 'Falló',
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'width' => 'Larghezza (%)',
-      'link' => 'Link',
-      'notSortable' => 'Non Ordinabile',
-      'align' => 'Allinea',
-      'panelName' => 'Nome del pannello',
-      'style' => 'Stile',
-      'sticked' => 'Fissato',
+      'width' => 'Ancho (%)',
+      'link' => 'Enlace',
+      'notSortable' => 'No ordenable',
+      'align' => 'Alinear',
+      'panelName' => 'Nombre del Panel',
+      'style' => 'Estilo',
+      'sticked' => 'Pegado',
       'isLarge' => 'Large font size',
       'dynamicLogicVisible' => 'Conditions making panel visible',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
-        'left' => 'Sinistra',
-        'right' => 'Destra',
+        'left' => 'Izquierda',
+        'right' => 'Derecha',
       ),
-      'style' => 
+      'style' =>
       array (
-        'default' => 'Default',
-        'success' => 'Successo',
-        'danger' => 'Pericolo',
-        'info' => 'Info',
-        'warning' => 'Avvertimento',
-        'primary' => 'Primario',
+        'default' => 'Borrador',
+        'success' => 'Exito',
+        'danger' => 'Peligro',
+        'info' => 'Información',
+        'warning' => 'Advertencia',
+        'primary' => 'Principal',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'New panel' => 'New panel',
       'Layout' => 'Layout',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'campaign' => 'Campaign',
@@ -2267,7 +2294,7 @@ Verrà inviata una sola email per destinatario, in un determinato periodo di tem
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Payload',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Target List',
       'campaign' => 'Campaign',
@@ -2275,27 +2302,27 @@ Verrà inviata una sola email per destinatario, in un determinato periodo di tem
       'targetTeam' => 'Target Team',
       'logRecords' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Create Entry Point',
       'Generate New API Key' => 'Generate New API Key',
       'Request' => 'Request',
       'Confirm Opt-In' => 'Confirm Opt-In',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Create new API Key',
       'optInConfirmationExpired' => 'Opt-in confirmation link is expired.',
       'optInIsConfirmed' => 'Opt-in is confirmed.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Markdown is supported.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Number',
       'data' => 'Data',
@@ -2304,447 +2331,448 @@ Verrà inviata una sola email per destinatario, in un determinato periodo di tem
       'createdAt' => 'Entered At',
       'isCreated' => 'Is Lead Created',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => 'Lead Capture',
       'target' => 'Target',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'post' => 'Inviare',
-      'attachments' => 'Allegato',
-      'targetType' => 'Target',
-      'teams' => 'Teams',
-      'users' => 'Utenti',
-      'portals' => 'Portali',
+      'post' => 'Entrada',
+      'attachments' => 'Adjuntos',
+      'targetType' => 'Objetivo',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'portals' => 'Portales',
       'type' => 'Tipo',
-      'isGlobal' => 'Globale',
-      'isInternal' => 'Interno (per utenti interni)',
-      'related' => 'Correlato',
-      'createdByGender' => 'Creato da genere',
-      'data' => 'Dati',
-      'number' => 'Numero',
+      'isGlobal' => 'Es global',
+      'isInternal' => 'Es Interno (para usuarios internos)',
+      'related' => 'Relacionado',
+      'createdByGender' => 'Creado por género',
+      'data' => 'Datos',
+      'number' => 'Número',
     ),
-    'filters' => 
+    'filters' =>
     array (
-      'all' => 'Tutti',
-      'posts' => 'Messaggi',
-      'updates' => 'Aggiornamenti',
+      'all' => 'Todos',
+      'posts' => 'Entradas',
+      'updates' => 'Actualizaciones',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
-        'self' => 'a me stesso',
-        'users' => 'a utente particolare',
-        'teams' => 'a team particolare',
-        'all' => 'a tutti gli utenti interni',
-        'portals' => 'agli utenti del portale',
+        'self' => 'Para mí',
+        'users' => 'Para determinado/s usuario/s',
+        'teams' => 'Para determinado/s equipo/s',
+        'all' => 'Para todos los usuarios',
+        'portals' => 'Para los usuarios del portal',
       ),
-      'type' => 
+      'type' =>
       array (
         'Post' => 'Post',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'writeMessage' => 'Scrivi il tuo messaggio qui',
+      'writeMessage' => 'Escriba su mensaje aquí',
     ),
-    'links' => 
+    'links' =>
     array (
       'superParent' => 'Super Parent',
       'related' => 'Related',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'logo' => 'Logo',
+      'name' => 'Nombre',
+      'logo' => 'Logotipo',
       'url' => 'URL',
-      'portalRoles' => 'Ruoli',
-      'isActive' => 'Attivo',
-      'isDefault' => 'Default',
-      'tabList' => 'Elenco schede',
-      'quickCreateList' => 'Elenco creazione rapida',
-      'companyLogo' => 'Logo',
+      'portalRoles' => 'Roles',
+      'isActive' => 'Está activo',
+      'isDefault' => 'Portal por defecto',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'companyLogo' => 'Logotipo',
       'theme' => 'Tema',
-      'language' => 'Lingua',
-      'dashboardLayout' => 'Dashboard Layout',
-      'dateFormat' => 'Formato Data',
-      'timeFormat' => 'Formato Ora',
-      'timeZone' => 'Time Zone',
-      'weekStart' => 'Primo giorno della Settimana',
-      'defaultCurrency' => 'Valuta di default',
-      'customUrl' => 'Custom URL',
-      'customId' => 'Custom ID',
+      'language' => 'Idioma',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'defaultCurrency' => 'Moneda por defecto',
+      'customUrl' => 'URL personalizada',
+      'customId' => 'ID personalizado',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'Utenti',
-      'portalRoles' => 'Ruoli',
-      'notes' => 'Notes',
-      'articles' => 'Consocenza di Base degli Articoli',
+      'users' => 'Usuarios',
+      'portalRoles' => 'Roles',
+      'notes' => 'Notas',
+      'articles' => 'Artículos de la base de conocimiento',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portalRoles' => 'I Ruoli specificati verranno applicati a tutti gli utenti di questo portale .',
+      'portalRoles' => 'Los roles del portal indicados se aplicarán a todos los usuarios de este portal.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Portal' => 'Crea Portale',
-      'User Interface' => 'Interfaccia Utente',
-      'General' => 'Generale',
-      'Settings' => 'Impostazioni',
+      'Create Portal' => 'Crear portal',
+      'User Interface' => 'Interfaz del Usuario',
+      'General' => 'General',
+      'Settings' => 'Ajustes',
     ),
   ),
-  'PortalRole' => 
+  'PortalRole' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportPermission' => 'Export Permission',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'Utenti',
+      'users' => 'Usuarios',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'exportPermission' => 'Defines whether portal users have an ability to export records.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Access' => 'Accesso',
-      'Create PortalRole' => 'Crea Ruolo',
-      'Scope Level' => 'Livello Ambito',
-      'Field Level' => 'Livello del Campo',
+      'Access' => 'Acceder',
+      'Create PortalRole' => 'Crear rol del portal',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
   ),
-  'PortalUser' => 
+  'PortalUser' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create PortalUser' => 'Crea utente portale',
+      'Create PortalUser' => 'Crear usuario del portal',
     ),
   ),
-  'Preferences' => 
+  'Preferences' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'dateFormat' => 'Formato Data',
-      'timeFormat' => 'Formato Ora',
-      'timeZone' => 'Time Zone',
-      'weekStart' => 'Primo giorno della Settimana',
-      'thousandSeparator' => 'Separatore delle migliaia',
-      'decimalMark' => 'Marcatore dei Decimali',
-      'defaultCurrency' => 'Valuta di default',
-      'currencyList' => 'Elenco Valute',
-      'language' => 'Lingua',
-      'smtpServer' => 'Server',
-      'smtpPort' => 'Porta',
-      'smtpAuth' => 'Autenticato',
-      'smtpSecurity' => 'Sicurezza',
-      'smtpUsername' => 'Username',
-      'emailAddress' => 'Email',
-      'smtpPassword' => 'Password',
-      'smtpEmailAddress' => 'Indirizzo Email',
-      'exportDelimiter' => 'Delimitatore esportazione',
-      'receiveAssignmentEmailNotifications' => 'Notifiche via email al momento dell\' assegnazione',
-      'receiveMentionEmailNotifications' => 'Notifiche via email in caso di menzioni nei post',
-      'receiveStreamEmailNotifications' => 'Notifiche via email per i messaggi e gli aggiornamenti di stato',
-      'autoFollowEntityTypeList' => 'Global Auto-Follow',
-      'signature' => 'Firma Email',
-      'dashboardTabList' => 'Elenco schede',
-      'defaultReminders' => 'Promemoria di Defaul',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'smtpEmailAddress' => 'Correo electrónico',
+      'exportDelimiter' => 'Separador de campos',
+      'receiveAssignmentEmailNotifications' => 'Recibir notificaciones por correo electrónico al ser asignado',
+      'receiveMentionEmailNotifications' => 'Notificaciones por correo electrónico acerca de menciones en los mensajes',
+      'receiveStreamEmailNotifications' => 'Notificaciones por correo electrónico sobre los mensajes y actualizaciones de estado',
+      'autoFollowEntityTypeList' => 'Seguir automaticamente (global)',
+      'signature' => 'Firma de correo',
+      'dashboardTabList' => 'Lista de pestañas',
+      'defaultReminders' => 'Recordatorios por defecto',
       'theme' => 'Tema',
-      'useCustomTabList' => 'Elenco schede personalizzate',
-      'tabList' => 'Elenco schede',
-      'emailReplyToAllByDefault' => 'Email Reply to all by default',
-      'dashboardLayout' => 'Layout panoramica',
-      'emailReplyForceHtml' => 'Email di risposta in HTML',
-      'doNotFillAssignedUserIfNotRequired' => 'Do not pre-fill assigned user on record creation',
-      'followEntityOnStreamPost' => 'Auto-follow record after posting in Stream',
-      'followCreatedEntities' => 'Auto-follow created records',
-      'followCreatedEntityTypeList' => 'Auto-follow created records of specific entity types',
+      'useCustomTabList' => 'Lista de pestañas personalizadas',
+      'tabList' => 'Lista de pestañas',
+      'emailReplyToAllByDefault' => 'Correo: responder a todos por defecto',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'emailReplyForceHtml' => 'Correo: responder en formato HTML',
+      'doNotFillAssignedUserIfNotRequired' => 'No precompletar usuario asignado en la creación de registros',
+      'followEntityOnStreamPost' => 'Seguimiento automático después de publicar en la historia',
+      'followCreatedEntities' => 'Seguimiento automático de registros creados',
+      'followCreatedEntityTypeList' => 'Seguimiento automático de registros creados de tipos de entidades específicos',
       'emailUseExternalClient' => 'Use an external email client',
       'scopeColorsDisabled' => 'Disable scope colors',
       'tabColorsDisabled' => 'Disable tab colors',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'Domenica',
-        1 => 'Lunedi',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Notifications' => 'Notifica',
-      'User Interface' => 'Interfaccia Utente',
+      'Notifications' => 'Notificaciones',
+      'User Interface' => 'Interfaz de usuario',
       'SMTP' => 'SMTP',
-      'Misc' => 'Varie',
-      'Locale' => 'Locale',
+      'Misc' => 'Misceláneos',
+      'Locale' => 'Localización',
       'Reset Dashboard to Default' => 'Reset Dashboard to Default',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'autoFollowEntityTypeList' => 'Automatically follow ALL new records (created by any user) of the selected entity types. To be able to see information in the stream and receive notifications about all records in the system.',
-      'doNotFillAssignedUserIfNotRequired' => 'When create record assigned user won\'t be filled with own user unless the field is required.',
-      'followCreatedEntities' => 'When create new records they will be automatically followed even if assigned to another user.',
-      'followCreatedEntityTypeList' => 'When create new records of selected entity types they will be followed automatically even if assigned to another user.',
+      'autoFollowEntityTypeList' => 'Siguirá automáticamente todos los registros nuevos (creados por cualquier usuario) de los tipos de entidad seleccionados. Para poder ver información en la historia y recibir notificaciones sobre todos los registros en el sistema.',
+      'doNotFillAssignedUserIfNotRequired' => 'Cuando cree un registro, el usuario asignado no se completará con su propio usuario a menos que el campo sea obligatorio.',
+      'followCreatedEntities' => 'Al crear nuevos registros, se seguirán automáticamente incluso si se asignaron a otro usuario.',
+      'followCreatedEntityTypeList' => 'Al crear nuevos registros de los tipos de entidad seleccionados, se seguirán automáticamente incluso si se asignaron a otro usuario.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'roles' => 'Ruoli',
-      'assignmentPermission' => 'Assegnazione permessi',
-      'userPermission' => 'Autorizzazioni Utente',
-      'portalPermission' => 'Autorizzazione Portale',
-      'groupEmailAccountPermission' => 'Group Email Account Permission',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'assignmentPermission' => 'Asignación de permisos',
+      'userPermission' => 'Permisos de Usuario',
+      'portalPermission' => 'Permisos del portal',
+      'groupEmailAccountPermission' => 'Permiso de la cuenta de correo grupal',
       'exportPermission' => 'Export Permission',
       'dataPrivacyPermission' => 'Data Privacy Permission',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'Utenti',
-      'teams' => 'Teams',
+      'users' => 'Usuarios',
+      'teams' => 'Equipos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'assignmentPermission' => 'Permette di limitare la possibilità di assegnare record ed inviare messaggi ad altri utenti 
+      'assignmentPermission' => 'Permite restringir la capacidad de los usuarios para que asignen registros y publicaciones a otros usuarios.
 
-tutto - nessuna restrizione
+todo - sin restricción
 
-team - può assegnare e postare solo al proprio team
+equipo - puede asignar a usuarios de su propio equipo
 
-no - può assegnare e postare solo a sé stesso',
-      'userPermission' => 'Permette di limitare agli utenti la possibilità di visualizzare le attività, il calendario ed il flusso attività, di altri utenti
+no - solo puede asignarse a sí mismo',
+      'userPermission' => 'Permite restringir la capacidad de los usuarios para ver tareas, calendarios y la historia de otros usuarios.
 
-tutto - tutto visualizzabile
+todo - pueden ver todo
 
-team - visualizzabili le sole attività del proprio team
+equipo - pueden ver las actividades de su equipo
 
-no - nulla di visualizzabile',
-      'portalPermission' => 'Defines an access to portal information, ability to post messages to portal users.',
-      'groupEmailAccountPermission' => 'Defines an access to group email accounts, an ability to send emails from group SMTP.',
+no - solo las propias',
+      'portalPermission' => 'Define un acceso a la información del portal, la capacidad de publicar mensajes a los usuarios del portal.
+',
+      'groupEmailAccountPermission' => 'Define el acceso a las cuentas de correo grupales, la capacidad de enviar correos a través del SMTP grupal.',
       'exportPermission' => 'Defines whether users have an ability to export records.',
       'dataPrivacyPermission' => 'Allows to view and erase personal data.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Access' => 'Accesso',
-      'Create Role' => 'Crea Ruolo',
-      'Scope Level' => 'Livello Ambito',
-      'Field Level' => 'FLivello Campo',
+      'Access' => 'Acceso',
+      'Create Role' => 'Crear rol',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
-        'not-set' => 'non impostato',
-        'enabled' => 'abilitato',
-        'disabled' => 'disabilitato',
+        'not-set' => 'sin establecer',
+        'enabled' => 'activado',
+        'disabled' => 'desactivado',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
-        'all' => 'tutti',
-        'team' => 'team',
-        'account' => 'account',
-        'contact' => 'contatto',
-        'own' => 'proprio',
-        'no' => 'no',
-        'yes' => 'si',
-        'not-set' => 'non impostato',
+        'all' => 'Todos',
+        'team' => 'Equipo',
+        'account' => 'Cuenta',
+        'contact' => 'Contacto',
+        'own' => 'Propio',
+        'no' => 'No',
+        'yes' => 'Si',
+        'not-set' => 'Sin establecer',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
-      'read' => 'Visualizzazione',
-      'edit' => 'Modificare',
-      'delete' => 'Cancellare',
-      'stream' => 'Flusso attività',
-      'create' => 'Creare',
+      'read' => 'Leer',
+      'edit' => 'Editar',
+      'delete' => 'Borrar',
+      'stream' => 'Historia',
+      'create' => 'Crear',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'changesAfterClearCache' => 'Verranno applicate tutte le modifiche del controllo di accesso dopo la cancellazione della cache.',
+      'changesAfterClearCache' => 'Todos los cambios en el control de acceso serán aplicacados después de limpiar la caché',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'status' => 'Stato',
-      'job' => 'Job',
-      'scheduling' => 'Programmazione',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'job' => 'Trabajo',
+      'scheduling' => 'Programación (notación CRONTab)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'log' => 'Log',
+      'log' => 'Registro',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create ScheduledJob' => 'Crea un Job schedulato',
+      'Create ScheduledJob' => 'Crear tarea programada',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
-        'Cleanup' => 'Pulire',
-        'CheckInboundEmails' => 'Controllare Gruppo Account di posta elettronica',
-        'CheckEmailAccounts' => 'Controllare account email personale',
-        'SendEmailReminders' => 'Inviare promemoria via email',
-        'AuthTokenControl' => 'Controllo token di autenticazione',
-        'SendEmailNotifications' => 'Invia notifiche email',
+        'Cleanup' => 'Limpiar',
+        'CheckInboundEmails' => 'Comprobar cuentas de correo grupales',
+        'CheckEmailAccounts' => 'Comprobar cuentas de correo personales',
+        'SendEmailReminders' => 'Enviar Recordatorios por Email',
+        'AuthTokenControl' => 'Control del Token de Autenticación',
+        'SendEmailNotifications' => 'Enviar notificaciones por correo electrónico',
         'CheckNewVersion' => 'Check for New Version',
-        'ProcessMassEmail' => 'Send Mass Emails',
-        'ControlKnowledgeBaseArticleStatus' => 'Controllo dello stato di conoscenza di base',
+        'ProcessMassEmail' => 'Enviar correo masivo',
+        'ControlKnowledgeBaseArticleStatus' => 'Controlar estado de los artículos de la base de conocimiento',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
-        'linux' => 'Nota: aggiungi questa riga al file crontab per eseguire le attività pianificate di EspoCRM:',
-        'mac' => 'Nota: aggiungi questa riga al file crontab per eseguire le attività pianificate di EspoCRM:',
-        'windows' => 'Nota: crea un file batch con i seguenti comandi per eseguire le attività pianificate di EspoCRM utilizzando Operazioni pianificate di Windows:',
-        'default' => 'Nota: Aggiungi questo comando a Cron Job (Operazioni pianificate):',
+        'linux' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'mac' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'windows' => 'Nota: Crear un archivo por lotes con los siguientes comandos para ejecutar tareas programadas de EspoCRM usando tareas programadas de Windows:',
+        'default' => 'Nota: Agregar este comando a Cron Job (Tarea Programada):',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Attivo',
-        'Inactive' => 'Inattivo',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'scheduling' => 'Crontab notation. Defines frequency of job runs.
+      'scheduling' => 'Define cuándo y cada cuánto el trabajo será ejecutado
 
-*/5 * * * * - every 5 minutes
+*/5 * * * * - cada 5 minutos
 
-0 */2 * * * - every 2 hours
+0 */2 * * * - cada 2 horas
 
-30 1 * * * - at 01:30 once a day
+30 1 * * * - a las 01:30 cada día
 
-0 0 1 * * - on the first day of the month',
+0 0 1 * * - el primer día del mes',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Stato',
-      'executionTime' => 'Ora di Esecuzione',
-      'target' => 'Target',
+      'status' => 'Estado',
+      'executionTime' => 'Fecha de ejecución',
+      'target' => 'Objetivo',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'useCache' => 'Usa Cache',
-      'dateFormat' => 'Formato Data',
-      'timeFormat' => 'Formato Ora',
-      'timeZone' => 'Time Zone',
-      'weekStart' => 'Primo giorno della Settimana',
-      'thousandSeparator' => 'Separatore delle migliaia',
-      'decimalMark' => 'Decimal Mark',
-      'defaultCurrency' => 'Valuta di default',
-      'baseCurrency' => 'Valuta di Base',
-      'currencyRates' => 'Rapporti di cambio',
-      'currencyList' => 'Elenco Valute',
-      'language' => 'Lingua',
-      'companyLogo' => 'Logo della Compagnia',
-      'smtpServer' => 'Server',
-      'smtpPort' => 'Porta',
-      'smtpAuth' => 'Autenticazione',
-      'smtpSecurity' => 'Sicurezza',
-      'smtpUsername' => 'Username',
-      'emailAddress' => 'Email',
-      'smtpPassword' => 'Password',
-      'outboundEmailFromName' => 'Nome mittente',
-      'outboundEmailFromAddress' => 'Indirizzo mittente',
-      'outboundEmailIsShared' => 'Condivisa',
-      'recordsPerPage' => 'Elementi per pagina',
-      'recordsPerPageSmall' => 'Elementi per pagina (ridotto)',
-      'tabList' => 'Elenco schede',
-      'quickCreateList' => 'Elenco creazione rapida',
-      'exportDelimiter' => 'Delimitatore esportazione',
-      'globalSearchEntityList' => 'Ricerca globale entità - Elenco',
-      'authenticationMethod' => 'Metodo di autenticazione',
-      'ldapHost' => 'Host',
-      'ldapPort' => 'Porta',
-      'ldapAuth' => 'Autenticazione',
-      'ldapUsername' => 'Full User DN',
-      'ldapPassword' => 'Password',
-      'ldapBindRequiresDn' => 'Bind Requires DN',
-      'ldapBaseDn' => 'Base DN',
-      'ldapAccountCanonicalForm' => 'Account Form',
-      'ldapAccountDomainName' => 'Account Nome di Dominio',
-      'ldapTryUsernameSplit' => 'Prova Divisione Username',
+      'useCache' => 'Usar caché',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'baseCurrency' => 'Moneda Base',
+      'currencyRates' => 'Tipos de cambio',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'companyLogo' => 'Logo de la empresa',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'outboundEmailFromName' => 'De (nombre):',
+      'outboundEmailFromAddress' => 'De (email)',
+      'outboundEmailIsShared' => '¿Es compartido?',
+      'recordsPerPage' => 'Registros por página',
+      'recordsPerPageSmall' => 'Registros por página (pequeño)',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'exportDelimiter' => 'Separador de campos',
+      'globalSearchEntityList' => 'Búsqueda Global: Lista de entidades',
+      'authenticationMethod' => 'Método de autenticación',
+      'ldapHost' => 'Servidor',
+      'ldapPort' => 'Puerto',
+      'ldapAuth' => '¿Requiere autenticación?',
+      'ldapUsername' => 'Nombre de usuario',
+      'ldapPassword' => 'Contraseña',
+      'ldapBindRequiresDn' => 'Bind Necesita Nd (Nombre Dominio)',
+      'ldapBaseDn' => 'ND Base',
+      'ldapAccountCanonicalForm' => 'Forma canónica de la cuenta',
+      'ldapAccountDomainName' => 'Nombre de Dominio de la Cuenta',
+      'ldapTryUsernameSplit' => 'Intentar dividir el nombre de Usuario',
       'ldapPortalUserLdapAuth' => 'Use LDAP Authentication for Portal Users',
-      'ldapCreateEspoUser' => 'Crea Utente in EspoCRM',
-      'ldapSecurity' => 'Sicurezza',
-      'ldapUserLoginFilter' => 'Filtro Accessi Utente',
-      'ldapAccountDomainNameShort' => 'Account Nome di Dominio abbreviato',
-      'ldapOptReferrals' => 'Opt Referenti',
-      'ldapUserNameAttribute' => 'Attributo di nome utente',
-      'ldapUserObjectClass' => 'ObjectClass utente',
-      'ldapUserTitleAttribute' => 'Attributo titolo dell\'utente',
-      'ldapUserFirstNameAttribute' => 'Attributo nome dell\'utente',
-      'ldapUserLastNameAttribute' => 'Attributo cognome dell\'utente',
-      'ldapUserEmailAddressAttribute' => 'Attributo indirizzo email dell\'utente',
-      'ldapUserTeams' => 'Teams utente',
-      'ldapUserDefaultTeam' => 'Team di default dell\'utente',
-      'ldapUserPhoneNumberAttribute' => 'Attributo numero di telefono dell\'utente',
+      'ldapCreateEspoUser' => 'Crear usuario en EspoCRM',
+      'ldapSecurity' => 'Seguridad',
+      'ldapUserLoginFilter' => 'Usar Filtro en el Login',
+      'ldapAccountDomainNameShort' => 'Nombre Dominio Corto para la Cuenta',
+      'ldapOptReferrals' => 'Referencias Opt',
+      'ldapUserNameAttribute' => 'Atributo de nombre de usuario',
+      'ldapUserObjectClass' => 'Usuario ObjectClass',
+      'ldapUserTitleAttribute' => 'Atributo del usuario Título',
+      'ldapUserFirstNameAttribute' => 'Nombre de usuario Atributo',
+      'ldapUserLastNameAttribute' => 'Apellido de usuario Atributo',
+      'ldapUserEmailAddressAttribute' => 'Dirección de correo electrónico del usuario atributo',
+      'ldapUserTeams' => 'Los equipos de los usuarios',
+      'ldapUserDefaultTeam' => 'Equipo de usuario por defecto',
+      'ldapUserPhoneNumberAttribute' => 'Número de teléfono del usuario Atributo',
       'ldapPortalUserPortals' => 'Default Portals for a Portal User',
       'ldapPortalUserRoles' => 'Default Roles for a Portal User',
-      'exportDisabled' => 'Disabilita Esporta (sarà consentito solo all\'admin)',
-      'assignmentNotificationsEntityList' => 'Entità da notificare al momento dell\'assegnazione',
-      'assignmentEmailNotifications' => 'Notifiche al momento dell\'assegnazione.',
-      'assignmentEmailNotificationsEntityList' => 'Ambiti di notifica assegnazione email',
-      'streamEmailNotifications' => 'Notifica gli aggiornamenti nel flusso attività per gli utenti interni',
-      'portalStreamEmailNotifications' => 'Notifica gli aggiornamenti nel flusso attività per gli utenti del portale',
-      'streamEmailNotificationsEntityList' => 'Notifiche email flusso scopi',
+      'exportDisabled' => 'Desactivar exportar (Solo estará permitido para el administrador)',
+      'assignmentNotificationsEntityList' => 'Estas entidades notificarán al usuario cuando le sean asignadas',
+      'assignmentEmailNotifications' => 'Se enviará un correo cuando reciba una asignación',
+      'assignmentEmailNotificationsEntityList' => 'Entidades a notificar',
+      'streamEmailNotifications' => 'Se enviará un correo sobre las actualizaciones en la historia para los usuarios internos',
+      'portalStreamEmailNotifications' => 'Se enviará un correo sobre actualizaciones en la historia a los usuarios del portal',
+      'streamEmailNotificationsEntityList' => 'Se notificará por correo en las siguientes entidades',
       'streamEmailNotificationsTypeList' => 'What to notify about',
-      'b2cMode' => 'B2C Mode',
-      'avatarsDisabled' => 'Disabilita Avatars',
-      'followCreatedEntities' => 'Follow created records',
-      'displayListViewRecordCount' => 'Mostra totale trovati (in vista elenco)',
+      'b2cMode' => 'Modo B2C',
+      'avatarsDisabled' => 'Deshabilitar avatares',
+      'followCreatedEntities' => 'Seguir los registros creados',
+      'displayListViewRecordCount' => 'Mostrar totales (en la vista de lista)',
       'theme' => 'Tema',
-      'userThemesDisabled' => 'Disabilita scelta tema agli utenti',
-      'emailMessageMaxSize' => 'Dimensione massima email (Mb)',
-      'massEmailMaxPerHourCount' => 'Numero massimo di messaggi di posta elettronica inviati per ora.',
-      'personalEmailMaxPortionSize' => 'Dimensione della quota per account email personale',
-      'inboundEmailMaxPortionSize' => 'Dimensione della quota per gruppo di account email',
-      'maxEmailAccountCount' => 'Numero massimo di account email personali per utente',
-      'authTokenLifetime' => 'Vita del token di autenticazione (ore)',
-      'authTokenMaxIdleTime' => 'Inattività massima del token di autenticazione (ore)',
-      'dashboardLayout' => 'Layout della Panoramica (default)',
-      'siteUrl' => 'URL del sito',
-      'addressPreview' => 'Anteprima Indirizzo',
-      'addressFormat' => 'Formato Indirizzo',
-      'notificationSoundsDisabled' => 'Disabilita notifiche sonore',
-      'applicationName' => 'Nome dell\'applicazione',
-      'calendarEntityList' => 'Elenco calendario delle entità',
-      'mentionEmailNotifications' => 'Notifica via email in caso di menzioni nei posts',
-      'massEmailDisableMandatoryOptOutLink' => 'Disabilita il link obbligatorio di cancellazione dell\'iscrizione',
-      'activitiesEntityList' => 'Elenco attività delle entità',
-      'historyEntityList' => 'Elenco storico delle entità',
-      'currencyFormat' => 'Formato Valuta',
-      'currencyDecimalPlaces' => 'Numero di cifre decimali',
-      'aclStrictMode' => 'ACL modalità strict',
-      'aclAllowDeleteCreated' => 'Allow to remove created records',
-      'adminNotifications' => 'System notifications in administration panel',
+      'userThemesDisabled' => 'Deshabilitar temas de usuarios',
+      'emailMessageMaxSize' => 'Tamaño máximo de los correos entrantes (Mb)',
+      'massEmailMaxPerHourCount' => 'Cantidad máxima de correos enviados por hora',
+      'personalEmailMaxPortionSize' => 'Cantidad máxima de correos personales que se recuperarán cada vez',
+      'inboundEmailMaxPortionSize' => 'Cantidad máxima de correos grupales que se recuperarán cada vez',
+      'maxEmailAccountCount' => 'Cantidad máxima de cuentas personales que se pueden crear por usuario',
+      'authTokenLifetime' => 'Vida del token de autenticación (horas)',
+      'authTokenMaxIdleTime' => 'Máximo tiempo de inactividad del token de autenticación (horas)',
+      'dashboardLayout' => 'Diseño del escritorio (por defecto)',
+      'siteUrl' => 'URL del sitio',
+      'addressPreview' => 'Vista previa de la dirección',
+      'addressFormat' => 'Formato de la Dirección',
+      'notificationSoundsDisabled' => 'Desactivar los sonidos de notificación',
+      'applicationName' => 'Nombre de la aplicación',
+      'calendarEntityList' => 'Lista de entidades calendario',
+      'mentionEmailNotifications' => 'Se enviará un correo cuando sean mencionados en los mensajes',
+      'massEmailDisableMandatoryOptOutLink' => 'Deshabilitar la obligatoridad del enlace "darse de baja" ',
+      'activitiesEntityList' => 'Lista de entidades de actividades',
+      'historyEntityList' => 'Lista de entidades de historia',
+      'currencyFormat' => 'Formato de Moneda',
+      'currencyDecimalPlaces' => 'Lugares decimales en la moneda',
+      'aclStrictMode' => 'ACL en modo estricto',
+      'aclAllowDeleteCreated' => 'Permitir eliminar registros creados',
+      'adminNotifications' => 'Notificaciones del sistema en el panel de administración',
       'adminNotificationsNewVersion' => 'Show notification when new EspoCRM version is available',
       'adminNotificationsNewExtensionVersion' => 'Show notification when new versions of extensions are available',
       'textFilterUseContainsForVarchar' => 'Use \'contains\' operator when filtering varchar fields',
@@ -2756,51 +2784,55 @@ no - nulla di visualizzabile',
       'outboundEmailBccAddress' => 'BCC address for external clients',
       'cleanupDeletedRecords' => 'Clean up deleted records',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'Domenica',
-        1 => 'Lunedi',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
-        1 => '10 EUR',
-        2 => '€ 10',
+        1 => '10 USD',
+        2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
         'Post' => 'Posts',
         'Status' => 'Status updates',
         'EmailReceived' => 'Received emails',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'recordsPerPage' => 'Numero di records inizialmente mostrati in vista elenco .',
-      'recordsPerPageSmall' => 'Numero di record inizialmente visualizzata in pannello di relazione.',
-      'outboundEmailIsShared' => 'Allow users to send emails from this address.',
-      'followCreatedEntities' => 'Gli utenti potranno seguire automaticamente i record che hanno creato .',
-      'emailMessageMaxSize' => 'Tutte le email in entrata che superano una dimensione specificata verranno prelevati senza corpo e allegati .',
-      'authTokenLifetime' => 'Definisce la vita di un token
-0 - nessuna scadenza.',
-      'authTokenMaxIdleTime' => 'Definisice la vita di un token dall\'ultimo accesso.
-0 - nessuna scadenza.',
-      'userThemesDisabled' => 'Se selezionato, gli utenti non saranno in grado di selezionare un altro tema. ',
-      'ldapUsername' => 'The full system user DN which allows to search other users. E.g. "CN=LDAP System User,OU=users,OU=espocrm, DC=test,DC=lan".',
-      'ldapPassword' => 'La password di accesso al server LDAP.',
-      'ldapAuth' => 'Access credentials for the LDAP server.',
-      'ldapUserNameAttribute' => 'The attribute to identify the user. 
-E.g. "userPrincipalName" or "sAMAccountName" for Active Directory, "uid" for OpenLDAP.',
-      'ldapUserObjectClass' => 'ObjectClass attribute for searching users. E.g. "person" for AD, "inetOrgPerson" for OpenLDAP.',
-      'ldapAccountCanonicalForm' => 'The type of your account canonical form. There are 4 options:<br>- \'Dn\' - the form in the format \'CN=tester,OU=espocrm,DC=test, DC=lan\'.<br>- \'Username\' - the form \'tester\'.<br>- \'Backslash\' - the form \'COMPANY\\tester\'.<br>- \'Principal\' - the form \'tester@company.com\'.',
-      'ldapBindRequiresDn' => 'The option to format the username in the DN form.',
-      'ldapBaseDn' => 'The default base DN used for searching users. E.g. "OU=users,OU=espocrm,DC=test, DC=lan".',
-      'ldapTryUsernameSplit' => 'The option to split a username with the domain.',
-      'ldapOptReferrals' => 'if referrals should be followed to the LDAP client.',
+      'recordsPerPage' => 'Número de registros a mostrar inicialmente en las vistas.',
+      'recordsPerPageSmall' => 'Número de registros a mostrar inicialmente en los paneles relacionados',
+      'outboundEmailIsShared' => 'Permitir a los usuarios enviar correos electrónicos desde esta dirección.',
+      'followCreatedEntities' => 'Los usuarios seguirán automáticamente los registros que ellos crearon.',
+      'emailMessageMaxSize' => 'Todos los correos entrantes que superen un tamaño especificado se omitirán.',
+      'authTokenLifetime' => 'Define cuanto tiempo de vida tienen los tokens.
+0 - significa que no caduca.',
+      'authTokenMaxIdleTime' => 'Define cuándo caduca el Token luego del último acceso.
+0 - significa que no caduca.',
+      'userThemesDisabled' => 'Si está marcado, los usuarios no podrán seleccionar otro tema.',
+      'ldapUsername' => 'El sistema de usuario DN completo que permite a los usuarios buscar otros. E.g. "CN=LDAP usuario del sistema,OU=users,OU=espocrm, DC=test,DC=lan".',
+      'ldapPassword' => 'La contraseña para acceder al servidor LDAP.',
+      'ldapAuth' => 'Credenciales de acceso para el servidor LDAP.',
+      'ldapUserNameAttribute' => 'El atributo para identificar al usuario.
+Por ejemplo: "userPrincipalName" o "sAMAccountName" para Active Directory, "uid" para OpenLDAP.',
+      'ldapUserObjectClass' => 'Atributo ObjectClass para buscar usuarios. Por ejemplo: "person" para AD, "inetOrgPerson" para OpenLDAP.',
+      'ldapAccountCanonicalForm' => 'El tipo de canonización de su cuenta. Hay 4 opciones:<br><br>
+\'Dn\' - en el formato \'CN=tester,OU=espocrm,DC=test,DC=lan\'<br>
+\'Username\' - \'tester\'<br>
+\'Backslash\' - "COMPANY/tester\'.<br>
+\'Principal\' - \'tester@company.com \'.',
+      'ldapBindRequiresDn' => 'La opción para formatear el nombre de usuario en el formulario de DN.',
+      'ldapBaseDn' => 'La base DN predeterminado utilizado para la búsqueda de los usuarios. E.g. "OU=users,OU=espocrm,DC=test, DC=lan".',
+      'ldapTryUsernameSplit' => 'La opción de dividir un nombre de usuario con el dominio.',
+      'ldapOptReferrals' => 'La opción de dividir un nombre de usuario con el dominio.',
       'ldapPortalUserLdapAuth' => 'Allow portal users to use LDAP authentication instead of Espo authentication.',
-      'ldapCreateEspoUser' => 'This option allows EspoCRM to create a user from the LDAP.',
-      'ldapUserFirstNameAttribute' => 'LDAP attribute which is used to determine the user first name. E.g. "givenname".',
+      'ldapCreateEspoUser' => 'Esta opción permite EspoCRM para crear un usuario del LDAP.',
+      'ldapUserFirstNameAttribute' => 'atributo LDAP que se utiliza para determinar el nombre de usuario primero. E.g. "givenname".',
       'ldapUserLastNameAttribute' => 'LDAP attribute which is used to determine the user last name. E.g. "sn".',
       'ldapUserTitleAttribute' => 'LDAP attribute which is used to determine the user title. E.g. "title".',
       'ldapUserEmailAddressAttribute' => 'LDAP attribute which is used to determine the user email address. E.g. "mail".',
@@ -2808,108 +2840,108 @@ E.g. "userPrincipalName" or "sAMAccountName" for Active Directory, "uid" for Ope
       'ldapUserLoginFilter' => 'The filter which allows to restrict users who able to use EspoCRM. E.g. "memberOf=CN=espoGroup, OU=groups,OU=espocrm, DC=test,DC=lan".',
       'ldapAccountDomainName' => 'The domain which is used for authorization to LDAP server.',
       'ldapAccountDomainNameShort' => 'The short domain which is used for authorization to LDAP server.',
-      'ldapUserTeams' => 'Teams per l\'utente creato. Per ulteriori informazioni, vedere il profilo utente.',
-      'ldapUserDefaultTeam' => 'Team predefinito per l\'utente creato. Per ulteriori informazioni, vedi il profilo utente.',
+      'ldapUserTeams' => 'Equipos de usuario creado. Para más información, véase el perfil de usuario.',
+      'ldapUserDefaultTeam' => 'equipo predeterminado de usuario creado. Para más información, véase el perfil de usuario.',
       'ldapPortalUserPortals' => 'Default Portals for created Portal User',
       'ldapPortalUserRoles' => 'Default Roles for created Portal User',
-      'b2cMode' => 'Per default, EspoCRM è adattato per B2B. Ma puoi passare a B2C.',
-      'currencyDecimalPlaces' => 'Numero di cifre decimali. Se vuoto, verranno visualizzate tutti le cifre decimali.',
-      'aclStrictMode' => 'Abilitato: l\'accesso agli ambiti sarà negato se non specificato nei ruoli.
+      'b2cMode' => 'Por defecto EspoCRM esta adaptado para B2B. Usted puede cambiarlo a B2C.',
+      'currencyDecimalPlaces' => 'Número de decimales. Si está vacía, se mostrarán todas las posiciones decimales disponibles.',
+      'aclStrictMode' => 'Activado: el acceso a los ámbitos estará prohibido si no está especificado en roles.
 
-Disabilitato: l\'accesso agli ambiti sarà consentito se non specificato nei ruoli.',
-      'aclAllowDeleteCreated' => 'Users will be able to remove records they created even if they don\'t have a delete access.',
+Deshabilitado: se permitirá el acceso a ámbitos si no está especificado en roles.',
+      'aclAllowDeleteCreated' => 'Los usuarios podrán eliminar los registros que hayan creado, incluso si no tienen un acceso de eliminación.',
       'textFilterUseContainsForVarchar' => 'If not checked then \'starts with\' operator is used. You can use the wildcard \'%\'.',
       'streamEmailNotificationsEntityList' => 'Email notifications about stream updates of followed records. Users will receive email notifications only for specified entity types.',
       'authTokenPreventConcurrent' => 'Users won\'t be able to be logged in on multiple devices simultaneously.',
       'emailAddressIsOptedOutByDefault' => 'When creating new record email addess will be marked as opted-out.',
       'cleanupDeletedRecords' => 'Removed records will be deleted from database after a while.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'System' => 'Sistema',
-      'Locale' => 'Locale',
+      'Locale' => 'Localización',
       'SMTP' => 'SMTP',
-      'Configuration' => 'Configurazione',
-      'In-app Notifications' => 'Notifica In-app ',
-      'Email Notifications' => 'Notifica Email ',
-      'Currency Settings' => 'Impostazioni di Valuta',
-      'Currency Rates' => 'Tasso di Cambio',
-      'Mass Email' => 'Email Massiva',
-      'Test Connection' => 'Prova della connessione',
-      'Connecting' => 'Connessione...',
-      'Activities' => 'Attività',
-      'Admin Notifications' => 'Admin Notifications',
+      'Configuration' => 'Configuración',
+      'In-app Notifications' => 'Notificaciones del sistema',
+      'Email Notifications' => 'Notificaciones de correo',
+      'Currency Settings' => 'Ajustes de moneda',
+      'Currency Rates' => 'Tasas de conversión de divisas',
+      'Mass Email' => 'Correo masivo',
+      'Test Connection' => 'Probar conexión',
+      'Connecting' => 'Conectando...',
+      'Activities' => 'Actividades planeadas',
+      'Admin Notifications' => 'Notificaciones de administrador',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'ldapTestConnection' => 'La connessione è stata stabilita con successo',
-    ),
-  ),
-  'Team' => 
-  array (
-    'fields' => 
-    array (
-      'name' => 'Nome',
-      'roles' => 'Ruoli',
-      'positionList' => 'Elenco posizioni',
-    ),
-    'links' => 
-    array (
-      'users' => 'Utenti',
-      'notes' => 'Note',
-      'roles' => 'Ruoli',
-      'inboundEmails' => 'Gruppo email accounts',
-    ),
-    'tooltips' => 
-    array (
-      'roles' => 'Ruoli di accesso . Gli utenti di questo team hanno ottenuto il livello di controllo per i ruoli selezionati .',
-      'positionList' => 'Posizioni disponibili in questa squadra. E.g. Venditore, Manager.',
-    ),
-    'labels' => 
-    array (
-      'Create Team' => 'Crea Team',
+      'ldapTestConnection' => 'La conexión fue establecida con éxito.',
     ),
   ),
-  'Template' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'body' => 'Corpo',
-      'entityType' => 'Tipo di entità',
-      'header' => 'Intestazione',
-      'footer' => 'Piè di pagina',
-      'leftMargin' => 'Margine Sinistro',
-      'topMargin' => 'Marigne Superiore',
-      'rightMargin' => 'Margine Destro',
-      'bottomMargin' => 'Margine Inferiore',
-      'printFooter' => 'Stampa piè di Pagina',
-      'footerPosition' => 'Posizione piè  di pagina',
-      'variables' => 'Segnaposto disponibili',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'positionList' => 'Lista de puestos',
+    ),
+    'links' =>
+    array (
+      'users' => 'Usuarios',
+      'notes' => 'Notas',
+      'roles' => 'Roles',
+      'inboundEmails' => 'Cuentas de correo grupales',
+    ),
+    'tooltips' =>
+    array (
+      'roles' => 'Todos los usuarios de este equipo tendrán acceso a la configuración desde los roles seleccionados',
+      'positionList' => 'Puestos disponibles en este equipo. Por ejemplo Vendedor, Gerente.',
+    ),
+    'labels' =>
+    array (
+      'Create Team' => 'Crear empresa',
+    ),
+  ),
+  'Template' =>
+  array (
+    'fields' =>
+    array (
+      'name' => 'Nombre',
+      'body' => 'Cuerpo',
+      'entityType' => 'Tipo de entidad',
+      'header' => 'Cabecera',
+      'footer' => 'Pié',
+      'leftMargin' => 'Margen Izquierdo',
+      'topMargin' => 'Margen Superior',
+      'rightMargin' => 'Margen Derecho',
+      'bottomMargin' => 'Margen Inferior',
+      'printFooter' => 'Imprimir Pié',
+      'footerPosition' => 'Posición del Pié',
+      'variables' => 'Etiquetas disponibles.',
       'pageOrientation' => 'Page Orientation',
       'pageFormat' => 'Paper Format',
       'fontFace' => 'Font',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Template' => 'Crea Modello',
+      'Create Template' => 'Crear plantilla',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
         'Portrait' => 'Portrait',
         'Landscape' => 'Landscape',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
         'today' => 'Today (date)',
         'now' => 'Now (date-time)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefurat',
@@ -2941,1104 +2973,1104 @@ Disabilitato: l\'accesso agli ambiti sarà consentito se non specificato nei ruo
         'times' => 'Times',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'footer' => 'Utilizzare {pageNumber} per stampare il numero di pagina .',
-      'variables' => 'Copy-paste needed placeholder to Header, Body or Footer.',
+      'footer' => 'Use {pageNumber} para imprimir el número de página.',
+      'variables' => 'Copie y Pegue la etiqueta necesaria en el encabezado, cuerpo o pie de página.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'userName' => 'Nome Utente',
-      'title' => 'Titolo',
-      'isAdmin' => 'Is Admin',
-      'defaultTeam' => 'Default Team',
-      'emailAddress' => 'Email',
-      'phoneNumber' => 'Telefono',
-      'roles' => 'Ruoli',
-      'portals' => 'Portali',
-      'portalRoles' => 'Ruoli Portale',
-      'teamRole' => 'Posizione',
-      'password' => 'Password',
-      'currentPassword' => 'Password attuale',
-      'passwordConfirm' => 'Conferma password',
-      'newPassword' => 'Nuova password',
-      'newPasswordConfirm' => 'Conferma la nuova password',
+      'name' => 'Nombre',
+      'userName' => 'Nombre Usuario',
+      'title' => 'Título',
+      'isAdmin' => 'Es administrador',
+      'defaultTeam' => 'Equipo por defecto',
+      'emailAddress' => 'Correo electrónico',
+      'phoneNumber' => 'Teléfono',
+      'roles' => 'Roles',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'teamRole' => 'Puesto',
+      'password' => 'Contraseña',
+      'currentPassword' => 'Contraseña Actual',
+      'passwordConfirm' => 'Confirmar Contraseña',
+      'newPassword' => 'Nueva Contraseña',
+      'newPasswordConfirm' => 'Confirmar Contraseña Nueva',
       'avatar' => 'Avatar',
-      'isActive' => 'È Attivo',
-      'isPortalUser' => 'È il portale per l\'utente',
-      'contact' => 'Contatti',
-      'accounts' => 'Accounts',
-      'account' => 'Account (Primario)',
-      'sendAccessInfo' => 'Invia email all\'utente con i dati di accesso',
-      'portal' => 'Portale',
-      'gender' => 'Genere',
-      'position' => 'Posizione nel team',
-      'ipAddress' => 'Indirizzo IP',
-      'passwordPreview' => 'Mostra password',
+      'isActive' => 'Está activo',
+      'isPortalUser' => 'Es usuario del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'sendAccessInfo' => 'Enviar información de acceso al usuario',
+      'portal' => 'Portal',
+      'gender' => 'Sexo',
+      'position' => 'Puesto en el equipo',
+      'ipAddress' => 'Dirección IP',
+      'passwordPreview' => 'Vista previa de la contraseña',
       'isSuperAdmin' => 'Is Super Admin',
       'lastAccess' => 'Last Access',
-      'acceptanceStatus' => 'Stato accettazione',
-      'acceptanceStatusMeetings' => 'Stato accettazione (riunioni)',
-      'acceptanceStatusCalls' => 'Stato accettazione (chiamate)',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'teams' => 'Team',
-      'roles' => 'Ruoli',
-      'notes' => 'Note',
-      'portals' => 'Portali',
-      'portalRoles' => 'Ruoli Portale',
-      'contact' => 'Contatti',
-      'accounts' => 'Accounts',
-      'account' => 'Account (Primario}',
-      'tasks' => 'Compiti',
-      'targetLists' => 'Liste di destinazione',
+      'teams' => 'Equipos',
+      'roles' => 'Roles',
+      'notes' => 'Notas',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'tasks' => 'Tareas',
+      'targetLists' => 'Lista de objetivos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create User' => 'Crea Utente',
-      'Generate' => 'Generare',
-      'Access' => 'Accesso',
-      'Preferences' => 'Preferenze',
-      'Change Password' => 'Cambia password',
-      'Teams and Access Control' => 'Controllo Teams e Accessi',
-      'Forgot Password?' => 'Password dimenticata?',
-      'Password Change Request' => 'Richiesta di cambio password',
-      'Email Address' => 'Indirizzo Email',
-      'External Accounts' => 'Account Esterni',
-      'Email Accounts' => 'Email Accounts',
-      'Portal' => 'Portale',
-      'Create Portal User' => 'Crea Utente Portale',
-      'Proceed w/o Contact' => 'Procedi senza contatto',
+      'Create User' => 'Crear usuario',
+      'Generate' => 'Generar',
+      'Access' => 'Acceso',
+      'Preferences' => 'Preferencias',
+      'Change Password' => 'Cambiar Contraseña',
+      'Teams and Access Control' => 'Equipos y control de acceso',
+      'Forgot Password?' => '¿Olvidó la Contraseña?',
+      'Password Change Request' => 'Solicitar Cambio de Contraseña',
+      'Email Address' => 'Correo electrónico',
+      'External Accounts' => 'Cuentas externas',
+      'Email Accounts' => 'Cuentas de correo',
+      'Portal' => 'Portal',
+      'Create Portal User' => 'Crear usuario del portal',
+      'Proceed w/o Contact' => 'Continuar sin contacto',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'defaultTeam' => 'Tutti i record creati da questo utente saranno inseriti di default in questo Team.',
-      'userName' => 'Lettere a-z, numeri 0-9, puntini, trattini, @ e sottolineature sono permessi.',
-      'isAdmin' => 'L\'utente Admin può accedere a tutto.',
-      'isActive' => 'Se non verificato , l\'utente non sarà in grado di effettuare il login .',
-      'teams' => 'Team a cui appartiene l\'utente. Il livello di controllo di accesso viene ereditato dai ruoli del team.',
-      'roles' => 'Ruoli di accesso aggiuntivi. Usalo se l\'utente non appartiene ad alcun gruppo o è necessario estendere il livello di controllo di accesso in esclusiva per questo utente.',
-      'portalRoles' => 'Ulteriori ruoli portale . Usalo per estendere il livello di controllo di accesso esclusivamente per questo utente .',
-      'portals' => 'Portali a cui l\'utente ha accesso.',
+      'defaultTeam' => 'Todos los registros creados por este usuario serán relacionados a este equipo por defecto.',
+      'userName' => 'Letras a-z, números 0-9 y guiones bajos están permitidos',
+      'isAdmin' => 'El usuario administrador puede tener acceso a todo.',
+      'isActive' => 'Si lo desmarca, el usuario no podrá iniciar sesión.',
+      'teams' => 'Equipos a los que este usuario pertenece. Nivel de control de acceso se hereda de los roles de equipo.',
+      'roles' => 'Roles de acceso adicionales. Úsalo si el usuario no pertenece a ningún equipo o si necesita ampliar el nivel de control de acceso solo para este usuario.',
+      'portalRoles' => 'Roles adicionales del portal. Utilícelos para extender el nivel de acceso exclusivamente para este usuario.',
+      'portals' => 'El usuario tiene accesos a los siguientes portales.',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'passwordWillBeSent' => 'La password verrà inviata all\'indirizzo email dell\'utente.',
-      'accountInfoEmailSubject' => 'Informazioni di accesso ali utente di EspoCRM',
-      'accountInfoEmailBody' => 'I tuoi dati di accesso:
+      'passwordWillBeSent' => 'La Contraseña será enviada al correo electrónico del usuario',
+      'accountInfoEmailSubject' => 'Información Cuenta',
+      'accountInfoEmailBody' => 'Información de tu cuenta:
 
-Username: {userName}
-Password: {password}
+Nombre Usuario: {userName}
+Contraseña: {password}
 
 {siteUrl}',
-      'passwordChangeLinkEmailSubject' => 'Richiesta di cambio password',
-      'passwordChangeLinkEmailBody' => 'Puoi modificare la password seguendo questo link {link}. Questo URL univoco scadrà a breve.',
-      'passwordChanged' => 'La password è stata modificata',
-      'userCantBeEmpty' => 'Il Nome utente non può essere vuoto',
-      'wrongUsernamePasword' => 'I dati forniti non sono corretti',
-      'emailAddressCantBeEmpty' => 'L\'indirizzo Email non può essere vuoto',
-      'userNameEmailAddressNotFound' => 'Username/Indirizzo Email non trovato',
-      'forbidden' => 'Vietato , riprova piu tardi',
-      'uniqueLinkHasBeenSent' => 'L\' URL univoco è stato inviato all\'indirizzo di posta elettronica specificato .',
-      'passwordChangedByRequest' => 'La password è stata modificata.',
-      'setupSmtpBefore' => 'È necessario attivare le <a href="{url}">Impostazioni SMTP</a> perchè il sistema sia in grado di mandare le password via email.',
+      'passwordChangeLinkEmailSubject' => 'Solicitud de Cambio de Contraseña',
+      'passwordChangeLinkEmailBody' => 'Puede cambiar su contraseña siguiendo este enlace {link}. Esta URL única expirará pronto.',
+      'passwordChanged' => 'La Contraseña ha sido cambiada',
+      'userCantBeEmpty' => 'El nombre de usuario no puede estar vacío',
+      'wrongUsernamePasword' => 'Nombre de usuario/contraseña incorrectos',
+      'emailAddressCantBeEmpty' => 'La dirección de correo no puede estar vacía',
+      'userNameEmailAddressNotFound' => 'Nombre de Usuario/Correo no encontrado',
+      'forbidden' => 'Prohibido, por favor intente después',
+      'uniqueLinkHasBeenSent' => 'El enlace único ha sido enviado a la dirección de correo electrónico especificada.',
+      'passwordChangedByRequest' => 'La contraseña ha sido cambiada.',
+      'setupSmtpBefore' => 'Necesita configurar los <a href="{url}">ajustes SMTP</a> para que el sistema pueda enviar contraseñas por correo.',
       'userNameExists' => 'User Name already exists',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
-        '' => 'Non impostato',
-        'Male' => 'Maschio',
-        'Female' => 'Femmina',
+        '' => 'No definido',
+        'Male' => 'Masculino',
+        'Female' => 'Femenino',
         'Neutral' => 'Neutral',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMyTeam' => 'Solo per il mio Team',
+      'onlyMyTeam' => 'Solo de mi equipo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Attivo',
-      'activePortal' => 'Portale Attivo',
+      'active' => 'Activo',
+      'activePortal' => 'Portales activos',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'emailAddress' => 'Email',
-      'website' => 'Sito Web',
-      'phoneNumber' => 'Telefono',
-      'billingAddress' => 'Indirizzo di Fatturazione',
-      'shippingAddress' => 'Indirizzo di Spedizione',
-      'description' => 'Descrizione',
-      'sicCode' => 'Sic Code',
-      'industry' => 'Azienda',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'billingAddress' => 'Dirección de facturación',
+      'shippingAddress' => 'Dirección de envío',
+      'description' => 'Descripción',
+      'sicCode' => 'Código SIC',
+      'industry' => 'Industria',
       'type' => 'Tipo',
-      'contactRole' => 'Titolo',
-      'contactIsInactive' => 'Inattivo',
-      'campaign' => 'Campagna',
-      'targetLists' => 'Liste di destinazione',
-      'targetList' => 'Lista di destinazione',
-      'originalLead' => 'Iniziativa originale',
+      'contactRole' => 'Título',
+      'contactIsInactive' => 'Inactivo',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'Contatti',
-      'opportunities' => 'Opportunita\'',
-      'cases' => 'Casi',
-      'documents' => 'Documenti',
-      'meetingsPrimary' => 'Riunioni (ampliato)',
-      'callsPrimary' => 'Chiamate (ampliato)',
-      'tasksPrimary' => 'Compiti (ampliato)',
-      'emailsPrimary' => 'Emails (ampliato)',
-      'targetLists' => 'Liste di destinazione',
-      'campaignLogRecords' => 'Log Campagna',
-      'campaign' => 'Campagna',
-      'portalUsers' => 'Utenti portale',
-      'originalLead' => 'Iniziativa originale',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'meetingsPrimary' => 'Reuniones (ampliado)',
+      'callsPrimary' => 'Llamadas (ampliado)',
+      'tasksPrimary' => 'Tareas (ampliado)',
+      'emailsPrimary' => 'Correos (ampliado)',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'portalUsers' => 'Usuarios del portal',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Customer' => 'Cliente',
-        'Investor' => 'Invetitore',
-        'Partner' => 'Partner',
-        'Reseller' => 'Rivenditore',
+        'Investor' => 'Inversor',
+        'Partner' => 'Socio',
+        'Reseller' => 'Revendedor',
       ),
-      'industry' => 
+      'industry' =>
       array (
-        'Aerospace' => 'Aerospaziale',
-        'Agriculture' => 'Agricultura',
-        'Advertising' => 'Pubblicità',
-        'Apparel & Accessories' => 'Abbigliamento e Accessori',
-        'Architecture' => 'Architettura',
-        'Automotive' => 'Settore Automobilistico',
-        'Banking' => 'Bancario',
-        'Biotechnology' => 'Biotecnologie',
-        'Building Materials & Equipment' => 'Materiali da costruzione e attrezzature',
-        'Chemical' => 'Chimico',
-        'Construction' => 'Costruzioni',
-        'Computer' => 'Computer',
-        'Defense' => 'Difesa',
-        'Creative' => 'Creatività',
-        'Culture' => 'Cultura',
-        'Consulting' => 'Consulenza',
-        'Education' => 'Insegnante',
-        'Electronics' => 'Elettronica',
-        'Electric Power' => 'Energia elettrica',
-        'Energy' => 'Energia',
-        'Entertainment & Leisure' => 'Intrattenimento e tempo libero',
-        'Finance' => 'Finanza',
-        'Food & Beverage' => 'Prodotti alimentari e bevande',
-        'Grocery' => 'Drogheria',
-        'Hospitality' => 'Ospitalità',
-        'Healthcare' => 'Assistenza sanitaria',
-        'Insurance' => 'Assicurazioni',
-        'Legal' => 'Legale',
-        'Manufacturing' => 'Manifatturiero',
-        'Mass Media' => 'Mass media',
-        'Mining' => 'Miniere',
-        'Music' => 'Musica',
+        'Aerospace' => 'Aeroespacial',
+        'Agriculture' => 'Agrícola',
+        'Advertising' => 'Publicidad',
+        'Apparel & Accessories' => 'Ropa y accesorios',
+        'Architecture' => 'Arquitectura',
+        'Automotive' => 'Automotriz',
+        'Banking' => 'Banca',
+        'Biotechnology' => 'Biotecnología',
+        'Building Materials & Equipment' => 'Materiales de construcción y equipamiento',
+        'Chemical' => 'Química',
+        'Construction' => 'Construcción',
+        'Computer' => 'Computación',
+        'Defense' => 'Defensa',
+        'Creative' => 'Creativa',
+        'Culture' => 'Cultural',
+        'Consulting' => 'Consultoría',
+        'Education' => 'Educación',
+        'Electronics' => 'Electrónicos',
+        'Electric Power' => 'Energía eléctrica',
+        'Energy' => 'Energía',
+        'Entertainment & Leisure' => 'Entretenimiento y ocio',
+        'Finance' => 'Finanzas',
+        'Food & Beverage' => 'Alimentación y bebidas',
+        'Grocery' => 'Comestibles',
+        'Hospitality' => 'Hostelería',
+        'Healthcare' => 'Cuidado de la salud',
+        'Insurance' => 'Seguros',
+        'Legal' => 'Jurídica',
+        'Manufacturing' => 'Fabricación',
+        'Mass Media' => 'Medios masivos',
+        'Mining' => 'Minería',
+        'Music' => 'Música',
         'Marketing' => 'Marketing',
-        'Publishing' => 'Editoriale',
-        'Petroleum' => 'Petrolio',
-        'Real Estate' => 'Immobiliare',
-        'Retail' => 'Vendita al dettaglio',
-        'Shipping' => 'Spedizioni',
-        'Service' => 'Servizi',
-        'Support' => 'Supporto',
-        'Sports' => 'Sport',
+        'Publishing' => 'Publicaciones',
+        'Petroleum' => 'Petróleo',
+        'Real Estate' => 'Bienes raices',
+        'Retail' => 'Venta al por menor',
+        'Shipping' => 'Naviera',
+        'Service' => 'Servicio',
+        'Support' => 'Soporte',
+        'Sports' => 'Deportes',
         'Software' => 'Software',
-        'Technology' => 'Technologia',
-        'Telecommunications' => 'Telecommunicazioni',
-        'Television' => 'Televisione',
-        'Testing, Inspection & Certification' => 'Test, ispezione e certificazione',
-        'Transportation' => 'Trasporti',
-        'Travel' => 'Viaggio',
-        'Venture Capital' => 'Capitale di rischio',
-        'Wholesale' => 'Vendita all\'ingrosso',
-        'Water' => 'Acqua',
+        'Technology' => 'Tecnología',
+        'Telecommunications' => 'Telecomunicaciones',
+        'Television' => 'Televisión',
+        'Testing, Inspection & Certification' => 'Pruebas, inspección y certificación',
+        'Transportation' => 'Transporte',
+        'Travel' => 'Viajes',
+        'Venture Capital' => 'Capital de riesgo',
+        'Wholesale' => 'Venta al por mayor',
+        'Water' => 'Agua',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Account' => 'Crea Account',
-      'Copy Billing' => 'Copia di Fatturazione',
-      'Set Primary' => 'Imposta primario',
+      'Create Account' => 'Crear cuenta',
+      'Copy Billing' => 'Copiar desde facturación',
+      'Set Primary' => 'Establecer como principal',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'customers' => 'Clienti',
-      'partners' => 'Partner',
-      'recentlyCreated' => 'Recentemente creato',
+      'customers' => 'Clientes',
+      'partners' => 'Socios',
+      'recentlyCreated' => 'Creado recientemente',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
-      'month' => 'Mese',
-      'week' => 'Settimana',
-      'day' => 'Giorno',
-      'agendaWeek' => 'Settimana',
-      'agendaDay' => 'Giorno',
-      'timeline' => 'Sequenza temporale',
+      'month' => 'Mes',
+      'week' => 'Semana',
+      'day' => 'Día',
+      'agendaWeek' => 'Semana',
+      'agendaDay' => 'Día',
+      'timeline' => 'Línea de tiempo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Today' => 'Oggi',
-      'Create' => 'Creare',
-      'Shared' => 'Diviso',
-      'Add User' => 'Aggiungi Utente',
-      'current' => 'attuale',
-      'time' => 'ora',
-      'User List' => 'Elenco utenti',
-      'Manage Users' => 'Gestione Utenti',
-      'View Calendar' => 'Mostra calendario',
+      'Today' => 'Hoy',
+      'Create' => 'Crear',
+      'Shared' => 'Compartido',
+      'Add User' => 'Agregar usuario',
+      'current' => 'actual',
+      'time' => 'hora',
+      'User List' => 'Lista de usuarios',
+      'Manage Users' => 'Administrar usuarios',
+      'View Calendar' => 'Ver calendario',
       'Create Shared View' => 'Create Shared View',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'parent' => 'Genitore',
-      'status' => 'Stato',
-      'dateStart' => 'Data inizio',
-      'dateEnd' => 'Data termine',
-      'direction' => 'Direzione',
-      'duration' => 'Durata',
-      'description' => 'Descrizione',
-      'users' => 'Utenti',
-      'contacts' => 'Contatti',
-      'leads' => 'Comando',
-      'reminders' => 'Promemoria',
-      'account' => 'Account',
-      'acceptanceStatus' => 'Stato accettazione',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'direction' => 'Dirección',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Pianificato',
-        'Held' => 'Tenere',
-        'Not Held' => 'Lasciare',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'direction' => 
+      'direction' =>
       array (
-        'Outbound' => 'in Uscita',
-        'Inbound' => 'in Ingresso',
+        'Outbound' => 'Saliente',
+        'Inbound' => 'Entrante',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'Nessun',
-        'Accepted' => 'Accettato',
-        'Declined' => 'Rifiutato',
-        'Tentative' => 'Provvisorio',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'Trattenuto',
-      'setNotHeld' => 'Non Trattenuto',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Call' => 'Crea chiamata',
-      'Set Held' => 'Trattenuto',
-      'Set Not Held' => 'Non Trattenuto',
-      'Send Invitations' => 'Inviare inviti',
+      'Create Call' => 'Crear llamada',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Pianificato',
-      'held' => 'Held',
-      'todays' => 'Today\'s',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'description' => 'Descrizione',
-      'status' => 'Stato',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'status' => 'Estado',
       'type' => 'Tipo',
-      'startDate' => 'Data inizio',
-      'endDate' => 'Data termine',
-      'targetLists' => 'Liste di destinazione',
-      'excludingTargetLists' => 'Esclusioni da liste di destinazione',
-      'sentCount' => 'Inviato',
-      'openedCount' => 'Aperto',
-      'clickedCount' => 'Cliccato',
-      'optedOutCount' => 'Rinuncia',
-      'bouncedCount' => 'Bounced',
+      'startDate' => 'Fecha de inicio',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'sentCount' => 'Enviado',
+      'openedCount' => 'Abierto',
+      'clickedCount' => 'Cliqueados',
+      'optedOutCount' => 'Se dieron de baja',
+      'bouncedCount' => 'Rebotados',
       'optedInCount' => 'Opted In',
-      'hardBouncedCount' => 'Hard Bounced',
-      'softBouncedCount' => 'Soft Bounced',
-      'leadCreatedCount' => 'Leads Created',
-      'revenue' => 'Entrata',
-      'revenueConverted' => 'Entrata (convertita)',
-      'budget' => 'Budget',
-      'budgetConverted' => 'Budget (convertito)',
+      'hardBouncedCount' => 'Rebotados Duro',
+      'softBouncedCount' => 'Rebotado Suave',
+      'leadCreatedCount' => 'Posibles clientes creados',
+      'revenue' => 'Ingresos',
+      'revenueConverted' => 'ingresos (convertido)',
+      'budget' => 'Presupuesto',
+      'budgetConverted' => 'Presupuesto (convertido)',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
       'mailMergeOnlyWithAddress' => 'Skip records w/o filled address',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Liste di destinazione',
-      'excludingTargetLists' => 'Esclusioni da liste di destinazione',
-      'accounts' => 'Account',
-      'contacts' => 'Contatti',
-      'leads' => 'Comando',
-      'opportunities' => 'Opportunita\'',
-      'campaignLogRecords' => 'Log',
-      'massEmails' => 'Email Massiva',
-      'trackingUrls' => 'Tracking URLs',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'opportunities' => 'Oportunidades',
+      'campaignLogRecords' => 'Registros',
+      'massEmails' => 'Correos masivos',
+      'trackingUrls' => 'URLs de seguimiento',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'Email',
+        'Email' => 'Correo electrónico',
         'Web' => 'Web',
-        'Television' => 'Televisione',
+        'Television' => 'Televisión',
         'Radio' => 'Radio',
-        'Newsletter' => 'Newsletter',
-        'Mail' => 'Mail',
+        'Newsletter' => 'Boletín de noticias',
+        'Mail' => 'Correo',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Planning' => 'Pianificazione',
-        'Active' => 'Attivo',
-        'Inactive' => 'Inattivo',
-        'Complete' => 'Completo',
+        'Planning' => 'Planificación',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
+        'Complete' => 'Completada',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Campaign' => 'Create Campaign',
-      'Target Lists' => 'Liste di destinazione',
-      'Statistics' => 'Statistiche',
+      'Create Campaign' => 'Crear campaña',
+      'Target Lists' => 'Lista de objetivos',
+      'Statistics' => 'Estadísticas',
       'hard' => 'duro',
-      'soft' => 'leggeto',
-      'Unsubscribe' => 'Annulla l\'iscrizione',
-      'Mass Emails' => 'Email Massive',
-      'Email Templates' => 'Modelli Email',
-      'Unsubscribe again' => 'Unsubscribe again',
-      'Subscribe again' => 'Subscribe again',
-      'Create Target List' => 'Elenco crea target',
+      'soft' => 'suave',
+      'Unsubscribe' => 'Desuscribirse',
+      'Mass Emails' => 'Correos masivos',
+      'Email Templates' => 'Plantillas de correos',
+      'Unsubscribe again' => 'Cancelar otra vez la suscripción',
+      'Subscribe again' => 'Suscribirse nuevamente',
+      'Create Target List' => 'Crear lista de obejtivos',
       'Mail Merge' => 'Mail Merge',
       'Generate Mail Merge PDF' => 'Generate Mail Merge PDF',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Attivo',
+      'active' => 'Activo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'unsubscribed' => 'Sei stato rimosso dalla nostra mailing list.',
-      'subscribedAgain' => 'You are subscribed again.',
+      'unsubscribed' => 'Usted ha cancelado la suscripción a nuestra lista de correo.',
+      'subscribedAgain' => 'Se ha vuelto a suscribir.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'targetLists' => 'Obiettivi che devono ricevere i messaggi .',
-      'excludingTargetLists' => 'Obiettivi che non dovrebbe ricevere messaggi.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'action' => 'Azione',
-      'actionDate' => 'Data',
-      'data' => 'Data',
-      'campaign' => 'Campagnia',
-      'parent' => 'Target',
-      'object' => 'Oggetto',
-      'application' => 'Applicazione',
-      'queueItem' => 'Queue Item',
-      'stringData' => 'String Data',
-      'stringAdditionalData' => 'String Additional Data',
-      'isTest' => 'Is Test',
+      'action' => 'Acción',
+      'actionDate' => 'Fecha',
+      'data' => 'Datos',
+      'campaign' => 'Campaña',
+      'parent' => 'Objetivo',
+      'object' => 'Objeto',
+      'application' => 'Aplicacion',
+      'queueItem' => 'Elemento de la cola',
+      'stringData' => 'Cadena de datos',
+      'stringAdditionalData' => 'Cadena de datos adicional',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'queueItem' => 'Queue Item',
-      'parent' => 'Genitore',
-      'object' => 'Object',
-      'campaign' => 'Campaign',
+      'queueItem' => 'Elemento de la cola',
+      'parent' => 'Padre',
+      'object' => 'Objeto',
+      'campaign' => 'Campaña',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'Sent' => 'Inviato',
-        'Opened' => 'Aperto',
-        'Opted Out' => 'Rinuncia',
-        'Bounced' => 'Bounced',
-        'Clicked' => 'Cliccato',
-        'Lead Created' => 'Lead Created',
+        'Sent' => 'Enviado',
+        'Opened' => 'Abierto',
+        'Opted Out' => 'Se dieron de baja',
+        'Bounced' => 'Rebotados',
+        'Clicked' => 'Cliqueados',
+        'Lead Created' => 'Posible cliente creado',
         'Opted In' => 'Opted In',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'All' => 'Tutti',
+      'All' => 'Todos',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'Inviato',
-      'opened' => 'Aperto',
-      'optedOut' => 'Rinuncia',
+      'sent' => 'Enviado',
+      'opened' => 'Abierto',
+      'optedOut' => 'Se dieron de baja',
       'optedIn' => 'Opted In',
-      'bounced' => 'Bounced',
-      'clicked' => 'Clicked',
-      'leadCreated' => 'Lead Created',
+      'bounced' => 'Rebotados',
+      'clicked' => 'Cliqueados',
+      'leadCreated' => 'Posible cliente creado',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'url' => 'URL',
-      'urlToUse' => 'Codice da inserire al posto dell\' URL',
-      'campaign' => 'Campagnia',
+      'urlToUse' => 'Código para insertar en lugar de la URL',
+      'campaign' => 'Campaña',
     ),
-    'links' => 
+    'links' =>
     array (
-      'campaign' => 'Campagnia',
+      'campaign' => 'Campaña',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create CampaignTrackingUrl' => 'Creazione URL di monitoraggio',
+      'Create CampaignTrackingUrl' => 'Crear URL de seguimiento',
     ),
   ),
-  'Case' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'number' => 'Numero',
-      'status' => 'Stato',
-      'account' => 'Account',
-      'contact' => 'Contatti',
-      'contacts' => 'Contatti',
-      'priority' => 'Priorita\'',
+      'name' => 'Nombre',
+      'number' => 'Número',
+      'status' => 'Estado',
+      'account' => 'Cuenta',
+      'contact' => 'Contacto',
+      'contacts' => 'Contactos',
+      'priority' => 'Prioridad',
       'type' => 'Tipo',
-      'description' => 'Descrizione',
-      'inboundEmail' => 'Email in entrata',
-      'lead' => 'Lead',
-      'attachments' => 'Attachments',
+      'description' => 'Descripción',
+      'inboundEmail' => 'Cuenta de Correo',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'inboundEmail' => 'Email in entrata',
-      'account' => 'Account',
-      'contact' => 'Contatto (Primario)',
-      'Contacts' => 'Contatti',
-      'meetings' => 'Riunioni',
-      'calls' => 'Chiamate',
-      'tasks' => 'Compiti',
-      'emails' => 'Email',
-      'articles' => 'Knowledge Base Articles',
-      'lead' => 'Lead',
-      'attachments' => 'Attachments',
+      'inboundEmail' => 'Cuenta de correo',
+      'account' => 'Cuenta',
+      'contact' => 'Contratos (principal)',
+      'Contacts' => 'Contactos',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'articles' => 'Artículos de la base de conocimiento',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'New' => 'Nuovo',
-        'Assigned' => 'Assegnato',
-        'Pending' => 'In attesa',
-        'Closed' => 'Chiuso',
-        'Rejected' => 'Rigettato',
-        'Duplicate' => 'Duplicato',
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'Pending' => 'Pendiente',
+        'Closed' => 'Cerrados',
+        'Rejected' => 'Rechazado',
+        'Duplicate' => 'Duplicar',
       ),
-      'priority' => 
+      'priority' =>
       array (
-        'Low' => 'Basso',
-        'Normal' => 'Normale',
-        'High' => 'Alto',
+        'Low' => 'Baja',
+        'Normal' => 'Normal',
+        'High' => 'Alta',
         'Urgent' => 'Urgente',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Question' => 'Domande',
+        'Question' => 'Pregunta',
         'Incident' => 'Incidente',
         'Problem' => 'Problema',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Case' => 'Crea Caso',
-      'Close' => 'Chiuso',
-      'Reject' => 'Rigettato',
-      'Closed' => 'Chiuso',
-      'Rejected' => 'Rigettato',
+      'Create Case' => 'Crear ticket',
+      'Close' => 'Cerrar',
+      'Reject' => 'Rechazar',
+      'Closed' => 'Cerrados',
+      'Rejected' => 'Rechazado',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'open' => 'Aperto',
-      'closed' => 'Chiuso',
+      'open' => 'Abiertos',
+      'closed' => 'Cerrados',
     ),
   ),
-  'Contact' => 
+  'Contact' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'emailAddress' => 'Email',
-      'title' => 'Titolo',
-      'account' => 'Account',
-      'accounts' => 'Account',
-      'phoneNumber' => 'Telefono',
-      'accountType' => 'Tipo di Account',
-      'doNotCall' => 'Non chiamare',
-      'address' => 'Indirizzi',
-      'opportunityRole' => 'Opportunity Role',
-      'accountRole' => 'Titolo',
-      'description' => 'Descrizione',
-      'campaign' => 'Campaign',
-      'targetLists' => 'Liste di destinazione',
-      'targetList' => 'Lista di destinazione',
-      'portalUser' => 'Portal User',
-      'originalLead' => 'Original Lead',
-      'acceptanceStatus' => 'Stato accettazione',
-      'accountIsInactive' => 'Account inattivo',
-      'acceptanceStatusMeetings' => 'Stato accettazione (riunioni)',
-      'acceptanceStatusCalls' => 'Stato accettazione (chiamate)',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'account' => 'Cuenta',
+      'accounts' => 'Cuentas',
+      'phoneNumber' => 'Teléfono',
+      'accountType' => 'Tipo de Cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'opportunityRole' => 'Rol de Oportunidad',
+      'accountRole' => 'Título',
+      'description' => 'Descripción',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'accountIsInactive' => 'Cuenta inactiva',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'opportunities' => 'Opportunita\'',
-      'cases' => 'Casi',
-      'targetLists' => 'Liste di destinazione',
-      'campaignLogRecords' => 'Log Campagna',
-      'campaign' => 'Campagna',
-      'account' => 'Account (Primario)',
-      'accounts' => 'Account',
-      'casesPrimary' => 'Casi (Primario)',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'account' => 'Cuentas (principal)',
+      'accounts' => 'Cuentas',
+      'casesPrimary' => 'Tickets (principal)',
       'tasksPrimary' => 'Tasks (expanded)',
-      'portalUser' => 'Portale Utente',
-      'originalLead' => 'Original Lead',
-      'documents' => 'Documenti',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'documents' => 'Documentos',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Contact' => 'Crea Contatto',
+      'Create Contact' => 'Crear contacto',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
-        '' => '--Nessun--',
-        'Decision Maker' => 'Responsabile',
-        'Evaluator' => 'Valutatore',
-        'Influencer' => 'Influencer',
+        '' => '--Ninguno--',
+        'Decision Maker' => 'Tomador de decisiones',
+        'Evaluator' => 'Evaluador',
+        'Influencer' => 'Factor de influencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'portalUsers' => 'Portale Utenti',
-      'notPortalUsers' => 'Nessun Portale Utenti',
-      'accountActive' => 'Attivo',
+      'portalUsers' => 'Usuarios del portal',
+      'notPortalUsers' => 'No son usuarios del portal',
+      'accountActive' => 'Activo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create Document' => 'Crea documento',
-      'Details' => 'Dettagli',
+      'Create Document' => 'Crear documento',
+      'Details' => 'Detalles',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'status' => 'Stato',
-      'file' => 'File',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'file' => 'Archivo',
       'type' => 'Tipo',
-      'publishDate' => 'Data di pubblicazione',
-      'expirationDate' => 'Data di scadenza',
-      'description' => 'Descrizione',
-      'accounts' => 'Accounts',
-      'folder' => 'Cartella',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'accounts' => 'Cuentas',
+      'folder' => 'Carpeta',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'accounts' => 'Account',
-      'opportunities' => 'Opportunita\'',
-      'folder' => 'Cartella',
-      'leads' => 'Comando',
-      'contacts' => 'Contatti',
+      'accounts' => 'Cuentas',
+      'opportunities' => 'Oportunidades',
+      'folder' => 'Carpeta',
+      'leads' => 'Posibles clientes',
+      'contacts' => 'Contactos',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Attivo',
-        'Draft' => 'Bozza',
-        'Expired' => 'Scaduto',
-        'Canceled' => 'Cancellato',
+        'Active' => 'Activo',
+        'Draft' => 'Borrador',
+        'Expired' => 'Expirado',
+        'Canceled' => 'Cancelado',
       ),
-      'type' => 
+      'type' =>
       array (
-        '' => 'Nessun',
-        'Contract' => 'Contratto',
+        '' => 'Ninguno',
+        'Contract' => 'Contrato',
         'NDA' => 'NDA',
         'EULA' => 'EULA',
-        'License Agreement' => 'Contratto di licenza',
+        'License Agreement' => 'Contrato de licencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Attivo',
-      'draft' => 'Bozza',
+      'active' => 'Activo',
+      'draft' => 'Borrador',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create DocumentFolder' => 'Crea cartella Documenti',
-      'Manage Categories' => 'Gestione cartelle',
-      'Documents' => 'Documenti',
+      'Create DocumentFolder' => 'Crear carpeta de documentos',
+      'Manage Categories' => 'Administrar carpetas',
+      'Documents' => 'Documentos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'documents' => 'Documenti',
+      'documents' => 'Documentos',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'status' => 'Stato',
-      'target' => 'Target',
-      'sentAt' => 'Data invio',
-      'attemptCount' => 'Prove',
-      'emailAddress' => 'Indirizzo Email',
-      'massEmail' => 'Email Massiva',
-      'isTest' => 'è un test',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'target' => 'Objetivo',
+      'sentAt' => 'Fecha de envío',
+      'attemptCount' => 'Intentos',
+      'emailAddress' => 'Correo electrónico',
+      'massEmail' => 'Correo masivo',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'target' => 'Target',
-      'massEmail' => 'Email Massiva',
+      'target' => 'Objetivo',
+      'massEmail' => 'Correo masivo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Pending' => 'In attesa',
-        'Sent' => 'Inviato',
-        'Failed' => 'Fallito',
-        'Sending' => 'Invio',
+        'Pending' => 'Pendiente',
+        'Sent' => 'Enviado',
+        'Failed' => 'Falló',
+        'Sending' => 'Enviando',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'pending' => 'In attesa',
-      'sent' => 'Inviato',
-      'failed' => 'Fallito',
+      'pending' => 'Pendiente',
+      'sent' => 'Enviado',
+      'failed' => 'Falló',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseArticle' => 'Crea Articolo',
-      'Any' => 'Tutto',
-      'Send in Email' => 'Spedisci via Email',
-      'Move Up' => 'Sposta in Alto',
-      'Move Down' => 'Sposta in Basso',
-      'Move to Top' => 'Sposta in alto',
-      'Move to Bottom' => 'Sposta in basso',
+      'Create KnowledgeBaseArticle' => 'Crear artículo',
+      'Any' => 'Cualquiera',
+      'Send in Email' => 'Enviar por correo',
+      'Move Up' => 'Mover arriba',
+      'Move Down' => 'Mover abajo',
+      'Move to Top' => 'Mover al inicio',
+      'Move to Bottom' => 'Mover al final',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'status' => 'Stato',
+      'name' => 'Nombre',
+      'status' => 'Estado',
       'type' => 'Tipo',
-      'attachments' => 'Allegato',
-      'publishDate' => 'Data di pubblicazione',
-      'expirationDate' => 'Data di Scadenza',
-      'description' => 'Descrizione',
-      'body' => 'Corpo',
-      'categories' => 'Categorie',
-      'language' => 'Lingua',
-      'portals' => 'Portali',
+      'attachments' => 'Adjuntos',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'body' => 'Cuerpo',
+      'categories' => 'Categorías',
+      'language' => 'Idioma',
+      'portals' => 'Portales',
     ),
-    'links' => 
+    'links' =>
     array (
-      'cases' => 'Casi',
-      'opportunities' => 'Opportunita\'',
-      'categories' => 'Categorie',
-      'portals' => 'Portali',
+      'cases' => 'Tickets',
+      'opportunities' => 'Oportunidades',
+      'categories' => 'Categorías',
+      'portals' => 'Portales',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'In Review' => 'In Revisione',
-        'Draft' => 'Bozza',
-        'Archived' => 'Archiviato',
-        'Published' => 'Pubblicato',
+        'In Review' => 'En revisión',
+        'Draft' => 'Borrador',
+        'Archived' => 'Archivado',
+        'Published' => 'Publicado',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Article' => 'Articolo',
+        'Article' => 'Artículo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portals' => 'L\'articolo sarà disponibile solo nei portali specificati.',
+      'portals' => 'El artículo estará disponible solo en los portales especificados.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'published' => 'Pubblicato',
+      'published' => 'Publicado',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseCategory' => 'Crea  Categoria',
-      'Manage Categories' => 'Gestione categorie',
-      'Articles' => 'Articoli',
+      'Create KnowledgeBaseCategory' => 'Crear categoría',
+      'Manage Categories' => 'Administrar categorías',
+      'Articles' => 'Artículos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'articles' => 'Articoli',
+      'articles' => 'Artículos',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Converted To' => 'Convertito in',
-      'Create Lead' => 'Crea Guida',
-      'Convert' => 'Convertire',
-      'convert' => 'convertire',
+      'Converted To' => 'Convertido a',
+      'Create Lead' => 'Crear posible cliente',
+      'Convert' => 'Convertir',
+      'convert' => 'convertir',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'emailAddress' => 'Email',
-      'title' => 'Titolo',
-      'website' => 'Sito Web',
-      'phoneNumber' => 'Telefono',
-      'accountName' => 'Nome utente',
-      'doNotCall' => 'Non chiamare',
-      'address' => 'Indirizzi',
-      'status' => 'Stato',
-      'source' => 'Provenienza',
-      'opportunityAmount' => 'Opportunity Amount',
-      'opportunityAmountConverted' => 'Opportunity Amount (converted)',
-      'description' => 'Descrizione',
-      'createdAccount' => 'Account',
-      'createdContact' => 'Contatti',
-      'createdOpportunity' => 'Opportunità',
-      'campaign' => 'Campagnia',
-      'targetLists' => 'Liste di destinazione',
-      'targetList' => 'Lista di destinazione',
-      'industry' => 'Settore',
-      'acceptanceStatus' => 'Stato accettazione',
-      'opportunityAmountCurrency' => 'Valuta dell\'importo della proposta',
-      'acceptanceStatusMeetings' => 'Stato accettazione (riunioni)',
-      'acceptanceStatusCalls' => 'Stato accettazione (chiamate)',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'accountName' => 'Nombre de la cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'status' => 'Estado',
+      'source' => 'Toma de contacto',
+      'opportunityAmount' => 'Costo de oportunidad',
+      'opportunityAmountConverted' => 'Costo de oportunidad (convertido)',
+      'description' => 'Descripción',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Listas de objetivos',
+      'targetList' => 'Lista objetivo',
+      'industry' => 'Industria',
+      'acceptanceStatus' => 'Estado de aceptación',
+      'opportunityAmountCurrency' => 'Moneda del costo de oportunidad',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Liste di destinazione',
-      'campaignLogRecords' => 'Log Campagna',
-      'campaign' => 'Campagna',
-      'createdAccount' => 'Account',
-      'createdContact' => 'Contatti',
-      'createdOpportunity' => 'Opportunità',
-      'cases' => 'Casi',
-      'documents' => 'Documenti',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registros de la campaña',
+      'campaign' => 'Campaña',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'New' => 'Nuovo',
-        'Assigned' => 'Assegnato',
-        'In Process' => 'In corso',
-        'Converted' => 'Convertito',
-        'Recycled' => 'Recuperato',
-        'Dead' => 'Fuori uso',
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'In Process' => 'En proceso',
+        'Converted' => 'Convertidos',
+        'Recycled' => 'Reciclado',
+        'Dead' => 'Muerto',
       ),
-      'source' => 
+      'source' =>
       array (
-        '' => 'Nessun',
-        'Call' => 'Chiamata',
-        'Email' => 'Email',
-        'Existing Customer' => 'Cliente esistente',
-        'Partner' => 'Partner',
-        'Public Relations' => 'Pubbliche Relazioni',
-        'Web Site' => 'Sito Web',
-        'Campaign' => 'Campagna',
-        'Other' => 'Altro',
+        '' => 'Ninguno',
+        'Call' => 'Llamada',
+        'Email' => 'Correo electrónico',
+        'Existing Customer' => 'Cliente Existente',
+        'Partner' => 'Socio',
+        'Public Relations' => 'Relaciones Públicas',
+        'Web Site' => 'Sitio web',
+        'Campaign' => 'Campaña',
+        'Other' => 'Otro',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Attivo',
-      'actual' => 'Attuale',
-      'converted' => 'Convertito',
+      'active' => 'Activo',
+      'actual' => 'Actuales',
+      'converted' => 'Convertidos',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'status' => 'Stato',
-      'storeSentEmails' => 'Archiviare Email Inviate',
-      'startAt' => 'Data inizio',
-      'fromAddress' => 'Indirizzo mittente',
-      'fromName' => 'Dal nome',
-      'replyToAddress' => 'Rispondi aa Indirizzo',
-      'replyToName' => 'Rispondi a Nome',
-      'campaign' => 'Campagna',
-      'emailTemplate' => 'Modello Email',
-      'inboundEmail' => 'Email Account',
-      'targetLists' => 'Liste di destinazione',
-      'excludingTargetLists' => 'Escludi Liste di Destinazione',
-      'optOutEntirely' => 'Opt-Out Entirely',
-      'smtpAccount' => 'SMTP Account',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'startAt' => 'Fecha de inicio',
+      'fromAddress' => 'De (email)',
+      'fromName' => 'De (nombre):',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyToName' => 'Responder a (nombre)',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'optOutEntirely' => 'Dar de baja completamente',
+      'smtpAccount' => 'Cuenta SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Liste di Destinazione',
-      'excludingTargetLists' => 'Excluding Target Lists',
-      'queueItems' => 'Queue Items',
-      'campaign' => 'Campagna',
-      'emailTemplate' => 'Modello Email',
-      'inboundEmail' => 'Email Account',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'queueItems' => 'Elementos en cola',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'Bozza',
-        'Pending' => 'In attesa',
-        'In Process' => 'In corso',
-        'Complete' => 'Completo',
-        'Canceled' => 'Cancellato',
-        'Failed' => 'Fallito',
+        'Draft' => 'Borrador',
+        'Pending' => 'Pendiente',
+        'In Process' => 'En proceso',
+        'Complete' => 'Completada',
+        'Canceled' => 'Cancelado',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MassEmail' => 'Crea Email Massive',
-      'Send Test' => 'Invia Test',
-      'System SMTP' => 'System SMTP',
-      'system' => 'system',
-      'group' => 'group',
+      'Create MassEmail' => 'Crear correo masivo',
+      'Send Test' => 'Enviar prueba',
+      'System SMTP' => 'Sistema SMTP',
+      'system' => 'sistema',
+      'group' => 'grupo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectAtLeastOneTarget' => 'Selezionare almeno un destinatario.',
-      'testSent' => 'L\'Email di prova dovrebbe essere stata inviata',
+      'selectAtLeastOneTarget' => 'Seleccione al menos un objetivo.',
+      'testSent' => 'Se supone que el/los email/s de preuebas fueron enviados',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'optOutEntirely' => 'Gli indirizzi email dei destinatari che hanno cancellato l\'iscrizione verranno contrassegnati come disabilitati e non riceveranno più alcuna email.',
-      'targetLists' => 'Destinatari che devono ricevere i messaggi.',
-      'excludingTargetLists' => 'Destinatari che non devono ricevere i messaggi.',
-      'storeSentEmails' => 'Emails will be stored in CRM.',
+      'optOutEntirely' => 'Las direcciones de correo de los destinatarios que se desuscriban serán marcadas como dadas de baja y no van a recibir ningún correo masivo.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
+      'storeSentEmails' => 'Los correos se almacenarán en el CRM.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Attuale',
+      'actual' => 'Actuales',
       'complete' => 'Completo',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'parent' => 'Genitore',
-      'status' => 'Stato',
-      'dateStart' => 'Data inizio',
-      'dateEnd' => 'Data termine',
-      'duration' => 'Durata',
-      'description' => 'Descrizione',
-      'users' => 'Utenti',
-      'contacts' => 'Contatti',
-      'leads' => 'Iniziative',
-      'reminders' => 'Promemoria',
-      'account' => 'Account',
-      'acceptanceStatus' => 'Stato accettazione',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Pianificato',
-        'Held' => 'Trattenuto',
-        'Not Held' => 'Non trattenuto',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'Nessun',
-        'Accepted' => 'Accettato',
-        'Declined' => 'Declinato',
-        'Tentative' => 'Tentativo',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'Trattenuto',
-      'setNotHeld' => 'Non trattenuto',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Meeting' => 'Crea Riunione',
-      'Set Held' => 'Trattenuto',
-      'Set Not Held' => 'Non trattenuto',
-      'Send Invitations' => 'Inviare inviti',
-      'on time' => 'puntuale',
-      'before' => 'prima',
+      'Create Meeting' => 'Crear reunión',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
+      'on time' => 'a tiempo',
+      'before' => 'antes',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Pianificato',
-      'held' => 'Trattenuto',
-      'todays' => 'Di oggi',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'nothingHasBeenSent' => 'Nulla è stato inviato',
+      'nothingHasBeenSent' => 'No se ha enviado nada',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'account' => 'Account',
-      'stage' => 'Stage',
-      'amount' => 'Importo',
-      'probability' => 'Probabilità, %',
-      'leadSource' => 'Lead Source',
-      'doNotCall' => 'Non chiamare',
-      'closeDate' => 'Data di chiusura',
-      'contacts' => 'Contatti',
-      'description' => 'Descrizione',
-      'amountConverted' => 'Importo (convertito)',
-      'amountWeightedConverted' => 'Importo Ponderato',
-      'campaign' => 'Campagna',
-      'originalLead' => 'Original Lead',
-      'amountCurrency' => 'Valuta dell\'importo',
-      'contactRole' => 'Ruolo contatto',
+      'name' => 'Nombre',
+      'account' => 'Cuenta',
+      'stage' => 'Etapa de ventas',
+      'amount' => 'Ingresos esperados',
+      'probability' => 'Probabilidad de ganar (%)',
+      'leadSource' => 'Toma de contacto del posible cliente',
+      'doNotCall' => 'No llamar',
+      'closeDate' => 'Fecha esperada de cierre',
+      'contacts' => 'Contactos',
+      'description' => 'Descripción',
+      'amountConverted' => 'Cantidad (convertido)',
+      'amountWeightedConverted' => 'Cantidad Ponderada',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
+      'amountCurrency' => 'Monto de la Moneda',
+      'contactRole' => 'Rol de contacto',
       'lastStage' => 'Last Stage',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'Contatti',
-      'documents' => 'Documentsi',
-      'campaign' => 'Campagna',
-      'originalLead' => 'Original Lead',
+      'contacts' => 'Contactos',
+      'documents' => 'Documentos',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
-        'Prospecting' => 'Prospecting',
-        'Qualification' => 'Qualifica',
-        'Proposal' => 'Proposta',
-        'Negotiation' => 'Negoziazione',
-        'Needs Analysis' => 'Necessita di analisi',
-        'Value Proposition' => 'Proposta di Valore',
-        'Id. Decision Makers' => 'Id. Responsabile',
-        'Perception Analysis' => 'Percezione dell\'Analisi',
-        'Proposal/Price Quote' => 'Proposta / Preventivo',
-        'Negotiation/Review' => 'Negoziazione/Revisione',
-        'Closed Won' => 'Chiuso Positivamente',
-        'Closed Lost' => 'Chiuso Negativamente',
+        'Prospecting' => 'Prospección',
+        'Qualification' => 'Calificación',
+        'Proposal' => 'Propuesta',
+        'Negotiation' => 'Negociación',
+        'Needs Analysis' => 'Análisis de necesidades',
+        'Value Proposition' => 'Propuesta de valor',
+        'Id. Decision Makers' => 'Identificar tomador de decisiones',
+        'Perception Analysis' => 'Análisis de percepcion',
+        'Proposal/Price Quote' => 'Propuesta/Presupuesto',
+        'Negotiation/Review' => 'Negociación/Revisión',
+        'Closed Won' => 'Cerrado ganado',
+        'Closed Lost' => 'Cerrado perdido',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Opportunity' => 'Crea Opportunità',
+      'Create Opportunity' => 'Crear oportunidad',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'open' => 'Aperto',
-      'won' => 'Vinto',
-      'lost' => 'Perso',
+      'open' => 'Abiertos',
+      'won' => 'Ganados',
+      'lost' => 'Perdido',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4049,117 +4081,266 @@ Password: {password}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'description' => 'Descrizione',
-      'entryCount' => 'Contatore iniziale',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'entryCount' => 'Contador de entrada',
       'optedOutCount' => 'Opted Out Count',
-      'campaigns' => 'Campagne',
-      'endDate' => 'Data termine',
-      'targetLists' => 'Lista di destinazione',
-      'includingActionList' => 'Include',
-      'excludingActionList' => 'Esclude',
+      'campaigns' => 'Campañas',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'includingActionList' => 'Incluyendo',
+      'excludingActionList' => 'Excluyendo',
       'targetStatus' => 'Target Status',
       'isOptedOut' => 'Is Opted Out',
     ),
-    'links' => 
+    'links' =>
     array (
-      'accounts' => 'Account',
-      'contacts' => 'Contatti',
-      'leads' => 'Leads',
-      'campaigns' => 'Campagne',
-      'massEmails' => 'Mailing massivo',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'campaigns' => 'Campañas',
+      'massEmails' => 'Correos masivos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'Email',
+        'Email' => 'Correo electrónico',
         'Web' => 'Web',
-        'Television' => 'Televisione',
+        'Television' => 'Televisión',
         'Radio' => 'Radio',
-        'Newsletter' => 'Newsletter',
+        'Newsletter' => 'Boletín de noticias',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Opted Out',
         'Listed' => 'Listed',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create TargetList' => 'Crea lista di destinazione',
-      'Opted Out' => 'Rinunciato',
-      'Cancel Opt-Out' => 'Cancella rinuncia',
-      'Opt-Out' => 'Rinuncia',
+      'Create TargetList' => 'Crear una lista de objetivos',
+      'Opted Out' => 'Se dieron de baja',
+      'Cancel Opt-Out' => 'Cancelar darse de baja',
+      'Opt-Out' => 'Darse de baja',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Nome',
-      'parent' => 'Genitore',
-      'status' => 'Stato',
-      'dateStart' => 'Data inizio',
-      'dateEnd' => 'Data di scadenza',
-      'dateStartDate' => 'Data inizio (tutto il giorno)',
-      'dateEndDate' => 'Data termine (tutto il giorno)',
-      'priority' => 'Priorita\'',
-      'description' => 'Descrizione',
-      'isOverdue' => 'In ritardo',
-      'account' => 'Account',
-      'dateCompleted' => 'Completato in data',
-      'attachments' => 'Allegati',
-      'reminders' => 'Promemoria',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de vencimiento',
+      'dateStartDate' => 'Fecha de Inicio (todo el día)',
+      'dateEndDate' => 'Fecha de finalización (todo el día)',
+      'priority' => 'Prioridad',
+      'description' => 'Descripción',
+      'isOverdue' => 'Atrasado',
+      'account' => 'Cuenta',
+      'dateCompleted' => 'Fecha de completado',
+      'attachments' => 'Adjuntos',
+      'reminders' => 'Recordatorios',
       'contact' => 'Contact',
     ),
-    'links' => 
+    'links' =>
     array (
-      'attachments' => 'Allegato',
+      'attachments' => 'Adjuntos',
       'account' => 'Account',
       'contact' => 'Contact',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Not Started' => 'Non iniziato',
-        'Started' => 'Iniziato',
-        'Completed' => 'Completato',
-        'Canceled' => 'Cancellato',
-        'Deferred' => 'Prorogare',
+        'Not Started' => 'Sin empezar',
+        'Started' => 'Comenzado',
+        'Completed' => 'Completado',
+        'Canceled' => 'Cancelado',
+        'Deferred' => 'Diferido',
       ),
-      'priority' => 
+      'priority' =>
       array (
-        'Low' => 'Basso',
-        'Normal' => 'Normale',
-        'High' => 'Alto',
+        'Low' => 'Baja',
+        'Normal' => 'Normal',
+        'High' => 'Alta',
         'Urgent' => 'Urgente',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Task' => 'Crea Compito',
-      'Complete' => 'Completo',
+      'Create Task' => 'Crear tarea',
+      'Complete' => 'Completada',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Attuale',
-      'completed' => 'Completato',
-      'deferred' => 'Prorogare',
-      'todays' => 'Di oggi',
-      'overdue' => 'Scaduto',
+      'actual' => 'Actuales',
+      'completed' => 'Completado',
+      'deferred' => 'Diferido',
+      'todays' => 'De hoy',
+      'overdue' => 'Atrazadas',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'address' => 'Indirizzo',
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Crear Beneficios',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Crear Categoria',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Crear Ciudad',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Crear Comuna',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Crear Doctos_beneficio',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Vytvořit Empresa',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
       'meetings1' => 'Meetings1',
       'rut' => 'Rut Beneficiario',
       'beneficioSolicitado' => 'Beneficio Solicitado',
@@ -4176,11 +4357,11 @@ Password: {password}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Riunioni',
-      'calls' => 'Chiamate',
-      'tasks' => 'Compiti',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
       'emails' => 'Emails',
       'meetings1' => 'Meetings1',
       'contacts' => 'Beneficiario',
@@ -4189,13 +4370,13 @@ Password: {password}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Formularios' => 'Crea Formulario',
+      'Create Formularios' => 'Crear Formulario',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4204,15 +4385,15 @@ Password: {password}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4221,7 +4402,7 @@ Password: {password}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4235,51 +4416,192 @@ Password: {password}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'MotivoReclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'motivoReclamoId' => 'MotivoReclamoId',
       'motivoReclamoDescripcion' => 'Descripción',
       'reclamosMotivoReclamo' => 'Reclamos',
-    ),
-    'links' => 
+  'Proveedor' =>
+  array (
+    'fields' =>
     array (
-      'meetings' => 'Riunioni',
-      'calls' => 'Chiamate',
-      'tasks' => 'Compiti',
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Proveedor' => 'Vytvořit Proveedor',
+    ),
+  ),
+  'Rol' =>
+  array (
+    'fields' =>
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Rol' => 'Crear Rol',
+    ),
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Crear Solicitudes',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MotivoReclamo' => 'Crea MotivoReclamo',
+      'Create MotivoReclamo' => 'Crear MotivoReclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
     ),
   ),
-  'Reclamo' => 
+  'Reclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'reclamoId' => 'ReclamoId',
       'reclamoTitulo' => 'Título',
       'reclamoObservacion' => 'Observación',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Riunioni',
-      'calls' => 'Chiamate',
-      'tasks' => 'Compiti',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
+    ),
+    'labels' =>
+    array (
+      'Create Subcategoria' => 'Crear Subcategoria',
+    ),
+  ),
+  'Trabajador' =>
+  array (
+    'fields' =>
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'links' =>
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'labels' =>
+    array (
+      'Create Trabajador' => 'Vytvořit Trabajador',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Reclamo' => 'Crea Reclamo',
+      'Create Reclamo' => 'Crear Reclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reclamoTitulo' => 'Breve descripción del reclamo',
       'reclamoObservacion' => 'Describa su situación',

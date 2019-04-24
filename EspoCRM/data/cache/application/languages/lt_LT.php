@@ -1,8 +1,8 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'Vartotojas',
       'action' => 'Veiksmas',
@@ -13,20 +13,20 @@ return array (
       'ipAddress' => 'IP Adresss',
       'authLogRecord' => 'Auth žurnalo įrašas',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Autentikavimo žymė',
       'authLogRecord' => 'Auth žurnalo įrašas',
       'user' => 'Vartotojas',
       'target' => 'Tikslas',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'onlyMy' => 'Tik mano',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'read' => 'Skaityti',
         'update' => 'Atnaujinti',
@@ -35,9 +35,9 @@ return array (
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Enabled' => 'Įjungta',
       'Disabled' => 'Išjungta',
@@ -101,7 +101,7 @@ return array (
       'Lead Capture' => '"Lead Capture"',
       'Attachments' => 'Priedai',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
       'list' => 'Sąrašas',
       'detail' => 'Plati informacija',
@@ -124,7 +124,7 @@ return array (
       'listForAccount' => 'Sąrašas (paskyrai)',
       'listForContact' => 'Sąrašas (kontaktams)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
       'address' => 'Adresas',
       'array' => 'Rikiavimas',
@@ -166,7 +166,7 @@ return array (
       'jsonArray' => 'Json Array',
       'jsonObject' => 'Json objektas',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'type' => 'Tipas',
       'name' => 'Vardas',
@@ -214,7 +214,7 @@ return array (
       'useNumericFormat' => 'Naudokite skaitmeninį formatą',
       'strip' => 'Juostos juosta',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'upgradeVersion' => 'EspoCRM bus atnaujinta į versiją <strong> {version} </ strong>. Būkite kantrūs, nes tai gali užtrukti.',
       'upgradeDone' => 'EspoCRM buvo atnaujinta į versiją <strong> {version} </ strong>.',
@@ -233,7 +233,7 @@ return array (
       'newExtensionVersionIsAvailable' => 'Yra nauja {extensionName} versija {latestVersion}.',
       'uninstallConfirmation' => 'Ar tikrai norite pašalinti plėtinį?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
       'settings' => 'Sistemos programos nustatymai.',
       'scheduledJob' => 'Užduotys, kurias vykdo cron.',
@@ -268,9 +268,9 @@ return array (
       'leadCapture' => 'API prisijungimo taškai "Web-to-Lead".',
       'attachments' => 'Visi failo priedai, saugomi sistemoje.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
         'x-small' => 'X-mažas',
         'small' => 'Mažas',
@@ -278,16 +278,16 @@ return array (
         'large' => 'Didelis',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
       'and' => 'IR',
       'or' => 'ARBA',
       'not' => 'NE',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Vaidmuo',
       'related' => 'Susijęs',
@@ -298,9 +298,9 @@ return array (
       'storage' => 'Sandėliavimas',
       'size' => 'Dydis (baitai)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Priedas',
         'Inline Attachment' => 'Inline Attachment',
@@ -310,19 +310,19 @@ return array (
         'Mass Pdf' => 'Masinis pdf',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
       'Document' => 'Įterpti dokumentą
 ',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Našlaitis',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'username' => 'Naudotojo vardas',
       'ipAddress' => 'IP adresas',
@@ -337,21 +337,21 @@ return array (
       'requestMethod' => 'Prašymo metodas',
       'authTokenIsActive' => 'Auth Token yra aktyvus',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Sukurtas "Auth Token"',
       'user' => 'Naudotojas',
       'portal' => 'Portalas',
       'actionHistoryRecords' => 'Veiksmų istorija',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'denied' => 'Atmesta',
       'accepted' => 'Priimta',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
         'CREDENTIALS' => 'Netinkami įgaliojimai',
         'INACTIVE_USER' => 'Pakviesti naudotoją',
@@ -361,9 +361,9 @@ return array (
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'Vartotojas',
       'ipAddress' => 'IP Adresss',
@@ -372,27 +372,27 @@ return array (
       'isActive' => 'Yra aktyvus',
       'portal' => 'Portalas',
     ),
-    'links' => 
+    'links' =>
     array (
       'actionHistoryRecords' => 'Veiksmų istorija',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktyvus',
       'inactive' => 'Neaktyvus',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Set Inactive' => 'Nustatyti neaktyvią',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setInactive' => 'Nustatyti kaip neaktyvų',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'title' => 'Pavadinimas',
       'dateFrom' => 'Data nuo',
@@ -413,9 +413,9 @@ return array (
       'futureDays' => 'Kitas X dienas',
       'useLastStage' => 'Grupė pagal paskutinį pasiektą etapą',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
         'agendaWeek' => 'Savaitė (darbotvarkė)',
         'basicWeek' => 'Savaitė',
@@ -425,20 +425,20 @@ return array (
         'timeline' => 'Chronologija',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectEntityType' => 'Pasirinkite vedinio tipą  iš skydelio variantų',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Field' => 'Laukelis',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
         'equals' => 'Lygu',
         'notEquals' => 'Nelygu',
@@ -462,9 +462,9 @@ return array (
       ),
     ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas (pavadinimas)',
       'parent' => 'Pagrindinis',
@@ -514,7 +514,7 @@ return array (
       'isSystem' => 'Ar sistema',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'replied' => 'Atsakyta',
       'replies' => 'Atsakymai',
@@ -530,9 +530,9 @@ return array (
       'replyToEmailAddresses' => 'Atsakymas į el. Pašto adresus',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Juodraštis',
         'Sending' => 'Siunčiama',
@@ -542,7 +542,7 @@ return array (
         'Failed' => 'Nepavyko',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Email' => 'Suarchyvuoti laiškai',
       'Archive Email' => 'Suarchyvuoti laiškai',
@@ -577,7 +577,7 @@ return array (
       'Create Task' => 'Sukurti užduotį',
       'Create Case' => 'Sukurti atvejį',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'noSmtpSetup' => 'Nėra SMTP nustatymų. {link}.',
       'testEmailSent' => 'Bandomasis el. laiškas išsiųstas',
@@ -585,7 +585,7 @@ return array (
       'savedAsDraft' => 'Juodraštis šsaugotas',
       'confirmInsertTemplate' => 'El. Paštas bus prarastas. Ar tikrai norite įterpti šabloną?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Išsiųsta',
       'archived' => 'Suarchyvuota',
@@ -594,7 +594,7 @@ return array (
       'trash' => 'Šiukšlinė',
       'important' => 'Svarbu',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'markAsRead' => 'Pažymėti kaip skaitytą',
       'markAsNotRead' => 'Pažymėti kaip neskaitytą',
@@ -605,9 +605,9 @@ return array (
       'retrieveFromTrash' => 'Iškelti iš šiukšlinės',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'status' => 'Statusas',
@@ -632,20 +632,20 @@ return array (
       'smtpUsername' => 'SMTP vartotojo vardas',
       'smtpPassword' => 'SMTP slaptažodis',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filtrai',
       'emails' => 'El. laiškai',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktyvus',
         'Inactive' => 'Neaktyvus',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailAccount' => 'Sukurti el. pašto paskyrą',
       'IMAP' => 'IMAP',
@@ -654,12 +654,12 @@ return array (
       'Send Test Email' => 'Siųsti bandomąjį el. paštą',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Nepavyko prisijungti prie IMAP serverio',
       'connectionIsOk' => 'Geras ryšys',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'monitoredFolders' => 'Keli aplankai turėtų būti atskirti kableliais.
 
@@ -667,18 +667,18 @@ Galite pridėti "Išsiųsti" aplanką, kad sinchronizuotumėte el. laiškus, siu
       'storeSentEmails' => 'Siunčiami el. aiškai bus saugomi IMAP serveryje. El pašto adreso laukelis turi atitikti el pašto adresą, iš kurio bus siunčiamas laiškas',
     ),
   ),
-  'EmailAddress' => 
+  'EmailAddress' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Primary' => 'Pirminis',
       'Opted Out' => 'Pasirinkta',
       'Invalid' => 'Neteisingas',
     ),
   ),
-  'EmailFilter' => 
+  'EmailFilter' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'from' => 'Nuo',
       'to' => 'Kam',
@@ -688,20 +688,20 @@ Galite pridėti "Išsiųsti" aplanką, kad sinchronizuotumėte el. laiškus, siu
       'isGlobal' => 'yra globalus',
       'emailFolder' => 'Aplankas',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFilter' => 'Sukurti el.pašto filtrą',
       'Emails' => 'El. laiška',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Skip' => 'Ignoruoti',
         'Move to Folder' => 'Įkelti į aplanką',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'name' => 'Pavadinkite filtrą apibūdinančiu pavadinimu',
       'subject' => 'Naudokite pakaitos simbolį *:
@@ -715,22 +715,22 @@ tekstas * - prasideda tekstas,
       'isGlobal' => 'Šis filtras taikomas visiems sistemoje gaunamiems el. laiškams.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'skipNotifications' => 'Praleisti pranešimus',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFolder' => 'Sukurti aplanką',
       'Manage Folders' => 'Tvarkyti aplankus',
       'Emails' => 'El. laiškai',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'status' => 'Statusas',
@@ -742,16 +742,16 @@ tekstas * - prasideda tekstas,
       'oneOff' => 'Vienkartinis',
       'category' => 'Kategorija',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplate' => 'Sukurti el. pašto laiško šabloną',
       'Info' => 'Informacija',
       'Available placeholders' => 'Galimi užpildai',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'infoText' => 'Galimi užpildai:
 
@@ -759,41 +759,41 @@ tekstas * - prasideda tekstas,
 
 {optOutLink} & # 8211; Atsisakyti prenumeratos nuorodą.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'oneOff' => 'Pažymėkite, jei ketinate naudoti šį šabloną tik vieną kartą. Pavyzdžiui masiniems el. laiškams.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Esamas',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
       'optOutUrl' => 'URL nepasirinkto šlamšto nuorodos',
       'optOutLink' => 'atsisakyti prenumeratos nuorodą',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Sukurti kategoriją',
       'Manage Categories' => 'Maldyti kategorijas',
       'EmailTemplates' => 'Laiško šablonas',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Užsakyti',
       'childList' => 'Vaikų sąrašas',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'Laiškų šablonai',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Fields' => 'Laukeliai',
       'Relationships' => 'Sąsajos',
@@ -801,7 +801,7 @@ tekstas * - prasideda tekstas,
       'Log' => 'Žurnalas',
       'Formula' => 'Formulė',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'type' => 'Tipas',
@@ -831,9 +831,9 @@ tekstas * - prasideda tekstas,
       'iconClass' => 'Piktograma',
       'fullTextSearch' => 'Pilna teksto paieška',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         '' => 'Joks',
         'Base' => 'Pagrindas',
@@ -843,7 +843,7 @@ tekstas * - prasideda tekstas,
         'BasePlus' => 'Bazė Plius',
         'Company' => 'Įmonė',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
         'manyToMany' => 'Daugelis-daugeliui',
         'oneToMany' => 'Vienas-daugeliui',
@@ -851,19 +851,19 @@ tekstas * - prasideda tekstas,
         'parentToChildren' => 'Pagrindinis-antriniui',
         'childrenToParent' => 'Vaikai tėvams',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
         'asc' => 'Didėjančia tvarka',
         'desc' => 'Mažėjančia tvarka',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'entityCreated' => 'Įrašas buvo sukurtas',
       'linkAlreadyExists' => 'Sąsajos pavadinimo konfliktas.',
       'linkConflict' => 'Vardas konfliktas: nuoroda ar laukas su tuo pačiu pavadinimu jau egzistuoja.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'statusField' => 'Šio lauko atnaujinimai įrašomi sraute.',
       'textFilterFields' => 'Laukeliai, naudojami teksto paieškoje.',
@@ -876,26 +876,26 @@ tekstas * - prasideda tekstas,
       'fullTextSearch' => 'Reikia atlikti rekonstrukciją.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportAllFields' => 'Eksportuoti visus laukus',
       'fieldList' => 'Laukelių sąrašas',
       'format' => 'Formatas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
         'xlsx' => 'XLSX (Excel) ',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'version' => 'Versija',
@@ -903,39 +903,39 @@ tekstas * - prasideda tekstas,
       'isInstalled' => 'Įdiegta',
       'checkVersionUrl' => 'Naujų versijų tikrinimo URL',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Uninstall' => 'Išdiegta',
       'Install' => 'Įdiegti',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'uninstalled' => 'Plėtinys {name} yra išdiegtas',
     ),
   ),
-  'ExternalAccount' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Connect' => 'Prisijungti',
       'Connected' => 'Prisijungta',
     ),
-    'help' => 
+    'help' =>
     array (
     ),
   ),
-  'FieldManager' => 
+  'FieldManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Dynamic Logic' => 'Dinaminė logika',
       'Name' => 'Vardas',
       'Label' => 'Etiketė',
       'Type' => 'Tipas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'dateTimeDefault' => 
+      'dateTimeDefault' =>
       array (
         '' => 'Joks',
         'javascript: return this.dateTime.getNow(1);' => 'Dabar',
@@ -962,7 +962,7 @@ tekstas * - prasideda tekstas,
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 dienos',
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 savaitė',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
         '' => 'Joks',
         'javascript: return this.dateTime.getToday();' => 'Šiandien',
@@ -993,7 +993,7 @@ tekstas * - prasideda tekstas,
         'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 metai',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'audited' => 'Atnaujinimai bus įrašomi sraute.',
       'required' => 'Laukas bus privalomas. Negalima palikti tuščio.',
@@ -1008,9 +1008,9 @@ tekstas * - prasideda tekstas,
       'readOnly' => 'artotojas negali nurodyti laukelio vertės. Bet gali būti apskaičiuojamas pagal formulę.',
       'maxFileSize' => 'Jei tuščia arba 0, tai nelimituojama',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
         'street' => 'Gatvė',
         'city' => 'Miestas',
@@ -1019,26 +1019,26 @@ tekstas * - prasideda tekstas,
         'postalCode' => 'Pašto kodas',
         'map' => 'Žemėlapis',
       ),
-      'personName' => 
+      'personName' =>
       array (
         'salutation' => 'Sveikinimas',
         'first' => 'Pirmas',
         'last' => 'Paskutinis',
       ),
-      'currency' => 
+      'currency' =>
       array (
         'converted' => '(Konvertuota)',
         'currency' => '(Valiuta)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
         'date' => 'Data',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
       'Email' => 'El. paštas',
       'User' => 'Vartotojas',
@@ -1110,10 +1110,21 @@ tekstas * - prasideda tekstas,
       'KnowledgeBaseCategory' => 'Žinių bazės kategorija',
       'CampaignLogRecord' => 'Kampanijos žurnalo įrašas',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
       'Email' => 'El. laiškai',
       'User' => 'Vartotojai',
@@ -1172,10 +1183,21 @@ tekstas * - prasideda tekstas,
       'KnowledgeBaseCategory' => 'Žinių bazės kategorijos',
       'CampaignLogRecord' => 'Kampanijos žurnalo įrašai',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Misc' => 'Įvairūs',
       'Merge' => 'Sujungti',
@@ -1343,7 +1365,7 @@ tekstas * - prasideda tekstas,
       'Create Task' => 'Sukurti užduotį',
       'Tasks' => 'Užduotys',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'pleaseWait' => 'Prašome palaukti...',
       'posting' => 'Skelbiama...',
@@ -1411,17 +1433,17 @@ Galimas žymėjimo sintaksė:
       'erasePersonalDataConfirmation' => 'Pažymėti laukai bus ištrinti visam laikui. Ar tu tuo tikras?',
       'massPrintPdfMaxCountError' => 'Negalima spausdinti daugiau {maxCount} įrašų.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMy' => 'Tik mano',
       'followed' => 'Stebimas',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'followed' => 'Stebimas',
       'all' => 'Visi',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'remove' => 'Pašalinti',
       'merge' => 'Sujungti',
@@ -1432,7 +1454,7 @@ Galimas žymėjimo sintaksė:
       'convertCurrency' => 'Pakeisti valiutą',
       'printPdf' => 'Spausdinti PDF formatu',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'firstName' => 'Vardas',
@@ -1485,7 +1507,7 @@ Galimas žymėjimo sintaksė:
       'shippingAddressPostalCode' => 'Pašto kodas(Pristatymo)',
       'shippingAddressMap' => 'Žemėlapis (pristatymo)',
     ),
-    'links' => 
+    'links' =>
     array (
       'assignedUser' => 'Priskirtas darbuotojas',
       'createdBy' => 'Sukurta',
@@ -1510,7 +1532,7 @@ Galimas žymėjimo sintaksė:
       'opportunity' => 'Galimybė',
       'contact' => 'Kontaktas',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
       'Stream' => 'Srautas',
       'Emails' => 'Gautieji',
@@ -1528,14 +1550,14 @@ Galimas žymėjimo sintaksė:
       'SalesPipeline' => 'Pardavimų planas',
       'Activities' => 'Mano veikla',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
       'assign' => '
 {entityType} {entity} buvo priskirta tau',
       'emailReceived' => 'Laiškas gautas nuo {from}',
       'entityRemoved' => '{user} pašalino {entityType} {entity}',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
       'post' => '{user} paskelbė {entityType} {entity}',
       'attach' => '{user} prisegė{entityType} {entity}',
@@ -1592,17 +1614,17 @@ Galimas žymėjimo sintaksė:
       'emailSent' => '{by} išsiųstas el. laiškas, susijęs su {entityType} {entity}',
       'emailSentThis' => '{by} išsiųstas el.laiškas',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
       'postTargetSelfAndOthers' => '{user} paskelbė {target} ir sau',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
       'postTargetSelfAndOthers' => '{user} paskelbė {target} ir sau',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
         0 => 'Sausis',
         1 => 'Vasaris',
@@ -1617,7 +1639,7 @@ Galimas žymėjimo sintaksė:
         10 => 'Lapkritis',
         11 => 'Gruodis',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
         0 => 'Sau',
         1 => 'Vas',
@@ -1632,7 +1654,7 @@ Galimas žymėjimo sintaksė:
         10 => 'Lap',
         11 => 'Gru',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
         0 => 'Sekmadienis',
         1 => 'Pirmadienis',
@@ -1642,7 +1664,7 @@ Galimas žymėjimo sintaksė:
         5 => 'Penktadienis',
         6 => 'Šeštadienis',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
         0 => 'Sek',
         1 => 'Pir',
@@ -1652,7 +1674,7 @@ Galimas žymėjimo sintaksė:
         5 => 'Pen',
         6 => 'Šeš',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
         0 => 'Se',
         1 => 'Pi',
@@ -1663,23 +1685,23 @@ Galimas žymėjimo sintaksė:
         6 => 'Še',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'd',
       'h' => 'H',
       'm' => 'min',
       's' => 's',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
         'Mr.' => 'Ponas',
         'Mrs.' => 'Ponia',
         'Ms.' => 'Panelė',
         'Dr.' => 'Dr.',
       ),
-      'language' => 
+      'language' =>
       array (
         'af_ZA' => 'Afrikaans',
         'az_AZ' => 'Azerbaijani',
@@ -1754,7 +1776,7 @@ Galimas žymėjimo sintaksė:
         'zh_HK' => 'Traditional Chinese (Hong Kong)',
         'zh_TW' => 'Traditional Chinese (Taiwan)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
         'on' => 'Yra',
         'notOn' => 'Nėra',
@@ -1779,7 +1801,7 @@ Galimas žymėjimo sintaksė:
         'olderThanXDays' => 'Senesni nei X dienos/ų',
         'afterXDays' => 'Po X dienų',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
         'is' => 'Yra',
         'isEmpty' => 'Yra tuščia',
@@ -1791,7 +1813,7 @@ Galimas žymėjimo sintaksė:
         'anyOf' => 'Bet kuris',
         'noneOf' => 'Nei vienas',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
         'equals' => 'Lygu',
         'like' => 'Yra tarsi (%)',
@@ -1804,7 +1826,7 @@ Galimas žymėjimo sintaksė:
         'isNotEmpty' => 'Yra netuščia',
         'notEquals' => 'Nelygu',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
         'equals' => 'Lygu',
         'notEquals' => 'Nelygu',
@@ -1816,7 +1838,7 @@ Galimas žymėjimo sintaksė:
         'isEmpty' => 'Yra tuščia',
         'isNotEmpty' => 'Yra netuščia',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
         0 => 'Joks',
         '0.5' => '30 sekundžių',
@@ -1825,7 +1847,7 @@ Galimas žymėjimo sintaksė:
         5 => '5 minutės',
         10 => '10 minučių',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
         'Mobile' => 'Mobilus',
         'Office' => 'Biuro',
@@ -1833,18 +1855,18 @@ Galimas žymėjimo sintaksė:
         'Home' => 'Namų',
         'Other' => 'Kitas',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
         'Popup' => 'Iššokantis langas',
         'Email' => 'El. paštas',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
         'NOTICE' => 'Jūs galite rasti vertimus čia: https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'font' =>
         array (
           'bold' => 'Paryškintas',
           'italic' => 'Pasvirasis',
@@ -1855,7 +1877,7 @@ Galimas žymėjimo sintaksė:
           'name' => 'Šriftas',
           'size' => 'Šrifto dydis',
         ),
-        'image' => 
+        'image' =>
         array (
           'image' => 'Paveiksliukas',
           'insert' => 'Iterpti paveiksliuką',
@@ -1870,7 +1892,7 @@ Galimas žymėjimo sintaksė:
           'url' => 'Paveiksliuko URL',
           'remove' => 'Pašalinti paveiksliuką',
         ),
-        'link' => 
+        'link' =>
         array (
           'link' => 'Nuoroda',
           'insert' => 'įterpti nuorodą',
@@ -1880,7 +1902,7 @@ Galimas žymėjimo sintaksė:
           'url' => 'Į kurį URL ši nuoroda turėtų nukreipti?',
           'openInNewWindow' => 'Atidaryti naujame lange',
         ),
-        'video' => 
+        'video' =>
         array (
           'video' => 'Video',
           'videoLink' => 'Video nuoroda',
@@ -1888,15 +1910,15 @@ Galimas žymėjimo sintaksė:
           'url' => 'Video URL?',
           'providers' => '(YouTube, Vimeo, Vine, Instagram, or DailyMotion)',
         ),
-        'table' => 
+        'table' =>
         array (
           'table' => 'Lentelė',
         ),
-        'hr' => 
+        'hr' =>
         array (
           'insert' => 'įterpti horizontalų brūkšnį',
         ),
-        'style' => 
+        'style' =>
         array (
           'style' => 'Stilius',
           'normal' => 'Normalus',
@@ -1909,18 +1931,18 @@ Galimas žymėjimo sintaksė:
           'h5' => 'Antraštė 5',
           'h6' => 'Antraštė 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
           'unordered' => 'Nesurikiuotas sąrašas',
           'ordered' => 'Surikiuotas sąrašas',
         ),
-        'options' => 
+        'options' =>
         array (
           'help' => 'Pagalba',
           'fullscreen' => 'Pilnas ekranas',
           'codeview' => 'Žiūrėti kodą',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
           'paragraph' => 'Teksto padėtis',
           'outdent' => 'Atitraukta nuo krašto',
@@ -1930,7 +1952,7 @@ Galimas žymėjimo sintaksė:
           'right' => 'Lygiuoti dešinėje',
           'justify' => 'lygiuoti į abi puses',
         ),
-        'color' => 
+        'color' =>
         array (
           'recent' => 'Naujausia spalva',
           'more' => 'Daugiau spalvų',
@@ -1941,7 +1963,7 @@ Galimas žymėjimo sintaksė:
           'reset' => 'Atstatyti',
           'resetToDefault' => 'Atstatyti numatytają',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
           'shortcuts' => 'Klaviatūros nuorodos',
           'close' => 'Uždaryti',
@@ -1950,19 +1972,19 @@ Galimas žymėjimo sintaksė:
           'paragraphFormatting' => 'Teksto padėties formatavimas',
           'documentStyle' => 'Dokumento stilius',
         ),
-        'history' => 
+        'history' =>
         array (
           'undo' => 'Anuliuoti',
           'redo' => 'Grąžinti',
         ),
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
       'list' => 'Sąrašas',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
       'Espo' => 'Klasikinis espo',
       'EspoRtl' => 'Iš dešinės į kairę Espo',
@@ -1975,9 +1997,9 @@ Galimas žymėjimo sintaksė:
       'HazyblueVertical' => 'Vertikalios bangos',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Revert Import' => 'Atšaukti importavimą',
       'Return to Import' => 'Grįžti į importavimą',
@@ -2033,7 +2055,7 @@ Galimas žymėjimo sintaksė:
       'New Import' => 'Naujas importas',
       'Import Results' => 'Importuoti rezultatus',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'utf8' => 'Turėtų būti užkoduotas UTF-8',
       'duplicatesRemoved' => 'Dublikatai pašalinti',
@@ -2045,7 +2067,7 @@ Galimas žymėjimo sintaksė:
       'confirmRemoveImportLog' => 'Tai pašalins importo žurnalą. Visi importuoti įrašai bus saugomi. Jūs negalėsite sugrąžinti importo rezultatų. Ar tu esi įsitikinęs?',
       'removeImportLog' => 'Tai pašalins importo žurnalą. Visi importuoti įrašai bus saugomi. Naudok jį, jei esate tikri, kad importas yra gerai.',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'file' => 'Failas',
       'entityType' => 'Vedinio tipas',
@@ -2054,9 +2076,9 @@ Galimas žymėjimo sintaksė:
       'updated' => 'Atnaujinti įrašai',
       'status' => 'Statusas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Failed' => 'Nepavyko',
         'In Process' => 'Vyksta',
@@ -2064,9 +2086,9 @@ Galimas žymėjimo sintaksė:
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'emailAddress' => 'El. pašto adresas',
@@ -2105,7 +2127,7 @@ Galimas žymėjimo sintaksė:
       'smtpIsShared' => 'SMTP yra bendrai naudojamas',
       'smtpIsForMassEmail' => 'SMTP yra masinio el. pašto adresas',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reply' => 'Pranešti siuntėjams, kad jų el. Laiškai buvo gauti.
 
@@ -2123,20 +2145,20 @@ Galimas žymėjimo sintaksė:
       'smtpIsForMassEmail' => 'Jei pažymėta, SMTP bus prieinamas masiniams el.laiškams.',
       'storeSentEmails' => 'Išsiųsti el. laiškai bus saugomi IMAP serveryje.',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filtrai',
       'emails' => 'El. laiška',
       'assignToUser' => 'Priskirti vartotoją',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktyvus',
         'Inactive' => 'Neaktyvus',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
         '' => 'Joks',
         'Direct-Assignment' => 'Tiesioginis priskyrimas',
@@ -2144,21 +2166,21 @@ Galimas žymėjimo sintaksė:
         'Least-Busy' => 'mažiausiai-užimta',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create InboundEmail' => 'Sukurti el. Pašto paskyrą',
       'IMAP' => 'IMAP',
       'Actions' => 'Veiksmai',
       'Main' => 'Pagrindinis',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Nepavyko prisijungti prie IMAP serverio',
     ),
   ),
-  'Integration' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'enabled' => 'Įjungta',
       'clientId' => 'Kliento ID',
@@ -2166,24 +2188,24 @@ Galimas žymėjimo sintaksė:
       'redirectUri' => 'Nukreipti URL',
       'apiKey' => 'API raktas',
     ),
-    'titles' => 
+    'titles' =>
     array (
       'GoogleMaps' => 'Google žemėlapiai',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectIntegration' => 'Pasirinkite integraciją iš meniu.',
       'noIntegrations' => 'Nėra galimų integracijų',
     ),
-    'help' => 
+    'help' =>
     array (
       'Google' => '<p> <b> Gaukite įgaliojimus OAuth 2.0 iš "Google Developers Console". </ b> </ p> <p> Apsilankykite <a href="https://console.developers.google.com/project"> "Google Developers" Konsolė </ a>, norint gauti "OAuth 2.0" kredencialus, pvz., "Client ID" ir "Client Secret", kurie yra žinomi tiek "Google", tiek "EspoCRM" programai. </ P>',
       'GoogleMaps' => '<p> Gaukite API raktą <a href="https://developers.google.com/maps/documentation/javascript/get-api-key"> čia </a>. </ p>',
     ),
   ),
-  'Job' => 
+  'Job' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Statusas',
       'executeTime' => 'Vykdyti',
@@ -2196,9 +2218,9 @@ Galimas žymėjimo sintaksė:
       'scheduledJobJob' => 'Numatytas darbo pavadinimas',
       'data' => 'Duomenys',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Vykdoma',
         'Success' => 'Pavyko',
@@ -2207,9 +2229,9 @@ Galimas žymėjimo sintaksė:
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'width' => 'Ilgis (%)',
       'link' => 'Nuoroda',
@@ -2221,14 +2243,14 @@ Galimas žymėjimo sintaksė:
       'isLarge' => 'Didelis šrifto dydis',
       'dynamicLogicVisible' => 'Sąlygos, dėl kurių skydas matomas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
         'left' => 'Kairėje',
         'right' => 'Dešinėje',
       ),
-      'style' => 
+      'style' =>
       array (
         'default' => 'Numatytas',
         'success' => 'Sėminga',
@@ -2238,15 +2260,15 @@ Galimas žymėjimo sintaksė:
         'primary' => 'Pirminis',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'New panel' => 'Nauja panelė',
       'Layout' => 'Išdėtymas',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'vardas',
       'campaign' => 'Kampanija',
@@ -2266,7 +2288,7 @@ Galimas žymėjimo sintaksė:
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Naudingoji apkrova',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Tikslinis sąrašas',
       'campaign' => 'Kampanija',
@@ -2274,27 +2296,27 @@ Galimas žymėjimo sintaksė:
       'targetTeam' => 'Tikslinė komanda',
       'logRecords' => 'Prisijungti',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Sukurkite atvykimo tašką',
       'Generate New API Key' => 'Sukurti naują API raktą',
       'Request' => 'Prašymas',
       'Confirm Opt-In' => 'Patvirtinkite pasirinkimą',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Sukurkite naują API raktą',
       'optInConfirmationExpired' => 'Prisijungimo patvirtinimo nuoroda baigėsi.',
       'optInIsConfirmed' => 'Atsisakymas patvirtintas.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Žymėjimas yra palaikomas.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Numeris',
       'data' => 'Duomenys',
@@ -2303,15 +2325,15 @@ Galimas žymėjimo sintaksė:
       'createdAt' => 'Įeina į',
       'isCreated' => 'Sukurtas švinas',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => '"Lead Capture"',
       'target' => 'Tikslinė',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'post' => 'Paskelbti',
       'attachments' => 'Prisegtukai',
@@ -2327,15 +2349,15 @@ Galimas žymėjimo sintaksė:
       'data' => 'Duomenys',
       'number' => 'Numeris',
     ),
-    'filters' => 
+    'filters' =>
     array (
       'all' => 'Visi',
       'posts' => 'Pranešimai',
       'updates' => 'Atnaujinimai',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
         'self' => 'sau',
         'users' => 'konkrečiam vartotojui (ams)',
@@ -2343,24 +2365,24 @@ Galimas žymėjimo sintaksė:
         'all' => 'visiems vidiniams vartotojams',
         'portals' => 'konkretiems vartotojams',
       ),
-      'type' => 
+      'type' =>
       array (
         'Post' => 'Paštas',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'writeMessage' => 'Žinutę rašykite čia',
     ),
-    'links' => 
+    'links' =>
     array (
       'superParent' => 'Super tėvų',
       'related' => 'Susijęs',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'logo' => 'Logotipas',
@@ -2382,18 +2404,18 @@ Galimas žymėjimo sintaksė:
       'customUrl' => 'Pritaikytas URL',
       'customId' => 'Pritaikytas ID',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Vartotojai',
       'portalRoles' => 'Rolės',
       'notes' => 'Pastabos',
       'articles' => 'Žinių bazės straipsniai',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portalRoles' => 'Nurodyti portalo vaidmenys bus taikomi visiems šio portalo naudotojams.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Portal' => 'Sukurti portalą',
       'User Interface' => 'Vartotojo sąsaja',
@@ -2401,21 +2423,21 @@ Galimas žymėjimo sintaksė:
       'Settings' => 'Nustatymai',
     ),
   ),
-  'PortalRole' => 
+  'PortalRole' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportPermission' => 'Eksportuoti leidimą',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Vartotojai',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'exportPermission' => 'Nustato, ar portalo naudotojai gali eksportuoti įrašus.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Prieiga',
       'Create PortalRole' => 'Sukurti portalo rolę',
@@ -2423,16 +2445,16 @@ Galimas žymėjimo sintaksė:
       'Field Level' => 'Laukelio lygis',
     ),
   ),
-  'PortalUser' => 
+  'PortalUser' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create PortalUser' => 'Sukurti portalo vartotoją',
     ),
   ),
-  'Preferences' => 
+  'Preferences' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'dateFormat' => 'Datos formatas',
       'timeFormat' => 'Laiko formatas',
@@ -2473,18 +2495,18 @@ Galimas žymėjimo sintaksė:
       'scopeColorsDisabled' => 'Išjunkite spalvų apimtį',
       'tabColorsDisabled' => 'Išjungti kortelių spalvas',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Sekmadienis',
         1 => 'Pirmadienis',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Notifications' => 'Pranešimai',
       'User Interface' => 'Vartotojo sąsaja',
@@ -2493,7 +2515,7 @@ Galimas žymėjimo sintaksė:
       'Locale' => 'Locale',
       'Reset Dashboard to Default' => 'Iš naujo nustatyti informacijos suvestinę pagal nutylėjimą',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'autoFollowEntityTypeList' => 'Automatiškai sekti visus naujus sukurtus įrašus (sukurtus bet kurio vartotojo) pasirinktų vedinių tipų, kad galėtumėte matyti sraute esančią informaciją ir gauti pranešimus apie visus sistemos įrašus.',
       'doNotFillAssignedUserIfNotRequired' => 'Kurdamas įrašą priskirtas vartotojas nebus užpildytas, nebent laukelis yra privalomas.',
@@ -2501,9 +2523,9 @@ Galimas žymėjimo sintaksė:
       'followCreatedEntityTypeList' => 'Kai kuriate naujus pasirinktų subjektų tipų įrašus, jie bus automatiškai stebimi, net jei jie bus priskirti kitam vartotojui.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'roles' => 'Rolės',
@@ -2514,12 +2536,12 @@ Galimas žymėjimo sintaksė:
       'exportPermission' => 'Eksportuoti leidimą',
       'dataPrivacyPermission' => 'Duomenų privatumo leidimas',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Vartotojai',
       'teams' => 'Komandos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'assignmentPermission' => 'Leidžia apriboti galimybę priskirti įrašus ir siųsti pranešimus kitiems vartotojams.
 
@@ -2540,22 +2562,22 @@ Ne - negali peržiūrėti',
       'exportPermission' => 'Nurodo, ar vartotojai gali eksportuoti įrašus.',
       'dataPrivacyPermission' => 'Leidžia peržiūrėti ir ištrinti asmens duomenis.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Prieiga',
       'Create Role' => 'Sukurti rolę',
       'Scope Level' => 'Taikymo lygis',
       'Field Level' => 'Laukelių lygis',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
         'not-set' => 'Nenustatyta',
         'enabled' => 'įjungta',
         'disabled' => 'išjumgta',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
         'all' => 'visi',
         'team' => 'komanda',
@@ -2567,7 +2589,7 @@ Ne - negali peržiūrėti',
         'not-set' => 'Nenustatyta',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
       'read' => 'Skaityti',
       'edit' => 'Taisyti',
@@ -2575,31 +2597,31 @@ Ne - negali peržiūrėti',
       'stream' => 'Srautas',
       'create' => 'Sukurti',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'changesAfterClearCache' => 'Visi prieigos kontrolės pakeitimai bus taikomi, kai išvaloma talpyklos atmintinė.',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'status' => 'Statusas',
       'job' => 'Darbas',
       'scheduling' => 'Planavimas',
     ),
-    'links' => 
+    'links' =>
     array (
       'log' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create ScheduledJob' => 'Sukurkite numatytą darbą',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
         'Cleanup' => 'Išvalytis',
         'CheckInboundEmails' => 'Patikrinkite grupės el. pašto paskyras',
@@ -2611,20 +2633,20 @@ Ne - negali peržiūrėti',
         'ProcessMassEmail' => 'Siųsti masinius el. laiškus',
         'ControlKnowledgeBaseArticleStatus' => 'Kontroliuoti žinių bazės straipsnio statusą',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
         'linux' => 'Pastaba: įtraukite šią eilutę į crontab failą, kad paleistumėte "Espo Suplanuoti darbai":',
         'mac' => 'Pastaba: įtraukite šią eilutę į crontab failą, kad paleistumėte "Espo Suplanuoti darbai":',
         'windows' => 'Pastaba: sukurkite paketinį failą šiomis komandomis, kad paleistumėte "Espo" darbus pagal grafiką, naudojant "Windows" numatytus uždavinius:',
         'default' => 'Pastaba: pridėkite šią komandą į Cron Job (suplanuotą užduotį):',
       ),
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktyvus',
         'Inactive' => 'Neaktyvus',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'scheduling' => 'Cron užduočių žymėjimas. Nurodo darbo eigos dažnumą.
 
@@ -2637,18 +2659,18 @@ Ne - negali peržiūrėti',
 0 0 1 * * - pirmąją mėnesio dieną',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Statusas',
       'executionTime' => 'Vykdymo laikas',
       'target' => 'Adresatas',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'useCache' => 'Naudoti talpyklą',
       'dateFormat' => 'Datos formatas',
@@ -2756,26 +2778,26 @@ Pranešimai apie naujinius "Sraute" portalo naudotojams',
       'outboundEmailBccAddress' => 'BCC adresas išoriniams klientams',
       'cleanupDeletedRecords' => 'Išvalyti ištrintus įrašus',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Sekmadienis',
         1 => 'Pirmadienis',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
         1 => '10 USD',
         2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
         'Post' => 'Pranešimai',
         'Status' => 'Būsenos atnaujinimai',
         'EmailReceived' => 'Gauti el. Laiškai',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'recordsPerPage' => 'Iš pradžių rodomas įrašų skaičius sąrašo rodinyje.',
       'recordsPerPageSmall' => 'Įrašų skaičius rodomas sąsajų skiltyje',
@@ -2823,7 +2845,7 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
       'emailAddressIsOptedOutByDefault' => 'Kuriant naują įrašą elektroninio pašto prenumerata bus pažymėta kaip pasirinkta.',
       'cleanupDeletedRecords' => 'Ištrinti įrašai bus ištrinti iš duomenų bazės po kurio laiko.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'System' => 'Sistema',
       'Locale' => 'Locale',
@@ -2839,40 +2861,40 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
       'Activities' => 'Veikla',
       'Admin Notifications' => 'Administratoriaus priminimai',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'ldapTestConnection' => 'Prisijungėte sėkmingai. Ryšys veikia.',
     ),
   ),
-  'Team' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'roles' => 'Rolės',
       'positionList' => 'Pozicijų sąrašas',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Vartotojai',
       'notes' => 'Pastabos',
       'roles' => 'Rolės',
       'inboundEmails' => 'Grupės el. pašto paskyros',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'roles' => 'Prieigos rolės. Šios komandos vartotojai gauna prieigos kontrolės lygį iš pasirinktų rolių.',
       'positionList' => 'Galimos pozicijos šioje komandoje. Pavyzdžiui pardavėjas, vadybininkas.
 ',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Team' => 'Sukurti komandą',
     ),
   ),
-  'Template' => 
+  'Template' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'body' => 'Laiško tekstas',
@@ -2890,26 +2912,26 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
       'pageFormat' => 'Lapo formatas',
       'fontFace' => 'Šriftas',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Template' => 'Sukurti šabloną',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
         'Portrait' => 'Stačias',
         'Landscape' => 'Gulščias',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
         'today' => 'Šiandien (data)',
         'now' => 'Dabar (data-laikas)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefuratas',
@@ -2941,15 +2963,15 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
         'times' => 'Laikai',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'footer' => 'Naudokite {page Number}, jei norite spausdinti puslapio numerį.',
       'variables' => 'Kopijavimui reikia įterpti žymeklį į antraštę, kūną arba poraštę.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'userName' => 'Vartotojo vardas',
@@ -2985,7 +3007,7 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
       'acceptanceStatusMeetings' => 'Priėmimo statusas (susirinkimai)',
       'acceptanceStatusCalls' => 'Priėmimo statusas (skambučiai)',
     ),
-    'links' => 
+    'links' =>
     array (
       'teams' => 'Komandos',
       'roles' => 'Rolės',
@@ -2998,7 +3020,7 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
       'tasks' => 'Užduotys',
       'targetLists' => 'Adresatų sarašai',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create User' => 'Sukurti vartotoją',
       'Generate' => 'Generuoti',
@@ -3015,7 +3037,7 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
       'Create Portal User' => 'Sukurti portalo vartotoją',
       'Proceed w/o Contact' => 'Pereiti prie kontaktų',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'defaultTeam' => 'Visi šio naudotojo sukurti įrašai bus susiję su šia komanda pagal nutylėjimą.',
       'userName' => 'Leidžiami raidės a-z, skaičiai 0-9, taškai, brūkšniai, @ -žymėjimai ir pabraukimai.',
@@ -3026,7 +3048,7 @@ Neleidžiama: prieiga prie taikymo sričių bus leidžiama, jei ji nenurodyta ro
       'portalRoles' => 'Papildomos portalo rolės. Naudokite ją, kad galėtumėte išplėsti prieigos kontrolės lygį tik šiam vartotojui.',
       'portals' => 'Portalai, prie kurių šis vartotojas turi prieigą.',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'passwordWillBeSent' => 'Slaptažodis bus išsiųstas vartotojo el. pašto adresu.',
       'accountInfoEmailSubject' => 'EspoCRM User Access Info',
@@ -3049,9 +3071,9 @@ Password: {password}
       'setupSmtpBefore' => 'Jūs turite nustatyti <a href="{url}"> SMTP nustatymus </a>, kad sistema galėtų išsiųsti slaptažodį el. paštu.',
       'userNameExists' => 'Toks vartotojas jau sukurtas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
         '' => 'Nenustatyta',
         'Male' => 'Vyras',
@@ -3059,19 +3081,19 @@ Password: {password}
         'Neutral' => 'Neutrali lytis',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMyTeam' => 'Tik mano komanda',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktyvus',
       'activePortal' => 'Aktyvus portalas',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Pavadinimas',
       'emailAddress' => 'El. paštas',
@@ -3091,7 +3113,7 @@ Password: {password}
       'originalLead' => 'Originalus švinas',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontaktai',
       'opportunities' => 'Galimybės',
@@ -3108,16 +3130,16 @@ Password: {password}
       'originalLead' => 'Originalus švinas',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Customer' => 'Klientas',
         'Investor' => 'Investuotojas',
         'Partner' => 'Partneris',
         'Reseller' => 'Perpardavinėtojas',
       ),
-      'industry' => 
+      'industry' =>
       array (
         'Aerospace' => 'Aerokosmosas',
         'Agriculture' => 'Žemdirbystė',
@@ -3173,22 +3195,22 @@ Password: {password}
         'Water' => 'Vanduo',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Account' => 'Sukurti paskyrą',
       'Copy Billing' => 'Kopijuoti pristatymo adresą',
       'Set Primary' => 'Nutatyti pirminiu',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'customers' => 'Klientai',
       'partners' => 'Partneriai',
       'recentlyCreated' => 'Neseniai sukurta',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
       'month' => 'Mėnuo',
       'week' => 'Savaitė',
@@ -3197,7 +3219,7 @@ Password: {password}
       'agendaDay' => 'Diena',
       'timeline' => 'Chronologija',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Today' => 'Šiandien',
       'Create' => 'Sukurti',
@@ -3211,9 +3233,9 @@ Password: {password}
       'Create Shared View' => 'Sukurkite bendrąjį rodinį',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'parent' => 'Pagrindinis',
@@ -3230,23 +3252,23 @@ Password: {password}
       'account' => 'Įmonė',
       'acceptanceStatus' => 'Priėmimo statusas',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Suplanuota',
         'Held' => 'Įvykdyta',
         'Not Held' => 'Neįvykdyta',
       ),
-      'direction' => 
+      'direction' =>
       array (
         'Outbound' => 'Siunčiami',
         'Inbound' => 'Gaunami',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => 'Joks',
         'Accepted' => 'Priimta',
@@ -3254,28 +3276,28 @@ Password: {password}
         'Tentative' => 'Preliminarus',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Pažymėti kaip įvykdytą',
       'setNotHeld' => 'Pažymėti kaip neįvykdytą',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Call' => 'Sukurti skambutį',
       'Set Held' => 'Pažymėti kaip įvykdytą',
       'Set Not Held' => 'Pažymėti kaip neįvykdytą',
       'Send Invitations' => 'Siųsti pakvietimus',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Suplanuota',
       'held' => 'Įvykdyta',
       'todays' => 'Šiandienos',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'description' => 'Aprašymas',
@@ -3304,7 +3326,7 @@ Password: {password}
       'usersTemplate' => 'Vartotojų šablonas',
       'mailMergeOnlyWithAddress' => 'Praleisti įrašus be užpildyto adreso',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Adresatų sąrašai',
       'excludingTargetLists' => 'Neįtraukti adresatų sąrašų',
@@ -3320,9 +3342,9 @@ Password: {password}
       'accountsTemplate' => 'Sąskaitų šablonas',
       'usersTemplate' => 'Vartotojų šablonas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'El. paštas',
         'Web' => 'Internetas',
@@ -3331,7 +3353,7 @@ Password: {password}
         'Newsletter' => 'Naujienlaiškis',
         'Mail' => 'Paštas',
       ),
-      'status' => 
+      'status' =>
       array (
         'Planning' => 'Planuojama',
         'Active' => 'Aktyvus',
@@ -3339,7 +3361,7 @@ Password: {password}
         'Complete' => 'Įvykdyta',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Campaign' => 'Sukurti kampaniją',
       'Target Lists' => 'Adresatų sąrašai',
@@ -3355,24 +3377,24 @@ Password: {password}
       'Mail Merge' => 'Pašto suliejimo',
       'Generate Mail Merge PDF' => 'Sukurkite "Mail Merge PDF"',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktyvus',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'unsubscribed' => 'Jūsų el, pašto adresas buvo pašalintas iš mūsų adresatų sąrašo.',
       'subscribedAgain' => 'Jūs užsisakėte prenumeratą dar kartą',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'targetLists' => 'Adresatai, kurie turėtų gauti laiškus.',
       'excludingTargetLists' => 'Adresatai, kurie neturėtų gauti laiškų.',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'action' => 'Veiksmas',
       'actionDate' => 'Data',
@@ -3386,16 +3408,16 @@ Password: {password}
       'stringAdditionalData' => 'Papildomų duomenų eilutė',
       'isTest' => 'Testuojama',
     ),
-    'links' => 
+    'links' =>
     array (
       'queueItem' => 'Eilės elementas',
       'parent' => 'Pagrindinis',
       'object' => 'Ojektas',
       'campaign' => 'Kampanija',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Sent' => 'Išsiųsta',
         'Opened' => 'Atverta',
@@ -3406,11 +3428,11 @@ Password: {password}
         'Opted In' => 'Pasirinkta',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'All' => 'Visi',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Išsiųsta',
       'opened' => 'Atverta',
@@ -3421,26 +3443,26 @@ Password: {password}
       'leadCreated' => 'Sukurtas potencialus klientas',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'url' => 'URL',
       'urlToUse' => 'Įterpti kodą vietoj URL',
       'campaign' => 'Kampanija',
     ),
-    'links' => 
+    'links' =>
     array (
       'campaign' => 'Kampanija',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create CampaignTrackingUrl' => 'Sukurkite stebėjimo URL',
     ),
   ),
-  'Case' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'number' => 'Numeris',
@@ -3455,7 +3477,7 @@ Password: {password}
       'lead' => 'Potencialus klientas',
       'attachments' => 'Prisegtukai',
     ),
-    'links' => 
+    'links' =>
     array (
       'inboundEmail' => 'Grupės el. Pašto sąskaita',
       'account' => 'Įmonė',
@@ -3469,9 +3491,9 @@ Password: {password}
       'lead' => 'Potencialus klientas',
       'attachments' => 'Prisegtukai',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Naujas',
         'Assigned' => 'Priskirta',
@@ -3480,21 +3502,21 @@ Password: {password}
         'Rejected' => 'Atmesta',
         'Duplicate' => 'Dublikatas',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Žemas',
         'Normal' => 'Normalus',
         'High' => 'Aukštas',
         'Urgent' => 'Skubu',
       ),
-      'type' => 
+      'type' =>
       array (
         'Question' => 'Klausimas',
         'Incident' => 'Incidentas',
         'Problem' => 'Problema',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Case' => 'Sukurti atvejį',
       'Close' => 'Uždaryti',
@@ -3502,15 +3524,15 @@ Password: {password}
       'Closed' => 'Uždaryta',
       'Rejected' => 'Atmesta',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Atidaryti',
       'closed' => 'Uždaryta',
     ),
   ),
-  'Contact' => 
+  'Contact' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'emailAddress' => 'El. paštas',
@@ -3537,7 +3559,7 @@ Password: {password}
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
       'opportunities' => 'Galimybės',
       'cases' => 'Atvejai',
@@ -3554,13 +3576,13 @@ Password: {password}
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Contact' => 'Sukurti kontaktą',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
         '' => '--Nėra--',
         'Decision Maker' => 'Sprendimus priimantis žmogus',
@@ -3568,25 +3590,25 @@ Password: {password}
         'Influencer' => 'Darantis įtaką',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'portalUsers' => 'Portalo vartotojai',
       'notPortalUsers' => 'Ne portalo vartotojas',
       'accountActive' => 'Aktyvus',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Document' => 'Sukurti dokumentą',
       'Details' => 'Išsamiau',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'status' => 'Statusas',
@@ -3599,7 +3621,7 @@ Password: {password}
       'folder' => 'Aplankas',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Įmonės',
       'opportunities' => 'Galimybės',
@@ -3608,16 +3630,16 @@ Password: {password}
       'contacts' => 'Kontaktai',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktyvus',
         'Draft' => 'Juodraštis',
         'Expired' => 'Pasibaigė',
         'Canceled' => 'Atšaukta',
       ),
-      'type' => 
+      'type' =>
       array (
         '' => 'Joks',
         'Contract' => 'Kontraktas',
@@ -3626,28 +3648,28 @@ Password: {password}
         'License Agreement' => 'Licencijos sutartis',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktyvus',
       'draft' => 'Juodraštis',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create DocumentFolder' => 'Sukurti dokumento aplanką',
       'Manage Categories' => 'Tvarkyti aplankus',
       'Documents' => 'Dokumentai',
     ),
-    'links' => 
+    'links' =>
     array (
       'documents' => 'Dokumentai',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'status' => 'Statusas',
@@ -3658,14 +3680,14 @@ Password: {password}
       'massEmail' => 'Masinis el. Paštas',
       'isTest' => 'Testuojama',
     ),
-    'links' => 
+    'links' =>
     array (
       'target' => 'Adresatas',
       'massEmail' => 'Masinis el. Paštas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Vykdoma',
         'Sent' => 'Išsiųsta',
@@ -3673,16 +3695,16 @@ Password: {password}
         'Sending' => 'Siunčiama',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'pending' => 'Vykdoma',
       'sent' => 'Išsiųsta',
       'failed' => 'Nepavyko',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseArticle' => 'Sukurti straipsnį',
       'Any' => 'Bet koks',
@@ -3692,7 +3714,7 @@ Password: {password}
       'Move to Top' => 'Judėti į viršų',
       'Move to Bottom' => 'Judėti į apačią',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'status' => 'Statusas',
@@ -3706,59 +3728,59 @@ Password: {password}
       'language' => 'Kalba',
       'portals' => 'Portalai',
     ),
-    'links' => 
+    'links' =>
     array (
       'cases' => 'Atvejai',
       'opportunities' => 'Galimybės',
       'categories' => 'Kategorijos',
       'portals' => 'Portalai',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'In Review' => 'Peržiūrima',
         'Draft' => 'Juodraštis',
         'Archived' => 'Suarchyvuota',
         'Published' => 'Paskelbta',
       ),
-      'type' => 
+      'type' =>
       array (
         'Article' => 'Straipsnis',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portals' => 'Straipsnis bus prieinamas tik nurodytuose portaluose.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'published' => 'Paskelbta',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseCategory' => 'Sukurti kategoriją',
       'Manage Categories' => 'Tvarkyti kategorijas',
       'Articles' => 'Straipsniai',
     ),
-    'links' => 
+    'links' =>
     array (
       'articles' => 'Straipsniai',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Converted To' => 'Konvertuota į',
       'Create Lead' => 'Sukurti potencialų klientą',
       'Convert' => 'Konvertuoti',
       'convert' => 'konvertuoti',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'emailAddress' => 'El. paštas',
@@ -3785,7 +3807,7 @@ Password: {password}
       'acceptanceStatusMeetings' => 'Priėmimo statusas (susirinkimai)',
       'acceptanceStatusCalls' => 'Priėmimo statusas (skambučiai)',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Adresatų sarašai',
       'campaignLogRecords' => 'Kampanijos žurnalas',
@@ -3796,9 +3818,9 @@ Password: {password}
       'cases' => 'Atvejai',
       'documents' => 'Dokumentai',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Naujas',
         'Assigned' => 'Priskirta',
@@ -3807,7 +3829,7 @@ Password: {password}
         'Recycled' => 'Ištrinta',
         'Dead' => 'Numarintas',
       ),
-      'source' => 
+      'source' =>
       array (
         '' => 'Joks',
         'Call' => 'Skambutis',
@@ -3820,16 +3842,16 @@ Password: {password}
         'Other' => 'Kiti',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktyvus',
       'actual' => 'Esamas',
       'converted' => 'Konvertuota',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'status' => 'Statusas',
@@ -3847,7 +3869,7 @@ Password: {password}
       'optOutEntirely' => 'Atsisakyti visam laikui',
       'smtpAccount' => 'SMTP paskyra',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Adresatų sarašai',
       'excludingTargetLists' => 'Neįtraukiami sdresatų sarašai',
@@ -3856,9 +3878,9 @@ Password: {password}
       'emailTemplate' => 'El. pašto laiško šablonas',
       'inboundEmail' => 'El. pašto paskyra',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Juodraštis',
         'Pending' => 'Vykdoma',
@@ -3868,7 +3890,7 @@ Password: {password}
         'Failed' => 'Nepavyko',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create MassEmail' => 'Sukurti masinį laišką',
       'Send Test' => 'Siųsti bandomajį laišką',
@@ -3876,27 +3898,27 @@ Password: {password}
       'system' => 'sistema',
       'group' => 'grupė',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectAtLeastOneTarget' => 'Pasirinkiite bent vieną adresatą',
       'testSent' => 'Bandomasis laiškas turėtų būti išsiųstas',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optOutEntirely' => 'Atsisakiusių prenumeratos gavėjų el, pašto adresai bus pažymėti kaip nebenorintys gauti laiškų, kad ateityje nebegautų masinių pranešimų.',
       'targetLists' => 'Adresatai, kuriems turėtų būti siunčiami laiškai.',
       'excludingTargetLists' => 'Adresatai, kuriems turėtų būti siunčiami laiškai.',
       'storeSentEmails' => 'El. laiškai bus saugomi CRM.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Esamas',
       'complete' => 'Įvykdyta',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'parent' => 'Pagrindinis',
@@ -3913,19 +3935,19 @@ Password: {password}
       'acceptanceStatus' => 'Priėmimo statusas',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Suplanuota',
         'Held' => 'Įvykdyta',
         'Not Held' => 'Neįvykdyta',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => 'Joks',
         'Accepted' => 'Priimta',
@@ -3933,12 +3955,12 @@ Password: {password}
         'Tentative' => 'Preliminarus',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Pažymėti kaip įvykdytą',
       'setNotHeld' => 'Pažymėti kaip neįvykdytą',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Meeting' => 'Sukurti susitikimą',
       'Set Held' => 'Pažymėti kaip įvykdytą',
@@ -3947,20 +3969,20 @@ Password: {password}
       'on time' => 'laiku',
       'before' => 'prieš',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Suplanuota',
       'held' => 'Įvykdyta',
       'todays' => 'Šiandienos',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'nothingHasBeenSent' => 'Nieko nebuvo išsiųsta',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'account' => 'Įmonė',
@@ -3980,16 +4002,16 @@ Password: {password}
       'contactRole' => 'Kontakto vaidmuo',
       'lastStage' => 'Paskutinis etapas',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontaktai',
       'documents' => 'Dokumentai',
       'campaign' => 'Kampanija',
       'originalLead' => 'Originalus švinas',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
         'Prospecting' => 'Potencialių klientų paieška',
         'Qualification' => 'Kvalifikacija',
@@ -4005,41 +4027,41 @@ Password: {password}
         'Closed Lost' => 'Pralaimėta',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Opportunity' => 'Sukurti pardavimo galimybę',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Atidaryti',
       'won' => 'Laimėta',
       'lost' => 'Pralaimėta',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4050,9 +4072,9 @@ Password: {password}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'description' => 'Aprašymas',
@@ -4066,7 +4088,7 @@ Password: {password}
       'targetStatus' => 'Tikslo būsena',
       'isOptedOut' => 'Yra atmesta',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Įmonės',
       'contacts' => 'Kontaktai',
@@ -4074,9 +4096,9 @@ Password: {password}
       'campaigns' => 'Kampanijos',
       'massEmails' => 'Masiniai el. laiškai',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'El. paštas',
         'Web' => 'Internetas',
@@ -4084,13 +4106,13 @@ Password: {password}
         'Radio' => 'Radijas',
         'Newsletter' => 'Naujienlaiškis',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Pasirinkta',
         'Listed' => 'Sąraše',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create TargetList' => 'Sukurti adresatų sąrašą',
       'Opted Out' => 'Pasirinkta',
@@ -4098,9 +4120,9 @@ Password: {password}
       'Opt-Out' => 'Atsisakyti',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Vardas',
       'parent' => 'Pagrindinis',
@@ -4118,15 +4140,15 @@ Password: {password}
       'reminders' => 'Priminimai',
       'contact' => 'kontaktas',
     ),
-    'links' => 
+    'links' =>
     array (
       'attachments' => 'Prisegtukai',
       'account' => 'Paskyra',
       'contact' => 'Kontaktai',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Not Started' => 'Nepradėta',
         'Started' => 'Started',
@@ -4134,7 +4156,7 @@ Password: {password}
         'Canceled' => 'Atšaukta',
         'Deferred' => 'Atidėta',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Žemas',
         'Normal' => 'Normalus',
@@ -4142,12 +4164,12 @@ Password: {password}
         'Urgent' => 'Skubu',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Task' => 'Sukurti užduotį',
       'Complete' => 'Įvykdyta',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Esamas',
       'completed' => 'Užbaigta',
@@ -4156,9 +4178,158 @@ Password: {password}
       'overdue' => 'Vėluoja',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
+    array (
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Susitikimai',
+      'calls' => 'Skambučiai',
+      'tasks' => 'Užduotys',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Sukurti Beneficios',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Susitikimai',
+      'calls' => 'Skambučiai',
+      'tasks' => 'Užduotys',
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Sukurti Categoria',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Susitikimai',
+      'calls' => 'Skambučiai',
+      'tasks' => 'Užduotys',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Sukurti Ciudad',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Susitikimai',
+      'calls' => 'Skambučiai',
+      'tasks' => 'Užduotys',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Sukurti Comuna',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Susitikimai',
+      'calls' => 'Skambučiai',
+      'tasks' => 'Užduotys',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Sukurti Doctos_beneficio',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Sukurti Empresa',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
     array (
       'address' => 'Adresas',
       'meetings1' => 'Meetings1',
@@ -4177,7 +4348,7 @@ Password: {password}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Susitikimai',
       'calls' => 'Skambučiai',
@@ -4190,13 +4361,13 @@ Password: {password}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Formularios' => 'Sukurti Formulario',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4205,15 +4376,15 @@ Password: {password}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4222,7 +4393,7 @@ Password: {password}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4236,51 +4407,192 @@ Password: {password}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'Proveedor' =>
   array (
-    'fields' => 
+    'fields' =>
+    array (
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Proveedor' => 'Sukurti Proveedor',
+    ),
+  ),
+  'Rol' =>
+  array (
+    'fields' =>
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Susitikimai',
+      'calls' => 'Skambučiai',
+      'tasks' => 'Užduotys',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Rol' => 'Sukurti Rol',
+    ),
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Adresas',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+  'MotivoReclamo' =>
+  array (
+    'fields' =>
     array (
       'motivoReclamoId' => 'MotivoReclamoId',
       'motivoReclamoDescripcion' => 'Descripción',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Susitikimai',
       'calls' => 'Skambučiai',
       'tasks' => 'Užduotys',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Sukurti Solicitudes',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create MotivoReclamo' => 'Sukurti MotivoReclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
     ),
   ),
-  'Reclamo' => 
+  'Reclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'reclamoId' => 'ReclamoId',
       'reclamoTitulo' => 'Título',
       'reclamoObservacion' => 'Observación',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Susitikimai',
       'calls' => 'Skambučiai',
       'tasks' => 'Užduotys',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'labels' =>
+    array (
+      'Create Subcategoria' => 'Sukurti Subcategoria',
+    ),
+  ),
+  'Trabajador' =>
+  array (
+    'fields' =>
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'links' =>
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rol',
+      'empresa' => 'Empresa',
+    ),
+    'labels' =>
+    array (
+      'Create Trabajador' => 'Sukurti Trabajador',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Reclamo' => 'Sukurti Reclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reclamoTitulo' => 'Breve descripción del reclamo',
       'reclamoObservacion' => 'Describa su situación',

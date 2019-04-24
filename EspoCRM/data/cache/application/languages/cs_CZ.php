@@ -1,8 +1,8 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'User',
       'action' => 'Action',
@@ -13,20 +13,20 @@ return array (
       'ipAddress' => 'IP Address',
       'authLogRecord' => 'Auth Log Record',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token',
       'authLogRecord' => 'Auth Log Record',
       'user' => 'User',
       'target' => 'Target',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'onlyMy' => 'Only My',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'read' => 'Read',
         'update' => 'Update',
@@ -35,9 +35,9 @@ return array (
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Enabled' => 'Povoleno',
       'Disabled' => 'Zakázáno',
@@ -100,7 +100,7 @@ return array (
       'Lead Capture' => 'Lead Capture',
       'Attachments' => 'Attachments',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
       'list' => 'Seznam',
       'detail' => 'Detail',
@@ -123,7 +123,7 @@ return array (
       'listForAccount' => 'Seznam (pro organizace)',
       'listForContact' => 'List (for Contact)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
       'address' => 'Adresa',
       'array' => 'Pole',
@@ -167,7 +167,7 @@ return array (
       'parsonName' => 'Jméno',
       'multienim' => 'Multienum',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'type' => 'Typ',
       'name' => 'Jméno',
@@ -215,7 +215,7 @@ return array (
       'useNumericFormat' => 'Use Numeric Format',
       'strip' => 'Strip',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'upgradeVersion' => 'EspoCRM bude upgradováno na verzi <strong>{version}</strong>. Toto může chvíli trvat.',
       'upgradeDone' => 'EspoCRM bylo upgradováno na verzi <strong>{version}</strong>.',
@@ -234,7 +234,7 @@ return array (
       'newExtensionVersionIsAvailable' => 'New {extensionName} version {latestVersion} is available.',
       'uninstallConfirmation' => 'Opravdu odinstalovat vybrané rozšíření?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
       'settings' => 'Systémová nastavení aplikace.',
       'scheduledJob' => 'Činnosti vykonávané CRONem.',
@@ -269,9 +269,9 @@ return array (
       'leadCapture' => 'API entry points for Web-to-Lead.',
       'attachments' => 'All file attachments stored in the system.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
         'x-small' => 'Extra-malý',
         'small' => 'Malý',
@@ -279,16 +279,16 @@ return array (
         'large' => 'Velký',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
       'and' => 'AND',
       'or' => 'OR',
       'not' => 'NOT',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Role',
       'related' => 'Related',
@@ -299,9 +299,9 @@ return array (
       'storage' => 'Storage',
       'size' => 'Size (bytes)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Attachment',
         'Inline Attachment' => 'Inline Attachment',
@@ -311,18 +311,18 @@ return array (
         'Mass Pdf' => 'Mass Pdf',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
       'Document' => 'Insert Document',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Orphan',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'username' => 'Username',
       'ipAddress' => 'IP Address',
@@ -337,21 +337,21 @@ return array (
       'requestMethod' => 'Request Method',
       'authTokenIsActive' => 'Auth Token is Active',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token Created',
       'user' => 'User',
       'portal' => 'Portal',
       'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'denied' => 'Denied',
       'accepted' => 'Accepted',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
         'CREDENTIALS' => 'Invalid credentials',
         'INACTIVE_USER' => 'Inactive user',
@@ -361,9 +361,9 @@ return array (
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'user' => 'Uživatel',
       'ipAddress' => 'IP adresa',
@@ -372,27 +372,27 @@ return array (
       'isActive' => 'Is Active',
       'portal' => 'Portal',
     ),
-    'links' => 
+    'links' =>
     array (
       'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Active',
       'inactive' => 'Inactive',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Set Inactive' => 'Set Inactive',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setInactive' => 'Set Inactive',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'title' => 'Titulek',
       'dateFrom' => 'Datum od',
@@ -413,9 +413,9 @@ return array (
       'futureDays' => 'Next X Days',
       'useLastStage' => 'Group by last reached stage',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
         'agendaWeek' => 'Týden (agenda)',
         'basicWeek' => 'Týden',
@@ -425,20 +425,20 @@ return array (
         'timeline' => 'Timeline',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectEntityType' => 'Select Entity Type in dashlet options.',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Field' => 'Field',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
         'equals' => 'Equals',
         'notEquals' => 'Not Equals',
@@ -462,9 +462,9 @@ return array (
       ),
     ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'parent' => 'Rodič',
@@ -514,7 +514,7 @@ return array (
       'isSystem' => 'Is System',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'replied' => 'Replied',
       'replies' => 'Replies',
@@ -530,9 +530,9 @@ return array (
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Draft',
         'Sending' => 'Sending',
@@ -547,7 +547,7 @@ return array (
       'Archived' => 'Archivováno',
       'Received' => 'Obdrženo',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Email' => 'Vytvořit email',
       'Archive Email' => 'Archivovat email',
@@ -582,7 +582,7 @@ return array (
       'Create Task' => 'Vytvořit úkol',
       'Create Case' => 'Vytvořit událost',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'noSmtpSetup' => 'Chybí SMTP nastavení. {link}.',
       'testEmailSent' => 'Testovací email byl poslán',
@@ -590,7 +590,7 @@ return array (
       'savedAsDraft' => 'Uloženo jako draft',
       'confirmInsertTemplate' => 'The email body will be lost. Are you sure you want to insert the template?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Odesláné',
       'archived' => 'Archivované',
@@ -599,7 +599,7 @@ return array (
       'trash' => 'Trash',
       'important' => 'Important',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'markAsRead' => 'Označit jako přečtené',
       'markAsNotRead' => 'Mark as Not Read',
@@ -610,9 +610,9 @@ return array (
       'retrieveFromTrash' => 'Retrieve from Trash',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'status' => 'Status',
@@ -637,20 +637,20 @@ return array (
       'smtpUsername' => 'SMTP Username',
       'smtpPassword' => 'SMTP Password',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filters',
       'emails' => 'Emails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktivní',
         'Inactive' => 'Neaktivní',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailAccount' => 'Vytvořit emailový účet',
       'IMAP' => 'IMAP',
@@ -659,29 +659,29 @@ return array (
       'Send Test Email' => 'Send Test Email',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Nemohu se připojit k IMAP serveru',
       'connectionIsOk' => 'Spojení je OK',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'monitoredFolders' => 'Můžete přidat složku \'Odeslané\' k synchronizaci externím emailovým klientem.',
       'storeSentEmails' => 'Sent emails will be stored on the IMAP server. Email Address field should match the address emails will be sent from.',
     ),
   ),
-  'EmailAddress' => 
+  'EmailAddress' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Primary' => 'Primární',
       'Opted Out' => 'Odhlášené',
       'Invalid' => 'Neplatné',
     ),
   ),
-  'EmailFilter' => 
+  'EmailFilter' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'from' => 'From',
       'to' => 'To',
@@ -691,20 +691,20 @@ return array (
       'isGlobal' => 'Is Global',
       'emailFolder' => 'Folder',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFilter' => 'Create Email Filter',
       'Emails' => 'Emails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Skip' => 'Ignore',
         'Move to Folder' => 'Put in Folder',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'name' => 'Give the filter a descriptive name.',
       'subject' => 'Use a wildcard *:
@@ -718,22 +718,22 @@ text* - starts with text,
       'isGlobal' => 'Applies this filter to all emails incoming to system.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'skipNotifications' => 'Skip Notifications',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailFolder' => 'Create Folder',
       'Manage Folders' => 'Manage Folders',
       'Emails' => 'Emails',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'status' => 'Status',
@@ -745,16 +745,16 @@ text* - starts with text,
       'oneOff' => 'One-off',
       'category' => 'Category',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplate' => 'Vytvořit šablonu',
       'Info' => 'Info',
       'Available placeholders' => 'Available placeholders',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'infoText' => 'Available placeholders:
 
@@ -762,41 +762,41 @@ text* - starts with text,
 
 {optOutLink} &#8211; an unsubscribe link.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'oneOff' => 'Check if you are going to use this template only once. E.g. for Mass Email.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Actual',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
       'optOutUrl' => 'URL for an unsubsbribe link',
       'optOutLink' => 'an unsubscribe link',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Create Category',
       'Manage Categories' => 'Manage Categories',
       'EmailTemplates' => 'Email Templates',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Order',
       'childList' => 'Child List',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'Email Templates',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Fields' => 'Pole',
       'Relationships' => 'Vztahy',
@@ -804,7 +804,7 @@ text* - starts with text,
       'Log' => 'Log',
       'Formula' => 'Formula',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'type' => 'Typ',
@@ -834,9 +834,9 @@ text* - starts with text,
       'iconClass' => 'Icon',
       'fullTextSearch' => 'Full-Text Search',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         '' => '',
         'Base' => 'Báze',
@@ -846,7 +846,7 @@ text* - starts with text,
         'BasePlus' => 'Base Plus',
         'Company' => 'Company',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
         'manyToMany' => 'N-N',
         'oneToMany' => '1-N',
@@ -854,19 +854,19 @@ text* - starts with text,
         'parentToChildren' => 'Rodič-Potomek',
         'childrenToParent' => 'Potomek-Rodič',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
         'asc' => 'Vzestupně',
         'desc' => 'Sestupně',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'entityCreated' => 'Entita byla vytvořena',
       'linkAlreadyExists' => 'Konflikt: link již existuje.',
       'linkConflict' => 'Name conflict: link or field with the same name already exists.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'statusField' => 'Updates of this field are logged in stream.',
       'textFilterFields' => 'Fields used by text search.',
@@ -880,26 +880,26 @@ Event - available in Calendar and Activities panel.',
       'fullTextSearch' => 'Running rebuild is required.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportAllFields' => 'Export all fields',
       'fieldList' => 'Field List',
       'format' => 'Format',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
         'xlsx' => 'XLSX (Excel)',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'version' => 'Verze',
@@ -907,39 +907,39 @@ Event - available in Calendar and Activities panel.',
       'isInstalled' => 'Instalováno',
       'checkVersionUrl' => 'An URL for checking new versions',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Uninstall' => 'Odebrat',
       'Install' => 'Nainstalovat',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'uninstalled' => 'Rozšíření {name} bylo odebráno',
     ),
   ),
-  'ExternalAccount' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Connect' => 'Připojit',
       'Connected' => 'Připojeno',
     ),
-    'help' => 
+    'help' =>
     array (
     ),
   ),
-  'FieldManager' => 
+  'FieldManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Dynamic Logic' => 'Dynamic Logic',
       'Name' => 'Name',
       'Label' => 'Label',
       'Type' => 'Type',
     ),
-    'options' => 
+    'options' =>
     array (
-      'dateTimeDefault' => 
+      'dateTimeDefault' =>
       array (
         '' => 'None',
         'javascript: return this.dateTime.getNow(1);' => 'Now',
@@ -966,7 +966,7 @@ Event - available in Calendar and Activities panel.',
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 days',
         'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 week',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
         '' => 'None',
         'javascript: return this.dateTime.getToday();' => 'Today',
@@ -997,7 +997,7 @@ Event - available in Calendar and Activities panel.',
         'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 year',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'audited' => 'Updates will be logged in stream.',
       'required' => 'Field will be mandatory. Can\'t be left empty.',
@@ -1012,9 +1012,9 @@ Event - available in Calendar and Activities panel.',
       'readOnly' => 'Field value can\'t be specified by user. But can be calculated by formula.',
       'maxFileSize' => 'If empty or 0 then no limit.',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
         'street' => 'Street',
         'city' => 'City',
@@ -1023,26 +1023,26 @@ Event - available in Calendar and Activities panel.',
         'postalCode' => 'Postal Code',
         'map' => 'Map',
       ),
-      'personName' => 
+      'personName' =>
       array (
         'salutation' => 'Salutation',
         'first' => 'First',
         'last' => 'Last',
       ),
-      'currency' => 
+      'currency' =>
       array (
         'converted' => '(Converted)',
         'currency' => '(Currency)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
         'date' => 'Date',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
       'Email' => 'Email',
       'User' => 'Uživatel',
@@ -1114,10 +1114,21 @@ Event - available in Calendar and Activities panel.',
       'KnowledgeBaseCategory' => 'Knowledge Base Category',
       'CampaignLogRecord' => 'Campaign Log Record',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
       'Email' => 'Emaily',
       'User' => 'Uživatelé',
@@ -1176,10 +1187,21 @@ Event - available in Calendar and Activities panel.',
       'KnowledgeBaseCategory' => 'Knowledge Base Categories',
       'CampaignLogRecord' => 'Campaign Log Records',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Misc' => 'Různé',
       'Merge' => 'Sloučit',
@@ -1346,7 +1368,7 @@ Event - available in Calendar and Activities panel.',
       'Create Task' => 'Vytvořit úkol',
       'Tasks' => 'Úkoly',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'pleaseWait' => 'Prosím počkejte...',
       'posting' => 'Posting...',
@@ -1413,17 +1435,17 @@ Dostupná syntaxe:
       'erasePersonalDataConfirmation' => 'Checked fields will be erased permanently. Are you sure?',
       'massPrintPdfMaxCountError' => 'Can\'t print more that {maxCount} records.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMy' => 'Pouze moje',
       'followed' => 'Sledované',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'followed' => 'Sledované',
       'all' => 'All',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'remove' => 'Odstranit',
       'merge' => 'Sloučit',
@@ -1434,7 +1456,7 @@ Dostupná syntaxe:
       'convertCurrency' => 'Convert Currency',
       'printPdf' => 'Print to PDF',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'firstName' => 'Křestní jméno',
@@ -1487,7 +1509,7 @@ Dostupná syntaxe:
       'shippingAddressPostalCode' => 'PSČ (doručovací)',
       'shippingAddressMap' => 'Map (Shipping)',
     ),
-    'links' => 
+    'links' =>
     array (
       'assignedUser' => 'Přiřazený uživatel',
       'createdBy' => 'Vytvořil',
@@ -1512,7 +1534,7 @@ Dostupná syntaxe:
       'opportunity' => 'Případ',
       'contact' => 'Kontakt',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
       'Stream' => 'Stream',
       'Emails' => 'My Inbox',
@@ -1530,13 +1552,13 @@ Dostupná syntaxe:
       'SalesPipeline' => 'Prodejní pipeline',
       'Activities' => 'My Activities',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
       'assign' => '{entityType} {entity} Ti byla přiřazena.',
       'emailReceived' => 'Email přijat od {from}',
       'entityRemoved' => '{user} removed {entityType} {entity}',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
       'post' => '{user} poslal {entityType} {entity}',
       'attach' => '{user} připojený {entityType} {entity}',
@@ -1592,17 +1614,17 @@ Dostupná syntaxe:
       'emailSent' => '{by} poslal email související s {entityType} {entity}',
       'emailSentThis' => '{by} poslal email',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
       'postTargetSelfAndOthers' => '{user} posted to {target} and himself',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
       'postTargetSelfAndOthers' => '{user} posted to {target} and herself',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
         0 => 'Leden',
         1 => 'Únor',
@@ -1617,7 +1639,7 @@ Dostupná syntaxe:
         10 => 'Listopad',
         11 => 'Prosinec',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
         0 => 'Led',
         1 => 'Úno',
@@ -1632,7 +1654,7 @@ Dostupná syntaxe:
         10 => 'Lis',
         11 => 'Pro',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
         0 => 'Neděle',
         1 => 'Pondělí',
@@ -1642,7 +1664,7 @@ Dostupná syntaxe:
         5 => 'Pátek',
         6 => 'Sobota',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
         0 => 'Ned',
         1 => 'Pon',
@@ -1652,7 +1674,7 @@ Dostupná syntaxe:
         5 => 'Pát',
         6 => 'Sob',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
         0 => 'Ne',
         1 => 'Po',
@@ -1663,23 +1685,23 @@ Dostupná syntaxe:
         6 => 'So',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'd',
       'h' => 'h',
       'm' => 'm',
       's' => 's',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
         'Mr.' => 'Pan',
         'Mrs.' => 'Paní',
         'Ms.' => 'Slečna',
         'Dr.' => 'Doktor(ka)',
       ),
-      'language' => 
+      'language' =>
       array (
         'af_ZA' => 'Afrikaans',
         'az_AZ' => 'Azerbaijani',
@@ -1754,7 +1776,7 @@ Dostupná syntaxe:
         'zh_HK' => 'Traditional Chinese (Hong Kong)',
         'zh_TW' => 'Traditional Chinese (Taiwan)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
         'on' => 'Dne',
         'notOn' => 'Jiného dne než',
@@ -1779,7 +1801,7 @@ Dostupná syntaxe:
         'olderThanXDays' => 'Older Than X Days',
         'afterXDays' => 'After X Days',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
         'is' => 'Je',
         'isEmpty' => 'Je prázdné',
@@ -1791,7 +1813,7 @@ Dostupná syntaxe:
         'anyOf' => 'Any Of',
         'noneOf' => 'None Of',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
         'equals' => 'Rovná se',
         'like' => 'Is Like (%)',
@@ -1804,7 +1826,7 @@ Dostupná syntaxe:
         'isNotEmpty' => 'Is Not Empty',
         'notEquals' => 'Not Equals',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
         'equals' => 'Rovná se',
         'notEquals' => 'Nerovná se',
@@ -1816,7 +1838,7 @@ Dostupná syntaxe:
         'isEmpty' => 'Is Empty',
         'isNotEmpty' => 'Is Not Empty',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
         0 => 'Není',
         '0.5' => '30 sekund',
@@ -1825,7 +1847,7 @@ Dostupná syntaxe:
         5 => '5 minuty',
         10 => '10 minut',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
         'Mobile' => 'Mobilní',
         'Office' => 'Kancelář',
@@ -1833,18 +1855,18 @@ Dostupná syntaxe:
         'Home' => 'Domácí',
         'Other' => 'Další',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
         'Popup' => 'Vyskakovací',
         'Email' => 'Email',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
         'NOTICE' => 'You can find translation here: https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'font' =>
         array (
           'bold' => 'Tučné',
           'italic' => 'Kurzíva',
@@ -1855,7 +1877,7 @@ Dostupná syntaxe:
           'name' => 'Rodina písma',
           'size' => 'Velikost písma',
         ),
-        'image' => 
+        'image' =>
         array (
           'image' => 'Obrázek',
           'insert' => 'Vložit obrázek',
@@ -1870,7 +1892,7 @@ Dostupná syntaxe:
           'url' => 'URL obrázku',
           'remove' => 'Odebrat obrázek',
         ),
-        'link' => 
+        'link' =>
         array (
           'link' => 'Link',
           'insert' => 'Vložit link',
@@ -1880,7 +1902,7 @@ Dostupná syntaxe:
           'url' => 'Na jaké URL má link směřovat?',
           'openInNewWindow' => 'Otevřít v novém okně',
         ),
-        'video' => 
+        'video' =>
         array (
           'video' => 'Video',
           'videoLink' => 'Video link',
@@ -1888,15 +1910,15 @@ Dostupná syntaxe:
           'url' => 'Video URL?',
           'providers' => '(YouTube, Vimeo, Vine, Instagram, nebo DailyMotion)',
         ),
-        'table' => 
+        'table' =>
         array (
           'table' => 'Tabulka',
         ),
-        'hr' => 
+        'hr' =>
         array (
           'insert' => 'Vložit horizontální čáru',
         ),
-        'style' => 
+        'style' =>
         array (
           'style' => 'Styl',
           'normal' => 'Normální',
@@ -1909,18 +1931,18 @@ Dostupná syntaxe:
           'h5' => 'Nadpis 5',
           'h6' => 'Nadpis 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
           'unordered' => 'Neřazený seznam',
           'ordered' => 'Řazený seznam',
         ),
-        'options' => 
+        'options' =>
         array (
           'help' => 'Nápověda',
           'fullscreen' => 'Celá obrazovka',
           'codeview' => 'Zobrazit kód',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
           'paragraph' => 'Odstavec',
           'outdent' => 'Předsadit',
@@ -1930,7 +1952,7 @@ Dostupná syntaxe:
           'right' => 'Zarovnat vpravo',
           'justify' => 'Zarovnat do bloku',
         ),
-        'color' => 
+        'color' =>
         array (
           'recent' => 'Nedávná baarva',
           'more' => 'Víc barev',
@@ -1941,7 +1963,7 @@ Dostupná syntaxe:
           'reset' => 'Resetovat',
           'resetToDefault' => 'Resetovat na výchozí',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
           'shortcuts' => 'Klávesové zkratky',
           'close' => 'Zavřít',
@@ -1950,7 +1972,7 @@ Dostupná syntaxe:
           'paragraphFormatting' => 'Formát odstavce',
           'documentStyle' => 'Styl dokumentu',
         ),
-        'history' => 
+        'history' =>
         array (
           'undo' => 'Zpět',
           'redo' => 'Znovu',
@@ -1958,12 +1980,12 @@ Dostupná syntaxe:
         'UPOZORNĚNÍ' => 'Překlady lze najít zde: https://github.com/HackerWins/summernote/tree/master/lang',
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
       'list' => 'List',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
       'Espo' => 'Classic Espo',
       'EspoRtl' => 'RTL Espo',
@@ -1976,9 +1998,9 @@ Dostupná syntaxe:
       'HazyblueVertical' => 'Vertical Hazyblue',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Revert Import' => 'Reverzní import',
       'Return to Import' => 'Návrat do importu',
@@ -2034,7 +2056,7 @@ Dostupná syntaxe:
       'New Import' => 'New Import',
       'Import Results' => 'Import Results',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'utf8' => 'Mělo by být v UTF-8 kódování',
       'duplicatesRemoved' => 'Duplicity odstraněny',
@@ -2046,7 +2068,7 @@ Dostupná syntaxe:
       'confirmRemoveImportLog' => 'This will remove the import log. All imported records will be kept. You wan\'t be able to revert import results. Are you sure you?',
       'removeImportLog' => 'This will remove the import log. All imported records will be kept. Use it if you are sure that import is fine.',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'file' => 'Soubor',
       'entityType' => 'Typ entity',
@@ -2055,9 +2077,9 @@ Dostupná syntaxe:
       'updated' => 'Aktualizované záznamy',
       'status' => 'Status',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Failed' => 'Failed',
         'In Process' => 'In Process',
@@ -2065,9 +2087,9 @@ Dostupná syntaxe:
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'emailAddress' => 'Email Address',
@@ -2106,7 +2128,7 @@ Dostupná syntaxe:
       'smtpIsShared' => 'SMTP Is Shared',
       'smtpIsForMassEmail' => 'SMTP Is for Mass Email',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reply' => 'Upozornit odesílatele emailů, že jejich emaily byly přijaty.
 
@@ -2124,20 +2146,20 @@ Dostupná syntaxe:
       'smtpIsForMassEmail' => 'If checked then SMTP will be available for Mass Email.',
       'storeSentEmails' => 'Sent emails will be stored on the IMAP server.',
     ),
-    'links' => 
+    'links' =>
     array (
       'filters' => 'Filters',
       'emails' => 'Emails',
       'assignToUser' => 'Assign to User',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktivní',
         'Inactive' => 'Neaktivní',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
         '' => 'None',
         'Direct-Assignment' => 'Přímé přiřazení',
@@ -2145,21 +2167,21 @@ Dostupná syntaxe:
         'Least-Busy' => 'Poslední zaneprázdněný',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create InboundEmail' => 'Vytvořit emailový účet',
       'IMAP' => 'IMAP',
       'Actions' => 'Akce',
       'Main' => 'Hlavní',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'couldNotConnectToImap' => 'Nelze se připojit k IMAP serveru',
     ),
   ),
-  'Integration' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'enabled' => 'Povoleno',
       'clientId' => 'Client ID',
@@ -2167,24 +2189,24 @@ Dostupná syntaxe:
       'redirectUri' => 'Přesměrování URI',
       'apiKey' => 'API Key',
     ),
-    'titles' => 
+    'titles' =>
     array (
       'GoogleMaps' => 'Google Maps',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectIntegration' => 'Vybrat integraci z menu.',
       'noIntegrations' => 'Žádné integrace nejsou dostupné.',
     ),
-    'help' => 
+    'help' =>
     array (
       'Google' => '<p><b>Obtain OAuth 2.0 credentials from the Google Developers Console.</b></p><p>Visit <a href="https://console.developers.google.com/project">Google Developers Console</a> to obtain OAuth 2.0 credentials such as a Client ID and Client Secret that are known to both Google and EspoCRM application.</p>',
       'GoogleMaps' => '<p>Obtain API key <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">here</a>.</p>',
     ),
   ),
-  'Job' => 
+  'Job' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Status',
       'executeTime' => 'Execute At',
@@ -2197,9 +2219,9 @@ Dostupná syntaxe:
       'scheduledJobJob' => 'Scheduled Job Name',
       'data' => 'Data',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Pending',
         'Success' => 'Success',
@@ -2208,9 +2230,9 @@ Dostupná syntaxe:
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'width' => 'Šířka (%)',
       'link' => 'Link',
@@ -2222,14 +2244,14 @@ Dostupná syntaxe:
       'isLarge' => 'Large font size',
       'dynamicLogicVisible' => 'Conditions making panel visible',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
         'left' => 'Vlevo',
         'right' => 'Vpravo',
       ),
-      'style' => 
+      'style' =>
       array (
         'default' => 'Default',
         'success' => 'Success',
@@ -2239,15 +2261,15 @@ Dostupná syntaxe:
         'primary' => 'Primary',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'New panel' => 'New panel',
       'Layout' => 'Layout',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'campaign' => 'Campaign',
@@ -2267,7 +2289,7 @@ Dostupná syntaxe:
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Payload',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Target List',
       'campaign' => 'Campaign',
@@ -2275,27 +2297,27 @@ Dostupná syntaxe:
       'targetTeam' => 'Target Team',
       'logRecords' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Create Entry Point',
       'Generate New API Key' => 'Generate New API Key',
       'Request' => 'Request',
       'Confirm Opt-In' => 'Confirm Opt-In',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Create new API Key',
       'optInConfirmationExpired' => 'Opt-in confirmation link is expired.',
       'optInIsConfirmed' => 'Opt-in is confirmed.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Markdown is supported.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Number',
       'data' => 'Data',
@@ -2304,15 +2326,15 @@ Dostupná syntaxe:
       'createdAt' => 'Entered At',
       'isCreated' => 'Is Lead Created',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => 'Lead Capture',
       'target' => 'Target',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'post' => 'Post',
       'attachments' => 'Přílohy',
@@ -2328,15 +2350,15 @@ Dostupná syntaxe:
       'data' => 'Data',
       'number' => 'Number',
     ),
-    'filters' => 
+    'filters' =>
     array (
       'all' => 'All',
       'posts' => 'Posts',
       'updates' => 'Updates',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
         'self' => 'to myself',
         'users' => 'to particular user(s)',
@@ -2344,24 +2366,24 @@ Dostupná syntaxe:
         'all' => 'to all internal users',
         'portals' => 'to portal users',
       ),
-      'type' => 
+      'type' =>
       array (
         'Post' => 'Post',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
       'writeMessage' => 'Write your message here',
     ),
-    'links' => 
+    'links' =>
     array (
       'superParent' => 'Super Parent',
       'related' => 'Related',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'logo' => 'Logo',
@@ -2383,18 +2405,18 @@ Dostupná syntaxe:
       'customUrl' => 'Custom URL',
       'customId' => 'Custom ID',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Users',
       'portalRoles' => 'Roles',
       'notes' => 'Notes',
       'articles' => 'Knowledge Base Articles',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portalRoles' => 'Specified Portal Roles will be applied to all users of this portal.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Portal' => 'Create Portal',
       'User Interface' => 'User Interface',
@@ -2402,21 +2424,21 @@ Dostupná syntaxe:
       'Settings' => 'Settings',
     ),
   ),
-  'PortalRole' => 
+  'PortalRole' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'exportPermission' => 'Export Permission',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Users',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'exportPermission' => 'Defines whether portal users have an ability to export records.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Access',
       'Create PortalRole' => 'Create Portal Role',
@@ -2424,16 +2446,16 @@ Dostupná syntaxe:
       'Field Level' => 'Field Level',
     ),
   ),
-  'PortalUser' => 
+  'PortalUser' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create PortalUser' => 'Create Portal User',
     ),
   ),
-  'Preferences' => 
+  'Preferences' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'dateFormat' => 'Formát data',
       'timeFormat' => 'Formát času',
@@ -2474,18 +2496,18 @@ Dostupná syntaxe:
       'scopeColorsDisabled' => 'Disable scope colors',
       'tabColorsDisabled' => 'Disable tab colors',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Neděle',
         1 => 'Pondělí',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Notifications' => 'Upozornění',
       'User Interface' => 'User Interface',
@@ -2494,7 +2516,7 @@ Dostupná syntaxe:
       'Locale' => 'Locale',
       'Reset Dashboard to Default' => 'Reset Dashboard to Default',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'autoFollowEntityTypeList' => 'Uživatel bude automaticky sledovat všechny nové záznamy vybraných entit, uvidí informace ve streamu a bude dostávat upozornění.',
       'doNotFillAssignedUserIfNotRequired' => 'When create record assigned user won\'t be filled with own user unless the field is required.',
@@ -2502,9 +2524,9 @@ Dostupná syntaxe:
       'followCreatedEntityTypeList' => 'When create new records of selected entity types, they will be followed automatically even if assigned to another user.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'roles' => 'Role',
@@ -2515,12 +2537,12 @@ Dostupná syntaxe:
       'exportPermission' => 'Export Permission',
       'dataPrivacyPermission' => 'Data Privacy Permission',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Uživatelé',
       'teams' => 'Týmy',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'assignmentPermission' => 'Povolit omezení přiřazení záznamů ostatním uživatelům.n
 vše - bez omezení
@@ -2540,22 +2562,22 @@ ne - není viditelné',
       'exportPermission' => 'Defines whether users have an ability to export records.',
       'dataPrivacyPermission' => 'Allows to view and erase personal data.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Access' => 'Přístup',
       'Create Role' => 'Vytvořit roli',
       'Scope Level' => 'Scope Level',
       'Field Level' => 'Field Level',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
         'not-set' => 'není nastaveno',
         'enabled' => 'povoleno',
         'disabled' => 'zakázáno',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
         'all' => 'vše',
         'team' => 'tým',
@@ -2567,7 +2589,7 @@ ne - není viditelné',
         'not-set' => 'není nastaveno',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
       'read' => 'Číst',
       'edit' => 'Upravit',
@@ -2575,31 +2597,31 @@ ne - není viditelné',
       'stream' => 'Stream',
       'create' => 'Create',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'changesAfterClearCache' => 'Všechny změny v nastavení ACL budou aplikovány po vyčištění cache.',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'status' => 'Status',
       'job' => 'Činnost',
       'scheduling' => 'Plánování (crontab notace)',
     ),
-    'links' => 
+    'links' =>
     array (
       'log' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create ScheduledJob' => 'Vytvořit naplánovanou činnost',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
         'Cleanup' => 'Vyčistit',
         'CheckInboundEmails' => 'Zkontrolovat příchozí emaily',
@@ -2611,20 +2633,20 @@ ne - není viditelné',
         'ProcessMassEmail' => 'Send Mass Emails',
         'ControlKnowledgeBaseArticleStatus' => 'Control Knowledge Base Article Status',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
         'linux' => 'Poznámka: přidejte tento řádek do crontab souboru pro spuštění ESPO naplánovaných činností:',
         'mac' => 'Poznámka: přidejte tento řádek do crontab souboru pro spuštění ESPO naplánovaných činností:',
         'windows' => 'Poznánmka: Vytvořte batch soubor s následujícími příkazy pro spuštění ESPO naplánovaných činností pomocí Windows Scheduled Tasks:',
         'default' => 'Poznámka: přidejte tento příkaz do Cron Job (Scheduled Task):',
       ),
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Active',
         'Inactive' => 'Inactive',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'scheduling' => 'Crontab notation. Defines frequency of job runs.
 
@@ -2637,18 +2659,18 @@ ne - není viditelné',
 0 0 1 * * - on the first day of the month',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'status' => 'Status',
       'executionTime' => 'Čas vykonání',
       'target' => 'Target',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'useCache' => 'Použít cache',
       'dateFormat' => 'Formát data',
@@ -2757,26 +2779,26 @@ ne - není viditelné',
       'disableExport' => 'Zakázat export (povolenou pouze adminovi)',
       'disableAvatars' => 'Zakázat avatary',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
         0 => 'Neděle',
         1 => 'Pondělí',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
         1 => '10 USD',
         2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
         'Post' => 'Posts',
         'Status' => 'Status updates',
         'EmailReceived' => 'Received emails',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'recordsPerPage' => 'Number of records initially displayed in list views.',
       'recordsPerPageSmall' => 'Počet záznamů v panelu vztahů.',
@@ -2791,7 +2813,7 @@ ne - není viditelné',
       'ldapUsername' => 'The full system user DN which allows to search other users. E.g. "CN=LDAP System User,OU=users,OU=espocrm, DC=test,DC=lan".',
       'ldapPassword' => 'The password to access to LDAP server.',
       'ldapAuth' => 'Access credentials for the LDAP server.',
-      'ldapUserNameAttribute' => 'The attribute to identify the user. 
+      'ldapUserNameAttribute' => 'The attribute to identify the user.
 E.g. "userPrincipalName" or "sAMAccountName" for Active Directory, "uid" for OpenLDAP.',
       'ldapUserObjectClass' => 'ObjectClass attribute for searching users. E.g. "person" for AD, "inetOrgPerson" for OpenLDAP.',
       'ldapAccountCanonicalForm' => 'The type of your account canonical form. There are 4 options:<br>- \'Dn\' - the form in the format \'CN=tester,OU=espocrm,DC=test, DC=lan\'.<br>- \'Username\' - the form \'tester\'.<br>- \'Backslash\' - the form \'COMPANY\\tester\'.<br>- \'Principal\' - the form \'tester@company.com\'.',
@@ -2825,7 +2847,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'emailAddressIsOptedOutByDefault' => 'When creating new record email addess will be marked as opted-out.',
       'cleanupDeletedRecords' => 'Removed records will be deleted from database after a while.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'System' => 'Systém',
       'Locale' => 'Locale',
@@ -2841,39 +2863,39 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'Activities' => 'Activities',
       'Admin Notifications' => 'Admin Notifications',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'ldapTestConnection' => 'The connection successfully established.',
     ),
   ),
-  'Team' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'roles' => 'Role',
       'positionList' => 'Seznam pozic',
     ),
-    'links' => 
+    'links' =>
     array (
       'users' => 'Uživatelé',
       'notes' => 'Notes',
       'roles' => 'Roles',
       'inboundEmails' => 'Group Email Accounts',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'roles' => 'Access Roles. Users of this team obtain access control level from selected roles.',
       'positionList' => 'Available positions in this team. E.g. Salesperson, Manager.',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Team' => 'Vytvořit tým',
     ),
   ),
-  'Template' => 
+  'Template' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'body' => 'Body',
@@ -2891,26 +2913,26 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'pageFormat' => 'Paper Format',
       'fontFace' => 'Font',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Template' => 'Create Template',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
         'Portrait' => 'Portrait',
         'Landscape' => 'Landscape',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
         'today' => 'Today (date)',
         'now' => 'Now (date-time)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefurat',
@@ -2942,15 +2964,15 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
         'times' => 'Times',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'footer' => 'Use {pageNumber} to print page number.',
       'variables' => 'Copy-paste needed placeholder to Header, Body or Footer.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Jméno',
       'userName' => 'Uživatelské jméno',
@@ -2986,7 +3008,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'acceptanceStatusMeetings' => 'Acceptance Status (Meetings)',
       'acceptanceStatusCalls' => 'Acceptance Status (Calls)',
     ),
-    'links' => 
+    'links' =>
     array (
       'teams' => 'Týmy',
       'roles' => 'Role',
@@ -2999,7 +3021,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'tasks' => 'Tasks',
       'targetLists' => 'Cílové seznamy',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create User' => 'Vytvořit uživatele',
       'Generate' => 'Generovat',
@@ -3016,7 +3038,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'Create Portal User' => 'Create Portal User',
       'Proceed w/o Contact' => 'Proceed w/o Contact',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'defaultTeam' => 'All records created by this user will be related to this team by default.',
       'userName' => 'Letters a-z, numbers 0-9 and underscores are allowed.',
@@ -3027,7 +3049,7 @@ Disabled: Access to scopes will be allowed if it\'s not specified in roles.',
       'portalRoles' => 'Additional portal roles. Use it to extend access control level exclusively for this user.',
       'portals' => 'Portals which this user has access to.',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'passwordWillBeSent' => 'Heslo bude posláno na emailovou adresu uživatele.',
       'accountInfoEmailSubject' => 'EspoCRM Informace k uživatelskému přístupu',
@@ -3050,9 +3072,9 @@ Heslo: {password}
       'setupSmtpBefore' => 'You need to setup <a href="{url}">SMTP settings</a> to make the system be able to send password in email.',
       'userNameExists' => 'User Name already exists',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
         '' => 'Not Set',
         'Male' => 'Male',
@@ -3060,19 +3082,19 @@ Heslo: {password}
         'Neutral' => 'Neutral',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
       'onlyMyTeam' => 'Pouze můj tým',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktivní',
       'activePortal' => 'Portal Active',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'emailAddress' => 'Email',
@@ -3092,7 +3114,7 @@ Heslo: {password}
       'originalLead' => 'Original Lead',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontakty',
       'opportunities' => 'Případy',
@@ -3109,16 +3131,16 @@ Heslo: {password}
       'originalLead' => 'Original Lead',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Customer' => 'Zákazník',
         'Investor' => 'Investor',
         'Partner' => 'Partner',
         'Reseller' => 'Prodejce',
       ),
-      'industry' => 
+      'industry' =>
       array (
         'Aerospace' => 'Aerospace',
         'Agriculture' => 'Zeměděltví',
@@ -3173,22 +3195,22 @@ Heslo: {password}
         'Water' => 'Water',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Account' => 'Vytvořit organizaci',
       'Copy Billing' => 'Zkopírovat fakturační údaje',
       'Set Primary' => 'Set Primary',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'customers' => 'Zákazníci',
       'partners' => 'Partneři',
       'recentlyCreated' => 'Recently Created',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
       'month' => 'Měsíc',
       'week' => 'Týden',
@@ -3197,7 +3219,7 @@ Heslo: {password}
       'agendaDay' => 'Den',
       'timeline' => 'Timeline',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Today' => 'Dnes',
       'Create' => 'Vytvořit',
@@ -3211,9 +3233,9 @@ Heslo: {password}
       'Create Shared View' => 'Create Shared View',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'parent' => 'Rodič',
@@ -3230,23 +3252,23 @@ Heslo: {password}
       'account' => 'Organizace',
       'acceptanceStatus' => 'Acceptance Status',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Plánovaný',
         'Held' => 'Uskutečněný',
         'Not Held' => 'Neuskutečněný',
       ),
-      'direction' => 
+      'direction' =>
       array (
         'Outbound' => 'Odchozí',
         'Inbound' => 'Příchozí',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => 'None',
         'Accepted' => 'Přijatý',
@@ -3254,28 +3276,28 @@ Heslo: {password}
         'Tentative' => 'Předběžný',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Nastavit jako uskutečněný',
       'setNotHeld' => 'Nastavit jako neuskutečněný',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Call' => 'Vytvořit volání',
       'Set Held' => 'Nastavit jako uskutečněný',
       'Set Not Held' => 'Nastavit jako neuskutečněný',
       'Send Invitations' => 'Poslat pozvánky',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Plánovaný',
       'held' => 'Uskutečněný',
       'todays' => 'Dnešní',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'description' => 'Popis',
@@ -3304,7 +3326,7 @@ Heslo: {password}
       'usersTemplate' => 'Users Template',
       'mailMergeOnlyWithAddress' => 'Skip records w/o filled address',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Cílové seznamy',
       'excludingTargetLists' => 'Excluding Target Lists',
@@ -3320,9 +3342,9 @@ Heslo: {password}
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'Email',
         'Web' => 'Web',
@@ -3331,7 +3353,7 @@ Heslo: {password}
         'Newsletter' => 'Newsletter',
         'Mail' => 'Email',
       ),
-      'status' => 
+      'status' =>
       array (
         'Planning' => 'Plánované',
         'Active' => 'Aktivní',
@@ -3339,7 +3361,7 @@ Heslo: {password}
         'Complete' => 'Kompletní',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Campaign' => 'Vytvořit kampaň',
       'Target Lists' => 'Cílové seznamy',
@@ -3355,24 +3377,24 @@ Heslo: {password}
       'Mail Merge' => 'Mail Merge',
       'Generate Mail Merge PDF' => 'Generate Mail Merge PDF',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktivní',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'unsubscribed' => 'You have been unsubscribed from our mailing list.',
       'subscribedAgain' => 'You are subscribed again.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'targetLists' => 'Targets that should receive messages.',
       'excludingTargetLists' => 'Targets that should not receive messages.',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'action' => 'Akce',
       'actionDate' => 'Datum',
@@ -3386,16 +3408,16 @@ Heslo: {password}
       'stringAdditionalData' => 'String Additional Data',
       'isTest' => 'Is Test',
     ),
-    'links' => 
+    'links' =>
     array (
       'queueItem' => 'Queue Item',
       'parent' => 'Parent',
       'object' => 'Object',
       'campaign' => 'Campaign',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
         'Sent' => 'Poslané',
         'Opened' => 'Otevřené',
@@ -3406,11 +3428,11 @@ Heslo: {password}
         'Opted In' => 'Opted In',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'All' => 'Vše',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'sent' => 'Sent',
       'opened' => 'Opened',
@@ -3421,26 +3443,26 @@ Heslo: {password}
       'leadCreated' => 'Lead Created',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'url' => 'URL',
       'urlToUse' => 'Code to insert instead of URL',
       'campaign' => 'Campaign',
     ),
-    'links' => 
+    'links' =>
     array (
       'campaign' => 'Campaign',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create CampaignTrackingUrl' => 'Create Tracking URL',
     ),
   ),
-  'Case' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'number' => 'Číslo',
@@ -3455,7 +3477,7 @@ Heslo: {password}
       'lead' => 'Lead',
       'attachments' => 'Attachments',
     ),
-    'links' => 
+    'links' =>
     array (
       'inboundEmail' => 'Group Email Account',
       'account' => 'Account',
@@ -3469,9 +3491,9 @@ Heslo: {password}
       'lead' => 'Lead',
       'attachments' => 'Attachments',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Nový',
         'Assigned' => 'Přiřazený',
@@ -3480,21 +3502,21 @@ Heslo: {password}
         'Rejected' => 'Odmítnutý',
         'Duplicate' => 'Duplikovaný',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Malá',
         'Normal' => 'Normální',
         'High' => 'Vysoká',
         'Urgent' => 'Urgentní',
       ),
-      'type' => 
+      'type' =>
       array (
         'Question' => 'Otázka',
         'Incident' => 'Incident',
         'Problem' => 'Problém',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Case' => 'Vytvořit událost',
       'Close' => 'Close',
@@ -3502,15 +3524,15 @@ Heslo: {password}
       'Closed' => 'Closed',
       'Rejected' => 'Rejected',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Otevřený',
       'closed' => 'Zavřený',
     ),
   ),
-  'Contact' => 
+  'Contact' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'emailAddress' => 'Email',
@@ -3537,7 +3559,7 @@ Heslo: {password}
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
       'opportunities' => 'Případy',
       'cases' => 'Události',
@@ -3554,13 +3576,13 @@ Heslo: {password}
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Contact' => 'Vytvořit kontakt',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
         '' => '--',
         'Decision Maker' => 'Rozhoduje',
@@ -3568,25 +3590,25 @@ Heslo: {password}
         'Influencer' => 'Má vliv',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'portalUsers' => 'Portal Users',
       'notPortalUsers' => 'Not Portal Users',
       'accountActive' => 'Active',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Document' => 'Vytvořit dokument',
       'Details' => 'Detaily',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'status' => 'Status',
@@ -3600,7 +3622,7 @@ Heslo: {password}
       'formularios' => 'Formularios',
       'source' => 'Zdroj',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Organizace',
       'opportunities' => 'Případy',
@@ -3609,16 +3631,16 @@ Heslo: {password}
       'contacts' => 'Contacts',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Active' => 'Aktivní',
         'Draft' => 'Draft',
         'Expired' => 'Expirovaný',
         'Canceled' => 'Zrušený',
       ),
-      'type' => 
+      'type' =>
       array (
         '' => '-',
         'Contract' => 'Kontrakt',
@@ -3627,29 +3649,29 @@ Heslo: {password}
         'License Agreement' => 'Licenční smlouva',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktivní',
       'draft' => 'Draft',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create DocumentFolder' => 'Vytvořit složku',
       'Manage Categories' => 'Spravovat složky',
       'Documents' => 'Documents',
       'documents' => 'Dokumenty',
     ),
-    'links' => 
+    'links' =>
     array (
       'documents' => 'Dokumenty',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -3660,14 +3682,14 @@ Heslo: {password}
       'massEmail' => 'Mass Email',
       'isTest' => 'Is Test',
     ),
-    'links' => 
+    'links' =>
     array (
       'target' => 'Target',
       'massEmail' => 'Mass Email',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Pending' => 'Pending',
         'Sent' => 'Sent',
@@ -3675,16 +3697,16 @@ Heslo: {password}
         'Sending' => 'Sending',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'pending' => 'Pending',
       'sent' => 'Sent',
       'failed' => 'Failed',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseArticle' => 'Create Article',
       'Any' => 'Any',
@@ -3694,7 +3716,7 @@ Heslo: {password}
       'Move to Top' => 'Move to Top',
       'Move to Bottom' => 'Move to Bottom',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -3708,59 +3730,59 @@ Heslo: {password}
       'language' => 'Language',
       'portals' => 'Portals',
     ),
-    'links' => 
+    'links' =>
     array (
       'cases' => 'Cases',
       'opportunities' => 'Opportunities',
       'categories' => 'Categories',
       'portals' => 'Portals',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'In Review' => 'In Review',
         'Draft' => 'Draft',
         'Archived' => 'Archived',
         'Published' => 'Published',
       ),
-      'type' => 
+      'type' =>
       array (
         'Article' => 'Article',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'portals' => 'Article will be available only in specified portals.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'published' => 'Published',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create KnowledgeBaseCategory' => 'Create Category',
       'Manage Categories' => 'Manage Categories',
       'Articles' => 'Articles',
     ),
-    'links' => 
+    'links' =>
     array (
       'articles' => 'Articles',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Converted To' => 'Konvertováno do',
       'Create Lead' => 'Vytvořit stopu',
       'Convert' => 'Konvertovat',
       'convert' => 'konvertovat',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'emailAddress' => 'Email',
@@ -3787,7 +3809,7 @@ Heslo: {password}
       'acceptanceStatusMeetings' => 'Acceptance Status (Meetings)',
       'acceptanceStatusCalls' => 'Acceptance Status (Calls)',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Cílové seznamy',
       'campaignLogRecords' => 'Log kampaně',
@@ -3798,9 +3820,9 @@ Heslo: {password}
       'cases' => 'Cases',
       'documents' => 'Documents',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'New' => 'Nový',
         'Assigned' => 'Přiřazený',
@@ -3809,7 +3831,7 @@ Heslo: {password}
         'Recycled' => 'Recyklovaný',
         'Dead' => 'Mrtvý',
       ),
-      'source' => 
+      'source' =>
       array (
         '' => '-',
         'Call' => 'Volání',
@@ -3822,16 +3844,16 @@ Heslo: {password}
         'Other' => 'Ostatní',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'active' => 'Aktivní',
       'actual' => 'Actual',
       'converted' => 'Konvertovaný',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -3849,7 +3871,7 @@ Heslo: {password}
       'optOutEntirely' => 'Opt-Out Entirely',
       'smtpAccount' => 'SMTP Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetLists' => 'Target Lists',
       'excludingTargetLists' => 'Excluding Target Lists',
@@ -3858,9 +3880,9 @@ Heslo: {password}
       'emailTemplate' => 'Email Template',
       'inboundEmail' => 'Email Account',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Draft' => 'Draft',
         'Pending' => 'Pending',
@@ -3870,7 +3892,7 @@ Heslo: {password}
         'Failed' => 'Failed',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create MassEmail' => 'Create Mass Email',
       'Send Test' => 'Send Test',
@@ -3878,27 +3900,27 @@ Heslo: {password}
       'system' => 'system',
       'group' => 'group',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'selectAtLeastOneTarget' => 'Select at least one target.',
       'testSent' => 'Test email(s) supposed to be sent',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optOutEntirely' => 'Email addresses of recipients that unsubscribed will be marked as opted out and they will not receive any mass emails anymore.',
       'targetLists' => 'Targets that should receive messages.',
       'excludingTargetLists' => 'Targets that should not receive messages.',
       'storeSentEmails' => 'Emails will be stored in CRM.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Actual',
       'complete' => 'Complete',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'parent' => 'Rodič',
@@ -3915,19 +3937,19 @@ Heslo: {password}
       'acceptanceStatus' => 'Acceptance Status',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Planned' => 'Planovaný',
         'Held' => 'Uskutečněný',
         'Not Held' => 'Neuskutečněný',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
         'None' => '-',
         'Accepted' => 'Přijatý',
@@ -3935,12 +3957,12 @@ Heslo: {password}
         'Tentative' => 'Předběžný',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
       'setHeld' => 'Nastavit jako uskutečněný',
       'setNotHeld' => 'Nastavit jako neuskutečněný',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Meeting' => 'Vytvořit schůzku',
       'Set Held' => 'Nastavit jako uskutečněný',
@@ -3949,20 +3971,20 @@ Heslo: {password}
       'on time' => 'na čas',
       'before' => 'před',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'planned' => 'Plánovaný',
       'held' => 'Uskutečněný',
       'todays' => 'Dnešní',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'nothingHasBeenSent' => 'Nothing were sent',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'account' => 'Organizace',
@@ -3982,16 +4004,16 @@ Heslo: {password}
       'contactRole' => 'Contact Role',
       'lastStage' => 'Last Stage',
     ),
-    'links' => 
+    'links' =>
     array (
       'contacts' => 'Kontakty',
       'documents' => 'Dokumenty',
       'campaign' => 'Kampaň',
       'originalLead' => 'Original Lead',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
         'Prospecting' => 'Prospecting',
         'Qualification' => 'Qualification',
@@ -4007,41 +4029,41 @@ Heslo: {password}
         'Closed Lost' => 'Closed Lost',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Opportunity' => 'Vytvořit případ',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'open' => 'Otevřený',
       'won' => 'Vyhraný',
       'lost' => 'Lost',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4052,9 +4074,9 @@ Heslo: {password}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'description' => 'Popis',
@@ -4068,7 +4090,7 @@ Heslo: {password}
       'targetStatus' => 'Target Status',
       'isOptedOut' => 'Is Opted Out',
     ),
-    'links' => 
+    'links' =>
     array (
       'accounts' => 'Organizace',
       'contacts' => 'Kontakty',
@@ -4076,9 +4098,9 @@ Heslo: {password}
       'campaigns' => 'Kampaně',
       'massEmails' => 'Mass Emails',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
         'Email' => 'Email',
         'Web' => 'Web',
@@ -4086,13 +4108,13 @@ Heslo: {password}
         'Radio' => 'Radio',
         'Newsletter' => 'Newsletter',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Opted Out',
         'Listed' => 'Listed',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create TargetList' => 'Vytvořit cílový seznam',
       'Opted Out' => 'Odhlášené',
@@ -4100,9 +4122,9 @@ Heslo: {password}
       'Opt-Out' => 'Opt-Out',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Název',
       'parent' => 'Rodič',
@@ -4120,15 +4142,15 @@ Heslo: {password}
       'reminders' => 'Reminders',
       'contact' => 'Contact',
     ),
-    'links' => 
+    'links' =>
     array (
       'attachments' => 'Přílohy',
       'account' => 'Account',
       'contact' => 'Contact',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
         'Not Started' => 'Nezahájeno',
         'Started' => 'Zahájeno',
@@ -4136,7 +4158,7 @@ Heslo: {password}
         'Canceled' => 'Zrušeno',
         'Deferred' => 'Odloženo',
       ),
-      'priority' => 
+      'priority' =>
       array (
         'Low' => 'Malá',
         'Normal' => 'Normální',
@@ -4144,12 +4166,12 @@ Heslo: {password}
         'Urgent' => 'Urgentní',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Task' => 'Vytvořit úkol',
       'Complete' => 'Dokončit',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'actual' => 'Aktuální',
       'completed' => 'Dokončené',
@@ -4158,9 +4180,158 @@ Heslo: {password}
       'overdue' => 'Zpožděné',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
+    array (
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Vytvořit Beneficios',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'subcategorias7' => 'Subcategorias7',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Vytvořit Categoria',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Vytvořit Ciudad',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Vytvořit Comuna',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Vytvořit Doctos_beneficio',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Vytvořit Empresa',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
     array (
       'address' => 'Address',
       'meetings1' => 'Meetings1',
@@ -4179,7 +4350,7 @@ Heslo: {password}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
       'meetings' => 'Meetings',
       'calls' => 'Calls',
@@ -4192,13 +4363,13 @@ Heslo: {password}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Formularios' => 'Vytvořit Formulario',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4207,15 +4378,15 @@ Heslo: {password}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4224,7 +4395,7 @@ Heslo: {password}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4238,51 +4409,126 @@ Heslo: {password}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'Proveedor' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'motivoReclamoId' => 'MotivoReclamoId',
-      'motivoReclamoDescripcion' => 'Descripción',
-      'reclamosMotivoReclamo' => 'Reclamos',
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Meetings',
-      'calls' => 'Calls',
-      'tasks' => 'Tasks',
-      'reclamosMotivoReclamo' => 'Reclamos',
+      'beneficios' => 'Beneficios',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MotivoReclamo' => 'Vytvořit MotivoReclamo',
-    ),
-    'tooltips' => 
-    array (
-      'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
+      'Create Proveedor' => 'Vytvořit Proveedor',
     ),
   ),
-  'Reclamo' => 
+  'Rol' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'reclamoId' => 'ReclamoId',
-      'reclamoTitulo' => 'Título',
-      'reclamoObservacion' => 'Observación',
-      'motivoReclamo' => 'MotivoReclamo',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
     ),
-    'links' => 
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Rol' => 'Vytvořit Rol',
+    ),
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Address',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Meetings',
+      'calls' => 'Calls',
+      'tasks' => 'Tasks',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria3',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Vytvořit Solicitudes',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria4',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoria',
+    ),
+    'links' =>
     array (
       'meetings' => 'Meetings',
       'calls' => 'Calls',
       'tasks' => 'Tasks',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create Reclamo' => 'Vytvořit Reclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reclamoTitulo' => 'Breve descripción del reclamo',
       'reclamoObservacion' => 'Describa su situación',

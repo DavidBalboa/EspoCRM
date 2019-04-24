@@ -2,11 +2,33 @@
     "scopeNames": {
         "Formularios": "Formulario",
         "Reclamo": "Reclamo",
-        "MotivoReclamo": "MotivoReclamo"
+        "MotivoReclamo": "MotivoReclamo",
+        "Solicitudes": "Solicitudes",
+        "Categoria": "Categoria",
+        "Subcategoria": "Subcategoria",
+        "Empresa": "Empresa",
+        "Trabajador": "Trabajador",
+        "Beneficios": "Beneficios",
+        "DoctosBeneficio": "Doctos_beneficio",
+        "Ciudad": "Ciudad",
+        "Comuna": "Comuna",
+        "Proveedor": "Proveedor",
+        "Rol": "Rol"
     },
     "scopeNamesPlural": {
-        "Formularios": "Formularios",
-        "Reclamo": "Reclamos",
-        "MotivoReclamo": "MotivoReclamos"
+      "Formularios": "Formularios",
+      "Reclamo": "Reclamos",
+      "MotivoReclamo": "MotivoReclamos",
+        "Solicitudes": "Solicitudes",
+        "Categoria": "Categorias",
+        "Subcategoria": "Subcategorias",
+        "Empresa": "Empresas",
+        "Trabajador": "Trabajadores",
+        "Beneficios": "Beneficios",
+        "DoctosBeneficio": "Doctos_beneficios",
+        "Ciudad": "Ciudads",
+        "Comuna": "Comunas",
+        "Proveedor": "Proveedors",
+        "Rol": "Rols"
     }
 }

@@ -1,292 +1,293 @@
 <?php
 return array (
-  'ActionHistoryRecord' => 
+  'ActionHistoryRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'Korisnik',
-      'action' => 'Akcija',
-      'createdAt' => 'Datum',
-      'target' => 'Meta',
-      'targetType' => 'Vrsta mete',
-      'authToken' => 'Auth token',
-      'ipAddress' => 'IP adresa',
+      'user' => 'Usuario',
+      'action' => 'Acción',
+      'createdAt' => 'Fecha',
+      'target' => 'Entidad objetivo',
+      'targetType' => 'Tipo de entidad',
+      'authToken' => 'Token de autenticación',
+      'ipAddress' => 'Dirección IP',
       'authLogRecord' => 'Auth Log Record',
     ),
-    'links' => 
+    'links' =>
     array (
-      'authToken' => 'Auth token',
+      'authToken' => 'Token de autenticación',
       'authLogRecord' => 'Auth Log Record',
-      'user' => 'Korisnik',
-      'target' => 'Meta',
+      'user' => 'Usuario',
+      'target' => 'Objetivo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'onlyMy' => 'Samo moje',
+      'onlyMy' => 'Solo míos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'read' => 'Pročitaj',
-        'update' => 'Ažuriraj',
-        'delete' => 'Obriši',
-        'create' => 'Napravi',
+        'read' => 'Leer',
+        'update' => 'Guardar',
+        'delete' => 'Eliminar',
+        'create' => 'Crear',
       ),
     ),
   ),
-  'Admin' => 
+  'Admin' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Enabled' => 'Uključeno',
-      'Disabled' => 'Isključeno',
-      'System' => 'Sistem',
-      'Users' => 'Korisnici',
-      'Email' => 'E-pošta',
-      'Data' => 'Podaci',
-      'Customization' => 'Prilagođavanje',
-      'Available Fields' => 'Dostupna polja',
-      'Layout' => 'Izgled',
-      'Entity Manager' => 'Entity Upravljač',
-      'Add Panel' => 'Dodaj panel',
-      'Add Field' => 'Dodaj polje',
-      'Settings' => 'Podešavanja',
-      'Scheduled Jobs' => 'Raspored radnji',
-      'Upgrade' => 'Nadogradi',
-      'Clear Cache' => 'Očisti cache',
-      'Rebuild' => 'Obnovi',
-      'Teams' => 'Timovi',
-      'Roles' => 'Role',
-      'Portal' => 'Portal',
-      'Portals' => 'Portali',
-      'Portal Roles' => 'Portal role',
-      'Portal Users' => 'Korisnici portala',
-      'Outbound Emails' => 'Odlazna e-pošta',
-      'Group Email Accounts' => 'Grupni računi  e-pošte',
-      'Personal Email Accounts' => 'Osobni računi e-pošte',
-      'Inbound Emails' => 'Dolazna e-pošta',
-      'Email Templates' => 'Nacrti za e-poštu',
-      'Import' => 'Import',
-      'Layout Manager' => 'Upravljač izgledom',
-      'User Interface' => 'Korisničko sučelje',
-      'Auth Tokens' => 'Pristupni tokeni',
+      'Enabled' => 'Activado',
+      'Disabled' => 'Desactivado',
+      'System' => 'Sistema',
+      'Users' => 'Usuarios',
+      'Email' => 'Correos',
+      'Data' => 'Datos',
+      'Customization' => 'Personalizaciones',
+      'Available Fields' => 'Campos disponibles',
+      'Layout' => 'Diseño',
+      'Entity Manager' => 'Entidades',
+      'Add Panel' => 'Añadir Panel',
+      'Add Field' => 'Añadir Campo',
+      'Settings' => 'Ajustes',
+      'Scheduled Jobs' => 'Tareas programadas',
+      'Upgrade' => 'Actualizar',
+      'Clear Cache' => 'Limpiar caché',
+      'Rebuild' => 'Reconstruir',
+      'Teams' => 'Equipos',
+      'Roles' => 'Roles',
+      'Portal' => 'Portales',
+      'Portals' => 'Portales',
+      'Portal Roles' => 'Roles del portal',
+      'Portal Users' => 'Usuarios del portal',
+      'Outbound Emails' => 'Salientes',
+      'Group Email Accounts' => 'Grupales',
+      'Personal Email Accounts' => 'Personales',
+      'Inbound Emails' => 'Entrantes',
+      'Email Templates' => 'Plantillas',
+      'Import' => 'Importar',
+      'Layout Manager' => 'Diseño',
+      'User Interface' => 'Interfaz de usuario',
+      'Auth Tokens' => 'Tokens',
       'Auth Log' => 'Auth Log',
-      'Authentication' => 'Autentikacija',
-      'Currency' => 'Valuta',
-      'Integrations' => 'Integracije',
-      'Extensions' => 'Ekstenzije',
-      'Upload' => 'Učitaj',
-      'Installing...' => 'Instaliranje...',
-      'Upgrading...' => 'Nadograđivanje...',
-      'Upgraded successfully' => 'Uspješno nadograđeno',
-      'Installed successfully' => 'Uspješno instalirano',
-      'Ready for upgrade' => 'Spremno za nadograđivanje',
-      'Run Upgrade' => 'Pokreni nadograđivanje',
-      'Install' => 'Instaliraj',
-      'Ready for installation' => 'Spremno za instalaciju',
-      'Uninstalling...' => 'Deinstaliranje...',
-      'Uninstalled' => 'Deinstalirano',
-      'Create Entity' => 'Napravi entity',
-      'Edit Entity' => 'Izmjena entiteta',
-      'Create Link' => 'Napravi Poveznicu',
-      'Edit Link' => 'Izmjena Poveznice',
-      'Notifications' => 'Obavještavanje',
-      'Jobs' => 'Radnje',
-      'Reset to Default' => 'Vrati na početnu vrijednost',
-      'Email Filters' => 'Filteri E-pošte',
-      'Action History' => 'Povijest akcija',
-      'Label Manager' => 'Upravljanje labelama',
+      'Authentication' => 'Autenticación',
+      'Currency' => 'Moneda',
+      'Integrations' => 'Integración',
+      'Extensions' => 'Extensiones',
+      'Upload' => 'Subir',
+      'Installing...' => 'Instalando...',
+      'Upgrading...' => 'Actualizando',
+      'Upgraded successfully' => 'Actualización exitosa',
+      'Installed successfully' => 'Instalado de forma exitosa',
+      'Ready for upgrade' => 'Listo para actualizar',
+      'Run Upgrade' => 'Ejecutar actualización',
+      'Install' => 'Instalar',
+      'Ready for installation' => 'Listo para instalación',
+      'Uninstalling...' => 'Desinstalando',
+      'Uninstalled' => 'Desinstalado',
+      'Create Entity' => 'Crear entidad',
+      'Edit Entity' => 'Editar Entidad',
+      'Create Link' => 'Crear enlace',
+      'Edit Link' => 'Editar Enlace',
+      'Notifications' => 'Notificaciones',
+      'Jobs' => 'Trabajos',
+      'Reset to Default' => 'Aplicar a valores por defecto',
+      'Email Filters' => 'Filtros',
+      'Action History' => 'Histórico',
+      'Label Manager' => 'Etiquetas',
       'Lead Capture' => 'Lead Capture',
       'Attachments' => 'Attachments',
     ),
-    'layouts' => 
+    'layouts' =>
     array (
       'list' => 'Lista',
-      'detail' => 'Detalji',
-      'listSmall' => 'Lista (mala)',
-      'detailSmall' => 'Detaljno (malo)',
-      'detailPortal' => 'Detalji (Portal)',
-      'detailSmallPortal' => 'Detalji (Mali, Portal)',
-      'listSmallPortal' => 'Lista (Mala, Portal)',
-      'listPortal' => 'Lista (Portal)',
-      'relationshipsPortal' => 'Panel relacija (Portal)',
-      'filters' => 'Filteri pretrage',
-      'massUpdate' => 'Masovna izmjena',
-      'relationships' => 'Paneli veza',
-      'sidePanelsDetail' => 'Bočni paneli (Detalji)',
-      'sidePanelsEdit' => 'Bočni paneli (Izmjene)',
-      'sidePanelsDetailSmall' => 'Bočni paneli (Detalji Mali)',
-      'sidePanelsEditSmall' => 'Bočni paneli (izmjene male)',
+      'detail' => 'Detalle',
+      'listSmall' => 'Lista (pequeña)',
+      'detailSmall' => 'Detalle (Pequeño)',
+      'detailPortal' => 'Detail (Portal)',
+      'detailSmallPortal' => 'Detail (Small, Portal)',
+      'listSmallPortal' => 'List (Small, Portal)',
+      'listPortal' => 'List (Portal)',
+      'relationshipsPortal' => 'Relationship Panels (Portal)',
+      'filters' => 'Filtros de Búsqueda',
+      'massUpdate' => 'Actualización masiva',
+      'relationships' => 'Paneles de relaciones',
+      'sidePanelsDetail' => 'Paneles laterales (detalle)',
+      'sidePanelsEdit' => 'Paneles laterales (editar)',
+      'sidePanelsDetailSmall' => 'Paneles laterales (detalle pequeño)',
+      'sidePanelsEditSmall' => 'Paneles laterales (editar pequeño)',
       'kanban' => 'Kanban',
-      'detailConvert' => 'Pretvori izvor',
-      'listForAccount' => 'Lista (za Tvrtke)',
+      'detailConvert' => 'Convertir posible cliente',
+      'listForAccount' => 'Listado (por Cuentas)',
       'listForContact' => 'List (for Contact)',
     ),
-    'fieldTypes' => 
+    'fieldTypes' =>
     array (
-      'address' => 'Adresa',
-      'array' => 'Izbornik',
-      'foreign' => 'Strani',
-      'duration' => 'Trajanje',
-      'password' => 'Lozinka',
-      'personName' => 'Ime osobe',
-      'autoincrement' => 'Autoprirast',
-      'bool' => 'Logičko',
-      'currency' => 'Valuta',
-      'currencyConverted' => 'Valuta (konvertirana)',
-      'date' => 'Datum',
-      'datetime' => 'Datum i vrijeme',
-      'datetimeOptional' => 'Datum/Datum i vrijeme',
-      'email' => 'E-pošta',
+      'address' => 'Dirección',
+      'array' => 'Lista ordenable',
+      'foreign' => 'Clave foránea',
+      'duration' => 'Duración',
+      'password' => 'Contraseña',
+      'personName' => 'Nombre',
+      'autoincrement' => 'Incremental',
+      'bool' => 'SI / NO',
+      'currency' => 'Moneda',
+      'currencyConverted' => 'Moneda (convertido)',
+      'date' => 'Fecha',
+      'datetime' => 'Fecha y hora',
+      'datetimeOptional' => 'Fecha / Fecha y hora',
+      'email' => 'Correo electrónico',
       'enum' => 'Lista',
-      'enumInt' => 'Lista cijelih brojeva',
-      'enumFloat' => 'Lista decimalnih brojeva',
-      'float' => 'Decimalni broj',
-      'int' => 'Cijeli broj',
-      'link' => 'Poveznica',
-      'linkMultiple' => 'Višestruka Poveznica',
-      'linkParent' => 'Matična Poveznica',
-      'phone' => 'Telefon',
-      'text' => 'Tekst',
-      'url' => 'URL adresa',
-      'varchar' => 'Kratki tekst',
-      'file' => 'Datoteka',
-      'image' => 'Slika',
-      'multiEnum' => 'Multi-lista',
-      'attachmentMultiple' => 'Više priloga',
-      'rangeInt' => 'Raspon cijelih brojeva',
-      'rangeFloat' => 'Raspon decimalnih brojeva',
-      'rangeCurrency' => 'Raspon valuta',
-      'wysiwyg' => 'Wysiwyg',
+      'enumInt' => 'Lista de enteros',
+      'enumFloat' => 'Lista de decimales',
+      'float' => 'Decimal',
+      'int' => 'Entero',
+      'link' => 'Enlace',
+      'linkMultiple' => 'Enlace múltiple',
+      'linkParent' => 'Enlace Padre',
+      'phone' => 'Teléfono',
+      'text' => 'Área de texto simple',
+      'url' => 'Url',
+      'varchar' => 'Texto',
+      'file' => 'Archivo',
+      'image' => 'Imagen',
+      'multiEnum' => 'Lista múltiple',
+      'attachmentMultiple' => 'Adjuntos múltiples',
+      'rangeInt' => 'Rango de enteros',
+      'rangeFloat' => 'Rango de decimales',
+      'rangeCurrency' => 'Rango de moneda',
+      'wysiwyg' => 'Área de texto con editor',
       'map' => 'Mapa',
-      'number' => 'Broj',
-      'colorpicker' => 'Izbornik boja',
+      'number' => 'Número',
+      'colorpicker' => 'Selector de color',
       'jsonArray' => 'Json Array',
       'jsonObject' => 'Json Object',
+      'multienim' => 'Lista múltiple',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'type' => 'Vrsta',
-      'name' => 'Ime',
-      'label' => 'Natpis',
-      'tooltipText' => 'Objašnjenje',
-      'required' => 'Obavezno',
-      'default' => 'Početno',
-      'maxLength' => 'Maksimalna dužina',
-      'options' => 'Opcije',
-      'after' => 'Poslije (polja)',
-      'before' => 'Prije (polja)',
-      'link' => 'Poveznica',
-      'field' => 'Polje',
-      'min' => 'Min',
-      'max' => 'Maks',
-      'translation' => 'Prijevod',
-      'previewSize' => 'Veličina prikaza',
-      'noEmptyString' => 'Prazan unos nije dozvoljen',
-      'defaultType' => 'Početna Vrsta',
-      'seeMoreDisabled' => 'Isključi izrezivanje teksta',
-      'entityList' => 'Lista entiteta',
-      'isSorted' => 'Sortirano po (abecednom redu)',
-      'audited' => 'Pod revizijom',
-      'trim' => 'Skrati',
-      'height' => 'Visina (px)',
-      'minHeight' => 'Min visina (px)',
-      'provider' => 'Pružatelj',
-      'typeList' => 'Vrsta liste',
-      'rows' => 'Broj redova tekstualnog polja',
-      'lengthOfCut' => 'Dužina izrezivanja',
-      'sourceList' => 'Lista izvora',
-      'prefix' => 'Prefiks',
-      'nextNumber' => 'Slijedeći broj',
-      'padLength' => 'Dužina ',
-      'disableFormatting' => 'Isključi formatiranje',
-      'dynamicLogicVisible' => 'Uvjeti da polje bude vidljivo',
-      'dynamicLogicReadOnly' => 'Uvjeti da polje bude samo za čitanje',
-      'dynamicLogicRequired' => 'Uvjeti da polje bude potrebno',
-      'dynamicLogicOptions' => 'Uvjetne opcije',
-      'probabilityMap' => 'Faza Vjerojatnosti (%)',
-      'readOnly' => 'Samo za čitanje',
-      'maxFileSize' => 'Maks Veličina Datoteke (Mb)',
+      'type' => 'Tipo',
+      'name' => 'Nombre',
+      'label' => 'Etiqueta',
+      'tooltipText' => 'Texto de la ayuda',
+      'required' => 'Requerido',
+      'default' => 'Por defecto',
+      'maxLength' => 'Longitud máxima',
+      'options' => 'Ajustes',
+      'after' => 'Después (campo)',
+      'before' => 'Antes (campo)',
+      'link' => 'Enlace',
+      'field' => 'Campo',
+      'min' => 'Mínimo',
+      'max' => 'Máximo',
+      'translation' => 'Traducción',
+      'previewSize' => 'Tamaño de vista previa',
+      'noEmptyString' => 'No están permitidos los valores de cadenas vacías',
+      'defaultType' => 'Tipo por defecto',
+      'seeMoreDisabled' => 'Desactivar cortar texto',
+      'entityList' => 'Lista de entidades',
+      'isSorted' => '¿Se debe ordenar?',
+      'audited' => 'Auditada',
+      'trim' => 'Recortar',
+      'height' => 'Altura (px)',
+      'minHeight' => 'Altura mínima (px)',
+      'provider' => 'Proveedor',
+      'typeList' => 'Tipo de lista',
+      'rows' => 'Número de filas del área de texto',
+      'lengthOfCut' => 'Longitud del corte',
+      'sourceList' => 'Lista de tomas de contacto',
+      'prefix' => 'Prefijo',
+      'nextNumber' => 'Siguiente Número',
+      'padLength' => 'Longitud del relleno',
+      'disableFormatting' => 'Desactivar formateo',
+      'dynamicLogicVisible' => 'Condiciones para hacer el campo visible',
+      'dynamicLogicReadOnly' => 'Condiciones para hacer el campo solo lectura',
+      'dynamicLogicRequired' => 'Condiciones para hacer el campo obligatorio',
+      'dynamicLogicOptions' => 'Opciones condicionales',
+      'probabilityMap' => 'Probabilidades de la etapa (%)',
+      'readOnly' => 'Solo lectura',
+      'maxFileSize' => 'Tamaño máximo de archivo (MB)',
       'isPersonalData' => 'Is Personal Data',
       'useIframe' => 'Use Iframe',
       'useNumericFormat' => 'Use Numeric Format',
       'strip' => 'Strip',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'upgradeVersion' => 'EspoCRM će biti nadograđen na verziju na <strong>{version}</ strong>. Budite strpljivi jer to može potrajati.',
-      'upgradeDone' => 'EspoCRM je nadograđen na verziju na <strong>{version}</strong>,.',
-      'upgradeBackup' => 'Preporučamo izradu rezervne kopije EspoCRM datoteka i podataka prije nadogradnje.',
-      'thousandSeparatorEqualsDecimalMark' => 'Oznaka za tisuće ne može biti ista kao decimalna oznaka.',
-      'userHasNoEmailAddress' => 'Korisnik nema e-mail adresu.',
-      'selectEntityType' => 'Izaberite tip entiteta u lijevom izborniku.',
-      'selectUpgradePackage' => 'Izaberi paket nadogradnje',
-      'downloadUpgradePackage' => 'Preuzmi paket nadogradnje <a href="{url}">ovdje</a>.',
-      'selectLayout' => 'Izaberi željeni izgled u lijevom izborniku.',
-      'selectExtensionPackage' => 'Izaberi paket ekstenzije',
-      'extensionInstalled' => 'Ekstenzija {name} {version} je instalirana.',
-      'installExtension' => 'Ekstenzija {name} {version} je spremna za instalaciju.',
-      'cronIsNotConfigured' => 'Zakazane radnje nisu pokrenute, stoga dolazna E-pošta, obavijesti i podsjetnici nisu u funkciji. Molimo slijedite <a target="_blank" href="https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab">instructions</a> za postavljanje zakazanih radnji.',
-      'newVersionIsAvailable' => 'Nova EspoCRM verzija {latestVersion} je dostupna.',
-      'newExtensionVersionIsAvailable' => 'Nova verzija {latestVersion} ekstenzije {extensionName} je dostupna.',
-      'uninstallConfirmation' => 'Jeste li sigurni u deinstalaciju ekstenzije?',
+      'upgradeVersion' => 'EspoCRM se actualizará a la versión <strong>{version}</ strong>. Por favor sea paciente ya que esto puede tomar varios minutos.',
+      'upgradeDone' => 'EspoCRM se ha actualizado a la versión <strong>{version}</ strong>.',
+      'upgradeBackup' => 'Recomendamos hacer una copia de seguridad de los archivos y datos de EspoCRM antes de actualizar.',
+      'thousandSeparatorEqualsDecimalMark' => 'El símbolo de separador de miles no puede ser el mismo que el de punto decimal.',
+      'userHasNoEmailAddress' => 'El usuario no tiene dirección de correo electrónico.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en el menú de la izquierda.',
+      'selectUpgradePackage' => 'Seleccione el paquete para actualizar',
+      'downloadUpgradePackage' => 'Si necesita paquetes de actualización puede descargarlos desde <a href=\'{url}\'>acá</a>.',
+      'selectLayout' => 'Seleccione el diseño necesario en el menú de la izquierda y edítelo.',
+      'selectExtensionPackage' => 'Seleccione el paquete de la extensión',
+      'extensionInstalled' => 'La extensión {name} {version} ha sido instalada',
+      'installExtension' => 'La extensión {name} {version} está lista para ser instalada.',
+      'cronIsNotConfigured' => 'Las tareas programadas no se están ejecutando. Siga las <a target="_blank" href="https://www.espocrm.com/documentation/administration/server-configuration/#user-content-setup-a-crontab">instrucciones</a> para configurar las tareas CRON.',
+      'newVersionIsAvailable' => 'La nueva versión de EspoCRM {latestVersion} está disponible.',
+      'newExtensionVersionIsAvailable' => 'El nuevo lanzamiento {latestVersion} de {extensionName} está disponible.',
+      'uninstallConfirmation' => 'Are you sure you want to uninstall the extension?',
     ),
-    'descriptions' => 
+    'descriptions' =>
     array (
-      'settings' => 'Sistemska podešavanja aplikacije.',
-      'scheduledJob' => 'Poslovi koji se obavljaju putem cron-a.',
-      'upgrade' => 'Nadogradi EspoCRM.',
-      'clearCache' => 'Očistite sav backend cache.',
-      'rebuild' => 'Obnovi backend i očisti cache.',
-      'users' => 'Upravljanje korisnicima.',
-      'teams' => 'Upravljanje timovima',
-      'roles' => 'Upravljanje ulogama.',
-      'portals' => 'Upravljanje portalima',
-      'portalRoles' => 'Uloge za portale.',
-      'portalUsers' => 'Korisnici portala.',
-      'outboundEmails' => 'SMTP podešavanja za odlaznu e-poštu.',
-      'groupEmailAccounts' => 'Grupni IMAP računi e-pošte. E-pošta uvoz i E-pošta za Probleme.',
-      'personalEmailAccounts' => 'Korisnički računi e-pošte.',
-      'emailTemplates' => 'Šablone odlazne e-pošte.',
-      'import' => 'Uvoz podataka iz CSV datoteke.',
-      'layoutManager' => 'Prilagodba preglede (lista, detaljno, izmjena, pretraživanje, masovna izmjena).',
-      'entityManager' => 'Kreiranje i uređivanje prilagođenih entiteta. Upravljanje poljima i odnosima.',
-      'userInterface' => 'Konfiguracije sučelja',
-      'authTokens' => 'Aktivne sesije. IP adresa i zadnji datum pristupa.',
-      'authentication' => 'Postavke autentikacije.',
-      'currency' => 'Podešavanja valute i tečajeva.',
-      'extensions' => 'Instalirati ili deinstalirati ekstenzije.',
-      'integrations' => 'Integracija sa trećim uslugama.',
-      'notifications' => 'Postavke aplikacijskog obavještavanja e-poštom.',
-      'inboundEmails' => 'Postavke dolazne e-pošte.',
-      'emailFilters' => 'E-mail poruke koje se podudaraju sa određenim filterom neće biti uvezene.',
-      'actionHistory' => 'Dnevnik korisničkih akcija.',
-      'labelManager' => 'Prilagodi nazive aplikacija',
+      'settings' => 'Ajustes generales del sistema.',
+      'scheduledJob' => 'Trabajos que se ejecutan en segundo plano (CRON).',
+      'upgrade' => 'Actualiza EspoCRM.',
+      'clearCache' => 'Limpia toda la memoria caché del sistema.',
+      'rebuild' => 'Reconstruir el sistema y limpia la caché.',
+      'users' => 'Gestión de usuarios.',
+      'teams' => 'Gestión de equipos.',
+      'roles' => 'Gestión de roles.',
+      'portals' => 'Gestión de portales.',
+      'portalRoles' => 'Roles para el portal.',
+      'portalUsers' => 'Usuarios del portal.',
+      'outboundEmails' => 'Ajustes para los correos del sistema y de envíos masivos.',
+      'groupEmailAccounts' => 'Ajustes de cuentas de correo grupales. Ejemplo: casilla de soporte.',
+      'personalEmailAccounts' => 'Ajustes de cuentas de correo personales de los usuarios.',
+      'emailTemplates' => 'Plantillas para de correos salientes.',
+      'import' => 'Importar datos desde CSV.',
+      'layoutManager' => 'Personalizar diseños (listas, detalles, editar, buscar, actualización masiva).',
+      'entityManager' => 'Crear y editar entidades personalizadas. Administrar campos y relaciones.',
+      'userInterface' => 'Configurar interfaz de usuario: Logo, tema, menu, etc.',
+      'authTokens' => 'Sesiones de usuarios activas. Direcciones IP y última fecha de acceso.',
+      'authentication' => 'Ajustes de autenticación.',
+      'currency' => 'Ajustes de moneda y tipos de cambio.',
+      'extensions' => 'Instalar o desinstalar extensiones.',
+      'integrations' => 'Integración con los servicios de terceros.',
+      'notifications' => 'Ajustes de notificaciones del sistema y por correo electrónico.',
+      'inboundEmails' => 'Ajustes para los correos entrantes.',
+      'emailFilters' => 'Filtros para los correos entrantes.',
+      'actionHistory' => 'Registro de las acciones del usuario.',
+      'labelManager' => 'Personaliza las etiquetas de las aplicaciones.',
       'authLog' => 'Login history.',
       'leadCapture' => 'API entry points for Web-to-Lead.',
       'attachments' => 'All file attachments stored in the system.',
     ),
-    'options' => 
+    'options' =>
     array (
-      'previewSize' => 
+      'previewSize' =>
       array (
-        'x-small' => 'Vrla malo',
-        'small' => 'Malo',
-        'medium' => 'Srednje',
-        'large' => 'Veliko',
+        'x-small' => 'Muy Pequeño',
+        'small' => 'Pequeño',
+        'medium' => 'Mediano',
+        'large' => 'Grande',
       ),
     ),
-    'logicalOperators' => 
+    'logicalOperators' =>
     array (
-      'and' => 'AND',
-      'or' => 'OR',
-      'not' => 'NOT',
+      'and' => 'Y',
+      'or' => 'O',
+      'not' => 'NO',
     ),
   ),
-  'Attachment' => 
+  'Attachment' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'role' => 'Role',
       'related' => 'Related',
@@ -297,9 +298,9 @@ return array (
       'storage' => 'Storage',
       'size' => 'Size (bytes)',
     ),
-    'options' => 
+    'options' =>
     array (
-      'role' => 
+      'role' =>
       array (
         'Attachment' => 'Attachment',
         'Inline Attachment' => 'Inline Attachment',
@@ -309,18 +310,18 @@ return array (
         'Mass Pdf' => 'Mass Pdf',
       ),
     ),
-    'insertFromSourceLabels' => 
+    'insertFromSourceLabels' =>
     array (
-      'Document' => 'Umetanje dokumenta',
+      'Document' => 'Insertar documento',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'orphan' => 'Orphan',
     ),
   ),
-  'AuthLogRecord' => 
+  'AuthLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'username' => 'Username',
       'ipAddress' => 'IP Address',
@@ -335,21 +336,21 @@ return array (
       'requestMethod' => 'Request Method',
       'authTokenIsActive' => 'Auth Token is Active',
     ),
-    'links' => 
+    'links' =>
     array (
       'authToken' => 'Auth Token Created',
       'user' => 'User',
       'portal' => 'Portal',
       'actionHistoryRecords' => 'Action History',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
       'denied' => 'Denied',
       'accepted' => 'Accepted',
     ),
-    'options' => 
+    'options' =>
     array (
-      'denialReason' => 
+      'denialReason' =>
       array (
         'CREDENTIALS' => 'Invalid credentials',
         'INACTIVE_USER' => 'Inactive user',
@@ -359,1890 +360,1921 @@ return array (
       ),
     ),
   ),
-  'AuthToken' => 
+  'AuthToken' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'user' => 'Korisnik',
-      'ipAddress' => 'IP adresa',
-      'lastAccess' => 'Zadnji pristup',
-      'createdAt' => 'Prijava',
-      'isActive' => 'Je aktivan',
+      'user' => 'Usuario',
+      'ipAddress' => 'Dirección IP',
+      'lastAccess' => 'Fecha del último acceso',
+      'createdAt' => 'Fecha de acceso',
+      'isActive' => 'Está activo',
       'portal' => 'Portal',
     ),
-    'links' => 
+    'links' =>
     array (
-      'actionHistoryRecords' => 'Povijest akcija',
+      'actionHistoryRecords' => 'Histórico',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Je aktivan',
-      'inactive' => 'Je neaktivan',
+      'active' => 'Activo',
+      'inactive' => 'Inactivo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Set Inactive' => 'Postavi kao neaktivan',
+      'Set Inactive' => 'Establecer Inactivo',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setInactive' => 'Postavi kao neaktivan',
+      'setInactive' => 'Establecer Inactivo',
     ),
   ),
-  'DashletOptions' => 
+  'DashletOptions' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'title' => 'Naslov',
-      'dateFrom' => 'Datum od',
-      'dateTo' => 'Datum do',
-      'autorefreshInterval' => 'Interval automatskog osvježavanja',
-      'displayRecords' => 'Prikaz zapisa',
-      'isDoubleHeight' => 'Visina 2x',
-      'mode' => 'Način',
-      'enabledScopeList' => 'Što prikazati',
-      'users' => 'Korisnici',
-      'entityType' => 'Vsta entiteta',
-      'primaryFilter' => 'Primarni filter',
-      'boolFilterList' => 'Dodatni Filteri',
-      'sortBy' => 'Redoslijed (polja)',
-      'sortDirection' => 'Redoslijed (smjer)',
-      'expandedLayout' => 'Raspored',
-      'dateFilter' => 'Filter Datuma',
+      'title' => 'Título',
+      'dateFrom' => 'Fecha desde',
+      'dateTo' => 'Fecha hasta',
+      'autorefreshInterval' => 'Actualizar cada:',
+      'displayRecords' => 'Mostrar Registros',
+      'isDoubleHeight' => 'Altitud 2x',
+      'mode' => 'Modo',
+      'enabledScopeList' => 'Qué mostrar',
+      'users' => 'Usuarios',
+      'entityType' => 'Tipo de entidad',
+      'primaryFilter' => 'Filtro principal',
+      'boolFilterList' => 'Filtros adicionales',
+      'sortBy' => 'Ordenar (campo)',
+      'sortDirection' => 'Ordenar (dirección)',
+      'expandedLayout' => 'Diseño',
+      'dateFilter' => 'Date Filter',
       'futureDays' => 'Next X Days',
       'useLastStage' => 'Group by last reached stage',
     ),
-    'options' => 
+    'options' =>
     array (
-      'mode' => 
+      'mode' =>
       array (
-        'agendaWeek' => 'Tjedan (raspored)',
-        'basicWeek' => 'Tjedan',
-        'month' => 'Mjesec',
-        'basicDay' => 'Dan',
-        'agendaDay' => 'Dan (raspored)',
-        'timeline' => 'Vremenska linija',
+        'agendaWeek' => 'Semana (orden del día)',
+        'basicWeek' => 'Semana',
+        'month' => 'Mes',
+        'basicDay' => 'Día',
+        'agendaDay' => 'Día (agenda)',
+        'timeline' => 'Línea de tiempo',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectEntityType' => 'Izaberi tip entiteta u opcijama za  dashlet.',
+      'selectEntityType' => 'Seleccione el tipo de entidad en las opciones de la caja.',
     ),
   ),
-  'DynamicLogic' => 
+  'DynamicLogic' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Field' => 'Polje',
+      'Field' => 'Field',
     ),
-    'options' => 
+    'options' =>
     array (
-      'operators' => 
+      'operators' =>
       array (
-        'equals' => 'Jednak',
-        'notEquals' => 'Nije jednako',
-        'greaterThan' => 'Veće od',
-        'lessThan' => 'Manje od',
-        'greaterThanOrEquals' => 'Više ili jednako',
-        'lessThanOrEquals' => 'Manje ili jednako',
-        'in' => 'U',
-        'notIn' => 'Ne u',
-        'inPast' => 'U prošlosti',
-        'inFuture' => 'Da li je budućnost',
-        'isToday' => 'Je danas',
-        'isTrue' => 'Točno je',
-        'isFalse' => 'Je netočno',
-        'isEmpty' => 'Prazno',
-        'isNotEmpty' => 'Nije prazno',
-        'contains' => 'Sadrži',
-        'notContains' => 'Ne sadrži',
-        'has' => 'Sadrži',
-        'notHas' => 'Ne sadrži',
+        'equals' => 'Es igual',
+        'notEquals' => 'No es igual',
+        'greaterThan' => 'Es mayor que',
+        'lessThan' => 'Es menor que',
+        'greaterThanOrEquals' => 'Es mayor o igual que',
+        'lessThanOrEquals' => 'Es menor o igual que',
+        'in' => 'Está en',
+        'notIn' => 'No está en',
+        'inPast' => 'Es antes de hoy',
+        'inFuture' => 'Es después de hoy',
+        'isToday' => 'Es hoy',
+        'isTrue' => 'Es verdadero',
+        'isFalse' => 'Es falso',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No está vacío',
+        'contains' => 'Contiene',
+        'notContains' => 'No Contiene',
+        'has' => 'Contiene',
+        'notHas' => 'No Contiene',
       ),
     ),
   ),
-  'Email' => 
+  'Email' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime (subjekt)',
-      'parent' => 'Matični',
-      'status' => 'Status',
-      'dateSent' => 'Datum slanja',
-      'from' => 'Od',
-      'to' => 'Za',
+      'name' => 'Asunto',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateSent' => 'Fecha de envío',
+      'from' => 'De',
+      'to' => 'Para',
       'cc' => 'CC',
-      'bcc' => 'BCC',
-      'replyTo' => 'Odgovoriti na',
-      'replyToString' => 'Odgovoriti na (string)',
-      'isHtml' => 'je HTML',
-      'body' => 'Sadržaj',
-      'bodyPlain' => 'Sadržaj (čisti tekst)',
-      'subject' => 'Predmet',
-      'attachments' => 'Prilozi',
-      'selectTemplate' => 'Odabir šablone',
-      'fromEmailAddress' => 'Od adrese',
-      'toEmailAddresses' => 'Na adresu',
-      'emailAddress' => 'Adresa e-pošte',
-      'deliveryDate' => 'Datum isporuke',
-      'account' => 'Tvrtka',
-      'users' => 'Korisnici',
-      'replied' => 'Odgovorio',
-      'replies' => 'Odgovori',
-      'isRead' => 'je pročitano',
-      'isNotRead' => 'nije pročitano',
-      'isImportant' => 'je važna',
-      'isReplied' => 'Je odgovoreno',
-      'isNotReplied' => 'Nije odgovoreno',
-      'isUsers' => 'je od korisnika',
-      'inTrash' => 'u otpadu',
-      'sentBy' => 'Poslano od strane',
-      'folder' => 'Mapa',
-      'inboundEmails' => 'Grupni računi',
-      'emailAccounts' => 'Osobni računi',
-      'hasAttachment' => 'Ima prilog',
-      'assignedUsers' => 'Zaduženi korisnici',
-      'ccEmailAddresses' => 'CC Email Adrese',
+      'bcc' => 'CCO',
+      'replyTo' => 'Responder a',
+      'replyToString' => 'Responder a (string)',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'bodyPlain' => 'Cuerpo (plano)',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'selectTemplate' => 'Seleccione una plantilla',
+      'fromEmailAddress' => 'De (email)',
+      'toEmailAddresses' => 'A (email)',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'deliveryDate' => 'Fecha de entrega',
+      'account' => 'Cuenta',
+      'users' => 'Usuarios',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'isRead' => 'Es leído',
+      'isNotRead' => 'No leído',
+      'isImportant' => 'Es importante',
+      'isReplied' => 'Tiene respuesta',
+      'isNotReplied' => 'No se respondieron',
+      'isUsers' => 'Es del usuario',
+      'inTrash' => 'En papelera',
+      'sentBy' => 'Enviado por',
+      'folder' => 'Carpeta',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'hasAttachment' => 'Tiene adjunto',
+      'assignedUsers' => 'Usuarios asignados',
+      'ccEmailAddresses' => 'CC Email Addresses',
       'bccEmailAddresses' => 'BCC EmailAddresses',
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
-      'messageId' => 'ID Poruke',
-      'messageIdInternal' => 'ID Poruke (Interno)',
-      'folderId' => 'ID Mape',
-      'fromName' => 'Od Naziv',
-      'fromString' => 'Od String',
-      'isSystem' => 'Je sustav',
+      'messageId' => 'Message Id',
+      'messageIdInternal' => 'Message Id (Internal)',
+      'folderId' => 'Folder Id',
+      'fromName' => 'From Name',
+      'fromString' => 'From String',
+      'isSystem' => 'Is System',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'replied' => 'odgovorio',
-      'replies' => 'Odgovori',
-      'inboundEmails' => 'Grupni računi',
-      'emailAccounts' => 'Osobni računi',
-      'assignedUsers' => 'Zaduženi korisnici',
-      'sentBy' => 'Poslano od strane',
-      'attachments' => 'Prilozi',
-      'fromEmailAddress' => 'Pošiljatelj Email Adresa',
-      'toEmailAddresses' => 'To EmailAddrese',
-      'ccEmailAddresses' => 'CC EmailAddrese',
-      'bccEmailAddresses' => 'BCC EmailAddrese',
+      'replied' => 'Es una respuesta a:',
+      'replies' => 'Respondiste en:',
+      'inboundEmails' => 'Cuentas grupales',
+      'emailAccounts' => 'Cuentas personales',
+      'assignedUsers' => 'Usuarios asignados',
+      'sentBy' => 'Enviado por',
+      'attachments' => 'Attachments',
+      'fromEmailAddress' => 'From Email Address',
+      'toEmailAddresses' => 'To EmailAddresses',
+      'ccEmailAddresses' => 'CC EmailAddresses',
+      'bccEmailAddresses' => 'BCC EmailAddresses',
       'replyToEmailAddresses' => 'Reply-To EmailAddresses',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'Nacrt',
-        'Sending' => 'Slanje',
-        'Sent' => 'Poslano',
-        'Archived' => 'Arhivirano',
-        'Received' => 'Primljeno',
-        'Failed' => 'Neuspješno',
+        'Draft' => 'Borrador',
+        'Sending' => 'Enviando',
+        'Sent' => 'Enviado',
+        'Archived' => 'Archivado',
+        'Received' => 'Recibido',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Email' => 'Arhiva E-pošte',
-      'Archive Email' => 'Arhiva E-pošte',
-      'Compose' => 'Sastaviti',
-      'Reply' => 'Odgovoriti',
-      'Reply to All' => 'Odgovoriti na sve',
-      'Forward' => 'Proslijediti',
-      'Original message' => '---------------------------- Originalna poruka ----------------------------',
-      'Forwarded message' => 'Proslijeđena poruka',
-      'Email Accounts' => 'Osobni račun e-pošte',
-      'Inbound Emails' => 'Grupni račun e-pošte',
-      'Email Templates' => 'Šablone e-pošte',
-      'Send Test Email' => 'Pošalji probnu poruku',
-      'Send' => 'Pošalji',
-      'Email Address' => 'Adresa e-pošte',
-      'Mark Read' => 'Označi kao pročitano',
-      'Sending...' => 'Slanje...',
-      'Save Draft' => 'Spremi kao nacrt',
-      'Mark all as read' => 'Označi sve kao pročitano',
-      'Show Plain Text' => 'Prikaži običan tekst',
-      'Mark as Important' => 'Označite kao važno',
-      'Unmark Importance' => 'Ukinite oznaku važno',
-      'Move to Trash' => 'Pošalji u smeće',
-      'Retrieve from Trash' => 'Vrati iz smeća',
-      'Move to Folder' => 'Premjesti u folder',
-      'Filters' => 'Filteri',
-      'Folders' => 'Mape',
-      'Create Lead' => 'Napraviti izvor',
-      'Create Contact' => 'Napraviti kontakt',
-      'Add to Contact' => 'Dodaj u Kontakt',
-      'Add to Lead' => 'Dodaj u Izvor',
-      'Create Task' => 'Napraviti zadatak',
-      'Create Case' => 'Kreiranje prijave problema',
+      'Create Email' => 'Nuevo correo archivado',
+      'Archive Email' => 'Nuevo correo archivado',
+      'Compose' => 'Nuevo',
+      'Reply' => 'Responder',
+      'Reply to All' => 'Responder a todos',
+      'Forward' => 'Reenviar',
+      'Original message' => 'Mensaje original',
+      'Forwarded message' => 'Mensaje reenviado',
+      'Email Accounts' => 'Ir a cuentas de correo personales',
+      'Inbound Emails' => 'Ir a cuentas de correo grupales',
+      'Email Templates' => 'Plantillas de correo',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
+      'Send' => 'Enviar',
+      'Email Address' => 'Correo electrónico',
+      'Mark Read' => 'Marcar como leído',
+      'Sending...' => 'Enviando...',
+      'Save Draft' => 'Guardar borrador',
+      'Mark all as read' => 'Marcar todos como leídos',
+      'Show Plain Text' => 'Ver en texto plano',
+      'Mark as Important' => 'Marcar como importante',
+      'Unmark Importance' => 'Marcar como No importante',
+      'Move to Trash' => 'Mover a la papelera',
+      'Retrieve from Trash' => 'Recuperar de la papelera',
+      'Move to Folder' => 'Mover a la carpeta',
+      'Filters' => 'Filtros',
+      'Folders' => 'Ir a carpetas de correo',
+      'Create Lead' => 'Crear posible cliente',
+      'Create Contact' => 'Crear contacto',
+      'Add to Contact' => 'Agregar a contacto',
+      'Add to Lead' => 'Agregar a posible cliente',
+      'Create Task' => 'Crear tarea',
+      'Create Case' => 'Crear ticket',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'noSmtpSetup' => 'SMTP nije podešen. {link}.',
-      'testEmailSent' => 'Test poruka je poslana',
-      'emailSent' => 'Poruka je poslana',
-      'savedAsDraft' => 'Sačuvano kao nacrt',
+      'noSmtpSetup' => 'Sin configuración SMTP. {link}.',
+      'testEmailSent' => 'El correo de prueba ha sido enviado.',
+      'emailSent' => 'El correo electrónico ha sido enviada',
+      'savedAsDraft' => 'Guardado como borrador',
       'confirmInsertTemplate' => 'The email body will be lost. Are you sure you want to insert the template?',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'Poslano',
-      'archived' => 'Arhivirano',
-      'inbox' => 'Primljeno',
-      'drafts' => 'Nacrti',
-      'trash' => 'Smeće',
-      'important' => 'Važno',
+      'sent' => 'Enviados',
+      'archived' => 'Archivado',
+      'inbox' => 'Bandeja de entrada',
+      'drafts' => 'Borradores',
+      'trash' => 'Papelera',
+      'important' => 'Importante',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'markAsRead' => 'Označi kao pročitano',
-      'markAsNotRead' => 'Označi kao nepročitano',
-      'markAsImportant' => 'Označite kao važno',
-      'markAsNotImportant' => 'Uklonite oznaku važno',
-      'moveToTrash' => 'Pošalji u smeće',
-      'moveToFolder' => 'Premjesti u mapu',
-      'retrieveFromTrash' => 'Vrati iz smeća',
+      'markAsRead' => 'Marcar como leído',
+      'markAsNotRead' => 'Marcar como No leído',
+      'markAsImportant' => 'Marcar como importante',
+      'markAsNotImportant' => 'Marcar como No importante',
+      'moveToTrash' => 'Mover a la papelera',
+      'moveToFolder' => 'Mover a la carpeta',
+      'retrieveFromTrash' => 'Recuperar de la papelera',
     ),
   ),
-  'EmailAccount' => 
+  'EmailAccount' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'status' => 'Status',
-      'host' => 'Server',
-      'username' => 'Korisničko ime',
-      'password' => 'Lozinka',
-      'port' => 'Port',
-      'monitoredFolders' => 'Nadgledani folderi',
-      'ssl' => 'SSL',
-      'fetchSince' => 'Preuzmi od',
-      'emailAddress' => 'Adresa e-pošte',
-      'sentFolder' => 'Mapa poslanih',
-      'storeSentEmails' => 'Čuvanje poslanih poruka',
-      'keepFetchedEmailsUnread' => 'Zadrži nepročitani status novih poruka',
-      'emailFolder' => 'Stavi u mapu',
-      'useImap' => 'Dohvat E-pošte',
-      'useSmtp' => 'Koristi SMTP',
-      'smtpHost' => 'SMTP host',
-      'smtpPort' => 'SMTP port',
-      'smtpAuth' => 'SMTP auth',
-      'smtpSecurity' => 'SMTP sigurnost',
-      'smtpUsername' => 'SMTP korisničko ime',
-      'smtpPassword' => 'SMTP lozinka',
+      'name' => 'Nombre de la cuenta',
+      'status' => 'Estado',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'ssl' => '¿Usa SSL?',
+      'fetchSince' => 'Traer correos desde',
+      'emailAddress' => 'Correo electrónico',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'keepFetchedEmailsUnread' => 'Mantener los correos que se han obtenido sin leer',
+      'emailFolder' => 'Poner en la carpeta',
+      'useImap' => 'Fetch Emails',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'Filteri',
-      'emails' => 'E-poruke',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktivan',
-        'Inactive' => 'Neaktivan',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailAccount' => 'Napravite račun e-pošte',
+      'Create EmailAccount' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Main' => 'Glavni',
-      'Test Connection' => 'Testiranje veze',
-      'Send Test Email' => 'Poštalji probnu e-poštu',
+      'Main' => 'Principal',
+      'Test Connection' => 'Probar conexión',
+      'Send Test Email' => 'Enviar correo electrónico de prueba',
       'SMTP' => 'SMTP',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'Neuspjelo spajanje na IMAP server',
-      'connectionIsOk' => 'Veza u redu',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
+      'connectionIsOk' => 'Conexión correcta',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'monitoredFolders' => 'Više mapa mora biti odvojeno zarezom.
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.
 
-Možete dodati mapu "poslano" da biste sinkronizirali e-poštu poslanu sa drugog mail klijenta.',
-      'storeSentEmails' => 'Poslane poruke će biti spremljene na IMAP serveru. Polje "Adresa e-pošte" mora se podudarati sa adresom sa koje će slanje biti izvršeno.',
+Puede agregar una carpeta \'Enviados\' para sincronizar los correos electrónicos enviados desde un cliente externo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP. El campo Dirección de correo electrónico debe coincidir con la dirección desde donde se enviarán los correos electrónicos.',
     ),
   ),
-  'EmailAddress' => 
+  'EmailAddress' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Primary' => 'Primarna',
-      'Opted Out' => 'Ne želi',
-      'Invalid' => 'Netočno',
+      'Primary' => 'Principal',
+      'Opted Out' => 'Se dieron de baja',
+      'Invalid' => 'Inválido',
     ),
   ),
-  'EmailFilter' => 
+  'EmailFilter' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'from' => 'Od',
-      'to' => 'Za',
-      'subject' => 'Predmet',
-      'bodyContains' => 'Tekst sadži',
-      'action' => 'Akcija',
-      'isGlobal' => 'Je globalna',
-      'emailFolder' => 'Mapa',
+      'from' => 'De',
+      'to' => 'Para',
+      'subject' => 'Asunto',
+      'bodyContains' => 'Contenido del cuerpo',
+      'action' => 'Acción',
+      'isGlobal' => 'Es global',
+      'emailFolder' => 'Carpeta',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailFilter' => 'Napravi filter e-pošte',
-      'Emails' => 'E-poruke',
+      'Create EmailFilter' => 'Crear un filtro de email',
+      'Emails' => 'Correos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'Skip' => 'Ignorirati',
-        'Move to Folder' => 'Staviti u mapu',
+        'Skip' => 'Ignorar',
+        'Move to Folder' => 'Poner en la carpeta',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'name' => 'Dajte filteru opisno ime.',
-      'subject' => 'Koristite asterisk *:
+      'name' => 'Dé al filtro un nombre descriptivo.',
+      'subject' => 'Filtra los correos con el asunto. Dejar en blanco si no es necesario. Puede usar el comodín *:
 
-text* - počinje sa text,
-*text* - sadrži text,
-*text - završava sa text.',
-      'bodyContains' => 'Sadržaj e-pošte ima bilo koju od navedenih riječi ili fraza.',
-      'from' => 'Poruke poslane sa navedene adrese. Ostaviti prazno ako nije potrebno. Možete koristiti asterisk *.',
-      'to' => 'Poruke za navedenu adresu. Ostaviti prazno ako nije potrebno. Možete koristiti asterisk *.',
-      'isGlobal' => 'Primjenjuje ovaj filter na svim email porukama koje dolaze u sustav.',
+texto* - empieza con texto,
+*texot* - contiene texto,
+*texto - termina con texto.',
+      'bodyContains' => 'Filtra los correos que en el cuerpo contengan cualquiera de estas palabras o frases.',
+      'from' => 'Filtra los correos enviados desde esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'to' => 'Filtra los correos enviados a esta dirección. Dejar en blanco si no es necesario. Puede usar el comodín *.',
+      'isGlobal' => 'Aplica este filtro a todos los correos entrantes del sistema.',
     ),
   ),
-  'EmailFolder' => 
+  'EmailFolder' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'skipNotifications' => 'Preskoči obavijesti',
+      'skipNotifications' => 'Omitir notificaciones',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailFolder' => 'Napraviti Mapu',
-      'Manage Folders' => 'Upravljanje Mapama',
-      'Emails' => 'E-poruke',
+      'Create EmailFolder' => 'Crear carpeta',
+      'Manage Folders' => 'Administrar carpetas',
+      'Emails' => 'Correos',
     ),
   ),
-  'EmailTemplate' => 
+  'EmailTemplate' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'status' => 'Status',
-      'isHtml' => 'Je HTML',
-      'body' => 'Sadržaj',
-      'subject' => 'Predmet',
-      'attachments' => 'Prilozi',
-      'insertField' => 'Ubaci polje',
-      'oneOff' => 'Jednokratno',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'isHtml' => 'Es HTML',
+      'body' => 'Cuerpo',
+      'subject' => 'Asunto',
+      'attachments' => 'Adjuntos',
+      'insertField' => 'Insertar campo',
+      'oneOff' => 'Único',
       'category' => 'Category',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create EmailTemplate' => 'Kreiraj šablonu e-pošte',
-      'Info' => 'Info',
+      'Create EmailTemplate' => 'Crear plantilla de correo',
+      'Info' => 'Información',
       'Available placeholders' => 'Available placeholders',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'infoText' => 'Dostupne varijable: 
+      'infoText' => 'Variables disponibles:
 
-{optOutUrl} &#8211; URL za link za odjavljivanje;
+{optOutUrl} &#8211; URL del enlace de baja.
 
-{optOutLink} &#8211; link za odjavljivanje.',
+{optOutLink} &#8211;  Enlace de baja.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'oneOff' => 'Označite ako namjeravate da koristite ovu šablonu samo jednom. Npr. masovna poruka.',
+      'oneOff' => 'Marque la casilla si usted va a utilizar esta plantilla solo una vez. Por ejemplo para correo masivo.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Trenutni',
+      'actual' => 'Actuales',
     ),
-    'placeholderTexts' => 
+    'placeholderTexts' =>
     array (
       'optOutUrl' => 'URL for an unsubsbribe link',
       'optOutLink' => 'an unsubscribe link',
     ),
   ),
-  'EmailTemplateCategory' => 
+  'EmailTemplateCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create EmailTemplateCategory' => 'Create Category',
       'Manage Categories' => 'Manage Categories',
       'EmailTemplates' => 'Email Templates',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'order' => 'Order',
       'childList' => 'Child List',
     ),
-    'links' => 
+    'links' =>
     array (
       'emailTemplates' => 'Email Templates',
     ),
   ),
-  'EntityManager' => 
+  'EntityManager' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Fields' => 'Polja',
-      'Relationships' => 'Odnosi',
-      'Schedule' => 'Raspored',
-      'Log' => 'Dnevnik',
-      'Formula' => 'Formula',
+      'Fields' => 'Campos',
+      'Relationships' => 'Relaciones',
+      'Schedule' => 'Programar',
+      'Log' => 'Registros',
+      'Formula' => 'Fórmula',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'type' => 'Tip',
-      'labelSingular' => 'Natpis jednina',
-      'labelPlural' => 'Natpis množina',
-      'stream' => 'Tok vijesti',
-      'label' => 'Natpis',
-      'linkType' => 'Vrsta Poveznice',
-      'entityForeign' => 'Strani entitet',
-      'linkForeign' => 'Strana Poveznica',
-      'link' => 'Poveznica',
-      'labelForeign' => 'Strani natpis',
-      'sortBy' => 'Početno sortiranje (polje)',
-      'sortDirection' => 'Početno sortiranje (smjer)',
-      'relationName' => 'Naziv srednje tabele',
-      'linkMultipleField' => 'Povezivanje više polja',
-      'linkMultipleFieldForeign' => 'Povezivanje više stranih polja',
-      'disabled' => 'Onemogućeno',
-      'textFilterFields' => 'Tekst filter polja',
-      'audited' => 'Revizija',
-      'auditedForeign' => 'Vanjska Revizija',
-      'statusField' => 'Status polja',
-      'beforeSaveCustomScript' => 'Prilagođeni kod prije spremanja',
+      'name' => 'Nombre',
+      'type' => 'Tipo',
+      'labelSingular' => 'Etiqueta en singular',
+      'labelPlural' => 'Etiqueta en plural',
+      'stream' => 'Historia',
+      'label' => 'Etiqueta',
+      'linkType' => 'Tipo de enlace',
+      'entityForeign' => 'Entidad foránea',
+      'linkForeign' => 'Enlace Foráneo',
+      'link' => 'Enlace',
+      'labelForeign' => 'Etiqueta Foránea',
+      'sortBy' => 'Orden por defecto (campo)',
+      'sortDirection' => 'Orden por defecto (dirección)',
+      'relationName' => 'Nombre de la Tabla Intermedia',
+      'linkMultipleField' => 'Enlaza múltiples campos',
+      'linkMultipleFieldForeign' => 'Enlaza múltiples campos foráneos',
+      'disabled' => 'Desactivado',
+      'textFilterFields' => 'Los campos de filtro de texto',
+      'audited' => 'Auditado',
+      'auditedForeign' => 'Foráneo auditado',
+      'statusField' => 'Campo estado',
+      'beforeSaveCustomScript' => 'Antes de guardar la secuencia de comandos personalizada',
       'color' => 'Color',
       'kanbanViewMode' => 'Kanban View',
       'kanbanStatusIgnoreList' => 'Ignored groups in Kanban view',
       'iconClass' => 'Icon',
       'fullTextSearch' => 'Full-Text Search',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        '' => 'Nema',
-        'Base' => 'Bazna',
-        'Person' => 'Osoba',
-        'CategoryTree' => 'Drvo Kategorija',
-        'Event' => 'Događaj',
-        'BasePlus' => 'Bazno plus',
-        'Company' => 'Kompanija',
+        '' => 'Ninguno',
+        'Base' => 'Base',
+        'Person' => 'Persona',
+        'CategoryTree' => 'Árbol de categorías',
+        'Event' => 'Evento',
+        'BasePlus' => 'Base Plus',
+        'Company' => 'Empresa',
       ),
-      'linkType' => 
+      'linkType' =>
       array (
-        'manyToMany' => 'Više-na-više',
-        'oneToMany' => 'Jedan-na-Više',
-        'manyToOne' => 'Više-na-Jedan',
-        'parentToChildren' => 'Nadređeni-Podređeni',
-        'childrenToParent' => 'Podređeni-Nadređeni',
+        'manyToMany' => 'Mucho-a-Muchos',
+        'oneToMany' => 'Uno-a-Muchos',
+        'manyToOne' => 'Muchos-a-uno',
+        'parentToChildren' => 'Padres-a-Hijos',
+        'childrenToParent' => 'Hijos-a-Padres',
       ),
-      'sortDirection' => 
+      'sortDirection' =>
       array (
-        'asc' => 'Uzlazno',
-        'desc' => 'Silazno',
+        'asc' => 'Ascendente',
+        'desc' => 'Descendente',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'entityCreated' => 'Entitet je stvoren',
-      'linkAlreadyExists' => 'Konflikt u nazivu poveznice.',
-      'linkConflict' => 'Konflikt u nazivu : poveznica ili polje sa istim nazivom već postoji.',
+      'entityCreated' => 'La entidad ha sido creada',
+      'linkAlreadyExists' => 'Conflicto de nombres en el enlace.',
+      'linkConflict' => 'Conflicto de nombres: un enlace o campo con el mismo nombre ya existe.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'statusField' => 'Ažuriranja ovog polja se prikazuju u toku vijesti.',
-      'textFilterFields' => 'Polja koja se koriste za pretraživanje teksta.',
-      'stream' => 'Da li entitet ima tok vijesti.',
-      'disabled' => 'Provjerite da li vam ne treba ovaj entitet u sustavu.',
-      'linkAudited' => 'Stvaranje povezanog unosa i povezivanje sa postojećim unosom će biti vidljivo u toku vijesti.',
-      'linkMultipleField' => 'Višestuka veza polja pruža zgodan način za uređivanje odnosa. Nemojte ga koristiti ako imate veliki broj povezanih zapisa.',
-      'entityType' => 'Bazni plus - ima aktivnosti, povijesti i panele zadataka.
+      'statusField' => 'Las actualizaciones de este campo se registran en la historia.',
+      'textFilterFields' => 'Campos utilizados por la búsqueda de texto.',
+      'stream' => 'Marque para que la entidad tenga historia.',
+      'disabled' => 'Marque si no necesita esta entidad en su sistema.',
+      'linkAudited' => 'Crear un registro relacionado y vincularlo con el registro existente, hará que se registre en la historia.',
+      'linkMultipleField' => 'El campo de relaciones múltiples proporciona una manera práctica de editar relaciones. No lo use si puede tener un gran número de registros relacionados.',
+      'entityType' => 'Base: Sin elementos adicionales
 
-Događaj - Dostupan u kalendaru i panelu aktivnosti.',
+Base Plus - Similar a Posibles clientes y Oportunidades (tiene paneles de Actividades planeadas, Historial de actividades y Tareas).
+
+Evento - Similar a Reuniones y Llamadas (disponible en Calendario y en el Panel de Actividades).
+
+Persona - Similar a Contacto.
+
+Empresa - Similar a Cuenta.',
       'fullTextSearch' => 'Running rebuild is required.',
     ),
   ),
-  'Export' => 
+  'Export' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'exportAllFields' => 'Izvoz svih polja',
-      'fieldList' => 'Lista Polja',
-      'format' => 'Format',
+      'exportAllFields' => 'Exportar todos los campos',
+      'fieldList' => 'Lista de campos',
+      'format' => 'Formato',
     ),
-    'options' => 
+    'options' =>
     array (
-      'format' => 
+      'format' =>
       array (
         'csv' => 'CSV',
-        'xlsx' => 'XLSX (Excel),',
+        'xlsx' => 'XLSX (Excel)',
       ),
     ),
   ),
-  'Extension' => 
+  'Extension' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'version' => 'Verzija',
-      'description' => 'Opis',
-      'isInstalled' => 'Instalirano',
+      'name' => 'Nombre',
+      'version' => 'Versión',
+      'description' => 'Descripción',
+      'isInstalled' => 'Instalado',
       'checkVersionUrl' => 'An URL for checking new versions',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Uninstall' => 'Deinstaliraj',
-      'Install' => 'Instaliraj',
+      'Uninstall' => 'Desinstalar',
+      'Install' => 'Instalar',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'uninstalled' => 'Ekstenzija {name} je deinstalirana',
-    ),
-  ),
-  'ExternalAccount' => 
-  array (
-    'labels' => 
-    array (
-      'Connect' => 'Poveži',
-      'Connected' => 'Povezano',
-    ),
-    'help' => 
-    array (
+      'uninstalled' => 'Extensión {name} ha sido desinstalada',
     ),
   ),
-  'FieldManager' => 
+  'ExternalAccount' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Dynamic Logic' => 'Dinamička Logika',
-      'Name' => 'Naziv',
-      'Label' => 'Natpis',
-      'Type' => 'Vrsta',
+      'Connect' => 'Conectar',
+      'Connected' => 'Conectado',
     ),
-    'options' => 
+    'help' =>
     array (
-      'dateTimeDefault' => 
+    ),
+  ),
+  'FieldManager' =>
+  array (
+    'labels' =>
+    array (
+      'Dynamic Logic' => 'Lógica dinámica',
+      'Name' => 'Name',
+      'Label' => 'Label',
+      'Type' => 'Type',
+    ),
+    'options' =>
+    array (
+      'dateTimeDefault' =>
       array (
-        '' => 'Nema',
-        'javascript: return this.dateTime.getNow(1);' => 'Sada',
-        'javascript: return this.dateTime.getNow(5);' => 'Sada (5m)',
-        'javascript: return this.dateTime.getNow(15);' => 'Sada (15m)',
-        'javascript: return this.dateTime.getNow(30);' => 'Sada (30m)',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 sat',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 sata',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 sata',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 sata',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+6 sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+11 sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 Sati',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 dan',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 Dan(a)',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 Dan(a)',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 dana.',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 dana.',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 dana.',
-        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 tjedan',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getNow(1);' => 'Ahora',
+        'javascript: return this.dateTime.getNow(5);' => 'Ahora (5m)',
+        'javascript: return this.dateTime.getNow(15);' => 'Ahora (15m)',
+        'javascript: return this.dateTime.getNow(30);' => 'Ahora (30m)',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'hours\', 15);' => '+1 hora',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'hours\', 15);' => '+2 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'hours\', 15);' => '+3 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'hours\', 15);' => '+4 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'hours\', 15);' => '+5 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'hours\', 15);' => '+6 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(7, \'hours\', 15);' => '+7 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(8, \'hours\', 15);' => '+8 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(9, \'hours\', 15);' => '+9 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(10, \'hours\', 15);' => '+10 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(11, \'hours\', 15);' => '+11 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(12, \'hours\', 15);' => '+12 horas',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'days\', 15);' => '+1 día',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(2, \'days\', 15);' => '+2 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(3, \'days\', 15);' => '+3 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(4, \'days\', 15);' => '+4 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(5, \'days\', 15);' => '+5 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(6, \'days\', 15);' => '+6 días',
+        'javascript: return this.dateTime.getDateTimeShiftedFromNow(1, \'week\', 15);' => '+1 semana',
       ),
-      'dateDefault' => 
+      'dateDefault' =>
       array (
-        '' => 'Nema',
-        'javascript: return this.dateTime.getToday();' => 'Danas',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 Dan',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 Dan(a)',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 tjedan',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+2 tjedna',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 tjedna',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 mjesec',
-        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+2 mjeseca',
-        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+3 mjeseca',
-        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 mjeseca',
-        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+5 mjeseci',
-        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+6 mjeseci',
-        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+7 mjeseci',
-        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 mjeseci',
-        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 mjeseci',
-        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+10 mjeseci',
-        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+11 mjeseci',
-        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 godina',
+        '' => 'Nada',
+        'javascript: return this.dateTime.getToday();' => 'Hoy',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'days\');' => '+1 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'days\');' => '+2 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'days\');' => '+3 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'days\');' => '+4 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'days\');' => '+5 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'days\');' => '+6 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'days\');' => '+7 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'days\');' => '+8 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'days\');' => '+9 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'days\');' => '+10 días',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'weeks\');' => '+1 semana',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'weeks\');' => '+2 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'weeks\');' => '+3 semanas',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'months\');' => '+1 mes',
+        'javascript: return this.dateTime.getDateShiftedFromToday(2, \'months\');' => '+2 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(3, \'months\');' => '+3 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(4, \'months\');' => '+4 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(5, \'months\');' => '+5 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(6, \'months\');' => '+6 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(7, \'months\');' => '+7 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(8, \'months\');' => '+8 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(9, \'months\');' => '+9 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(10, \'months\');' => '+10 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(11, \'months\');' => '+11 meses',
+        'javascript: return this.dateTime.getDateShiftedFromToday(1, \'year\');' => '+1 año',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'audited' => 'Ispravke će biti vidljive u toku vijesti.',
-      'required' => 'Polje će biti obavezno. Ne može ostati prazno.',
-      'default' => 'Vrijednost će biti postavljena na početnu.',
-      'min' => 'Min prihvatljiva vrijednost.',
-      'max' => 'Maks prihvatljiva vrijednost.',
-      'seeMoreDisabled' => 'Ako nije odznačeno onda će dugi tekstovi biti skraćeni.',
-      'lengthOfCut' => 'Koliko teksta može biti prije skraćivanja.',
-      'maxLength' => 'Maksimalna prihvatljiva dužina teksta.',
-      'before' => 'Vrijednost datuma mora biti prije datumske vrijednosti određenog polja.',
-      'after' => 'Vrijednost datuma mora biti poslije datumske vrijednosti određenog polja.',
-      'readOnly' => 'Vrijednost polja ne može biti određen od strane korisnika. Ali može se izračunati formulom.',
-      'maxFileSize' => 'Ako je prazno ili 0, nema ograničenja.',
+      'audited' => 'Las actualizaciones se registrarán en la historia.',
+      'required' => 'El campo será obligatorio. No se puede dejar vacío.',
+      'default' => 'El valor se establecerá de forma predeterminada al guardar.',
+      'min' => 'Valor mínimo aceptado.',
+      'max' => 'Valor máximo aceptado.',
+      'seeMoreDisabled' => 'Si no se marca, los textos largos se cortarán.',
+      'lengthOfCut' => 'Que largo tendrán los textos antes de ser cortados.',
+      'maxLength' => 'Longitud máxima aceptable del texto.',
+      'before' => 'El valor de fecha debe ser anterior al valor de fecha del campo especificado.',
+      'after' => 'El valor de fecha debe ser posterior al valor de fecha del campo especificado.',
+      'readOnly' => 'El usuario no puede especificar el valor del campo. Pero se puede calcular por fórmula.',
+      'maxFileSize' => 'Si está vacío o es 0, entonces no limitar',
     ),
-    'fieldParts' => 
+    'fieldParts' =>
     array (
-      'address' => 
+      'address' =>
       array (
-        'street' => 'Ulica',
-        'city' => 'Grad',
-        'state' => 'Država',
-        'country' => 'Zemlja',
-        'postalCode' => 'Poštanski broj',
+        'street' => 'Calle',
+        'city' => 'Ciudad',
+        'state' => 'Estado',
+        'country' => 'País',
+        'postalCode' => 'Código Postal',
         'map' => 'Mapa',
       ),
-      'personName' => 
+      'personName' =>
       array (
-        'salutation' => 'Titula',
-        'first' => 'Prvi',
-        'last' => 'Zadnji',
+        'salutation' => 'Saludo',
+        'first' => 'Nombre',
+        'last' => 'Apellido',
       ),
-      'currency' => 
+      'currency' =>
       array (
-        'converted' => '(Konvertirano)',
-        'currency' => '(Valuta)',
+        'converted' => '(Convertido)',
+        'currency' => '(Currency)',
       ),
-      'datetimeOptional' => 
+      'datetimeOptional' =>
       array (
-        'date' => 'Datum',
+        'date' => 'Fecha',
       ),
     ),
   ),
-  'Global' => 
+  'Global' =>
   array (
-    'scopeNames' => 
+    'scopeNames' =>
     array (
-      'Email' => 'E-pošta',
-      'User' => 'Korisnik',
-      'Team' => 'Tim',
-      'Role' => 'Uloga',
-      'EmailTemplate' => 'Šablona e-pošte',
+      'Email' => 'Correo electrónico',
+      'User' => 'Usuario',
+      'Team' => 'Equipo',
+      'Role' => 'Rol',
+      'EmailTemplate' => 'Plantilla de Correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Osobni račun e-pošte',
-      'EmailAccountScope' => 'Osobni račun e-pošte',
-      'OutboundEmail' => 'Odlazna e-pošta',
-      'ScheduledJob' => 'Zakazane radnje',
-      'ExternalAccount' => 'Vanjski račun',
-      'Extension' => 'Ekstenzija',
-      'Dashboard' => 'Radna površina',
-      'InboundEmail' => 'Grupni račun e-pošte',
-      'Stream' => 'Tok vijesti',
-      'Import' => 'Uvoz',
-      'Template' => 'Šablona',
-      'Job' => 'Posao',
-      'EmailFilter' => 'Filter e-pošte',
+      'EmailAccount' => 'Cuenta de correo personal',
+      'EmailAccountScope' => 'Cuenta de correo personal',
+      'OutboundEmail' => 'Correo Saliente',
+      'ScheduledJob' => 'Tarea Programada',
+      'ExternalAccount' => 'Cuenta Externa',
+      'Extension' => 'Extensión',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuenta de correo grupal',
+      'Stream' => 'Historia',
+      'Import' => 'Importar',
+      'Template' => 'Plantilla',
+      'Job' => 'Trabajo',
+      'EmailFilter' => 'Filtro de correo',
       'Portal' => 'Portal',
-      'PortalRole' => 'Uloga za portal',
-      'Attachment' => 'Prilog',
-      'EmailFolder' => 'Mapa e-pošte',
-      'PortalUser' => 'Korisnik portala',
-      'ScheduledJobLogRecord' => 'Upis dnevnika zakazanih poslova',
-      'PasswordChangeRequest' => 'Zahtjev za promjenom lozinke',
-      'ActionHistoryRecord' => 'Zapis Povijesti Akcija',
-      'AuthToken' => 'Auth token',
-      'UniqueId' => 'Jedinstveni ID',
-      'LastViewed' => 'Poslednji put pregledano',
-      'Settings' => 'Postavke',
-      'FieldManager' => 'Upravljanje poljima',
-      'Integration' => 'Integracija',
-      'LayoutManager' => 'Upravljanje izgledom',
-      'EntityManager' => 'Upravljanje entitetima',
-      'Export' => 'Izvoz',
-      'DynamicLogic' => 'Dinamička logika',
-      'DashletOptions' => 'Opcije za dashlet',
-      'Admin' => 'Admin',
-      'Global' => 'Globalno',
-      'Preferences' => 'Postavke',
-      'EmailAddress' => 'Adresa e-pošte',
-      'PhoneNumber' => 'Telefonski broj',
+      'PortalRole' => 'Rol del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpeta de correo electrónico',
+      'PortalUser' => 'Usuario del portal',
+      'ScheduledJobLogRecord' => 'Registro del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambio de Contraseña',
+      'ActionHistoryRecord' => 'Registro del histórico',
+      'AuthToken' => 'Token de autenticación',
+      'UniqueId' => 'ID Único',
+      'LastViewed' => 'Historial de acciones',
+      'Settings' => 'Ajustes',
+      'FieldManager' => 'Administrador de campos',
+      'Integration' => 'Integración',
+      'LayoutManager' => 'Administrador de diseño',
+      'EntityManager' => 'Gestionar de entidades',
+      'Export' => 'Exportar',
+      'DynamicLogic' => 'Lógica dinámica',
+      'DashletOptions' => 'Ajustes de cajas',
+      'Admin' => 'Administrador',
+      'Global' => 'Global',
+      'Preferences' => 'Preferencias',
+      'EmailAddress' => 'Correo electrónico',
+      'PhoneNumber' => 'Número de teléfono',
       'AuthLogRecord' => 'Auth Log Record',
       'AuthFailLogRecord' => 'Auth Fail Log Record',
       'LeadCapture' => 'Lead Capture Entry Point',
       'LeadCaptureLogRecord' => 'Lead Capture Log Record',
       'ArrayValue' => 'Array Value',
-      'Account' => 'Tvrtka',
-      'Contact' => 'Kontakt',
-      'Lead' => 'Izvor',
-      'Target' => 'Meta',
-      'Opportunity' => 'Prilika',
-      'Meeting' => 'Sastanak',
-      'Calendar' => 'Kalendar',
-      'Call' => 'Poziv',
-      'Task' => 'Zadatak',
-      'Case' => 'Prijava problema',
-      'Document' => 'Dokument',
-      'DocumentFolder' => 'Mapa dokumenta',
-      'Campaign' => 'Kampanja',
-      'TargetList' => 'Lista meta',
-      'MassEmail' => 'Masovna e-pošta',
-      'EmailQueueItem' => 'Email sa liste čekanja',
-      'CampaignTrackingUrl' => 'URL za praćenje',
-      'Activities' => 'Aktivnosti',
-      'KnowledgeBaseArticle' => 'Baza znanja članak',
-      'KnowledgeBaseCategory' => 'Baza znanja kategorija',
-      'CampaignLogRecord' => 'Upis dnevnika kampanje',
+      'Account' => 'Cuenta',
+      'Contact' => 'Contacto',
+      'Lead' => 'Posible cliente',
+      'Target' => 'Objetivo',
+      'Opportunity' => 'Oportunidad',
+      'Meeting' => 'Reunión',
+      'Calendar' => 'Calendario',
+      'Call' => 'Llamada',
+      'Task' => 'Tarea',
+      'Case' => 'Ticket',
+      'Document' => 'Documento',
+      'DocumentFolder' => 'Carpeta de documento',
+      'Campaign' => 'Campaña',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correo masivo',
+      'EmailQueueItem' => 'Elemento en cola de correos',
+      'CampaignTrackingUrl' => 'URL de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Artículo de la base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categoría de la base de conocimiento',
+      'CampaignLogRecord' => 'Registro del registro de la campaña',
       'Formularios' => 'Formulario',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categoria',
+      'Subcategoria' => 'Subcategoria',
+      'Empresa' => 'Empresa',
+      'Trabajador' => 'Trabajador',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficio',
+      'Ciudad' => 'Ciudad',
+      'Comuna' => 'Comuna',
+      'Proveedor' => 'Proveedor',
+      'Rol' => 'Rol',
       'Reclamo' => 'Reclamo',
       'MotivoReclamo' => 'MotivoReclamo',
     ),
-    'scopeNamesPlural' => 
+    'scopeNamesPlural' =>
     array (
-      'Email' => 'E-poruke',
-      'User' => 'Korisnici',
-      'Team' => 'Timovi',
-      'Role' => 'Uloge',
-      'EmailTemplate' => 'Šablone e-pošte',
+      'Email' => 'Correos',
+      'User' => 'Usuarios',
+      'Team' => 'Equipos',
+      'Role' => 'Roles',
+      'EmailTemplate' => 'Plantillas de correo',
       'EmailTemplateCategory' => 'Email Template Categories',
-      'EmailAccount' => 'Osobni računi e-pošte',
-      'EmailAccountScope' => 'Osobni računi e-pošte',
-      'OutboundEmail' => 'Odlazne e-pošte',
-      'ScheduledJob' => 'Zakazane radnje',
-      'ExternalAccount' => 'Vanjski računi',
-      'Extension' => 'Ekstenzije',
-      'Dashboard' => 'Radna površina',
-      'InboundEmail' => 'Grupni računi e-pošte',
-      'Stream' => 'Tok viesti',
-      'Import' => 'Rezultati uvoza',
-      'Template' => 'Šablone',
-      'Job' => 'Radnje',
-      'EmailFilter' => 'Filteri e-pošte',
-      'Portal' => 'Portali',
-      'PortalRole' => 'Uloge za portal',
-      'Attachment' => 'Prilozi',
-      'EmailFolder' => 'Mapa e-pošte',
-      'PortalUser' => 'Korisnici portala',
-      'ScheduledJobLogRecord' => 'Upisi dnevnika zakazanih poslova',
-      'PasswordChangeRequest' => 'Zahtjevi za promjenama lozinke',
-      'ActionHistoryRecord' => 'Povijest akcija',
-      'AuthToken' => 'Auth Tokeni',
-      'UniqueId' => 'Jedinstveni ID-evi',
-      'LastViewed' => 'Posljednji put pregledano',
+      'EmailAccount' => 'Cuentas de correo personales',
+      'EmailAccountScope' => 'Cuentas de correo personales',
+      'OutboundEmail' => 'Salientes',
+      'ScheduledJob' => 'Tareas programadas',
+      'ExternalAccount' => 'Cuentas externas',
+      'Extension' => 'Extensiones',
+      'Dashboard' => 'Escritorio',
+      'InboundEmail' => 'Cuentas de correo grupales',
+      'Stream' => 'Historia',
+      'Import' => 'Resultados de importaciones',
+      'Template' => 'Plantillas',
+      'Job' => 'Trabajos',
+      'EmailFilter' => 'Filtros',
+      'Portal' => 'Portales',
+      'PortalRole' => 'Roles del portal',
+      'Attachment' => 'Adjuntos',
+      'EmailFolder' => 'Carpetas de correo',
+      'PortalUser' => 'Usuarios del portal',
+      'ScheduledJobLogRecord' => 'Registros del registro de trabajo programado',
+      'PasswordChangeRequest' => 'Solicitar Cambios de Contraseñas',
+      'ActionHistoryRecord' => 'Histórico',
+      'AuthToken' => 'Tokens',
+      'UniqueId' => 'ID Únicos',
+      'LastViewed' => 'Historial de acciones',
       'AuthLogRecord' => 'Auth Log',
       'AuthFailLogRecord' => 'Auth Fail Log',
       'LeadCapture' => 'Lead Capture',
       'LeadCaptureLogRecord' => 'Lead Capture Log',
       'ArrayValue' => 'Array Values',
-      'Account' => 'Tvrtke',
-      'Contact' => 'Kontakti',
-      'Lead' => 'Izvori',
-      'Target' => 'Mete',
-      'Opportunity' => 'Prilike',
-      'Meeting' => 'Sastanci',
-      'Calendar' => 'Kalendar',
-      'Call' => 'Pozivi',
-      'Task' => 'Zadaci',
-      'Case' => 'Prijave problema',
-      'Document' => 'Dokumenti',
-      'DocumentFolder' => 'Mape Dokumenata',
-      'Campaign' => 'Kampanje',
-      'TargetList' => 'Liste meta',
-      'MassEmail' => 'Masovne e-pošta',
-      'EmailQueueItem' => 'Email sa liste za čekanje',
-      'CampaignTrackingUrl' => 'Praćenje URL-ova',
-      'Activities' => 'Aktivnosti',
-      'KnowledgeBaseArticle' => 'Baza znanja',
-      'KnowledgeBaseCategory' => 'Baza znanja Kategorije',
-      'CampaignLogRecord' => 'Upisi dnevnika kampanje',
+      'Account' => 'Cuentas',
+      'Contact' => 'Contactos',
+      'Lead' => 'Posibles clientes',
+      'Target' => 'Objetivos',
+      'Opportunity' => 'Oportunidades',
+      'Meeting' => 'Reuniones',
+      'Calendar' => 'Calendario',
+      'Call' => 'Llamadas',
+      'Task' => 'Tareas',
+      'Case' => 'Tickets',
+      'Document' => 'Documentos',
+      'DocumentFolder' => 'Carpetas de documentos',
+      'Campaign' => 'Campañas',
+      'TargetList' => 'Lista de objetivos',
+      'MassEmail' => 'Correos masivos',
+      'EmailQueueItem' => 'Elementos en cola de correos',
+      'CampaignTrackingUrl' => 'URLs de seguimiento',
+      'Activities' => 'Actividades',
+      'KnowledgeBaseArticle' => 'Base de conocimiento',
+      'KnowledgeBaseCategory' => 'Categorías de la base de conocimiento',
+      'CampaignLogRecord' => 'Registros del registro de la campaña',
       'Formularios' => 'Formularios',
+      'Solicitudes' => 'Solicitudes',
+      'Categoria' => 'Categorias',
+      'Subcategoria' => 'Subcategorias',
+      'Empresa' => 'Empresas',
+      'Trabajador' => 'Trabajadores',
+      'Beneficios' => 'Beneficios',
+      'DoctosBeneficio' => 'Doctos_beneficios',
+      'Ciudad' => 'Ciudads',
+      'Comuna' => 'Comunas',
+      'Proveedor' => 'Proveedors',
+      'Rol' => 'Rols',
       'Reclamo' => 'Reclamos',
       'MotivoReclamo' => 'MotivoReclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Misc' => 'Ostalo',
-      'Merge' => 'Spoji',
-      'None' => 'Nema',
-      'Home' => 'Početna',
-      'by' => 'od',
-      'Saved' => 'Spremljeno',
-      'Error' => 'Greška',
-      'Select' => 'Odaberite',
-      'Not valid' => 'Nije točan',
-      'Please wait...' => 'Pričekajte...',
-      'Please wait' => 'Pričekajte',
-      'Loading...' => 'Učitavanje...',
-      'Uploading...' => 'Prijenos...',
-      'Sending...' => 'Slanje...',
-      'Merging...' => 'Spajanje ...',
-      'Merged' => 'Spojeno',
-      'Removed' => 'Obrisano',
-      'Posted' => 'Objavljeno',
-      'Linked' => 'Povezano',
-      'Unlinked' => 'Nepovezano',
-      'Done' => 'Obavljeno',
-      'Access denied' => 'Pristup odbijen',
-      'Not found' => 'Nije pronađeno',
-      'Access' => 'Pristup',
-      'Are you sure?' => 'Jeste li sigurni?',
-      'Record has been removed' => 'Zapis je obrisan',
-      'Wrong username/password' => 'Pogrešno korisničko ime / lozinka',
-      'Post cannot be empty' => 'Unos ne može biti prazan',
-      'Removing...' => 'Brisanje ...',
-      'Unlinking...' => 'Opoziv poveznice ...',
-      'Posting...' => 'Postavljanje ...',
-      'Username can not be empty!' => 'Korisničko ime ne može biti prazno!',
-      'Cache is not enabled' => 'Cache nije omogućen',
-      'Cache has been cleared' => 'Cache je obrisan',
-      'Rebuild has been done' => 'Obnova je izvršena',
-      'Return to Application' => 'Povratak na aplikaciju',
-      'Saving...' => 'Spremanje...',
-      'Modified' => 'Izmjenjeno',
-      'Created' => 'Kreirano',
-      'Create' => 'Kreiraj',
-      'create' => 'kreiraj',
-      'Overview' => 'Pregled',
-      'Details' => 'Detaljno',
-      'Add Field' => 'Dodaj polje',
-      'Add Dashlet' => 'Dodaj Dashlet',
-      'Filter' => 'Filter',
-      'Edit Dashboard' => 'Izmjena radne površine',
-      'Add' => 'Dodaj',
-      'Add Item' => 'Dodajte stavku',
-      'Reset' => 'Resetiranje',
-      'Menu' => 'Izbornik',
-      'More' => 'Još',
-      'Search' => 'Pretraga',
-      'Only My' => 'Samo moje',
-      'Open' => 'Otvori',
-      'Admin' => 'Admin',
-      'About' => 'O...',
-      'Refresh' => 'Osvježi',
-      'Remove' => 'Obriši',
-      'Options' => 'Opcije',
-      'Username' => 'Korisničko ime',
-      'Password' => 'Lozinka',
-      'Login' => 'Prijava',
-      'Log Out' => 'Odjavljivanje',
-      'Preferences' => 'Postavke',
-      'State' => 'Status',
-      'Street' => 'Ulica',
-      'Country' => 'Zemlja',
-      'City' => 'Grad',
-      'PostalCode' => 'Poštanski broj',
-      'Followed' => 'Prati se',
-      'Follow' => 'Pratiti',
-      'Followers' => 'Pratitelji',
-      'Clear Local Cache' => 'Očisti lokalni cache',
-      'Actions' => 'Akcije',
-      'Delete' => 'Brisanje',
-      'Update' => 'Izmjena',
-      'Save' => 'Spremanje',
-      'Edit' => 'Izmjena',
-      'View' => 'Pregled',
-      'Cancel' => 'Otkaži',
-      'Apply' => 'Primjeniti',
-      'Unlink' => 'Micanje Poveznice',
-      'Mass Update' => 'Masovna izmjena',
-      'Export' => 'Izvoz',
-      'No Data' => 'Nema podataka',
-      'No Access' => 'Nema pristupa',
-      'All' => 'Sve',
-      'Active' => 'Aktivan',
-      'Inactive' => 'Neaktivan',
-      'Write your comment here' => 'Napišite vaš komentar ovdje',
-      'Post' => 'Unos',
-      'Stream' => 'Tok vijesti',
-      'Show more' => 'Prikaži više',
-      'Dashlet Options' => 'Dashlet Opcije',
-      'Full Form' => 'Cijela forma',
-      'Insert' => 'Umetanje',
-      'Person' => 'Osoba',
-      'First Name' => 'Ime',
-      'Last Name' => 'Prezime',
+      'Misc' => 'Misceláneos',
+      'Merge' => 'Unir',
+      'None' => 'Ninguno',
+      'Home' => 'Inicio',
+      'by' => 'por',
+      'Saved' => 'Guardado',
+      'Error' => 'Error',
+      'Select' => 'Seleccionar',
+      'Not valid' => 'No válido',
+      'Please wait...' => 'Por favor espere...',
+      'Please wait' => 'Por favor espere',
+      'Loading...' => 'Cargando...',
+      'Uploading...' => 'Subiendo...',
+      'Sending...' => 'Enviando...',
+      'Merging...' => 'Fusionando...',
+      'Merged' => 'Fusionado	',
+      'Removed' => 'Eliminado',
+      'Posted' => 'Publicado',
+      'Linked' => 'Enlazado',
+      'Unlinked' => 'Desenlazado',
+      'Done' => 'Hecho',
+      'Access denied' => 'Acceso denegado',
+      'Not found' => 'No encontrado',
+      'Access' => 'Acceso',
+      'Are you sure?' => '¿Está seguro?',
+      'Record has been removed' => 'Registro Eliminado',
+      'Wrong username/password' => 'Nombre de usuario/contraseña incorrectos',
+      'Post cannot be empty' => 'La entrada no puede estar vacia',
+      'Removing...' => 'Removiendo...',
+      'Unlinking...' => 'Desenlazando...',
+      'Posting...' => 'Publicando...',
+      'Username can not be empty!' => '¡El nombre de usuario no puede estar vacío!',
+      'Cache is not enabled' => 'La caché no está habilitada',
+      'Cache has been cleared' => 'La caché fue limpiada correctamente',
+      'Rebuild has been done' => 'El sistema se ha reconstruido correctamente',
+      'Return to Application' => 'Volver a la aplicación',
+      'Saving...' => 'Guardando...',
+      'Modified' => 'Modificado',
+      'Created' => 'Creado',
+      'Create' => 'Crear',
+      'create' => 'crear',
+      'Overview' => 'General',
+      'Details' => 'Detalles',
+      'Add Field' => 'Añadir Campo',
+      'Add Dashlet' => 'Añadir Caja',
+      'Filter' => 'Filtro',
+      'Edit Dashboard' => 'Editar escritorio',
+      'Add' => 'Añadir',
+      'Add Item' => 'Agregar elemento',
+      'Reset' => 'Resetear',
+      'Menu' => 'Menú',
+      'More' => 'Más',
+      'Search' => 'Buscar',
+      'Only My' => 'Solo míos',
+      'Open' => 'Abiertos',
+      'Admin' => 'Administrador',
+      'About' => 'Acerca',
+      'Refresh' => 'Actualizar',
+      'Remove' => 'Eliminar',
+      'Options' => 'Ajustes',
+      'Username' => 'Nombre de usuario',
+      'Password' => 'Contraseña',
+      'Login' => 'Entrar',
+      'Log Out' => 'Salir',
+      'Preferences' => 'Preferencias',
+      'State' => 'Estado',
+      'Street' => 'Calle',
+      'Country' => 'País',
+      'City' => 'Ciudad',
+      'PostalCode' => 'Código Postal',
+      'Followed' => 'Siguiendo',
+      'Follow' => 'Seguir',
+      'Followers' => 'Seguidores',
+      'Clear Local Cache' => 'Borrar la caché local',
+      'Actions' => 'Acciones',
+      'Delete' => 'Borrar',
+      'Update' => 'Guardar',
+      'Save' => 'Guardar',
+      'Edit' => 'Editar',
+      'View' => 'Ver',
+      'Cancel' => 'Cancelar',
+      'Apply' => 'Aplicar',
+      'Unlink' => 'Desenlazar',
+      'Mass Update' => 'Actualización masiva',
+      'Export' => 'Exportar',
+      'No Data' => 'Sin Datos',
+      'No Access' => 'Sin acceso',
+      'All' => 'Todos',
+      'Active' => 'Activo',
+      'Inactive' => 'Inactivo',
+      'Write your comment here' => 'Escriba su comentario aquí',
+      'Post' => 'Publicar',
+      'Stream' => 'Historia',
+      'Show more' => 'Mostrar mas',
+      'Dashlet Options' => 'Ajustes de cajas',
+      'Full Form' => 'Formulario Completo',
+      'Insert' => 'Insertar',
+      'Person' => 'Persona',
+      'First Name' => 'Nombre',
+      'Last Name' => 'Apellidos',
       'Original' => 'Original',
-      'You' => 'Ti',
-      'you' => 'ti',
-      'change' => 'promjena',
-      'Change' => 'Promjena',
-      'Primary' => 'Primarno',
-      'Save Filter' => 'Spremi filter',
-      'Administration' => 'Administracija',
-      'Run Import' => 'Pokreni uvoz',
-      'Duplicate' => 'Dupliciraj',
-      'Notifications' => 'Obavijesti',
-      'Mark all read' => 'Označi sve kao pročitano',
-      'See more' => 'Vidi više',
-      'Today' => 'Danas',
-      'Tomorrow' => 'Sutra',
-      'Yesterday' => 'Jučer',
-      'Submit' => 'Pošalji',
-      'Close' => 'Zatvori',
-      'Yes' => 'Da',
-      'No' => 'Ne',
-      'Select All Results' => 'Izaberi sve rezultate',
-      'Value' => 'Vrijednost',
-      'Current version' => 'Trenutna verzija',
-      'List View' => 'Tablični prikaz',
-      'Tree View' => 'Hijerarhijski prikaz',
-      'Unlink All' => 'Ukloni sve poveznice',
-      'Total' => 'Ukupno',
-      'Print to PDF' => 'Ispis u PDF',
-      'Default' => 'Početno',
-      'Number' => 'Broj',
-      'From' => 'Od',
-      'To' => 'Za',
-      'Create Post' => 'Kreiraj unos',
-      'Previous Entry' => 'Prethodni unos',
-      'Next Entry' => 'Slijedeći unos',
-      'View List' => 'Tablični Prikaz',
-      'Attach File' => 'Priložite datoteku',
-      'Skip' => 'Preskoči',
-      'Attribute' => 'Atribut',
-      'Function' => 'Funkcija',
-      'Self-Assign' => 'Samo-dodjela',
-      'Self-Assigned' => 'Samo-dodijeljeno',
-      'Expand' => 'Raširi',
-      'Collapse' => 'Suzi',
-      'New notifications' => 'Nove obavijesti',
-      'Manage Categories' => 'Upravljanje Kategorijama',
-      'Manage Folders' => 'Upravljanje Mapama',
+      'You' => 'Tu',
+      'you' => 'tu',
+      'change' => 'cambiar',
+      'Change' => 'Cambio',
+      'Primary' => 'Principal',
+      'Save Filter' => 'Guardar Filtro',
+      'Administration' => 'Administración',
+      'Run Import' => 'Ejecutar importación',
+      'Duplicate' => 'Duplicar',
+      'Notifications' => 'Notificaciones',
+      'Mark all read' => 'Marcar todos como leído',
+      'See more' => 'Ver más',
+      'Today' => 'Hoy',
+      'Tomorrow' => 'Mañana',
+      'Yesterday' => 'Ayer',
+      'Submit' => 'Enviar',
+      'Close' => 'Cerrar',
+      'Yes' => 'Si',
+      'No' => 'No',
+      'Select All Results' => 'Seleccionar todos los resultados',
+      'Value' => 'Valor',
+      'Current version' => 'Versión actual',
+      'List View' => 'Vista de Lista',
+      'Tree View' => 'Vista de árbol',
+      'Unlink All' => 'Desenlazar todo',
+      'Total' => 'Total',
+      'Print to PDF' => 'Imprimir PDF',
+      'Default' => 'Por defecto',
+      'Number' => 'Número',
+      'From' => 'De',
+      'To' => 'Para',
+      'Create Post' => 'Crear entrada',
+      'Previous Entry' => 'Entrada anterior',
+      'Next Entry' => 'Siguiente Entrada',
+      'View List' => 'Ver lista completa',
+      'Attach File' => 'Adjuntar archivo',
+      'Skip' => 'Omitir',
+      'Attribute' => 'Atributo',
+      'Function' => 'Función',
+      'Self-Assign' => 'Autoasignar',
+      'Self-Assigned' => 'Autosegnado',
+      'Expand' => 'Expand',
+      'Collapse' => 'Collapse',
+      'New notifications' => 'New notifications',
+      'Manage Categories' => 'Manage Categories',
+      'Manage Folders' => 'Manage Folders',
       'Convert to' => 'Convert to',
       'View Personal Data' => 'View Personal Data',
       'Personal Data' => 'Personal Data',
       'Erase' => 'Erase',
       'Move Over' => 'Move Over',
-      'Create InboundEmail' => 'Napravite dolazni Email',
-      'Activities' => 'Aktivnosti',
-      'History' => 'Povijest',
-      'Attendees' => 'Uzvanici',
-      'Schedule Meeting' => 'Zakaži sastanak',
-      'Schedule Call' => 'Zakaži poziv',
-      'Compose Email' => 'Sastavi e-poštu',
-      'Log Meeting' => 'Zabilježi sastanak',
-      'Log Call' => 'Zabilježi poziv',
-      'Archive Email' => 'Arhiva E-pošte',
-      'Create Task' => 'Napravi Zadatak',
-      'Tasks' => 'Zadaci',
+      'Create InboundEmail' => 'Crear correo entrante',
+      'Activities' => 'Actividades',
+      'History' => 'Historial de actividades',
+      'Attendees' => 'Asistentes',
+      'Schedule Meeting' => 'Programar reunión',
+      'Schedule Call' => 'Programar llamada',
+      'Compose Email' => 'Escribir correo',
+      'Log Meeting' => 'Registrar reunión',
+      'Log Call' => 'Registrar llamada',
+      'Archive Email' => 'Nuevo Correo Archivado',
+      'Create Task' => 'Crear tarea',
+      'Tasks' => 'Tareas',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'pleaseWait' => 'Pričekajte...',
-      'posting' => 'Postavljanje ...',
-      'loading' => 'Učitava se...',
-      'saving' => 'Spremanje...',
-      'confirmLeaveOutMessage' => 'Jeste li sigurni da želite odustati od unosa?',
-      'notModified' => 'Niste promijenili zapis',
-      'duplicate' => 'Upis koji stvarate možda već postoji',
-      'dropToAttach' => 'Dovuci za prilaganje',
-      'fieldIsRequired' => '{field} je obavezno',
-      'fieldShouldBeEmail' => '{field} treba biti važeći e-mail',
-      'fieldShouldBeFloat' => '{field} treba biti važeći decimlani broj',
-      'fieldShouldBeInt' => '{field} treba biti važeći celi broj',
-      'fieldShouldBeDate' => '{field} treba biti važeći datum',
-      'fieldShouldBeDatetime' => '{field} treba biti važeći datum / vrijeme',
-      'fieldShouldAfter' => '{Field} mora biti nakon {otherField}',
-      'fieldShouldBefore' => '{field} mora biti prije {otherField}',
-      'fieldShouldBeBetween' => '{Field} mora biti između {min} i {max}',
-      'fieldShouldBeLess' => '{Field} treba da bude manje od {value}',
-      'fieldShouldBeGreater' => '{Field} mora biti veće od {value}',
-      'fieldBadPasswordConfirm' => '{Field} nije potvrđeno',
-      'fieldMaxFileSizeError' => 'Ne smije premašiti {max} Mb',
-      'fieldIsUploading' => 'Prijenos u toku',
-      'resetPreferencesDone' => 'Postavke su vraćene na početne',
-      'confirmation' => 'Jeste li sigurni?',
-      'unlinkAllConfirmation' => 'Jeste li sigurni da želite maknuti vezu između svih povezanih zapisa?',
-      'resetPreferencesConfirmation' => 'Jeste li sigurni da želite da vratite postavke na početne?',
-      'removeRecordConfirmation' => 'Jeste li sigurni da želite obrisati zapis?',
-      'unlinkRecordConfirmation' => 'Jeste li sigurni da želite maknuti poveznicu?',
-      'removeSelectedRecordsConfirmation' => 'Jeste li sigurni da želite obrisati odabrane zapise?',
-      'massUpdateResult' => '{Count} zapisa je izmijenjeno',
-      'massUpdateResultSingle' => '{Count} zapis je izmijenjen',
-      'noRecordsUpdated' => 'Nisu izvršene izmjene',
-      'massRemoveResult' => '{count} zapisa je obrisano',
-      'massRemoveResultSingle' => '{count} zapis je obrisan',
-      'noRecordsRemoved' => 'Nije obrisan niti jedan zapis',
-      'clickToRefresh' => 'Kliknite za osvježavanje',
-      'streamPostInfo' => 'Unesi <strong>@imekoriniska</strong> da ga spomenete.
+      'pleaseWait' => 'Por favor espere...',
+      'posting' => 'Publicando...',
+      'loading' => 'Cargando...',
+      'saving' => 'Guardando...',
+      'confirmLeaveOutMessage' => '¿Seguro que quieres salir del formulario?',
+      'notModified' => 'Usted no ha modificado el registro',
+      'duplicate' => 'El registro que está creando parece ser un duplicado',
+      'dropToAttach' => 'Arrastre para adjuntar',
+      'fieldIsRequired' => '{field} es requerido',
+      'fieldShouldBeEmail' => '{field} debe ser un correo electrónico válido',
+      'fieldShouldBeFloat' => '{field} debe ser un decimal válido',
+      'fieldShouldBeInt' => '{field} debe ser un entero válido',
+      'fieldShouldBeDate' => '{field} debe ser una fecha válida',
+      'fieldShouldBeDatetime' => '{field} debe ser una fecha válida fecha/hora',
+      'fieldShouldAfter' => '{field} debe estar después de {otherField}',
+      'fieldShouldBefore' => '{field} debe estar antes de {otherField}',
+      'fieldShouldBeBetween' => '{field} debe estar entre {min} y {max}',
+      'fieldShouldBeLess' => '{field} no debería ser mayor que {value}',
+      'fieldShouldBeGreater' => '{field} no debería ser menor que {value}',
+      'fieldBadPasswordConfirm' => '{field} confirmado de forma incorrecta',
+      'fieldMaxFileSizeError' => 'El archivo no puede exeder los {max} Mb',
+      'fieldIsUploading' => 'Uploading in progress',
+      'resetPreferencesDone' => 'Preferencias se ha restablecido a los valores predeterminados',
+      'confirmation' => '¿Está seguro?',
+      'unlinkAllConfirmation' => '¿Seguro que deseas desvincular todos los registros relacionados?',
+      'resetPreferencesConfirmation' => '¿Está seguro que desea restablecer las preferencias?',
+      'removeRecordConfirmation' => '¿Está seguro que quiere eliminar los registros?',
+      'unlinkRecordConfirmation' => '¿Está seguro que quiere desenlazar la relación?',
+      'removeSelectedRecordsConfirmation' => '¿Está seguro que quiere eliminar los registros seleccionados?',
+      'massUpdateResult' => '{count} registros se han actualizado',
+      'massUpdateResultSingle' => '{count} registro ha sido actualizado',
+      'noRecordsUpdated' => 'Ningún registro fue actualizado',
+      'massRemoveResult' => '{count} registros se han eliminado',
+      'massRemoveResultSingle' => '{count} registro se ha eliminado',
+      'noRecordsRemoved' => 'Ningún registro fue eliminado',
+      'clickToRefresh' => 'Clic para actualizar',
+      'streamPostInfo' => 'Escriba <strong>@usuario</strong> para mencionar usuarios en el comentario.
 
-Dostupna sintaksa:
-`<code>kod</code>`
-```<code>multilinijski kod</code>```
-**<strong>strong tekst</strong>**
-*<em>naglašeni tekst</em>*
-~~<del>obrisan tekst</del>~~
-> blockquote
-[link text](url)',
-      'writeYourCommentHere' => 'Napišite vaš komentar ovdje',
-      'writeMessageToUser' => 'Napišite poruku za {user}',
-      'writeMessageToSelf' => 'Napiši poruku na tok vijesti',
-      'typeAndPressEnter' => 'Ukucajte & pritisnite enter',
-      'checkForNewNotifications' => 'Provjerite za nove obavijesti',
-      'checkForNewNotes' => 'Provjeri izmjene toka vijesti',
-      'internalPost' => 'Objavu će vidjeti samo interni korisnici',
-      'internalPostTitle' => 'Post se prikazuju samo internim korisnicima',
-      'done' => 'Izvršeno',
-      'confirmMassFollow' => 'Da li ste sigurni da želite pratiti odabrane unose?',
-      'confirmMassUnfollow' => 'Da li ste sigurni da ne želite pratiti odabrane unose?',
-      'massFollowResult' => '{count} unosa se prati',
-      'massUnfollowResult' => '{count} unosa se ne prati',
-      'massFollowResultSingle' => '{count} unos se prati',
-      'massUnfollowResultSingle' => '{count} unos se ne prati',
-      'massFollowZeroResult' => 'Ništa se ne prati',
-      'massUnfollowZeroResult' => 'Za ništa nije prekinuto praćenje',
+La sintaxis markdown disponible es:
+
+`<code>código</code>`
+**<strong>texto en negritas</strong>**
+*<em>un texto con énfasis</em>*
+~<del>el texto eliminado</del>~
+> Citar bloque
+[nombre del enlace](url)',
+      'writeYourCommentHere' => 'Escriba su comentario aquí',
+      'writeMessageToUser' => 'Escribir un mensaje a {user}',
+      'writeMessageToSelf' => 'Escribir un mensaje en tu historia',
+      'typeAndPressEnter' => 'Escriba y presione enter',
+      'checkForNewNotifications' => 'Comprobar si hay nuevas notificaciones',
+      'checkForNewNotes' => 'Comprobar si hay actualizaciones en la historia',
+      'internalPost' => 'El puesto será visto solo por los usuarios internos',
+      'internalPostTitle' => 'El mensaje es visto solo por usuarios internos',
+      'done' => 'Hecho',
+      'confirmMassFollow' => '¿Está seguro que desea seguir los registros seleccionados?',
+      'confirmMassUnfollow' => '¿Está seguro que desea dejar de seguir los registros seleccionados?',
+      'massFollowResult' => 'Se han seguido {count} registros',
+      'massUnfollowResult' => 'Se han dejado de seguir {count} registros',
+      'massFollowResultSingle' => 'Se han seguido {count} registro',
+      'massUnfollowResultSingle' => 'Se han dejado de seguir {count} registro',
+      'massFollowZeroResult' => 'Nada se siguió',
+      'massUnfollowZeroResult' => 'Nada se dejó de seguir',
       'erasePersonalDataConfirmation' => 'Checked fields will be erased permanently. Are you sure?',
       'massPrintPdfMaxCountError' => 'Can\'t print more that {maxCount} records.',
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMy' => 'Samo moje',
-      'followed' => 'Prati se',
+      'onlyMy' => 'Solo míos',
+      'followed' => 'Siguiendo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'followed' => 'Prati se',
-      'all' => 'Sve',
+      'followed' => 'Siguiendo',
+      'all' => 'Todos',
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'remove' => 'Makni',
-      'merge' => 'Spoji',
-      'massUpdate' => 'Masovna izmjena',
-      'export' => 'Izvoz...',
-      'follow' => 'Pratiti',
-      'unfollow' => 'Otkaži praćenje',
+      'remove' => 'Eliminar',
+      'merge' => 'Unir',
+      'massUpdate' => 'Actualización masiva',
+      'export' => 'Exportar',
+      'follow' => 'Seguir',
+      'unfollow' => 'Dejar de seguir',
       'convertCurrency' => 'Convert Currency',
       'printPdf' => 'Print to PDF',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'firstName' => 'Ime',
-      'lastName' => 'Prezime',
-      'salutationName' => 'Titula',
-      'assignedUser' => 'Dodijeljeno korisniku',
-      'assignedUsers' => 'Dodijeljeno korisnicima',
-      'emailAddress' => 'E-pošta',
+      'name' => 'Nombre',
+      'firstName' => 'Nombre',
+      'lastName' => 'Apellidos',
+      'salutationName' => 'Saludo',
+      'assignedUser' => 'Usuario asignado',
+      'assignedUsers' => 'Usuarios asignados',
+      'emailAddress' => 'Correo electrónico',
       'emailAddressData' => 'Email Address Data',
       'emailAddressIsOptedOut' => 'Email Address is Opted-Out',
-      'assignedUserName' => 'Dodijeljeno korisničko ime',
-      'teams' => 'Timovi',
-      'createdAt' => 'Napravljeno u',
-      'modifiedAt' => 'Izmjenjeno u',
-      'createdBy' => 'Napravio',
-      'modifiedBy' => 'Izmjenio',
-      'description' => 'Opis',
-      'address' => 'Adresa',
-      'phoneNumber' => 'Telefon',
-      'phoneNumberMobile' => 'Telefon (mobitel)',
-      'phoneNumberHome' => 'Telefon (kućni)',
-      'phoneNumberFax' => 'Telefon (Faks)',
-      'phoneNumberOffice' => 'Telefon (kanc)',
-      'phoneNumberOther' => 'Telefon (Drugo)',
+      'assignedUserName' => 'Nombre de usuario asignado',
+      'teams' => 'Equipos',
+      'createdAt' => 'Creado en',
+      'modifiedAt' => 'Modificado el',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'description' => 'Descripción',
+      'address' => 'Dirección',
+      'phoneNumber' => 'Teléfono',
+      'phoneNumberMobile' => 'Teléfono (Móvil)',
+      'phoneNumberHome' => 'Teléfono (Casa)',
+      'phoneNumberFax' => 'Teléfono (Fax)',
+      'phoneNumberOffice' => 'Teléfono (Oficina)',
+      'phoneNumberOther' => 'Teléfono (Otro)',
       'phoneNumberData' => 'Phone Number Data',
-      'order' => 'Redoslijed',
-      'parent' => 'Master',
-      'children' => 'Child',
+      'order' => 'Orden',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
       'id' => 'ID',
       'ids' => 'IDs',
       'type' => 'Type',
       'names' => 'Names',
       'targetListIsOptedOut' => 'Is Opted Out (Target List)',
-      'billingAddressCity' => 'Grad',
-      'billingAddressCountry' => 'Zemlja',
-      'billingAddressPostalCode' => 'Poštanski broj',
-      'billingAddressState' => 'Zemlja',
-      'billingAddressStreet' => 'Ulica',
+      'billingAddressCity' => 'Ciudad',
+      'billingAddressCountry' => 'País',
+      'billingAddressPostalCode' => 'Código Postal',
+      'billingAddressState' => 'Estado',
+      'billingAddressStreet' => 'Calle',
       'billingAddressMap' => 'Mapa',
-      'addressCity' => 'Grad',
-      'addressStreet' => 'Ulica',
-      'addressCountry' => 'Zemlja',
-      'addressState' => 'Zemlja',
-      'addressPostalCode' => 'Poštanski broj',
+      'addressCity' => 'Ciudad',
+      'addressStreet' => 'Calle',
+      'addressCountry' => 'País',
+      'addressState' => 'Estado',
+      'addressPostalCode' => 'Código Postal',
       'addressMap' => 'Mapa',
-      'shippingAddressCity' => 'Grad (Dostava)',
-      'shippingAddressStreet' => 'Ulica (Dostava)',
-      'shippingAddressCountry' => 'Država (Dostava)',
-      'shippingAddressState' => 'Zemlja (Dostava)',
-      'shippingAddressPostalCode' => 'Poštanski broj (dostava)',
-      'shippingAddressMap' => 'Karta (Dostava)',
+      'shippingAddressCity' => 'Ciudad (envío)',
+      'shippingAddressStreet' => 'Calle (envío)',
+      'shippingAddressCountry' => 'País (envío)',
+      'shippingAddressState' => 'Estado (envío)',
+      'shippingAddressPostalCode' => 'Código Postal (envío)',
+      'shippingAddressMap' => 'Mapa (envío)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'assignedUser' => 'Dodijeljen korisniku',
-      'createdBy' => 'Napravio',
-      'modifiedBy' => 'Izmijenio',
-      'team' => 'Tim',
-      'roles' => 'Uloge',
-      'teams' => 'Timovi',
-      'users' => 'Korisnici',
-      'parent' => 'Roditelj',
-      'children' => 'Children',
-      'contacts' => 'Kontakti',
-      'opportunities' => 'Prilike',
-      'leads' => 'Izvori',
-      'meetings' => 'Sastanci',
-      'calls' => 'Pozivi',
-      'tasks' => 'Zadaci',
-      'emails' => 'E-poruke',
-      'accounts' => 'Tvrtke',
-      'cases' => 'Prijave problema',
-      'documents' => 'Dokumenti',
-      'account' => 'Tvrtka',
-      'opportunity' => 'Prilika',
-      'contact' => 'Kontakt',
+      'assignedUser' => 'Usuario asignado',
+      'createdBy' => 'Creado por',
+      'modifiedBy' => 'Modificado Por',
+      'team' => 'Equipo',
+      'roles' => 'Roles',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'parent' => 'Padre',
+      'children' => 'Hijos',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'leads' => 'Posibles clientes',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'accounts' => 'Cuentas',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'account' => 'Cuenta',
+      'opportunity' => 'Oportunidad',
+      'contact' => 'Contacto',
     ),
-    'dashlets' => 
+    'dashlets' =>
     array (
-      'Stream' => 'Tok vijesti',
-      'Emails' => 'Moje primljene',
-      'Records' => 'Lista zapisa',
-      'Leads' => 'Moji izvori',
-      'Opportunities' => 'Mojie prilike',
-      'Tasks' => 'Moji zadaci',
-      'Cases' => 'Moji prijavljeni problemi',
-      'Calendar' => 'Kalendar',
-      'Calls' => 'Moji pozivi',
-      'Meetings' => 'Moji sastanci',
-      'OpportunitiesByStage' => 'Prilike po fazama',
-      'OpportunitiesByLeadSource' => 'Prilike po izvorima',
-      'SalesByMonth' => 'Prodaja po mjesecima',
-      'SalesPipeline' => 'Slijed prodaja',
-      'Activities' => 'Moje aktivnosti',
+      'Stream' => 'Historia',
+      'Emails' => 'Mi bandeja de entrada',
+      'Records' => 'Lista de registros',
+      'Leads' => 'Mis posibles clientes',
+      'Opportunities' => 'Mis oportunidades',
+      'Tasks' => 'Mis tareas',
+      'Cases' => 'Mis tickets',
+      'Calendar' => 'Calendario',
+      'Calls' => 'Mis llamadas',
+      'Meetings' => 'Mis reuniones',
+      'OpportunitiesByStage' => 'Oportunidades por Etapa',
+      'OpportunitiesByLeadSource' => 'Oportunidades por toma de contacto del posible cliente',
+      'SalesByMonth' => 'Ventas por mes',
+      'SalesPipeline' => 'Canalización de ventas',
+      'Activities' => 'Mis próximas actividades',
     ),
-    'notificationMessages' => 
+    'notificationMessages' =>
     array (
-      'assign' => '{entityType} {entity} je dodijeljen tebi',
-      'emailReceived' => 'E-pošta primljena od {from}',
-      'entityRemoved' => '{user} obrisao {entityType} {entity}',
+      'assign' => '{entityType} {entity} ha sido asignado a usted',
+      'emailReceived' => 'Correo recibido de: <strong>{from}</strong>.',
+      'entityRemoved' => '{user} ha eliminado: <strong>[{entityType}]</strong> {entity}',
     ),
-    'streamMessages' => 
+    'streamMessages' =>
     array (
-      'post' => '{user} je postavio {entityType} {entity}',
-      'attach' => '{user} je priložio {entityType} {entity}',
-      'status' => '{user} je izmijenio {field} od {entityType} {entity}',
-      'update' => '{user} je izmijenio {entityType} {entity}',
-      'postTargetTeam' => '{user} je objavio timu {target}',
-      'postTargetTeams' => '{user} je objavio timovima {target}',
-      'postTargetPortal' => '{user} je objavio na portalu {target}',
-      'postTargetPortals' => '{user} je objavio na portalima {target}',
-      'postTarget' => '{user} je postavio objavu na {target}',
-      'postTargetYou' => '{user} je objavio tebi',
-      'postTargetYouAndOthers' => '{user} je objavio {target} i tebi',
-      'postTargetAll' => '{user} je objavio svima',
-      'postTargetSelf' => '{user} samo objavio',
-      'postTargetSelfAndOthers' => '{user} je objavio {target} i samom sebi ',
-      'mentionInPost' => '{user} je spomenuo {mentioned} u {entityType} {entity}',
-      'mentionYouInPost' => '{user} je spomenuo tebe u {entityType} {entity}',
-      'mentionInPostTarget' => '{user} je spomenuo {mentioned} u objavi',
-      'mentionYouInPostTarget' => '{user} je spomenuo tebe u objavi prema {target}',
-      'mentionYouInPostTargetAll' => '{user} je spomenuo tebe u objavi svima',
-      'mentionYouInPostTargetNoTarget' => '{user} te spominje u objavi',
-      'create' => '{user} je napravio {entityType} {entity}',
-      'createThis' => '{user} je napravio ovo {entityType}',
-      'createAssignedThis' => '{user} je napravio ovo {entityType} i zadužio {assignee}',
-      'createAssigned' => '{user} je napravio {entityType} {entity} i zadužio {assignee}',
-      'createAssignedYou' => '{user} je napravio {entityType} {entity} i dodijeljen je tebi',
-      'createAssignedThisSelf' => '{user} je napravio ovaj {entityType} i dodijelio sam sebi',
-      'createAssignedSelf' => '{user} je napravio {entityType} {entity} i dodijelio sebi',
-      'assign' => '{user} je zadužio {assignee} za {entityType} {entity}',
-      'assignThis' => '{user} je zadužio {assignee} za {entityType} ',
-      'assignYou' => '{user} je dodijelio {entityType} {entity} tebi',
-      'assignThisVoid' => '{user} je uklonio dodjelu za {entityType}',
-      'assignVoid' => '{user} je uklonio dodjelu za {entityType} {entity}',
-      'assignThisSelf' => '{user} je dodjelio sebi ovaj {entityType}',
-      'assignSelf' => '{user} je sebi dodjelio {entityType} {entity}',
-      'postThis' => '{user} je objavio',
-      'attachThis' => '{user} je priložio',
-      'statusThis' => '{user} je izmijenio {field}',
-      'updateThis' => '{user} je izmijenio ovo {entityType}',
-      'createRelatedThis' => '{user} je napravio {relatedEntityType} {relatedEntity} koji je povezan sa ovim {entityType}',
-      'createRelated' => '{user} je napravio {relatedEntityType} {relatedEntity} koje je povezan sa {entityType} {entity}',
-      'relate' => '{user} je povezao {relatedEntityType} {relatedEntity} sa {entityType} {entity}',
-      'relateThis' => '{user} je povezao {relatedEntityType} {relatedEntity} sa ovim {entityType}',
-      'emailReceivedFromThis' => 'E-pošta primljena od {from}',
-      'emailReceivedInitialFromThis' => 'E-pošta primljena od {from}, {entityType} je napravljen',
-      'emailReceivedThis' => 'E-pošta primljena',
-      'emailReceivedInitialThis' => 'E-pošta primljena, {entitiTipe} je napravljen',
-      'emailReceivedFrom' => 'E-pošta primljena od {from}, u vezi sa {entityType} {entity}',
-      'emailReceivedFromInitial' => 'E-pošta primljena od {from}, {entityType} {entity} je napravljen',
-      'emailReceived' => 'E-pošta primljena u vezi sa {entityType} {entity}',
-      'emailReceivedInitial' => 'E-pošta primljena: {entityType} {entity} je napravljen',
-      'emailReceivedInitialFrom' => 'E-pošta primljena od {from}, {entityType} {entity} je napravljen',
-      'emailSent' => '{by} poslao e-mail u vezi sa {entityType} {entity}',
-      'emailSentThis' => '{by} je poslao e-poštu',
+      'post' => '{user} ha publicado en: <strong>[{entityType}]</strong> {entity}',
+      'attach' => '{user} ha añadido un archivo adjunto en: <strong>[{entityType}]</strong> {entity}',
+      'status' => '{user} ha actualizado el campo <strong>{field}</strong> en: <strong>[{entityType}]</strong> {entity}',
+      'update' => '{user} ha actualizado: <strong>[{entityType}]</strong> {entity}',
+      'postTargetTeam' => '{user} ha publicado en el equipo {target}',
+      'postTargetTeams' => '{user} ha publicado en los equipos {target}',
+      'postTargetPortal' => '{user} ha publicado en el portal {target}',
+      'postTargetPortals' => '{user} ha publicado en los portales {target}',
+      'postTarget' => '{user} ha publicado en {target}',
+      'postTargetYou' => '{user} ha publicado pora usted',
+      'postTargetYouAndOthers' => '{user} ha publicado para {target} y para usted',
+      'postTargetAll' => '{user} ha publicado para todos',
+      'postTargetSelf' => '{user} se ha enviado un mensaje a sí mismo',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
+      'mentionInPost' => '{user} ha mencionado a {mentioned} en: <strong>[{entityType}]</strong> {entity}',
+      'mentionYouInPost' => '{user} te ha mencionado en: <strong>[{entityType}]</strong> {entity}',
+      'mentionInPostTarget' => '{user} ha mencionado a {mentioned} en la publicación',
+      'mentionYouInPostTarget' => '{user} te ha mencionado en la publicación para {target}',
+      'mentionYouInPostTargetAll' => '{user} te ha mencionado en una publicación para todos',
+      'mentionYouInPostTargetNoTarget' => '{user} te ha mencionado en una publicación',
+      'create' => '{user} ha creado: <strong>[{entityType}]</strong> {entity}',
+      'createThis' => '{user} ha creado: <strong>{entityType}</strong>',
+      'createAssignedThis' => '{user} ha creado y se lo ha asignado a {assignee}: {entityType}',
+      'createAssigned' => '{user} ha creado y se lo ha asignado a {assignee}: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedYou' => '{user} ha creado y te lo ha asignado: <strong>[{entityType}]</strong> {entity}',
+      'createAssignedThisSelf' => '{user} ha creado y se ha asignado a sí mismo: {entityType}',
+      'createAssignedSelf' => '{user} ha creado y se ha asignado a sí mismo: <strong>[{entityType}]</strong> {entity}',
+      'assign' => '{user} ha asignado: <strong>[{entityType}]</strong> {entity} a {assignee}',
+      'assignThis' => '{user} ha asignado {entityType} a {assignee}',
+      'assignYou' => '{user} te ha asignado <strong>[{entityType}]<strong> {entity} a ti',
+      'assignThisVoid' => '{user} ha desasignado: {entityType}',
+      'assignVoid' => '{user} ha desasignado: <strong>[{entityType}]</strong> {entity}',
+      'assignThisSelf' => '{user} se ha asignado así mismo: {entityType}',
+      'assignSelf' => '{user} se ha asignado así mismo: <strong>[{entityType}]</strong> {entity}',
+      'postThis' => '{user} ha publicado',
+      'attachThis' => '{user} ha adjuntado',
+      'statusThis' => '{user} ha actualizado el campo <strong>{field}</strong>',
+      'updateThis' => '{user} ha actualizado: {entityType}',
+      'createRelatedThis' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity}, enlazado a {entityType}',
+      'createRelated' => '{user} ha creado: <strong>[{relatedEntityType}]</strong> {relatedEntity} enlazado a <strong>[{entityType}]</strong> {entity}',
+      'relate' => '{user} ha enlazado <strong>[{relatedEntityType}]</strong> {relatedEntity} a <strong>[{entityType}] {entity}',
+      'relateThis' => '{user} vinculado {relatedEntityType} {relatedEntity} con este {entityType}',
+      'emailReceivedFromThis' => 'Correo recibido de: <strong>{from}</strong>.',
+      'emailReceivedInitialFromThis' => 'Correo recibido de {from}, se ha creado: {entityType}',
+      'emailReceivedThis' => 'Correo recibido',
+      'emailReceivedInitialThis' => 'Correo recibido, se ha creado: {entityType}',
+      'emailReceivedFrom' => 'Correo recibido de {from}, relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailReceivedFromInitial' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceived' => 'El correo {email} ha sido recibido para el {entityType} {entity}',
+      'emailReceivedInitial' => 'Correo recibido, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailReceivedInitialFrom' => 'Correo recibido de {from}, se ha creado: <strong>[{entityType}]<strong>
+ {entityType}',
+      'emailSent' => '{by} ha enviado un correo relacionado a: <strong>[{entityType}]</strong> {entity}',
+      'emailSentThis' => '{by} ha enviado un correo',
     ),
-    'streamMessagesMale' => 
+    'streamMessagesMale' =>
     array (
-      'postTargetSelfAndOthers' => '{user} je pisao {target} i sebi',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí mismo',
     ),
-    'streamMessagesFemale' => 
+    'streamMessagesFemale' =>
     array (
-      'postTargetSelfAndOthers' => '{user} je pisao {target} i sebi',
+      'postTargetSelfAndOthers' => '{user} ha publicado para {target} y para sí misma',
     ),
-    'lists' => 
+    'lists' =>
     array (
-      'monthNames' => 
+      'monthNames' =>
       array (
-        0 => 'Siječanj',
-        1 => 'Veljača',
-        2 => 'Ožujak ',
-        3 => 'Travanj',
-        4 => 'Svibanj',
-        5 => 'Lipanj',
-        6 => 'Srpanj',
-        7 => 'Kolovoz',
-        8 => 'Rujan',
-        9 => 'Listopad',
-        10 => 'Studeni',
-        11 => 'Prosinac',
+        0 => 'Enero',
+        1 => 'Febrero',
+        2 => 'Marzo',
+        3 => 'Abril',
+        4 => 'Mayo',
+        5 => 'Junio',
+        6 => 'Julio',
+        7 => 'Agosto',
+        8 => 'Septiembre',
+        9 => 'Octubre',
+        10 => 'Noviembre',
+        11 => 'Diciembre',
       ),
-      'monthNamesShort' => 
+      'monthNamesShort' =>
       array (
-        0 => 'Sij',
-        1 => 'Velj',
-        2 => 'Ožu',
-        3 => 'Tra',
-        4 => 'Svi',
-        5 => 'Lip',
-        6 => 'Srp',
-        7 => 'Kol',
-        8 => 'Ruj',
-        9 => 'Lis',
-        10 => 'Stu',
-        11 => 'Pro',
+        0 => 'Ene',
+        1 => 'Feb',
+        2 => 'Mar',
+        3 => 'Abr',
+        4 => 'May',
+        5 => 'Jun',
+        6 => 'Jul',
+        7 => 'Ago',
+        8 => 'Sep',
+        9 => 'Oct',
+        10 => 'Nov',
+        11 => 'Dic',
       ),
-      'dayNames' => 
+      'dayNames' =>
       array (
-        0 => 'Nedjelja',
-        1 => 'Ponedjeljak',
-        2 => 'Utorak',
-        3 => 'Srijeda',
-        4 => 'Četvrtak',
-        5 => 'Petak',
-        6 => 'Subota',
+        0 => 'Domingo',
+        1 => 'Lunes',
+        2 => 'Martes',
+        3 => 'Miércoles',
+        4 => 'Jueves',
+        5 => 'Viernes',
+        6 => 'Sábado',
       ),
-      'dayNamesShort' => 
+      'dayNamesShort' =>
       array (
-        0 => 'Ned.',
-        1 => 'Pon.',
-        2 => 'Uto.',
-        3 => 'Sri.',
-        4 => 'Čet.',
-        5 => 'Pet.',
-        6 => 'Sub.',
+        0 => 'Dom',
+        1 => 'Lun',
+        2 => 'Mar',
+        3 => 'Mie',
+        4 => 'Jue',
+        5 => 'Vie',
+        6 => 'Sab',
       ),
-      'dayNamesMin' => 
+      'dayNamesMin' =>
       array (
-        0 => 'Ne',
-        1 => 'Po',
-        2 => 'Ut',
-        3 => 'Sr',
-        4 => 'Če',
-        5 => 'Pe',
-        6 => 'Su',
+        0 => 'Do',
+        1 => 'Lu',
+        2 => 'Ma',
+        3 => 'Mi',
+        4 => 'Ju',
+        5 => 'Vi',
+        6 => 'Sa',
       ),
     ),
-    'durationUnits' => 
+    'durationUnits' =>
     array (
       'd' => 'd',
-      'h' => 's',
+      'h' => 'h',
       'm' => 'm',
-      's' => 'sec',
+      's' => 's',
     ),
-    'options' => 
+    'options' =>
     array (
-      'salutationName' => 
+      'salutationName' =>
       array (
-        'Mr.' => 'G-din',
-        'Mrs.' => 'Gđa',
-        'Ms.' => 'Gđa',
-        'Dr.' => 'Dr',
+        'Mr.' => 'Sr.',
+        'Mrs.' => 'Sra.',
+        'Ms.' => 'Sta.',
+        'Dr.' => 'Dr.',
       ),
-      'language' => 
+      'language' =>
       array (
-        'af_ZA' => 'Afrikaans',
-        'az_AZ' => 'Azerbaijani',
-        'be_BY' => 'Belarusian',
-        'bg_BG' => 'Bulgarian',
-        'bn_IN' => 'Bengali',
-        'bs_BA' => 'Bosanski',
-        'ca_ES' => 'Catalan',
-        'cs_CZ' => 'Czech',
-        'cy_GB' => 'Welsh',
-        'da_DK' => 'Danish',
-        'de_DE' => 'Njemački',
-        'el_GR' => 'Greek',
-        'en_GB' => 'English (UK)',
-        'es_MX' => 'Španjolski (Meksiko)',
-        'en_US' => 'English (US)',
-        'es_ES' => 'Spanish (Spain)',
-        'et_EE' => 'Estonian',
-        'eu_ES' => 'Basque',
-        'fa_IR' => 'Persian',
-        'fi_FI' => 'Finnish',
-        'fo_FO' => 'Faroese',
-        'fr_CA' => 'French (Canada)',
-        'fr_FR' => 'French (France)',
-        'ga_IE' => 'Irish',
-        'gl_ES' => 'Galician',
-        'gn_PY' => 'Guarani',
-        'he_IL' => 'Hebrew',
+        'af_ZA' => 'Afrikáans',
+        'az_AZ' => 'Azerbaiyán',
+        'be_BY' => 'Bielorruso',
+        'bg_BG' => 'Bulgaro',
+        'bn_IN' => 'Bengalí',
+        'bs_BA' => 'Bosnio',
+        'ca_ES' => 'Catalán',
+        'cs_CZ' => 'Checo',
+        'cy_GB' => 'Galés',
+        'da_DK' => 'Danés',
+        'de_DE' => 'Alemán',
+        'el_GR' => 'Griego',
+        'en_GB' => 'Inglés (UK)',
+        'es_MX' => 'Español (México)',
+        'en_US' => 'Inglés (US)',
+        'es_ES' => 'Español (España)',
+        'et_EE' => 'Estonio',
+        'eu_ES' => 'Vasco',
+        'fa_IR' => 'Persa',
+        'fi_FI' => 'Finlandés',
+        'fo_FO' => 'Feroés',
+        'fr_CA' => 'Francés (Canada)',
+        'fr_FR' => 'Francés (Francia)',
+        'ga_IE' => 'Irlandés',
+        'gl_ES' => 'Gallego',
+        'gn_PY' => 'Guaraní',
+        'he_IL' => 'Hebreo',
         'hi_IN' => 'Hindi',
-        'hr_HR' => 'Hrvatski',
-        'hu_HU' => 'Hungarian',
-        'hy_AM' => 'Armenian',
-        'id_ID' => 'Indonesian',
-        'is_IS' => 'Icelandic',
-        'it_IT' => 'Italian',
-        'ja_JP' => 'Japanese',
-        'ka_GE' => 'Georgian',
-        'km_KH' => 'Khmer',
-        'ko_KR' => 'Korean',
-        'ku_TR' => 'Kurdish',
-        'lt_LT' => 'Lithuanian',
-        'lv_LV' => 'Latvian',
-        'mk_MK' => 'Macedonian',
-        'ml_IN' => 'Malayalam',
-        'ms_MY' => 'Malay',
-        'nb_NO' => 'Norwegian Bokmål',
-        'nn_NO' => 'Norwegian Nynorsk',
-        'ne_NP' => 'Nepali',
-        'nl_NL' => 'Dutch',
-        'pa_IN' => 'Punjabi',
-        'pl_PL' => 'Polish',
-        'ps_AF' => 'Pashto',
-        'pt_BR' => 'Portuguese (Brazil)',
-        'pt_PT' => 'Portuguese (Portugal)',
-        'ro_RO' => 'Romanian',
-        'ru_RU' => 'Russian',
-        'sk_SK' => 'Slovak',
-        'sl_SI' => 'Slovene',
-        'sq_AL' => 'Albanian',
-        'sr_RS' => 'Serbian',
-        'sv_SE' => 'Swedish',
-        'sw_KE' => 'Swahili',
+        'hr_HR' => 'Croata',
+        'hu_HU' => 'Hungaro',
+        'hy_AM' => 'Armenio',
+        'id_ID' => 'Indonesio',
+        'is_IS' => 'Islandés',
+        'it_IT' => 'Italiano',
+        'ja_JP' => 'Japonés',
+        'ka_GE' => 'Georgiano',
+        'km_KH' => 'Camboyano',
+        'ko_KR' => 'Coreano',
+        'ku_TR' => 'Kurdo',
+        'lt_LT' => 'Lituano',
+        'lv_LV' => 'Latón',
+        'mk_MK' => 'Macedonio',
+        'ml_IN' => 'Malabar',
+        'ms_MY' => 'Malayo',
+        'nb_NO' => 'Noruego Bokmål',
+        'nn_NO' => 'Noruego Nynorsk',
+        'ne_NP' => 'Nepalí',
+        'nl_NL' => 'Holandés',
+        'pa_IN' => 'Punyabí',
+        'pl_PL' => 'Polaco',
+        'ps_AF' => 'Pastún',
+        'pt_BR' => 'Portugués (Brasil)',
+        'pt_PT' => 'Portugués (Portugal)',
+        'ro_RO' => 'Rumano',
+        'ru_RU' => 'Ruso',
+        'sk_SK' => 'Eslovaco',
+        'sl_SI' => 'Esloveno',
+        'sq_AL' => 'Albanés',
+        'sr_RS' => 'Serbio',
+        'sv_SE' => 'Sueco',
+        'sw_KE' => 'Suajili',
         'ta_IN' => 'Tamil',
-        'te_IN' => 'Telugu',
-        'th_TH' => 'Thai',
-        'tl_PH' => 'Tagalog',
-        'tr_TR' => 'Turkish',
-        'uk_UA' => 'Ukrainian',
+        'te_IN' => 'Télugu',
+        'th_TH' => 'Tailandés',
+        'tl_PH' => 'Tagalo',
+        'tr_TR' => 'Turco',
+        'uk_UA' => 'Ucraniano',
         'ur_PK' => 'Urdu',
-        'vi_VN' => 'Vietnamese',
-        'zh_CN' => 'Simplified Chinese (China)',
-        'zh_HK' => 'Traditional Chinese (Hong Kong)',
-        'zh_TW' => 'Traditional Chinese (Taiwan)',
+        'vi_VN' => 'Vietnamita',
+        'zh_CN' => 'Chino Simplificado (China)',
+        'zh_HK' => 'Chino Tradicional (Hong Kong)',
+        'zh_TW' => 'Chino Traditional (Taiwán)',
       ),
-      'dateSearchRanges' => 
+      'dateSearchRanges' =>
       array (
-        'on' => 'Uključen',
-        'notOn' => 'Isključen',
-        'after' => 'Poslije:',
-        'before' => 'Prije:',
-        'between' => 'Između',
-        'today' => 'Danas',
-        'past' => 'Prošli',
-        'future' => 'Budući',
-        'currentMonth' => 'Tekući mjesec',
-        'lastMonth' => 'Prošlog meseca',
-        'nextMonth' => 'Slijedeći Mjesec',
-        'currentQuarter' => 'Trenutni kvartal',
-        'lastQuarter' => 'Prethodni kvartal',
-        'currentYear' => 'Tekuće godine',
-        'lastYear' => 'Prošle godine',
-        'lastSevenDays' => 'Posljednjih 7 dana',
-        'lastXDays' => 'Posljednjih x dana',
-        'nextXDays' => 'Slijedećih x dana',
-        'ever' => 'Ikad',
-        'isEmpty' => 'Je prazno',
-        'olderThanXDays' => 'Stariji od x dana',
-        'afterXDays' => 'Poslije x dana',
+        'on' => 'Está en',
+        'notOn' => 'No está en',
+        'after' => 'Después',
+        'before' => 'Antes',
+        'between' => 'Entre',
+        'today' => 'Hoy',
+        'past' => 'Pasado',
+        'future' => 'Futuro',
+        'currentMonth' => 'Mes Actual',
+        'lastMonth' => 'Mes pasado',
+        'nextMonth' => 'Siguiente mes',
+        'currentQuarter' => 'Trimestre Actual',
+        'lastQuarter' => 'Trimestre pasado',
+        'currentYear' => 'Año Actual',
+        'lastYear' => 'Año pasado',
+        'lastSevenDays' => 'Últimos 7 Días',
+        'lastXDays' => 'Últimos X Días',
+        'nextXDays' => 'Próximos X Días',
+        'ever' => 'Nunca',
+        'isEmpty' => 'Está Vacío',
+        'olderThanXDays' => 'Más de X Días',
+        'afterXDays' => 'Después de X días',
       ),
-      'searchRanges' => 
+      'searchRanges' =>
       array (
-        'is' => 'Je',
-        'isEmpty' => 'Prazno',
-        'isNotEmpty' => 'Nije prazno',
-        'isOneOf' => 'Bilo koji od',
-        'isFromTeams' => 'Je iz tima',
-        'isNot' => 'Nije',
-        'isNotOneOf' => 'Nijedno od',
-        'anyOf' => 'Bilo koji od',
-        'noneOf' => 'Nijedno od',
+        'is' => 'Es',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'isOneOf' => 'Cualquiera de',
+        'isFromTeams' => 'Es del equipo',
+        'isNot' => 'No es',
+        'isNotOneOf' => 'Ninguno de',
+        'anyOf' => 'Cualquiera de',
+        'noneOf' => 'Ninguno de',
       ),
-      'varcharSearchRanges' => 
+      'varcharSearchRanges' =>
       array (
-        'equals' => 'Jednak je',
-        'like' => 'Je kao (%)',
-        'notLike' => 'Nije kao (%)',
-        'startsWith' => 'Počinje sa',
-        'endsWith' => 'Završava sa',
-        'contains' => 'Sadrži',
-        'notContains' => 'Ne sadrži',
-        'isEmpty' => 'Prazno',
-        'isNotEmpty' => 'Nije prazno',
-        'notEquals' => 'Nije jednako',
+        'equals' => 'Equivale',
+        'like' => 'Es como (%)',
+        'notLike' => 'No es como (%)',
+        'startsWith' => 'Comienza con',
+        'endsWith' => 'Termina con',
+        'contains' => 'Contiene',
+        'notContains' => 'No contiene',
+        'isEmpty' => 'Está vacío',
+        'isNotEmpty' => 'No Está Vacío',
+        'notEquals' => 'No es igual',
       ),
-      'intSearchRanges' => 
+      'intSearchRanges' =>
       array (
-        'equals' => 'Jednako je',
-        'notEquals' => 'Nije jednako',
-        'greaterThan' => 'Veće od',
-        'lessThan' => 'Manje od',
-        'greaterThanOrEquals' => 'Veće ili jednako',
-        'lessThanOrEquals' => 'Manje ili jednako',
-        'between' => 'Između',
-        'isEmpty' => 'Je prazno',
-        'isNotEmpty' => 'Nije prazno',
+        'equals' => 'Equivale',
+        'notEquals' => 'Diferentes',
+        'greaterThan' => 'Mayor que',
+        'lessThan' => 'Menor que',
+        'greaterThanOrEquals' => 'Mayor o igual que',
+        'lessThanOrEquals' => 'Menor o igual que',
+        'between' => 'Entre',
+        'isEmpty' => 'Está Vacío',
+        'isNotEmpty' => 'No está Vacío',
       ),
-      'autorefreshInterval' => 
+      'autorefreshInterval' =>
       array (
-        0 => 'Nema',
-        '0.5' => '30 sekundi',
-        1 => '1 minuta',
-        2 => '2 minute',
-        5 => '5 minuta',
-        10 => '10 minuta',
+        0 => 'Ninguno',
+        '0.5' => '30 segundos',
+        1 => '1 minuto',
+        2 => '2 minutos',
+        5 => '5 minutos',
+        10 => '10 minutos',
       ),
-      'phoneNumber' => 
+      'phoneNumber' =>
       array (
-        'Mobile' => 'Mobitel',
-        'Office' => 'Kancelarija',
-        'Fax' => 'Faks',
-        'Home' => 'Kućni',
-        'Other' => 'Drugo',
+        'Mobile' => 'Teléfono móvil',
+        'Office' => 'Oficina',
+        'Fax' => 'Fax',
+        'Home' => 'Hogar',
+        'Other' => 'Otro',
       ),
-      'reminderTypes' => 
+      'reminderTypes' =>
       array (
-        'Popup' => 'Iskačući',
-        'Email' => 'E-porukom',
+        'Popup' => 'Ventana emergente',
+        'Email' => 'Correo electrónico',
       ),
     ),
-    'sets' => 
+    'sets' =>
     array (
-      'summernote' => 
+      'summernote' =>
       array (
-        'NOTICE' => 'Možete pronaći prevod ovdje: https://github.com/HackerWins/summernote/tree/master/lang',
-        'font' => 
+        'NOTICE' => 'Usted puede encontrar aquí la traducción: https://github.com/HackerWins/summernote/tree/master/lang',
+        'font' =>
         array (
-          'bold' => 'Podebljan',
-          'italic' => 'Nakošen',
-          'underline' => 'Podvučen',
-          'strike' => 'Precrtan',
-          'clear' => 'Ukloni stil fonta',
-          'height' => 'Visina linije',
-          'name' => 'Obitelj fontova',
-          'size' => 'Veličina fonta',
+          'bold' => 'Negrita',
+          'italic' => 'Itálico',
+          'underline' => 'Subrayado',
+          'strike' => 'Tachado',
+          'clear' => 'Quitar Estilo de Fuente',
+          'height' => 'Alto de línea',
+          'name' => 'Familia de Fuente',
+          'size' => 'Tamaño de Fuente',
         ),
-        'image' => 
+        'image' =>
         array (
-          'image' => 'Slika',
-          'insert' => 'Ubaci sliku',
-          'resizeFull' => 'Puna veličina',
-          'resizeHalf' => 'Prepolovi veličinu',
-          'resizeQuarter' => 'Četvrtina veličine',
-          'floatLeft' => 'Poravnaj lijevo',
-          'floatRight' => 'Poravnaj desno',
-          'floatNone' => 'Bez poravnavanja',
-          'dragImageHere' => 'Prevuci sliku ovdje',
-          'selectFromFiles' => 'Izaberite neku od datoteka',
-          'url' => 'URL slike',
-          'remove' => 'Ukloni sliku',
+          'image' => 'Visualización',
+          'insert' => 'Insertar imagen',
+          'resizeFull' => 'Cambiar el tamaño a completo',
+          'resizeHalf' => 'Cambiar el tamaño a la mitad',
+          'resizeQuarter' => 'Cambiar el tamaño a un cuarto',
+          'floatLeft' => 'Flotar Izquierda',
+          'floatRight' => 'Flotar Derecha',
+          'floatNone' => 'Sin Flotar',
+          'dragImageHere' => 'Arrastrar una imagen aquí',
+          'selectFromFiles' => 'Seleccionar desde Archivo',
+          'url' => 'Url de imagen',
+          'remove' => 'Eliminar imagen',
         ),
-        'link' => 
+        'link' =>
         array (
-          'link' => 'Veza',
-          'insert' => 'Umetni Poveznicu',
-          'unlink' => 'Obriši poveznicu',
-          'edit' => 'Izmjena',
-          'textToDisplay' => 'Tekst za prikaz',
-          'url' => 'Na koji URL treba  voditi ovaj link?',
-          'openInNewWindow' => 'Otvori u novom prozoru',
+          'link' => 'Enlace',
+          'insert' => 'Insertar Enlace',
+          'unlink' => 'Desenlazar',
+          'edit' => 'Editar',
+          'textToDisplay' => 'Texto a mostrar',
+          'url' => '¿A que URL debería ir este enlace?',
+          'openInNewWindow' => 'Abrir en nueva ventana',
         ),
-        'video' => 
+        'video' =>
         array (
           'video' => 'Video',
-          'videoLink' => 'Video veza',
-          'insert' => 'Ubaci video',
-          'url' => 'Video URL adresa?',
-          'providers' => '(YouTube, Vimeo, Vine, Instagram ili Dailymotion)',
+          'videoLink' => 'Enlace al Video',
+          'insert' => 'Insertar Video',
+          'url' => '¿URL del Video?',
+          'providers' => '(YouTube, Vimeo, Vine, Instagram, or DailyMotion)',
         ),
-        'table' => 
+        'table' =>
         array (
-          'table' => 'Tablica',
+          'table' => 'Tabla',
         ),
-        'hr' => 
+        'hr' =>
         array (
-          'insert' => 'Ubaci horizontalnu liniju',
+          'insert' => 'Insertar regla horizontal',
         ),
-        'style' => 
+        'style' =>
         array (
-          'style' => 'Stil',
-          'normal' => 'Normalno',
-          'blockquote' => 'Citat',
-          'pre' => 'Kod',
-          'h1' => 'Naslov 1',
-          'h2' => 'Naslov 2',
-          'h3' => 'Naslov 3',
-          'h4' => 'Naslov 4',
-          'h5' => 'Naslov 5',
-          'h6' => 'Naslov 6',
+          'style' => 'Estilo',
+          'normal' => 'Normal',
+          'blockquote' => 'Cita',
+          'pre' => 'Código',
+          'h1' => 'Cabecera 1',
+          'h2' => 'Cabecera 2',
+          'h3' => 'Cabecera 3',
+          'h4' => 'Cabecera 4',
+          'h5' => 'Cabecera 5',
+          'h6' => 'Cabecera 6',
         ),
-        'lists' => 
+        'lists' =>
         array (
-          'unordered' => 'Spisak bez rednih brojeva',
-          'ordered' => 'Spisak sa rednim brojevima',
+          'unordered' => 'Lista sin Ordenar',
+          'ordered' => 'Lista Ordenada',
         ),
-        'options' => 
+        'options' =>
         array (
-          'help' => 'Pomoć',
-          'fullscreen' => 'Cijeli ekran',
-          'codeview' => 'Pregled koda',
+          'help' => 'Ayuda',
+          'fullscreen' => 'Pantalla Completa',
+          'codeview' => 'Ver Código',
         ),
-        'paragraph' => 
+        'paragraph' =>
         array (
-          'paragraph' => 'Paragraf',
-          'outdent' => 'Izvuci red',
-          'indent' => 'Uvuci red',
-          'left' => 'Poravnaj lijevo',
-          'center' => 'Centriraj',
-          'right' => 'Poravnaj desno',
-          'justify' => 'Poravnaj obostrano',
+          'paragraph' => 'Párrafo',
+          'outdent' => 'Anular sangría',
+          'indent' => 'Sangría',
+          'left' => 'Alinear Izquierda',
+          'center' => 'Alinear Centro',
+          'right' => 'Alinear Derecha',
+          'justify' => 'Justificado',
         ),
-        'color' => 
+        'color' =>
         array (
-          'recent' => 'Nedavna boja',
-          'more' => 'Više boja',
-          'background' => 'Boja pozadine',
-          'foreground' => 'Boja teksta',
-          'transparent' => 'Transparentan',
-          'setTransparent' => 'Postavi kao transparentan',
-          'reset' => 'Reset',
-          'resetToDefault' => 'Reset na početne',
+          'recent' => 'Color Reciente',
+          'more' => 'Mas Colores',
+          'background' => 'Color de Fondo',
+          'foreground' => 'Color de Fuente',
+          'transparent' => 'Transparente',
+          'setTransparent' => 'Establecer transparente',
+          'reset' => 'Resetear',
+          'resetToDefault' => 'Restablecer a (por defecto)',
         ),
-        'shortcut' => 
+        'shortcut' =>
         array (
-          'shortcuts' => 'Prečice na tastaturi',
-          'close' => 'Zatvori',
-          'textFormatting' => 'Formatiranje teksta',
-          'action' => 'Akcija',
-          'paragraphFormatting' => 'Formatiranje paragrafa',
-          'documentStyle' => 'Stil dokumenta',
+          'shortcuts' => 'Atajos de teclado',
+          'close' => 'Cerrar',
+          'textFormatting' => 'Formato de texto',
+          'action' => 'Acción',
+          'paragraphFormatting' => 'Formato de párrafo',
+          'documentStyle' => 'Estilo de Documento',
         ),
-        'history' => 
+        'history' =>
         array (
-          'undo' => 'Unazad',
-          'redo' => 'Unaprijed',
+          'undo' => 'Deshacer',
+          'redo' => 'Rehacer',
         ),
       ),
     ),
-    'listViewModes' => 
+    'listViewModes' =>
     array (
       'list' => 'List',
       'kanban' => 'Kanban',
     ),
-    'themes' => 
+    'themes' =>
     array (
-      'Espo' => 'Classic Espo',
+      'Espo' => 'Espo',
       'EspoRtl' => 'RTL Espo',
-      'Sakura' => 'Classic Sakura',
-      'EspoVertical' => 'Espo sa bočnim izbornikom',
-      'SakuraVertical' => 'Sakura sa bočnim izbornikom',
-      'Violet' => 'Classic Violet',
-      'VioletVertical' => 'Violet sa bočnim izbornikom',
-      'Hazyblue' => 'Classic Hazyblue',
-      'HazyblueVertical' => 'Haziblue sa bočnim izbornikom',
+      'Sakura' => 'Sakura',
+      'EspoVertical' => 'Espo con barra lateral',
+      'SakuraVertical' => 'Sakura con barra lateral',
+      'Violet' => 'Violeta',
+      'VioletVertical' => 'Violet con barra lateral',
+      'Hazyblue' => 'Hazyblue',
+      'HazyblueVertical' => 'Hazyblue con barra lateral',
     ),
   ),
-  'Import' => 
+  'Import' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Revert Import' => 'Poništi uvoz',
-      'Return to Import' => 'Povratak na uvoz',
-      'Run Import' => 'Pokreni uvoz',
-      'Back' => 'Nazad',
-      'Field Mapping' => 'Mapiranje polja',
-      'Default Values' => 'Početne vrijednosti',
-      'Add Field' => 'Dodaj polje',
-      'Created' => 'Napravljeno',
-      'Updated' => 'Ažurirano',
-      'Result' => 'Rezultat',
-      'Show records' => 'Prikazani unosi',
-      'Remove Duplicates' => 'Ukloni duplikate',
-      'importedCount' => 'Uvezeno (broj)',
-      'duplicateCount' => 'Duplikati (broj)',
-      'updatedCount' => 'Ažurirano (broj)',
-      'Create Only' => 'Samo kreiraj',
-      'Create and Update' => 'Kreiraj i izmijeni',
-      'Update Only' => 'Samo izmijeni',
-      'Update by' => 'Izmjena od',
-      'Set as Not Duplicate' => 'Odredi da nije duplikat',
-      'File (CSV)' => 'Datoteka (CSV);',
-      'First Row Value' => 'Vrijednost prvog reda',
-      'Skip' => 'Preskoči',
-      'Header Row Value' => 'Vrijednost naslovnog reda',
-      'Field' => 'Polje',
-      'What to Import?' => 'Šta da uvozi?',
-      'Entity Type' => 'Tip entiteta',
-      'What to do?' => 'Šta da radim?',
-      'Properties' => 'Svojstva',
-      'Header Row' => 'Naslovni red',
-      'Person Name Format' => 'Format imena osobe',
-      'John Smith' => 'Pero Perić',
-      'Smith John' => 'Perić Pero',
-      'Smith, John' => 'Perić, Pero',
-      'Field Delimiter' => 'Graničnik polja',
-      'Date Format' => 'Format datuma',
-      'Decimal Mark' => 'Decimalna oznaka',
-      'Text Qualifier' => 'Kvalifikator teksta',
-      'Time Format' => 'Format vremena',
-      'Currency' => 'Valuta',
-      'Preview' => 'Pregledaj',
-      'Next' => 'Slijedeća',
-      'Step 1' => 'Korak 1',
-      'Step 2' => 'Korak 2',
-      'Double Quote' => 'Navodnici',
-      'Single Quote' => 'Apostrof',
-      'Imported' => 'Uvezeni',
-      'Duplicates' => 'Duplikati',
-      'Skip searching for duplicates' => 'Preskočite potragu za duplikatima',
-      'Timezone' => 'Vremenska zona',
-      'Remove Import Log' => 'Obriši dnevnik uvoza',
+      'Revert Import' => 'Revertir Importación',
+      'Return to Import' => 'Regreso a Importar',
+      'Run Import' => 'Ejecutar importación',
+      'Back' => 'Anterior',
+      'Field Mapping' => 'Mapeo de Campos',
+      'Default Values' => 'Valores por defecto',
+      'Add Field' => 'Añadir Campo',
+      'Created' => 'Creado',
+      'Updated' => 'Actualizado',
+      'Result' => 'Resultado',
+      'Show records' => 'Mostrar registros',
+      'Remove Duplicates' => 'Eliminar Duplicados',
+      'importedCount' => 'Importado (recuento)',
+      'duplicateCount' => 'Duplicados (recuento)',
+      'updatedCount' => 'Actualizado (recuento)',
+      'Create Only' => 'Solo crear',
+      'Create and Update' => 'Crear y actualizar',
+      'Update Only' => 'Solo actualizar',
+      'Update by' => 'Actualizado por',
+      'Set as Not Duplicate' => 'Establecer como No Duplicado',
+      'File (CSV)' => 'Archivo (CSV)',
+      'First Row Value' => 'Valor de la primera fila',
+      'Skip' => 'Omitir',
+      'Header Row Value' => 'Campo del sistema',
+      'Field' => 'Columnas del archivo',
+      'What to Import?' => '¿Qué va a importar?',
+      'Entity Type' => 'Tipo de entidad',
+      'What to do?' => '¿Qué hacer?',
+      'Properties' => 'Propiedades',
+      'Header Row' => '¿Tiene una fila de Encabezado?',
+      'Person Name Format' => 'Formato del nombre de la persona',
+      'John Smith' => 'Juan Pérez',
+      'Smith John' => 'Pérez Juan',
+      'Smith, John' => 'Pérez, Juan',
+      'Field Delimiter' => 'Delimitador de campo',
+      'Date Format' => 'Formato de fecha',
+      'Decimal Mark' => 'Símbolo Decimal',
+      'Text Qualifier' => 'Delimitador de texto',
+      'Time Format' => 'Formato de hora',
+      'Currency' => 'Moneda',
+      'Preview' => 'Vista previa',
+      'Next' => 'Siguiente',
+      'Step 1' => 'Paso 1',
+      'Step 2' => 'Paso 2',
+      'Double Quote' => 'Comillas dobles',
+      'Single Quote' => 'Comillas simples',
+      'Imported' => 'Importado',
+      'Duplicates' => 'Duplicados',
+      'Skip searching for duplicates' => 'Omitir la búsqueda de duplicados',
+      'Timezone' => 'Zona horaria',
+      'Remove Import Log' => 'Remove Import Log',
       'New Import' => 'New Import',
       'Import Results' => 'Import Results',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'utf8' => 'Trebalo bi biti UTF-8 kodiranje',
-      'duplicatesRemoved' => 'Duplikati uklonjeni',
-      'inIdle' => 'Izvršava se u praznom hodu (za velike podatke; preko cron)',
-      'revert' => 'Ova radnja će trajno obrisati sve uvezene zapise.',
-      'removeDuplicates' => 'Ova radnja će obrisati sve uvezene zapise koji su protumačeni kao duplikati.',
-      'confirmRevert' => 'Ova radnja će trajno obrisati sve uvezene zapise. Jeste li sigurni?',
-      'confirmRemoveDuplicates' => 'Ova radnja će obrisati sve uvezene zapise koji su protumačeni kao duplikati. Jeste li sigurni?',
-      'confirmRemoveImportLog' => 'Ova radnja briše dnevnik uvoza. Svi uvezeni zapisi će biti zadržani. Nećete moći vratiti zapise dnevnika. Jeste li sigurni?',
-      'removeImportLog' => 'Ova radnja briše dnevnik uvoza. Svi uvezeni zapisi će biti zadržani. Koristiti samo ako ste sigurni da je uvoz prošao bez greške.',
+      'utf8' => 'Debe ser codificado en UTF-8',
+      'duplicatesRemoved' => 'Duplicados eliminados',
+      'inIdle' => 'Ejecutar en segundo plano (para gran cantidad de datos, vía cron)',
+      'revert' => 'This will remove all imported records permanently.',
+      'removeDuplicates' => 'This will permanently remove all imported records that were recognized as duplicates.',
+      'confirmRevert' => 'This will remove all imported records permanently. Are you sure?',
+      'confirmRemoveDuplicates' => 'This will permanently remove all imported records that were recognized as duplicates. Are you sure?',
+      'confirmRemoveImportLog' => 'This will remove the import log. All imported records will be kept. You wan\'t be able to revert import results. Are you sure you?',
+      'removeImportLog' => 'This will remove the import log. All imported records will be kept. Use it if you are sure that import is fine.',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'file' => 'Datoteka',
-      'entityType' => 'Tip entiteta',
-      'imported' => 'Uvezeni zapisi',
-      'duplicates' => 'Duplirani zapisi',
-      'updated' => 'Ažurirani zapisi',
-      'status' => 'Status',
+      'file' => 'Archivo',
+      'entityType' => 'Tipo de entidad',
+      'imported' => 'Registros Importados',
+      'duplicates' => 'registros Duplicados',
+      'updated' => 'registros Actualizados',
+      'status' => 'Estado',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Failed' => 'Neuspješno',
-        'In Process' => 'U procesu',
-        'Complete' => 'Gotovo',
+        'Failed' => 'Falló',
+        'In Process' => 'En proceso',
+        'Complete' => 'Completo',
       ),
     ),
   ),
-  'InboundEmail' => 
+  'InboundEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'emailAddress' => 'Adresa e-pošte',
-      'team' => 'Ciljani tim',
-      'status' => 'Status',
-      'assignToUser' => 'Zaduži korisnika',
-      'host' => 'Host',
-      'username' => 'Korisničko ime',
-      'password' => 'Lozinka',
-      'port' => 'Port',
-      'monitoredFolders' => 'Nadgledani folderi',
-      'trashFolder' => 'Folder za otpad',
+      'name' => 'Nombre',
+      'emailAddress' => 'Dirección de correo electrónico',
+      'team' => 'Equipo objetivo',
+      'status' => 'Estado',
+      'assignToUser' => 'Asignar al usuario',
+      'host' => 'Servidor',
+      'username' => 'Nombre de usuario',
+      'password' => 'Contraseña',
+      'port' => 'Puerto',
+      'monitoredFolders' => 'Carpetas sincronizadas',
+      'trashFolder' => 'Carpeta de papelera',
       'ssl' => 'SSL',
-      'createCase' => 'Napravi predmet',
-      'reply' => 'Automatski odgovor',
-      'caseDistribution' => 'Distribucija predmeta',
-      'replyEmailTemplate' => 'Šablona odgovora na e-poštu',
-      'replyFromAddress' => 'Odgovor sa adrese',
-      'replyToAddress' => 'Adresa za slanje odgovora',
-      'replyFromName' => 'Tko šalje odgovor',
-      'targetUserPosition' => 'Pozicija ciljanog korisnika',
-      'fetchSince' => 'Preuzmi od',
-      'addAllTeamUsers' => 'Za sve korisnike tima',
-      'teams' => 'Timovi',
-      'sentFolder' => 'Mapa Poslane Pošte',
-      'storeSentEmails' => 'Spremaj Poslanu Poštu',
-      'useImap' => 'Dohvati E-poštu',
-      'useSmtp' => 'Koristi SMTP',
-      'smtpHost' => 'SMTP Server',
-      'smtpPort' => 'SMTP Port',
-      'smtpAuth' => 'SMTP Aut',
-      'smtpSecurity' => 'SMTP Sigurnost',
-      'smtpUsername' => 'SMTP Korisničko ime',
-      'smtpPassword' => 'SMTP Lozinka',
-      'fromName' => 'Od Naziv',
-      'smtpIsShared' => 'SMTP je dijeljen',
-      'smtpIsForMassEmail' => 'SMTP je za Masovnu E-poštu',
+      'createCase' => 'Crear ticket',
+      'reply' => 'Respuesta automática',
+      'caseDistribution' => 'Distribución de tickets',
+      'replyEmailTemplate' => 'Plantilla de respuesta de correo',
+      'replyFromAddress' => 'Responder a (dirección)',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyFromName' => 'Respuesta De (nombre):',
+      'targetUserPosition' => 'Objetivo posición usuario',
+      'fetchSince' => 'Traer correos desde',
+      'addAllTeamUsers' => 'Para todos los usuarios del equipo',
+      'teams' => 'Equipos',
+      'sentFolder' => 'Carpeta de enviados',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'useImap' => 'Fetch Emails',
+      'useSmtp' => 'Usar SMTP',
+      'smtpHost' => 'Servidor SMTP',
+      'smtpPort' => 'Puerto SMTP',
+      'smtpAuth' => 'Autentificación SMTP',
+      'smtpSecurity' => 'Seguridad SMTP',
+      'smtpUsername' => 'Usuario SMTP',
+      'smtpPassword' => 'Contraseña SMTP',
+      'fromName' => 'De (nombre):',
+      'smtpIsShared' => 'SMTP ¿Es compartido?',
+      'smtpIsForMassEmail' => 'SMTP es para envíos masivos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'reply' => 'Obavijesti e-pošiljaoce da je e-pošta primljena. 
+      'reply' => 'Notifique a los remitentes de correo que han recibido sus mensajes.
 
- Samo jedna poruka će biti poslana određenom primaocu u određenom vremenskom periodu da se spriječi ponavljanje.',
-      'createCase' => 'Automatski napravi prijavu problema za sve dolazne e-pošte.',
-      'replyToAddress' => 'Navedite adresu ovog sandučića kako bi odgovori stizali u njega.',
-      'caseDistribution' => 'Kako će prijave problema biti raspoređivane. Rasporediti direktno na korisnika ili unutar tima.',
-      'assignToUser' => 'Korisnički predmeti će biti dodijeljeni',
-      'team' => 'Predmeti tima će biti dodijeljeni.',
-      'teams' => 'E-pošta timova će biti dodijeljena.',
-      'targetUserPosition' => 'Korisnicima sa određenim položajem će dodijeljene prijave problema.',
-      'addAllTeamUsers' => 'E-pošta će se pojaviti u Primljenim svih korisnika navedenih timova.',
-      'monitoredFolders' => 'Više mapa mora biti odvojeno zarezom.',
-      'smtpIsShared' => 'Ako je označeno, korisnici će moći slati email poruke koristeći ovaj SMTP. Dostupnost je upravljiva sa Ulogama, preko Dozvola za korištenje Grupnih računa E-pošte.',
-      'smtpIsForMassEmail' => 'Ako je uključeno, SMTP će biti dostupan za masovne poruke.',
-      'storeSentEmails' => 'Poslane poruke će biti spremljene na IMAP serveru.',
+Solo un correo será enviado a un destinatario particular durante un período de tiempo para evitar bucles.',
+      'createCase' => 'Automaticamente crear un ticket de los correos entrantes.',
+      'replyToAddress' => 'Especifique la dirección de correo de este buzón para hacer que las respuestas vegan aquí.',
+      'caseDistribution' => '¿Cómo serán asignados a los tickets? Asignados directamente a un usuario o al equipo.',
+      'assignToUser' => 'Los tickets de usuario se asignarán a.',
+      'team' => 'Los tickets del equipo serán asignados a.',
+      'teams' => 'Los correos de equipos serán asignados a.',
+      'targetUserPosition' => 'Los usuarios con la posición especificada serán distribuidos a los tickets.',
+      'addAllTeamUsers' => 'Los correos aparecerán en la bandeja de entrada de todos los usuarios de los equipos especificados.',
+      'monitoredFolders' => 'Las carpetas deben estar separadas por comas.',
+      'smtpIsShared' => 'Si se marca, entonces los usuarios podrán enviar correos usando este SMTP. La disponibilidad está controlada por Roles a través de los permisos de la cuenta de correo grupal.',
+      'smtpIsForMassEmail' => 'Si está marcado, SMTP estará disponible para correo masivo.',
+      'storeSentEmails' => 'Los correos electrónicos enviados se almacenarán en el servidor IMAP.',
     ),
-    'links' => 
+    'links' =>
     array (
-      'filters' => 'Filteri',
-      'emails' => 'E-poruke',
-      'assignToUser' => 'Dodijeli korisniku',
+      'filters' => 'Filtros',
+      'emails' => 'Correos',
+      'assignToUser' => 'Assign to User',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktivan',
-        'Inactive' => 'Neaktivan',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
-      'caseDistribution' => 
+      'caseDistribution' =>
       array (
-        '' => 'Nema',
-        'Direct-Assignment' => 'Dirktna dodjela',
-        'Round-Robin' => 'U krug',
-        'Least-Busy' => 'Najmanje zauzet',
+        '' => 'Ninguno',
+        'Direct-Assignment' => 'Asignación directa',
+        'Round-Robin' => 'Todos contra todos',
+        'Least-Busy' => 'Menos ocupado',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create InboundEmail' => 'Stvoriti račun e-pošte',
+      'Create InboundEmail' => 'Crear cuenta pesonal',
       'IMAP' => 'IMAP',
-      'Actions' => 'Akcije',
-      'Main' => 'Glavni',
+      'Actions' => 'Acciones',
+      'Main' => 'Principal',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'couldNotConnectToImap' => 'Nemoguće povezivanje na IMAP server',
-    ),
-  ),
-  'Integration' => 
-  array (
-    'fields' => 
-    array (
-      'enabled' => 'Omogućeno',
-      'clientId' => 'ID klijenta',
-      'clientSecret' => 'Tajna Klijenta',
-      'redirectUri' => 'Preusmjeravanje URI',
-      'apiKey' => 'API ključ',
-    ),
-    'titles' => 
-    array (
-      'GoogleMaps' => 'Google mape',
-    ),
-    'messages' => 
-    array (
-      'selectIntegration' => 'Izaberite neku integraciju iz menija.',
-      'noIntegrations' => 'Nema integracija je na raspolaganju.',
-    ),
-    'help' => 
-    array (
-      'Google' => '<p><b>Dohvaćanje OAuth2.0 akreditiva iz Google konzole.</b></p><p>Posetite<a href="https://console.developers.google.com/project">Google konzolu</a> da dobijete OAuth2.0 akreditiv kao što su ID klijenta i Tajna Klijenta koje moraju znati i Google i EspoCRM.</p>',
-      'GoogleMaps' => '<p>Nabavite API ključ <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">ovdje</a>.</p>',
+      'couldNotConnectToImap' => 'No se pudo conectar con el servidor IMAP',
     ),
   ),
-  'Job' => 
+  'Integration' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Status',
-      'executeTime' => 'Izvrši u',
-      'attempts' => 'Preostali pokušaji',
-      'failedAttempts' => 'Neuspjelih pokušaja',
-      'serviceName' => 'Usluga',
-      'method' => 'Metoda',
-      'methodName' => 'Metoda',
-      'scheduledJob' => 'Zakazane radnje',
-      'scheduledJobJob' => 'Naziv zakazane radnje',
-      'data' => 'Podaci',
+      'enabled' => 'Activado',
+      'clientId' => 'ID Cliente',
+      'clientSecret' => 'Secreto del cliente',
+      'redirectUri' => 'Redireccionar URI',
+      'apiKey' => ' Clave para el API de JavaScript',
     ),
-    'options' => 
+    'titles' =>
     array (
-      'status' => 
+      'GoogleMaps' => 'Google Maps',
+    ),
+    'messages' =>
+    array (
+      'selectIntegration' => 'Seleccionar una integración en menú',
+      'noIntegrations' => 'No hay integraciones disponibles',
+    ),
+    'help' =>
+    array (
+      'Google' => '<p><b>Obtener las credenciales de  OAuth 2.0 desde la Consola de Google Developers.</b></p><p>Visita <a href="https://console.developers.google.com/project">Consola Google Developers</a> para obtener las credenciales de  OAuth 2.0 tales como  ID Cliente y Secreto de Cliente que son conocidos por ambos Google y la aplicación EspoCRM.</p>',
+      'GoogleMaps' => '<p>Para obtener una clave para el API de JavaScript, haga <a href="https://developers.google.com/maps/documentation/javascript/get-api-key">click aquí</a>.</p>',
+    ),
+  ),
+  'Job' =>
+  array (
+    'fields' =>
+    array (
+      'status' => 'Estado',
+      'executeTime' => 'Ejecutar a',
+      'attempts' => 'Intentos restantes',
+      'failedAttempts' => 'Intentos Fallidos',
+      'serviceName' => 'Servicio',
+      'method' => 'Método',
+      'methodName' => 'Method',
+      'scheduledJob' => 'Tarea Programada',
+      'scheduledJobJob' => 'Scheduled Job Name',
+      'data' => 'Datos',
+    ),
+    'options' =>
+    array (
+      'status' =>
       array (
-        'Pending' => 'Čeka',
-        'Success' => 'Uspješno',
-        'Running' => 'Izvršavanje',
-        'Failed' => 'Neuspješno',
+        'Pending' => 'Pendiente',
+        'Success' => 'Exitoso',
+        'Running' => 'Corriendo',
+        'Failed' => 'Falló',
       ),
     ),
   ),
-  'LayoutManager' => 
+  'LayoutManager' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'width' => 'Širina (%)',
-      'link' => 'Veza',
-      'notSortable' => 'Nije sortabilno',
-      'align' => 'Poravnavanje',
-      'panelName' => 'Ime panela',
-      'style' => 'Stil',
-      'sticked' => 'Ljepljivo',
+      'width' => 'Ancho (%)',
+      'link' => 'Enlace',
+      'notSortable' => 'No ordenable',
+      'align' => 'Alinear',
+      'panelName' => 'Nombre del Panel',
+      'style' => 'Estilo',
+      'sticked' => 'Pegado',
       'isLarge' => 'Large font size',
       'dynamicLogicVisible' => 'Conditions making panel visible',
     ),
-    'options' => 
+    'options' =>
     array (
-      'align' => 
+      'align' =>
       array (
-        'left' => 'Lijevo',
-        'right' => 'Desno',
+        'left' => 'Izquierda',
+        'right' => 'Derecha',
       ),
-      'style' => 
+      'style' =>
       array (
-        'default' => 'Podrazumijevano',
-        'success' => 'Uspješno',
-        'danger' => 'Opasnost',
-        'info' => 'Info',
-        'warning' => 'Upozorenje',
-        'primary' => 'Primarno',
+        'default' => 'Borrador',
+        'success' => 'Exito',
+        'danger' => 'Peligro',
+        'info' => 'Información',
+        'warning' => 'Advertencia',
+        'primary' => 'Principal',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'New panel' => 'Novi panel',
-      'Layout' => 'Izgled',
+      'New panel' => 'New panel',
+      'Layout' => 'Layout',
     ),
   ),
-  'LeadCapture' => 
+  'LeadCapture' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'campaign' => 'Campaign',
@@ -2262,7 +2294,7 @@ Dostupna sintaksa:
       'exampleRequestUrl' => 'URL',
       'exampleRequestPayload' => 'Payload',
     ),
-    'links' => 
+    'links' =>
     array (
       'targetList' => 'Target List',
       'campaign' => 'Campaign',
@@ -2270,27 +2302,27 @@ Dostupna sintaksa:
       'targetTeam' => 'Target Team',
       'logRecords' => 'Log',
     ),
-    'labels' => 
+    'labels' =>
     array (
       'Create LeadCapture' => 'Create Entry Point',
       'Generate New API Key' => 'Generate New API Key',
       'Request' => 'Request',
       'Confirm Opt-In' => 'Confirm Opt-In',
     ),
-    'messages' => 
+    'messages' =>
     array (
       'generateApiKey' => 'Create new API Key',
       'optInConfirmationExpired' => 'Opt-in confirmation link is expired.',
       'optInIsConfirmed' => 'Opt-in is confirmed.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'optInConfirmationSuccessMessage' => 'Markdown is supported.',
     ),
   ),
-  'LeadCaptureLogRecord' => 
+  'LeadCaptureLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'number' => 'Number',
       'data' => 'Data',
@@ -2299,444 +2331,451 @@ Dostupna sintaksa:
       'createdAt' => 'Entered At',
       'isCreated' => 'Is Lead Created',
     ),
-    'links' => 
+    'links' =>
     array (
       'leadCapture' => 'Lead Capture',
       'target' => 'Target',
     ),
   ),
-  'Note' => 
+  'Note' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'post' => 'Objavi',
-      'attachments' => 'Prilozi',
-      'targetType' => 'Meta',
-      'teams' => 'Timovi',
-      'users' => 'Korisnici',
-      'portals' => 'Portali',
-      'type' => 'Vrsta',
-      'isGlobal' => 'Je globalno',
-      'isInternal' => 'Je interno',
-      'related' => 'Povezano',
-      'createdByGender' => 'Napravio spol',
-      'data' => 'Podaci',
-      'number' => 'Broj',
+      'post' => 'Entrada',
+      'attachments' => 'Adjuntos',
+      'targetType' => 'Objetivo',
+      'teams' => 'Equipos',
+      'users' => 'Usuarios',
+      'portals' => 'Portales',
+      'type' => 'Tipo',
+      'isGlobal' => 'Es global',
+      'isInternal' => 'Es Interno (para usuarios internos)',
+      'related' => 'Relacionado',
+      'createdByGender' => 'Creado por género',
+      'data' => 'Datos',
+      'number' => 'Número',
     ),
-    'filters' => 
+    'filters' =>
     array (
-      'all' => 'Sve',
-      'posts' => 'Objave',
-      'updates' => 'Izmjene',
+      'all' => 'Todos',
+      'posts' => 'Entradas',
+      'updates' => 'Actualizaciones',
     ),
-    'options' => 
+    'options' =>
     array (
-      'targetType' => 
+      'targetType' =>
       array (
-        'self' => 'sebi',
-        'users' => 'određenom korisniku',
-        'teams' => 'određenom timu',
-        'all' => 'svim internim korisnicima',
-        'portals' => 'korisnicima portala',
+        'self' => 'Para mí',
+        'users' => 'Para determinado/s usuario/s',
+        'teams' => 'Para determinado/s equipo/s',
+        'all' => 'Para todos los usuarios',
+        'portals' => 'Para los usuarios del portal',
       ),
-      'type' => 
+      'type' =>
       array (
         'Post' => 'Post',
       ),
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'writeMessage' => 'Napišite svoju poruku ovdje',
+      'writeMessage' => 'Escriba su mensaje aquí',
     ),
-    'links' => 
+    'links' =>
     array (
-      'superParent' => 'Super Nadležni',
-      'related' => 'Povezano',
+      'superParent' => 'Super Parent',
+      'related' => 'Related',
     ),
   ),
-  'Portal' => 
+  'Portal' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'logo' => 'Logo',
-      'url' => 'URL adresa',
-      'portalRoles' => 'Uloge',
-      'isActive' => 'Aktivan',
-      'isDefault' => 'Je podrazumijevano',
-      'tabList' => 'Lista kartica',
-      'quickCreateList' => 'Lista za brzo pravljenje',
-      'companyLogo' => 'Logo',
+      'name' => 'Nombre',
+      'logo' => 'Logotipo',
+      'url' => 'URL',
+      'portalRoles' => 'Roles',
+      'isActive' => 'Está activo',
+      'isDefault' => 'Portal por defecto',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'companyLogo' => 'Logotipo',
       'theme' => 'Tema',
-      'language' => 'Jezik',
-      'dashboardLayout' => 'Kontrolna tabela raspored',
-      'dateFormat' => 'Format datuma',
-      'timeFormat' => 'Format vremena',
-      'timeZone' => 'Vremenska zona',
-      'weekStart' => 'Prvi dan tjedna',
-      'defaultCurrency' => 'Uobičajena valuta',
-      'customUrl' => 'Prilagođeni URL',
-      'customId' => 'Prilagođeni ID',
+      'language' => 'Idioma',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'defaultCurrency' => 'Moneda por defecto',
+      'customUrl' => 'URL personalizada',
+      'customId' => 'ID personalizado',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'Korisnici',
-      'portalRoles' => 'Uloge',
-      'notes' => 'Bilješke',
-      'articles' => 'Članci Baze znanja',
+      'users' => 'Usuarios',
+      'portalRoles' => 'Roles',
+      'notes' => 'Notas',
+      'articles' => 'Artículos de la base de conocimiento',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portalRoles' => 'Navedene Portal Uloge će se primijeniti na sve korisnike ovog portala.',
+      'portalRoles' => 'Los roles del portal indicados se aplicarán a todos los usuarios de este portal.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Portal' => 'Napravite portal',
-      'User Interface' => 'Korisničko sučelje',
-      'General' => 'Općenito',
-      'Settings' => 'Postavke',
-    ),
-  ),
-  'PortalRole' => 
-  array (
-    'fields' => 
-    array (
-      'exportPermission' => 'Dozvola Izvoza',
-    ),
-    'links' => 
-    array (
-      'users' => 'Korisnici',
-    ),
-    'tooltips' => 
-    array (
-      'exportPermission' => 'Određuje da li portalski korisnik ima pravo izvoza podataka.',
-    ),
-    'labels' => 
-    array (
-      'Access' => 'Pristup',
-      'Create PortalRole' => 'Stvoriti Portal ulogu',
-      'Scope Level' => 'Nivo obuhvata',
-      'Field Level' => 'Nivo polja',
+      'Create Portal' => 'Crear portal',
+      'User Interface' => 'Interfaz del Usuario',
+      'General' => 'General',
+      'Settings' => 'Ajustes',
     ),
   ),
-  'PortalUser' => 
+  'PortalRole' =>
   array (
-    'labels' => 
+    'fields' =>
     array (
-      'Create PortalUser' => 'Napravi korisnika portala',
+      'exportPermission' => 'Export Permission',
+    ),
+    'links' =>
+    array (
+      'users' => 'Usuarios',
+    ),
+    'tooltips' =>
+    array (
+      'exportPermission' => 'Defines whether portal users have an ability to export records.',
+    ),
+    'labels' =>
+    array (
+      'Access' => 'Acceder',
+      'Create PortalRole' => 'Crear rol del portal',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
   ),
-  'Preferences' => 
+  'PortalUser' =>
   array (
-    'fields' => 
+    'labels' =>
     array (
-      'dateFormat' => 'Format datuma',
-      'timeFormat' => 'Format vremena',
-      'timeZone' => 'Vremenska zona',
-      'weekStart' => 'Prvi dan tjedna',
-      'thousandSeparator' => 'Oznaka tisućica',
-      'decimalMark' => 'Decimalna oznaka',
-      'defaultCurrency' => 'Uobičajena valuta',
-      'currencyList' => 'Popis valuta',
-      'language' => 'Jezik',
-      'smtpServer' => 'Server',
-      'smtpPort' => 'Port',
-      'smtpAuth' => 'Autorizacija',
-      'smtpSecurity' => 'Sigurnost',
-      'smtpUsername' => 'Korisničko ime',
-      'emailAddress' => 'Adresa e-pošte',
-      'smtpPassword' => 'Lozinka',
-      'smtpEmailAddress' => 'Adresa e-pošte',
-      'exportDelimiter' => 'Graničnik izvoza',
-      'receiveAssignmentEmailNotifications' => 'E-mail obavijesti prilikom dodeljivanja',
-      'receiveMentionEmailNotifications' => 'Email obavijesti o spominjanju u postovima',
-      'receiveStreamEmailNotifications' => 'E-mail obavijesti o porukama i ažuriranju statusa',
-      'autoFollowEntityTypeList' => 'Globalni Auto-Follow',
-      'signature' => 'E-pošta potpis',
-      'dashboardTabList' => 'Lista kartica',
-      'defaultReminders' => 'Početni podsjetnici',
+      'Create PortalUser' => 'Crear usuario del portal',
+    ),
+  ),
+  'Preferences' =>
+  array (
+    'fields' =>
+    array (
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'smtpEmailAddress' => 'Correo electrónico',
+      'exportDelimiter' => 'Separador de campos',
+      'receiveAssignmentEmailNotifications' => 'Recibir notificaciones por correo electrónico al ser asignado',
+      'receiveMentionEmailNotifications' => 'Notificaciones por correo electrónico acerca de menciones en los mensajes',
+      'receiveStreamEmailNotifications' => 'Notificaciones por correo electrónico sobre los mensajes y actualizaciones de estado',
+      'autoFollowEntityTypeList' => 'Seguir automaticamente (global)',
+      'signature' => 'Firma de correo',
+      'dashboardTabList' => 'Lista de pestañas',
+      'defaultReminders' => 'Recordatorios por defecto',
       'theme' => 'Tema',
-      'useCustomTabList' => 'Prilagođena Lista kartica',
-      'tabList' => 'Lista kartica',
-      'emailReplyToAllByDefault' => 'Postavi \'Odgovori na sve\' kao početnu vrijednost',
-      'dashboardLayout' => 'Raspored za Kontrolni prikaz',
-      'emailReplyForceHtml' => 'E-mail odgovor u HTML',
-      'doNotFillAssignedUserIfNotRequired' => 'Ne popunjavaj automatski dodijeljenog korisnika pri kreiranju zapisa',
-      'followEntityOnStreamPost' => 'Automatsko slijeđenje zapisa nakon upisa u tok vijesti',
-      'followCreatedEntities' => 'Automatsko slijeđenje kreiranih zapisa',
-      'followCreatedEntityTypeList' => 'Automatsko slijeđenje kreiranih zapisa odabrane vrste entiteta',
+      'useCustomTabList' => 'Lista de pestañas personalizadas',
+      'tabList' => 'Lista de pestañas',
+      'emailReplyToAllByDefault' => 'Correo: responder a todos por defecto',
+      'dashboardLayout' => 'Diseño del escritorio',
+      'emailReplyForceHtml' => 'Correo: responder en formato HTML',
+      'doNotFillAssignedUserIfNotRequired' => 'No precompletar usuario asignado en la creación de registros',
+      'followEntityOnStreamPost' => 'Seguimiento automático después de publicar en la historia',
+      'followCreatedEntities' => 'Seguimiento automático de registros creados',
+      'followCreatedEntityTypeList' => 'Seguimiento automático de registros creados de tipos de entidades específicos',
       'emailUseExternalClient' => 'Use an external email client',
       'scopeColorsDisabled' => 'Disable scope colors',
       'tabColorsDisabled' => 'Disable tab colors',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'Nedjelja',
-        1 => 'Ponedjeljak',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Notifications' => 'Obavijesti',
-      'User Interface' => 'Korisničko sučelje',
+      'Notifications' => 'Notificaciones',
+      'User Interface' => 'Interfaz de usuario',
       'SMTP' => 'SMTP',
-      'Misc' => 'Ostalo',
-      'Locale' => 'Lokalno',
+      'Misc' => 'Misceláneos',
+      'Locale' => 'Localización',
       'Reset Dashboard to Default' => 'Reset Dashboard to Default',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'autoFollowEntityTypeList' => 'Automatically slijedi SVE nove zapise odabrane vrste entiteta (kreirane od svih korisnika). Kako bi bili u mogućnosti vidjeti informacije tijeka vijesti i primati obavijesti o svim zapisima u sustavu.',
-      'doNotFillAssignedUserIfNotRequired' => 'Pri kreiranju zapisa, podatak "dodijeljeni korisnik" neće biti popunjen vlastitim imenom osim ako je polje obavezno za unos.',
-      'followCreatedEntities' => 'Pri kreiranju zapisa, biti će automatski slijeđeni, čak i ako se dodijele drugom korisniku.',
-      'followCreatedEntityTypeList' => 'Pri kreiranju zapisa vrste odabranog entiteta, biti će automatski slijeđeni, čak i ako se dodijele drugom korisniku.',
+      'autoFollowEntityTypeList' => 'Siguirá automáticamente todos los registros nuevos (creados por cualquier usuario) de los tipos de entidad seleccionados. Para poder ver información en la historia y recibir notificaciones sobre todos los registros en el sistema.',
+      'doNotFillAssignedUserIfNotRequired' => 'Cuando cree un registro, el usuario asignado no se completará con su propio usuario a menos que el campo sea obligatorio.',
+      'followCreatedEntities' => 'Al crear nuevos registros, se seguirán automáticamente incluso si se asignaron a otro usuario.',
+      'followCreatedEntityTypeList' => 'Al crear nuevos registros de los tipos de entidad seleccionados, se seguirán automáticamente incluso si se asignaron a otro usuario.',
     ),
   ),
-  'Role' => 
+  'Role' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'roles' => 'Uloge',
-      'assignmentPermission' => 'Dozvola zaduživanja',
-      'userPermission' => 'Dozvola korisnika',
-      'portalPermission' => 'Dozvola za portal',
-      'groupEmailAccountPermission' => 'Prava pristupa Grupnom računu E-pošte',
-      'exportPermission' => 'Dozvola Izvoza',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'assignmentPermission' => 'Asignación de permisos',
+      'userPermission' => 'Permisos de Usuario',
+      'portalPermission' => 'Permisos del portal',
+      'groupEmailAccountPermission' => 'Permiso de la cuenta de correo grupal',
+      'exportPermission' => 'Export Permission',
       'dataPrivacyPermission' => 'Data Privacy Permission',
     ),
-    'links' => 
+    'links' =>
     array (
-      'users' => 'Korisnici',
-      'teams' => 'Timovi',
+      'users' => 'Usuarios',
+      'teams' => 'Equipos',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'assignmentPermission' => 'Omogućuje ograničavanje pristupa za dodjeljivanje zapisa i poruka drugim korisnicima.
-sve - Nikakvo ograničenje
-tim- može zadužiti i pisati samo članovima tima
-ne- može zadužiti i pisati samo sebi',
-      'userPermission' => 'Omogućava ograničavanje sposobnosti korisnicima da vide aktivnosti, kalendar i tok drugima 
-sve - da vide sve
-tim - mogu vidjeti aktivnosti samo članova tima
-ne - ne vide.',
-      'portalPermission' => 'Definira se pristup informacijama sa portala, mogućnost postavljanja poruka korisnicima portala.',
-      'groupEmailAccountPermission' => 'Određuje pristup grupnim računima E-pošte, kao i mogućnost slanja grupnih SMTP poruka.',
-      'exportPermission' => 'Određuje da li korisnik ima pravo izvoza podataka.',
+      'assignmentPermission' => 'Permite restringir la capacidad de los usuarios para que asignen registros y publicaciones a otros usuarios.
+
+todo - sin restricción
+
+equipo - puede asignar a usuarios de su propio equipo
+
+no - solo puede asignarse a sí mismo',
+      'userPermission' => 'Permite restringir la capacidad de los usuarios para ver tareas, calendarios y la historia de otros usuarios.
+
+todo - pueden ver todo
+
+equipo - pueden ver las actividades de su equipo
+
+no - solo las propias',
+      'portalPermission' => 'Define un acceso a la información del portal, la capacidad de publicar mensajes a los usuarios del portal.
+',
+      'groupEmailAccountPermission' => 'Define el acceso a las cuentas de correo grupales, la capacidad de enviar correos a través del SMTP grupal.',
+      'exportPermission' => 'Defines whether users have an ability to export records.',
       'dataPrivacyPermission' => 'Allows to view and erase personal data.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Access' => 'Pristup',
-      'Create Role' => 'Pravljenje uloge',
-      'Scope Level' => 'Nivo obuhvata',
-      'Field Level' => 'Nivo polja',
+      'Access' => 'Acceso',
+      'Create Role' => 'Crear rol',
+      'Scope Level' => 'Nivel de acceso a entidades',
+      'Field Level' => 'Nivel de acceso a campos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'accessList' => 
+      'accessList' =>
       array (
-        'not-set' => 'nije podešeno',
-        'enabled' => 'omogućeno',
-        'disabled' => 'onemogućeno',
+        'not-set' => 'sin establecer',
+        'enabled' => 'activado',
+        'disabled' => 'desactivado',
       ),
-      'levelList' => 
+      'levelList' =>
       array (
-        'all' => 'sve',
-        'team' => 'tim',
-        'account' => 'tvrtka',
-        'contact' => 'kontakt',
-        'own' => 'vlastiti',
-        'no' => 'ne',
-        'yes' => 'da',
-        'not-set' => 'nije podešeno',
+        'all' => 'Todos',
+        'team' => 'Equipo',
+        'account' => 'Cuenta',
+        'contact' => 'Contacto',
+        'own' => 'Propio',
+        'no' => 'No',
+        'yes' => 'Si',
+        'not-set' => 'Sin establecer',
       ),
     ),
-    'actions' => 
+    'actions' =>
     array (
-      'read' => 'Čitanje',
-      'edit' => 'Izmjena',
-      'delete' => 'Brisanje',
-      'stream' => 'Tok vijesti',
-      'create' => 'Kreiranje',
+      'read' => 'Leer',
+      'edit' => 'Editar',
+      'delete' => 'Borrar',
+      'stream' => 'Historia',
+      'create' => 'Crear',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'changesAfterClearCache' => 'Sve promjene u vidu kontrole pristupa će se primjenjivati nakon što se cache očisti.',
+      'changesAfterClearCache' => 'Todos los cambios en el control de acceso serán aplicacados después de limpiar la caché',
     ),
   ),
-  'ScheduledJob' => 
+  'ScheduledJob' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'status' => 'Status',
-      'job' => 'Posao',
-      'scheduling' => 'Zakazivanje',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'job' => 'Trabajo',
+      'scheduling' => 'Programación (notación CRONTab)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'log' => 'Dnevnik',
+      'log' => 'Registro',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create ScheduledJob' => 'Napravi zakazan posao',
+      'Create ScheduledJob' => 'Crear tarea programada',
     ),
-    'options' => 
+    'options' =>
     array (
-      'job' => 
+      'job' =>
       array (
-        'Cleanup' => 'Pospremanje',
-        'CheckInboundEmails' => 'Provjerite grupne račune e-pošte',
-        'CheckEmailAccounts' => 'Provjerite osobne račune e-pošte',
-        'SendEmailReminders' => 'Pošalji podsjetnike e-poštom',
-        'AuthTokenControl' => 'Kontrola autorizacijskih tokena',
-        'SendEmailNotifications' => 'Pošalji E-mail obavijesti',
-        'CheckNewVersion' => 'Provjera za novom verzijom',
-        'ProcessMassEmail' => 'Pošalji masovne e-pooruke',
-        'ControlKnowledgeBaseArticleStatus' => 'Kontrola statusa članaka baze znanja',
+        'Cleanup' => 'Limpiar',
+        'CheckInboundEmails' => 'Comprobar cuentas de correo grupales',
+        'CheckEmailAccounts' => 'Comprobar cuentas de correo personales',
+        'SendEmailReminders' => 'Enviar Recordatorios por Email',
+        'AuthTokenControl' => 'Control del Token de Autenticación',
+        'SendEmailNotifications' => 'Enviar notificaciones por correo electrónico',
+        'CheckNewVersion' => 'Check for New Version',
+        'ProcessMassEmail' => 'Enviar correo masivo',
+        'ControlKnowledgeBaseArticleStatus' => 'Controlar estado de los artículos de la base de conocimiento',
       ),
-      'cronSetup' => 
+      'cronSetup' =>
       array (
-        'linux' => 'Napomena: Dodajte ovu liniju u crontab datoteku za pokretanje ESPO zakazanih poslova:',
-        'mac' => 'Napomena: Dodajte ovu liniju u crontab datoteku za pokretanje ESPO zakazanih poslova:',
-        'windows' => 'Bilješka: Napravi datoteku sa slijedećim komandama kako bi se pokretali Espo zakazani poslovi koristeći Windows zakazane zadatke:',
-        'default' => 'Napomena: Dodaj ovu komandu za Cron Job (Planirani Zadatak):',
+        'linux' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'mac' => 'Nota: añada esta línea al archivo crontab para que EspoCRM pueda ejecutar las tareas programadas:',
+        'windows' => 'Nota: Crear un archivo por lotes con los siguientes comandos para ejecutar tareas programadas de EspoCRM usando tareas programadas de Windows:',
+        'default' => 'Nota: Agregar este comando a Cron Job (Tarea Programada):',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktivan',
-        'Inactive' => 'Neaktivan',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'scheduling' => 'Crontab bilješka. Definira učestalost posla.
+      'scheduling' => 'Define cuándo y cada cuánto el trabajo será ejecutado
 
-*/5 * * * * - svakih 5 minuta
+*/5 * * * * - cada 5 minutos
 
-0 */2 * * * - svaka 2 sata
+0 */2 * * * - cada 2 horas
 
-30 1 * * * - u 01:30 svakog dana
+30 1 * * * - a las 01:30 cada día
 
-0 0 1 * * - prvog dana u mjesecu',
+0 0 1 * * - el primer día del mes',
     ),
   ),
-  'ScheduledJobLogRecord' => 
+  'ScheduledJobLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'status' => 'Status',
-      'executionTime' => 'Vrijeme izvršenja',
-      'target' => 'Meta',
+      'status' => 'Estado',
+      'executionTime' => 'Fecha de ejecución',
+      'target' => 'Objetivo',
     ),
   ),
-  'Settings' => 
+  'Settings' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'useCache' => 'Koristi cache',
-      'dateFormat' => 'Format datuma',
-      'timeFormat' => 'Format vremena',
-      'timeZone' => 'Vremenska zona',
-      'weekStart' => 'Prvi dan tjedna',
-      'thousandSeparator' => 'Oznaka tisuća',
-      'decimalMark' => 'Decimalna oznaka',
-      'defaultCurrency' => 'Uobičajena valuta',
-      'baseCurrency' => 'Osnovna valuta:',
-      'currencyRates' => 'Rate Vrijednosti',
-      'currencyList' => 'Spisak valuta',
-      'language' => 'Jezik',
-      'companyLogo' => 'Logo kompanije',
-      'smtpServer' => 'Server',
-      'smtpPort' => 'Port',
-      'smtpAuth' => 'Autorizacija',
-      'smtpSecurity' => 'Sigurnost',
-      'smtpUsername' => 'Korisničko ime:',
-      'emailAddress' => 'Adresa e-pošte',
-      'smtpPassword' => 'Lozinka',
-      'outboundEmailFromName' => 'Od imena',
-      'outboundEmailFromAddress' => 'Od Addresa',
-      'outboundEmailIsShared' => 'Se dijeli',
-      'recordsPerPage' => 'Zapisi po stranici',
-      'recordsPerPageSmall' => 'Zapisa po stranici (mala str)',
-      'tabList' => 'Lista kartica',
-      'quickCreateList' => 'Brzo Kreiranje Liste',
-      'exportDelimiter' => 'Graničnik izvoza',
-      'globalSearchEntityList' => 'Globalna pretraga Liste entiteta',
-      'authenticationMethod' => 'Metoda autentikacije',
-      'ldapHost' => 'HOST',
-      'ldapPort' => 'Port',
-      'ldapAuth' => 'Autorizacija',
-      'ldapUsername' => 'Puni korisnički DN',
-      'ldapPassword' => 'Lozinka',
-      'ldapBindRequiresDn' => 'Bind zahtijeva DN',
-      'ldapBaseDn' => 'Osnovni DN',
-      'ldapAccountCanonicalForm' => 'Tvrtka kanonska Forma',
-      'ldapAccountDomainName' => 'Naziv Domene Računa',
-      'ldapTryUsernameSplit' => 'Pokušajte Podjelu Korisničkog Imena',
+      'useCache' => 'Usar caché',
+      'dateFormat' => 'Formato de fecha',
+      'timeFormat' => 'Formato de hora',
+      'timeZone' => 'Zona horaria',
+      'weekStart' => 'Primer día de la semana',
+      'thousandSeparator' => 'Separador de miles',
+      'decimalMark' => 'Separador decimal',
+      'defaultCurrency' => 'Moneda por defecto',
+      'baseCurrency' => 'Moneda Base',
+      'currencyRates' => 'Tipos de cambio',
+      'currencyList' => 'Lista de monedas',
+      'language' => 'Idioma',
+      'companyLogo' => 'Logo de la empresa',
+      'smtpServer' => 'Servidor',
+      'smtpPort' => 'Puerto',
+      'smtpAuth' => '¿Requiere autenticación?',
+      'smtpSecurity' => 'Seguridad',
+      'smtpUsername' => 'Nombre de usuario',
+      'emailAddress' => 'Correo electrónico',
+      'smtpPassword' => 'Contraseña',
+      'outboundEmailFromName' => 'De (nombre):',
+      'outboundEmailFromAddress' => 'De (email)',
+      'outboundEmailIsShared' => '¿Es compartido?',
+      'recordsPerPage' => 'Registros por página',
+      'recordsPerPageSmall' => 'Registros por página (pequeño)',
+      'tabList' => 'Lista de pestañas',
+      'quickCreateList' => 'Lista de creación rápida',
+      'exportDelimiter' => 'Separador de campos',
+      'globalSearchEntityList' => 'Búsqueda Global: Lista de entidades',
+      'authenticationMethod' => 'Método de autenticación',
+      'ldapHost' => 'Servidor',
+      'ldapPort' => 'Puerto',
+      'ldapAuth' => '¿Requiere autenticación?',
+      'ldapUsername' => 'Nombre de usuario',
+      'ldapPassword' => 'Contraseña',
+      'ldapBindRequiresDn' => 'Bind Necesita Nd (Nombre Dominio)',
+      'ldapBaseDn' => 'ND Base',
+      'ldapAccountCanonicalForm' => 'Forma canónica de la cuenta',
+      'ldapAccountDomainName' => 'Nombre de Dominio de la Cuenta',
+      'ldapTryUsernameSplit' => 'Intentar dividir el nombre de Usuario',
       'ldapPortalUserLdapAuth' => 'Use LDAP Authentication for Portal Users',
-      'ldapCreateEspoUser' => 'Napraviti korisnika u EspoCRM',
-      'ldapSecurity' => 'Sigurnost',
-      'ldapUserLoginFilter' => 'Filter prijava korisnika',
-      'ldapAccountDomainNameShort' => 'Kratki Naziv Domene Računa',
-      'ldapOptReferrals' => 'Opt Preporuke',
-      'ldapUserNameAttribute' => 'Korisničko ime Atribut',
-      'ldapUserObjectClass' => 'Korisnik ObjectClass',
-      'ldapUserTitleAttribute' => 'Korisnik titula Atribut',
-      'ldapUserFirstNameAttribute' => 'Korisnik Ime Atribut',
-      'ldapUserLastNameAttribute' => 'Korisnik Prezime Atribut',
-      'ldapUserEmailAddressAttribute' => 'Korisnik E-mail adresa Atribut',
-      'ldapUserTeams' => 'Timovi korisnika',
-      'ldapUserDefaultTeam' => 'Početni tim korisnika',
-      'ldapUserPhoneNumberAttribute' => 'Korisnik broj telefona Atribut',
+      'ldapCreateEspoUser' => 'Crear usuario en EspoCRM',
+      'ldapSecurity' => 'Seguridad',
+      'ldapUserLoginFilter' => 'Usar Filtro en el Login',
+      'ldapAccountDomainNameShort' => 'Nombre Dominio Corto para la Cuenta',
+      'ldapOptReferrals' => 'Referencias Opt',
+      'ldapUserNameAttribute' => 'Atributo de nombre de usuario',
+      'ldapUserObjectClass' => 'Usuario ObjectClass',
+      'ldapUserTitleAttribute' => 'Atributo del usuario Título',
+      'ldapUserFirstNameAttribute' => 'Nombre de usuario Atributo',
+      'ldapUserLastNameAttribute' => 'Apellido de usuario Atributo',
+      'ldapUserEmailAddressAttribute' => 'Dirección de correo electrónico del usuario atributo',
+      'ldapUserTeams' => 'Los equipos de los usuarios',
+      'ldapUserDefaultTeam' => 'Equipo de usuario por defecto',
+      'ldapUserPhoneNumberAttribute' => 'Número de teléfono del usuario Atributo',
       'ldapPortalUserPortals' => 'Default Portals for a Portal User',
       'ldapPortalUserRoles' => 'Default Roles for a Portal User',
-      'exportDisabled' => 'Onemogućiti izvoz (samo administratoru je dozvoljeno)',
-      'assignmentNotificationsEntityList' => 'Za koje entitete se obavještava po dodjeli',
-      'assignmentEmailNotifications' => 'Obavijesti prilikom dodjele',
-      'assignmentEmailNotificationsEntityList' => 'Obim obavještavanja e-poštom pri dodjeli',
-      'streamEmailNotifications' => 'Obavijesti o unosima u tok vijesti za interne korisnike',
-      'portalStreamEmailNotifications' => 'Obavijesti o unosima u tok vijesti za korisnike portala',
-      'streamEmailNotificationsEntityList' => 'Obim obavještavanja e-poštom za tok vijesti',
+      'exportDisabled' => 'Desactivar exportar (Solo estará permitido para el administrador)',
+      'assignmentNotificationsEntityList' => 'Estas entidades notificarán al usuario cuando le sean asignadas',
+      'assignmentEmailNotifications' => 'Se enviará un correo cuando reciba una asignación',
+      'assignmentEmailNotificationsEntityList' => 'Entidades a notificar',
+      'streamEmailNotifications' => 'Se enviará un correo sobre las actualizaciones en la historia para los usuarios internos',
+      'portalStreamEmailNotifications' => 'Se enviará un correo sobre actualizaciones en la historia a los usuarios del portal',
+      'streamEmailNotificationsEntityList' => 'Se notificará por correo en las siguientes entidades',
       'streamEmailNotificationsTypeList' => 'What to notify about',
-      'b2cMode' => 'B2C režim',
-      'avatarsDisabled' => 'Isključi avatare',
-      'followCreatedEntities' => 'Slijedi kreirane zapise',
-      'displayListViewRecordCount' => 'Prikaži ukupan broj (na prikazu: Lista)',
+      'b2cMode' => 'Modo B2C',
+      'avatarsDisabled' => 'Deshabilitar avatares',
+      'followCreatedEntities' => 'Seguir los registros creados',
+      'displayListViewRecordCount' => 'Mostrar totales (en la vista de lista)',
       'theme' => 'Tema',
-      'userThemesDisabled' => 'Onemogući korisničke teme',
-      'emailMessageMaxSize' => 'E-pošta maksimalna veličina (MB)',
-      'massEmailMaxPerHourCount' => 'Maks broj e-pošta po satu',
-      'personalEmailMaxPortionSize' => 'Maks veličina uvoza e-pošta za osobne račune',
-      'inboundEmailMaxPortionSize' => 'Maks veličina uvoza e-pošta za grupne račune',
-      'maxEmailAccountCount' => 'Maks broj ličnih naloga pošte po korisniku',
-      'authTokenLifetime' => 'Dužina trajanja tokena za pristup (sati)',
-      'authTokenMaxIdleTime' => 'Maksimalno trajanje tokena na čekanju (sati)',
-      'dashboardLayout' => 'Izgled radne površine (standardan)',
-      'siteUrl' => 'URL stranice',
-      'addressPreview' => 'Adresa prikaza',
-      'addressFormat' => 'Format adrese',
-      'notificationSoundsDisabled' => 'Onemogućavanje zvukova obavijesti',
-      'applicationName' => 'Ime aplikacije',
-      'calendarEntityList' => 'Lista entiteta za kalendar',
-      'mentionEmailNotifications' => 'Slati obavijesti e-porukom o pominjanju u unosima ',
-      'massEmailDisableMandatoryOptOutLink' => 'Onemogućili obavezan link za oznaku "ne želi"',
-      'activitiesEntityList' => 'Lista entiteta za aktivnosti',
-      'historyEntityList' => 'Lista entiteta za povijest',
-      'currencyFormat' => 'Format valute',
-      'currencyDecimalPlaces' => 'Valuta decimale',
-      'aclStrictMode' => 'ACL strogo',
-      'aclAllowDeleteCreated' => 'Dozvola brisanja zapisa',
-      'adminNotifications' => 'Sistemske obavijesti u administratorskom panelu',
-      'adminNotificationsNewVersion' => 'Pokaži obavijest kada je dostupna nova EspoCRM verzija',
+      'userThemesDisabled' => 'Deshabilitar temas de usuarios',
+      'emailMessageMaxSize' => 'Tamaño máximo de los correos entrantes (Mb)',
+      'massEmailMaxPerHourCount' => 'Cantidad máxima de correos enviados por hora',
+      'personalEmailMaxPortionSize' => 'Cantidad máxima de correos personales que se recuperarán cada vez',
+      'inboundEmailMaxPortionSize' => 'Cantidad máxima de correos grupales que se recuperarán cada vez',
+      'maxEmailAccountCount' => 'Cantidad máxima de cuentas personales que se pueden crear por usuario',
+      'authTokenLifetime' => 'Vida del token de autenticación (horas)',
+      'authTokenMaxIdleTime' => 'Máximo tiempo de inactividad del token de autenticación (horas)',
+      'dashboardLayout' => 'Diseño del escritorio (por defecto)',
+      'siteUrl' => 'URL del sitio',
+      'addressPreview' => 'Vista previa de la dirección',
+      'addressFormat' => 'Formato de la Dirección',
+      'notificationSoundsDisabled' => 'Desactivar los sonidos de notificación',
+      'applicationName' => 'Nombre de la aplicación',
+      'calendarEntityList' => 'Lista de entidades calendario',
+      'mentionEmailNotifications' => 'Se enviará un correo cuando sean mencionados en los mensajes',
+      'massEmailDisableMandatoryOptOutLink' => 'Deshabilitar la obligatoridad del enlace "darse de baja" ',
+      'activitiesEntityList' => 'Lista de entidades de actividades',
+      'historyEntityList' => 'Lista de entidades de historia',
+      'currencyFormat' => 'Formato de Moneda',
+      'currencyDecimalPlaces' => 'Lugares decimales en la moneda',
+      'aclStrictMode' => 'ACL en modo estricto',
+      'aclAllowDeleteCreated' => 'Permitir eliminar registros creados',
+      'adminNotifications' => 'Notificaciones del sistema en el panel de administración',
+      'adminNotificationsNewVersion' => 'Show notification when new EspoCRM version is available',
       'adminNotificationsNewExtensionVersion' => 'Show notification when new versions of extensions are available',
-      'textFilterUseContainsForVarchar' => 'Koristi operator \'sadrži\' pri filtriranju tekst polja',
+      'textFilterUseContainsForVarchar' => 'Use \'contains\' operator when filtering varchar fields',
       'authTokenPreventConcurrent' => 'Only one auth token per user',
       'scopeColorsDisabled' => 'Disable scope colors',
       'tabColorsDisabled' => 'Disable tab colors',
@@ -2745,160 +2784,164 @@ ne - ne vide.',
       'outboundEmailBccAddress' => 'BCC address for external clients',
       'cleanupDeletedRecords' => 'Clean up deleted records',
     ),
-    'options' => 
+    'options' =>
     array (
-      'weekStart' => 
+      'weekStart' =>
       array (
-        0 => 'Nedjelja',
-        1 => 'Ponedjeljak',
+        0 => 'Domingo',
+        1 => 'Lunes',
       ),
-      'currencyFormat' => 
+      'currencyFormat' =>
       array (
         1 => '10 USD',
         2 => '$10',
       ),
-      'streamEmailNotificationsTypeList' => 
+      'streamEmailNotificationsTypeList' =>
       array (
         'Post' => 'Posts',
         'Status' => 'Status updates',
         'EmailReceived' => 'Received emails',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'recordsPerPage' => 'Broj unosa prvotno prikazan u listama.',
-      'recordsPerPageSmall' => 'Broj unosa prvobitno prikazan u panelima odnosa',
-      'outboundEmailIsShared' => 'Dozvolite korisnicima da šalju poruke sa ove adrese.',
-      'followCreatedEntities' => 'Korisnici će automatski pratiti unose koje naprave.',
-      'emailMessageMaxSize' => 'Sve dolazne poruke e-pošte koje prelaze određenu veličinu će biti preuzete bez teksta i priloga.',
-      'authTokenLifetime' => 'Definira koliko dugo tokeni mogu postojati.
-0 - Znači da nema isteka.',
-      'authTokenMaxIdleTime' => 'Definira koliko dugo nakon prethodnog pristupna token opstaje.
-0 - Znači da nema isteka.',
-      'userThemesDisabled' => 'Ako je označeno onda korisnici neće moći izabrati drugu temu.',
-      'ldapUsername' => 'Kompletan zapis korisničkog DN-a koji omogućava da tražite druge korisnike. Npr "CN=LDAP System User,OU=users,OU=espocrm, DC=test,DC=lan".',
-      'ldapPassword' => 'Lozinka za pristup u LDAP serveru.',
-      'ldapAuth' => 'Korisnički podaci za pristup LDAP serveru.',
-      'ldapUserNameAttribute' => 'Atribut za identifikaciju korisnika. 
-Npr. "userPrincipalName" ili "sAMAccountName" za Active Directory, "uid" za OpenLDAP.',
-      'ldapUserObjectClass' => 'ObjectClass atribut za pretraživanje korisnika. Npr. "person" za AD, "inetOrgPerson " za OpenLDAP.',
-      'ldapAccountCanonicalForm' => 'Vrsta forme vašeg računa. Postoje 4 opcije:<br>- \'Dn\' - forma u formatu \'CN=tester,OU=espocrm,DC=test, DC=lan\'.<br>- \'Username\' - the form \'tester\'.<br>- \'Backslash\' - the form \'COMPANY\\tester\'.<br>- \'Principal\' - the form \'tester@company.com\'.',
-      'ldapBindRequiresDn' => 'Mogućnost da se korisničko ime formatira u DN formatu.',
-      'ldapBaseDn' => 'DN osnova za pretragu korisnika. Npr. "OU=users,OU=espocrm,DC=test, DC=lan".',
-      'ldapTryUsernameSplit' => 'Opcija da podijeli ime sa domenom.',
-      'ldapOptReferrals' => 'ako poveznice moraju slijediti LDAP klijent.',
+      'recordsPerPage' => 'Número de registros a mostrar inicialmente en las vistas.',
+      'recordsPerPageSmall' => 'Número de registros a mostrar inicialmente en los paneles relacionados',
+      'outboundEmailIsShared' => 'Permitir a los usuarios enviar correos electrónicos desde esta dirección.',
+      'followCreatedEntities' => 'Los usuarios seguirán automáticamente los registros que ellos crearon.',
+      'emailMessageMaxSize' => 'Todos los correos entrantes que superen un tamaño especificado se omitirán.',
+      'authTokenLifetime' => 'Define cuanto tiempo de vida tienen los tokens.
+0 - significa que no caduca.',
+      'authTokenMaxIdleTime' => 'Define cuándo caduca el Token luego del último acceso.
+0 - significa que no caduca.',
+      'userThemesDisabled' => 'Si está marcado, los usuarios no podrán seleccionar otro tema.',
+      'ldapUsername' => 'El sistema de usuario DN completo que permite a los usuarios buscar otros. E.g. "CN=LDAP usuario del sistema,OU=users,OU=espocrm, DC=test,DC=lan".',
+      'ldapPassword' => 'La contraseña para acceder al servidor LDAP.',
+      'ldapAuth' => 'Credenciales de acceso para el servidor LDAP.',
+      'ldapUserNameAttribute' => 'El atributo para identificar al usuario.
+Por ejemplo: "userPrincipalName" o "sAMAccountName" para Active Directory, "uid" para OpenLDAP.',
+      'ldapUserObjectClass' => 'Atributo ObjectClass para buscar usuarios. Por ejemplo: "person" para AD, "inetOrgPerson" para OpenLDAP.',
+      'ldapAccountCanonicalForm' => 'El tipo de canonización de su cuenta. Hay 4 opciones:<br><br>
+\'Dn\' - en el formato \'CN=tester,OU=espocrm,DC=test,DC=lan\'<br>
+\'Username\' - \'tester\'<br>
+\'Backslash\' - "COMPANY/tester\'.<br>
+\'Principal\' - \'tester@company.com \'.',
+      'ldapBindRequiresDn' => 'La opción para formatear el nombre de usuario en el formulario de DN.',
+      'ldapBaseDn' => 'La base DN predeterminado utilizado para la búsqueda de los usuarios. E.g. "OU=users,OU=espocrm,DC=test, DC=lan".',
+      'ldapTryUsernameSplit' => 'La opción de dividir un nombre de usuario con el dominio.',
+      'ldapOptReferrals' => 'La opción de dividir un nombre de usuario con el dominio.',
       'ldapPortalUserLdapAuth' => 'Allow portal users to use LDAP authentication instead of Espo authentication.',
-      'ldapCreateEspoUser' => 'Ova opcija dozvoljava da EspoCRM napravi LDAP korisnika.',
-      'ldapUserFirstNameAttribute' => 'LDAP-atribut koji se koristi za određivanje korisničkog imena. Npr  "GivenName ".',
-      'ldapUserLastNameAttribute' => 'LDAP-atribut koji se koristi za određivanje Prezimena. Npr. "sn".',
-      'ldapUserTitleAttribute' => 'LDAP atribut koji se koristi za određivanje titule. Npr "title".',
-      'ldapUserEmailAddressAttribute' => 'LDAP-atribut koji se koristi za određivanje korisničke email adrese. Npr "mail".',
-      'ldapUserPhoneNumberAttribute' => 'LDAP-atribut koji se koristi za određivanje broja telefona korisnika. Npr "telephoneNumber ".',
-      'ldapUserLoginFilter' => 'Filter koji dozvoljava ograničavanje korisničkog pristupa EspoCRM-a. Npr "memberOf=CN=espoGroup, OU=groups,OU=espocrm, DC=test,DC=lan".',
-      'ldapAccountDomainName' => 'Domena koji se koristi za autorizaciju na LDAP serveru.',
-      'ldapAccountDomainNameShort' => 'Kratka domena koji se koristi za autorizaciju na LDAP serveru.',
-      'ldapUserTeams' => 'Timovi napravljenog korisnika. Za više detalja, pogledajte korisnički profil.',
-      'ldapUserDefaultTeam' => 'Podrazumijevani tim za napravljenog korisnika. Za više detalja, pogledajte korisnički profil.',
+      'ldapCreateEspoUser' => 'Esta opción permite EspoCRM para crear un usuario del LDAP.',
+      'ldapUserFirstNameAttribute' => 'atributo LDAP que se utiliza para determinar el nombre de usuario primero. E.g. "givenname".',
+      'ldapUserLastNameAttribute' => 'LDAP attribute which is used to determine the user last name. E.g. "sn".',
+      'ldapUserTitleAttribute' => 'LDAP attribute which is used to determine the user title. E.g. "title".',
+      'ldapUserEmailAddressAttribute' => 'LDAP attribute which is used to determine the user email address. E.g. "mail".',
+      'ldapUserPhoneNumberAttribute' => 'LDAP attribute which is used to determine the user phone number. E.g. "telephoneNumber".',
+      'ldapUserLoginFilter' => 'The filter which allows to restrict users who able to use EspoCRM. E.g. "memberOf=CN=espoGroup, OU=groups,OU=espocrm, DC=test,DC=lan".',
+      'ldapAccountDomainName' => 'The domain which is used for authorization to LDAP server.',
+      'ldapAccountDomainNameShort' => 'The short domain which is used for authorization to LDAP server.',
+      'ldapUserTeams' => 'Equipos de usuario creado. Para más información, véase el perfil de usuario.',
+      'ldapUserDefaultTeam' => 'equipo predeterminado de usuario creado. Para más información, véase el perfil de usuario.',
       'ldapPortalUserPortals' => 'Default Portals for created Portal User',
       'ldapPortalUserRoles' => 'Default Roles for created Portal User',
-      'b2cMode' => 'Po defaultu EspoCRM je prilagođen za B2B. Možete ga prebaciti na B2C.',
-      'currencyDecimalPlaces' => 'Broj decimalnih mjesta. Ako je prazno, onda će biti prikazana sva decimalna mjesta.',
-      'aclStrictMode' => 'Uključeno: Pristup entitetima će biti zabranjen ako nije određeno u ulogama.
+      'b2cMode' => 'Por defecto EspoCRM esta adaptado para B2B. Usted puede cambiarlo a B2C.',
+      'currencyDecimalPlaces' => 'Número de decimales. Si está vacía, se mostrarán todas las posiciones decimales disponibles.',
+      'aclStrictMode' => 'Activado: el acceso a los ámbitos estará prohibido si no está especificado en roles.
 
-Isključeno: Pristup entitetima će biti dozvoljen ako nije određeno u ulogama',
-      'aclAllowDeleteCreated' => 'Korisnici će moći brisati samo vlastite zapise, čak i ako nemaju ovlast brisanja.',
-      'textFilterUseContainsForVarchar' => 'Ako nije označeno, koristi se \'počinje sa\' operator. Možete koristiti asterisk \'%\'.',
+Deshabilitado: se permitirá el acceso a ámbitos si no está especificado en roles.',
+      'aclAllowDeleteCreated' => 'Los usuarios podrán eliminar los registros que hayan creado, incluso si no tienen un acceso de eliminación.',
+      'textFilterUseContainsForVarchar' => 'If not checked then \'starts with\' operator is used. You can use the wildcard \'%\'.',
       'streamEmailNotificationsEntityList' => 'Email notifications about stream updates of followed records. Users will receive email notifications only for specified entity types.',
       'authTokenPreventConcurrent' => 'Users won\'t be able to be logged in on multiple devices simultaneously.',
       'emailAddressIsOptedOutByDefault' => 'When creating new record email addess will be marked as opted-out.',
       'cleanupDeletedRecords' => 'Removed records will be deleted from database after a while.',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'System' => 'Sistem',
-      'Locale' => 'Locale',
+      'System' => 'Sistema',
+      'Locale' => 'Localización',
       'SMTP' => 'SMTP',
-      'Configuration' => 'Konfiguracija',
-      'In-app Notifications' => 'Obavijesti u aplikaciji',
-      'Email Notifications' => 'Obavijesti e-porukama',
-      'Currency Settings' => 'Podešavanja valute',
-      'Currency Rates' => 'Tečaj valuta',
-      'Mass Email' => 'Masovna e-pošta',
-      'Test Connection' => 'Test veze',
-      'Connecting' => 'Povezivanje ...',
-      'Activities' => 'Aktivnosti',
-      'Admin Notifications' => 'Admin Obavijesti',
+      'Configuration' => 'Configuración',
+      'In-app Notifications' => 'Notificaciones del sistema',
+      'Email Notifications' => 'Notificaciones de correo',
+      'Currency Settings' => 'Ajustes de moneda',
+      'Currency Rates' => 'Tasas de conversión de divisas',
+      'Mass Email' => 'Correo masivo',
+      'Test Connection' => 'Probar conexión',
+      'Connecting' => 'Conectando...',
+      'Activities' => 'Actividades planeadas',
+      'Admin Notifications' => 'Notificaciones de administrador',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'ldapTestConnection' => 'Veza uspješno uspostavljena.',
-    ),
-  ),
-  'Team' => 
-  array (
-    'fields' => 
-    array (
-      'name' => 'Ime',
-      'roles' => 'Uloge',
-      'positionList' => 'Lista pozicija',
-    ),
-    'links' => 
-    array (
-      'users' => 'Korisnici',
-      'notes' => 'Bilješke',
-      'roles' => 'Uloge',
-      'inboundEmails' => 'Grupni E-mail računi',
-    ),
-    'tooltips' => 
-    array (
-      'roles' => 'Pristupne uloge. Korisnici ovog tima dobivaju kontrolu pristupa za odabrane uloge.',
-      'positionList' => 'Slobodne pozicije u ovom timu. Npr. prodavač, direktor.',
-    ),
-    'labels' => 
-    array (
-      'Create Team' => 'Napravi tim',
+      'ldapTestConnection' => 'La conexión fue establecida con éxito.',
     ),
   ),
-  'Template' => 
+  'Team' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'body' => 'Sadržaj',
-      'entityType' => 'Vrsta entiteta',
-      'header' => 'Header',
-      'footer' => 'Footer',
-      'leftMargin' => 'Lijeva margina',
-      'topMargin' => 'Gornja margina',
-      'rightMargin' => 'Desna margina',
-      'bottomMargin' => 'Donja margina',
-      'printFooter' => 'Štampaj footer',
-      'footerPosition' => 'Pozicija footera',
-      'variables' => 'Dostupni zapisi',
-      'pageOrientation' => 'Orijentacija stranice',
-      'pageFormat' => 'Format stranice',
+      'name' => 'Nombre',
+      'roles' => 'Roles',
+      'positionList' => 'Lista de puestos',
+    ),
+    'links' =>
+    array (
+      'users' => 'Usuarios',
+      'notes' => 'Notas',
+      'roles' => 'Roles',
+      'inboundEmails' => 'Cuentas de correo grupales',
+    ),
+    'tooltips' =>
+    array (
+      'roles' => 'Todos los usuarios de este equipo tendrán acceso a la configuración desde los roles seleccionados',
+      'positionList' => 'Puestos disponibles en este equipo. Por ejemplo Vendedor, Gerente.',
+    ),
+    'labels' =>
+    array (
+      'Create Team' => 'Crear empresa',
+    ),
+  ),
+  'Template' =>
+  array (
+    'fields' =>
+    array (
+      'name' => 'Nombre',
+      'body' => 'Cuerpo',
+      'entityType' => 'Tipo de entidad',
+      'header' => 'Cabecera',
+      'footer' => 'Pié',
+      'leftMargin' => 'Margen Izquierdo',
+      'topMargin' => 'Margen Superior',
+      'rightMargin' => 'Margen Derecho',
+      'bottomMargin' => 'Margen Inferior',
+      'printFooter' => 'Imprimir Pié',
+      'footerPosition' => 'Posición del Pié',
+      'variables' => 'Etiquetas disponibles.',
+      'pageOrientation' => 'Page Orientation',
+      'pageFormat' => 'Paper Format',
       'fontFace' => 'Font',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Template' => 'Napravi šablonu',
+      'Create Template' => 'Crear plantilla',
     ),
-    'options' => 
+    'options' =>
     array (
-      'pageOrientation' => 
+      'pageOrientation' =>
       array (
-        'Portrait' => 'Portret',
-        'Landscape' => 'Pejzaž',
+        'Portrait' => 'Portrait',
+        'Landscape' => 'Landscape',
       ),
-      'placeholders' => 
+      'placeholders' =>
       array (
         'today' => 'Today (date)',
         'now' => 'Now (date-time)',
       ),
-      'fontFace' => 
+      'fontFace' =>
       array (
         'aealarabiya' => 'AlArabiya',
         'aefurat' => 'Aefurat',
@@ -2930,1104 +2973,1104 @@ Isključeno: Pristup entitetima će biti dozvoljen ako nije određeno u ulogama'
         'times' => 'Times',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'footer' => 'Koristiti {pageNumber} za ispis stranice određenog broja.',
-      'variables' => 'Copy-paste needed placeholder to Header, Body or Footer.',
+      'footer' => 'Use {pageNumber} para imprimir el número de página.',
+      'variables' => 'Copie y Pegue la etiqueta necesaria en el encabezado, cuerpo o pie de página.',
     ),
   ),
-  'User' => 
+  'User' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'userName' => 'Korisničko ime',
-      'title' => 'Naslov',
-      'isAdmin' => 'Je admin',
-      'defaultTeam' => 'Početni tim',
-      'emailAddress' => 'E-pošta',
-      'phoneNumber' => 'Telefon',
-      'roles' => 'Uloge',
-      'portals' => 'Portali',
-      'portalRoles' => 'Uloge za portal',
-      'teamRole' => 'Položaj',
-      'password' => 'Lozinka',
-      'currentPassword' => 'Trenutna lozinka',
-      'passwordConfirm' => 'Potvrdite lozinku',
-      'newPassword' => 'Nova lozinka',
-      'newPasswordConfirm' => 'Potvrdite novu lozinku',
+      'name' => 'Nombre',
+      'userName' => 'Nombre Usuario',
+      'title' => 'Título',
+      'isAdmin' => 'Es administrador',
+      'defaultTeam' => 'Equipo por defecto',
+      'emailAddress' => 'Correo electrónico',
+      'phoneNumber' => 'Teléfono',
+      'roles' => 'Roles',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'teamRole' => 'Puesto',
+      'password' => 'Contraseña',
+      'currentPassword' => 'Contraseña Actual',
+      'passwordConfirm' => 'Confirmar Contraseña',
+      'newPassword' => 'Nueva Contraseña',
+      'newPasswordConfirm' => 'Confirmar Contraseña Nueva',
       'avatar' => 'Avatar',
-      'isActive' => 'Je aktivno',
-      'isPortalUser' => 'Je korisnik portala',
-      'contact' => 'Kontakt',
-      'accounts' => 'Tvrtke',
-      'account' => 'Tvrtka (osnovno)',
-      'sendAccessInfo' => 'Pošaljite e-poštu sa pristupnim podacima za korisnike',
+      'isActive' => 'Está activo',
+      'isPortalUser' => 'Es usuario del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'sendAccessInfo' => 'Enviar información de acceso al usuario',
       'portal' => 'Portal',
-      'gender' => 'Spol',
-      'position' => 'Pozicija u timu',
-      'ipAddress' => 'IP adresa',
-      'passwordPreview' => 'Pregled lozinke',
-      'isSuperAdmin' => 'Je Super Admin',
+      'gender' => 'Sexo',
+      'position' => 'Puesto en el equipo',
+      'ipAddress' => 'Dirección IP',
+      'passwordPreview' => 'Vista previa de la contraseña',
+      'isSuperAdmin' => 'Is Super Admin',
       'lastAccess' => 'Last Access',
-      'acceptanceStatus' => 'Status prihvaćanja',
-      'acceptanceStatusMeetings' => 'Status prihvaćanja (Sastanci)',
-      'acceptanceStatusCalls' => 'Status prihvaćanja (pozivi)',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'teams' => 'Timovi',
-      'roles' => 'Uloge',
-      'notes' => 'Bilješke',
-      'portals' => 'Portali',
-      'portalRoles' => 'Uloge za portal',
-      'contact' => 'Kontakt',
-      'accounts' => 'Tvrtke',
-      'account' => 'Tvrtka (osnovno)',
-      'tasks' => 'Zadaci',
-      'targetLists' => 'Liste meta',
+      'teams' => 'Equipos',
+      'roles' => 'Roles',
+      'notes' => 'Notas',
+      'portals' => 'Portales',
+      'portalRoles' => 'Roles del portal',
+      'contact' => 'Contacto',
+      'accounts' => 'Cuentas',
+      'account' => 'Cuenta (principal)',
+      'tasks' => 'Tareas',
+      'targetLists' => 'Lista de objetivos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create User' => 'Napravi korisnika',
-      'Generate' => 'Generiraj',
-      'Access' => 'Pristup',
-      'Preferences' => 'Postavke',
-      'Change Password' => 'Promjena lozinke',
-      'Teams and Access Control' => 'Timovi i kontrola pristupa',
-      'Forgot Password?' => 'Zaboravili ste lozinku?',
-      'Password Change Request' => 'Zahtjev za promjenu lozinke',
-      'Email Address' => 'Adresa e-pošte',
-      'External Accounts' => 'Eksterni računi',
-      'Email Accounts' => 'Nalozi e-pošte',
+      'Create User' => 'Crear usuario',
+      'Generate' => 'Generar',
+      'Access' => 'Acceso',
+      'Preferences' => 'Preferencias',
+      'Change Password' => 'Cambiar Contraseña',
+      'Teams and Access Control' => 'Equipos y control de acceso',
+      'Forgot Password?' => '¿Olvidó la Contraseña?',
+      'Password Change Request' => 'Solicitar Cambio de Contraseña',
+      'Email Address' => 'Correo electrónico',
+      'External Accounts' => 'Cuentas externas',
+      'Email Accounts' => 'Cuentas de correo',
       'Portal' => 'Portal',
-      'Create Portal User' => 'Napravi korisnika portala',
-      'Proceed w/o Contact' => 'Nastavite bez kontakta',
+      'Create Portal User' => 'Crear usuario del portal',
+      'Proceed w/o Contact' => 'Continuar sin contacto',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'defaultTeam' => 'Svi zapisi napravljeni od strane ovog korisnika će inicijalno biti u vezi sa ovim timom.',
-      'userName' => 'Slova AZ, broj 0-9, točke, crtice, @-znak i donje crte su dozvoljeni.',
-      'isAdmin' => 'Admin korisnik može pristupiti svemu.',
-      'isActive' => 'Ukoliko nije označeno, korisnik se neće moći prijaviti.',
-      'teams' => 'Timovi kojima ovaj korisnik pripada. Nivo kontrole pristupa je naslijeđen od uloga tima.',
-      'roles' => 'Dodatne pristupne uloge. Koristite ovo ako korisnik ne pripada nijednoj ekipi ili treba da prošire nivo kontrole pristupa isključivo za ovog korisnika.',
-      'portalRoles' => 'Dodatne portal uloge. Koristite za veći nivo kontrole pristupa isključivo ovog korisnika.',
-      'portals' => 'Portali kojima korisnik ima pristup.',
+      'defaultTeam' => 'Todos los registros creados por este usuario serán relacionados a este equipo por defecto.',
+      'userName' => 'Letras a-z, números 0-9 y guiones bajos están permitidos',
+      'isAdmin' => 'El usuario administrador puede tener acceso a todo.',
+      'isActive' => 'Si lo desmarca, el usuario no podrá iniciar sesión.',
+      'teams' => 'Equipos a los que este usuario pertenece. Nivel de control de acceso se hereda de los roles de equipo.',
+      'roles' => 'Roles de acceso adicionales. Úsalo si el usuario no pertenece a ningún equipo o si necesita ampliar el nivel de control de acceso solo para este usuario.',
+      'portalRoles' => 'Roles adicionales del portal. Utilícelos para extender el nivel de acceso exclusivamente para este usuario.',
+      'portals' => 'El usuario tiene accesos a los siguientes portales.',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'passwordWillBeSent' => 'Lozinka će biti poslana na adresu korisnika.',
-      'accountInfoEmailSubject' => 'EspoCRM Korisnik - podaci za pristup',
-      'accountInfoEmailBody' => 'Vaši podaci za pristup:
+      'passwordWillBeSent' => 'La Contraseña será enviada al correo electrónico del usuario',
+      'accountInfoEmailSubject' => 'Información Cuenta',
+      'accountInfoEmailBody' => 'Información de tu cuenta:
 
-Korisničko ime: {userName} 
-Lozinka: {password}
+Nombre Usuario: {userName}
+Contraseña: {password}
 
 {siteUrl}',
-      'passwordChangeLinkEmailSubject' => 'Upit za promjenu lozinke',
-      'passwordChangeLinkEmailBody' => 'Možete promijeniti lozinku prateći ovaj link {link}. Ovaj jedinstveni URL traje samo kratko vrijeme.',
-      'passwordChanged' => 'Lozinka je promijenjena',
-      'userCantBeEmpty' => 'Korisničko ime ne može biti prazno',
-      'wrongUsernamePasword' => 'Pogrešno korisničko ime/lozinka',
-      'emailAddressCantBeEmpty' => 'Adresa e-pošte ne može biti prazna',
-      'userNameEmailAddressNotFound' => 'Korisničko ime/Adresa e-pošte nije pronađena',
-      'forbidden' => 'Zabranjeno, pokušajte kasnije',
-      'uniqueLinkHasBeenSent' => 'Jedinstvena URL adresa je poslana na određenu adresu.',
-      'passwordChangedByRequest' => 'Lozinka je promijenjena.',
-      'setupSmtpBefore' => 'Potrebno je da <a href="{url}">SMTP postavke</a>href="{url}"> budu unijete i točne kako bi lozinka bila poslana.',
-      'userNameExists' => 'Korisničko ime već postoji',
+      'passwordChangeLinkEmailSubject' => 'Solicitud de Cambio de Contraseña',
+      'passwordChangeLinkEmailBody' => 'Puede cambiar su contraseña siguiendo este enlace {link}. Esta URL única expirará pronto.',
+      'passwordChanged' => 'La Contraseña ha sido cambiada',
+      'userCantBeEmpty' => 'El nombre de usuario no puede estar vacío',
+      'wrongUsernamePasword' => 'Nombre de usuario/contraseña incorrectos',
+      'emailAddressCantBeEmpty' => 'La dirección de correo no puede estar vacía',
+      'userNameEmailAddressNotFound' => 'Nombre de Usuario/Correo no encontrado',
+      'forbidden' => 'Prohibido, por favor intente después',
+      'uniqueLinkHasBeenSent' => 'El enlace único ha sido enviado a la dirección de correo electrónico especificada.',
+      'passwordChangedByRequest' => 'La contraseña ha sido cambiada.',
+      'setupSmtpBefore' => 'Necesita configurar los <a href="{url}">ajustes SMTP</a> para que el sistema pueda enviar contraseñas por correo.',
+      'userNameExists' => 'User Name already exists',
     ),
-    'options' => 
+    'options' =>
     array (
-      'gender' => 
+      'gender' =>
       array (
-        '' => 'Nije postavljeno',
-        'Male' => 'Muški',
-        'Female' => 'Ženski',
-        'Neutral' => 'Neutralan',
+        '' => 'No definido',
+        'Male' => 'Masculino',
+        'Female' => 'Femenino',
+        'Neutral' => 'Neutral',
       ),
     ),
-    'boolFilters' => 
+    'boolFilters' =>
     array (
-      'onlyMyTeam' => 'Samo moj tim',
+      'onlyMyTeam' => 'Solo de mi equipo',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktivno',
-      'activePortal' => 'Portal aktivan',
+      'active' => 'Activo',
+      'activePortal' => 'Portales activos',
     ),
   ),
-  'Account' => 
+  'Account' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Naziv',
-      'emailAddress' => 'Email',
-      'website' => 'Site',
-      'phoneNumber' => 'Telefon',
-      'billingAddress' => 'Adresa za naplatu',
-      'shippingAddress' => 'Adresa za dostavu',
-      'description' => 'Opis',
-      'sicCode' => 'Sic kod',
-      'industry' => 'Industrija',
-      'type' => 'Vrsta',
-      'contactRole' => 'Naslov',
-      'contactIsInactive' => 'Neaktivno',
-      'campaign' => 'Kampanja',
-      'targetLists' => 'Liste meta',
-      'targetList' => 'Lista meta',
-      'originalLead' => 'Originalni izvor',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'billingAddress' => 'Dirección de facturación',
+      'shippingAddress' => 'Dirección de envío',
+      'description' => 'Descripción',
+      'sicCode' => 'Código SIC',
+      'industry' => 'Industria',
+      'type' => 'Tipo',
+      'contactRole' => 'Título',
+      'contactIsInactive' => 'Inactivo',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'Kontakti',
-      'opportunities' => 'Prilike',
-      'cases' => 'Predmeti',
-      'documents' => 'Dokumenti',
-      'meetingsPrimary' => 'Sastanci (prošireno)',
-      'callsPrimary' => 'Pozivi (prošireno)',
-      'tasksPrimary' => 'Zadaci (prošireno)',
-      'emailsPrimary' => 'E-pošta (prošireno)',
-      'targetLists' => 'Liste meta',
-      'campaignLogRecords' => 'Dnevnik kampanje',
-      'campaign' => 'Kampanja',
-      'portalUsers' => 'Korisnici portala',
-      'originalLead' => 'Originalni izvor',
+      'contacts' => 'Contactos',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
+      'meetingsPrimary' => 'Reuniones (ampliado)',
+      'callsPrimary' => 'Llamadas (ampliado)',
+      'tasksPrimary' => 'Tareas (ampliado)',
+      'emailsPrimary' => 'Correos (ampliado)',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'portalUsers' => 'Usuarios del portal',
+      'originalLead' => 'Posible cliente de origen',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Customer' => 'Klijent',
-        'Investor' => 'Investitor',
-        'Partner' => 'Partner',
-        'Reseller' => 'Distributer',
+        'Customer' => 'Cliente',
+        'Investor' => 'Inversor',
+        'Partner' => 'Socio',
+        'Reseller' => 'Revendedor',
       ),
-      'industry' => 
+      'industry' =>
       array (
-        'Aerospace' => 'Avijacija',
-        'Agriculture' => 'Poljoprivreda',
-        'Advertising' => 'Oglašavanje',
-        'Apparel & Accessories' => 'Odjeća i pribor',
-        'Architecture' => 'Arhitektura',
-        'Automotive' => 'Automobili',
-        'Banking' => 'Bankarstvo',
-        'Biotechnology' => 'Biotehnologija',
-        'Building Materials & Equipment' => 'Građevinski materijal i oprema',
-        'Chemical' => 'Kemijska',
-        'Construction' => 'Izgradnja',
-        'Computer' => 'Računala',
-        'Defense' => 'Obrana',
-        'Creative' => 'Kreativna ind',
-        'Culture' => 'Kultura',
-        'Consulting' => 'Consulting',
-        'Education' => 'Obrazovanje',
-        'Electronics' => 'Elektronika',
-        'Electric Power' => 'Električna energija',
-        'Energy' => 'Energija',
-        'Entertainment & Leisure' => 'Zabava & opuštanje',
-        'Finance' => 'Financije',
-        'Food & Beverage' => 'Hrana i piće',
-        'Grocery' => 'Mješovita roba',
-        'Hospitality' => 'Uslužna djelatnost',
-        'Healthcare' => 'Zdravstvena zaštita',
-        'Insurance' => 'Osiguranje',
-        'Legal' => 'Pravni poslovi',
-        'Manufacturing' => 'Proizvodnja',
-        'Mass Media' => 'Masovni mediji',
-        'Mining' => 'Rudarstvo',
-        'Music' => 'Muzika',
+        'Aerospace' => 'Aeroespacial',
+        'Agriculture' => 'Agrícola',
+        'Advertising' => 'Publicidad',
+        'Apparel & Accessories' => 'Ropa y accesorios',
+        'Architecture' => 'Arquitectura',
+        'Automotive' => 'Automotriz',
+        'Banking' => 'Banca',
+        'Biotechnology' => 'Biotecnología',
+        'Building Materials & Equipment' => 'Materiales de construcción y equipamiento',
+        'Chemical' => 'Química',
+        'Construction' => 'Construcción',
+        'Computer' => 'Computación',
+        'Defense' => 'Defensa',
+        'Creative' => 'Creativa',
+        'Culture' => 'Cultural',
+        'Consulting' => 'Consultoría',
+        'Education' => 'Educación',
+        'Electronics' => 'Electrónicos',
+        'Electric Power' => 'Energía eléctrica',
+        'Energy' => 'Energía',
+        'Entertainment & Leisure' => 'Entretenimiento y ocio',
+        'Finance' => 'Finanzas',
+        'Food & Beverage' => 'Alimentación y bebidas',
+        'Grocery' => 'Comestibles',
+        'Hospitality' => 'Hostelería',
+        'Healthcare' => 'Cuidado de la salud',
+        'Insurance' => 'Seguros',
+        'Legal' => 'Jurídica',
+        'Manufacturing' => 'Fabricación',
+        'Mass Media' => 'Medios masivos',
+        'Mining' => 'Minería',
+        'Music' => 'Música',
         'Marketing' => 'Marketing',
-        'Publishing' => 'Izdavaštvo',
-        'Petroleum' => 'Naftna',
-        'Real Estate' => 'Nekretnine',
-        'Retail' => 'Maloprodaja',
-        'Shipping' => 'Dostava',
-        'Service' => 'Usluge',
-        'Support' => 'Podrška',
-        'Sports' => 'Sportovi',
-        'Software' => 'Softver',
-        'Technology' => 'Tehnologija',
-        'Telecommunications' => 'Telekomunikacije',
-        'Television' => 'Televizija',
-        'Testing, Inspection & Certification' => 'Testiranje, inspekcija i certificiranje',
-        'Transportation' => 'Transport',
-        'Travel' => 'Putovanje',
-        'Venture Capital' => 'Preduzetnički kapital',
-        'Wholesale' => 'Veleprodaja',
-        'Water' => 'Voda',
+        'Publishing' => 'Publicaciones',
+        'Petroleum' => 'Petróleo',
+        'Real Estate' => 'Bienes raices',
+        'Retail' => 'Venta al por menor',
+        'Shipping' => 'Naviera',
+        'Service' => 'Servicio',
+        'Support' => 'Soporte',
+        'Sports' => 'Deportes',
+        'Software' => 'Software',
+        'Technology' => 'Tecnología',
+        'Telecommunications' => 'Telecomunicaciones',
+        'Television' => 'Televisión',
+        'Testing, Inspection & Certification' => 'Pruebas, inspección y certificación',
+        'Transportation' => 'Transporte',
+        'Travel' => 'Viajes',
+        'Venture Capital' => 'Capital de riesgo',
+        'Wholesale' => 'Venta al por mayor',
+        'Water' => 'Agua',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Account' => 'Kreiraj Tvrtku',
-      'Copy Billing' => 'Kopiranje Naplatne adrese',
-      'Set Primary' => 'Podesi kao primarno',
+      'Create Account' => 'Crear cuenta',
+      'Copy Billing' => 'Copiar desde facturación',
+      'Set Primary' => 'Establecer como principal',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'customers' => 'Klijenti',
-      'partners' => 'Partneri',
-      'recentlyCreated' => 'Nedavno kreirano',
+      'customers' => 'Clientes',
+      'partners' => 'Socios',
+      'recentlyCreated' => 'Creado recientemente',
     ),
   ),
-  'Calendar' => 
+  'Calendar' =>
   array (
-    'modes' => 
+    'modes' =>
     array (
-      'month' => 'Mjesec',
-      'week' => 'Tjedan',
-      'day' => 'Dan',
-      'agendaWeek' => 'Tjedan',
-      'agendaDay' => 'Dan',
-      'timeline' => 'Vremenska linija',
+      'month' => 'Mes',
+      'week' => 'Semana',
+      'day' => 'Día',
+      'agendaWeek' => 'Semana',
+      'agendaDay' => 'Día',
+      'timeline' => 'Línea de tiempo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Today' => 'Danas',
-      'Create' => 'Kreiraj',
-      'Shared' => 'Dijeljeno',
-      'Add User' => 'Dodaj korisnika',
-      'current' => 'trenutno',
-      'time' => 'vrijeme',
-      'User List' => 'Lista korisnika',
-      'Manage Users' => 'Upravljanje korisnicima',
-      'View Calendar' => 'Prikaži kalendar',
+      'Today' => 'Hoy',
+      'Create' => 'Crear',
+      'Shared' => 'Compartido',
+      'Add User' => 'Agregar usuario',
+      'current' => 'actual',
+      'time' => 'hora',
+      'User List' => 'Lista de usuarios',
+      'Manage Users' => 'Administrar usuarios',
+      'View Calendar' => 'Ver calendario',
       'Create Shared View' => 'Create Shared View',
     ),
   ),
-  'Call' => 
+  'Call' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'parent' => 'Nadređeni',
-      'status' => 'Status',
-      'dateStart' => 'Početni datum',
-      'dateEnd' => 'Završni datum',
-      'direction' => 'Smjer',
-      'duration' => 'Trajanje',
-      'description' => 'Opis',
-      'users' => 'Korisnici',
-      'contacts' => 'Kontakti',
-      'leads' => 'Izvori',
-      'reminders' => 'Podsjetnici',
-      'account' => 'Tvrtka',
-      'acceptanceStatus' => 'Status prihvaćanja',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'direction' => 'Dirección',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
     ),
-    'links' => 
+    'links' =>
     array (
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Planiran',
-        'Held' => 'Održan',
-        'Not Held' => 'Nije održano',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'direction' => 
+      'direction' =>
       array (
-        'Outbound' => 'Odlazna',
-        'Inbound' => 'Dolazna',
+        'Outbound' => 'Saliente',
+        'Inbound' => 'Entrante',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'Nema',
-        'Accepted' => 'Prihvaćeno',
-        'Declined' => 'Odbijeno',
-        'Tentative' => 'Tentativni',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'Postavi kao održano',
-      'setNotHeld' => 'Postavi kao nije održano',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Call' => 'Postavi poziv',
-      'Set Held' => 'Postavi kao održano',
-      'Set Not Held' => 'Postavi kao nije održano',
-      'Send Invitations' => 'Pošalji Pozivnice',
+      'Create Call' => 'Crear llamada',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Planirano',
-      'held' => 'Održan',
-      'todays' => 'Današnji',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
   ),
-  'Campaign' => 
+  'Campaign' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'description' => 'Opis',
-      'status' => 'Status',
-      'type' => 'Tip',
-      'startDate' => 'Datum početka',
-      'endDate' => 'Završni datum',
-      'targetLists' => 'Liste meta',
-      'excludingTargetLists' => 'Isključujući liste meta',
-      'sentCount' => 'Poslano',
-      'openedCount' => 'Otvoren',
-      'clickedCount' => 'Kliknuto',
-      'optedOutCount' => 'Ne želi',
-      'bouncedCount' => 'Bounced',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'status' => 'Estado',
+      'type' => 'Tipo',
+      'startDate' => 'Fecha de inicio',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'sentCount' => 'Enviado',
+      'openedCount' => 'Abierto',
+      'clickedCount' => 'Cliqueados',
+      'optedOutCount' => 'Se dieron de baja',
+      'bouncedCount' => 'Rebotados',
       'optedInCount' => 'Opted In',
-      'hardBouncedCount' => 'Hard Bounced',
-      'softBouncedCount' => 'Soft Bounced',
-      'leadCreatedCount' => 'Kreiran izvor',
-      'revenue' => 'Prihod',
-      'revenueConverted' => 'Prihod (konvertiran)',
-      'budget' => 'Budžet',
-      'budgetConverted' => 'Budžet (konvertiran)',
+      'hardBouncedCount' => 'Rebotados Duro',
+      'softBouncedCount' => 'Rebotado Suave',
+      'leadCreatedCount' => 'Posibles clientes creados',
+      'revenue' => 'Ingresos',
+      'revenueConverted' => 'ingresos (convertido)',
+      'budget' => 'Presupuesto',
+      'budgetConverted' => 'Presupuesto (convertido)',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
       'mailMergeOnlyWithAddress' => 'Skip records w/o filled address',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Liste meta',
-      'excludingTargetLists' => 'Isključujući liste meta',
-      'accounts' => 'Tvrtke',
-      'contacts' => 'Kontakti',
-      'leads' => 'Izvori',
-      'opportunities' => 'Prilike',
-      'campaignLogRecords' => 'Dnevnik',
-      'massEmails' => 'Masovna e-pošta',
-      'trackingUrls' => 'Praćenje URL-ova',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'opportunities' => 'Oportunidades',
+      'campaignLogRecords' => 'Registros',
+      'massEmails' => 'Correos masivos',
+      'trackingUrls' => 'URLs de seguimiento',
       'contactsTemplate' => 'Contacts Template',
       'leadsTemplate' => 'Leads Template',
       'accountsTemplate' => 'Accounts Template',
       'usersTemplate' => 'Users Template',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'E-pošta',
+        'Email' => 'Correo electrónico',
         'Web' => 'Web',
-        'Television' => 'Televizija',
+        'Television' => 'Televisión',
         'Radio' => 'Radio',
-        'Newsletter' => 'Newsletter',
-        'Mail' => 'Pošta',
+        'Newsletter' => 'Boletín de noticias',
+        'Mail' => 'Correo',
       ),
-      'status' => 
+      'status' =>
       array (
-        'Planning' => 'Planiranje',
-        'Active' => 'Aktivna',
-        'Inactive' => 'Neaktivna',
-        'Complete' => 'Gotova',
+        'Planning' => 'Planificación',
+        'Active' => 'Activo',
+        'Inactive' => 'Inactivo',
+        'Complete' => 'Completada',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Campaign' => 'Napravite kampanju',
-      'Target Lists' => 'Liste meta',
-      'Statistics' => 'Statistika',
-      'hard' => 'tvrd',
-      'soft' => 'mek',
-      'Unsubscribe' => 'Odjavi se',
-      'Mass Emails' => 'Masovna e-pošta',
-      'Email Templates' => 'Šablone e-pošte',
-      'Unsubscribe again' => 'Ponovo se odjavite',
-      'Subscribe again' => 'Ponovo se prijavite',
-      'Create Target List' => 'Napravite listu meta',
+      'Create Campaign' => 'Crear campaña',
+      'Target Lists' => 'Lista de objetivos',
+      'Statistics' => 'Estadísticas',
+      'hard' => 'duro',
+      'soft' => 'suave',
+      'Unsubscribe' => 'Desuscribirse',
+      'Mass Emails' => 'Correos masivos',
+      'Email Templates' => 'Plantillas de correos',
+      'Unsubscribe again' => 'Cancelar otra vez la suscripción',
+      'Subscribe again' => 'Suscribirse nuevamente',
+      'Create Target List' => 'Crear lista de obejtivos',
       'Mail Merge' => 'Mail Merge',
       'Generate Mail Merge PDF' => 'Generate Mail Merge PDF',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktivne',
+      'active' => 'Activo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'unsubscribed' => 'Odjavljeni ste sa naše liste.',
-      'subscribedAgain' => 'Ponovo ste pretplaćeni.',
+      'unsubscribed' => 'Usted ha cancelado la suscripción a nuestra lista de correo.',
+      'subscribedAgain' => 'Se ha vuelto a suscribir.',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'targetLists' => 'Mete koje trebaju primati poruke.',
-      'excludingTargetLists' => 'Mete koje ne trebaju primati poruke.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
     ),
   ),
-  'CampaignLogRecord' => 
+  'CampaignLogRecord' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'action' => 'Akcija',
-      'actionDate' => 'Datum',
-      'data' => 'Podaci',
-      'campaign' => 'Kampanja',
-      'parent' => 'Meta',
-      'object' => 'Objekt',
-      'application' => 'Aplikacija',
-      'queueItem' => 'U redu čekanja',
-      'stringData' => 'String podatak',
-      'stringAdditionalData' => 'String dodatni podataci',
-      'isTest' => 'Je Test',
+      'action' => 'Acción',
+      'actionDate' => 'Fecha',
+      'data' => 'Datos',
+      'campaign' => 'Campaña',
+      'parent' => 'Objetivo',
+      'object' => 'Objeto',
+      'application' => 'Aplicacion',
+      'queueItem' => 'Elemento de la cola',
+      'stringData' => 'Cadena de datos',
+      'stringAdditionalData' => 'Cadena de datos adicional',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'queueItem' => 'U redu čekanja',
-      'parent' => 'Nadređeni',
-      'object' => 'Objekt',
-      'campaign' => 'Kampanja',
+      'queueItem' => 'Elemento de la cola',
+      'parent' => 'Padre',
+      'object' => 'Objeto',
+      'campaign' => 'Campaña',
     ),
-    'options' => 
+    'options' =>
     array (
-      'action' => 
+      'action' =>
       array (
-        'Sent' => 'Poslano',
-        'Opened' => 'Otvorena',
-        'Opted Out' => 'Ne želi',
-        'Bounced' => 'Bounced',
-        'Clicked' => 'Kliknuto',
-        'Lead Created' => 'Izvor kreiran',
+        'Sent' => 'Enviado',
+        'Opened' => 'Abierto',
+        'Opted Out' => 'Se dieron de baja',
+        'Bounced' => 'Rebotados',
+        'Clicked' => 'Cliqueados',
+        'Lead Created' => 'Posible cliente creado',
         'Opted In' => 'Opted In',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'All' => 'Sve',
+      'All' => 'Todos',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'sent' => 'Poslano',
-      'opened' => 'Otvorena',
-      'optedOut' => 'Ne želi',
+      'sent' => 'Enviado',
+      'opened' => 'Abierto',
+      'optedOut' => 'Se dieron de baja',
       'optedIn' => 'Opted In',
-      'bounced' => 'Bounced',
-      'clicked' => 'Kliknuto',
-      'leadCreated' => 'Izvor Kreiran',
+      'bounced' => 'Rebotados',
+      'clicked' => 'Cliqueados',
+      'leadCreated' => 'Posible cliente creado',
     ),
   ),
-  'CampaignTrackingUrl' => 
+  'CampaignTrackingUrl' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'url' => 'URL adresa',
-      'urlToUse' => 'Kod za ubacivanje umjesto URL',
-      'campaign' => 'Kampanja',
+      'url' => 'URL',
+      'urlToUse' => 'Código para insertar en lugar de la URL',
+      'campaign' => 'Campaña',
     ),
-    'links' => 
+    'links' =>
     array (
-      'campaign' => 'Kampanja',
+      'campaign' => 'Campaña',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create CampaignTrackingUrl' => 'Kreirati URL za praćenje',
+      'Create CampaignTrackingUrl' => 'Crear URL de seguimiento',
     ),
   ),
-  'Case' => 
+  'Case' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'number' => 'Broj',
-      'status' => 'Status',
-      'account' => 'Tvrtka',
-      'contact' => 'Kontakt',
-      'contacts' => 'Kontakti',
-      'priority' => 'Prioritet',
-      'type' => 'Vrsta',
-      'description' => 'Opis',
-      'inboundEmail' => 'Grupni Email račun',
-      'lead' => 'Izvor',
-      'attachments' => 'Prilozi',
+      'name' => 'Nombre',
+      'number' => 'Número',
+      'status' => 'Estado',
+      'account' => 'Cuenta',
+      'contact' => 'Contacto',
+      'contacts' => 'Contactos',
+      'priority' => 'Prioridad',
+      'type' => 'Tipo',
+      'description' => 'Descripción',
+      'inboundEmail' => 'Cuenta de Correo',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'inboundEmail' => 'Grupni Email račun',
-      'account' => 'Tvrtka',
-      'contact' => 'Kontakt (osnovni)',
-      'Contacts' => 'Kontakti',
-      'meetings' => 'Sastanci',
-      'calls' => 'Pozivi',
-      'tasks' => 'Zadaci',
-      'emails' => 'E-poruke',
-      'articles' => 'Baza znanja',
-      'lead' => 'Izvor',
-      'attachments' => 'Prilozi',
+      'inboundEmail' => 'Cuenta de correo',
+      'account' => 'Cuenta',
+      'contact' => 'Contratos (principal)',
+      'Contacts' => 'Contactos',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'emails' => 'Correos',
+      'articles' => 'Artículos de la base de conocimiento',
+      'lead' => 'Posible cliente',
+      'attachments' => 'Adjuntos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'New' => 'Novi',
-        'Assigned' => 'Dodijeljen',
-        'Pending' => 'Neriješen',
-        'Closed' => 'Zatvoren',
-        'Rejected' => 'Odbijen',
-        'Duplicate' => 'Duplikat',
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'Pending' => 'Pendiente',
+        'Closed' => 'Cerrados',
+        'Rejected' => 'Rechazado',
+        'Duplicate' => 'Duplicar',
       ),
-      'priority' => 
+      'priority' =>
       array (
-        'Low' => 'Nizak',
-        'Normal' => 'Normalan',
-        'High' => 'Visok',
-        'Urgent' => 'Hitan',
+        'Low' => 'Baja',
+        'Normal' => 'Normal',
+        'High' => 'Alta',
+        'Urgent' => 'Urgente',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Question' => 'Pitanje',
-        'Incident' => 'Incident',
-        'Problem' => 'Problem',
+        'Question' => 'Pregunta',
+        'Incident' => 'Incidente',
+        'Problem' => 'Problema',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Case' => 'Napravi prijavu problema',
-      'Close' => 'Zatvori',
-      'Reject' => 'Odbijen',
-      'Closed' => 'Zatvoren',
-      'Rejected' => 'Odbijen',
+      'Create Case' => 'Crear ticket',
+      'Close' => 'Cerrar',
+      'Reject' => 'Rechazar',
+      'Closed' => 'Cerrados',
+      'Rejected' => 'Rechazado',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'open' => 'Otvoren',
-      'closed' => 'Zatvoren',
+      'open' => 'Abiertos',
+      'closed' => 'Cerrados',
     ),
   ),
-  'Contact' => 
+  'Contact' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'emailAddress' => 'E-mail',
-      'title' => 'Naslov',
-      'account' => 'Tvrtka',
-      'accounts' => 'Tvrtke',
-      'phoneNumber' => 'Telefon',
-      'accountType' => 'Vrsta Tvrtke',
-      'doNotCall' => 'Ne zovi',
-      'address' => 'Adresa',
-      'opportunityRole' => 'Uloga prilika',
-      'accountRole' => 'Naslov',
-      'description' => 'Opis',
-      'campaign' => 'Kampanja',
-      'targetLists' => 'Liste meta',
-      'targetList' => 'Lista meta',
-      'portalUser' => 'Korisnik portala',
-      'originalLead' => 'Originalni izvor',
-      'acceptanceStatus' => 'Status prihvaćanja',
-      'accountIsInactive' => 'Tvrtka Neaktivna',
-      'acceptanceStatusMeetings' => 'Status prihvaćanja (Sastanak)',
-      'acceptanceStatusCalls' => 'Status prihvaćanja (pozivi)',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'account' => 'Cuenta',
+      'accounts' => 'Cuentas',
+      'phoneNumber' => 'Teléfono',
+      'accountType' => 'Tipo de Cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'opportunityRole' => 'Rol de Oportunidad',
+      'accountRole' => 'Título',
+      'description' => 'Descripción',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Lista de objetivos',
+      'targetList' => 'Lista de objetivos',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'acceptanceStatus' => 'Estado de Aceptación',
+      'accountIsInactive' => 'Cuenta inactiva',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
       'rutBeneficiario' => 'Rut Beneficiario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'opportunities' => 'Prilike',
-      'cases' => 'Predmeti',
-      'targetLists' => 'Liste meta',
-      'campaignLogRecords' => 'Dnevnik kampanje',
-      'campaign' => 'Kampanja',
-      'account' => 'Tvrtka (osnovno)',
-      'accounts' => 'Tvrtke',
-      'casesPrimary' => 'Prijave problema (osnovni)',
-      'tasksPrimary' => 'Zadaci (prošireno)',
-      'portalUser' => 'Korisnik portala',
-      'originalLead' => 'Originalni izvor',
-      'documents' => 'Dokumenti',
+      'opportunities' => 'Oportunidades',
+      'cases' => 'Tickets',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registro de Campaña',
+      'campaign' => 'Campaña',
+      'account' => 'Cuentas (principal)',
+      'accounts' => 'Cuentas',
+      'casesPrimary' => 'Tickets (principal)',
+      'tasksPrimary' => 'Tasks (expanded)',
+      'portalUser' => 'Usuario del portal',
+      'originalLead' => 'Posible cliente de origen',
+      'documents' => 'Documentos',
       'formularios' => 'Formularios',
       'formularios1' => 'Formularios1',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Contact' => 'Napravi kontakt',
+      'Create Contact' => 'Crear contacto',
     ),
-    'options' => 
+    'options' =>
     array (
-      'opportunityRole' => 
+      'opportunityRole' =>
       array (
-        '' => 'Nema',
-        'Decision Maker' => 'Donositelj odluka',
-        'Evaluator' => 'Evaluator',
-        'Influencer' => 'Utjecajna osoba',
+        '' => '--Ninguno--',
+        'Decision Maker' => 'Tomador de decisiones',
+        'Evaluator' => 'Evaluador',
+        'Influencer' => 'Factor de influencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'portalUsers' => 'Korisnici portala',
-      'notPortalUsers' => 'Nisu korisnici portala',
-      'accountActive' => 'Aktivan',
+      'portalUsers' => 'Usuarios del portal',
+      'notPortalUsers' => 'No son usuarios del portal',
+      'accountActive' => 'Activo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'rutBeneficiario' => 'Ingrese Rut: 17281236-6',
     ),
   ),
-  'Document' => 
+  'Document' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create Document' => 'Napravi dokument',
-      'Details' => 'Detaljnije',
+      'Create Document' => 'Crear documento',
+      'Details' => 'Detalles',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'status' => 'Status',
-      'file' => 'Datoteka',
-      'type' => 'Vrsta',
-      'publishDate' => 'Datum objave',
-      'expirationDate' => 'Rok upotrebe',
-      'description' => 'Opis',
-      'accounts' => 'Tvrtke',
-      'folder' => 'Mapa',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'file' => 'Archivo',
+      'type' => 'Tipo',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'accounts' => 'Cuentas',
+      'folder' => 'Carpeta',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
-      'accounts' => 'Tvrtke',
-      'opportunities' => 'Prilike',
-      'folder' => 'Mape',
-      'leads' => 'Izvori',
-      'contacts' => 'Kontakti',
+      'accounts' => 'Cuentas',
+      'opportunities' => 'Oportunidades',
+      'folder' => 'Carpeta',
+      'leads' => 'Posibles clientes',
+      'contacts' => 'Contactos',
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Active' => 'Aktivan',
-        'Draft' => 'Nacrt',
-        'Expired' => 'Istekao',
-        'Canceled' => 'Otkazan',
+        'Active' => 'Activo',
+        'Draft' => 'Borrador',
+        'Expired' => 'Expirado',
+        'Canceled' => 'Cancelado',
       ),
-      'type' => 
+      'type' =>
       array (
-        '' => 'Nema',
-        'Contract' => 'Ugovor',
+        '' => 'Ninguno',
+        'Contract' => 'Contrato',
         'NDA' => 'NDA',
         'EULA' => 'EULA',
-        'License Agreement' => 'Ugovor o licenci',
+        'License Agreement' => 'Contrato de licencia',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktivan',
-      'draft' => 'Nacrt',
+      'active' => 'Activo',
+      'draft' => 'Borrador',
     ),
   ),
-  'DocumentFolder' => 
+  'DocumentFolder' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create DocumentFolder' => 'Kreiranje mape za dokumente',
-      'Manage Categories' => 'Upravljanje mapama',
-      'Documents' => 'Dokumenti',
+      'Create DocumentFolder' => 'Crear carpeta de documentos',
+      'Manage Categories' => 'Administrar carpetas',
+      'Documents' => 'Documentos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'documents' => 'Dokumenti',
+      'documents' => 'Documentos',
     ),
   ),
-  'EmailQueueItem' => 
+  'EmailQueueItem' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'status' => 'Status',
-      'target' => 'Meta',
-      'sentAt' => 'Datum slanja',
-      'attemptCount' => 'Pokušaji',
-      'emailAddress' => 'Email adresa',
-      'massEmail' => 'Masovna e-pošta',
-      'isTest' => 'Je test',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'target' => 'Objetivo',
+      'sentAt' => 'Fecha de envío',
+      'attemptCount' => 'Intentos',
+      'emailAddress' => 'Correo electrónico',
+      'massEmail' => 'Correo masivo',
+      'isTest' => 'Es una prueba',
     ),
-    'links' => 
+    'links' =>
     array (
-      'target' => 'Meta',
-      'massEmail' => 'Masovna e-pošta',
+      'target' => 'Objetivo',
+      'massEmail' => 'Correo masivo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Pending' => 'Čeka',
-        'Sent' => 'Poslano',
-        'Failed' => 'Neuspješno',
-        'Sending' => 'Slanje',
+        'Pending' => 'Pendiente',
+        'Sent' => 'Enviado',
+        'Failed' => 'Falló',
+        'Sending' => 'Enviando',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'pending' => 'Čeka',
-      'sent' => 'Poslano',
-      'failed' => 'Neuspješno',
+      'pending' => 'Pendiente',
+      'sent' => 'Enviado',
+      'failed' => 'Falló',
     ),
   ),
-  'KnowledgeBaseArticle' => 
+  'KnowledgeBaseArticle' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseArticle' => 'Kreiraj članak',
-      'Any' => 'Bilo koji',
-      'Send in Email' => 'Pošalji u e-pošti',
-      'Move Up' => 'Pomakni gore',
-      'Move Down' => 'Pomakni dole',
-      'Move to Top' => 'Pomakni na vrh',
-      'Move to Bottom' => 'Pomakni na dno',
+      'Create KnowledgeBaseArticle' => 'Crear artículo',
+      'Any' => 'Cualquiera',
+      'Send in Email' => 'Enviar por correo',
+      'Move Up' => 'Mover arriba',
+      'Move Down' => 'Mover abajo',
+      'Move to Top' => 'Mover al inicio',
+      'Move to Bottom' => 'Mover al final',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'status' => 'Status',
-      'type' => 'Vrsta',
-      'attachments' => 'Prilozi',
-      'publishDate' => 'Datum objave',
-      'expirationDate' => 'Rok isteka',
-      'description' => 'Opis',
-      'body' => 'Sadržaj',
-      'categories' => 'Kategorije',
-      'language' => 'Jezik',
-      'portals' => 'Portali',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'type' => 'Tipo',
+      'attachments' => 'Adjuntos',
+      'publishDate' => 'Fecha de publicación',
+      'expirationDate' => 'Fecha de caducidad',
+      'description' => 'Descripción',
+      'body' => 'Cuerpo',
+      'categories' => 'Categorías',
+      'language' => 'Idioma',
+      'portals' => 'Portales',
     ),
-    'links' => 
+    'links' =>
     array (
-      'cases' => 'Prijave problema',
-      'opportunities' => 'Prilike',
-      'categories' => 'Kategorije',
-      'portals' => 'Portali',
+      'cases' => 'Tickets',
+      'opportunities' => 'Oportunidades',
+      'categories' => 'Categorías',
+      'portals' => 'Portales',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'In Review' => 'U pregledu',
-        'Draft' => 'Nacrt',
-        'Archived' => 'Arhiviran',
-        'Published' => 'Objavljen',
+        'In Review' => 'En revisión',
+        'Draft' => 'Borrador',
+        'Archived' => 'Archivado',
+        'Published' => 'Publicado',
       ),
-      'type' => 
+      'type' =>
       array (
-        'Article' => 'Članak',
+        'Article' => 'Artículo',
       ),
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'portals' => 'Članak će biti dostupan samo u određenim portalima.',
+      'portals' => 'El artículo estará disponible solo en los portales especificados.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'published' => 'Objavljen',
+      'published' => 'Publicado',
     ),
   ),
-  'KnowledgeBaseCategory' => 
+  'KnowledgeBaseCategory' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Create KnowledgeBaseCategory' => 'Napravi Kategoriju',
-      'Manage Categories' => 'Izmjena Kategorije',
-      'Articles' => 'Članci',
+      'Create KnowledgeBaseCategory' => 'Crear categoría',
+      'Manage Categories' => 'Administrar categorías',
+      'Articles' => 'Artículos',
     ),
-    'links' => 
+    'links' =>
     array (
-      'articles' => 'Članci',
+      'articles' => 'Artículos',
     ),
   ),
-  'Lead' => 
+  'Lead' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
-      'Converted To' => 'Pretvoriti u',
-      'Create Lead' => 'Napravi izvor',
-      'Convert' => 'Pretvoriti',
-      'convert' => 'pretvori',
+      'Converted To' => 'Convertido a',
+      'Create Lead' => 'Crear posible cliente',
+      'Convert' => 'Convertir',
+      'convert' => 'convertir',
     ),
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'emailAddress' => 'E-mail',
-      'title' => 'Naslov',
-      'website' => 'Sajt',
-      'phoneNumber' => 'Telefon',
-      'accountName' => 'Ime stranke',
-      'doNotCall' => 'Ne zovi',
-      'address' => 'Adresa',
-      'status' => 'Status',
-      'source' => 'Potiče od',
-      'opportunityAmount' => 'Vrijednost prilike',
-      'opportunityAmountConverted' => 'Vrijednost prilike (konvertirano)',
-      'description' => 'Opis',
-      'createdAccount' => 'Tvrtka',
-      'createdContact' => 'Kontakt',
-      'createdOpportunity' => 'Prilika',
-      'campaign' => 'Kampanja',
-      'targetLists' => 'Liste meta',
-      'targetList' => 'Lista meta',
-      'industry' => 'Industrija',
-      'acceptanceStatus' => 'Status prihvaćanja',
-      'opportunityAmountCurrency' => 'Iznos prilike u valuti',
-      'acceptanceStatusMeetings' => 'Status prihvaćanja (Sastanak)',
-      'acceptanceStatusCalls' => 'Status prihvaćanja (pozivi)',
+      'name' => 'Nombre',
+      'emailAddress' => 'Correo electrónico',
+      'title' => 'Título',
+      'website' => 'Sitio web',
+      'phoneNumber' => 'Teléfono',
+      'accountName' => 'Nombre de la cuenta',
+      'doNotCall' => 'No llamar',
+      'address' => 'Dirección',
+      'status' => 'Estado',
+      'source' => 'Toma de contacto',
+      'opportunityAmount' => 'Costo de oportunidad',
+      'opportunityAmountConverted' => 'Costo de oportunidad (convertido)',
+      'description' => 'Descripción',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'campaign' => 'Campaña',
+      'targetLists' => 'Listas de objetivos',
+      'targetList' => 'Lista objetivo',
+      'industry' => 'Industria',
+      'acceptanceStatus' => 'Estado de aceptación',
+      'opportunityAmountCurrency' => 'Moneda del costo de oportunidad',
+      'acceptanceStatusMeetings' => 'Estado de aceptación (Reuniones)',
+      'acceptanceStatusCalls' => 'Estado de aceptación (Llamadas)',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Liste meta',
-      'campaignLogRecords' => 'Dnevnik kampanje',
-      'campaign' => 'Kampanja',
-      'createdAccount' => 'Tvrtka',
-      'createdContact' => 'Kontakt',
-      'createdOpportunity' => 'Prilika',
-      'cases' => 'Prijave problema',
-      'documents' => 'Dokumenti',
+      'targetLists' => 'Lista de objetivos',
+      'campaignLogRecords' => 'Registros de la campaña',
+      'campaign' => 'Campaña',
+      'createdAccount' => 'Cuenta',
+      'createdContact' => 'Contacto',
+      'createdOpportunity' => 'Oportunidad',
+      'cases' => 'Tickets',
+      'documents' => 'Documentos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'New' => 'Novo',
-        'Assigned' => 'Dodijeljen',
-        'In Process' => 'U procesu',
-        'Converted' => 'Konvertiran',
-        'Recycled' => 'Recikliran',
-        'Dead' => 'Mrtav',
+        'New' => 'Nuevo',
+        'Assigned' => 'Asignado',
+        'In Process' => 'En proceso',
+        'Converted' => 'Convertidos',
+        'Recycled' => 'Reciclado',
+        'Dead' => 'Muerto',
       ),
-      'source' => 
+      'source' =>
       array (
-        '' => 'Nema',
-        'Call' => 'Poziv',
-        'Email' => 'E-mail',
-        'Existing Customer' => 'Postojeći Klijent',
-        'Partner' => 'Partner',
-        'Public Relations' => 'Odnosi sa javnošću',
-        'Web Site' => 'Sajt',
-        'Campaign' => 'Kampanja',
-        'Other' => 'Drugo',
+        '' => 'Ninguno',
+        'Call' => 'Llamada',
+        'Email' => 'Correo electrónico',
+        'Existing Customer' => 'Cliente Existente',
+        'Partner' => 'Socio',
+        'Public Relations' => 'Relaciones Públicas',
+        'Web Site' => 'Sitio web',
+        'Campaign' => 'Campaña',
+        'Other' => 'Otro',
       ),
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'active' => 'Aktivan',
-      'actual' => 'Aktualan',
-      'converted' => 'Konvertiran',
+      'active' => 'Activo',
+      'actual' => 'Actuales',
+      'converted' => 'Convertidos',
     ),
   ),
-  'MassEmail' => 
+  'MassEmail' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'status' => 'Status',
-      'storeSentEmails' => 'Čuvaj poslane e-pošte',
-      'startAt' => 'Početni datum',
-      'fromAddress' => 'Dolazna adresa',
-      'fromName' => 'Od osobe',
-      'replyToAddress' => 'Adresa za odgovor',
-      'replyToName' => 'Odgovori osobi',
-      'campaign' => 'Kampanja',
-      'emailTemplate' => 'Šablona e-pošte',
-      'inboundEmail' => 'Račun E-pošte',
-      'targetLists' => 'Liste meta',
-      'excludingTargetLists' => 'Isključujući liste meta',
-      'optOutEntirely' => 'Potpuno "ne želi"',
-      'smtpAccount' => 'SMTP Račun',
+      'name' => 'Nombre',
+      'status' => 'Estado',
+      'storeSentEmails' => 'Almacenar correos enviados',
+      'startAt' => 'Fecha de inicio',
+      'fromAddress' => 'De (email)',
+      'fromName' => 'De (nombre):',
+      'replyToAddress' => 'Responder a (dirección)',
+      'replyToName' => 'Responder a (nombre)',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'optOutEntirely' => 'Dar de baja completamente',
+      'smtpAccount' => 'Cuenta SMTP',
     ),
-    'links' => 
+    'links' =>
     array (
-      'targetLists' => 'Liste meta',
-      'excludingTargetLists' => 'Isključujući liste meta',
-      'queueItems' => 'Na redu čekanja',
-      'campaign' => 'Kampanja',
-      'emailTemplate' => 'Šablona e-pošte',
-      'inboundEmail' => 'Račun e-pošte',
+      'targetLists' => 'Lista de objetivos',
+      'excludingTargetLists' => 'Lista de objetivos excluídos',
+      'queueItems' => 'Elementos en cola',
+      'campaign' => 'Campaña',
+      'emailTemplate' => 'Plantilla de correo',
+      'inboundEmail' => 'Cuenta de correo',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Draft' => 'Nacrt',
-        'Pending' => 'Čeka',
-        'In Process' => 'U procesu',
-        'Complete' => 'Gotovo',
-        'Canceled' => 'Otkazano',
-        'Failed' => 'Neuspješno',
+        'Draft' => 'Borrador',
+        'Pending' => 'Pendiente',
+        'In Process' => 'En proceso',
+        'Complete' => 'Completada',
+        'Canceled' => 'Cancelado',
+        'Failed' => 'Falló',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MassEmail' => 'Napravi masovnu e-poštu',
-      'Send Test' => 'Pošalji Test',
-      'System SMTP' => 'Sistemski SMTP',
-      'system' => 'sustav',
-      'group' => 'grupa',
+      'Create MassEmail' => 'Crear correo masivo',
+      'Send Test' => 'Enviar prueba',
+      'System SMTP' => 'Sistema SMTP',
+      'system' => 'sistema',
+      'group' => 'grupo',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'selectAtLeastOneTarget' => 'Izabrati najmanje jedan cilj.',
-      'testSent' => 'Test-poruke koje će biti poslane',
+      'selectAtLeastOneTarget' => 'Seleccione al menos un objetivo.',
+      'testSent' => 'Se supone que el/los email/s de preuebas fueron enviados',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'optOutEntirely' => 'E-mail adrese primatelja koji su se odjavili će biti označene kao odjavljeni i neće više primati masovne mejlove.',
-      'targetLists' => 'Mete koji trebaju primiti poruke.',
-      'excludingTargetLists' => 'Mete koje ne trebaju primiti poruke.',
-      'storeSentEmails' => 'E-poruke će biti spremljene u CRM-u.',
+      'optOutEntirely' => 'Las direcciones de correo de los destinatarios que se desuscriban serán marcadas como dadas de baja y no van a recibir ningún correo masivo.',
+      'targetLists' => 'Los objetivos que deben recibir los mensajes.',
+      'excludingTargetLists' => 'Los objetivos que no deben recibir mensajes.',
+      'storeSentEmails' => 'Los correos se almacenarán en el CRM.',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Aktualan',
-      'complete' => 'Završeno',
+      'actual' => 'Actuales',
+      'complete' => 'Completo',
     ),
   ),
-  'Meeting' => 
+  'Meeting' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Naziv',
-      'parent' => 'Nadređeni',
-      'status' => 'Status',
-      'dateStart' => 'Početni datum',
-      'dateEnd' => 'Završni datum',
-      'duration' => 'Trajanje',
-      'description' => 'Opis',
-      'users' => 'Korisnici',
-      'contacts' => 'Kontakti',
-      'leads' => 'Izvori',
-      'reminders' => 'Podsjetnici',
-      'account' => 'Tvrtka',
-      'acceptanceStatus' => 'Status prihvaćanja',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de finalización',
+      'duration' => 'Duración',
+      'description' => 'Descripción',
+      'users' => 'Usuarios',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'reminders' => 'Recordatorios',
+      'account' => 'Cuenta',
+      'acceptanceStatus' => 'Estado de aceptación',
       'formularios' => 'Formularios',
     ),
-    'links' => 
+    'links' =>
     array (
       'formularios' => 'Formularios',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Planned' => 'Planiran',
-        'Held' => 'Održano',
-        'Not Held' => 'Nije održano',
+        'Planned' => 'Planeadas',
+        'Held' => 'Celebradas',
+        'Not Held' => 'Sin celebrar',
       ),
-      'acceptanceStatus' => 
+      'acceptanceStatus' =>
       array (
-        'None' => 'Nema',
-        'Accepted' => 'Prihvaćeno',
-        'Declined' => 'Odbijeno',
-        'Tentative' => 'Tentativno',
+        'None' => 'Ninguno',
+        'Accepted' => 'Aceptado',
+        'Declined' => 'Rechazado',
+        'Tentative' => 'Tentativa',
       ),
     ),
-    'massActions' => 
+    'massActions' =>
     array (
-      'setHeld' => 'Postavi kao održano',
-      'setNotHeld' => 'Postavi kao nije održano',
+      'setHeld' => 'Marcar como celebrada',
+      'setNotHeld' => 'Marcar como No celebrada',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Meeting' => 'Napravi sastanak',
-      'Set Held' => 'Postavi održano',
-      'Set Not Held' => 'Postavi nije održano',
-      'Send Invitations' => 'Pošalji pozive',
-      'on time' => 'na vrijeme',
-      'before' => 'prije',
+      'Create Meeting' => 'Crear reunión',
+      'Set Held' => 'Marcar como celebrada',
+      'Set Not Held' => 'Marcar como No celebrada',
+      'Send Invitations' => 'Enviar Invitaciones',
+      'on time' => 'a tiempo',
+      'before' => 'antes',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'planned' => 'Planirano',
-      'held' => 'Održano',
-      'todays' => 'Današnja',
+      'planned' => 'Planeadas',
+      'held' => 'Celebradas',
+      'todays' => 'De hoy',
     ),
-    'messages' => 
+    'messages' =>
     array (
-      'nothingHasBeenSent' => 'Ništa nije poslano',
+      'nothingHasBeenSent' => 'No se ha enviado nada',
     ),
   ),
-  'Opportunity' => 
+  'Opportunity' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'account' => 'Tvrtka',
-      'stage' => 'Faza',
-      'amount' => 'Iznos',
-      'probability' => 'Vjerojatnost,%',
-      'leadSource' => 'Izvor potiče od',
-      'doNotCall' => 'Ne zovi',
-      'closeDate' => 'Datum zatvaranja',
-      'contacts' => 'Kontakti',
-      'description' => 'Opis',
-      'amountConverted' => 'Iznos (konvertirano)',
-      'amountWeightedConverted' => 'Iznos (ponderirano)',
-      'campaign' => 'Kampanja',
-      'originalLead' => 'Originalni izvor',
-      'amountCurrency' => 'Iznos u valuti',
-      'contactRole' => 'Uloga kontakta',
+      'name' => 'Nombre',
+      'account' => 'Cuenta',
+      'stage' => 'Etapa de ventas',
+      'amount' => 'Ingresos esperados',
+      'probability' => 'Probabilidad de ganar (%)',
+      'leadSource' => 'Toma de contacto del posible cliente',
+      'doNotCall' => 'No llamar',
+      'closeDate' => 'Fecha esperada de cierre',
+      'contacts' => 'Contactos',
+      'description' => 'Descripción',
+      'amountConverted' => 'Cantidad (convertido)',
+      'amountWeightedConverted' => 'Cantidad Ponderada',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
+      'amountCurrency' => 'Monto de la Moneda',
+      'contactRole' => 'Rol de contacto',
       'lastStage' => 'Last Stage',
     ),
-    'links' => 
+    'links' =>
     array (
-      'contacts' => 'Kontakti',
-      'documents' => 'Dokumenti',
-      'campaign' => 'Kampanja',
-      'originalLead' => 'Originalni izvor',
+      'contacts' => 'Contactos',
+      'documents' => 'Documentos',
+      'campaign' => 'Campaña',
+      'originalLead' => 'Posible cliente de origen',
     ),
-    'options' => 
+    'options' =>
     array (
-      'stage' => 
+      'stage' =>
       array (
-        'Prospecting' => 'Izviđanje',
-        'Qualification' => 'Kvalifikacija',
-        'Proposal' => 'Prijedlog',
-        'Negotiation' => 'Pregovori',
-        'Needs Analysis' => 'Analiza potrebna',
-        'Value Proposition' => 'Dobitak',
-        'Id. Decision Makers' => 'Id. Donosioci odluka',
-        'Perception Analysis' => 'Analiza percepcije',
-        'Proposal/Price Quote' => 'Prijedlog/Cijena ponuda',
-        'Negotiation/Review' => 'Pregovori/pregled',
-        'Closed Won' => 'Zatvoreno Dobiveno',
-        'Closed Lost' => 'Zatvoreno Izgubljeno',
+        'Prospecting' => 'Prospección',
+        'Qualification' => 'Calificación',
+        'Proposal' => 'Propuesta',
+        'Negotiation' => 'Negociación',
+        'Needs Analysis' => 'Análisis de necesidades',
+        'Value Proposition' => 'Propuesta de valor',
+        'Id. Decision Makers' => 'Identificar tomador de decisiones',
+        'Perception Analysis' => 'Análisis de percepcion',
+        'Proposal/Price Quote' => 'Propuesta/Presupuesto',
+        'Negotiation/Review' => 'Negociación/Revisión',
+        'Closed Won' => 'Cerrado ganado',
+        'Closed Lost' => 'Cerrado perdido',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Opportunity' => 'Napravi Priliku',
+      'Create Opportunity' => 'Crear oportunidad',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'open' => 'Otvorene',
-      'won' => 'Dobivene',
-      'lost' => 'Izgubljene',
+      'open' => 'Abiertos',
+      'won' => 'Ganados',
+      'lost' => 'Perdido',
     ),
   ),
-  'Project' => 
+  'Project' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create Project' => 'Create Project',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
       'account' => 'Account',
     ),
-    'links' => 
+    'links' =>
     array (
       'projectTasks' => 'Project Tasks',
     ),
   ),
-  'ProjectTask' => 
+  'ProjectTask' =>
   array (
-    'labels' => 
+    'labels' =>
     array (
       'Create ProjectTask' => 'Create Project Task',
     ),
-    'fields' => 
+    'fields' =>
     array (
       'name' => 'Name',
       'status' => 'Status',
@@ -4038,117 +4081,266 @@ Lozinka: {password}
       'actualDuration' => 'Actual Duration (hrs)',
     ),
   ),
-  'TargetList' => 
+  'TargetList' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'description' => 'Opis',
-      'entryCount' => 'Točka unosa',
+      'name' => 'Nombre',
+      'description' => 'Descripción',
+      'entryCount' => 'Contador de entrada',
       'optedOutCount' => 'Opted Out Count',
-      'campaigns' => 'Kampanje',
-      'endDate' => 'Krajnji datum',
-      'targetLists' => 'Liste meta',
-      'includingActionList' => 'Uključujući',
-      'excludingActionList' => 'Isključujući',
+      'campaigns' => 'Campañas',
+      'endDate' => 'Fecha de finalización',
+      'targetLists' => 'Lista de objetivos',
+      'includingActionList' => 'Incluyendo',
+      'excludingActionList' => 'Excluyendo',
       'targetStatus' => 'Target Status',
       'isOptedOut' => 'Is Opted Out',
     ),
-    'links' => 
+    'links' =>
     array (
-      'accounts' => 'Tvrtke',
-      'contacts' => 'Kontakti',
-      'leads' => 'Izvori',
-      'campaigns' => 'Kampanje',
-      'massEmails' => 'Masovne e-pošta',
+      'accounts' => 'Cuentas',
+      'contacts' => 'Contactos',
+      'leads' => 'Posibles clientes',
+      'campaigns' => 'Campañas',
+      'massEmails' => 'Correos masivos',
     ),
-    'options' => 
+    'options' =>
     array (
-      'type' => 
+      'type' =>
       array (
-        'Email' => 'E-mail',
+        'Email' => 'Correo electrónico',
         'Web' => 'Web',
-        'Television' => 'Televizija',
+        'Television' => 'Televisión',
         'Radio' => 'Radio',
-        'Newsletter' => 'Newsletter',
+        'Newsletter' => 'Boletín de noticias',
       ),
-      'targetStatus' => 
+      'targetStatus' =>
       array (
         'Opted Out' => 'Opted Out',
         'Listed' => 'Listed',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create TargetList' => 'Napravi listu meta',
-      'Opted Out' => 'Ne želi',
-      'Cancel Opt-Out' => 'Odbaci "ne želi"',
-      'Opt-Out' => 'Mogućnost odbijanja',
+      'Create TargetList' => 'Crear una lista de objetivos',
+      'Opted Out' => 'Se dieron de baja',
+      'Cancel Opt-Out' => 'Cancelar darse de baja',
+      'Opt-Out' => 'Darse de baja',
     ),
   ),
-  'Task' => 
+  'Task' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'name' => 'Ime',
-      'parent' => 'Nadležni',
-      'status' => 'Status',
-      'dateStart' => 'Početni datum',
-      'dateEnd' => 'Rok',
-      'dateStartDate' => 'Datum početka (cijeli dan)',
-      'dateEndDate' => 'Datum završetka (cijeli dan)',
-      'priority' => 'Prioritet',
-      'description' => 'Opis',
-      'isOverdue' => 'Kasni',
-      'account' => 'Tvrtka',
-      'dateCompleted' => 'Datum završetka',
-      'attachments' => 'Prilozi',
-      'reminders' => 'Podsjetnici',
-      'contact' => 'Kontakt',
+      'name' => 'Nombre',
+      'parent' => 'Padre',
+      'status' => 'Estado',
+      'dateStart' => 'Fecha de comienzo',
+      'dateEnd' => 'Fecha de vencimiento',
+      'dateStartDate' => 'Fecha de Inicio (todo el día)',
+      'dateEndDate' => 'Fecha de finalización (todo el día)',
+      'priority' => 'Prioridad',
+      'description' => 'Descripción',
+      'isOverdue' => 'Atrasado',
+      'account' => 'Cuenta',
+      'dateCompleted' => 'Fecha de completado',
+      'attachments' => 'Adjuntos',
+      'reminders' => 'Recordatorios',
+      'contact' => 'Contact',
     ),
-    'links' => 
+    'links' =>
     array (
-      'attachments' => 'Prilozi',
-      'account' => 'Tvrtka',
-      'contact' => 'Kontakt',
+      'attachments' => 'Adjuntos',
+      'account' => 'Account',
+      'contact' => 'Contact',
     ),
-    'options' => 
+    'options' =>
     array (
-      'status' => 
+      'status' =>
       array (
-        'Not Started' => 'Nije počelo',
-        'Started' => 'Započelo',
-        'Completed' => 'Završeno',
-        'Canceled' => 'Otkazano',
-        'Deferred' => 'Odloženo',
+        'Not Started' => 'Sin empezar',
+        'Started' => 'Comenzado',
+        'Completed' => 'Completado',
+        'Canceled' => 'Cancelado',
+        'Deferred' => 'Diferido',
       ),
-      'priority' => 
+      'priority' =>
       array (
-        'Low' => 'Nizak',
-        'Normal' => 'Normalan',
-        'High' => 'Visok',
-        'Urgent' => 'Hitan',
+        'Low' => 'Baja',
+        'Normal' => 'Normal',
+        'High' => 'Alta',
+        'Urgent' => 'Urgente',
       ),
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Task' => 'Kreiraj Zadatak',
-      'Complete' => 'Završeno',
+      'Create Task' => 'Crear tarea',
+      'Complete' => 'Completada',
     ),
-    'presetFilters' => 
+    'presetFilters' =>
     array (
-      'actual' => 'Aktualno',
-      'completed' => 'Završeno',
-      'deferred' => 'Odloženi',
-      'todays' => 'Današnji',
-      'overdue' => 'Kašnjenje',
+      'actual' => 'Actuales',
+      'completed' => 'Completado',
+      'deferred' => 'Diferido',
+      'todays' => 'De hoy',
+      'overdue' => 'Atrazadas',
     ),
   ),
-  'Formularios' => 
+  'Beneficios' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
-      'address' => 'Adresa',
+      'titulo' => 'Titulo',
+      'descripcion' => 'Descripcion',
+      'direccion' => 'Direccion',
+      'validohasta' => 'Valido_hasta',
+      'titulolegal' => 'Titulo_legal',
+      'descripcionlegal' => 'Descripcion_legal',
+      'pasoapaso' => 'Paso_a_paso',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'doctosBeneficios' => 'DoctosBeneficios',
+      'categoria' => 'Categoria',
+      'empresa' => 'Empresa',
+      'proveedor' => 'Proveedor',
+      'rol' => 'Rol',
+      'comuna' => 'Comuna',
+    ),
+    'labels' =>
+    array (
+      'Create Beneficios' => 'Crear Beneficios',
+    ),
+  ),
+  'Categoria' =>
+  array (
+    'fields' =>
+    array (
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'nombreCategoria' => 'Nombre Categoria',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias7' => 'Subcategorias',
+      'subcategoria' => 'Subcategoria',
+      'subcategoria1' => 'Subcategoria',
+      'subcategoria2' => 'Subcategoria2',
+      'subcategorias4' => 'Subcategorias4',
+      'subcategoriass' => 'Subcategoriass',
+      'relacionsubcategorias' => 'RelacionSubcategorias',
+      'solicitudessrelacion' => 'Solicitudessrelacion',
+      'beneficios' => 'Beneficios',
+      'subcategorias' => 'Subcategorias',
+    ),
+    'labels' =>
+    array (
+      'Create Categoria' => 'Crear Categoria',
+    ),
+  ),
+  'Ciudad' =>
+  array (
+    'fields' =>
+    array (
+      'comunas' => 'Comunas',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'comunas' => 'Comunas',
+    ),
+    'labels' =>
+    array (
+      'Create Ciudad' => 'Crear Ciudad',
+    ),
+  ),
+  'Comuna' =>
+  array (
+    'fields' =>
+    array (
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'ciudad' => 'Ciudad',
+      'trabajador' => 'Trabajador',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Comuna' => 'Crear Comuna',
+    ),
+  ),
+  'DoctosBeneficio' =>
+  array (
+    'fields' =>
+    array (
+      'descripcion' => 'Descripcion',
+      'documentosbeneficio' => 'Documentos_beneficio',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create DoctosBeneficio' => 'Crear Doctos_beneficio',
+    ),
+  ),
+  'Empresa' =>
+  array (
+    'fields' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Empresa' => 'Vytvořit Empresa',
+    ),
+  ),
+  'Formularios' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
       'meetings1' => 'Meetings1',
       'rut' => 'Rut Beneficiario',
       'beneficioSolicitado' => 'Beneficio Solicitado',
@@ -4165,11 +4357,11 @@ Lozinka: {password}
       'documents' => 'Documents',
       'numeroFormulario' => 'Numero Formulario',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Sastanci',
-      'calls' => 'Pozivi',
-      'tasks' => 'Zadaci',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
       'emails' => 'Emails',
       'meetings1' => 'Meetings1',
       'contacts' => 'Beneficiario',
@@ -4178,13 +4370,13 @@ Lozinka: {password}
       'contact' => 'Contact',
       'documents' => 'Documents',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Formularios' => 'Kreiraj Formulario',
+      'Create Formularios' => 'Crear Formulario',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
-      'rut' => 'Ingrese Rut  (Eje: 12.345.678-9)',
+      'rut' => 'Ingrese Rut  (Ej: 12.345.678-9)',
       'beneficioSolicitado' => 'Ingrese Beneficio',
       'fechaSolicitud' => 'Ingrese Fecha Solicitud',
       'fechaHasta' => 'Ingrese Fecha Hasta',
@@ -4193,15 +4385,15 @@ Lozinka: {password}
       'listaGym' => 'Ingrese GYM',
       'numeroFormulario' => 'Num',
     ),
-    'options' => 
+    'options' =>
     array (
-      'beneficioSolicitado' => 
+      'beneficioSolicitado' =>
       array (
         'Ninguno' => 'Ninguno',
         'Educación' => 'Educación',
         'Gimnasio' => 'Gimnasio',
       ),
-      'listaGym' => 
+      'listaGym' =>
       array (
         '- Seleccionar Gym -' => '- Seleccionar Gym -',
         'Sportlife' => 'Sportlife',
@@ -4210,7 +4402,7 @@ Lozinka: {password}
         'Centro Xtremo' => 'Centro Xtremo',
         'Brisas del Maipo' => 'Brisas del Maipo',
       ),
-      'estadoFormulario' => 
+      'estadoFormulario' =>
       array (
         '- Estado Formulario -' => '- Estado Formulario -',
         'Creada' => 'Creada',
@@ -4224,51 +4416,192 @@ Lozinka: {password}
       ),
     ),
   ),
-  'MotivoReclamo' => 
+  'MotivoReclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'motivoReclamoId' => 'MotivoReclamoId',
       'motivoReclamoDescripcion' => 'Descripción',
       'reclamosMotivoReclamo' => 'Reclamos',
-    ),
-    'links' => 
+  'Proveedor' =>
+  array (
+    'fields' =>
     array (
-      'meetings' => 'Sastanci',
-      'calls' => 'Pozivi',
-      'tasks' => 'Zadaci',
+      'rut' => 'Rut',
+      'direccion' => 'Direccion',
+      'beneficios' => 'Beneficios',
+    ),
+    'links' =>
+    array (
+      'beneficios' => 'Beneficios',
+    ),
+    'labels' =>
+    array (
+      'Create Proveedor' => 'Vytvořit Proveedor',
+    ),
+  ),
+  'Rol' =>
+  array (
+    'fields' =>
+    array (
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'beneficioss' => 'Beneficios',
+      'trabajador' => 'Trabajador',
+    ),
+    'labels' =>
+    array (
+      'Create Rol' => 'Crear Rol',
+    ),
+  ),
+  'Solicitudes' =>
+  array (
+    'fields' =>
+    array (
+      'address' => 'Dirección',
+      'rut' => 'Rut',
+      'estadoSolicitud' => 'Estado solicitud',
+      'beneficio' => 'Beneficio',
+      'carga' => 'Carga',
+      'ciudad' => 'Ciudad',
+      'categoria' => 'Categoria',
+      'subcategoria' => 'Subcategoria',
+      'documento' => 'Documento',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'numeroSolicitud' => 'N° Solicitud',
+      'fechahasta' => 'Duración del beneficio',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'links' =>
+    array (
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'subcategorias' => 'Subcategorias',
+      'subcategoria3' => 'Subcategoria',
+      'relacionsubcategoria' => 'relacionSubcategoria',
+      'categoriarela' => 'Categoriarela',
+    ),
+    'labels' =>
+    array (
+      'Create Solicitudes' => 'Crear Solicitudes',
+    ),
+    'options' =>
+    array (
+      'estadoSolicitud' =>
+      array (
+        'Aprobado' => 'Aprobado',
+        'En proceso' => 'En proceso',
+        'Rechazado' => 'Rechazado',
+        'Cancelado' => 'Cancelado',
+      ),
+      'carga' =>
+      array (
+      ),
+      'ciudad' =>
+      array (
+      ),
+      'categoria' =>
+      array (
+      ),
+      'subcategoria' =>
+      array (
+      ),
+    ),
+  ),
+  'Subcategoria' =>
+  array (
+    'fields' =>
+    array (
+      'idcategoria' => 'Idcategoria',
+      'categoria1' => 'Categoria',
+      'nombreSubcategoria' => 'NombreSubcategoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
       'reclamosMotivoReclamo' => 'Reclamos',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create MotivoReclamo' => 'Kreiraj MotivoReclamo',
+      'Create MotivoReclamo' => 'Crear MotivoReclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'motivoReclamoDescripcion' => 'Describa los motivos por lo cuales se pueden generar reclamos',
     ),
   ),
-  'Reclamo' => 
+  'Reclamo' =>
   array (
-    'fields' => 
+    'fields' =>
     array (
       'reclamoId' => 'ReclamoId',
       'reclamoTitulo' => 'Título',
       'reclamoObservacion' => 'Observación',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'links' => 
+    'links' =>
     array (
-      'meetings' => 'Sastanci',
-      'calls' => 'Pozivi',
-      'tasks' => 'Zadaci',
+      'meetings' => 'Reuniones',
+      'calls' => 'Llamadas',
+      'tasks' => 'Tareas',
+      'categoria1' => 'Categoria',
+      'categoria2' => 'Categoria2',
+      'categoria4' => 'Categoria',
+      'categoriass' => 'Categoriass',
+      'relacioncategoria' => 'RelacionCategoria',
+      'relacionsolicitudes' => 'relacionSolicitudes',
+      'categoria' => 'Categoriarelacion',
+    ),
+    'labels' =>
+    array (
+      'Create Subcategoria' => 'Crear Subcategoria',
+    ),
+  ),
+  'Trabajador' =>
+  array (
+    'fields' =>
+    array (
+      'nombre' => 'Nombres',
+      'rut' => 'Rut',
+      'apellidopaterno' => 'Apellido_paterno',
+      'apellidomaterno' => 'Apellido_materno',
+      'nombrecompleto' => 'Nombre_completo',
+      'direccion' => 'Direccion',
+      'email' => 'Email',
+      'telefono' => 'Telefono',
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'links' =>
+    array (
+      'comunarelacion' => 'Comunarelacion',
+      'empresas' => 'Empresas',
+      'rol' => 'Rolrelacion',
+      'empresa' => 'Empresa',
+    ),
+    'labels' =>
+    array (
+      'Create Trabajador' => 'Vytvořit Trabajador',
       'motivoReclamo' => 'MotivoReclamo',
     ),
-    'labels' => 
+    'labels' =>
     array (
-      'Create Reclamo' => 'Kreiraj Reclamo',
+      'Create Reclamo' => 'Crear Reclamo',
     ),
-    'tooltips' => 
+    'tooltips' =>
     array (
       'reclamoTitulo' => 'Breve descripción del reclamo',
       'reclamoObservacion' => 'Describa su situación',
