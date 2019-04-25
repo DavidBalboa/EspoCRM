@@ -3,14 +3,18 @@
         "rows": [
             [
                 {
-                    "name": "nombrecompleto",
-                    "fullWidth": true
+                    "name": "rut"
+                },
+                {
+                    "name": "nombrecompleto"
                 }
             ],
             [
                 {
-                    "name": "rut",
-                    "fullWidth": true
+                    "name": "apellidopaterno"
+                },
+                {
+                    "name": "apellidomaterno"
                 }
             ],
             [
@@ -36,17 +40,29 @@
                 {
                     "name": "rol"
                 }
-            ],
-            [
-                false,
-                false
-            ],
-            [
-                false,
-                false
             ]
         ],
         "style": "default",
         "label": "General"
+    },
+    {
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "nombre"
+                }
+            ],
+            [
+                {
+                    "name": "trabajadorId"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "customLabel": "Nuevo panel"
     }
 ]

@@ -1,0 +1,9 @@
+[
+    {
+        "name": "beneficiarioId"
+    },
+    {
+        "name": "name",
+        "link": true
+    }
+]

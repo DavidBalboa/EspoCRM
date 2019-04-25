@@ -3,7 +3,10 @@
         "meetings": "Presentaciones",
         "calls": "Llamadas",
         "tasks": "Tareas",
-        "motivoReclamo": "MotivoReclamo"
+        "motivoReclamo": "MotivoReclamo",
+        "trabajador": "Trabajador",
+        "beneficiario": "Beneficiario",
+        "empresa": "Empresa"
     },
     "labels": {
         "Create Reclamo": "Crear Reclamo"
@@ -12,7 +15,10 @@
         "reclamoId": "ReclamoId",
         "reclamoTitulo": "Título",
         "reclamoObservacion": "Observación",
-        "motivoReclamo": "MotivoReclamo"
+        "motivoReclamo": "MotivoReclamo",
+        "trabajador": "Trabajador",
+        "beneficiario": "Beneficiario",
+        "empresa": "Empresa"
     },
     "tooltips": {
         "reclamoTitulo": "Breve descripción del reclamo",

@@ -6,10 +6,13 @@
     "scopeNamesPlural": {
         "Team": "Empresas",
         "Contact": "Beneficiarios",
-        "Account": "Beneficios"
+        "Account": "Beneficios",
+        "MotivoReclamo": "Motivos de reclamos"
     },
     "scopeNames": {
-        "Team": "Empresa"
+        "Team": "Empresa",
+        "Empresa": "Empresa.",
+        "MotivoReclamo": "Motivo de reclamo"
     },
     "fields": {
         "teams": "Empresas"

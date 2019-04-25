@@ -17,7 +17,8 @@
                 "Comuna",
                 "Rol",
                 "Reclamo",
-                "MotivoReclamo"
+                "MotivoReclamo",
+                "Beneficiario"
             ]
         }
     }

@@ -1,5 +1,13 @@
 {
-  "labels": {
-    "Create Empresa": "Crear Empresa"
-  }
+    "labels": {
+        "Create Empresa": "Crear Empresa."
+    },
+    "fields": {
+        "beneficiarios": "Beneficiarios",
+        "reclamosEmpresa": "Reclamos"
+    },
+    "links": {
+        "beneficiarios": "Beneficiarios",
+        "reclamosEmpresa": "Reclamos"
+    }
 }

@@ -9,6 +9,18 @@
             ],
             [
                 {
+                    "name": "beneficiario"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "empresa",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
                     "name": "motivoReclamo",
                     "fullWidth": true
                 }

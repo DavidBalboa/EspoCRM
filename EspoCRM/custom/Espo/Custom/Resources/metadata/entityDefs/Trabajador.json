@@ -46,12 +46,13 @@
         },
         "rut": {
             "type": "varchar",
-            "required": false,
+            "required": true,
             "trim": true,
             "audited": false,
             "readOnly": false,
             "tooltip": false,
-            "isCustom": true
+            "isCustom": true,
+            "maxLength": 12
         },
         "apellidopaterno": {
             "type": "varchar",
@@ -98,16 +99,6 @@
             "tooltip": false,
             "isCustom": true
         },
-        "telefono": {
-            "type": "number",
-            "len": 36,
-            "notNull": false,
-            "unique": false,
-            "nextNumber": 1,
-            "padLength": 9,
-            "tooltip": false,
-            "isCustom": true
-        },
         "comunarelacion": {
             "type": "link"
         },
@@ -125,6 +116,27 @@
             "layoutMassUpdateDisabled": true,
             "importDisabled": true,
             "noLoad": true,
+            "isCustom": true
+        },
+        "telefono": {
+            "type": "varchar",
+            "required": false,
+            "trim": true,
+            "maxLength": 15,
+            "tooltipText": "Ej. +56 2 29458565",
+            "audited": false,
+            "readOnly": false,
+            "tooltip": true,
+            "isCustom": true
+        },
+        "trabajadorId": {
+            "type": "int",
+            "required": true,
+            "max": 8,
+            "disableFormatting": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
             "isCustom": true
         }
     },
@@ -173,7 +185,16 @@
     },
     "collection": {
         "sortBy": "createdAt",
-        "asc": false
+        "asc": false,
+        "textFilterFields": [
+            "rut",
+            "nombre",
+            "apellidopaterno",
+            "apellidomaterno",
+            "name",
+            "nombrecompleto"
+        ],
+        "fullTextSearch": true
     },
     "indexes": {
         "name": {

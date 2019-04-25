@@ -1,0 +1,20 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "beneficiarioId"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

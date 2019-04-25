@@ -54,6 +54,7 @@ return array (
   'Target' => '\\Espo\\Modules\\Crm\\Services\\Target',
   'TargetList' => '\\Espo\\Modules\\Crm\\Services\\TargetList',
   'Task' => '\\Espo\\Modules\\Crm\\Services\\Task',
+  'Beneficiario' => '\\Espo\\Custom\\Services\\Beneficiario',
   'Beneficios' => '\\Espo\\Custom\\Services\\Beneficios',
   'Categoria' => '\\Espo\\Custom\\Services\\Categoria',
   'Ciudad' => '\\Espo\\Custom\\Services\\Ciudad',

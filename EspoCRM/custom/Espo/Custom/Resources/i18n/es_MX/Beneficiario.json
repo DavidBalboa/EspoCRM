@@ -1,0 +1,21 @@
+{
+    "links": {
+        "meetings": "Presentaciones",
+        "calls": "Llamadas",
+        "tasks": "Tareas",
+        "reclamosBeneficiarios": "Reclamos",
+        "empresas": "Empresas"
+    },
+    "labels": {
+        "Create Beneficiario": "Crear Beneficiario"
+    },
+    "fields": {
+        "beneficiarioId": "RUT",
+        "name": "Nombres",
+        "reclamosBeneficiarios": "Reclamos",
+        "empresas": "Empresas",
+        "beneficiarioApellidoPaterno": "Apellido paterno",
+        "beneficiarioApellidoMaterno": "Apellido materno",
+        "beneficiarioDv": "DV"
+    }
+}

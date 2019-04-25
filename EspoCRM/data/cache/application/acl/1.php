@@ -349,6 +349,13 @@ return (object) [
             'delete' => 'all',
             'create' => 'yes'
         ],
+        'Beneficiario' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
         'Beneficios' => (object) [
             'read' => 'all',
             'stream' => 'all',

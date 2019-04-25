@@ -6,7 +6,7 @@
         "reclamosMotivoReclamo": "Reclamos"
     },
     "labels": {
-        "Create MotivoReclamo": "Crear MotivoReclamo"
+        "Create MotivoReclamo": "Crear Motivo de reclamo"
     },
     "fields": {
         "motivoReclamoId": "MotivoReclamoId",

@@ -50,6 +50,22 @@
             "importDisabled": true,
             "noLoad": true,
             "isCustom": true
+        },
+        "beneficiarios": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
+            "isCustom": true
+        },
+        "reclamosEmpresa": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -85,11 +101,30 @@
             "entity": "Trabajador",
             "audited": false,
             "isCustom": true
+        },
+        "beneficiarios": {
+            "type": "hasMany",
+            "relationName": "beneficiarioEmpresa",
+            "foreign": "empresas",
+            "entity": "Beneficiario",
+            "audited": false,
+            "isCustom": true
+        },
+        "reclamosEmpresa": {
+            "type": "hasMany",
+            "foreign": "empresa",
+            "entity": "Reclamo",
+            "audited": false,
+            "isCustom": true
         }
     },
     "collection": {
         "sortBy": "createdAt",
-        "asc": false
+        "asc": false,
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false
     },
     "indexes": {
         "name": {

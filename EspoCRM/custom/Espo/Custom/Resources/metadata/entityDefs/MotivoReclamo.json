@@ -112,7 +112,11 @@
     },
     "collection": {
         "sortBy": "createdAt",
-        "asc": false
+        "asc": false,
+        "textFilterFields": [
+            "name"
+        ],
+        "fullTextSearch": false
     },
     "indexes": {
         "name": {

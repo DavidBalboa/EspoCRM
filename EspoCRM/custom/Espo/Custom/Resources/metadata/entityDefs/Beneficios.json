@@ -3,7 +3,10 @@
         "name": {
             "type": "varchar",
             "required": true,
-            "trim": true
+            "trim": true,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false
         },
         "description": {
             "type": "text"
@@ -118,6 +121,17 @@
             "layoutMassUpdateDisabled": true,
             "noLoad": true,
             "importDisabled": true,
+            "isCustom": true
+        },
+        "beneficiarioId": {
+            "type": "int",
+            "required": true,
+            "min": 5000000,
+            "max": 99999999,
+            "disableFormatting": true,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
             "isCustom": true
         }
     },

@@ -26,5 +26,6 @@
         ]
     },
     "color": "#ff0000",
-    "iconClass": "fas fa-caret-square-up"
+    "iconClass": "fas fa-caret-square-up",
+    "kanbanViewMode": false
 }

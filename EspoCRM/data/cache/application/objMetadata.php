@@ -3790,6 +3790,36 @@ return (object) [
             'iconClass' => 'fas fa-tasks',
             'kanbanViewMode' => true
         ],
+        'Beneficiario' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ],
+            'color' => '#989191',
+            'iconClass' => 'fas fa-address-book'
+        ],
         'Beneficios' => (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
@@ -3934,7 +3964,10 @@ return (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
                 0 => 'onlyMy'
-            ]
+            ],
+            'kanbanViewMode' => false,
+            'color' => NULL,
+            'iconClass' => NULL
         ],
         'Formularios' => (object) [
             'controller' => 'controllers/record',
@@ -3995,7 +4028,8 @@ return (object) [
                 ]
             ],
             'color' => '#ff0000',
-            'iconClass' => 'fas fa-caret-square-up'
+            'iconClass' => 'fas fa-caret-square-up',
+            'kanbanViewMode' => false
         ],
         'Proveedor' => (object) [
             'controller' => 'controllers/record',
@@ -4127,7 +4161,10 @@ return (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
                 0 => 'onlyMy'
-            ]
+            ],
+            'kanbanViewMode' => false,
+            'color' => NULL,
+            'iconClass' => NULL
         ]
     ],
     'dashlets' => (object) [
@@ -6059,7 +6096,8 @@ return (object) [
                         12 => 'Comuna',
                         13 => 'Rol',
                         14 => 'Reclamo',
-                        15 => 'MotivoReclamo'
+                        15 => 'MotivoReclamo',
+                        16 => 'Beneficiario'
                     ]
                 ],
                 'dateSent' => (object) [
@@ -10725,7 +10763,8 @@ return (object) [
                         12 => 'Comuna',
                         13 => 'Rol',
                         14 => 'Reclamo',
-                        15 => 'MotivoReclamo'
+                        15 => 'MotivoReclamo',
+                        16 => 'Beneficiario'
                     ]
                 ],
                 'account' => (object) [
@@ -13354,7 +13393,8 @@ return (object) [
                         12 => 'Comuna',
                         13 => 'Rol',
                         14 => 'Reclamo',
-                        15 => 'MotivoReclamo'
+                        15 => 'MotivoReclamo',
+                        16 => 'Beneficiario'
                     ]
                 ],
                 'account' => (object) [
@@ -14391,7 +14431,8 @@ return (object) [
                         12 => 'Comuna',
                         13 => 'Rol',
                         14 => 'Reclamo',
-                        15 => 'MotivoReclamo'
+                        15 => 'MotivoReclamo',
+                        16 => 'Beneficiario'
                     ]
                 ],
                 'account' => (object) [
@@ -14512,12 +14553,185 @@ return (object) [
                 ]
             ]
         ],
+        'Beneficiario' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'beneficiarioId' => (object) [
+                    'type' => 'int',
+                    'required' => true,
+                    'min' => 3000000,
+                    'max' => 99999999,
+                    'disableFormatting' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'reclamosBeneficiarios' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'empresas' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
+                ],
+                'beneficiarioApellidoPaterno' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true,
+                    'maxLength' => 100,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'beneficiarioApellidoMaterno' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true,
+                    'maxLength' => 100,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'beneficiarioDv' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true,
+                    'maxLength' => 1,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'reclamosBeneficiarios' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'beneficiario',
+                    'entity' => 'Reclamo',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'empresas' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'beneficiarioEmpresa',
+                    'foreign' => 'beneficiarios',
+                    'entity' => 'Empresa',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
         'Beneficios' => (object) [
             'fields' => (object) [
                 'name' => (object) [
                     'type' => 'varchar',
                     'required' => true,
-                    'trim' => true
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false
                 ],
                 'description' => (object) [
                     'type' => 'text'
@@ -14632,6 +14846,17 @@ return (object) [
                     'layoutMassUpdateDisabled' => true,
                     'noLoad' => true,
                     'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'beneficiarioId' => (object) [
+                    'type' => 'int',
+                    'required' => true,
+                    'min' => 5000000,
+                    'max' => 99999999,
+                    'disableFormatting' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
                     'isCustom' => true
                 ]
             ],
@@ -15297,6 +15522,22 @@ return (object) [
                     'importDisabled' => true,
                     'noLoad' => true,
                     'isCustom' => true
+                ],
+                'beneficiarios' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
+                ],
+                'reclamosEmpresa' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
                 ]
             ],
             'links' => (object) [
@@ -15332,11 +15573,30 @@ return (object) [
                     'entity' => 'Trabajador',
                     'audited' => false,
                     'isCustom' => true
+                ],
+                'beneficiarios' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'beneficiarioEmpresa',
+                    'foreign' => 'empresas',
+                    'entity' => 'Beneficiario',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'reclamosEmpresa' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'empresa',
+                    'entity' => 'Reclamo',
+                    'audited' => false,
+                    'isCustom' => true
                 ]
             ],
             'collection' => (object) [
                 'sortBy' => 'createdAt',
-                'asc' => false
+                'asc' => false,
+                'textFilterFields' => [
+                    0 => 'name'
+                ],
+                'fullTextSearch' => false
             ],
             'indexes' => (object) [
                 'name' => (object) [
@@ -15821,7 +16081,11 @@ return (object) [
             ],
             'collection' => (object) [
                 'sortBy' => 'createdAt',
-                'asc' => false
+                'asc' => false,
+                'textFilterFields' => [
+                    0 => 'name'
+                ],
+                'fullTextSearch' => false
             ],
             'indexes' => (object) [
                 'name' => (object) [
@@ -16020,6 +16284,12 @@ return (object) [
                 ],
                 'motivoReclamo' => (object) [
                     'type' => 'link'
+                ],
+                'beneficiario' => (object) [
+                    'type' => 'link'
+                ],
+                'empresa' => (object) [
+                    'type' => 'link'
                 ]
             ],
             'links' => (object) [
@@ -16063,6 +16333,20 @@ return (object) [
                     'type' => 'belongsTo',
                     'foreign' => 'reclamosMotivoReclamo',
                     'entity' => 'MotivoReclamo',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'beneficiario' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'reclamosBeneficiarios',
+                    'entity' => 'Beneficiario',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'empresa' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'reclamosEmpresa',
+                    'entity' => 'Empresa',
                     'audited' => false,
                     'isCustom' => true
                 ]
@@ -16740,12 +17024,13 @@ return (object) [
                 ],
                 'rut' => (object) [
                     'type' => 'varchar',
-                    'required' => false,
+                    'required' => true,
                     'trim' => true,
                     'audited' => false,
                     'readOnly' => false,
                     'tooltip' => false,
-                    'isCustom' => true
+                    'isCustom' => true,
+                    'maxLength' => 12
                 ],
                 'apellidopaterno' => (object) [
                     'type' => 'varchar',
@@ -16792,16 +17077,6 @@ return (object) [
                     'tooltip' => false,
                     'isCustom' => true
                 ],
-                'telefono' => (object) [
-                    'type' => 'number',
-                    'len' => 36,
-                    'notNull' => false,
-                    'unique' => false,
-                    'nextNumber' => 1,
-                    'padLength' => 9,
-                    'tooltip' => false,
-                    'isCustom' => true
-                ],
                 'comunarelacion' => (object) [
                     'type' => 'link'
                 ],
@@ -16819,6 +17094,27 @@ return (object) [
                     'layoutMassUpdateDisabled' => true,
                     'importDisabled' => true,
                     'noLoad' => true,
+                    'isCustom' => true
+                ],
+                'telefono' => (object) [
+                    'type' => 'varchar',
+                    'required' => false,
+                    'trim' => true,
+                    'maxLength' => 15,
+                    'tooltipText' => 'Ej. +56 2 29458565',
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => true,
+                    'isCustom' => true
+                ],
+                'trabajadorId' => (object) [
+                    'type' => 'int',
+                    'required' => true,
+                    'max' => 8,
+                    'disableFormatting' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
                     'isCustom' => true
                 ]
             ],
@@ -16867,7 +17163,16 @@ return (object) [
             ],
             'collection' => (object) [
                 'sortBy' => 'createdAt',
-                'asc' => false
+                'asc' => false,
+                'textFilterFields' => [
+                    0 => 'rut',
+                    1 => 'nombre',
+                    2 => 'apellidopaterno',
+                    3 => 'apellidomaterno',
+                    4 => 'name',
+                    5 => 'nombrecompleto'
+                ],
+                'fullTextSearch' => true
             ],
             'indexes' => (object) [
                 'name' => (object) [
@@ -18833,6 +19138,29 @@ return (object) [
                 1 => 'Deferred'
             ]
         ],
+        'Beneficiario' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
+        ],
         'Beneficios' => (object) [
             'entity' => true,
             'layouts' => true,
@@ -18969,7 +19297,8 @@ return (object) [
             'type' => 'Base',
             'module' => 'Custom',
             'object' => true,
-            'isCustom' => true
+            'isCustom' => true,
+            'statusField' => NULL
         ],
         'Formularios' => (object) [
             'entity' => true,
@@ -19017,7 +19346,8 @@ return (object) [
             'type' => 'BasePlus',
             'module' => 'Custom',
             'object' => true,
-            'isCustom' => true
+            'isCustom' => true,
+            'statusField' => NULL
         ],
         'Proveedor' => (object) [
             'entity' => true,
@@ -19158,7 +19488,8 @@ return (object) [
             'type' => 'Base',
             'module' => 'Custom',
             'object' => true,
-            'isCustom' => true
+            'isCustom' => true,
+            'statusField' => NULL
         ]
     ],
     'themes' => (object) [

@@ -1,0 +1,3 @@
+/EspoCRM/data/logs
+/EspoCRM/data/config.php
+*.bak

@@ -3,13 +3,19 @@
         "reclamoId": "ReclamoId",
         "reclamoTitulo": "Título",
         "reclamoObservacion": "Observación",
-        "motivoReclamo": "MotivoReclamo"
+        "motivoReclamo": "MotivoReclamo",
+        "trabajador": "Trabajador",
+        "beneficiario": "Beneficiario",
+        "empresa": "Empresa"
     },
     "links": {
         "meetings": "Meetings",
         "calls": "Calls",
         "tasks": "Tasks",
-        "motivoReclamo": "MotivoReclamo"
+        "motivoReclamo": "MotivoReclamo",
+        "trabajador": "Trabajador",
+        "beneficiario": "Beneficiario",
+        "empresa": "Empresa"
     },
     "labels": {
         "Create Reclamo": "Create Reclamo"

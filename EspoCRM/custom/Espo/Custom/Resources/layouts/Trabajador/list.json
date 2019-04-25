@@ -1,12 +1,18 @@
 [
     {
-        "name": "createdAt"
-    },
-    {
         "name": "rut"
     },
     {
+        "name": "trabajadorId"
+    },
+    {
         "name": "nombrecompleto"
+    },
+    {
+        "name": "apellidopaterno"
+    },
+    {
+        "name": "apellidomaterno"
     },
     {
         "name": "telefono"
@@ -20,5 +26,43 @@
     {
         "name": "empresa",
         "notSortable": true
+    },
+    {
+        "name": "nombre"
+    },
+    {
+        "name": "name"
+    },
+    {
+        "name": "comunarelacion"
+    },
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "reclamosTrabajador",
+        "notSortable": true
+    },
+    {
+        "name": "direccion"
+    },
+    {
+        "name": "modifiedAt"
+    },
+    {
+        "name": "teams",
+        "notSortable": true
+    },
+    {
+        "name": "modifiedBy"
+    },
+    {
+        "name": "createdBy"
+    },
+    {
+        "name": "assignedUser"
+    },
+    {
+        "name": "description"
     }
 ]

@@ -12,7 +12,8 @@
         "empresa": "Empresa",
         "proveedor": "Proveedor",
         "rol": "Rol",
-        "comuna": "Comuna"
+        "comuna": "Comuna",
+        "beneficiarioId": "RUT"
     },
     "links": {
         "meetings": "Meetings",

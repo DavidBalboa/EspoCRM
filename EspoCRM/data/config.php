@@ -1,6 +1,6 @@
 <?php
 return [
-    'cacheTimestamp' => 1556132736,
+    'cacheTimestamp' => 1556193605,
     'database' => [
         'driver' => 'pdo_mysql',
         'host' => 'localhost',
@@ -83,22 +83,19 @@ return [
     'tabList' => [
         0 => 'Account',
         1 => 'Contact',
-        2 => 'Task',
-        3 => 'MotivoReclamo',
-        4 => 'Reclamo',
-        5 => '_delimiter_',
-        6 => 'Document',
-        7 => 'Campaign',
-        8 => 'KnowledgeBaseArticle',
-        9 => 'Stream',
-        10 => 'User',
-        11 => 'Case',
-        12 => 'Lead',
-        13 => 'Opportunity',
-        14 => 'Meeting',
-        15 => 'Email',
-        16 => 'Calendar',
-        17 => 'Call'
+        2 => 'MotivoReclamo',
+        3 => 'Reclamo',
+        4 => 'Document',
+        5 => 'Campaign',
+        6 => 'KnowledgeBaseArticle',
+        7 => 'Stream',
+        8 => 'User',
+        9 => 'Empresa',
+        10 => 'Team',
+        11 => 'Proveedor',
+        12 => 'Trabajador',
+        13 => 'Beneficiario',
+        14 => '_delimiter_'
     ],
     'quickCreateList' => [
         0 => 'Account',
@@ -109,7 +106,8 @@ return [
         5 => 'Call',
         6 => 'Task',
         7 => 'Case',
-        8 => 'Email'
+        8 => 'Email',
+        9 => 'Proveedor'
     ],
     'exportDisabled' => false,
     'adminNotifications' => true,

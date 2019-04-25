@@ -1,0 +1,30 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "beneficiarioId"
+                },
+                {
+                    "name": "beneficiarioDv"
+                }
+            ],
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "beneficiarioApellidoPaterno"
+                },
+                {
+                    "name": "beneficiarioApellidoMaterno"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Vista"
+    }
+]

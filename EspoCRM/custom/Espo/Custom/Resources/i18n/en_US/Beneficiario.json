@@ -1,0 +1,20 @@
+{
+    "fields": {
+        "beneficiarioId": "RUT",
+        "reclamosBeneficiarios": "Reclamos",
+        "empresas": "Empresas",
+        "beneficiarioApellidoPaterno": "Apellido paterno",
+        "beneficiarioApellidoMaterno": "Apellido materno",
+        "beneficiarioDv": "DV"
+    },
+    "links": {
+        "meetings": "Meetings",
+        "calls": "Calls",
+        "tasks": "Tasks",
+        "reclamosBeneficiarios": "Reclamos",
+        "empresas": "Empresas"
+    },
+    "labels": {
+        "Create Beneficiario": "Create Beneficiario"
+    }
+}

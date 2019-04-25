@@ -2,24 +2,30 @@
     "fields": {
         "nombre": "Nombres",
         "rut": "Rut",
-        "apellidopaterno": "Apellido_paterno",
-        "apellidomaterno": "Apellido_materno",
-        "nombrecompleto": "Nombre_completo",
+        "apellidopaterno": "Apellido paterno",
+        "apellidomaterno": "Apellido materno",
+        "nombrecompleto": "Nombres",
         "direccion": "Direccion",
         "email": "Email",
-        "telefono": "Telefono",
         "comunarelacion": "Comunarelacion",
         "empresas": "Empresas",
         "rol": "Rol",
-        "empresa": "Empresa"
+        "empresa": "Empresa",
+        "reclamosTrabajador": "Reclamos",
+        "telefono": "Teléfono",
+        "trabajadorId": "RUT"
     },
     "links": {
         "comunarelacion": "Comunarelacion",
         "empresas": "Empresas",
         "rol": "Rol",
-        "empresa": "Empresa"
+        "empresa": "Empresa",
+        "reclamosTrabajador": "Reclamos"
     },
     "labels": {
         "Create Trabajador": "Create Trabajador"
+    },
+    "tooltips": {
+        "telefono": "Ej. +56 2 29458565"
     }
 }

@@ -1,5 +1,19 @@
 {
-  "labels": {
-    "Create Trabajador": "Crear Trabajador"
-  }
+    "labels": {
+        "Create Trabajador": "Crear Trabajador"
+    },
+    "fields": {
+        "reclamosTrabajador": "Reclamos",
+        "apellidomaterno": "Apellido materno",
+        "apellidopaterno": "Apellido paterno",
+        "nombrecompleto": "Nombres",
+        "telefono": "Teléfono",
+        "trabajadorId": "RUT"
+    },
+    "links": {
+        "reclamosTrabajador": "Reclamos"
+    },
+    "tooltips": {
+        "telefono": "Ej. +56 2 29458565"
+    }
 }

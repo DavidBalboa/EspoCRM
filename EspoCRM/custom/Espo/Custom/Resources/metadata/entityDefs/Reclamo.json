@@ -70,6 +70,12 @@
         },
         "motivoReclamo": {
             "type": "link"
+        },
+        "beneficiario": {
+            "type": "link"
+        },
+        "empresa": {
+            "type": "link"
         }
     },
     "links": {
@@ -113,6 +119,20 @@
             "type": "belongsTo",
             "foreign": "reclamosMotivoReclamo",
             "entity": "MotivoReclamo",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficiario": {
+            "type": "belongsTo",
+            "foreign": "reclamosBeneficiarios",
+            "entity": "Beneficiario",
+            "audited": false,
+            "isCustom": true
+        },
+        "empresa": {
+            "type": "belongsTo",
+            "foreign": "reclamosEmpresa",
+            "entity": "Empresa",
             "audited": false,
             "isCustom": true
         }

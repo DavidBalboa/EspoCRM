@@ -13,12 +13,13 @@
         "Ciudad": "Ciudad",
         "Comuna": "Comuna",
         "Proveedor": "Proveedor",
-        "Rol": "Rol"
+        "Rol": "Rol",
+        "Beneficiario": "Beneficiario"
     },
     "scopeNamesPlural": {
-      "Formularios": "Formularios",
-      "Reclamo": "Reclamos",
-      "MotivoReclamo": "MotivoReclamos",
+        "Formularios": "Formularios",
+        "Reclamo": "Reclamos",
+        "MotivoReclamo": "MotivoReclamos",
         "Solicitudes": "Solicitudes",
         "Categoria": "Categorias",
         "Subcategoria": "Subcategorias",
@@ -29,6 +30,7 @@
         "Ciudad": "Ciudads",
         "Comuna": "Comunas",
         "Proveedor": "Proveedors",
-        "Rol": "Rols"
+        "Rol": "Rols",
+        "Beneficiario": "Beneficiarios"
     }
 }

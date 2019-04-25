@@ -1,11 +1,15 @@
 {
     "fields": {
         "beneficios": "Beneficios",
-        "trabajador": "Trabajador"
+        "trabajador": "Trabajador",
+        "beneficiarios": "Beneficiarios",
+        "reclamosEmpresa": "Reclamos"
     },
     "links": {
         "beneficios": "Beneficios",
-        "trabajador": "Trabajador"
+        "trabajador": "Trabajador",
+        "beneficiarios": "Beneficiarios",
+        "reclamosEmpresa": "Reclamos"
     },
     "labels": {
         "Create Empresa": "Create Empresa"
