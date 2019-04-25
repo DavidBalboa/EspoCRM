@@ -1,3 +1,4 @@
-/EspoCRM/data/logs
-/EspoCRM/data/config.php
+EspoCRM/data/logs
+EspoCRM/data/config.php
+EspoCRM/data/cache/application/languages/*.*
 *.bak

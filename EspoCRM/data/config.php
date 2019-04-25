@@ -1,14 +1,14 @@
 <?php
 return [
-    'cacheTimestamp' => 1556193605,
+    'cacheTimestamp' => 1546615166,
     'database' => [
         'driver' => 'pdo_mysql',
-        'host' => 'localhost',
-        'port' => '',
+        'host' => '10.128.0.218',
+        'port' => '3306',
         'charset' => 'utf8mb4',
-        'dbname' => 'espocrmtest',
-        'user' => 'espocrmtest',
-        'password' => 'espocrmtest'
+        'dbname' => 'ESPOCRMDB',
+        'user' => 'soporte',
+        'password' => 'soporte'
     ],
     'useCache' => true,
     'recordsPerPage' => 20,
@@ -16,8 +16,8 @@ return [
     'applicationName' => 'EspoCRM',
     'version' => '5.4.5',
     'timeZone' => 'America/Santiago',
-    'dateFormat' => 'DD/MM/YYYY',
-    'timeFormat' => 'hh:mm a',
+    'dateFormat' => 'YYYY-MM-DD',
+    'timeFormat' => 'HH:mm',
     'weekStart' => 1,
     'thousandSeparator' => '.',
     'decimalMark' => ',',
@@ -28,17 +28,17 @@ return [
     'defaultCurrency' => 'CLP',
     'baseCurrency' => 'CLP',
     'currencyRates' => [
-        
+
     ],
-    'outboundEmailIsShared' => true,
-    'outboundEmailFromName' => 'EspoCRM',
-    'outboundEmailFromAddress' => '',
-    'smtpServer' => '',
-    'smtpPort' => '25',
-    'smtpAuth' => false,
-    'smtpSecurity' => '',
-    'smtpUsername' => '',
-    'smtpPassword' => '',
+    'outboundEmailIsShared' => false,
+    'outboundEmailFromName' => 'Sebastian',
+    'outboundEmailFromAddress' => 'dbalboa@losheroes.cl',
+    'smtpServer' => 'smtp.losheroes.cl',
+    'smtpPort' => 587,
+    'smtpAuth' => true,
+    'smtpSecurity' => 'TLS',
+    'smtpUsername' => 'dbalboa@losheroes.cl',
+    'smtpPassword' => 'Lleuque.201808',
     'languageList' => [
         0 => 'en_GB',
         1 => 'en_US',
@@ -81,21 +81,25 @@ return [
         3 => 'Opportunity'
     ],
     'tabList' => [
-        0 => 'Account',
-        1 => 'Contact',
-        2 => 'MotivoReclamo',
-        3 => 'Reclamo',
-        4 => 'Document',
-        5 => 'Campaign',
-        6 => 'KnowledgeBaseArticle',
-        7 => 'Stream',
-        8 => 'User',
-        9 => 'Empresa',
-        10 => 'Team',
-        11 => 'Proveedor',
-        12 => 'Trabajador',
-        13 => 'Beneficiario',
-        14 => '_delimiter_'
+        0 => 'Formularios',
+        1 => 'Team',
+        2 => 'Email',
+        3 => 'Contact',
+        4 => 'Account',
+        5 => '_delimiter_',
+        6 => 'Document',
+        7 => 'User',
+        8 => 'Template',
+        9 => 'Stream',
+        10 => 'Calendar',
+        11 => 'Lead',
+        12 => 'EmailTemplate',
+        13 => 'Case',
+        14 => 'Campaign',
+        15 => 'KnowledgeBaseArticle',
+        16 => 'Meeting',
+        17 => 'Task',
+        18 => 'Call'
     ],
     'quickCreateList' => [
         0 => 'Account',
@@ -106,8 +110,7 @@ return [
         5 => 'Call',
         6 => 'Task',
         7 => 'Case',
-        8 => 'Email',
-        9 => 'Proveedor'
+        8 => 'Email'
     ],
     'exportDisabled' => false,
     'adminNotifications' => true,
@@ -125,7 +128,8 @@ return [
         0 => 'Meeting',
         1 => 'Call',
         2 => 'Task',
-        3 => 'Email'
+        3 => 'Email',
+        4 => 'Formularios'
     ],
     'portalStreamEmailNotifications' => true,
     'streamEmailNotificationsEntityList' => [
@@ -145,7 +149,7 @@ return [
     'followCreatedEntities' => false,
     'b2cMode' => false,
     'restrictedMode' => false,
-    'theme' => 'HazyblueVertical',
+    'theme' => 'Espo',
     'massEmailMaxPerHourCount' => 100,
     'personalEmailMaxPortionSize' => 10,
     'inboundEmailMaxPortionSize' => 20,
@@ -210,20 +214,21 @@ return [
     'noteDeleteThresholdPeriod' => '1 month',
     'noteEditThresholdPeriod' => '7 days',
     'isInstalled' => true,
-    'siteUrl' => 'http://localhost/EspoCRM/EspoCRM',
-    'passwordSalt' => '839b2ca27dd2c79c',
-    'cryptKey' => '6a9276baffbde7ada768451f036e226d',
-    'defaultPermissions' => [
-        'user' => 33,
-        'group' => 33
-    ],
+    'siteUrl' => 'http://localhost:8080/EspoCRM',
+    'passwordSalt' => 'd2a8a691d4e134d8',
+    'cryptKey' => '036b34d325b82f17e831daf6387d6c09',
     'fullTextSearchMinLength' => 4,
+    'outboundEmailBccAddress' => '',
+    'massEmailDisableMandatoryOptOutLink' => false,
     'userThemesDisabled' => false,
     'avatarsDisabled' => false,
     'scopeColorsDisabled' => false,
     'tabIconsDisabled' => false,
     'dashletsOptions' => (object) [
-        
-    ]
+
+    ],
+    'notificationSoundsDisabled' => false,
+    'mentionEmailNotifications' => false,
+    'streamEmailNotifications' => false
 ];
 ?>
