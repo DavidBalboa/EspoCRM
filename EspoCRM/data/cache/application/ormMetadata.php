@@ -19374,6 +19374,11 @@ return array (
         'type' => 'datetime',
         'notNull' => false,
       ),
+      'empresaId' => 
+      array (
+        'type' => 'int',
+        'len' => 11,
+      ),
       'createdById' => 
       array (
         'dbType' => 'varchar',

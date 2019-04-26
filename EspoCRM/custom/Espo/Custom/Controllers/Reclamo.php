@@ -1,22 +1,20 @@
 <?php
 
 namespace Espo\Custom\Controllers;
-use Espo\Custom\Entities;
+
+use \Espo\Core\Exceptions\BadRequest;
 
 class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
 {
     public function getActionRut($params, $data, $request)
     {
-        $json = "{";
         $total = 0;
         // $GLOBALS['log']->debug("prueba de params " . gettype($params),[]);
         // $params_string = print_r($params, true);
-        // $GLOBALS['log']->debug("prueba de params string: $params_string", []);
+        $GLOBALS['log']->debug("prueba de params string: $data", []);
         $paramRut = $params["id"];
         //$paramRut = "5cc0cd9124864ec87";
         
-        $rutReclamo = "";
-        $nombreReclamo = "";
         
         $entityManager = $this->getEntityManager();
         /*
@@ -81,6 +79,68 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         $resp = print_r(get_object_vars($childList), true);
         $GLOBALS['log']->debug("reclamos: " . json_encode(($childList)), []);*/
         return "{\"total\": " . $total . ", \"list\": [" . $list . "]}";//;"{\"key\": 1, \"value\": \"146340253\", \"rut\": \"" . $rutReclamo . "\", \"nombre\": \"" . $tmp . "\" , \"tmp\": \"" . $tmp . "\"}";
+    }
+    
+    public function postActionInsert($params, $data, $request)
+    {
+        if (!$request->isPost()) {
+            throw new BadRequest();
+        }
+        //$GLOBALS['log']->debug("prueba de post " . $params,[]);
+        //$d = print_r($data, true);
+        //$GLOBALS['log']->debug("prueba de post data: " . $params->beneficiarioId . $d, []);
+        
+        //$p = print_r($params, true);
+        //$GLOBALS['log']->debug("prueba de params " . gettype($params),[]);
+        //$GLOBALS['log']->debug("prueba de params " . $p,[]);
+        
+        //$GLOBALS['log']->debug("prueba de data " . gettype($data),[]);
+        //$GLOBALS['log']->debug("prueba de data string " . $data,[]);
+        
+        /*
+        $benef = $request->get('beneficiarioId');
+        $GLOBALS['log']->debug("beneficiario: " . $benef,[]);
+        $beneficiario = $this->getEntityManager()->getRepository('Beneficiario')->get($benef);
+        $GLOBALS['log']->debug("beneficiario: " . $benef . "::" . $beneficiario->get('beneficiarioId'),[]);
+        */
+        
+        //  Se recupera el id del beneficiario en base al rut informado
+        $beneficiario = $this->getEntityManager()->getRepository('Beneficiario')->where([
+            'beneficiario.beneficiario_id' => $request->get('beneficiarioId')
+        ])->findOne();
+        $beneficiarioId = $beneficiario->get('id');
+        $GLOBALS['log']->debug("beneficiario: " . $beneficiarioId,[]);
+        
+        $empresa = $this->getEntityManager()->getRepository('Empresa')->where([
+            'empresa.empresa_id' => $request->get('empresaId')
+        ])->findOne();
+        $empresaId = $empresa->get('id');
+        $GLOBALS['log']->debug("empresa: " . $empresaId,[]);
+        
+        $motivoReclamo = $this->getEntityManager()->getRepository('MotivoReclamo')->where([
+            'motivo_reclamo.motivo_reclamo_id' => $request->get('motivoReclamoId')
+        ])->findOne();
+        $motivoReclamoId = $motivoReclamo->get('id');
+        $GLOBALS['log']->debug("motivoReclamo: " . $motivoReclamoId,[]);
+        /*
+        $result = $this->getContainer()->get('dataManager')->rebuild();
+        
+        return $result;*/
+        //$contact->set('accountId', $entity->id);
+        //$reclamo = $this->getEntityManager()->saveEntity($contact);
+        //$entity = $this->getEntityManager()->getEntity('ExternalAccount', $params['id']);
+        $reclamo = $this->getEntityManager()->getEntity('Reclamo');
+        $reclamo->set($data);
+        $reclamo->set('beneficiarioId', $beneficiarioId);
+        $reclamo->set('empresaId', $empresaId);
+        $reclamo->set('motivoReclamoId', $motivoReclamoId);
+        $reclamo->set('reclamoTitulo', $request->get('reclamoTitulo'));
+        $reclamo->set('reclamoObservacion', $request->get('reclamoObservacion'));
+        
+        $this->getEntityManager()->saveEntity($reclamo);
+        
+        return $reclamo->toArray();
+        //return "{\"id\":\"5cc32f3a59517e627\",\"deleted\":false,\"createdAt\":\"2019-04-26 16:18:02\",\"modifiedAt\":\"2019-04-26 16:18:02\",\"reclamoId\":\"00013\",\"reclamoTitulo\":\"ccccc\",\"reclamoObservacion\":\"cccccc\",\"createdById\":\"5cb7af37939a97b4e\",\"assignedUserId\":\"5cb7af37939a97b4e\",\"assignedUserName\":\"Omar Neyra\",\"teamsIds\":[],\"teamsNames\":{},\"motivoReclamoId\":\"5cc0f41d8d7711f60\",\"motivoReclamoName\":\"Error en el sistema\",\"beneficiarioId\":\"5cc212fd663d01f5e\",\"beneficiarioName\":\"Omar\",\"empresaId\":\"5cc0d6b84634627cc\",\"empresaName\":\"BHP\"}";
     }
     
 }

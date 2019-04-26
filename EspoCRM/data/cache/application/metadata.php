@@ -19174,6 +19174,17 @@ return array (
           'importDisabled' => true,
           'isCustom' => true,
         ),
+        'empresaId' => 
+        array (
+          'type' => 'int',
+          'required' => false,
+          'max' => 99999999,
+          'disableFormatting' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
       ),
       'links' => 
       array (
