@@ -108,18 +108,33 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         $beneficiario = $this->getEntityManager()->getRepository('Beneficiario')->where([
             'beneficiario.beneficiario_id' => $request->get('beneficiarioId')
         ])->findOne();
+        if ($beneficiario == null){
+            return "{\"errorCode\": \"00001\", \"errorDescription\": \"El beneficiario no existe\"}";
+        }
         $beneficiarioId = $beneficiario->get('id');
         $GLOBALS['log']->debug("beneficiario: " . $beneficiarioId,[]);
         
-        $empresa = $this->getEntityManager()->getRepository('Empresa')->where([
-            'empresa.empresa_id' => $request->get('empresaId')
-        ])->findOne();
-        $empresaId = $empresa->get('id');
-        $GLOBALS['log']->debug("empresa: " . $empresaId,[]);
-        
+        try
+        {
+            $empresa = $this->getEntityManager()->getRepository('Empresa')->where([
+                'empresa.empresa_id' => $request->get('empresaId')
+            ])->findOne();
+            if ($empresa == null){
+                return "{\"errorCode\": \"00001\", \"errorDescription\": \"La empresa no es valida\"}";
+            }
+            $empresaId = $empresa->get('id');
+            $GLOBALS['log']->debug("empresa: " . $empresaId,[]);
+        }
+        catch (\Exception $exEmpresa){
+            $GLOBALS['log']->debug("empresa error: " . $exEmpresa->getMessage(),[]);
+            return "{\"error\": \"1\", \"errorDescription\": \"La empresa no es valida\"}";
+        }
         $motivoReclamo = $this->getEntityManager()->getRepository('MotivoReclamo')->where([
             'motivo_reclamo.motivo_reclamo_id' => $request->get('motivoReclamoId')
         ])->findOne();
+        if ($motivoReclamo == null){
+            return "{\"errorCode\": \"00001\", \"errorDescription\": \"El motivo de reclamo no existe\"}";
+        }
         $motivoReclamoId = $motivoReclamo->get('id');
         $GLOBALS['log']->debug("motivoReclamo: " . $motivoReclamoId,[]);
         /*
