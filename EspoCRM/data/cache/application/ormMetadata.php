@@ -19836,6 +19836,12 @@ return array (
         'notNull' => false,
         'unique' => false,
       ),
+      'estadoReclamoEsInicial' => 
+      array (
+        'type' => 'bool',
+        'notNull' => true,
+        'default' => true,
+      ),
       'createdById' => 
       array (
         'dbType' => 'varchar',

@@ -19325,7 +19325,7 @@ return array (
         'empresaId' => 
         array (
           'type' => 'int',
-          'required' => false,
+          'required' => true,
           'min' => NULL,
           'max' => 99999999,
           'disableFormatting' => false,
@@ -19506,6 +19506,16 @@ return array (
           'unique' => false,
           'nextNumber' => 1,
           'padLength' => 5,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'estadoReclamoEsInicial' => 
+        array (
+          'notNull' => true,
+          'type' => 'bool',
+          'default' => true,
+          'audited' => false,
+          'readOnly' => false,
           'tooltip' => false,
           'isCustom' => true,
         ),

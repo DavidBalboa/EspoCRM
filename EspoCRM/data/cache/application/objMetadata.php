@@ -15669,7 +15669,7 @@ return (object) [
                 ],
                 'empresaId' => (object) [
                     'type' => 'int',
-                    'required' => false,
+                    'required' => true,
                     'min' => NULL,
                     'max' => 99999999,
                     'disableFormatting' => false,
@@ -15820,6 +15820,15 @@ return (object) [
                     'unique' => false,
                     'nextNumber' => 1,
                     'padLength' => 5,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'estadoReclamoEsInicial' => (object) [
+                    'notNull' => true,
+                    'type' => 'bool',
+                    'default' => true,
+                    'audited' => false,
+                    'readOnly' => false,
                     'tooltip' => false,
                     'isCustom' => true
                 ]
