@@ -19498,6 +19498,17 @@ return array (
           'importDisabled' => true,
           'isCustom' => true,
         ),
+        'estadoReclamoId' => 
+        array (
+          'type' => 'number',
+          'len' => 36,
+          'notNull' => false,
+          'unique' => false,
+          'nextNumber' => 1,
+          'padLength' => 5,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
       ),
       'links' => 
       array (

@@ -19829,6 +19829,13 @@ return array (
         'type' => 'datetime',
         'notNull' => false,
       ),
+      'estadoReclamoId' => 
+      array (
+        'type' => 'varchar',
+        'len' => 36,
+        'notNull' => false,
+        'unique' => false,
+      ),
       'createdById' => 
       array (
         'dbType' => 'varchar',

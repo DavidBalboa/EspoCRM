@@ -48,8 +48,12 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             $beneficiarioName = $entity->get('beneficiarioName');
             $beneficiario = $this->getEntityManager()->getRepository('Beneficiario')->where(['beneficiario.beneficiario_id' => $paramRut])->findOne();
             $beneficiarioId = $beneficiario->get('beneficiarioId');
-            $motivoReclamo = $this->getEntityManager()->getRepository('MotivoReclamo')->get($entity->get('motivoReclamoId')); 
+            //  Motivo del reclamo
+            $motivoReclamo = $this->getEntityManager()->getRepository('MotivoReclamo')->get($entity->get('motivoReclamoId'));
             $motivoReclamoId = $motivoReclamo->get('motivoReclamoId');
+            //  Estado del reclamo
+            $estadoReclamo = $this->getEntityManager()->getRepository('EstadoReclamo')->get($entity->get('estadoReclamoId'));
+            $estadoReclamoId = $estadoReclamo->get('estadoReclamoId');
             $createdAt = $entity->get('createdAt');
             //$entity->get('reclamoObservacion') . " == " . $entity->get('reclamoTitulo') . ", ";
             //$request_string = print_r(get_object_vars($entity), true);
@@ -63,7 +67,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             //$GLOBALS['log']->debug("tmp: " . ($tmp),[]);
             //$tmp .= 
             //$list .= "{" . . "}";
-            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\", \"createdAt\": \"$createdAt\"}";
+            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\", \"createdAt\": \"$createdAt\", \"estadoReclamoId\": \"$estadoReclamoId\"}";
             $list .= $tmp;
             $total++;
             if ($total > 0) { $comma = ","; }

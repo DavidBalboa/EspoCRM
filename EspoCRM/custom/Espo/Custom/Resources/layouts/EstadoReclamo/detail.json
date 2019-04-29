@@ -3,7 +3,7 @@
         "rows": [
             [
                 {
-                    "name": "motivoReclamoId"
+                    "name": "estadoReclamoId"
                 },
                 {
                     "name": "name"
