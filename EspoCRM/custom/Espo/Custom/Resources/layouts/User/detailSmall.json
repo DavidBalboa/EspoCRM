@@ -1,0 +1,26 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "userName",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

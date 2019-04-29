@@ -1,0 +1,20 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "categoria1",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "empresa",
+                    "fullWidth": true
+                }
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "empresaId",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": "General"
+    }
+]
