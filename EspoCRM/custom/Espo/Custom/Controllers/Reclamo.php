@@ -11,7 +11,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         $total = 0;
         // $GLOBALS['log']->debug("prueba de params " . gettype($params),[]);
         // $params_string = print_r($params, true);
-        $GLOBALS['log']->debug("prueba de params string: $data", []);
+        //$GLOBALS['log']->debug("prueba de params string: $data", []);
         $paramRut = $params["id"];
         //$paramRut = "5cc0cd9124864ec87";
         
@@ -32,20 +32,28 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             $nombreReclamo .= $entity->get('reclamoObservacion') . " == " . $entity->get('reclamoTitulo') . ", ";
         }*/
         
+        //  Recuepera un listado de reclamos en base al rut informado en $params.
+        
         $childList = $entityManager->getRepository('Reclamo')->distinct()->join('Beneficiario')->where([
             'beneficiario.beneficiario_id' => $paramRut
         ])->find();
         
         $list = "";
         $comma = "";
+        //  Se cicla el listado de reclamos para generar la salida del servicio
         foreach ($childList as $entity) {
             $tmp = "";
             
+            //  Id del reclamo
             $reclamoId = $entity->get('reclamoId');
+            //  Observacion del reclamo
             $reclamoObservacion = $entity->get('reclamoObservacion');
+            //  Titulo del reclamo
             $reclamoTitulo = $entity->get('reclamoTitulo');
+            //  Motivo del reclamo
             $motivoReclamoName = $entity->get('motivoReclamoName');
             $beneficiarioName = $entity->get('beneficiarioName');
+            //  Beneficiario asociado al reclamo
             $beneficiario = $this->getEntityManager()->getRepository('Beneficiario')->where(['beneficiario.beneficiario_id' => $paramRut])->findOne();
             $beneficiarioId = $beneficiario->get('beneficiarioId');
             //  Motivo del reclamo
@@ -54,7 +62,10 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             //  Estado del reclamo
             $estadoReclamo = $this->getEntityManager()->getRepository('EstadoReclamo')->get($entity->get('estadoReclamoId'));
             $estadoReclamoId = $estadoReclamo->get('estadoReclamoId');
+            //  Fecha de cracion del reclamo
             $createdAt = $entity->get('createdAt');
+            //  Fecha de modificacion del reclamo
+            $modifiedAt = $entity->get('modifiedAt');
             //$entity->get('reclamoObservacion') . " == " . $entity->get('reclamoTitulo') . ", ";
             //$request_string = print_r(get_object_vars($entity), true);
             /*$GLOBALS['log']->debug("Es un objeto entity, prueba de request " . $entity,[]);
@@ -67,7 +78,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             //$GLOBALS['log']->debug("tmp: " . ($tmp),[]);
             //$tmp .= 
             //$list .= "{" . . "}";
-            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\", \"createdAt\": \"$createdAt\", \"estadoReclamoId\": \"$estadoReclamoId\"}";
+            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\", \"createdAt\": \"$createdAt\", \"estadoReclamoId\": \"$estadoReclamoId\",\"modifiedAt\": \"$modifiedAt\"}";
             $list .= $tmp;
             $total++;
             if ($total > 0) { $comma = ","; }
