@@ -3,13 +3,19 @@
         "rows": [
             [
                 {
-                    "name": "categoriaId",
+                    "name": "name",
                     "fullWidth": true
                 }
             ],
             [
                 {
-                    "name": "name",
+                    "name": "userName",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber",
                     "fullWidth": true
                 }
             ]

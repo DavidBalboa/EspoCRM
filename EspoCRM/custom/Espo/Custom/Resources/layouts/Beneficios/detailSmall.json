@@ -3,15 +3,19 @@
         "rows": [
             [
                 {
-                    "name": "categoriaId",
+                    "name": "categoria",
                     "fullWidth": true
                 }
             ],
             [
                 {
-                    "name": "name",
+                    "name": "titulo",
                     "fullWidth": true
                 }
+            ],
+            [
+                false,
+                false
             ]
         ],
         "style": "default",

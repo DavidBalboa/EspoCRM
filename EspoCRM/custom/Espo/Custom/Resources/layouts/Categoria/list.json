@@ -1,5 +1,8 @@
 [
     {
-        "name": "nombreCategoria"
+        "name": "categoriaId"
+    },
+    {
+        "name": "name"
     }
 ]

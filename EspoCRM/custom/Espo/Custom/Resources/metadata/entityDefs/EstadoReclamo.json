@@ -35,54 +35,12 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "nombreCategoria": {
-            "type": "varchar",
-            "required": false,
-            "trim": false,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
         "reclamos": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
             "layoutMassUpdateDisabled": true,
             "noLoad": true,
             "importDisabled": true,
-            "isCustom": true
-        },
-        "reclamos1": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
-        },
-        "beneficioss": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
-        },
-        "subcategorias": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
-        },
-        "categoriaId": {
-            "type": "int",
-            "required": false,
-            "disableFormatting": false,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
             "isCustom": true
         }
     },
@@ -125,29 +83,8 @@
         },
         "reclamos": {
             "type": "hasMany",
-            "foreign": "categoria",
+            "foreign": "estadoReclamo",
             "entity": "Reclamo",
-            "audited": false,
-            "isCustom": true
-        },
-        "reclamos1": {
-            "type": "hasMany",
-            "foreign": "categoria1",
-            "entity": "Reclamo",
-            "audited": false,
-            "isCustom": true
-        },
-        "beneficioss": {
-            "type": "hasMany",
-            "foreign": "categoria",
-            "entity": "Beneficios",
-            "audited": false,
-            "isCustom": true
-        },
-        "subcategorias": {
-            "type": "hasMany",
-            "foreign": "categoria",
-            "entity": "Subcategoria",
             "audited": false,
             "isCustom": true
         }

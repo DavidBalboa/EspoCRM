@@ -12,6 +12,46 @@
             "audited": false,
             "readOnly": false,
             "tooltip": false
+        },
+        "reclamos": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "empresas": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
+            "isCustom": true
+        },
+        "roles": {
+            "required": true,
+            "readOnly": false
+        }
+    },
+    "links": {
+        "reclamos": {
+            "type": "hasMany",
+            "foreign": "user",
+            "entity": "Reclamo",
+            "audited": false,
+            "isCustom": true
+        },
+        "roles": {
+            "audited": false
+        },
+        "empresas": {
+            "type": "hasMany",
+            "relationName": "userEmpresa",
+            "foreign": "users",
+            "entity": "Empresa",
+            "audited": false,
+            "isCustom": true
         }
     }
 }

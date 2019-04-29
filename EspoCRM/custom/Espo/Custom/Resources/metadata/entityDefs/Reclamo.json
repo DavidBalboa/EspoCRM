@@ -26,11 +26,6 @@
             "readOnly": true,
             "view": "views/fields/user"
         },
-        "assignedUser": {
-            "type": "link",
-            "required": true,
-            "view": "views/fields/assigned-user"
-        },
         "teams": {
             "type": "linkMultiple",
             "view": "views/fields/teams"
@@ -76,6 +71,32 @@
         },
         "empresa": {
             "type": "link"
+        },
+        "categoria1": {
+            "type": "link"
+        },
+        "user": {
+            "type": "link"
+        },
+        "estado": {
+            "type": "varchar",
+            "required": true,
+            "trim": true,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "estadoReclamo": {
+            "type": "link",
+            "defaultAttributes": {
+                "estadoReclamoId": "5cc34e67958f06a8f",
+                "estadoReclamoName": "Creado"
+            },
+            "required": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false
         }
     },
     "links": {
@@ -133,6 +154,34 @@
             "type": "belongsTo",
             "foreign": "reclamosEmpresa",
             "entity": "Empresa",
+            "audited": false,
+            "isCustom": true
+        },
+        "categoria": {
+            "type": "belongsTo",
+            "foreign": "reclamos",
+            "entity": "Categoria",
+            "audited": false,
+            "isCustom": true
+        },
+        "categoria1": {
+            "type": "belongsTo",
+            "foreign": "reclamos1",
+            "entity": "Categoria",
+            "audited": false,
+            "isCustom": true
+        },
+        "user": {
+            "type": "belongsTo",
+            "foreign": "reclamos",
+            "entity": "User",
+            "audited": false,
+            "isCustom": true
+        },
+        "estadoReclamo": {
+            "type": "belongsTo",
+            "foreign": "reclamos",
+            "entity": "EstadoReclamo",
             "audited": false,
             "isCustom": true
         }

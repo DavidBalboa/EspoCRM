@@ -1,0 +1,22 @@
+{
+    "default": {
+        "style": null,
+        "sticked": null,
+        "index": 0
+    },
+    "tasks": {
+        "style": null,
+        "sticked": null,
+        "index": 1
+    },
+    "activities": {
+        "style": null,
+        "sticked": null,
+        "index": 2
+    },
+    "history": {
+        "style": null,
+        "sticked": null,
+        "index": 3
+    }
+}

@@ -50,6 +50,23 @@
             "importDisabled": true,
             "noLoad": true,
             "isCustom": true
+        },
+        "rolId": {
+            "type": "int",
+            "required": true,
+            "disableFormatting": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "users": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -101,6 +118,14 @@
             "relationName": "trabajadorRol",
             "foreign": "rol",
             "entity": "Trabajador",
+            "audited": false,
+            "isCustom": true
+        },
+        "users": {
+            "type": "hasMany",
+            "relationName": "userRol",
+            "foreign": "rols",
+            "entity": "User",
             "audited": false,
             "isCustom": true
         }

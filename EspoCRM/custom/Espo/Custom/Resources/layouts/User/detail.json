@@ -1,0 +1,50 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "userName"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "firstName"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "gender"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "isAdmin"
+                },
+                {
+                    "name": "roles"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "General"
+    }
+]

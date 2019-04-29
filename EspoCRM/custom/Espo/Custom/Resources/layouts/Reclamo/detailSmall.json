@@ -3,13 +3,13 @@
         "rows": [
             [
                 {
-                    "name": "categoriaId",
+                    "name": "categoria1",
                     "fullWidth": true
                 }
             ],
             [
                 {
-                    "name": "name",
+                    "name": "empresa",
                     "fullWidth": true
                 }
             ]

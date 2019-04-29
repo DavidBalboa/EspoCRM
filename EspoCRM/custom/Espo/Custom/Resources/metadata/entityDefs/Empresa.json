@@ -69,12 +69,23 @@
         },
         "empresaId": {
             "type": "int",
+            "required": true,
+            "min": null,
+            "max": null,
             "required": false,
             "max": 99999999,
             "disableFormatting": false,
             "audited": false,
             "readOnly": false,
             "tooltip": false,
+            "isCustom": true
+        },
+        "users": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
             "isCustom": true
         }
     },
@@ -124,6 +135,14 @@
             "type": "hasMany",
             "foreign": "empresa",
             "entity": "Reclamo",
+            "audited": false,
+            "isCustom": true
+        },
+        "users": {
+            "type": "hasMany",
+            "relationName": "userEmpresa",
+            "foreign": "empresas",
+            "entity": "User",
             "audited": false,
             "isCustom": true
         }

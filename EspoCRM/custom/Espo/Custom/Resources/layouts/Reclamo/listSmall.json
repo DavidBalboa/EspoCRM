@@ -1,0 +1,15 @@
+[
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "beneficiario"
+    },
+    {
+        "name": "reclamoTitulo"
+    },
+    {
+        "name": "name",
+        "link": true
+    }
+]

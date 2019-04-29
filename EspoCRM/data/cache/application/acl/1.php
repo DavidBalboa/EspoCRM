@@ -398,6 +398,13 @@ return (object) [
             'delete' => 'all',
             'create' => 'yes'
         ],
+        'EstadoReclamo' => (object) [
+            'read' => 'all',
+            'stream' => 'all',
+            'edit' => 'all',
+            'delete' => 'all',
+            'create' => 'yes'
+        ],
         'Formularios' => (object) [
             'read' => 'all',
             'stream' => 'all',

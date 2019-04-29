@@ -3,14 +3,14 @@
         "rows": [
             [
                 {
-                    "name": "categoriaId"
+                    "name": "rolId"
                 },
                 {
-                    "name": "nombreCategoria"
+                    "name": "name"
                 }
             ]
         ],
         "style": "default",
-        "label": "General"
+        "label": ""
     }
 ]

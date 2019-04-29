@@ -5,7 +5,9 @@
                 {
                     "name": "reclamoId"
                 },
-                false
+                {
+                    "name": "estadoReclamo"
+                }
             ],
             [
                 {
@@ -21,7 +23,7 @@
             ],
             [
                 {
-                    "name": "motivoReclamo",
+                    "name": "categoria1",
                     "fullWidth": true
                 }
             ],
@@ -36,6 +38,12 @@
                     "name": "reclamoObservacion",
                     "fullWidth": true
                 }
+            ],
+            [
+                {
+                    "name": "user"
+                },
+                false
             ]
         ],
         "style": "default",

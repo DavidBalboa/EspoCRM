@@ -1,6 +1,9 @@
 [
     {
-        "name": "relacioncategoria"
+        "name": "categoria"
+    },
+    {
+        "name": "subcategoriaId"
     },
     {
         "name": "nombreSubcategoria"
