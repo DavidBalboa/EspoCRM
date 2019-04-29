@@ -50,6 +50,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             $beneficiarioId = $beneficiario->get('beneficiarioId');
             $motivoReclamo = $this->getEntityManager()->getRepository('MotivoReclamo')->get($entity->get('motivoReclamoId')); 
             $motivoReclamoId = $motivoReclamo->get('motivoReclamoId');
+            $createdAt = $entity->get('createdAt');
             //$entity->get('reclamoObservacion') . " == " . $entity->get('reclamoTitulo') . ", ";
             //$request_string = print_r(get_object_vars($entity), true);
             /*$GLOBALS['log']->debug("Es un objeto entity, prueba de request " . $entity,[]);
@@ -62,7 +63,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             //$GLOBALS['log']->debug("tmp: " . ($tmp),[]);
             //$tmp .= 
             //$list .= "{" . . "}";
-            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\"}";
+            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\", \"createdAt\": \"$createdAt\"}";
             $list .= $tmp;
             $total++;
             if ($total > 0) { $comma = ","; }
