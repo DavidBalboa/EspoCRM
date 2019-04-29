@@ -117,7 +117,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             return "{\"errorCode\": \"00001\", \"errorDescription\": \"El beneficiario no existe\"}";
         }
         $beneficiarioId = $beneficiario->get('id');
-        $GLOBALS['log']->debug("beneficiario: " . $beneficiarioId,[]);
+        //$GLOBALS['log']->debug("beneficiario: " . $beneficiarioId,[]);
         
         try
         {
@@ -160,7 +160,22 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         $reclamo->set('reclamoObservacion', $request->get('reclamoObservacion'));
         
         $this->getEntityManager()->saveEntity($reclamo);
+        $GLOBALS['log']->debug("saveEntity: " . gettype($reclamo),[]);
+        $GLOBALS['log']->debug("saveEntity: " . $reclamo->id,[]);
         
+        
+        $reclamoGenerado = $this->getEntityManager()->getEntity('Reclamo', $reclamo->id);
+        
+        //$reclamoRespuesta = $this->getEntityManager()->getEntity('Reclamo');
+        //$reclamoRespuesta->empresaId = "121212";
+        //$reclamoGenerado->set($data);
+        /*$reclamoRespuesta->id = $reclamoGenerado->reclamoId;
+        $reclamoRespuesta->reclamoTitulo = $reclamoGenerado->reclamoTitulo;
+        $reclamoRespuesta->reclamoObservacion = $reclamoGenerado->reclamoObservacion;
+        $reclamoRespuesta->motivoReclamoId = $data->motivoReclamoId;
+        $reclamoRespuesta->beneficiarioId = $data->beneficiarioId;
+        $reclamoRespuesta->empresaId = "121212";*///$data->empresaId;
+        $reclamo->id = $reclamoGenerado->reclamoId;
         return $reclamo->toArray();
         //return "{\"id\":\"5cc32f3a59517e627\",\"deleted\":false,\"createdAt\":\"2019-04-26 16:18:02\",\"modifiedAt\":\"2019-04-26 16:18:02\",\"reclamoId\":\"00013\",\"reclamoTitulo\":\"ccccc\",\"reclamoObservacion\":\"cccccc\",\"createdById\":\"5cb7af37939a97b4e\",\"assignedUserId\":\"5cb7af37939a97b4e\",\"assignedUserName\":\"Omar Neyra\",\"teamsIds\":[],\"teamsNames\":{},\"motivoReclamoId\":\"5cc0f41d8d7711f60\",\"motivoReclamoName\":\"Error en el sistema\",\"beneficiarioId\":\"5cc212fd663d01f5e\",\"beneficiarioName\":\"Omar\",\"empresaId\":\"5cc0d6b84634627cc\",\"empresaName\":\"BHP\"}";
     }
