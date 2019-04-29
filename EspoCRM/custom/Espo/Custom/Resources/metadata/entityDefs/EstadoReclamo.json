@@ -52,6 +52,15 @@
             "padLength": 5,
             "tooltip": false,
             "isCustom": true
+        },
+        "estadoReclamoEsInicial": {
+            "notNull": true,
+            "type": "bool",
+            "default": true,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
         }
     },
     "links": {

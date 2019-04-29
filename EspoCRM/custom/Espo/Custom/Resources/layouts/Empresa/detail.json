@@ -16,14 +16,5 @@
         ],
         "style": "default",
         "label": "General"
-                    "name": "empresaId"
-                },
-                {
-                    "name": "name"
-                }
-            ]
-        ],
-        "style": "default",
-        "label": "Vista"
     }
 ] 

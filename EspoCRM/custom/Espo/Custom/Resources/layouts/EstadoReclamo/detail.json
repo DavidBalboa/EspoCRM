@@ -8,6 +8,12 @@
                 {
                     "name": "name"
                 }
+            ],
+            [
+                {
+                    "name": "estadoReclamoEsInicial"
+                },
+                false
             ]
         ],
         "style": "default",
