@@ -92,10 +92,13 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         
         //$p = print_r($params, true);
         //$GLOBALS['log']->debug("prueba de params " . gettype($params),[]);
-        //$GLOBALS['log']->debug("prueba de params " . $p,[]);
+        //$GLOBALS['log']->debug("data" . $data,[]);
+        //$data = json_encode($data);
         
         //$GLOBALS['log']->debug("prueba de data " . gettype($data),[]);
-        //$GLOBALS['log']->debug("prueba de data string " . $data,[]);
+        //$GLOBALS['log']->debug("data" . $data,[]);
+        //$GLOBALS['log']->debug("data" . $data->beneficiarioId,[]);
+        //$data = json_encode($data);
         
         /*
         $benef = $request->get('beneficiarioId');
@@ -104,9 +107,11 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         $GLOBALS['log']->debug("beneficiario: " . $benef . "::" . $beneficiario->get('beneficiarioId'),[]);
         */
         
+        
+        //  $request->get('beneficiarioId')
         //  Se recupera el id del beneficiario en base al rut informado
         $beneficiario = $this->getEntityManager()->getRepository('Beneficiario')->where([
-            'beneficiario.beneficiario_id' => $request->get('beneficiarioId')
+            'beneficiario.beneficiario_id' => $data->beneficiarioId
         ])->findOne();
         if ($beneficiario == null){
             return "{\"errorCode\": \"00001\", \"errorDescription\": \"El beneficiario no existe\"}";
@@ -116,8 +121,9 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         
         try
         {
+            //$request->get('empresaId')
             $empresa = $this->getEntityManager()->getRepository('Empresa')->where([
-                'empresa.empresa_id' => $request->get('empresaId')
+                'empresa.empresa_id' => $data->empresaId
             ])->findOne();
             if ($empresa == null){
                 return "{\"errorCode\": \"00001\", \"errorDescription\": \"La empresa no es valida\"}";
@@ -130,9 +136,10 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             return "{\"error\": \"1\", \"errorDescription\": \"La empresa no es valida\"}";
         }
         $motivoReclamo = $this->getEntityManager()->getRepository('MotivoReclamo')->where([
-            'motivo_reclamo.motivo_reclamo_id' => $request->get('motivoReclamoId')
+            'motivo_reclamo.motivo_reclamo_id' => $data->motivoReclamoId
         ])->findOne();
         if ($motivoReclamo == null){
+            //throw new BadRequest();
             return "{\"errorCode\": \"00001\", \"errorDescription\": \"El motivo de reclamo no existe\"}";
         }
         $motivoReclamoId = $motivoReclamo->get('id');
