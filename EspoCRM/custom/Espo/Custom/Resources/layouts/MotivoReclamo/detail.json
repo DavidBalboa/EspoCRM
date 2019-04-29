@@ -1,0 +1,16 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "motivoReclamoId"
+                },
+                {
+                    "name": "name"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "Vista"
+    }
+]

@@ -19325,9 +19325,9 @@ return array (
         'empresaId' => 
         array (
           'type' => 'int',
-          'required' => true,
+          'required' => false,
           'min' => NULL,
-          'max' => NULL,
+          'max' => 99999999,
           'disableFormatting' => false,
           'audited' => false,
           'readOnly' => false,

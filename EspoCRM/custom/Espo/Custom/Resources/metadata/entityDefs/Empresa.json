@@ -72,6 +72,8 @@
             "required": true,
             "min": null,
             "max": null,
+            "required": false,
+            "max": 99999999,
             "disableFormatting": false,
             "audited": false,
             "readOnly": false,

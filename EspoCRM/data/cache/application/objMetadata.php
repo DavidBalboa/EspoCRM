@@ -15669,9 +15669,9 @@ return (object) [
                 ],
                 'empresaId' => (object) [
                     'type' => 'int',
-                    'required' => true,
+                    'required' => false,
                     'min' => NULL,
-                    'max' => NULL,
+                    'max' => 99999999,
                     'disableFormatting' => false,
                     'audited' => false,
                     'readOnly' => false,

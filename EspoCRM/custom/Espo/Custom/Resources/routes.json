@@ -18,6 +18,15 @@
         }
     },
     {
+        "route": "/Reclamo/:id",
+        "method": "post",
+        "params": {
+            "controller": "Reclamo",
+            "action": "insert",
+            "id": ":id"
+        }
+    },
+    {
         "route": "/Beneficio/codigo/:id",
         "method": "get",
         "params": {
