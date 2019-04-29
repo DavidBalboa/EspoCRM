@@ -3,7 +3,13 @@
         "rows": [
             [
                 {
-                    "name": "relacioncategoria"
+                    "name": "subcategoriaId"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "categoria"
                 },
                 {
                     "name": "nombreSubcategoria"

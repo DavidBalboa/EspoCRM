@@ -9,7 +9,6 @@
                 "Case",
                 "Formularios",
                 "Solicitudes",
-                "Categoria",
                 "Subcategoria",
                 "Beneficios",
                 "DoctosBeneficio",
@@ -18,7 +17,9 @@
                 "Rol",
                 "Reclamo",
                 "MotivoReclamo",
-                "Beneficiario"
+                "Beneficiario",
+                "Categoria",
+                "EstadoReclamo"
             ]
         },
         "formularios": {

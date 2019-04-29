@@ -7687,6 +7687,34 @@ return array (
           2 => 'lastName',
         ),
       ),
+      'reclamosIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'reclamos',
+        'isUnordered' => true,
+      ),
+      'reclamosNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'empresasIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'empresas',
+        'isUnordered' => true,
+      ),
+      'empresasNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
       'targetListsIds' => 
       array (
         'type' => 'jsonArray',
@@ -7823,6 +7851,27 @@ return array (
         'key' => 'avatarId',
         'foreignKey' => 'id',
         'foreign' => NULL,
+      ),
+      'empresas' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Empresa',
+        'relationName' => 'userEmpresa',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => 
+        array (
+          0 => 'userId',
+          1 => 'empresaId',
+        ),
+        'foreign' => 'users',
+      ),
+      'reclamos' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Reclamo',
+        'foreignKey' => 'userId',
+        'foreign' => 'user',
       ),
       'targetLists' => 
       array (
@@ -17654,6 +17703,20 @@ return array (
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
+      'beneficios1Ids' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'beneficios1',
+        'isUnordered' => true,
+      ),
+      'beneficios1Names' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
       'tasksIds' => 
       array (
         'type' => 'varchar',
@@ -17687,6 +17750,13 @@ return array (
     ),
     'relations' => 
     array (
+      'beneficios1' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Beneficios',
+        'foreignKey' => 'beneficiario1Id',
+        'foreign' => 'beneficiario1',
+      ),
       'empresas' => 
       array (
         'type' => 'manyMany',
@@ -18009,6 +18079,35 @@ return array (
         'relation' => 'comuna',
         'foreign' => 'name',
       ),
+      'doctosBeneficiosIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'doctosBeneficios',
+        'isUnordered' => true,
+      ),
+      'doctosBeneficiosNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'beneficiario1Id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'beneficiario1Name' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'beneficiario1',
+        'foreign' => 'name',
+      ),
       'categoriaId' => 
       array (
         'dbType' => 'varchar',
@@ -18023,20 +18122,6 @@ return array (
         'notStorable' => false,
         'relation' => 'categoria',
         'foreign' => 'name',
-      ),
-      'doctosBeneficiosIds' => 
-      array (
-        'type' => 'jsonArray',
-        'notStorable' => true,
-        'isLinkMultipleIdList' => true,
-        'relation' => 'doctosBeneficios',
-        'isUnordered' => true,
-      ),
-      'doctosBeneficiosNames' => 
-      array (
-        'type' => 'jsonObject',
-        'notStorable' => true,
-        'isLinkMultipleNameMap' => true,
       ),
       'tasksIds' => 
       array (
@@ -18071,19 +18156,27 @@ return array (
     ),
     'relations' => 
     array (
-      'doctosBeneficios' => 
-      array (
-        'type' => 'hasMany',
-        'entity' => 'DoctosBeneficio',
-        'foreignKey' => 'beneficiosId',
-        'foreign' => 'beneficios',
-      ),
       'categoria' => 
       array (
         'type' => 'belongsTo',
         'entity' => 'Categoria',
         'key' => 'categoriaId',
         'foreignKey' => 'id',
+        'foreign' => 'beneficioss',
+      ),
+      'beneficiario1' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'Beneficiario',
+        'key' => 'beneficiario1Id',
+        'foreignKey' => 'id',
+        'foreign' => 'beneficios1',
+      ),
+      'doctosBeneficios' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'DoctosBeneficio',
+        'foreignKey' => 'beneficiosId',
         'foreign' => 'beneficios',
       ),
       'comuna' => 
@@ -18252,6 +18345,11 @@ return array (
         'type' => 'varchar',
         'len' => 255,
       ),
+      'categoriaId' => 
+      array (
+        'type' => 'int',
+        'len' => 11,
+      ),
       'createdById' => 
       array (
         'dbType' => 'varchar',
@@ -18326,15 +18424,43 @@ return array (
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
-      'beneficiosIds' => 
+      'reclamosIds' => 
       array (
         'type' => 'jsonArray',
         'notStorable' => true,
         'isLinkMultipleIdList' => true,
-        'relation' => 'beneficios',
+        'relation' => 'reclamos',
         'isUnordered' => true,
       ),
-      'beneficiosNames' => 
+      'reclamosNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'reclamos1Ids' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'reclamos1',
+        'isUnordered' => true,
+      ),
+      'reclamos1Names' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'beneficiossIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'beneficioss',
+        'isUnordered' => true,
+      ),
+      'beneficiossNames' => 
       array (
         'type' => 'jsonObject',
         'notStorable' => true,
@@ -18394,10 +18520,24 @@ return array (
         'foreignKey' => 'categoriaId',
         'foreign' => 'categoria',
       ),
-      'beneficios' => 
+      'beneficioss' => 
       array (
         'type' => 'hasMany',
         'entity' => 'Beneficios',
+        'foreignKey' => 'categoriaId',
+        'foreign' => 'categoria',
+      ),
+      'reclamos1' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Reclamo',
+        'foreignKey' => 'categoria1Id',
+        'foreign' => 'categoria1',
+      ),
+      'reclamos' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Reclamo',
         'foreignKey' => 'categoriaId',
         'foreign' => 'categoria',
       ),
@@ -19374,6 +19514,11 @@ return array (
         'type' => 'datetime',
         'notNull' => false,
       ),
+      'empresaId' => 
+      array (
+        'type' => 'int',
+        'len' => 11,
+      ),
       'createdById' => 
       array (
         'dbType' => 'varchar',
@@ -19504,9 +19649,37 @@ return array (
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
+      'usersIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'users',
+        'isUnordered' => true,
+      ),
+      'usersNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
     ),
     'relations' => 
     array (
+      'users' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'User',
+        'relationName' => 'userEmpresa',
+        'key' => 'id',
+        'foreignKey' => 'id',
+        'midKeys' => 
+        array (
+          0 => 'empresaId',
+          1 => 'userId',
+        ),
+        'foreign' => 'empresas',
+      ),
       'reclamosEmpresa' => 
       array (
         'type' => 'hasMany',
@@ -19562,6 +19735,263 @@ return array (
         'conditions' => 
         array (
           'entityType' => 'Empresa',
+        ),
+        'additionalColumns' => 
+        array (
+          'entityType' => 
+          array (
+            'type' => 'varchar',
+            'len' => 100,
+          ),
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'assignedUserId',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'modifiedBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'modifiedById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+      'createdBy' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'createdById',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+      ),
+    ),
+    'indexes' => 
+    array (
+      'name' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'name',
+          1 => 'deleted',
+        ),
+      ),
+      'assignedUser' => 
+      array (
+        'columns' => 
+        array (
+          0 => 'assignedUserId',
+          1 => 'deleted',
+        ),
+      ),
+    ),
+    'collection' => 
+    array (
+      'orderBy' => 'createdAt',
+      'order' => 'DESC',
+    ),
+  ),
+  'EstadoReclamo' => 
+  array (
+    'fields' => 
+    array (
+      'id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'id',
+      ),
+      'name' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
+      'deleted' => 
+      array (
+        'type' => 'bool',
+        'default' => false,
+      ),
+      'description' => 
+      array (
+        'type' => 'text',
+      ),
+      'createdAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'modifiedAt' => 
+      array (
+        'type' => 'datetime',
+        'notNull' => false,
+      ),
+      'createdById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'createdByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'createdBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'modifiedById' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'modifiedByName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'modifiedBy',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'assignedUserId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'assignedUserName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'assignedUser',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'teamsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'teams',
+        'isUnordered' => true,
+      ),
+      'teamsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'reclamosIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'reclamos',
+        'isUnordered' => true,
+      ),
+      'reclamosNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
+      'tasksIds' => 
+      array (
+        'type' => 'varchar',
+        'notStorable' => true,
+      ),
+      'tasksNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'callsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'callsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+      'meetingsIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+      ),
+      'meetingsNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+      ),
+    ),
+    'relations' => 
+    array (
+      'reclamos' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Reclamo',
+        'foreignKey' => 'estadoReclamoId',
+        'foreign' => 'estadoReclamo',
+      ),
+      'tasks' => 
+      array (
+        'type' => 'hasChildren',
+        'entity' => 'Task',
+        'foreignKey' => 'parentId',
+        'foreignType' => 'parentType',
+        'foreign' => 'parent',
+      ),
+      'calls' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Call',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'meetings' => 
+      array (
+        'type' => 'hasMany',
+        'entity' => 'Meeting',
+        'foreignKey' => 'parentId',
+        'foreign' => 'parent',
+      ),
+      'teams' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'Team',
+        'relationName' => 'EntityTeam',
+        'midKeys' => 
+        array (
+          0 => 'entityId',
+          1 => 'teamId',
+        ),
+        'conditions' => 
+        array (
+          'entityType' => 'EstadoReclamo',
         ),
         'additionalColumns' => 
         array (
@@ -20948,6 +21378,11 @@ return array (
         'type' => 'text',
         'len' => 500,
       ),
+      'estado' => 
+      array (
+        'type' => 'varchar',
+        'len' => 255,
+      ),
       'createdById' => 
       array (
         'dbType' => 'varchar',
@@ -20981,26 +21416,6 @@ return array (
         'type' => 'foreign',
         'notStorable' => false,
         'relation' => 'modifiedBy',
-        'foreign' => 
-        array (
-          0 => 'firstName',
-          1 => ' ',
-          2 => 'lastName',
-        ),
-      ),
-      'assignedUserId' => 
-      array (
-        'dbType' => 'varchar',
-        'len' => 24,
-        'type' => 'foreignId',
-        'index' => true,
-        'notNull' => false,
-      ),
-      'assignedUserName' => 
-      array (
-        'type' => 'foreign',
-        'notStorable' => false,
-        'relation' => 'assignedUser',
         'foreign' => 
         array (
           0 => 'firstName',
@@ -21067,6 +21482,72 @@ return array (
         'relation' => 'empresa',
         'foreign' => 'name',
       ),
+      'categoria1Id' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'categoria1Name' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'categoria1',
+        'foreign' => 'name',
+      ),
+      'userId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'userName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'user',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+      ),
+      'estadoReclamoId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'default' => '5cc34e67958f06a8f',
+        'notNull' => false,
+      ),
+      'estadoReclamoName' => 
+      array (
+        'type' => 'foreign',
+        'notStorable' => false,
+        'relation' => 'estadoReclamo',
+        'foreign' => 'name',
+      ),
+      'categoriaId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'categoriaName' => 
+      array (
+        'type' => 'foreign',
+        'relation' => 'categoria',
+        'foreign' => 'name',
+        'notStorable' => false,
+      ),
       'tasksIds' => 
       array (
         'type' => 'varchar',
@@ -21097,9 +21578,61 @@ return array (
         'type' => 'jsonObject',
         'notStorable' => true,
       ),
+      'assignedUserId' => 
+      array (
+        'dbType' => 'varchar',
+        'len' => 24,
+        'type' => 'foreignId',
+        'index' => true,
+        'notNull' => false,
+      ),
+      'assignedUserName' => 
+      array (
+        'type' => 'foreign',
+        'relation' => 'assignedUser',
+        'foreign' => 
+        array (
+          0 => 'firstName',
+          1 => ' ',
+          2 => 'lastName',
+        ),
+        'notStorable' => false,
+      ),
     ),
     'relations' => 
     array (
+      'estadoReclamo' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'EstadoReclamo',
+        'key' => 'estadoReclamoId',
+        'foreignKey' => 'id',
+        'foreign' => 'reclamos',
+      ),
+      'user' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'User',
+        'key' => 'userId',
+        'foreignKey' => 'id',
+        'foreign' => 'reclamos',
+      ),
+      'categoria1' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'Categoria',
+        'key' => 'categoria1Id',
+        'foreignKey' => 'id',
+        'foreign' => 'reclamos1',
+      ),
+      'categoria' => 
+      array (
+        'type' => 'belongsTo',
+        'entity' => 'Categoria',
+        'key' => 'categoriaId',
+        'foreignKey' => 'id',
+        'foreign' => 'reclamos',
+      ),
       'empresa' => 
       array (
         'type' => 'belongsTo',
@@ -21253,6 +21786,11 @@ return array (
         'type' => 'datetime',
         'notNull' => false,
       ),
+      'rolId' => 
+      array (
+        'type' => 'int',
+        'len' => 11,
+      ),
       'createdById' => 
       array (
         'dbType' => 'varchar',
@@ -21355,6 +21893,20 @@ return array (
         'notStorable' => true,
         'isLinkMultipleNameMap' => true,
       ),
+      'usersIds' => 
+      array (
+        'type' => 'jsonArray',
+        'notStorable' => true,
+        'isLinkMultipleIdList' => true,
+        'relation' => 'users',
+        'isUnordered' => true,
+      ),
+      'usersNames' => 
+      array (
+        'type' => 'jsonObject',
+        'notStorable' => true,
+        'isLinkMultipleNameMap' => true,
+      ),
       'tasksIds' => 
       array (
         'type' => 'varchar',
@@ -21388,6 +21940,14 @@ return array (
     ),
     'relations' => 
     array (
+      'users' => 
+      array (
+        'type' => 'manyMany',
+        'entity' => 'User',
+        'foreignKey' => 'id',
+        'foreign' => NULL,
+        'relationName' => 'userRol',
+      ),
       'trabajador' => 
       array (
         'type' => 'manyMany',
@@ -22311,6 +22871,11 @@ return array (
       array (
         'type' => 'varchar',
         'len' => 255,
+      ),
+      'subcategoriaId' => 
+      array (
+        'type' => 'int',
+        'len' => 11,
       ),
       'createdById' => 
       array (

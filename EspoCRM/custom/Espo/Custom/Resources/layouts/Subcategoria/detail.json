@@ -3,6 +3,12 @@
         "rows": [
             [
                 {
+                    "name": "subcategoriaId"
+                },
+                false
+            ],
+            [
+                {
                     "name": "categoria"
                 },
                 {

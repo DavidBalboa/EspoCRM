@@ -1,5 +1,9 @@
 [
     {
-        "name": "nombreCategoria"
+        "name": "categoriaId"
+    },
+    {
+        "name": "name",
+        "link": true
     }
 ]

@@ -6,22 +6,24 @@
         "name": "categoria"
     },
     {
-        "name": "name",
-        "link": true
-    },
-    {
-        "name": "descripcion"
-    },
-    {
-        "name": "direccion"
+        "name": "titulo"
     },
     {
         "name": "comuna"
     },
     {
-        "name": "modifiedBy"
+        "name": "rol"
+    },
+    {
+        "name": "empresa"
+    },
+    {
+        "name": "proveedor"
     },
     {
         "name": "validohasta"
+    },
+    {
+        "name": "modifiedBy"
     }
 ]

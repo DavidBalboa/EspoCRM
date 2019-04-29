@@ -1,19 +1,45 @@
 [
     {
-        "name": "userName"
-    },
-    {
-        "name": "firstName"
+        "name": "userName",
+        "width": 10,
+        "align": "left"
     },
     {
         "name": "name",
-        "width": 30,
-        "link": true
+        "width": 10,
+        "link": true,
+        "align": "left"
     },
     {
-        "name": "lastName"
+        "name": "lastName",
+        "width": 10,
+        "align": "left"
     },
     {
-        "name": "emailAddress"
+        "name": "emailAddress",
+        "width": 20,
+        "align": "left"
+    },
+    {
+        "name": "phoneNumber",
+        "width": 10,
+        "align": "left"
+    },
+    {
+        "name": "roles",
+        "width": 10,
+        "notSortable": true,
+        "align": "left"
+    },
+    {
+        "name": "empresas",
+        "width": 8,
+        "notSortable": true,
+        "align": "left"
+    },
+    {
+        "name": "isActive",
+        "width": 3,
+        "align": "left"
     }
 ]

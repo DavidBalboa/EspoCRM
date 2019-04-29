@@ -3,9 +3,11 @@
         "rows": [
             [
                 {
-                    "name": "nombreCategoria"
+                    "name": "categoriaId"
                 },
-                false
+                {
+                    "name": "nombreCategoria"
+                }
             ]
         ],
         "style": "default",

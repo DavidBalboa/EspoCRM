@@ -94,6 +94,14 @@
             "readOnly": false,
             "tooltip": false,
             "isCustom": true
+        },
+        "beneficios1": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -145,6 +153,13 @@
             "relationName": "beneficiarioEmpresa",
             "foreign": "beneficiarios",
             "entity": "Empresa",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficios1": {
+            "type": "hasMany",
+            "foreign": "beneficiario1",
+            "entity": "Beneficios",
             "audited": false,
             "isCustom": true
         }

@@ -9,10 +9,8 @@
             ],
             [
                 {
-                    "name": "titulo"
-                },
-                {
-                    "name": "name"
+                    "name": "titulo",
+                    "fullWidth": true
                 }
             ],
             [

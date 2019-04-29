@@ -62,11 +62,18 @@
             "isCustom": true
         },
         "categoria": {
-            "type": "link",
+            "type": "link"
+        },
+        "subcategoriaId": {
+            "type": "int",
             "required": false,
+            "min": null,
+            "max": null,
+            "disableFormatting": false,
             "audited": false,
             "readOnly": false,
-            "tooltip": false
+            "tooltip": false,
+            "isCustom": true
         }
     },
     "links": {

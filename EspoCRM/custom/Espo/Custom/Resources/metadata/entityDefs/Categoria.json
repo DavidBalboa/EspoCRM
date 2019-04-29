@@ -2,11 +2,8 @@
     "fields": {
         "name": {
             "type": "varchar",
-            "required": false,
-            "trim": false,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false
+            "required": true,
+            "trim": true
         },
         "description": {
             "type": "text"
@@ -47,7 +44,23 @@
             "tooltip": false,
             "isCustom": true
         },
-        "beneficios": {
+        "reclamos": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "reclamos1": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "beneficioss": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
             "layoutMassUpdateDisabled": true,
@@ -61,6 +74,15 @@
             "layoutMassUpdateDisabled": true,
             "noLoad": true,
             "importDisabled": true,
+            "isCustom": true
+        },
+        "categoriaId": {
+            "type": "int",
+            "required": false,
+            "disableFormatting": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
             "isCustom": true
         }
     },
@@ -101,7 +123,21 @@
             "foreign": "parent",
             "layoutRelationshipsDisabled": true
         },
-        "beneficios": {
+        "reclamos": {
+            "type": "hasMany",
+            "foreign": "categoria",
+            "entity": "Reclamo",
+            "audited": false,
+            "isCustom": true
+        },
+        "reclamos1": {
+            "type": "hasMany",
+            "foreign": "categoria1",
+            "entity": "Reclamo",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficioss": {
             "type": "hasMany",
             "foreign": "categoria",
             "entity": "Beneficios",

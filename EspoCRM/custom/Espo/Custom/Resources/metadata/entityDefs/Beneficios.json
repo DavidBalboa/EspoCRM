@@ -112,9 +112,6 @@
         "comuna": {
             "type": "link"
         },
-        "categoria": {
-            "type": "link"
-        },
         "doctosBeneficios": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
@@ -133,6 +130,12 @@
             "readOnly": false,
             "tooltip": false,
             "isCustom": true
+        },
+        "beneficiario1": {
+            "type": "link"
+        },
+        "categoria": {
+            "type": "link"
         }
     },
     "links": {
@@ -200,17 +203,24 @@
             "audited": false,
             "isCustom": true
         },
-        "categoria": {
-            "type": "belongsTo",
-            "foreign": "beneficios",
-            "entity": "Categoria",
-            "audited": false,
-            "isCustom": true
-        },
         "doctosBeneficios": {
             "type": "hasMany",
             "foreign": "beneficios",
             "entity": "DoctosBeneficio",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficiario1": {
+            "type": "belongsTo",
+            "foreign": "beneficios1",
+            "entity": "Beneficiario",
+            "audited": false,
+            "isCustom": true
+        },
+        "categoria": {
+            "type": "belongsTo",
+            "foreign": "beneficioss",
+            "entity": "Categoria",
             "audited": false,
             "isCustom": true
         }
