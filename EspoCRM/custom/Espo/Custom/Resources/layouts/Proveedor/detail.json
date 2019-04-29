@@ -1,0 +1,16 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "rut"
+                },
+                {
+                    "name": "name"
+                }
+            ]
+        ],
+        "style": "default",
+        "label": "General"
+    }
+]

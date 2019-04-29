@@ -1,0 +1,20 @@
+[
+    {
+        "rows": [
+            [
+                {
+                    "name": "rut",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "name"
+                },
+                false
+            ]
+        ],
+        "style": "default",
+        "label": ""
+    }
+]
