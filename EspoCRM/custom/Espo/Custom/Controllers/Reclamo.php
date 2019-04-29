@@ -160,6 +160,15 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         }
         $motivoReclamoId = $motivoReclamo->get('id');
         $GLOBALS['log']->debug("motivoReclamo: " . $motivoReclamoId,[]);
+        
+        $estadoReclamo = $this->getEntityManager()->getRepository('EstadoReclamo')->where([
+            'estado_reclamo.estado_reclamo_es_inicial' => 1
+        ])->findOne();
+        if ($estadoReclamo == null){
+            //throw new BadRequest();
+            return "{\"errorCode\": \"00001\", \"errorDescription\": \"El estado por defecto no existe\"}";
+        }
+        $estadoReclamoId = $estadoReclamo->get('id');
         /*
         $result = $this->getContainer()->get('dataManager')->rebuild();
         
@@ -174,6 +183,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         $reclamo->set('motivoReclamoId', $motivoReclamoId);
         $reclamo->set('reclamoTitulo', $request->get('reclamoTitulo'));
         $reclamo->set('reclamoObservacion', $request->get('reclamoObservacion'));
+        $reclamo->set('estadoReclamoId', $estadoReclamoId);
         
         $this->getEntityManager()->saveEntity($reclamo);
         $GLOBALS['log']->debug("saveEntity: " . gettype($reclamo),[]);
