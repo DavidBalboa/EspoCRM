@@ -3969,6 +3969,34 @@ return (object) [
             'color' => NULL,
             'iconClass' => NULL
         ],
+        'EstadoReclamo' => (object) [
+            'controller' => 'controllers/record',
+            'boolFilterList' => [
+                0 => 'onlyMy'
+            ],
+            'sidePanels' => (object) [
+                'detail' => [
+                    0 => (object) [
+                        'name' => 'activities',
+                        'label' => 'Activities',
+                        'view' => 'crm:views/record/panels/activities',
+                        'aclScope' => 'Activities'
+                    ],
+                    1 => (object) [
+                        'name' => 'history',
+                        'label' => 'History',
+                        'view' => 'crm:views/record/panels/history',
+                        'aclScope' => 'Activities'
+                    ],
+                    2 => (object) [
+                        'name' => 'tasks',
+                        'label' => 'Tasks',
+                        'view' => 'crm:views/record/panels/tasks',
+                        'aclScope' => 'Task'
+                    ]
+                ]
+            ]
+        ],
         'Formularios' => (object) [
             'controller' => 'controllers/record',
             'boolFilterList' => [
@@ -6088,16 +6116,17 @@ return (object) [
                         4 => 'Case',
                         5 => 'Formularios',
                         6 => 'Solicitudes',
-                        7 => 'Categoria',
-                        8 => 'Subcategoria',
-                        9 => 'Beneficios',
-                        10 => 'DoctosBeneficio',
-                        11 => 'Ciudad',
-                        12 => 'Comuna',
-                        13 => 'Rol',
-                        14 => 'Reclamo',
-                        15 => 'MotivoReclamo',
-                        16 => 'Beneficiario'
+                        7 => 'Subcategoria',
+                        8 => 'Beneficios',
+                        9 => 'DoctosBeneficio',
+                        10 => 'Ciudad',
+                        11 => 'Comuna',
+                        12 => 'Rol',
+                        13 => 'Reclamo',
+                        14 => 'MotivoReclamo',
+                        15 => 'Beneficiario',
+                        16 => 'Categoria',
+                        17 => 'EstadoReclamo'
                     ]
                 ],
                 'dateSent' => (object) [
@@ -8394,7 +8423,8 @@ return (object) [
                 'users' => (object) [
                     'type' => 'hasMany',
                     'entity' => 'User',
-                    'foreign' => 'roles'
+                    'foreign' => 'roles',
+                    'audited' => false
                 ],
                 'teams' => (object) [
                     'type' => 'hasMany',
@@ -10098,7 +10128,9 @@ return (object) [
                 ],
                 'roles' => (object) [
                     'type' => 'linkMultiple',
-                    'tooltip' => true
+                    'tooltip' => true,
+                    'required' => true,
+                    'readOnly' => false
                 ],
                 'portals' => (object) [
                     'type' => 'linkMultiple',
@@ -10165,6 +10197,22 @@ return (object) [
                     'layoutDetailDisabled' => true,
                     'directAccessDisabled' => true
                 ],
+                'reclamos' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'empresas' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
+                ],
                 'emailAddressIsOptedOut' => (object) [
                     'type' => 'bool',
                     'notStorable' => true,
@@ -10199,7 +10247,8 @@ return (object) [
                     'type' => 'hasMany',
                     'entity' => 'Role',
                     'foreign' => 'users',
-                    'layoutRelationshipsDisabled' => true
+                    'layoutRelationshipsDisabled' => true,
+                    'audited' => false
                 ],
                 'portals' => (object) [
                     'type' => 'hasMany',
@@ -10264,6 +10313,21 @@ return (object) [
                     'notStorable' => true,
                     'readOnly' => true,
                     'disabled' => true
+                ],
+                'reclamos' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'user',
+                    'entity' => 'Reclamo',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'empresas' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'userEmpresa',
+                    'foreign' => 'users',
+                    'entity' => 'Empresa',
+                    'audited' => false,
+                    'isCustom' => true
                 ]
             ],
             'collection' => (object) [
@@ -10755,16 +10819,17 @@ return (object) [
                         4 => 'Case',
                         5 => 'Formularios',
                         6 => 'Solicitudes',
-                        7 => 'Categoria',
-                        8 => 'Subcategoria',
-                        9 => 'Beneficios',
-                        10 => 'DoctosBeneficio',
-                        11 => 'Ciudad',
-                        12 => 'Comuna',
-                        13 => 'Rol',
-                        14 => 'Reclamo',
-                        15 => 'MotivoReclamo',
-                        16 => 'Beneficiario'
+                        7 => 'Subcategoria',
+                        8 => 'Beneficios',
+                        9 => 'DoctosBeneficio',
+                        10 => 'Ciudad',
+                        11 => 'Comuna',
+                        12 => 'Rol',
+                        13 => 'Reclamo',
+                        14 => 'MotivoReclamo',
+                        15 => 'Beneficiario',
+                        16 => 'Categoria',
+                        17 => 'EstadoReclamo'
                     ]
                 ],
                 'account' => (object) [
@@ -13385,16 +13450,17 @@ return (object) [
                         4 => 'Case',
                         5 => 'Formularios',
                         6 => 'Solicitudes',
-                        7 => 'Categoria',
-                        8 => 'Subcategoria',
-                        9 => 'Beneficios',
-                        10 => 'DoctosBeneficio',
-                        11 => 'Ciudad',
-                        12 => 'Comuna',
-                        13 => 'Rol',
-                        14 => 'Reclamo',
-                        15 => 'MotivoReclamo',
-                        16 => 'Beneficiario'
+                        7 => 'Subcategoria',
+                        8 => 'Beneficios',
+                        9 => 'DoctosBeneficio',
+                        10 => 'Ciudad',
+                        11 => 'Comuna',
+                        12 => 'Rol',
+                        13 => 'Reclamo',
+                        14 => 'MotivoReclamo',
+                        15 => 'Beneficiario',
+                        16 => 'Categoria',
+                        17 => 'EstadoReclamo'
                     ]
                 ],
                 'account' => (object) [
@@ -14423,16 +14489,17 @@ return (object) [
                         4 => 'Case',
                         5 => 'Formularios',
                         6 => 'Solicitudes',
-                        7 => 'Categoria',
-                        8 => 'Subcategoria',
-                        9 => 'Beneficios',
-                        10 => 'DoctosBeneficio',
-                        11 => 'Ciudad',
-                        12 => 'Comuna',
-                        13 => 'Rol',
-                        14 => 'Reclamo',
-                        15 => 'MotivoReclamo',
-                        16 => 'Beneficiario'
+                        7 => 'Subcategoria',
+                        8 => 'Beneficios',
+                        9 => 'DoctosBeneficio',
+                        10 => 'Ciudad',
+                        11 => 'Comuna',
+                        12 => 'Rol',
+                        13 => 'Reclamo',
+                        14 => 'MotivoReclamo',
+                        15 => 'Beneficiario',
+                        16 => 'Categoria',
+                        17 => 'EstadoReclamo'
                     ]
                 ],
                 'account' => (object) [
@@ -14649,6 +14716,14 @@ return (object) [
                     'readOnly' => false,
                     'tooltip' => false,
                     'isCustom' => true
+                ],
+                'beneficios1' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
                 ]
             ],
             'links' => (object) [
@@ -14700,6 +14775,13 @@ return (object) [
                     'relationName' => 'beneficiarioEmpresa',
                     'foreign' => 'beneficiarios',
                     'entity' => 'Empresa',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'beneficios1' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'beneficiario1',
+                    'entity' => 'Beneficios',
                     'audited' => false,
                     'isCustom' => true
                 ]
@@ -14837,9 +14919,6 @@ return (object) [
                 'comuna' => (object) [
                     'type' => 'link'
                 ],
-                'categoria' => (object) [
-                    'type' => 'link'
-                ],
                 'doctosBeneficios' => (object) [
                     'type' => 'linkMultiple',
                     'layoutDetailDisabled' => true,
@@ -14858,6 +14937,12 @@ return (object) [
                     'readOnly' => false,
                     'tooltip' => false,
                     'isCustom' => true
+                ],
+                'beneficiario1' => (object) [
+                    'type' => 'link'
+                ],
+                'categoria' => (object) [
+                    'type' => 'link'
                 ]
             ],
             'links' => (object) [
@@ -14925,17 +15010,24 @@ return (object) [
                     'audited' => false,
                     'isCustom' => true
                 ],
-                'categoria' => (object) [
-                    'type' => 'belongsTo',
-                    'foreign' => 'beneficios',
-                    'entity' => 'Categoria',
-                    'audited' => false,
-                    'isCustom' => true
-                ],
                 'doctosBeneficios' => (object) [
                     'type' => 'hasMany',
                     'foreign' => 'beneficios',
                     'entity' => 'DoctosBeneficio',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'beneficiario1' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'beneficios1',
+                    'entity' => 'Beneficiario',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'categoria' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'beneficioss',
+                    'entity' => 'Categoria',
                     'audited' => false,
                     'isCustom' => true
                 ]
@@ -14963,11 +15055,8 @@ return (object) [
             'fields' => (object) [
                 'name' => (object) [
                     'type' => 'varchar',
-                    'required' => false,
-                    'trim' => false,
-                    'audited' => false,
-                    'readOnly' => false,
-                    'tooltip' => false
+                    'required' => true,
+                    'trim' => true
                 ],
                 'description' => (object) [
                     'type' => 'text'
@@ -15008,7 +15097,23 @@ return (object) [
                     'tooltip' => false,
                     'isCustom' => true
                 ],
-                'beneficios' => (object) [
+                'reclamos' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'reclamos1' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'beneficioss' => (object) [
                     'type' => 'linkMultiple',
                     'layoutDetailDisabled' => true,
                     'layoutMassUpdateDisabled' => true,
@@ -15022,6 +15127,15 @@ return (object) [
                     'layoutMassUpdateDisabled' => true,
                     'noLoad' => true,
                     'importDisabled' => true,
+                    'isCustom' => true
+                ],
+                'categoriaId' => (object) [
+                    'type' => 'int',
+                    'required' => false,
+                    'disableFormatting' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
                     'isCustom' => true
                 ]
             ],
@@ -15062,7 +15176,21 @@ return (object) [
                     'foreign' => 'parent',
                     'layoutRelationshipsDisabled' => true
                 ],
-                'beneficios' => (object) [
+                'reclamos' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'categoria',
+                    'entity' => 'Reclamo',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'reclamos1' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'categoria1',
+                    'entity' => 'Reclamo',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'beneficioss' => (object) [
                     'type' => 'hasMany',
                     'foreign' => 'categoria',
                     'entity' => 'Beneficios',
@@ -15542,11 +15670,20 @@ return (object) [
                 'empresaId' => (object) [
                     'type' => 'int',
                     'required' => false,
+                    'min' => NULL,
                     'max' => 99999999,
                     'disableFormatting' => false,
                     'audited' => false,
                     'readOnly' => false,
                     'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'users' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
                     'isCustom' => true
                 ]
             ],
@@ -15598,6 +15735,14 @@ return (object) [
                     'entity' => 'Reclamo',
                     'audited' => false,
                     'isCustom' => true
+                ],
+                'users' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'userEmpresa',
+                    'foreign' => 'empresas',
+                    'entity' => 'User',
+                    'audited' => false,
+                    'isCustom' => true
                 ]
             ],
             'collection' => (object) [
@@ -15607,6 +15752,116 @@ return (object) [
                     0 => 'name'
                 ],
                 'fullTextSearch' => false
+            ],
+            'indexes' => (object) [
+                'name' => (object) [
+                    'columns' => [
+                        0 => 'name',
+                        1 => 'deleted'
+                    ]
+                ],
+                'assignedUser' => (object) [
+                    'columns' => [
+                        0 => 'assignedUserId',
+                        1 => 'deleted'
+                    ]
+                ]
+            ]
+        ],
+        'EstadoReclamo' => (object) [
+            'fields' => (object) [
+                'name' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true
+                ],
+                'description' => (object) [
+                    'type' => 'text'
+                ],
+                'createdAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'modifiedAt' => (object) [
+                    'type' => 'datetime',
+                    'readOnly' => true
+                ],
+                'createdBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'link',
+                    'readOnly' => true,
+                    'view' => 'views/fields/user'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'link',
+                    'required' => true,
+                    'view' => 'views/fields/assigned-user'
+                ],
+                'teams' => (object) [
+                    'type' => 'linkMultiple',
+                    'view' => 'views/fields/teams'
+                ],
+                'reclamos' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'noLoad' => true,
+                    'importDisabled' => true,
+                    'isCustom' => true
+                ]
+            ],
+            'links' => (object) [
+                'createdBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'modifiedBy' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'assignedUser' => (object) [
+                    'type' => 'belongsTo',
+                    'entity' => 'User'
+                ],
+                'teams' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Team',
+                    'relationName' => 'EntityTeam',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'meetings' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Meeting',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'calls' => (object) [
+                    'type' => 'hasMany',
+                    'entity' => 'Call',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'tasks' => (object) [
+                    'type' => 'hasChildren',
+                    'entity' => 'Task',
+                    'foreign' => 'parent',
+                    'layoutRelationshipsDisabled' => true
+                ],
+                'reclamos' => (object) [
+                    'type' => 'hasMany',
+                    'foreign' => 'estadoReclamo',
+                    'entity' => 'Reclamo',
+                    'audited' => false,
+                    'isCustom' => true
+                ]
+            ],
+            'collection' => (object) [
+                'sortBy' => 'createdAt',
+                'asc' => false
             ],
             'indexes' => (object) [
                 'name' => (object) [
@@ -16250,11 +16505,6 @@ return (object) [
                     'readOnly' => true,
                     'view' => 'views/fields/user'
                 ],
-                'assignedUser' => (object) [
-                    'type' => 'link',
-                    'required' => true,
-                    'view' => 'views/fields/assigned-user'
-                ],
                 'teams' => (object) [
                     'type' => 'linkMultiple',
                     'view' => 'views/fields/teams'
@@ -16300,6 +16550,32 @@ return (object) [
                 ],
                 'empresa' => (object) [
                     'type' => 'link'
+                ],
+                'categoria1' => (object) [
+                    'type' => 'link'
+                ],
+                'user' => (object) [
+                    'type' => 'link'
+                ],
+                'estado' => (object) [
+                    'type' => 'varchar',
+                    'required' => true,
+                    'trim' => true,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'estadoReclamo' => (object) [
+                    'type' => 'link',
+                    'defaultAttributes' => (object) [
+                        'estadoReclamoId' => '5cc34e67958f06a8f',
+                        'estadoReclamoName' => 'Creado'
+                    ],
+                    'required' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false
                 ]
             ],
             'links' => (object) [
@@ -16357,6 +16633,34 @@ return (object) [
                     'type' => 'belongsTo',
                     'foreign' => 'reclamosEmpresa',
                     'entity' => 'Empresa',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'categoria' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'reclamos',
+                    'entity' => 'Categoria',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'categoria1' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'reclamos1',
+                    'entity' => 'Categoria',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'user' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'reclamos',
+                    'entity' => 'User',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'estadoReclamo' => (object) [
+                    'type' => 'belongsTo',
+                    'foreign' => 'reclamos',
+                    'entity' => 'EstadoReclamo',
                     'audited' => false,
                     'isCustom' => true
                 ]
@@ -16432,6 +16736,23 @@ return (object) [
                     'importDisabled' => true,
                     'noLoad' => true,
                     'isCustom' => true
+                ],
+                'rolId' => (object) [
+                    'type' => 'int',
+                    'required' => true,
+                    'disableFormatting' => false,
+                    'audited' => false,
+                    'readOnly' => false,
+                    'tooltip' => false,
+                    'isCustom' => true
+                ],
+                'users' => (object) [
+                    'type' => 'linkMultiple',
+                    'layoutDetailDisabled' => true,
+                    'layoutMassUpdateDisabled' => true,
+                    'importDisabled' => true,
+                    'noLoad' => true,
+                    'isCustom' => true
                 ]
             ],
             'links' => (object) [
@@ -16483,6 +16804,14 @@ return (object) [
                     'relationName' => 'trabajadorRol',
                     'foreign' => 'rol',
                     'entity' => 'Trabajador',
+                    'audited' => false,
+                    'isCustom' => true
+                ],
+                'users' => (object) [
+                    'type' => 'hasMany',
+                    'relationName' => 'userRol',
+                    'foreign' => 'rols',
+                    'entity' => 'User',
                     'audited' => false,
                     'isCustom' => true
                 ]
@@ -16903,11 +17232,18 @@ return (object) [
                     'isCustom' => true
                 ],
                 'categoria' => (object) [
-                    'type' => 'link',
+                    'type' => 'link'
+                ],
+                'subcategoriaId' => (object) [
+                    'type' => 'int',
                     'required' => false,
+                    'min' => NULL,
+                    'max' => NULL,
+                    'disableFormatting' => false,
                     'audited' => false,
                     'readOnly' => false,
-                    'tooltip' => false
+                    'tooltip' => false,
+                    'isCustom' => true
                 ]
             ],
             'links' => (object) [
@@ -19309,6 +19645,29 @@ return (object) [
             'object' => true,
             'isCustom' => true,
             'statusField' => NULL
+        ],
+        'EstadoReclamo' => (object) [
+            'entity' => true,
+            'layouts' => true,
+            'tab' => true,
+            'acl' => true,
+            'aclPortal' => true,
+            'aclPortalLevelList' => [
+                0 => 'all',
+                1 => 'account',
+                2 => 'contact',
+                3 => 'own',
+                4 => 'no'
+            ],
+            'customizable' => true,
+            'importable' => true,
+            'notifications' => true,
+            'stream' => false,
+            'disabled' => false,
+            'type' => 'BasePlus',
+            'module' => 'Custom',
+            'object' => true,
+            'isCustom' => true
         ],
         'Formularios' => (object) [
             'entity' => true,
