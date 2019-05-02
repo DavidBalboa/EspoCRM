@@ -59,9 +59,11 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             //  Motivo del reclamo
             $motivoReclamo = $this->getEntityManager()->getRepository('MotivoReclamo')->get($entity->get('motivoReclamoId'));
             $motivoReclamoId = $motivoReclamo->get('motivoReclamoId');
+            $motivoReclamoDescripcion = $motivoReclamo->get('name');
             //  Estado del reclamo
             $estadoReclamo = $this->getEntityManager()->getRepository('EstadoReclamo')->get($entity->get('estadoReclamoId'));
             $estadoReclamoId = $estadoReclamo->get('estadoReclamoId');
+            $estadoReclamoNombre = $estadoReclamo->get('name');
             //  Fecha de cracion del reclamo
             $createdAt = $entity->get('createdAt');
             //  Fecha de modificacion del reclamo
@@ -78,7 +80,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             //$GLOBALS['log']->debug("tmp: " . ($tmp),[]);
             //$tmp .= 
             //$list .= "{" . . "}";
-            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\", \"createdAt\": \"$createdAt\", \"estadoReclamoId\": \"$estadoReclamoId\",\"modifiedAt\": \"$modifiedAt\"}";
+            $tmp = $comma . "{\"reclamoId\": \"$reclamoId\", \"reclamoObservacion\": \"$reclamoObservacion\", \"reclamoTitulo\": \"$reclamoTitulo\", \"motivoReclamoName\": \"$motivoReclamoName\", \"beneficiarioName\": \"$beneficiarioName\", \"beneficiarioId\": \"$beneficiarioId\", \"motivoReclamoId\":\"$motivoReclamoId\", \"createdAt\": \"$createdAt\", \"estadoReclamoId\": \"$estadoReclamoId\",\"modifiedAt\": \"$modifiedAt\", \"estadoReclamoNombre\":\"$estadoReclamoNombre\", \"motivoReclamoDescripcion\": \"$motivoReclamoDescripcion\"}";
             $list .= $tmp;
             $total++;
             if ($total > 0) { $comma = ","; }

@@ -1,0 +1,6 @@
+{
+    "fields": {
+        "estadoReclamoId": "EstadoReclamoId",
+        "estadoReclamoEsInicial": "EstadoReclamoEsInicial"
+    }
+}
