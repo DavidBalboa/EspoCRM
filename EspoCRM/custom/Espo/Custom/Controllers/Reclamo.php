@@ -171,6 +171,7 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
             return "{\"errorCode\": \"00001\", \"errorDescription\": \"El estado por defecto no existe\"}";
         }
         $estadoReclamoId = $estadoReclamo->get('id');
+        $GLOBALS['log']->debug("estadoReclamoId: " . $estadoReclamoId,[]);
         /*
         $result = $this->getContainer()->get('dataManager')->rebuild();
         
@@ -179,12 +180,12 @@ class Reclamo extends \Espo\Core\Templates\Controllers\BasePlus
         //$reclamo = $this->getEntityManager()->saveEntity($contact);
         //$entity = $this->getEntityManager()->getEntity('ExternalAccount', $params['id']);
         $reclamo = $this->getEntityManager()->getEntity('Reclamo');
-        $reclamo->set($data);
+        //$reclamo->set($data);
         $reclamo->set('beneficiarioId', $beneficiarioId);
         $reclamo->set('empresaId', $empresaId);
         $reclamo->set('motivoReclamoId', $motivoReclamoId);
-        $reclamo->set('reclamoTitulo', $request->get('reclamoTitulo'));
-        $reclamo->set('reclamoObservacion', $request->get('reclamoObservacion'));
+        $reclamo->set('reclamoTitulo', $data->reclamoTitulo);
+        $reclamo->set('reclamoObservacion', $data->reclamoObservacion);
         $reclamo->set('estadoReclamoId', $estadoReclamoId);
         
         $this->getEntityManager()->saveEntity($reclamo);
