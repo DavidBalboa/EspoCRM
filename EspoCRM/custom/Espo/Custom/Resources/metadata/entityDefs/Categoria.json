@@ -60,14 +60,6 @@
             "importDisabled": true,
             "isCustom": true
         },
-        "beneficioss": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
-        },
         "subcategorias": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
@@ -83,6 +75,22 @@
             "audited": false,
             "readOnly": false,
             "tooltip": false,
+            "isCustom": true
+        },
+        "solicitudes": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "beneficios": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
             "isCustom": true
         }
     },
@@ -137,17 +145,24 @@
             "audited": false,
             "isCustom": true
         },
-        "beneficioss": {
-            "type": "hasMany",
-            "foreign": "categoria",
-            "entity": "Beneficios",
-            "audited": false,
-            "isCustom": true
-        },
         "subcategorias": {
             "type": "hasMany",
             "foreign": "categoria",
             "entity": "Subcategoria",
+            "audited": false,
+            "isCustom": true
+        },
+        "solicitudes": {
+            "type": "hasMany",
+            "foreign": "categoria",
+            "entity": "Solicitudes",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficios": {
+            "type": "hasMany",
+            "foreign": "categoria",
+            "entity": "Beneficios",
             "audited": false,
             "isCustom": true
         }

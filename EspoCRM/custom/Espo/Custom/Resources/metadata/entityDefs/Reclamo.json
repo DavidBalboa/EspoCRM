@@ -97,6 +97,12 @@
             "audited": false,
             "readOnly": false,
             "tooltip": false
+        },
+        "beneficios": {
+            "type": "link"
+        },
+        "email": {
+            "type": "link"
         }
     },
     "links": {
@@ -184,11 +190,30 @@
             "entity": "EstadoReclamo",
             "audited": false,
             "isCustom": true
+        },
+        "beneficios": {
+            "type": "belongsTo",
+            "foreign": "reclamos",
+            "entity": "Beneficios",
+            "audited": false,
+            "isCustom": true
+        },
+        "email": {
+            "type": "belongsTo",
+            "foreign": "reclamos",
+            "entity": "Email",
+            "audited": false,
+            "isCustom": true
         }
     },
     "collection": {
         "sortBy": "createdAt",
-        "asc": false
+        "asc": false,
+        "textFilterFields": [
+            "reclamoId",
+            "reclamoTitulo"
+        ],
+        "fullTextSearch": false
     },
     "indexes": {
         "name": {

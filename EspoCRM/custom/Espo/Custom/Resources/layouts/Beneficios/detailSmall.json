@@ -3,8 +3,16 @@
         "rows": [
             [
                 {
-                    "name": "categoria",
-                    "fullWidth": true
+                    "name": "beneficioId"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "categoria"
+                },
+                {
+                    "name": "empresa"
                 }
             ],
             [
@@ -14,8 +22,44 @@
                 }
             ],
             [
-                false,
-                false
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "direccionStreet",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "direccionState"
+                },
+                {
+                    "name": "direccionCity"
+                }
+            ],
+            [
+                {
+                    "name": "pasoapaso"
+                },
+                {
+                    "name": "validohasta"
+                }
+            ],
+            [
+                {
+                    "name": "titulolegal",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "descripcionlegal",
+                    "fullWidth": true
+                }
             ]
         ],
         "style": "default",

@@ -45,14 +45,6 @@
             "noLoad": true,
             "importDisabled": true,
             "isCustom": true
-        },
-        "beneficios": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
         }
     },
     "links": {
@@ -103,13 +95,6 @@
             "type": "hasMany",
             "foreign": "comunarelacion",
             "entity": "Trabajador",
-            "audited": false,
-            "isCustom": true
-        },
-        "beneficios": {
-            "type": "hasMany",
-            "foreign": "comuna",
-            "entity": "Beneficios",
             "audited": false,
             "isCustom": true
         }

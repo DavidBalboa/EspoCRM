@@ -1,5 +1,8 @@
 [
     {
+        "name": "beneficioId"
+    },
+    {
         "name": "createdAt"
     },
     {
@@ -9,21 +12,19 @@
         "name": "titulo"
     },
     {
-        "name": "comuna"
-    },
-    {
-        "name": "rol"
+        "name": "roles",
+        "notSortable": true
     },
     {
         "name": "empresa"
     },
     {
-        "name": "proveedor"
-    },
-    {
         "name": "validohasta"
     },
     {
-        "name": "modifiedBy"
+        "name": "modifiedAt"
+    },
+    {
+        "name": "assignedUser"
     }
 ]

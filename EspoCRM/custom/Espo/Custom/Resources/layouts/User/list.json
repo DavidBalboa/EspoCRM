@@ -21,25 +21,23 @@
         "align": "left"
     },
     {
-        "name": "phoneNumber",
-        "width": 10,
-        "align": "left"
-    },
-    {
         "name": "roles",
         "width": 10,
         "notSortable": true,
         "align": "left"
     },
     {
-        "name": "empresas",
-        "width": 8,
-        "notSortable": true,
+        "name": "phoneNumber",
+        "width": 10,
         "align": "left"
     },
     {
         "name": "isActive",
         "width": 3,
         "align": "left"
+    },
+    {
+        "name": "teams",
+        "notSortable": true
     }
 ]

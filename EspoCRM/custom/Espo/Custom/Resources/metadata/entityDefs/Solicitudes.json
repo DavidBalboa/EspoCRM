@@ -116,82 +116,12 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "rut": {
-            "type": "varchar",
-            "required": true,
-            "trim": false,
-            "audited": false,
-            "isPersonalData": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "estadoSolicitud": {
-            "type": "enum",
-            "required": true,
-            "options": [
-                "Aprobado",
-                "En proceso",
-                "Rechazado",
-                "Cancelado"
-            ],
-            "audited": true,
-            "isPersonalData": false,
-            "default": "Aprobado",
-            "isSorted": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "beneficio": {
-            "type": "varchar",
-            "required": false,
-            "trim": false,
-            "isPersonalData": false,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
         "carga": {
             "type": "multiEnum",
             "storeArrayValues": true,
             "required": false,
             "isPersonalData": false,
             "options": false,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "ciudad": {
-            "type": "enum",
-            "required": false,
-            "isPersonalData": false,
-            "options": false,
-            "isSorted": false,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "categoria": {
-            "type": "enum",
-            "required": false,
-            "isPersonalData": false,
-            "options": false,
-            "isSorted": false,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "subcategoria": {
-            "type": "enum",
-            "required": false,
-            "isPersonalData": false,
-            "options": false,
-            "isSorted": false,
             "audited": false,
             "readOnly": false,
             "tooltip": false,
@@ -206,28 +136,51 @@
             "tooltip": false,
             "isCustom": true
         },
-        "numeroSolicitud": {
+        "beneficiario": {
+            "type": "link"
+        },
+        "empresa": {
+            "type": "link"
+        },
+        "categoria": {
+            "type": "link"
+        },
+        "solicitudTitulo": {
+            "type": "text",
+            "required": false,
+            "rows": 30,
+            "lengthOfCut": 100,
+            "isPersonalData": false,
+            "seeMoreDisabled": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "user": {
+            "type": "link"
+        },
+        "solicitudesId": {
             "type": "number",
             "len": 36,
             "notNull": false,
             "unique": false,
             "nextNumber": 5,
-            "padLength": 5,
+            "padLength": 8,
             "tooltip": false,
             "isCustom": true
         },
-        "fechahasta": {
-            "notNull": false,
-            "type": "date",
+        "estadoSolicitud": {
+            "type": "link",
+            "defaultAttributes": {
+                "estadoSolicitudId": "5cc8b78a5d1c90818",
+                "estadoSolicitudName": "Creado"
+            },
             "required": false,
-            "isPersonalData": false,
-            "useNumericFormat": false,
             "audited": false,
             "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
+            "tooltip": false
         },
-        "relacionsubcategoria": {
+        "beneficios": {
             "type": "link"
         }
     },
@@ -273,16 +226,51 @@
             "entity": "Attachment",
             "skipOrmDefs": true
         },
-        "relacionsubcategoria": {
+        "beneficiario": {
             "type": "belongsTo",
-            "foreign": "relacionsolicitudes",
-            "entity": "Subcategoria",
+            "foreign": "solicitudess",
+            "entity": "Beneficiario",
+            "audited": false,
+            "isCustom": true
+        },
+        "empresa": {
+            "type": "belongsTo",
+            "foreign": "solicitudess",
+            "entity": "Empresa",
+            "audited": false,
+            "isCustom": true
+        },
+        "categoria": {
+            "type": "belongsTo",
+            "foreign": "solicitudes",
+            "entity": "Categoria",
+            "audited": false,
+            "isCustom": true
+        },
+        "user": {
+            "type": "belongsTo",
+            "foreign": "solicitudess",
+            "entity": "User",
+            "audited": false,
+            "isCustom": true
+        },
+        "estadoSolicitud": {
+            "type": "belongsTo",
+            "foreign": "solicitudes",
+            "entity": "EstadoSolicitud",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficios": {
+            "type": "belongsTo",
+            "foreign": "solicitudes",
+            "entity": "Beneficios",
             "audited": false,
             "isCustom": true
         }
     },
     "collection": {
-        "sortBy": "createdAt",
+        "sortBy": "name",
         "asc": false,
         "textFilterFields": [
             "name",

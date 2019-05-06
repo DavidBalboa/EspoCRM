@@ -19,6 +19,5 @@
     "type": "BasePlus",
     "module": "Custom",
     "object": true,
-    "isCustom": true,
-    "statusField": null
+    "isCustom": true
 }

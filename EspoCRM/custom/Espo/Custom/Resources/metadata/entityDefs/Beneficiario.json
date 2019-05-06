@@ -36,7 +36,10 @@
         },
         "teams": {
             "type": "linkMultiple",
-            "view": "views/fields/teams"
+            "view": "views/fields/teams",
+            "required": false,
+            "readOnly": false,
+            "tooltip": false
         },
         "beneficiarioId": {
             "type": "int",
@@ -45,7 +48,7 @@
             "max": 99999999,
             "disableFormatting": false,
             "audited": false,
-            "readOnly": false,
+            "readOnly": true,
             "tooltip": false,
             "isCustom": true
         },
@@ -95,12 +98,69 @@
             "tooltip": false,
             "isCustom": true
         },
-        "beneficios1": {
+        "solicitudess": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
             "layoutMassUpdateDisabled": true,
             "noLoad": true,
             "importDisabled": true,
+            "isCustom": true
+        },
+        "direccin": {
+            "type": "address",
+            "tooltip": false,
+            "isCustom": true
+        },
+        "email": {
+            "type": "varchar",
+            "required": false,
+            "trim": true,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "telefono": {
+            "notNull": false,
+            "type": "float",
+            "required": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "celular": {
+            "notNull": false,
+            "type": "float",
+            "required": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "direccinStreet": {
+            "required": false,
+            "seeMoreDisabled": false,
+            "readOnly": false,
+            "tooltip": false
+        },
+        "nacionalidad": {
+            "type": "varchar",
+            "required": false,
+            "trim": true,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "fechaNacimiento": {
+            "notNull": false,
+            "type": "date",
+            "required": false,
+            "useNumericFormat": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
             "isCustom": true
         }
     },
@@ -156,17 +216,22 @@
             "audited": false,
             "isCustom": true
         },
-        "beneficios1": {
+        "solicitudess": {
             "type": "hasMany",
-            "foreign": "beneficiario1",
-            "entity": "Beneficios",
+            "foreign": "beneficiario",
+            "entity": "Solicitudes",
             "audited": false,
             "isCustom": true
         }
     },
     "collection": {
         "sortBy": "createdAt",
-        "asc": false
+        "asc": false,
+        "textFilterFields": [
+            "name",
+            "beneficiarioId"
+        ],
+        "fullTextSearch": true
     },
     "indexes": {
         "name": {

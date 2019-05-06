@@ -10,7 +10,6 @@
                 "Formularios",
                 "Solicitudes",
                 "Subcategoria",
-                "Beneficios",
                 "DoctosBeneficio",
                 "Ciudad",
                 "Comuna",
@@ -19,7 +18,9 @@
                 "MotivoReclamo",
                 "Beneficiario",
                 "Categoria",
-                "EstadoReclamo"
+                "EstadoReclamo",
+                "EstadoSolicitud",
+                "Beneficios"
             ]
         }
     }

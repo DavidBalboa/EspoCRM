@@ -5,17 +5,13 @@
                 {
                     "name": "userName"
                 },
-                false
+                {
+                    "name": "name"
+                }
             ],
             [
                 {
                     "name": "firstName"
-                },
-                false
-            ],
-            [
-                {
-                    "name": "name"
                 },
                 {
                     "name": "lastName"
@@ -25,23 +21,23 @@
                 {
                     "name": "gender"
                 },
-                false
-            ],
-            [
                 {
                     "name": "emailAddress"
-                },
-                {
-                    "name": "phoneNumber"
                 }
             ],
             [
                 {
-                    "name": "isAdmin"
+                    "name": "phoneNumber"
                 },
                 {
-                    "name": "roles"
+                    "name": "isAdmin"
                 }
+            ],
+            [
+                {
+                    "name": "roles"
+                },
+                false
             ]
         ],
         "style": "default",

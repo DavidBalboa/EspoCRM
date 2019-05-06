@@ -53,14 +53,6 @@
             "tooltip": false,
             "isCustom": true
         },
-        "relacionsolicitudes": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
-        },
         "categoria": {
             "type": "link"
         },
@@ -112,13 +104,6 @@
             "entity": "Task",
             "foreign": "parent",
             "layoutRelationshipsDisabled": true
-        },
-        "relacionsolicitudes": {
-            "type": "hasMany",
-            "foreign": "relacionsubcategoria",
-            "entity": "Solicitudes",
-            "audited": false,
-            "isCustom": true
         },
         "categoria": {
             "type": "belongsTo",

@@ -24,5 +24,8 @@
                 "aclScope": "Task"
             }
         ]
-    }
+    },
+    "kanbanViewMode": false,
+    "color": null,
+    "iconClass": null
 }

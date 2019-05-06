@@ -1,35 +1,32 @@
 [
     {
-        "name": "numeroSolicitud"
+        "name": "solicitudesId"
     },
     {
         "name": "createdAt"
     },
     {
-        "name": "subcategoria"
+        "name": "empresa"
+    },
+    {
+        "name": "beneficiario"
     },
     {
         "name": "categoria"
     },
     {
-        "name": "beneficio"
+        "name": "beneficios"
     },
     {
-        "name": "fechahasta"
-    },
-    {
-        "name": "rut",
-        "width": 10,
-        "align": "left"
-    },
-    {
-        "name": "name",
-        "link": true
+        "name": "solicitudTitulo"
     },
     {
         "name": "estadoSolicitud"
     },
     {
-        "name": "modifiedBy"
+        "name": "createdBy"
+    },
+    {
+        "name": "assignedUser"
     }
 ]

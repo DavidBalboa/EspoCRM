@@ -1,25 +1,56 @@
 [
     {
-        "label": "",
         "rows": [
             [
                 {
-                    "name": "name",
-                    "fullWidth": true
-                }
+                    "name": "solicitudesId"
+                },
+                false
             ],
             [
                 {
-                    "name": "emailAddress",
-                    "fullWidth": true
-                }
+                    "name": "empresa"
+                },
+                false
             ],
             [
                 {
-                    "name": "phoneNumber",
-                    "fullWidth": true
-                }
+                    "name": "beneficiario"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "categoria"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "beneficios"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "solicitudTitulo"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "estadoSolicitud"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "user"
+                },
+                false
             ]
-        ]
+        ],
+        "style": "default",
+        "label": ""
     }
 ]

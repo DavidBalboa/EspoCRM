@@ -24,8 +24,5 @@
                 "aclScope": "Task"
             }
         ]
-    },
-    "color": "#989191",
-    "iconClass": "fas fa-address-book",
-    "kanbanViewMode": false
+    }
 }

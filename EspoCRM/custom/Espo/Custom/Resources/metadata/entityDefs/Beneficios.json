@@ -3,10 +3,7 @@
         "name": {
             "type": "varchar",
             "required": true,
-            "trim": true,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false
+            "trim": true
         },
         "description": {
             "type": "text"
@@ -38,27 +35,63 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
+        "rut": {
+            "type": "int",
+            "required": true,
+            "disableFormatting": false,
+            "audited": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "dv": {
+            "type": "text",
+            "required": true,
+            "rows": 1,
+            "lengthOfCut": 1,
+            "seeMoreDisabled": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "descripcionlegal": {
+            "type": "text",
+            "required": false,
+            "rows": 30,
+            "lengthOfCut": 400,
+            "seeMoreDisabled": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
+        "direccion": {
+            "type": "address",
+            "tooltip": false,
+            "isCustom": true
+        },
+        "pasoapaso": {
+            "type": "text",
+            "required": false,
+            "rows": 30,
+            "lengthOfCut": 400,
+            "seeMoreDisabled": false,
+            "readOnly": false,
+            "tooltip": false,
+            "isCustom": true
+        },
         "titulo": {
             "type": "varchar",
-            "required": false,
+            "required": true,
             "trim": false,
             "audited": false,
             "readOnly": false,
             "tooltip": false,
             "isCustom": true
         },
-        "descripcion": {
-            "type": "wysiwyg",
-            "required": false,
-            "readOnly": false,
-            "useIframe": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "direccion": {
+        "titulolegal": {
             "type": "varchar",
             "required": false,
-            "trim": false,
+            "trim": true,
             "audited": false,
             "readOnly": false,
             "tooltip": false,
@@ -74,45 +107,31 @@
             "tooltip": false,
             "isCustom": true
         },
-        "titulolegal": {
-            "type": "varchar",
-            "required": false,
-            "trim": true,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "descripcionlegal": {
-            "type": "varchar",
-            "required": false,
-            "trim": true,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
-            "isCustom": true
-        },
-        "pasoapaso": {
-            "type": "wysiwyg",
-            "required": false,
-            "readOnly": false,
-            "useIframe": false,
-            "tooltip": false,
-            "isCustom": true
+        "categoria": {
+            "type": "link"
         },
         "empresa": {
             "type": "link"
         },
-        "proveedor": {
-            "type": "link"
+        "beneficioId": {
+            "type": "number",
+            "len": 36,
+            "notNull": false,
+            "unique": false,
+            "nextNumber": 1,
+            "padLength": 5,
+            "tooltip": false,
+            "isCustom": true
         },
-        "rol": {
-            "type": "link"
+        "roles": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
+            "isCustom": true
         },
-        "comuna": {
-            "type": "link"
-        },
-        "doctosBeneficios": {
+        "reclamos": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
             "layoutMassUpdateDisabled": true,
@@ -120,22 +139,13 @@
             "importDisabled": true,
             "isCustom": true
         },
-        "beneficiarioId": {
-            "type": "int",
-            "required": true,
-            "min": 5000000,
-            "max": 99999999,
-            "disableFormatting": true,
-            "audited": false,
-            "readOnly": false,
-            "tooltip": false,
+        "solicitudes": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
             "isCustom": true
-        },
-        "beneficiario1": {
-            "type": "link"
-        },
-        "categoria": {
-            "type": "link"
         }
     },
     "links": {
@@ -175,6 +185,13 @@
             "foreign": "parent",
             "layoutRelationshipsDisabled": true
         },
+        "categoria": {
+            "type": "belongsTo",
+            "foreign": "beneficios",
+            "entity": "Categoria",
+            "audited": false,
+            "isCustom": true
+        },
         "empresa": {
             "type": "belongsTo",
             "foreign": "beneficios",
@@ -182,52 +199,36 @@
             "audited": false,
             "isCustom": true
         },
-        "proveedor": {
-            "type": "belongsTo",
+        "roles": {
+            "type": "hasMany",
+            "relationName": "beneficiosRol",
             "foreign": "beneficios",
-            "entity": "Proveedor",
-            "audited": false,
-            "isCustom": true
-        },
-        "rol": {
-            "type": "belongsTo",
-            "foreign": "beneficioss",
             "entity": "Rol",
             "audited": false,
             "isCustom": true
         },
-        "comuna": {
-            "type": "belongsTo",
-            "foreign": "beneficios",
-            "entity": "Comuna",
-            "audited": false,
-            "isCustom": true
-        },
-        "doctosBeneficios": {
+        "reclamos": {
             "type": "hasMany",
             "foreign": "beneficios",
-            "entity": "DoctosBeneficio",
+            "entity": "Reclamo",
             "audited": false,
             "isCustom": true
         },
-        "beneficiario1": {
-            "type": "belongsTo",
-            "foreign": "beneficios1",
-            "entity": "Beneficiario",
-            "audited": false,
-            "isCustom": true
-        },
-        "categoria": {
-            "type": "belongsTo",
-            "foreign": "beneficioss",
-            "entity": "Categoria",
+        "solicitudes": {
+            "type": "hasMany",
+            "foreign": "beneficios",
+            "entity": "Solicitudes",
             "audited": false,
             "isCustom": true
         }
     },
     "collection": {
         "sortBy": "createdAt",
-        "asc": false
+        "asc": false,
+        "textFilterFields": [
+            "titulo"
+        ],
+        "fullTextSearch": false
     },
     "indexes": {
         "name": {

@@ -3,53 +3,13 @@
         "rows": [
             [
                 {
-                    "name": "categoria",
-                    "fullWidth": true
-                }
-            ],
-            [
-                {
-                    "name": "titulo",
-                    "fullWidth": true
-                }
-            ],
-            [
-                {
-                    "name": "descripcion",
-                    "fullWidth": true
-                }
-            ],
-            [
-                {
-                    "name": "direccion"
-                },
-                {
-                    "name": "comuna"
-                }
-            ],
-            [
-                {
-                    "name": "validohasta"
+                    "name": "beneficioId"
                 },
                 false
             ],
             [
                 {
-                    "name": "pasoapaso",
-                    "fullWidth": true
-                }
-            ],
-            [
-                {
-                    "name": "titulolegal"
-                },
-                {
-                    "name": "descripcionlegal"
-                }
-            ],
-            [
-                {
-                    "name": "proveedor"
+                    "name": "categoria"
                 },
                 {
                     "name": "empresa"
@@ -57,12 +17,52 @@
             ],
             [
                 {
-                    "name": "rol"
+                    "name": "titulo"
                 },
                 false
+            ],
+            [
+                {
+                    "name": "description"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "direccionStreet",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "direccionState"
+                },
+                {
+                    "name": "direccionCity"
+                }
+            ],
+            [
+                {
+                    "name": "pasoapaso"
+                },
+                {
+                    "name": "validohasta"
+                }
+            ],
+            [
+                {
+                    "name": "titulolegal",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "descripcionlegal",
+                    "fullWidth": true
+                }
             ]
         ],
         "style": "default",
-        "label": "General"
+        "label": "Vista"
     }
 ]

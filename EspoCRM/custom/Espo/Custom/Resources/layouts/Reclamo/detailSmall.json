@@ -3,15 +3,45 @@
         "rows": [
             [
                 {
-                    "name": "categoria1",
-                    "fullWidth": true
-                }
+                    "name": "reclamoId"
+                },
+                false
             ],
             [
                 {
-                    "name": "empresa",
-                    "fullWidth": true
-                }
+                    "name": "empresa"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "beneficiario"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "categoria1"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "reclamoTitulo"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "estado"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "user"
+                },
+                false
             ]
         ],
         "style": "default",

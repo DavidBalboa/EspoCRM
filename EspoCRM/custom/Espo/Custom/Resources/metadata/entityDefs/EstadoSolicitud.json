@@ -35,21 +35,19 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "descripcion": {
-            "type": "varchar",
-            "required": false,
-            "trim": false,
-            "audited": false,
-            "readOnly": false,
+        "estadoSolicitudId": {
+            "type": "autoincrement",
+            "autoincrement": true,
+            "unique": true,
             "tooltip": false,
             "isCustom": true
         },
-        "documentosbeneficio": {
-            "type": "file",
-            "required": false,
-            "sourceList": [],
-            "audited": false,
-            "tooltip": false,
+        "solicitudes": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
             "isCustom": true
         }
     },
@@ -90,10 +88,12 @@
             "foreign": "parent",
             "layoutRelationshipsDisabled": true
         },
-        "documentosbeneficio": {
-            "type": "belongsTo",
-            "entity": "Attachment",
-            "skipOrmDefs": true
+        "solicitudes": {
+            "type": "hasMany",
+            "foreign": "estadoSolicitud",
+            "entity": "Solicitudes",
+            "audited": false,
+            "isCustom": true
         }
     },
     "collection": {

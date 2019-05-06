@@ -26,5 +26,6 @@
         ]
     },
     "color": "#ff0000",
-    "iconClass": "fas fa-tired"
+    "iconClass": "fas fa-tired",
+    "kanbanViewMode": false
 }

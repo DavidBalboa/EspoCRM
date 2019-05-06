@@ -10,7 +10,6 @@
                 "Formularios",
                 "Solicitudes",
                 "Subcategoria",
-                "Beneficios",
                 "DoctosBeneficio",
                 "Ciudad",
                 "Comuna",
@@ -19,11 +18,21 @@
                 "MotivoReclamo",
                 "Beneficiario",
                 "Categoria",
-                "EstadoReclamo"
+                "EstadoReclamo",
+                "EstadoSolicitud",
+                "Beneficios"
             ]
         },
         "formularios": {
             "type": "link"
+        },
+        "reclamos": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -31,6 +40,13 @@
             "type": "belongsTo",
             "foreign": "emails",
             "entity": "Formularios",
+            "audited": false,
+            "isCustom": true
+        },
+        "reclamos": {
+            "type": "hasMany",
+            "foreign": "email",
+            "entity": "Reclamo",
             "audited": false,
             "isCustom": true
         }

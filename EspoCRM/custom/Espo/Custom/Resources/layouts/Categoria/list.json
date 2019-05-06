@@ -1,8 +1,12 @@
 [
     {
-        "name": "categoriaId"
+        "name": "categoriaId",
+        "width": 5,
+        "align": "left"
     },
     {
-        "name": "name"
+        "name": "name",
+        "width": 5,
+        "align": "left"
     }
 ]

@@ -5,13 +5,51 @@
                 {
                     "name": "beneficiarioId"
                 },
-                false
+                {
+                    "name": "beneficiarioDv"
+                }
             ],
             [
                 {
-                    "name": "name"
+                    "name": "name",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "beneficiarioApellidoMaterno"
                 },
-                false
+                {
+                    "name": "beneficiarioApellidoPaterno"
+                }
+            ],
+            [
+                {
+                    "name": "direccinStreet",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "direccinState"
+                },
+                {
+                    "name": "direccinCity"
+                }
+            ],
+            [
+                {
+                    "name": "email",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "telefono"
+                },
+                {
+                    "name": "celular"
+                }
             ]
         ],
         "style": "default",

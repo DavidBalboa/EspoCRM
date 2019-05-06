@@ -1,11 +1,30 @@
 [
     {
-        "name": "proveedor"
+        "name": "beneficioId"
+    },
+    {
+        "name": "createdAt"
+    },
+    {
+        "name": "categoria"
     },
     {
         "name": "titulo"
     },
     {
-        "name": "descripcion"
+        "name": "empresa"
+    },
+    {
+        "name": "rol",
+        "notSortable": true
+    },
+    {
+        "name": "validohasta"
+    },
+    {
+        "name": "modifiedAt"
+    },
+    {
+        "name": "assignedUser"
     }
 ]

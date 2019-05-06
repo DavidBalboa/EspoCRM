@@ -22,6 +22,34 @@
                 {
                     "name": "beneficiarioApellidoMaterno"
                 }
+            ],
+            [
+                {
+                    "name": "direccinStreet",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "direccinState"
+                },
+                {
+                    "name": "direccinCity"
+                }
+            ],
+            [
+                {
+                    "name": "email",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "telefono"
+                },
+                {
+                    "name": "celular"
+                }
             ]
         ],
         "style": "default",

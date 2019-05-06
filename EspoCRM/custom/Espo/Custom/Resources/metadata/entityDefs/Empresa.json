@@ -35,14 +35,6 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "beneficios": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
-        },
         "trabajador": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
@@ -85,6 +77,22 @@
             "importDisabled": true,
             "noLoad": true,
             "isCustom": true
+        },
+        "solicitudess": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "beneficios": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
         }
     },
     "links": {
@@ -105,13 +113,6 @@
             "entity": "Team",
             "relationName": "EntityTeam",
             "layoutRelationshipsDisabled": true
-        },
-        "beneficios": {
-            "type": "hasMany",
-            "foreign": "empresa",
-            "entity": "Beneficios",
-            "audited": false,
-            "isCustom": true
         },
         "trabajador": {
             "type": "hasMany",
@@ -143,10 +144,24 @@
             "entity": "User",
             "audited": false,
             "isCustom": true
+        },
+        "solicitudess": {
+            "type": "hasMany",
+            "foreign": "empresa",
+            "entity": "Solicitudes",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficios": {
+            "type": "hasMany",
+            "foreign": "empresa",
+            "entity": "Beneficios",
+            "audited": false,
+            "isCustom": true
         }
     },
     "collection": {
-        "sortBy": "createdAt",
+        "sortBy": "name",
         "asc": false,
         "textFilterFields": [
             "name"

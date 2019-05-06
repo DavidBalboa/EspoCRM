@@ -35,14 +35,6 @@
             "type": "linkMultiple",
             "view": "views/fields/teams"
         },
-        "beneficioss": {
-            "type": "linkMultiple",
-            "layoutDetailDisabled": true,
-            "layoutMassUpdateDisabled": true,
-            "noLoad": true,
-            "importDisabled": true,
-            "isCustom": true
-        },
         "trabajador": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
@@ -61,6 +53,14 @@
             "isCustom": true
         },
         "users": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "importDisabled": true,
+            "noLoad": true,
+            "isCustom": true
+        },
+        "beneficios": {
             "type": "linkMultiple",
             "layoutDetailDisabled": true,
             "layoutMassUpdateDisabled": true,
@@ -106,13 +106,6 @@
             "foreign": "parent",
             "layoutRelationshipsDisabled": true
         },
-        "beneficioss": {
-            "type": "hasMany",
-            "foreign": "rol",
-            "entity": "Beneficios",
-            "audited": false,
-            "isCustom": true
-        },
         "trabajador": {
             "type": "hasMany",
             "relationName": "trabajadorRol",
@@ -126,6 +119,14 @@
             "relationName": "userRol",
             "foreign": "rols",
             "entity": "User",
+            "audited": false,
+            "isCustom": true
+        },
+        "beneficios": {
+            "type": "hasMany",
+            "relationName": "beneficiosRol",
+            "foreign": "roles",
+            "entity": "Beneficios",
             "audited": false,
             "isCustom": true
         }

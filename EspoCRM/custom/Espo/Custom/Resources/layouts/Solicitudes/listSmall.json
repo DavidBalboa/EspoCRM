@@ -1,6 +1,6 @@
 [
     {
-        "name": "reclamoId"
+        "name": "solicitudesId"
     },
     {
         "name": "createdAt"
@@ -12,19 +12,19 @@
         "name": "beneficiario"
     },
     {
-        "name": "categoria1"
+        "name": "categoria"
     },
     {
-        "name": "reclamoTitulo"
+        "name": "beneficios"
     },
     {
-        "name": "estadoReclamo"
+        "name": "solicitudTitulo"
+    },
+    {
+        "name": "estadoSolicitud"
     },
     {
         "name": "createdBy"
-    },
-    {
-        "name": "modifiedAt"
     },
     {
         "name": "user"

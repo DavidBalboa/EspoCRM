@@ -62,6 +62,7 @@ return array (
   'DoctosBeneficio' => '\\Espo\\Custom\\Services\\DoctosBeneficio',
   'Empresa' => '\\Espo\\Custom\\Services\\Empresa',
   'EstadoReclamo' => '\\Espo\\Custom\\Services\\EstadoReclamo',
+  'EstadoSolicitud' => '\\Espo\\Custom\\Services\\EstadoSolicitud',
   'Formularios' => '\\Espo\\Custom\\Services\\Formularios',
   'MotivoReclamo' => '\\Espo\\Custom\\Services\\MotivoReclamo',
   'Proveedor' => '\\Espo\\Custom\\Services\\Proveedor',

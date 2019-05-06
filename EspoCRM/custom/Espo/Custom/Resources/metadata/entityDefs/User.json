@@ -32,6 +32,19 @@
         "roles": {
             "required": true,
             "readOnly": false
+        },
+        "solicitudess": {
+            "type": "linkMultiple",
+            "layoutDetailDisabled": true,
+            "layoutMassUpdateDisabled": true,
+            "noLoad": true,
+            "importDisabled": true,
+            "isCustom": true
+        },
+        "userName": {
+            "trim": false,
+            "audited": false,
+            "readOnly": false
         }
     },
     "links": {
@@ -52,6 +65,16 @@
             "entity": "Empresa",
             "audited": false,
             "isCustom": true
+        },
+        "solicitudess": {
+            "type": "hasMany",
+            "foreign": "user",
+            "entity": "Solicitudes",
+            "audited": false,
+            "isCustom": true
+        },
+        "teams": {
+            "audited": false
         }
     }
 }

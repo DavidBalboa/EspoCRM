@@ -4814,6 +4814,7 @@ return array (
       ),
       'color' => '#989191',
       'iconClass' => 'fas fa-address-book',
+      'kanbanViewMode' => false,
     ),
     'Beneficios' => 
     array (
@@ -4849,6 +4850,9 @@ return array (
           ),
         ),
       ),
+      'kanbanViewMode' => false,
+      'color' => NULL,
+      'iconClass' => NULL,
     ),
     'Categoria' => 
     array (
@@ -5036,6 +5040,41 @@ return array (
         ),
       ),
     ),
+    'EstadoSolicitud' => 
+    array (
+      'controller' => 'controllers/record',
+      'boolFilterList' => 
+      array (
+        0 => 'onlyMy',
+      ),
+      'sidePanels' => 
+      array (
+        'detail' => 
+        array (
+          0 => 
+          array (
+            'name' => 'activities',
+            'label' => 'Activities',
+            'view' => 'crm:views/record/panels/activities',
+            'aclScope' => 'Activities',
+          ),
+          1 => 
+          array (
+            'name' => 'history',
+            'label' => 'History',
+            'view' => 'crm:views/record/panels/history',
+            'aclScope' => 'Activities',
+          ),
+          2 => 
+          array (
+            'name' => 'tasks',
+            'label' => 'Tasks',
+            'view' => 'crm:views/record/panels/tasks',
+            'aclScope' => 'Task',
+          ),
+        ),
+      ),
+    ),
     'Formularios' => 
     array (
       'controller' => 'controllers/record',
@@ -5156,6 +5195,7 @@ return array (
       ),
       'color' => '#ff0000',
       'iconClass' => 'fas fa-tired',
+      'kanbanViewMode' => false,
     ),
     'Rol' => 
     array (
@@ -7746,16 +7786,17 @@ return array (
             5 => 'Formularios',
             6 => 'Solicitudes',
             7 => 'Subcategoria',
-            8 => 'Beneficios',
-            9 => 'DoctosBeneficio',
-            10 => 'Ciudad',
-            11 => 'Comuna',
-            12 => 'Rol',
-            13 => 'Reclamo',
-            14 => 'MotivoReclamo',
-            15 => 'Beneficiario',
-            16 => 'Categoria',
-            17 => 'EstadoReclamo',
+            8 => 'DoctosBeneficio',
+            9 => 'Ciudad',
+            10 => 'Comuna',
+            11 => 'Rol',
+            12 => 'Reclamo',
+            13 => 'MotivoReclamo',
+            14 => 'Beneficiario',
+            15 => 'Categoria',
+            16 => 'EstadoReclamo',
+            17 => 'EstadoSolicitud',
+            18 => 'Beneficios',
           ),
         ),
         'dateSent' => 
@@ -7882,6 +7923,15 @@ return array (
         'formularios' => 
         array (
           'type' => 'link',
+        ),
+        'reclamos' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
         ),
       ),
       'links' => 
@@ -8074,6 +8124,14 @@ return array (
           'type' => 'belongsTo',
           'foreign' => 'emails',
           'entity' => 'Formularios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'reclamos' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'email',
+          'entity' => 'Reclamo',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -12077,6 +12135,7 @@ return array (
           'type' => 'hasMany',
           'entity' => 'User',
           'foreign' => 'teams',
+          'audited' => false,
         ),
         'roles' => 
         array (
@@ -12348,6 +12407,9 @@ return array (
           'required' => true,
           'view' => 'views/user/fields/user-name',
           'tooltip' => true,
+          'trim' => false,
+          'audited' => false,
+          'readOnly' => false,
         ),
         'name' => 
         array (
@@ -12699,6 +12761,15 @@ return array (
           'noLoad' => true,
           'isCustom' => true,
         ),
+        'solicitudess' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
         'emailAddressIsOptedOut' => 
         array (
           'type' => 'bool',
@@ -12730,6 +12801,7 @@ return array (
             ),
           ),
           'layoutRelationshipsDisabled' => true,
+          'audited' => false,
         ),
         'createdBy' => 
         array (
@@ -12834,6 +12906,14 @@ return array (
           'relationName' => 'userEmpresa',
           'foreign' => 'users',
           'entity' => 'Empresa',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'solicitudess' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'user',
+          'entity' => 'Solicitudes',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -13418,16 +13498,17 @@ return array (
             5 => 'Formularios',
             6 => 'Solicitudes',
             7 => 'Subcategoria',
-            8 => 'Beneficios',
-            9 => 'DoctosBeneficio',
-            10 => 'Ciudad',
-            11 => 'Comuna',
-            12 => 'Rol',
-            13 => 'Reclamo',
-            14 => 'MotivoReclamo',
-            15 => 'Beneficiario',
-            16 => 'Categoria',
-            17 => 'EstadoReclamo',
+            8 => 'DoctosBeneficio',
+            9 => 'Ciudad',
+            10 => 'Comuna',
+            11 => 'Rol',
+            12 => 'Reclamo',
+            13 => 'MotivoReclamo',
+            14 => 'Beneficiario',
+            15 => 'Categoria',
+            16 => 'EstadoReclamo',
+            17 => 'EstadoSolicitud',
+            18 => 'Beneficios',
           ),
         ),
         'account' => 
@@ -16627,16 +16708,17 @@ return array (
             5 => 'Formularios',
             6 => 'Solicitudes',
             7 => 'Subcategoria',
-            8 => 'Beneficios',
-            9 => 'DoctosBeneficio',
-            10 => 'Ciudad',
-            11 => 'Comuna',
-            12 => 'Rol',
-            13 => 'Reclamo',
-            14 => 'MotivoReclamo',
-            15 => 'Beneficiario',
-            16 => 'Categoria',
-            17 => 'EstadoReclamo',
+            8 => 'DoctosBeneficio',
+            9 => 'Ciudad',
+            10 => 'Comuna',
+            11 => 'Rol',
+            12 => 'Reclamo',
+            13 => 'MotivoReclamo',
+            14 => 'Beneficiario',
+            15 => 'Categoria',
+            16 => 'EstadoReclamo',
+            17 => 'EstadoSolicitud',
+            18 => 'Beneficios',
           ),
         ),
         'account' => 
@@ -17900,16 +17982,17 @@ return array (
             5 => 'Formularios',
             6 => 'Solicitudes',
             7 => 'Subcategoria',
-            8 => 'Beneficios',
-            9 => 'DoctosBeneficio',
-            10 => 'Ciudad',
-            11 => 'Comuna',
-            12 => 'Rol',
-            13 => 'Reclamo',
-            14 => 'MotivoReclamo',
-            15 => 'Beneficiario',
-            16 => 'Categoria',
-            17 => 'EstadoReclamo',
+            8 => 'DoctosBeneficio',
+            9 => 'Ciudad',
+            10 => 'Comuna',
+            11 => 'Rol',
+            12 => 'Reclamo',
+            13 => 'MotivoReclamo',
+            14 => 'Beneficiario',
+            15 => 'Categoria',
+            16 => 'EstadoReclamo',
+            17 => 'EstadoSolicitud',
+            18 => 'Beneficios',
           ),
         ),
         'account' => 
@@ -18111,6 +18194,9 @@ return array (
         array (
           'type' => 'linkMultiple',
           'view' => 'views/fields/teams',
+          'required' => false,
+          'readOnly' => false,
+          'tooltip' => false,
         ),
         'beneficiarioId' => 
         array (
@@ -18120,7 +18206,7 @@ return array (
           'max' => 99999999,
           'disableFormatting' => false,
           'audited' => false,
-          'readOnly' => false,
+          'readOnly' => true,
           'tooltip' => false,
           'isCustom' => true,
         ),
@@ -18175,7 +18261,7 @@ return array (
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'beneficios1' => 
+        'solicitudess' => 
         array (
           'type' => 'linkMultiple',
           'layoutDetailDisabled' => true,
@@ -18183,6 +18269,104 @@ return array (
           'noLoad' => true,
           'importDisabled' => true,
           'isCustom' => true,
+        ),
+        'direccin' => 
+        array (
+          'type' => 'address',
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'email' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'telefono' => 
+        array (
+          'notNull' => false,
+          'type' => 'float',
+          'required' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'celular' => 
+        array (
+          'notNull' => false,
+          'type' => 'float',
+          'required' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'direccinStreet' => 
+        array (
+          'type' => 'text',
+          'maxLength' => 255,
+          'dbType' => 'varchar',
+          'required' => false,
+          'seeMoreDisabled' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+        ),
+        'nacionalidad' => 
+        array (
+          'type' => 'varchar',
+          'required' => false,
+          'trim' => true,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'fechaNacimiento' => 
+        array (
+          'notNull' => false,
+          'type' => 'date',
+          'required' => false,
+          'useNumericFormat' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'direccinCity' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccinState' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccinCountry' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccinPostalCode' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccinMap' => 
+        array (
+          'type' => 'map',
+          'notStorable' => true,
+          'readOnly' => true,
+          'layoutListDisabled' => true,
+          'provider' => 'Google',
+          'height' => 300,
+          'exportDisabled' => true,
+          'importDisabled' => true,
         ),
       ),
       'links' => 
@@ -18247,11 +18431,11 @@ return array (
           'audited' => false,
           'isCustom' => true,
         ),
-        'beneficios1' => 
+        'solicitudess' => 
         array (
           'type' => 'hasMany',
-          'foreign' => 'beneficiario1',
-          'entity' => 'Beneficios',
+          'foreign' => 'beneficiario',
+          'entity' => 'Solicitudes',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -18260,6 +18444,12 @@ return array (
       array (
         'sortBy' => 'createdAt',
         'asc' => false,
+        'textFilterFields' => 
+        array (
+          0 => 'name',
+          1 => 'beneficiarioId',
+        ),
+        'fullTextSearch' => true,
       ),
       'indexes' => 
       array (
@@ -18290,9 +18480,6 @@ return array (
           'type' => 'varchar',
           'required' => true,
           'trim' => true,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
         ),
         'description' => 
         array (
@@ -18331,30 +18518,70 @@ return array (
           'type' => 'linkMultiple',
           'view' => 'views/fields/teams',
         ),
+        'rut' => 
+        array (
+          'type' => 'int',
+          'required' => true,
+          'disableFormatting' => false,
+          'audited' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'dv' => 
+        array (
+          'type' => 'text',
+          'required' => true,
+          'rows' => 1,
+          'lengthOfCut' => 1,
+          'seeMoreDisabled' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'descripcionlegal' => 
+        array (
+          'type' => 'text',
+          'required' => false,
+          'rows' => 30,
+          'lengthOfCut' => 400,
+          'seeMoreDisabled' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'direccion' => 
+        array (
+          'type' => 'address',
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'pasoapaso' => 
+        array (
+          'type' => 'text',
+          'required' => false,
+          'rows' => 30,
+          'lengthOfCut' => 400,
+          'seeMoreDisabled' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
         'titulo' => 
         array (
           'type' => 'varchar',
-          'required' => false,
+          'required' => true,
           'trim' => false,
           'audited' => false,
           'readOnly' => false,
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'descripcion' => 
-        array (
-          'type' => 'wysiwyg',
-          'required' => false,
-          'readOnly' => false,
-          'useIframe' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'direccion' => 
+        'titulolegal' => 
         array (
           'type' => 'varchar',
           'required' => false,
-          'trim' => false,
+          'trim' => true,
           'audited' => false,
           'readOnly' => false,
           'tooltip' => false,
@@ -18371,52 +18598,35 @@ return array (
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'titulolegal' => 
+        'categoria' => 
         array (
-          'type' => 'varchar',
-          'required' => false,
-          'trim' => true,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'descripcionlegal' => 
-        array (
-          'type' => 'varchar',
-          'required' => false,
-          'trim' => true,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'pasoapaso' => 
-        array (
-          'type' => 'wysiwyg',
-          'required' => false,
-          'readOnly' => false,
-          'useIframe' => false,
-          'tooltip' => false,
-          'isCustom' => true,
+          'type' => 'link',
         ),
         'empresa' => 
         array (
           'type' => 'link',
         ),
-        'proveedor' => 
+        'beneficioId' => 
         array (
-          'type' => 'link',
+          'type' => 'number',
+          'len' => 36,
+          'notNull' => false,
+          'unique' => false,
+          'nextNumber' => 1,
+          'padLength' => 5,
+          'tooltip' => false,
+          'isCustom' => true,
         ),
-        'rol' => 
+        'roles' => 
         array (
-          'type' => 'link',
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'importDisabled' => true,
+          'noLoad' => true,
+          'isCustom' => true,
         ),
-        'comuna' => 
-        array (
-          'type' => 'link',
-        ),
-        'doctosBeneficios' => 
+        'reclamos' => 
         array (
           'type' => 'linkMultiple',
           'layoutDetailDisabled' => true,
@@ -18425,25 +18635,51 @@ return array (
           'importDisabled' => true,
           'isCustom' => true,
         ),
-        'beneficiarioId' => 
+        'solicitudes' => 
         array (
-          'type' => 'int',
-          'required' => true,
-          'min' => 5000000,
-          'max' => 99999999,
-          'disableFormatting' => true,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
           'isCustom' => true,
         ),
-        'beneficiario1' => 
+        'direccionStreet' => 
         array (
-          'type' => 'link',
+          'type' => 'text',
+          'maxLength' => 255,
+          'dbType' => 'varchar',
         ),
-        'categoria' => 
+        'direccionCity' => 
         array (
-          'type' => 'link',
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccionState' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccionCountry' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccionPostalCode' => 
+        array (
+          'type' => 'varchar',
+          'trim' => true,
+        ),
+        'direccionMap' => 
+        array (
+          'type' => 'map',
+          'notStorable' => true,
+          'readOnly' => true,
+          'layoutListDisabled' => true,
+          'provider' => 'Google',
+          'height' => 300,
+          'exportDisabled' => true,
+          'importDisabled' => true,
         ),
       ),
       'links' => 
@@ -18491,6 +18727,14 @@ return array (
           'foreign' => 'parent',
           'layoutRelationshipsDisabled' => true,
         ),
+        'categoria' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'beneficios',
+          'entity' => 'Categoria',
+          'audited' => false,
+          'isCustom' => true,
+        ),
         'empresa' => 
         array (
           'type' => 'belongsTo',
@@ -18499,51 +18743,28 @@ return array (
           'audited' => false,
           'isCustom' => true,
         ),
-        'proveedor' => 
+        'roles' => 
         array (
-          'type' => 'belongsTo',
+          'type' => 'hasMany',
+          'relationName' => 'beneficiosRol',
           'foreign' => 'beneficios',
-          'entity' => 'Proveedor',
-          'audited' => false,
-          'isCustom' => true,
-        ),
-        'rol' => 
-        array (
-          'type' => 'belongsTo',
-          'foreign' => 'beneficioss',
           'entity' => 'Rol',
           'audited' => false,
           'isCustom' => true,
         ),
-        'comuna' => 
-        array (
-          'type' => 'belongsTo',
-          'foreign' => 'beneficios',
-          'entity' => 'Comuna',
-          'audited' => false,
-          'isCustom' => true,
-        ),
-        'doctosBeneficios' => 
+        'reclamos' => 
         array (
           'type' => 'hasMany',
           'foreign' => 'beneficios',
-          'entity' => 'DoctosBeneficio',
+          'entity' => 'Reclamo',
           'audited' => false,
           'isCustom' => true,
         ),
-        'beneficiario1' => 
+        'solicitudes' => 
         array (
-          'type' => 'belongsTo',
-          'foreign' => 'beneficios1',
-          'entity' => 'Beneficiario',
-          'audited' => false,
-          'isCustom' => true,
-        ),
-        'categoria' => 
-        array (
-          'type' => 'belongsTo',
-          'foreign' => 'beneficioss',
-          'entity' => 'Categoria',
+          'type' => 'hasMany',
+          'foreign' => 'beneficios',
+          'entity' => 'Solicitudes',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -18552,6 +18773,11 @@ return array (
       array (
         'sortBy' => 'createdAt',
         'asc' => false,
+        'textFilterFields' => 
+        array (
+          0 => 'titulo',
+        ),
+        'fullTextSearch' => false,
       ),
       'indexes' => 
       array (
@@ -18648,15 +18874,6 @@ return array (
           'importDisabled' => true,
           'isCustom' => true,
         ),
-        'beneficioss' => 
-        array (
-          'type' => 'linkMultiple',
-          'layoutDetailDisabled' => true,
-          'layoutMassUpdateDisabled' => true,
-          'noLoad' => true,
-          'importDisabled' => true,
-          'isCustom' => true,
-        ),
         'subcategorias' => 
         array (
           'type' => 'linkMultiple',
@@ -18674,6 +18891,24 @@ return array (
           'audited' => false,
           'readOnly' => false,
           'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'solicitudes' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
           'isCustom' => true,
         ),
       ),
@@ -18738,19 +18973,27 @@ return array (
           'audited' => false,
           'isCustom' => true,
         ),
-        'beneficioss' => 
-        array (
-          'type' => 'hasMany',
-          'foreign' => 'categoria',
-          'entity' => 'Beneficios',
-          'audited' => false,
-          'isCustom' => true,
-        ),
         'subcategorias' => 
         array (
           'type' => 'hasMany',
           'foreign' => 'categoria',
           'entity' => 'Subcategoria',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'solicitudes' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'categoria',
+          'entity' => 'Solicitudes',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'categoria',
+          'entity' => 'Beneficios',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -18976,15 +19219,6 @@ return array (
           'importDisabled' => true,
           'isCustom' => true,
         ),
-        'beneficios' => 
-        array (
-          'type' => 'linkMultiple',
-          'layoutDetailDisabled' => true,
-          'layoutMassUpdateDisabled' => true,
-          'noLoad' => true,
-          'importDisabled' => true,
-          'isCustom' => true,
-        ),
       ),
       'links' => 
       array (
@@ -19044,14 +19278,6 @@ return array (
           'type' => 'hasMany',
           'foreign' => 'comunarelacion',
           'entity' => 'Trabajador',
-          'audited' => false,
-          'isCustom' => true,
-        ),
-        'beneficios' => 
-        array (
-          'type' => 'hasMany',
-          'foreign' => 'comuna',
-          'entity' => 'Beneficios',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -19149,10 +19375,6 @@ return array (
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'beneficios' => 
-        array (
-          'type' => 'link',
-        ),
       ),
       'links' => 
       array (
@@ -19204,14 +19426,6 @@ return array (
           'type' => 'belongsTo',
           'entity' => 'Attachment',
           'skipOrmDefs' => true,
-        ),
-        'beneficios' => 
-        array (
-          'type' => 'belongsTo',
-          'foreign' => 'doctosBeneficios',
-          'entity' => 'Beneficios',
-          'audited' => false,
-          'isCustom' => true,
         ),
       ),
       'collection' => 
@@ -19286,15 +19500,6 @@ return array (
           'type' => 'linkMultiple',
           'view' => 'views/fields/teams',
         ),
-        'beneficios' => 
-        array (
-          'type' => 'linkMultiple',
-          'layoutDetailDisabled' => true,
-          'layoutMassUpdateDisabled' => true,
-          'noLoad' => true,
-          'importDisabled' => true,
-          'isCustom' => true,
-        ),
         'trabajador' => 
         array (
           'type' => 'linkMultiple',
@@ -19343,6 +19548,24 @@ return array (
           'noLoad' => true,
           'isCustom' => true,
         ),
+        'solicitudess' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
       ),
       'links' => 
       array (
@@ -19367,14 +19590,6 @@ return array (
           'entity' => 'Team',
           'relationName' => 'EntityTeam',
           'layoutRelationshipsDisabled' => true,
-        ),
-        'beneficios' => 
-        array (
-          'type' => 'hasMany',
-          'foreign' => 'empresa',
-          'entity' => 'Beneficios',
-          'audited' => false,
-          'isCustom' => true,
         ),
         'trabajador' => 
         array (
@@ -19411,10 +19626,26 @@ return array (
           'audited' => false,
           'isCustom' => true,
         ),
+        'solicitudess' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'empresa',
+          'entity' => 'Solicitudes',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'empresa',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
       ),
       'collection' => 
       array (
-        'sortBy' => 'createdAt',
+        'sortBy' => 'name',
         'asc' => false,
         'textFilterFields' => 
         array (
@@ -19570,6 +19801,150 @@ return array (
           'type' => 'hasMany',
           'foreign' => 'estadoReclamo',
           'entity' => 'Reclamo',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+      ),
+      'collection' => 
+      array (
+        'sortBy' => 'createdAt',
+        'asc' => false,
+      ),
+      'indexes' => 
+      array (
+        'name' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'name',
+            1 => 'deleted',
+          ),
+        ),
+        'assignedUser' => 
+        array (
+          'columns' => 
+          array (
+            0 => 'assignedUserId',
+            1 => 'deleted',
+          ),
+        ),
+      ),
+    ),
+    'EstadoSolicitud' => 
+    array (
+      'fields' => 
+      array (
+        'name' => 
+        array (
+          'type' => 'varchar',
+          'required' => true,
+          'trim' => true,
+        ),
+        'description' => 
+        array (
+          'type' => 'text',
+        ),
+        'createdAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'modifiedAt' => 
+        array (
+          'type' => 'datetime',
+          'readOnly' => true,
+        ),
+        'createdBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'link',
+          'readOnly' => true,
+          'view' => 'views/fields/user',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'link',
+          'required' => true,
+          'view' => 'views/fields/assigned-user',
+        ),
+        'teams' => 
+        array (
+          'type' => 'linkMultiple',
+          'view' => 'views/fields/teams',
+        ),
+        'estadoSolicitudId' => 
+        array (
+          'type' => 'autoincrement',
+          'autoincrement' => true,
+          'unique' => true,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'solicitudes' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'noLoad' => true,
+          'importDisabled' => true,
+          'isCustom' => true,
+        ),
+      ),
+      'links' => 
+      array (
+        'createdBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'modifiedBy' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'assignedUser' => 
+        array (
+          'type' => 'belongsTo',
+          'entity' => 'User',
+        ),
+        'teams' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Team',
+          'relationName' => 'EntityTeam',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'meetings' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Meeting',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'calls' => 
+        array (
+          'type' => 'hasMany',
+          'entity' => 'Call',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'tasks' => 
+        array (
+          'type' => 'hasChildren',
+          'entity' => 'Task',
+          'foreign' => 'parent',
+          'layoutRelationshipsDisabled' => true,
+        ),
+        'solicitudes' => 
+        array (
+          'type' => 'hasMany',
+          'foreign' => 'estadoSolicitud',
+          'entity' => 'Solicitudes',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -20242,15 +20617,6 @@ return array (
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'beneficios' => 
-        array (
-          'type' => 'linkMultiple',
-          'layoutDetailDisabled' => true,
-          'layoutMassUpdateDisabled' => true,
-          'noLoad' => true,
-          'importDisabled' => true,
-          'isCustom' => true,
-        ),
       ),
       'links' => 
       array (
@@ -20275,14 +20641,6 @@ return array (
           'entity' => 'Team',
           'relationName' => 'EntityTeam',
           'layoutRelationshipsDisabled' => true,
-        ),
-        'beneficios' => 
-        array (
-          'type' => 'hasMany',
-          'foreign' => 'proveedor',
-          'entity' => 'Beneficios',
-          'audited' => false,
-          'isCustom' => true,
         ),
       ),
       'collection' => 
@@ -20430,6 +20788,14 @@ return array (
           'readOnly' => false,
           'tooltip' => false,
         ),
+        'beneficios' => 
+        array (
+          'type' => 'link',
+        ),
+        'email' => 
+        array (
+          'type' => 'link',
+        ),
       ),
       'links' => 
       array (
@@ -20532,11 +20898,33 @@ return array (
           'audited' => false,
           'isCustom' => true,
         ),
+        'beneficios' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'reclamos',
+          'entity' => 'Beneficios',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'email' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'reclamos',
+          'entity' => 'Email',
+          'audited' => false,
+          'isCustom' => true,
+        ),
       ),
       'collection' => 
       array (
         'sortBy' => 'createdAt',
         'asc' => false,
+        'textFilterFields' => 
+        array (
+          0 => 'reclamoId',
+          1 => 'reclamoTitulo',
+        ),
+        'fullTextSearch' => false,
       ),
       'indexes' => 
       array (
@@ -20605,15 +20993,6 @@ return array (
           'type' => 'linkMultiple',
           'view' => 'views/fields/teams',
         ),
-        'beneficioss' => 
-        array (
-          'type' => 'linkMultiple',
-          'layoutDetailDisabled' => true,
-          'layoutMassUpdateDisabled' => true,
-          'noLoad' => true,
-          'importDisabled' => true,
-          'isCustom' => true,
-        ),
         'trabajador' => 
         array (
           'type' => 'linkMultiple',
@@ -20634,6 +21013,15 @@ return array (
           'isCustom' => true,
         ),
         'users' => 
+        array (
+          'type' => 'linkMultiple',
+          'layoutDetailDisabled' => true,
+          'layoutMassUpdateDisabled' => true,
+          'importDisabled' => true,
+          'noLoad' => true,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
         array (
           'type' => 'linkMultiple',
           'layoutDetailDisabled' => true,
@@ -20688,14 +21076,6 @@ return array (
           'foreign' => 'parent',
           'layoutRelationshipsDisabled' => true,
         ),
-        'beneficioss' => 
-        array (
-          'type' => 'hasMany',
-          'foreign' => 'rol',
-          'entity' => 'Beneficios',
-          'audited' => false,
-          'isCustom' => true,
-        ),
         'trabajador' => 
         array (
           'type' => 'hasMany',
@@ -20711,6 +21091,15 @@ return array (
           'relationName' => 'userRol',
           'foreign' => 'rols',
           'entity' => 'User',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'hasMany',
+          'relationName' => 'beneficiosRol',
+          'foreign' => 'roles',
+          'entity' => 'Beneficios',
           'audited' => false,
           'isCustom' => true,
         ),
@@ -20881,47 +21270,6 @@ return array (
           'type' => 'linkMultiple',
           'view' => 'views/fields/teams',
         ),
-        'rut' => 
-        array (
-          'type' => 'varchar',
-          'required' => true,
-          'trim' => false,
-          'audited' => false,
-          'isPersonalData' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'estadoSolicitud' => 
-        array (
-          'type' => 'enum',
-          'required' => true,
-          'options' => 
-          array (
-            0 => 'Aprobado',
-            1 => 'En proceso',
-            2 => 'Rechazado',
-            3 => 'Cancelado',
-          ),
-          'audited' => true,
-          'isPersonalData' => false,
-          'default' => 'Aprobado',
-          'isSorted' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'beneficio' => 
-        array (
-          'type' => 'varchar',
-          'required' => false,
-          'trim' => false,
-          'isPersonalData' => false,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
         'carga' => 
         array (
           'type' => 'multiEnum',
@@ -20929,42 +21277,6 @@ return array (
           'required' => false,
           'isPersonalData' => false,
           'options' => false,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'ciudad' => 
-        array (
-          'type' => 'enum',
-          'required' => false,
-          'isPersonalData' => false,
-          'options' => false,
-          'isSorted' => false,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'categoria' => 
-        array (
-          'type' => 'enum',
-          'required' => false,
-          'isPersonalData' => false,
-          'options' => false,
-          'isSorted' => false,
-          'audited' => false,
-          'readOnly' => false,
-          'tooltip' => false,
-          'isCustom' => true,
-        ),
-        'subcategoria' => 
-        array (
-          'type' => 'enum',
-          'required' => false,
-          'isPersonalData' => false,
-          'options' => false,
-          'isSorted' => false,
           'audited' => false,
           'readOnly' => false,
           'tooltip' => false,
@@ -20982,30 +21294,59 @@ return array (
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'numeroSolicitud' => 
+        'beneficiario' => 
+        array (
+          'type' => 'link',
+        ),
+        'empresa' => 
+        array (
+          'type' => 'link',
+        ),
+        'categoria' => 
+        array (
+          'type' => 'link',
+        ),
+        'solicitudTitulo' => 
+        array (
+          'type' => 'text',
+          'required' => false,
+          'rows' => 30,
+          'lengthOfCut' => 100,
+          'isPersonalData' => false,
+          'seeMoreDisabled' => false,
+          'readOnly' => false,
+          'tooltip' => false,
+          'isCustom' => true,
+        ),
+        'user' => 
+        array (
+          'type' => 'link',
+        ),
+        'solicitudesId' => 
         array (
           'type' => 'number',
           'len' => 36,
           'notNull' => false,
           'unique' => false,
           'nextNumber' => 5,
-          'padLength' => 5,
+          'padLength' => 8,
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'fechahasta' => 
+        'estadoSolicitud' => 
         array (
-          'notNull' => false,
-          'type' => 'date',
+          'type' => 'link',
+          'defaultAttributes' => 
+          array (
+            'estadoSolicitudId' => '5cc8b78a5d1c90818',
+            'estadoSolicitudName' => 'Creado',
+          ),
           'required' => false,
-          'isPersonalData' => false,
-          'useNumericFormat' => false,
           'audited' => false,
           'readOnly' => false,
           'tooltip' => false,
-          'isCustom' => true,
         ),
-        'relacionsubcategoria' => 
+        'beneficios' => 
         array (
           'type' => 'link',
         ),
@@ -21081,18 +21422,58 @@ return array (
           'entity' => 'Attachment',
           'skipOrmDefs' => true,
         ),
-        'relacionsubcategoria' => 
+        'beneficiario' => 
         array (
           'type' => 'belongsTo',
-          'foreign' => 'relacionsolicitudes',
-          'entity' => 'Subcategoria',
+          'foreign' => 'solicitudess',
+          'entity' => 'Beneficiario',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'empresa' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'solicitudess',
+          'entity' => 'Empresa',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'categoria' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'solicitudes',
+          'entity' => 'Categoria',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'user' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'solicitudess',
+          'entity' => 'User',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'estadoSolicitud' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'solicitudes',
+          'entity' => 'EstadoSolicitud',
+          'audited' => false,
+          'isCustom' => true,
+        ),
+        'beneficios' => 
+        array (
+          'type' => 'belongsTo',
+          'foreign' => 'solicitudes',
+          'entity' => 'Beneficios',
           'audited' => false,
           'isCustom' => true,
         ),
       ),
       'collection' => 
       array (
-        'sortBy' => 'createdAt',
+        'sortBy' => 'name',
         'asc' => false,
         'textFilterFields' => 
         array (
@@ -21196,15 +21577,6 @@ return array (
           'tooltip' => false,
           'isCustom' => true,
         ),
-        'relacionsolicitudes' => 
-        array (
-          'type' => 'linkMultiple',
-          'layoutDetailDisabled' => true,
-          'layoutMassUpdateDisabled' => true,
-          'noLoad' => true,
-          'importDisabled' => true,
-          'isCustom' => true,
-        ),
         'categoria' => 
         array (
           'type' => 'link',
@@ -21266,14 +21638,6 @@ return array (
           'entity' => 'Task',
           'foreign' => 'parent',
           'layoutRelationshipsDisabled' => true,
-        ),
-        'relacionsolicitudes' => 
-        array (
-          'type' => 'hasMany',
-          'foreign' => 'relacionsubcategoria',
-          'entity' => 'Solicitudes',
-          'audited' => false,
-          'isCustom' => true,
         ),
         'categoria' => 
         array (
@@ -23922,6 +24286,7 @@ return array (
       'module' => 'Custom',
       'object' => true,
       'isCustom' => true,
+      'statusField' => NULL,
     ),
     'Beneficios' => 
     array (
@@ -23947,6 +24312,7 @@ return array (
       'module' => 'Custom',
       'object' => true,
       'isCustom' => true,
+      'statusField' => NULL,
     ),
     'Categoria' => 
     array (
@@ -24099,6 +24465,31 @@ return array (
       'object' => true,
       'isCustom' => true,
     ),
+    'EstadoSolicitud' => 
+    array (
+      'entity' => true,
+      'layouts' => true,
+      'tab' => true,
+      'acl' => true,
+      'aclPortal' => true,
+      'aclPortalLevelList' => 
+      array (
+        0 => 'all',
+        1 => 'account',
+        2 => 'contact',
+        3 => 'own',
+        4 => 'no',
+      ),
+      'customizable' => true,
+      'importable' => true,
+      'notifications' => true,
+      'stream' => false,
+      'disabled' => false,
+      'type' => 'BasePlus',
+      'module' => 'Custom',
+      'object' => true,
+      'isCustom' => true,
+    ),
     'Formularios' => 
     array (
       'entity' => true,
@@ -24201,6 +24592,7 @@ return array (
       'module' => 'Custom',
       'object' => true,
       'isCustom' => true,
+      'statusField' => NULL,
     ),
     'Rol' => 
     array (

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "userName",
+        "width": 35
+    },
+    {
+        "name": "firstName"
+    },
+    {
+        "name": "lastName"
+    },
+    {
+        "name": "phoneNumber"
+    },
+    {
+        "name": "emailAddress"
+    },
+    {
+        "name": "roles",
+        "notSortable": true
+    },
+    {
+        "name": "empresas",
+        "notSortable": true
+    },
+    {
+        "name": "isActive"
+    }
+]

@@ -1,9 +1,28 @@
 [
     {
-        "name": "beneficiarioId"
+        "name": "beneficiarioId",
+        "link": true,
+        "notSortable": true,
+        "align": "left"
     },
     {
         "name": "name",
         "link": true
+    },
+    {
+        "name": "beneficiarioApellidoPaterno"
+    },
+    {
+        "name": "beneficiarioApellidoMaterno"
+    },
+    {
+        "name": "empresas",
+        "notSortable": true
+    },
+    {
+        "name": "celular"
+    },
+    {
+        "name": "email"
     }
 ]
